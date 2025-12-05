@@ -1,4 +1,3 @@
-##BranchStart 0
 aby1 = {
 	slot = 1
 	generic = no
@@ -9,16 +8,10 @@ aby1 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	the_fire_born = {
-		icon = mission_build_up_to_force_limit
-		required_missions {
-			
-		}
+		icon = mission_rice_field
+		required_missions { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			stability = 2
 		}
@@ -26,132 +19,104 @@ aby1 = {
 			add_stability = 1
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	errect_the_three_pillars = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_early_game_buildings
 		required_missions {
 			the_fire_born
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				province_id = 2128
+				province_id = 2125
+				province_id = 2114
+			}
 		}
 		trigger = {
 			owns = 2128
-			
-
-			
 			owns = 2125
 			owns = 2114
-
-			2128 = {
-			development = 13
-			}
-
-			2125 = {
-			development = 13
-			}
-
-			2114 = {
-			development = 13
-			}	
-			
+			2128 = { development = 13 }
+			2125 = { development = 13 }
+			2114 = { development = 13 }	
 			treasury = 500
-			
-			
 		}
 		effect = {
 			2128 = {
-			
-			remove_province_modifier = fire_born_plague
-			add_permanent_province_modifier = { 
-    name = pillar
-    duration = -1  
-}
+				remove_province_modifier = fire_born_plague
+				add_permanent_province_modifier = { 
+					name = pillar
+					duration = -1  
+				}
 			}
 			2125 = {
-						remove_province_modifier = fire_born_plague
-			add_permanent_province_modifier = { 
-    name = pillar
-    duration = -1  
-}
+				remove_province_modifier = fire_born_plague
+				add_permanent_province_modifier = { 
+					name = pillar
+					duration = -1  
+				}
 			}
 			2114 = {
-						remove_province_modifier = fire_born_plague
-			add_permanent_province_modifier = { 
-    name = pillar
-    duration = -1  
-}
+				remove_province_modifier = fire_born_plague
+				add_permanent_province_modifier = { 
+					name = pillar
+					duration = -1  
+				}
 			}						
 			add_treasury = -500
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	assemble_the_clegry = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_religious
 		required_missions {
 			errect_the_three_pillars
 		}
 		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-		OR = {
-			estate_loyalty = {
-				estate = estate_church
-				loyalty = 70
+			OR = {
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 70
+				}
+				crown_land_share = 70
 			}
-
-		crown_land_share = 70		
-		
-		}
-
 		}
 		effect = {
 		 	custom_tooltip = new_edict_fireborn
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	prufying_flame = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_steppe_warriors
 		required_missions {
 			assemble_the_clegry
 		}
 		position = 4
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			OR = {
 				AND = {
-				has_ruler_flag = elemental
-				dip_power = 400
+					has_ruler_flag = elemental
+					dip_power = 400
 				}
-				
 				AND = {
 					treasury = 1000
 					splendor = 1000
 				}
-	
-				
 			}
 		}
 		effect = {
 			if = {
 				limit = {
-				has_ruler_flag = elemental
-						
+					has_ruler_flag = elemental
 				}
-				 	add_dip_power = -400
+				add_dip_power = -400
 			}
 			else = {
-			add_treasury = -1000
-			add_splendor = -1000
-			}	
+				add_treasury = -1000
+				add_splendor = -1000
+			}
 			2114 = {
 			 	add_prosperity = 100
 				add_base_production = 2
@@ -160,113 +125,112 @@ aby1 = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	send_them_back_to_earth = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dalaskogen
 		required_missions {
 			prufying_flame
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = high_moon_area
 		}
 		trigger = {
-					treasury = 2000			
+			treasury = 2000			
 			development_in_provinces = {
 				value = 80
 				area = high_moon_area
 			}
 		}
 		effect = {
-	 	custom_tooltip = end_fireborn
-					add_treasury = -2000
-		2126 = {
-			remove_province_modifier = fire_born_plague
-		}
-		2127 = {
-			remove_province_modifier = fire_born_plague
-		}
+	 		custom_tooltip = end_fireborn
+			add_treasury = -2000
+			2126 = {
+				remove_province_modifier = fire_born_plague
+			}
+			2127 = {
+				remove_province_modifier = fire_born_plague
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	catch_the_trade = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_asian_trader
 		required_missions {
 			the_further_coast
 		}
 		position = 6
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1973
 		}
 		trigger = {
-			1973 = { #Antwerpen
+			1973 = { #Arakeen
 				trade_share = {
 					country = ROOT
 					share = 66
 				}
-				
 				province_has_center_of_trade_of_level = 3
 			}
 		}
 		effect = {
-							robin_region = {
-	 add_permanent_claim = ROOT
-}
+			robin_region = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	isla_robina = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_war_chest
 		required_missions {
 			catch_the_trade
 		}
 		position = 7
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = robin_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-				robin_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			robin_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			 	add_years_of_income = 2
+			add_years_of_income = 2
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	banish_thallasor = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_impaled_soldies
 		required_missions {
 			isla_robina
 		}
 		position = 8
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				owned_by = TH0
+				AND = {
+					OR = {
+						area = thallasor_area
+						area = mythrandis_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
 		}
 		trigger = {
 			OR = {
-			AND = {
+				AND = {
 					thallasor_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }			
-				mythrandis_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
-			}
-			TH0 = {
-			exists = no
-			}
+					mythrandis_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+				}
+				TH0 = { exists = no }
 			}
 		}
 		effect = {
 			add_mercantilism = 5
-			 	add_splendor = 500
+			add_splendor = 500
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 0
-##BranchStart 1
+
 aby2 = {
 	slot = 2
 	generic = no
@@ -277,173 +241,171 @@ aby2 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	the_black_guard = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_modernized_vikings
 		required_missions {
 			the_grand_forge
 		}
 		position = 2
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			army_tradition = 50
 		}
 		effect = {
 			add_country_modifier = { 
-    name = black_guard
-    duration = -1  
-}
+				name = black_guard
+				duration = -1  
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	expand_black_guard = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_mansure_army
 		required_missions {
 			the_black_guard
 		}
 		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			army_tradition = 75
 			OR = {
-			regimental_camp = 15
-			conscription_center = 10
+				regimental_camp = 15
+				conscription_center = 10
 			}
 		}
 		effect = {
 			add_country_modifier = { 
-    name = expaned_black_guard
-    duration = -1  
-}
+				name = expaned_black_guard
+				duration = -1  
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	yatars_demise = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_oceania_build_army_mission
 		required_missions {
 			expand_black_guard
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				area = artoska_area
+				area = artoska_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-					artoska_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-					small_land_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			artoska_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			small_land_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-							derveen_area = {
-	 add_permanent_claim = ROOT
-}
-							arakeen_area = {
-	 add_permanent_claim = ROOT
-}
-							moon_hills_area = {
-	 add_permanent_claim = ROOT
-}
+			derveen_area = {
+				add_permanent_claim = ROOT
+			}
+			arakeen_area = {
+				add_permanent_claim = ROOT
+			}
+			moon_hills_area = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_further_coast = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_ne_great_lakes_conquest
 		required_missions {
 			yatars_demise
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				area = derveen_area
+				area = arakeen_area
+				area = moon_hills_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-					derveen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-					arakeen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-					moon_hills_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			derveen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			arakeen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			moon_hills_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-							hasser_area = {
-	 add_permanent_claim = ROOT
-}
-							khossor_area = {
-	 add_permanent_claim = ROOT
-}
-							southern_khossor_mountains_area = {
-	 add_permanent_claim = ROOT
-}
+			hasser_area = {
+				add_permanent_claim = ROOT
+			}
+			khossor_area = {
+				add_permanent_claim = ROOT
+			}
+			southern_khossor_mountains_area = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+
 	kossor_fight = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_che_the_cave_country
 		required_missions {
 			the_further_coast
 		}
 		position = 6
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				area = hasser_area
+				area = khossor_area
+				area = southern_khossor_mountains_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-					hasser_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-					khossor_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-					southern_khossor_mountains_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			hasser_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			khossor_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			southern_khossor_mountains_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-							sparkling_islea_area = {
-	 add_permanent_claim = ROOT
-}
+			sparkling_islea_area = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	defeat_pirates = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rb_take_gibraltar
 		required_missions {
 			kossor_fight
 		}
 		position = 7
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = sparkling_islea_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-					sparkling_islea_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			sparkling_islea_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_navy_tradition = 15
 			add_mercantilism = 5
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	develop_arakeen_trade = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rb_scottish_the_darien_scheme
 		required_missions {
 			defeat_pirates
 		}
 		position = 8
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1973
 		}
 		trigger = {
 			1973 = {
-			trade_node_value = 100
+				trade_node_value = 100
 			}
 		}
 		effect = {
 			add_prestige = 50
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 1
-##BranchStart 2
+
 aby3 = {
 	slot = 3
 	generic = no
@@ -454,65 +416,58 @@ aby3 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	the_grand_forge = {
 		icon = mission_build_up_to_force_limit
-		required_missions {
-			
-		}
+		required_missions { }
 		position = 1
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 2114
 		}
 		trigger = {
-			 	army_size_percentage = 1
-				2114 = {
-				 	fort_level = 2
-				}
+			army_size_percentage = 1
+			2114 = {
+				fort_level = 2
+			}
 		}
 		effect = {
-			 	add_army_tradition = 15
-				add_army_professionalism = 0.1
+			add_army_tradition = 15
+			add_army_professionalism = 0.1
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	citadel_of_fire = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rb_build_furnaces
 		required_missions {
 			the_grand_forge
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 2114
 		}
 		trigger = {
-				2114 = {
-				 	fort_level = 4
-					development = 20
-				}	
-				
+			2114 = {
+				fort_level = 4
+				development = 20
+			}
 		}
 		effect = {
-		2114 = {
-			add_permanent_province_modifier = { 
-				name = laval_citadel
-				duration = -1  
-			}		
-		}
-
+			2114 = {
+				add_permanent_province_modifier = { 
+					name = laval_citadel
+					duration = -1  
+				}
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_greatest_forge = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rb_prospect_for_coal
 		required_missions {
 			citadel_of_fire
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 2114
 		}
 		trigger = {
 			2114 = {
@@ -526,77 +481,78 @@ aby3 = {
 			add_prestige = 50
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_grand_fire_mountains = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_end_the_sound_toll
 		required_missions {
 			the_greatest_forge
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				province_id = 2114
+				province_id = 2125
+				province_id = 2126
+				province_id = 2128
+			}
 		}
 		trigger = {
-			owns = 2114 
 			2114 = {
-			base_production = 10
+				base_production = 10
+				owned_by = ROOT
 			}
-			owns = 2125 
-						2125 = {
-			base_production = 8
+			2125 = {
+				base_production = 8
+				owned_by = ROOT
 			}
-			owns = 2126 
-						2126 = {
-			base_production = 8
+			2126 = {
+				base_production = 8
+				owned_by = ROOT
 			}
-			owns = 2128
-						2128 = {
-			base_production = 8
+			2128 = {
+				base_production = 8
+				owned_by = ROOT
 			}
-			
-			
 		}
 		effect = {
-		2114 = {
-			add_permanent_province_modifier = { 
-				name = fire_mount
-				duration = -1  
-			}		
-		}
-		2125 = {
-			add_permanent_province_modifier = { 
-				name = fire_mount
-				duration = -1  
-			}		
-		}
-		2126 = {
-			add_permanent_province_modifier = { 
-				name = fire_mount
-				duration = -1  
-			}		
-		}
-		2128 = {
-			add_permanent_province_modifier = { 
-				name = fire_mount
-				duration = -1  
-			}		
-		}		
+			2114 = {
+				add_permanent_province_modifier = { 
+					name = fire_mount
+					duration = -1  
+				}
+			}
+			2125 = {
+				add_permanent_province_modifier = { 
+					name = fire_mount
+					duration = -1  
+				}
+			}
+			2126 = {
+				add_permanent_province_modifier = { 
+					name = fire_mount
+					duration = -1  
+				}
+			}
+			2128 = {
+				add_permanent_province_modifier = { 
+					name = fire_mount
+					duration = -1  
+				}
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	eternal_abyssian_fire = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_devastate_christianity
 		required_missions {
 			the_grand_fire_mountains
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 2114
 		}
 		trigger = {
-		production_leader = {
+			production_leader = {
 				trade_goods = iron
 			}
 			production_leader = {
@@ -610,82 +566,78 @@ aby3 = {
 			}
 		}
 		effect = {
-		custom_tooltip = halfed_hege
+			custom_tooltip = halfed_hege
 			set_country_flag = halve_hegemony_requirements
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	asaes_call = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_develop_the_scandes
 		required_missions {
 			the_further_coast
 		}
 		position = 6
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			religious_unity = 0.99
 			total_development = 1000
 		}
 		effect = {
-			 	change_government_reform_progress = 100
+			change_government_reform_progress = 100
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	grand_earthen_mother = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_mnd_khm_city_of_temples
 		required_missions {
 			asaes_call
 		}
 		position = 7
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			temple = 100
 		}
 		effect = {
 			add_country_modifier = { 
-    name = temple_income_ab
-    duration = 7500 
-}			
+				name = temple_income_ab
+				duration = 7300 #20 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_old_realm_of_faith = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_che_principal_peole
 		required_missions {
 			grand_earthen_mother
 		}
 		position = 8
 		provinces_to_highlight = {
-		region = iberia_region
+			OR = {
+				region = eastern_azar_region
+				region = levante_region
+				region = marilia_region
+				region = robin_region
+				region = jitaria_region
+				region = rogue_region
+				region = zytar_region
+			}
+			NOT = { religion_group = ROOT }
 		}
 		trigger = {
 			eastern_azar_region = {
 				type = all
 				religion_group = ROOT
 			}
-			
 			levante_region = {
 				type = all
 				religion_group = ROOT
 			}
-
 			marilia_region = {
 				type = all
 				religion_group = ROOT
 			}
-
 			robin_region = {
 				type = all
 				religion_group = ROOT
 			}
-
 			jitaria_region = {
 				type = all
 				religion_group = ROOT
@@ -700,53 +652,44 @@ aby3 = {
 			}				
 		}
 		effect = {
-add_estate_loyalty_modifier = {
-    estate = estate_god_earth
-    desc = EST_EARTH_REALM
-    loyalty = 10
-    duration = -1
-}
-		
+			add_estate_loyalty_modifier = {
+				estate = estate_god_earth
+				desc = EST_EARTH_REALM
+				loyalty = 10
+				duration = -1
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	a_thousands_golems = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_kon_collect_cults
 		required_missions {
 			the_old_realm_of_faith
 		}
 		position = 9
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			OR = {
-			innovativeness = 35
-			estate_loyalty = {
-				estate = estate_clergy
-				loyalty = 70
-			}
+				innovativeness = 35
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 70
+				}
 			}
 		}
 		effect = {
 			add_country_modifier = { 
-    name = golem_fabrication
-    duration = -1
-}	
+				name = golem_fabrication
+				duration = -1
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	eternal_worship_of_asae = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_kon_protector_of_africa
 		required_missions {
 			a_thousands_golems
 		}
 		position = 10
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = obj_convert_1000_provinces_tooltip
@@ -755,17 +698,13 @@ add_estate_loyalty_modifier = {
 		}
 		effect = {
 			add_country_modifier = { 
-    name = supreme_asae
-    duration = -1 
-}				
+				name = supreme_asae
+				duration = -1 
+			}
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 2
-##BranchStart 3
+
 aby4 = {
 	slot = 4
 	generic = no
@@ -776,159 +715,158 @@ aby4 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	deal_with_gira = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_diplomatic_relation
 		required_missions {
 			the_grand_forge
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				owned_by = QA7
+				AND = {
+					area = gira_area
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
 		}
 		trigger = {
 			OR = {
 				AND = {
-				alliance_with = QA7
-				trust = { who = QA7 value = 75 }
+					alliance_with = QA7
+					trust = { who = QA7 value = 75 }
 				}
-				gira_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+				gira_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
 			}
 		}
 		effect = {
-			1995 = {
-			add_permanent_claim = ROOT
-			}
-			2025 = {
-			add_permanent_claim = ROOT
-			} 
-			2263 = {
-			add_permanent_claim = ROOT
-			} 
-			2265 = {
-			add_permanent_claim = ROOT
-			} 
-			2266 = {
-			add_permanent_claim = ROOT
-			}
+			1995 = { add_permanent_claim = ROOT }
+			2025 = { add_permanent_claim = ROOT } 
+			2263 = { add_permanent_claim = ROOT } 
+			2265 = { add_permanent_claim = ROOT } 
+			2266 = { add_permanent_claim = ROOT }
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	badland_coast = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rb_conquer_the_isles
 		required_missions {
 			deal_with_gira
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = marilia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-	value = 4
-	region = marilia_region
-	is_city = yes
-}
+				value = 4
+				region = marilia_region
+				is_city = yes
+			}
 		}
 		effect = {
-							gurmalia_area = {
-	 add_permanent_claim = ROOT
-}
-							vallkresh_area = {
-	 add_permanent_claim = ROOT
-}
-							murgore_area = {
-	 add_permanent_claim = ROOT
-}
-							rheen_area = {
-	 add_permanent_claim = ROOT
-}			
+			gurmalia_area = {
+				add_permanent_claim = ROOT
+			}
+			vallkresh_area = {
+				add_permanent_claim = ROOT
+			}
+			murgore_area = {
+				add_permanent_claim = ROOT
+			}
+			rheen_area = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	into_the_badlands = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_5_states
 		required_missions {
 			badland_coast
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				area = gurmalia_area
+				area = vallkresh_area
+				area = murgore_area
+				area = rheen_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			gurmalia_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
-						vallkresh_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
-									murgore_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
-															rheen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
-									
+			vallkresh_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
+			murgore_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
+			rheen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
 		}
 		effect = {
-							bania_area = {
-	 add_permanent_claim = ROOT
-}		
-							cassa_area = {
-	 add_permanent_claim = ROOT
-}		
+			bania_area = {
+				add_permanent_claim = ROOT
+			}
+			cassa_area = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	cassa_fight = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_noble_council
 		required_missions {
 			into_the_badlands
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				area = bania_area
+				area = cassa_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			bania_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
-			cassa_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+			bania_area = { type = all country_or_non_sovereign_subject_holds = ROOT }	
+			cassa_area = { type = all country_or_non_sovereign_subject_holds = ROOT }	
 		}
 		effect = {
 			add_army_tradition = 15
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	cassas_wealth = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_high_income
 		required_missions {
 			cassa_fight
 		}
 		position = 6
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 2000
 		}
 		trigger = {
-			2000 = { #An
-	trade_node_value = 25
-}
-
-2000 = { #Antwerpen
-	trade_share = {
-		country = ROOT
-		share = 50
-	}
-}
+			2000 = {
+				trade_node_value = 25
+			}
+			2000 = { #Crusso
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
 		}
 		effect = {
 			add_mercantilism = 10
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	all_eyes_tower = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_colonial
 		required_missions {
 			cassas_wealth
 		}
 		position = 7
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 2003
 		}
 		trigger = {
 			2003 = {
@@ -942,69 +880,59 @@ aby4 = {
 			add_dip_power = 150
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	cassian_city_culture = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_indian_stateman
 		required_missions {
 			all_eyes_tower
 		}
 		position = 8
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			culture = cassalan
 		}
 		trigger = {
-			 	accepted_culture = cassalan
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					culture = cassalan
-					development = 25
-				}
+			accepted_culture = cassalan
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				culture = cassalan
+				development = 25
+			}
 		}
 		effect = {
 			add_country_modifier = { 
-    name = new_city_culture
-    duration = -1 
-}				
+				name = new_city_culture
+				duration = -1 
+			}				
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	a_new_race_of_man = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_monarch_in_throne_room
 		required_missions {
 			cassian_city_culture
 		}
 		position = 9
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			absolutism = 75
 			stability = 3
-			 	religious_unity = 0.99
+			religious_unity = 0.99
 		}
 		effect = {
-		add_stability = -6
+			add_stability = -6
 			every_owned_province = {
 				limit = {
 				has_owner_accepted_culture = yes
 				}
 				change_culture = abyssa_cassa
 			}
-			
-						add_country_modifier = { 
-    name = expand_culture
-    duration = -1 
-}	
+			add_country_modifier = { 
+				name = expand_culture
+				duration = -1 
+			}
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 3
-##BranchStart 4
+
 aby5 = {
 	slot = 5
 	generic = no
@@ -1015,19 +943,16 @@ aby5 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	gold_of_naguno = {
-		icon = mission_build_up_to_force_limit
-		required_missions {
-			
-		}
+		icon = mission_african_gold
+		required_missions { }
 		position = 1
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 2128
 		}
 		trigger = {
 			2128 = {
-			base_production = 5
+				base_production = 5
 			}
 		}
 		effect = {
@@ -1035,217 +960,189 @@ aby5 = {
 			add_treasury = 5000
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	holy_smithes = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_industria_sedera
 		required_missions {
 			gold_of_naguno
 		}
 		position = 2
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			trade_goods_produced_amount = {
-	trade_goods = iron
-	amount = 5
-}
-trade_goods_produced_amount = {
-	trade_goods = copper
-	amount = 5
-}
+				trade_goods = iron
+				amount = 5
+			}
+			trade_goods_produced_amount = {
+				trade_goods = copper
+				amount = 5
+			}
 		}
 		effect = {
 			add_mil_power = 150
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	heat_forges = {
 		icon = mission_build_up_to_force_limit
 		required_missions {
 			holy_smithes
 		}
 		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-				OR = {
+			OR = {
 				trade_goods_produced_amount = {
-	trade_goods = coal
-	amount = 1
-}
-trade_goods_produced_amount = {
-	trade_goods = naval_supplies
-	amount = 5
-}
-trade_goods_produced_amount = {
-	trade_goods = tropical_wood
-	amount = 5
-}
+					trade_goods = coal
+					amount = 1
 				}
+				trade_goods_produced_amount = {
+					trade_goods = naval_supplies
+					amount = 5
+				}
+				trade_goods_produced_amount = {
+					trade_goods = tropical_wood
+					amount = 5
+				}
+			}
 		}
 		effect = {
-						add_country_modifier = { 
-    name = heat_forging
-    duration = 7500
-}			
+			add_country_modifier = { 
+				name = heat_forging
+				duration = 7300 #20 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	abyssian_steel = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_defeat_muscovy
 		required_missions {
 			heat_forges
 		}
 		position = 4
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			trade_goods_produced_amount = {
-	trade_goods = iron
-	amount = 10
-}			
-monthly_mil = 10
+				trade_goods = iron
+				amount = 10
+			}
+			monthly_mil = 10
 		}
 		effect = {
-						add_country_modifier = { 
-    name = legendar_steel
-    duration = -1
-}
+			add_country_modifier = { 
+				name = legendar_steel
+				duration = -1
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	feed_the_fires = {
-		icon = mission_build_up_to_force_limit
+		icon = per_reborn_in_fire
 		required_missions {
 			abyssian_steel
 		}
 		position = 5
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-				OR = {
+			OR = {
 				trade_goods_produced_amount = {
-	trade_goods = coal
-	amount = 2
-}
-trade_goods_produced_amount = {
-	trade_goods = naval_supplies
-	amount = 10
-}
-trade_goods_produced_amount = {
-	trade_goods = tropical_wood
-	amount = 10
-}
+					trade_goods = coal
+					amount = 2
 				}
+				trade_goods_produced_amount = {
+					trade_goods = naval_supplies
+					amount = 10
+				}
+				trade_goods_produced_amount = {
+					trade_goods = tropical_wood
+					amount = 10
+				}
+			}
 		}
 		effect = {
-						add_country_modifier = { 
-    name = industrial_gloom
-    duration = 7500
-}				
+			add_country_modifier = { 
+				name = industrial_gloom
+				duration = 7300 #20 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_iron_fist = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_italian_condottiere
 		required_missions {
 			feed_the_fires
 		}
 		position = 6
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-		weapons = 10
+			weapons = 10
 		}
 		effect = {
 			add_army_tradition = 25
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	embrace_naval_identiy = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_establish_high_seas_navy
 		required_missions {
 			cassas_wealth
 		}
 		position = 7
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	navy_size = 100
+			navy_size = 100
 		}
 		effect = {
-			 	add_navy_tradition = 30
-											eastern_azar_region = {
-	 add_claim = ROOT
-}	
+			add_navy_tradition = 30
+			eastern_azar_region = {
+				add_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	look_to_the_south = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_invade_island
 		required_missions {
 			embrace_naval_identiy
 		}
 		position = 8
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = eastern_azar_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-	value = 20
-	region = eastern_azar_region
-	is_city = yes
-}			
+				value = 20
+				region = eastern_azar_region
+				is_city = yes
+			}
 		}
 		effect = {
-							western_azar_region = {
-	 add_permanent_claim = ROOT
-}		
+			western_azar_region = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	black_destiny = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_unite_home_region
 		required_missions {
 			look_to_the_south
 		}
 		position = 9
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = western_azar_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-					western_azar_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
+			western_azar_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
 		}
 		effect = {
 			add_legitimacy = 25
 			change_government_reform_progress = 100
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_great_burning_jungles = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_iberian_conquistador
 		required_missions {
 			black_destiny
 		}
 		position = 10
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			trade_goods_produced_amount = {
 				trade_goods = tropical_wood
@@ -1253,34 +1150,31 @@ trade_goods_produced_amount = {
 			}
 		}
 		effect = {
-								isle_of_mourn_area = {
-	 add_permanent_claim = ROOT
-}	
+			isle_of_mourn_area = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	kill_morn = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_impaled_soldies
 		required_missions {
 			the_great_burning_jungles
 		}
 		position = 11
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				owned_by = QA2
+				area = isle_of_mourn_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			QA2 = {
-			exists = no
-			}
-			isle_of_mourn_area= { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+			QA2 = { exists = no }
+			isle_of_mourn_area= { type = all country_or_non_sovereign_subject_holds = ROOT }	
 		}
 		effect = {
 			add_stability = 1
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 4
