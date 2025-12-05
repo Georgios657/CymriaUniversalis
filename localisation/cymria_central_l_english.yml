@@ -11,6 +11,7 @@
  a_central_autority_desc:0 "Humans have never learned that there is a true central authority—one that lasts beyond just a few fleeting years. We are that authority, and the villages and clans must submit to our will."
  tax_season_title:0 "Tax Season"
  tax_season_desc:0 "Once a year, taxes are collected by our officials—and woe to those who cannot pay! With this simple system, we can ensure that everyone acknowledges the existence of our realm. Far too many peasants tend to ignore this… unfortunately for them."
+ tax_season.tooltip:0 "Is employing a §YTreasurer§! advisor of skill §Y3§!"
  a_great_census_title:0 "Hold a Census"
  a_great_census_desc:0 "How many people live in our land? How much head tax can we collect? We do not know! We must count them and record everything properly in registers so that we always know how much revenue we will receive—and how many men we can conscript."
  central_buero_title:0 "Central Government"
