@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = zephrian
+religion = phoenix_faith
+capital = 820	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Feniks"
+		name = "Nadav"
+		birth_date = 1385.9.21
+		dip = 5
+		adm = 4
+		mil = 5
+		
+				leader = {
+			name = "Nadav the White"	 # Name of the leader
+			type = general	   # Type of leader: general, admiral, explorer, conquistidor
+			fire = 3
+			shock = 4
+			manuever = 4
+			siege = 4
+		}
+	}
+
+
+}

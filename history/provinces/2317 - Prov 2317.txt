@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Orynthar"
+is_city = yes
+culture = zavonian
+religion = grand_mother
+add_core = AV6

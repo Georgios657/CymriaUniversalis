@@ -1,0 +1,15 @@
+# Anything typed here will be added to all selected province history files
+culture = icelander
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Donuva"
+is_city = yes
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files
+add_core = ND8
+owner = ND8
+controller = ND8

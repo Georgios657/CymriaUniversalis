@@ -1,0 +1,16 @@
+add_core = HA7
+owner = HA7
+controller = HA7
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+capital = "Gyongvaros"
+is_city = yes
+culture = nago_harpia
+religion = winged_one
+
+native_size = 90
+native_ferocity = 20
+native_hostileness = 20

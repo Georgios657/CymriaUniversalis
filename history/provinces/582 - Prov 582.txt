@@ -1,0 +1,13 @@
+add_core = LA0
+owner = LA0
+controller = LA0
+culture = lascarian
+religion = amatism_faith
+hre = yes
+base_tax = 4
+base_production = 5
+trade_goods = grain
+base_manpower = 5
+capital = "Furren"
+is_city = yes
+discovered_by = ottoman

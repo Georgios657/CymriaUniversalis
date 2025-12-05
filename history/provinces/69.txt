@@ -1,0 +1,14 @@
+add_core = I15
+owner = I15
+controller = I15
+culture = nordlander
+religion = old_imperial_faith
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = fish
+base_manpower = 3
+capital = "Zossen"
+is_city = yes
+discovered_by = western
+center_of_trade = 1

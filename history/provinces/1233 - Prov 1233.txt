@@ -1,0 +1,13 @@
+add_core = HC2
+owner = HC2
+controller = HC2
+culture = huan
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 1
+capital = "Yhinghua"
+is_city = yes
+discovered_by = chinese

@@ -1,0 +1,15 @@
+add_core = LE0
+add_core = LA9
+owner = LA9
+controller = LA9
+add_core = LE1
+culture = kalinian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Gusta"
+is_city = yes
+discovered_by = ottoman

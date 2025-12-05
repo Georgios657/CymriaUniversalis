@@ -1,0 +1,23 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = nomad_group
+primary_culture = vsacanian
+religion = tengri
+secondary_religion = phoenix_faith
+capital = 310
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1430.1.1 = {
+	monarch = {
+		name = "Phrataphernes"
+		dynasty = "Caunas"
+		birth_date = 1410.9.21
+		dip = 3
+		adm = 2
+		mil = 2
+	}
+
+}
+

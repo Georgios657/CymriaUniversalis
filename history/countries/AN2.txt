@@ -1,0 +1,6 @@
+
+government_rank = 1
+technology_group = imperial_tech
+primary_culture = seili
+religion = imperial_cult
+capital = 2543	# Bayreuth

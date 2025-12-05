@@ -1,0 +1,72 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 12 12 124 }
+
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	steppe_riders
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_cavalry
+	steppe_uhlans
+	steppe_raiders
+	steppe_footmen
+	steppe_musketeers
+	steppe_infantry
+	steppe_rifles
+	reformed_steppe_rifles
+}
+
+monarch_names = {
+	"Arvid #0" = 20
+	"Ludvig #0" = 20
+	"Nohr #0" = 20
+	"Eric #0" = 20
+	"Lasse #0" = 20
+	"Anders #0" = 20
+	"Aron #0" = 20
+	"Kjell #0" = 20
+	"Linus #0" = 20
+	"Ole #0" = 20
+	"Malte #0" = 20
+	"Avin #0" = 20
+	"Lief #0" = 20
+	"Bo #0" = 20
+
+	
+	"Emma #0" = -20
+	"Ella #0" = -20
+	"Elsa #0" = -20
+	"Heeda #0" = -20
+	"Mia #0" = -20
+	"Amalie #0" = -20
+	"Julie #0" = -20
+	"Helene #0" = -20
+	"Lena #0" = -20
+	"Katarina #0" = -20
+	"Lykke #0" = -20
+
+
+
+}
+
+leader_names = {
+		Lief Bo Anders Nohr Arvid  Ludvig Avin Malte
+
+}
+
+ship_names = {
+
+}

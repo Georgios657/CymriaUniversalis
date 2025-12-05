@@ -1,0 +1,109 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = pirate_medi
+
+
+####rise of pirates
+country_event = {
+	id = pirate_medi.1
+	title = pirate_medi.1.t
+	desc = pirate_medi.1.desc
+
+	picture = RELIGION_eventPicture
+	
+	mean_time_to_happen = {
+	months = 48
+}
+
+	trigger = {
+	OR = {
+	tag = TH2
+	tag = TH4
+	tag = AR3
+	tag = AR6
+	}
+						NOT = { has_reform = pirate_republic_reform }
+	is_subject = no
+					NOT = { num_of_cities = 3 }
+					
+		any_owned_province = {
+			has_port = yes
+			}
+						
+	NOT = {
+	is_year = 1500
+	}
+	}
+
+	immediate = {
+
+}
+	option = {
+	name = pirate_medi.1.a		
+		ai_chance = { factor = 0 }
+	add_stability = 1
+		}
+		
+	option = {
+	name = pirate_medi.1.b		
+		ai_chance = { factor = 80 }
+			change_government_to_republic = yes
+			add_government_reform = pirate_republic_reform
+			add_republican_tradition = 20
+			
+		}
+		
+		
+	}
+
+country_event = {
+	id = pirate_medi.2
+	title = pirate_medi.2.t
+	desc = pirate_medi.2.desc
+
+	picture = RELIGION_eventPicture
+	
+	mean_time_to_happen = {
+	months = 24
+}
+
+	trigger = {
+	OR = {
+	tag = RB1
+	tag = RB2
+	tag = RB3
+	}
+				NOT = { num_of_cities = 5 }
+		any_owned_province = {
+			has_port = yes
+			}
+						
+	NOT = {
+	is_year = 1500
+	}
+	}
+
+	immediate = {
+
+}
+	option = {
+	name = pirate_medi.2.a		
+		ai_chance = { factor = 0 }
+	add_stability = 1
+		}
+		
+	option = {
+	name = pirate_medi.2.b		
+		ai_chance = { factor = 80 }
+			change_government_to_republic = yes
+			add_government_reform = pirate_republic_reform
+			add_republican_tradition = 20
+			
+		}
+		
+		
+	}	

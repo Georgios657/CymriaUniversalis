@@ -1,0 +1,12 @@
+add_core = VP4
+owner = VP4
+controller = VP4
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Talon"
+is_city = yes
+culture = ayas_valley

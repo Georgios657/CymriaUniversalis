@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 2
+technology_group = selen_tech
+primary_culture = karavanarian
+religion = yazida
+capital = 1838	# Bayreuth
+religious_school = oyor_the_eternal_betrayer
+
+1444.11.11 = {
+	monarch = {
+		name = "Tribe Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

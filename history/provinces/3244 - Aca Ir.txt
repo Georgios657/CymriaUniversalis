@@ -1,0 +1,13 @@
+add_core = LO2
+owner = LO2
+controller = LO2
+culture = pullanian
+religion = telcontarian
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = tropical_wood
+base_manpower = 1
+capital = "Aca Ir"
+is_city = yes
+discovered_by = ottoman

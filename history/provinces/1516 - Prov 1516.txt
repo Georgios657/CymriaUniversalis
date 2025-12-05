@@ -1,0 +1,15 @@
+add_core = PI4
+owner = PI4
+controller = PI4
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = slaves
+base_manpower = 1
+capital = "Tes-Te"
+is_city = yes
+culture = coastal_naga
+religion = naga_faith
+
+
+fort_15th = yes

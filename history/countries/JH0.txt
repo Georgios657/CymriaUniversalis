@@ -1,0 +1,24 @@
+government = magocracy
+add_government_reform = jhinn_magocracy
+government_rank = 2
+technology_group = selen_tech
+primary_culture = northern_jinn
+religion = all_puryfing_flame
+capital = 1597
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1003.7.3 = {
+	monarch = {
+		name = "Nasir al-Din"
+		dynasty = "Lailan"
+		birth_date = 291.9.21
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+	
+	
+	add_ruler_personality = wizard
+		
+}
+

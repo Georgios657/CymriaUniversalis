@@ -1,0 +1,14 @@
+add_core = AI6
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Chisek"
+is_city = yes
+culture = vaskar
+religion = icearia
+add_core = NC7
+add_core = NC9

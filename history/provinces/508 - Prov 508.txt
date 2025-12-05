@@ -1,0 +1,16 @@
+add_core = S17
+owner = S17
+controller = S17
+culture = menekian
+religion = katrova_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = copper
+base_manpower = 2
+capital = "Meneka"
+is_city = yes
+discovered_by = indian
+fort_15th = yes
+
+add_permanent_province_modifier = { name = mountain_pass_modifier duration = -1 } 

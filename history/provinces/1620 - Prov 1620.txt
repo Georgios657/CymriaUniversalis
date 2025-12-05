@@ -1,0 +1,15 @@
+add_core = EP0
+owner = EP0
+controller = EP0
+culture = ephretera
+hre = no
+base_tax = 7
+base_production = 7
+trade_goods = dyes
+base_manpower = 5
+capital = "Lasha"
+is_city = yes
+religion = moon_and_sun
+center_of_trade = 3
+discovered_by = chinese
+fort_15th = yes

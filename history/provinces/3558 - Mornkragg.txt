@@ -1,0 +1,12 @@
+add_core = TN2
+owner = TN2
+controller = TN2
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fur
+base_manpower = 3
+capital = "Mornkragg"
+is_city = yes
+culture = forrest_trolls
+religion = the_great_catfish

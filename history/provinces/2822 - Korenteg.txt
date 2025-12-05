@@ -1,0 +1,13 @@
+add_core = HY5
+owner = HY5
+controller = HY5
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = iron
+base_manpower = 4
+capital = "Korenteg"
+is_city = yes
+culture = san_harpia
+religion = winged_one
+

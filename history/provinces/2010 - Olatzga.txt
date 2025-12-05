@@ -1,0 +1,17 @@
+add_core = RB3
+owner = RB3
+controller = RB3
+hre = no
+base_tax = 2
+base_production = 4
+trade_goods = copper
+base_manpower = 3
+capital = "Olatzga"
+is_city = yes
+culture = black_robin
+religion = mother_robin
+add_permanent_province_modifier = { name = blessed_earth_of_robin duration = -1 }
+
+latent_trade_goods = {
+	coal
+}

@@ -1,0 +1,210 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_god = {
+	icon = 16
+
+	# If true, country will get estate
+	trigger = {
+			NOT = { has_government_attribute = disables_estate_god }
+		religion_group = imperial_faith
+		NOT = {
+		has_reform = abbandon_the_gods
+		}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+	 	stability_cost_modifier = -0.2
+		shock_damage = 0.10
+		legitimacy = 1
+		horde_unity = 1
+		 
+	}
+	country_modifier_neutral = {	
+	 	legitimacy = 0.5
+		horde_unity = 0.5
+	}	
+	country_modifier_angry = {
+	 	stability_cost_modifier = 0.2
+		shock_damage_received  = 0.10
+		legitimacy = -2
+		horde_unity = -2
+			
+	}
+	land_ownership_modifier = {
+			god_loyalty_modifier = 0.00
+	}
+	
+
+
+	# Influence modifiers
+	base_influence = 0
+	
+	influence_modifier = {
+		desc = HIGH_INNOVATION
+		trigger = {
+		ROOT = {
+			innovativeness = 50
+				}
+		}	
+		influence = -5
+	}
+
+	influence_modifier = {
+		desc = NEW_IMPERIAL
+		trigger = {
+			culture_group = new_imperial
+		}	
+		influence = -5
+	}
+	
+	influence_modifier = {
+		desc = EST_VERY_LOW_UNITY
+		trigger = {
+		NOT = {
+		religious_unity = 0.5
+		}
+		}	
+		influence = -5
+	}
+	
+	influence_modifier = {
+		desc = EST_LOW_UNITY
+		trigger = {
+			religious_unity = 0.5	
+		NOT = {
+		religious_unity = 0.75
+		}
+		}	
+		influence = -2
+	}
+	
+	
+	influence_modifier = {
+		desc = EST_MEDIUM_UNITY
+		trigger = {
+			religious_unity = 0.75	
+		NOT = {
+		religious_unity = 0.99
+		}
+		}	
+		influence = 2
+	}
+	
+	influence_modifier = {
+		desc = EST_HIGH_UNITY
+		trigger = {
+		religious_unity = 0.99
+		}	
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_TOLERANCE_MEDIUM
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 4
+				}
+			NOT = {
+		ROOT = {
+			 	tolerance_to_this = 6
+				}			
+			}
+		}	
+		influence =5
+	}
+	
+	influence_modifier = {
+		desc = EST_TOLERANCE_HIGH
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 6
+				}
+							NOT = {
+		ROOT = {
+			 	tolerance_to_this = 8
+				}			
+			}
+		}	
+		influence = 5
+	}
+
+	influence_modifier = {
+		desc = EST_TOLERANCE_VERY_HIGH
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 8
+				}
+		}	
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_STATE_RELIGIOUS_MINORITY
+		trigger = {
+			NOT = { dominant_religion = ROOT }
+		}	
+		influence = -10
+	}
+	
+	influence_modifier = {
+		desc = EST_WRONG_RELIGION_RULER
+		trigger = {
+		NOT = {
+					ruler_religion = ROOT
+		}
+		}	
+		influence = -5
+	}	
+
+	loyalty_modifier = {
+		desc = EST_FANACTIC_KING
+		trigger = {
+				OR = {
+		 	 	ruler_has_personality = zealot_personality
+		 	 	ruler_has_personality = pious_personality				
+				}
+		}
+		loyalty = 2
+	}
+
+	loyalty_modifier = {
+		desc = EST_NOFANACTIC_KING
+		trigger = {
+		 	 	ruler_has_personality = tolerant_personality
+		}
+		loyalty = -2
+	}
+	
+	loyalty_modifier = {
+		desc = EST_HOLY_WAR
+		trigger = {
+		 	at_war_with_religious_enemy = yes
+		}
+		loyalty = 5
+	}
+	
+	privileges = {
+	thanata
+	rigora
+	excita
+	holy_woods
+	giant_temples
+	great_ceremonies
+	holy_warriors
+	consult_oracles
+	phoenix_king
+	read_divine_signs
+	uphoald_godly_law
+	stone_cirlces
+	honor_the_stars_in_heaven
+	}
+
+	agendas = {
+
+	}
+
+	color = { 122 20 20 }
+	
+	influence_from_dev_modifier = 1
+}

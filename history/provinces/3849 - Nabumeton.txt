@@ -1,0 +1,16 @@
+add_core = TI8
+owner = TI8
+controller = TI8
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = cocoa
+base_manpower = 2
+capital = "Naubemton"
+is_city = yes
+culture = metona
+religion = tilidian_little_gods
+owner = TI3
+controller = TI3
+add_core_of = TI3
+add_core = TI3

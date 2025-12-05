@@ -1,0 +1,15 @@
+
+add_core = TW7
+owner = TW7
+controller = TW7
+religion = the_silvern_guide
+hre = no
+base_tax = 9
+base_production = 8
+trade_goods = grain
+base_manpower = 5
+capital = "Mykena"
+is_city = yes
+culture = northern_baylonian
+center_of_trade = 1
+fort_15th = yes

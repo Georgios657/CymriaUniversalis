@@ -1,0 +1,342 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = brodia
+
+
+####start up
+country_event = {
+	id = brodia.1
+	title = brodia.1.t
+	desc = brodia.1.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+	every_country = { 
+    limit = {
+       culture_group = east_harpy
+    }
+			add_opinion = {
+			who = ROOT
+			modifier = eternal_Enemy
+		}	
+		
+		reverse_add_opinion = {
+			who = ROOT
+			modifier = eternal_Enemy
+			}
+	}
+}
+	option = {
+	name = brodia.1.a		
+		ai_chance = { factor = 20 }
+		country_event = { 
+		id = brodia.2
+	}
+		}		
+	}
+
+country_event = {
+	id = brodia.2
+	title = brodia.2.t
+	desc = brodia.2.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+	}
+	
+	option = {
+	name = brodia.2.a		
+		ai_chance = { factor = 20 }
+		add_army_tradition = 100
+		}		
+	}
+	
+country_event = {
+	id = brodia.3
+	title = brodia.3.t
+	desc = brodia.3.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+	every_country = { 
+    limit = {
+       culture_group = east_harpy
+    }
+			add_opinion = {
+			who = ROOT
+			modifier = eternal_Enemy
+		}	
+		
+		reverse_add_opinion = {
+			who = ROOT
+			modifier = eternal_Enemy
+			}
+	}
+}
+	option = {
+	name = brodia.3.a		
+		ai_chance = { factor = 20 }
+		add_army_tradition = 25
+		add_stability = -1
+		
+		}		
+	}	
+	
+country_event = {
+	id = brodia.4
+	title = brodia.4.t
+	desc = brodia.4.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+}
+	option = {
+	name = brodia.4.a		
+		ai_chance = { factor = 20 }
+		country_event = { 
+		id = brodia.5
+	}
+		}		
+	}	
+
+country_event = {
+	id = brodia.5
+	title = brodia.5.t
+	desc = brodia.5.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	
+	}
+
+	immediate = {
+		
+}
+	option = {
+	name = brodia.5.a		
+		ai_chance = { factor = 20 }
+		if = {
+		limit = {
+		tag = HY9
+		}
+		
+		add_stability = -3
+		
+				define_ruler = {
+			name = "Harpian Council"
+			adm = 0
+			dip = 0
+			mil = 0
+			regency = { estate = estate_church }
+		}
+		
+		country_event = { 
+    id = brodia.6
+    days = 150
+    random = 15
+}
+		}
+		}	
+
+			
+	}	
+
+country_event = {
+	id = brodia.6
+	title = brodia.6.t
+	desc = brodia.6.desc
+
+	picture = RELIGION_eventPicture
+	major = yes
+		is_triggered_only = yes
+
+	trigger = {
+	
+	}
+
+	immediate = {
+		
+}
+	option = {
+	name = brodia.6.a		
+		ai_chance = { factor = 20 }
+	 	release_all_subjects = yes
+		
+		define_ruler = {
+			adm = 3
+			dip = 3
+			mil = 3
+			age = 20
+			claim = 10
+		}
+		}	
+
+			
+	}	
+
+	
+####what to search?
+country_event = {
+	id = brodia.7
+	title = brodia.7.t
+	desc = brodia.7.desc
+
+	picture = RELIGION_eventPicture
+		is_triggered_only = yes
+
+	trigger = {
+	
+	}
+
+	immediate = {
+		
+}
+	option = {
+	name = brodia.7.a		
+		ai_chance = { factor = 20 }
+		hidden_effect = {
+		
+		
+		random_list = {
+	50 = {
+		country_event = { 
+    id = brodia.9
+    days = 30
+    random = 15
+}
+
+    change_variable = {
+        which = peopleVar
+        value = 1
+    }
+	}
+	50 = {
+		country_event = { 
+    id = brodia.8
+    days = 30
+    random = 15
+}	
+	}
+}
+		}
+		}	
+
+		###Artefakts
+	option = {
+	name = brodia.7.b		
+		ai_chance = { factor = 20 }
+		hidden_effect = {
+		random_list = {
+	30 = {
+		country_event = { 
+    id = brodia.9
+    days = 30
+    random = 15
+}
+
+    change_variable = {
+        which = relictsVar
+        value = 1
+    }
+	
+		modifier = {
+			factor = 3
+			capital_scope = {
+			has_province_modifier = ruined_castle_city
+			}
+		}
+	}
+	70 = {
+		country_event = { 
+    id = brodia.8
+    days = 30
+    random = 15
+}	
+	}
+}
+		}		
+		
+		}				
+	}
+
+	
+	###Kein Erfolg
+country_event = {
+	id = brodia.8
+	title = brodia.8.t
+	desc = brodia.8.desc
+
+	picture = RELIGION_eventPicture
+		is_triggered_only = yes
+
+	trigger = {
+	
+	}
+
+	immediate = {
+		
+}
+	option = {
+	name = brodia.8.a		
+		ai_chance = { factor = 20 }
+		}	
+
+			
+	}	
+
+	###Erfolg
+country_event = {
+	id = brodia.9
+	title = brodia.9.t
+	desc = brodia.9.desc
+
+	picture = RELIGION_eventPicture
+		is_triggered_only = yes
+
+	trigger = {
+	
+	}
+
+	immediate = {
+		
+}
+	option = {
+	name = brodia.9.a		
+		ai_chance = { factor = 20 }
+		}	
+
+			
+	}	

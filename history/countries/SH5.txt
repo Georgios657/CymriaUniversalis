@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = slaver_kingdom_reform
+government_rank = 2
+technology_group = selen_tech
+primary_culture = nian
+religion = yazida
+capital = 1917	# Bayreuth
+religious_school = oyor_the_eternal_betrayer
+
+1401.1.1 = {
+	monarch = {
+		dynasty = "Tilgath-Ni"
+		name = "Ni-Niari"
+		birth_date = 1380.9.21
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+
+}

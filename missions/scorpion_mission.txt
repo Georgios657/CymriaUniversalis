@@ -1,0 +1,507 @@
+##BranchStart 0
+sc1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = girta
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_empire_of_man = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		is_subject_of_type_with_overlord = {
+	who = EM1
+	type = tributary_state
+		}
+
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	prepare_independce = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			the_empire_of_man
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		is_subject_of_type_with_overlord = {
+	who = EM1
+	type = tributary_state
+		}
+		
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 6
+	region = red_region
+	fort_level = 2
+}
+			total_development = 150
+		}
+		effect = {
+			add_country_modifier = { 
+    name = fight_for_freedom
+    duration = 2500  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	fight_for_freedom_sc = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			prepare_independce
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	war_with = EM1
+		}
+		effect = {
+			add_country_modifier = { 
+    name = scoprion_liberty
+    duration = 1500
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+sc2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = girta
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	expand_scorpionsdom = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			pious_scorpions
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			grown_by_development = 50
+		}
+		effect = {
+			add_prestige = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	red_land_dominance = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			expand_scorpionsdom
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 30
+	region = red_region
+	is_city = yes
+}
+		}
+		effect = {
+			change_government_reform_progress = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	primus_inter_pares = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			red_land_dominance
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			 	any_country = { 
+				culture_group = girta
+				NOT = {
+				tag = ROOT
+				}
+				total_development = ROOT
+				}
+			}
+			prestige = 50
+		}
+		effect = {
+		 	override_country_name = SCORPION_REALM
+			every_country = {
+				limit = {
+					culture_group = girta
+					 	is_vassal = no
+				}
+    country_event = { 
+    id = fc.8
+    days = 1
+}
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+ sc3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = girta
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	pious_scorpions = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 3
+		}
+		effect = {
+			red_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}						
+		}
+	}
+	##Mission End
+	##Mission Start
+	fortfiy_sacntum = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			pious_scorpions
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			2512 {
+			owned_by = ROOT
+			fort_level = 2
+			}
+		}
+		effect = {
+			2512 = {
+			add_province_modifier = { 
+			name = defense_of_arossa
+			duration = -1  
+		}			
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	harness_power = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			fortfiy_sacntum
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			2512 = {
+			has_great_project = {
+				type = any
+				tier = 1
+			}
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_inner_chamber = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			harness_power
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			2512 = {
+			has_great_project = {
+				type = any
+				tier = 2
+			}
+			}
+		}
+		effect = {
+			 	change_adm = 2
+				change_dip = 2
+				change_mil = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_whole_sanctum = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			the_inner_chamber
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			2512 = {
+			has_great_project = {
+				type = any
+				tier = 3
+			}
+			}
+		}
+		effect = {
+		 	reset_golden_age = yes
+			extend_golden_age = 3600
+			
+			add_power_projection = { 
+	type = 25_permanent_power_projection
+	amount = 25 
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+sc4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = girta
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	saltssss = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			pious_scorpions
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+ 	
+
+trade_goods_produced_amount = {
+	trade_goods = salt
+	amount = 10
+}
+		}
+		effect = {
+			 	add_mercantilism = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	prosper_cities = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			saltssss
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+
+num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 5
+	region = red_region
+	is_city = yes
+	development = 20
+}
+		}
+		effect = {
+			add_years_of_income = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	cntrol_caravan = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			prosper_cities
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		mercantilism = 30
+		}
+		effect = {
+			 	add_treasury = 1000
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+ sc5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = girta
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	art_of_war_sc = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	army_tradition = 50
+		}
+		effect = {
+			add_army_professionalism = 0.1
+		}
+	}
+	##Mission End
+	##Mission Start
+	raiders_of_lost_ark = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			art_of_war_sc
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2530
+			mil_power = 200
+		}
+		effect = {
+		add_mil_power = -200
+			add_country_modifier = { 
+    name = lost_ark
+    duration = 7500  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	find_the_holy_grail = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			raiders_of_lost_ark
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2477
+			dip_power = 200
+		}
+		effect = {
+		add_dip_power = -200
+			add_country_modifier = { 
+    name = holy_grail
+    duration = 7500  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_grand_ship = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			find_the_holy_grail
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 3143
+			adm_power = 200
+		}
+		effect = {
+		add_adm_power = -200
+			add_country_modifier = { 
+    name = grand_ship
+    duration = 7500  
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

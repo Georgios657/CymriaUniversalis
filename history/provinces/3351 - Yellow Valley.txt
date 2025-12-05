@@ -1,0 +1,12 @@
+add_core = AS3
+owner = AS3
+controller = AS3
+culture = yellow_harpia
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Shish"
+is_city = yes

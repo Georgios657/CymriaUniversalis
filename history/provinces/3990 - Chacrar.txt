@@ -1,0 +1,16 @@
+add_core = MO3
+owner = MO3
+controller = MO3
+culture = chaararian
+religion = tilidian_little_gods
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = cotton
+base_manpower = 2
+capital = "Chacrar"
+is_city = yes
+add_permanent_province_modifier = {
+	name = minor_estuary_modifier
+	duration = -1
+}

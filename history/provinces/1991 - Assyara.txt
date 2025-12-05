@@ -1,0 +1,13 @@
+add_core = AR4
+owner = AR4
+controller = AR4
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = naval_supplies
+base_manpower = 2
+capital = "Assyara"
+is_city = yes
+culture = yatarian
+religion = nyamism
+fort_15th = yes

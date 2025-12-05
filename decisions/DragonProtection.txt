@@ -1,0 +1,47 @@
+country_decisions = {
+	pay_protection_money = {
+		potential = {
+		 	 	any_neighbor_country = { 
+				tag = HE2
+				ai = yes
+				}
+			
+			 	is_subject = no
+			
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+		
+		years_of_income = 2
+			NOT = {
+			OR = {
+			truce_with = HE2
+						war_with = HE2
+			}
+
+			}
+			
+	
+		}
+		effect = {
+			add_years_of_income = -2
+			add_truce_with = HE2
+			HE2 = {
+			add_manpower = 1
+			}
+			
+		}
+		ai_will_do = {
+			factor = 50
+			
+			
+						modifier = {
+				factor = 0.0
+				 	army_size = HE2
+			}
+		}
+		ai_importance = 0 #
+	}
+	
+}

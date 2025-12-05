@@ -1,0 +1,42 @@
+bookmark =
+{
+	name = "TWIN_RIVER"
+	desc = "TWIN_RIVER_DESC"
+	date = 1444.1.1
+	
+	country = MI0
+	country = MI1
+	country = MI2
+	country = MI3
+	country = MI4
+	country = MI5
+	country = MI6
+	
+	country = ZR0
+	country = ZR1
+	country = ZR2
+	country = ZR4
+	country = ZR3
+	country = ZR5
+	country = ZR6
+	country = ZR7
+	country = ZR8
+	
+	country = ES1
+	country = ES2
+	country = ES3
+	country = ES4
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

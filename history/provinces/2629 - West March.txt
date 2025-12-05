@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 3
+base_production = 5
+trade_goods = livestock
+base_manpower = 3
+capital = "West Keep"
+is_city = yes
+culture = khaserini
+religion = imperial_cult
+add_core = AN7

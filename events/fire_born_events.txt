@@ -1,0 +1,135 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = fire_born_events
+
+province_event = {
+	id = fire_born_events.1
+	title = fire_born_events.1.t
+	desc = fire_born_events.1.desc
+
+	picture = RELIGION_eventPicture
+
+	mean_time_to_happen = {
+	months = 360
+
+	}
+
+	trigger = {
+	owner = {
+	tag = QA6		
+		NOT = {
+	has_estate_privilege = estate_church_banned_fire_borns
+	}
+	}
+
+
+	has_province_modifier = fire_born_plague
+	}
+	option = {
+	name = fire_born_events.1.a		
+	add_devastation = 50
+		}
+
+	}
+	
+province_event = {
+	id = fire_born_events.2
+	title = fire_born_events.1.t
+	desc = fire_born_events.1.desc
+
+	picture = RELIGION_eventPicture
+
+	mean_time_to_happen = {
+	months = 360
+
+	}
+
+	trigger = {
+	owner = {
+	tag = QA6		
+		NOT = {
+	has_estate_privilege = estate_church_banned_fire_borns
+	}
+	}
+
+
+	has_province_modifier = fire_born_plague
+	}
+	option = {
+	name = fire_born_events.1.a		
+	 	add_local_autonomy = 25
+		}
+
+	}	
+	
+province_event = {
+	id = fire_born_events.3
+	title = fire_born_events.1.t
+	desc = fire_born_events.1.desc
+
+	picture = RELIGION_eventPicture
+
+	mean_time_to_happen = {
+	months = 760
+
+	}
+
+	trigger = {
+	owner = {
+	tag = QA6		
+	NOT = {
+	has_estate_privilege = estate_church_banned_fire_borns
+	}
+	}
+
+
+	has_province_modifier = fire_born_plague
+	}
+	option = {
+	name = fire_born_events.1.a		
+		owner = {
+		add_stability = -1
+		}
+		}
+
+	}
+
+####start up
+country_event = {
+	id = fire_born_events.4
+	title =fire_born_events.4.t
+	desc = fire_born_events.4.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+		fire_only_once = yes
+
+
+	option = {
+	name = fire_born_events.4.a		
+		ai_chance = { factor = 20 }
+		add_stability = -1
+		add_war_exhaustion = 10
+		
+		2113 = {
+		spawn_rebels = {
+    type = pretender_rebels
+    size = 2
+    leader = Haile
+	leader_dynasty = Abyssiaassa
+}
+		}
+		
+		2127 = {
+		spawn_rebels = {
+    type = leadered_peasant_rebels
+    size = 2
+}
+		}		
+	}
+	

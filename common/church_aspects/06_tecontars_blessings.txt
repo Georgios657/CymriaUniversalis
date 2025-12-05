@@ -1,0 +1,109 @@
+the_first_law = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+		horde_unity = 0.5
+		republican_tradition = 0.2
+		devotion = 0.5
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			NOT = {
+				OR = {
+					legitimacy = 70
+					republican_tradition = 70
+					devotion = 70
+				}
+			}
+		}
+	}
+}
+
+the_second_law = {
+	is_blessing = yes
+
+	modifier = {
+		tolerance_own = 1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			NOT = {
+				manpower = 4
+			}
+		}
+	}
+}
+
+the_third_law = {
+	is_blessing = yes
+
+	modifier = {
+		global_missionary_strength = 0.015
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.9
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.7
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.5
+			}
+		}
+	}
+}
+
+the_fifth_law = {
+	is_blessing = yes
+
+	modifier = {
+		 	missionary_maintenance_cost = -0.5
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.9
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.7
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.5
+			}
+		}
+	}
+}
+
+the_last_law = {
+	is_blessing = yes
+
+	modifier = {
+		morale_damage = 0.1
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}

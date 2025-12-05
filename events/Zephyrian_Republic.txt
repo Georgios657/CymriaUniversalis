@@ -1,0 +1,125 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = zephy_rep
+
+country_event = {
+	id = zephy_rep.1
+	title = zephy_rep.1.t
+	desc = {
+		desc = zephy_rep.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	trigger = {
+	has_reform = freed_slaves_reform
+	}
+		mean_time_to_happen = {
+		months = 240
+		
+			modifier = {
+		factor = 0.8
+		ruler_age = 50
+	}
+
+			modifier = {
+		factor = 0.8
+		ruler_age = 60
+	}
+	
+			modifier = {
+		factor = 0.8
+			NOT = {
+			mil = 2
+			}
+	}
+
+			modifier = {
+		factor = 0.5
+			NOT = {
+			republican_tradition = 50
+			}
+	}	
+
+			modifier = {
+		factor = 0.5
+			NOT = {
+			 	stability = -1
+			}
+	}	
+		}
+
+	option = {
+		name = zephy_rep.1.a	
+		add_republican_tradition = -20
+		}
+		
+			option = {
+		name = zephy_rep.1.b		
+		
+		random_list = {
+	 30 = {
+        add_stability = 1
+		
+		modifier = {
+			factor = 1.5
+			mil = 6
+		}		
+		
+		modifier = {
+			factor = 2
+			stability = 2
+		}
+    }
+	
+    15 = {
+        	kill_ruler = yes
+		modifier = {
+			factor = 2
+			ruler_age = 50
+		}
+		modifier = {
+			factor = 2
+			ruler_age = 60
+		}		
+		modifier = {
+			factor = 2
+			NOT = {
+			mil = 3
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+			mil = 2
+			}
+		}		
+    }
+    25 = {
+        add_republican_tradition = 10
+		kill_leader = {
+    type = general
+}
+
+		modifier = {
+			factor = 2
+			NOT = {
+			ruler_age = 50
+			}
+		}
+		
+	modifier = {
+			factor = 2
+			mil = 4
+		}
+    }
+
+}
+
+		}
+	}

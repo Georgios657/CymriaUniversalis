@@ -1,0 +1,22 @@
+bookmark =
+{
+	name = "ALMOSASZRA"
+	desc = "ALMOSASZRA_DESC"
+	date = 1444.1.1
+	
+	country = LD4
+
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

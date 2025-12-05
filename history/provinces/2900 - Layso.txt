@@ -1,0 +1,13 @@
+add_core = AI1
+owner = AI1
+controller = AI1
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = cloth
+base_manpower = 4
+capital = "Layso"
+is_city = yes
+culture = kalyrian
+religion = rozalia
+add_core = NC7

@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = scorpion_kingdom_reform
+government_rank = 2
+technology_group = selen_tech
+primary_culture = tiamian
+religion = ishtara
+capital = 2493
+religious_school = the_grey_wanderer
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Ashim"
+		name = "Ishan"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+}

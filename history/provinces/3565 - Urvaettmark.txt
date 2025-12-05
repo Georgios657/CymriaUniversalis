@@ -1,0 +1,12 @@
+add_core = TN5
+owner = TN5
+controller = TN5
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fur
+base_manpower = 2
+capital = "Uveratt"
+is_city = yes
+culture = river_trolls
+religion = the_great_catfish

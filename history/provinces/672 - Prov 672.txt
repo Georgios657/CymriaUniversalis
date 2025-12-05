@@ -1,0 +1,15 @@
+add_core = LC1
+owner = LC1
+controller = LC1
+culture = gessi
+religion = amatism_faith
+hre = yes
+base_tax = 6
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Gessa"
+is_city = yes
+discovered_by = ottoman
+center_of_trade = 1
+fort_15th = yes

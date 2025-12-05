@@ -1,0 +1,12 @@
+add_core = QA4
+owner = QA4
+controller = QA4
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = gold
+base_manpower = 4
+capital = "Tchalla"
+is_city = yes
+culture = botosi
+religion = azarian_folk_tales

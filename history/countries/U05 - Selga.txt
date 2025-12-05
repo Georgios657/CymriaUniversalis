@@ -1,0 +1,23 @@
+government = undead_government
+add_government_reform = old_empire_hecontarchia
+government_rank = 1
+technology_group = muslim
+primary_culture = politi
+religion = undead_imperial_faith
+capital = 156	# Bayreuth
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+120.1.1 = {
+	monarch = {
+		name = "Tatus"
+		dynasty = "Selgestes"
+		birth_date = 12.9.21
+		dip = 1
+		adm = 1
+		mil = 0
+		
+	}
+		
+}
+

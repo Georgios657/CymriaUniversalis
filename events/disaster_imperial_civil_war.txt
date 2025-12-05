@@ -1,0 +1,310 @@
+namespace = imperial_civil_war
+
+#  Imperial Civil War Starts
+country_event = {
+	id = imperial_civil_war.1
+	title = imperial_civil_war.1.t
+	desc = imperial_civil_war.1.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	random_owned_province = {
+	add_unrest = 15
+	
+	spawn_rebels = {
+    type = pretender_rebels
+    size = 4
+}
+	}
+		random_owned_province = {
+	add_unrest = 15
+	
+	spawn_rebels = {
+    type = pretender_rebels
+    size = 4
+}
+	}
+		random_owned_province = {
+	add_unrest = 15
+	
+	spawn_rebels = {
+    type = pretender_rebels
+    size = 3
+}
+	}
+		random_owned_province = {
+	add_unrest = 15
+	
+	spawn_rebels = {
+    type = pretender_rebels
+    size = 3
+}
+	}
+	
+	
+	}
+	
+	
+	option = {
+		name = imperial_civil_war.1.a
+		add_stability = -6
+		add_legitimacy = -50
+		set_country_flag = imp_civil_war
+	}
+
+}
+
+# Imperial Civil War Ends
+country_event = {
+	id = imperial_civil_war.2
+	title = imperial_civil_war.2.t
+	desc = imperial_civil_war.2.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = imperial_civil_war.2.a
+		add_stability = 1
+		add_legitimacy = 20
+	}
+}
+
+
+# More Pretenders
+country_event = {
+	id = imperial_civil_war.3
+	title = imperial_civil_war.3.t
+	desc = imperial_civil_war.3.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = imperial_civil_war.3.a
+		random_owned_province = {
+	spawn_rebels = {
+    type = pretender_rebels
+    size = 5
+    leader = rebel_preacher
+}		
+		}
+	}
+
+}
+
+# Nationalist Uprising
+country_event = {
+	id = imperial_civil_war.4
+	title = imperial_civil_war.4.t
+	desc = imperial_civil_war.4.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+		trigger = {
+		any_owned_province = {
+		 	likely_rebels = nationalist_rebels
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = imperial_civil_war.4.a
+		random_owned_province = {
+		limit = {
+		likely_rebels = nationalist_rebels
+		}
+	spawn_rebels = {
+    type = nationalist_rebels
+    size = 5
+}		
+		}
+	}
+
+}
+
+# Higher Unrest
+country_event = {
+	id = imperial_civil_war.5
+	title = imperial_civil_war.5.t
+	desc = imperial_civil_war.5.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = imperial_civil_war.5.a
+		every_owned_province = {
+		 	add_unrest = 5
+		}
+	}
+
+}
+
+# Stability problems
+country_event = {
+	id = imperial_civil_war.6
+	title = imperial_civil_war.6.t
+	desc = imperial_civil_war.6.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = imperial_civil_war.6.a
+		add_stability = -1
+	}
+
+}
+
+# Great Uprising
+country_event = {
+	id = imperial_civil_war.7
+	title = imperial_civil_war.7.t
+	desc = imperial_civil_war.7.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+		trigger = {
+		any_owned_province = {
+		 	likely_rebels = nationalist_rebels
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = imperial_civil_war.7.a
+		every_owned_province = {
+		limit = {
+		likely_rebels = nationalist_rebels
+		}
+	spawn_rebels = {
+    type = nationalist_rebels
+    size = 2
+}		
+		}
+	}
+
+}
+
+# Claimant Supports us
+country_event = {
+	id = imperial_civil_war.8
+	title = imperial_civil_war.8.t
+	desc = imperial_civil_war.8.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = imperial_civil_war.8.a
+		add_legitimacy = 15
+	}
+
+}
+
+# Base support
+country_event = {
+	id = imperial_civil_war.9
+	title = imperial_civil_war.9.t
+	desc = imperial_civil_war.9.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	
+	}
+	
+	
+	option = {
+		name = imperial_civil_war.9.a
+		add_stability = 1
+	}
+
+}

@@ -1,0 +1,17 @@
+add_core = EP3
+add_core = EP0
+add_core = EP2
+owner = EP2
+controller = EP2
+culture = sunoria
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Oben"
+is_city = yes
+religion = moon_and_sun
+discovered_by = chinese
+discovered_by = selen_tech

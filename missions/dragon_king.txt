@@ -1,0 +1,779 @@
+##BranchStart 0
+dragon1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE2 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	mirror_dragon = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	splendor = 400
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_poison_snake = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			mirror_dragon
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	splendor = 800
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	cara_and_nadiya = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			the_poison_snake
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	splendor = 1200
+		}
+		effect = {
+			add_prestige = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	pass_of_patala = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			secure_ganchin
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1210
+		}
+		effect = {
+						mahadevpura_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	invade_patala = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			pass_of_patala
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		controls = 1311
+					mahadevpura_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+						nagava_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	burn_the_jungle = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			invade_patala
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 32 # how many provinces should be owned in the areas below
+					region = nagava_region # this can also be region or colonial region
+			}
+		}
+		effect = {
+			add_permanent_claim = 868
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_new_dragon_emperor = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			burn_the_jungle
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 868
+		}
+		effect = {
+						the_phoenix_empire = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+dragon2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE2 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	assemble_the_dragon = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		army_size_percentage = 1
+			estate_loyalty = {
+    estate = estate_dragon
+    loyalty = 60
+}
+		}
+		effect = {
+			add_country_modifier = { 
+    name = dragon_call
+    duration = 3650  
+}
+			lonhonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tialong_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	fire_and_blood = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			assemble_the_dragon
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 12 # how many provinces should be owned in the areas below
+					region = qareli_region # this can also be region or colonial region
+			}			
+		}
+		effect = {
+			qareli_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_ganchin = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			fire_and_blood
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				owns = 1225
+		}
+		effect = {
+			hue_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_plateau = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			secure_ganchin
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 24 # how many provinces should be owned in the areas below
+					region = hue_region # this can also be region or colonial region
+			}	
+		}
+		effect = {
+		add_treasury = 2500
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_northern_mountains = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			the_plateau
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						qingzhu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+									lao_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+												wuseng_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_stone_in_krania = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			all_the_parts
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			controls = 549
+		}
+		effect = {
+			add_republican_tradition = 10
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+dragon3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE2 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	born_of_fire = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			religious_unity = 0.99
+		}
+		effect = {
+			add_republican_tradition = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	heralds_of_the_sun = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			born_of_fire
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = obj_convert_10_provinces_tooltip
+				check_variable = { which = num_converted_religion value = 10 }
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+    name = dragon_gods
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	shrines_of_our_glory = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			heralds_of_the_sun
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			temple = 25
+		}
+		effect = {
+			add_country_modifier = { 
+    name = dragon_glory
+    duration = 7250  
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_colder_day = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			shrines_of_our_glory
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			current_age = age_of_reformation
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	all_the_parts = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			the_colder_day
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size = 50
+		}
+		effect = {
+			add_permanent_claim = 1311
+			add_permanent_claim = 549
+			add_permanent_claim = 788
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_stone_of_patala = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			all_the_parts
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			controls = 1311
+		}
+		effect = {
+			add_republican_tradition = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_unfinished_sun = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			the_stone_in_milesia
+			the_stone_of_patala
+			the_stone_in_krania
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	stability = 2
+							1206 = {
+				owned_by = ROOT
+				}
+										1205 = {
+				owned_by = ROOT
+				}
+		}
+		effect = {
+				add_permanent_claim = 56
+				add_permanent_claim = 1158
+				add_permanent_claim = 553
+		1206 = {
+			add_province_modifier = { 
+			name = the_new_sun
+			duration = -1  
+		}		
+		}
+		1205 = {
+			add_province_modifier = { 
+			name = the_new_sun
+			duration = -1  
+		}		
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_pillars = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			the_unfinished_sun
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			controls = 56
+			controls = 1158
+			controls = 553
+		}
+		effect = {
+			set_global_flag = new_sun
+			 every_province = {
+				limit = {
+				has_province_modifier = harsh_winter
+				}
+				remove_province_modifier = harsh_winter
+				}
+		every_province = {
+				limit = {
+				has_province_modifier = harsher_winter
+				}
+				remove_province_modifier = harsher_winter
+				}
+			every_province = {
+				limit = {
+				has_province_modifier = harshest_winter
+				}
+				remove_province_modifier = harshest_winter
+				}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+dragon4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE2 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_gardens_of_joy = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		1206 = {
+		num_of_times_improved = 5
+		}
+		}
+		effect = {
+		1206 = {
+		add_great_project_tier = {
+			type = dragon_queen_garden
+			tier = 1
+		}		
+		}
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	homes_for_dragonborn = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			the_gardens_of_joy
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8 # how many provinces should be owned in the areas below
+					 	culture = mountain_dragon
+			}
+		}
+		effect = {
+			 	add_army_tradition = 33
+		}
+	}
+	##Mission End
+	##Mission Start
+	meet_human_traders = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			homes_for_dragonborn
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+			trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+		}
+		effect = {
+			add_mercantilism = 20
+		}
+	}
+	##Mission End
+	##Mission Start
+	seek_wisdom = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			meet_human_traders
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			innovativeness = 15
+		}
+		effect = {
+			 	add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	build_schools = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			seek_wisdom
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			university = 5
+		}
+		effect = {
+		 	change_innovativeness = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_stone_in_milesia = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			all_the_parts
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			controls = 788
+		}
+		effect = {
+			add_republican_tradition = 10
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+dragon5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE2 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission End
+	##Mission Start
+	the_long_roads = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			meet_human_traders
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		owns = 1225
+		owns = 1205
+		1225 = {
+				province_has_center_of_trade_of_level = 3
+		}
+		1205 = {
+				province_has_center_of_trade_of_level = 3				
+		}
+		}
+		effect = {
+			1205 = {
+			 	add_base_tax = 3
+			}
+			1225 = {
+			 	add_base_tax = 3
+			}
+			
+			add_owned_provinces_development_ducats = {
+    multiplier = 2
+    age_multiplier = 1
+    trigger = { culture = mountain_dragon }
+	}
+		}
+	}
+	##Mission End
+	##Mission Start
+	promote_local_production = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			the_long_roads
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			calc_true_if = {
+				desc = build_manufactories_mission_tooltip
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		effect = {
+			add_mercantilism = 25
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

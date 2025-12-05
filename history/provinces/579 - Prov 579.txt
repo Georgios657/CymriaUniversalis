@@ -1,0 +1,15 @@
+add_core = LA0
+owner = LA0
+controller = LA0
+culture = lascarian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 5
+capital = "Russee"
+is_city = yes
+discovered_by = ottoman
+
+fort_15th = yes

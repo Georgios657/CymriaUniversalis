@@ -1,0 +1,13 @@
+add_core = LB2
+owner = LB2
+controller = LB2
+culture = kalinian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 4
+trade_goods = naval_supplies
+base_manpower = 2
+capital = "Tarano"
+is_city = yes
+discovered_by = ottoman

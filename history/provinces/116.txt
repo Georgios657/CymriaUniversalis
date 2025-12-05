@@ -1,0 +1,14 @@
+add_core = I20
+owner = I20
+controller = I20
+culture = capitilian
+religion = old_imperial_faith
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = glass
+base_manpower = 2
+capital = "Western"
+is_city = yes
+discovered_by = western
+fort_15th = yes

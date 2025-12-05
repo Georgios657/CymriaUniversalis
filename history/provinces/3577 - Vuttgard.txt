@@ -1,0 +1,12 @@
+add_core = TO8
+owner = TO8
+controller = TO8
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = fur
+base_manpower = 3
+capital = "Vuttgard"
+is_city = yes
+culture = snow_trolls
+religion = the_great_catfish

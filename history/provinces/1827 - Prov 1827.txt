@@ -1,0 +1,12 @@
+add_core = TW0
+owner = TW0
+controller = TW0
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = iron
+base_manpower = 2
+capital = "Lonor"
+is_city = yes
+culture = nian

@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = sollingian
+religion = old_imperial_faith
+capital = 33	# Bayreuth
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1423.1.1 = {
+	monarch = {
+		name = "Karl-Franz"
+		dynasty = "von Fuggen"
+		birth_date = 1399.9.21
+		dip = 2
+		adm = 3
+		mil = 3
+	}
+}
+

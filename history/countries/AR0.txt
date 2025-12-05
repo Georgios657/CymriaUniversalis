@@ -1,0 +1,33 @@
+government = republic
+add_government_reform = rogue_trader_reform
+government_rank = 2
+technology_group = selen_tech
+primary_culture = arakeenian
+religion = tanatism
+capital = 1973	# Bayreuth
+religious_school = oyor_the_eternal_betrayer
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Chorda"
+		name = "Abdmelqart"
+		birth_date = 1395.9.21
+		dip = 5
+		adm = 5
+		mil = 6
+	}
+
+}
+
+
+1444.1.1 = {
+		leader = {
+		name = "Baalyaton"
+		type = general
+		fire = 2
+		shock = 4
+		manuever = 2
+		siege = 0
+		death_date = 1453.7.17
+	}
+}

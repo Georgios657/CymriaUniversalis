@@ -1,0 +1,17 @@
+add_core = I23
+owner = I23
+controller = I23
+culture = nordlander
+religion = old_imperial_faith
+hre = no
+base_tax = 4 
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 2
+capital = "Sch?nburg"
+is_city = yes
+discovered_by = western
+add_permanent_province_modifier = {
+	name = minor_estuary_modifier
+	duration = -1
+}

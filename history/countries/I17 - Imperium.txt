@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = new_empire_reform
+government_rank = 3
+technology_group = western
+primary_culture = capitilian
+religion = old_imperial_faith
+capital = 70	# Bayreuth
+elector = yes
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1440.1.1 = {
+	monarch = {
+		name = "Gideon-Matthias"
+		dynasty = "zu Yach"
+		birth_date = 1401.9.21
+		dip = 3
+		adm = 4
+		mil = 2
+	}
+}
+

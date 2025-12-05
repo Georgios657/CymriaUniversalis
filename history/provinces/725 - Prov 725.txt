@@ -1,0 +1,15 @@
+add_core = LO1
+owner = LO1
+controller = LO1
+culture = lovorian
+religion = telcontarian
+hre = no
+base_tax = 10
+base_production = 5
+trade_goods = gold
+base_manpower = 5
+capital = "Lovo"
+is_city = yes
+discovered_by = ottoman
+center_of_trade = 1
+fort_15th = yes

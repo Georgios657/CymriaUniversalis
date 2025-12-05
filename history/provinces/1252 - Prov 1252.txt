@@ -1,0 +1,17 @@
+add_core = HB5
+owner = HB5
+controller = HB5
+culture = laoi
+religion = phoenix_faith
+hre = no
+base_tax = 5
+base_production = 8
+trade_goods = cloth
+base_manpower = 3
+capital = "Jeiton Di"
+is_city = yes
+discovered_by = chinese
+
+fort_15th = yes
+
+center_of_trade = 1

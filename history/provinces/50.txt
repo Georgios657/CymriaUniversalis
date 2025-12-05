@@ -1,0 +1,14 @@
+add_core = I04
+owner = I04
+controller = I04
+culture = deutscherlander
+religion = old_imperial_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 7
+capital = "Deuttenfurt"
+is_city = yes
+discovered_by = western
+fort_15th = yes

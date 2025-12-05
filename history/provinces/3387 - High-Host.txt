@@ -1,0 +1,12 @@
+add_core = AS1
+owner = AS1
+controller = AS1
+culture = ayasa
+religion = yazida
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = salt
+base_manpower = 5
+capital = "High-Host"
+is_city = yes

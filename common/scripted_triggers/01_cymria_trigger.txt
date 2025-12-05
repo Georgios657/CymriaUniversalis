@@ -1,0 +1,784 @@
+can_summon_more_banes = {
+	NOT = {
+	army_size_percentage = 1
+	}
+	OR = {
+	
+	AND = {
+	NOT = {
+	num_of_rajput = 15	
+	}
+	NOT = {
+	army_size = 100
+	}	
+	}
+
+	AND = {
+	NOT = {
+	num_of_rajput = 30
+	}
+	army_size = 100
+	NOT = {
+	army_size = 200
+	}	
+	}
+
+	AND = {
+	NOT = {
+	num_of_rajput = 45
+	}
+	army_size = 200
+	NOT = {
+	army_size = 300
+	}	
+	}
+
+	AND = {
+	NOT = {
+	num_of_rajput = 60
+	}
+	army_size = 300
+	NOT = {
+	army_size = 400
+	}	
+	}
+
+	AND = {
+	NOT = {
+	num_of_rajput = 75
+	}
+	army_size = 400
+	NOT = {
+	army_size = 500
+	}	
+	}	
+	
+	AND = {
+	NOT = {
+	num_of_rajput = 90
+	}
+	army_size = 500
+	NOT = {
+	army_size = 600
+	}	
+	}	
+
+	AND = {
+	NOT = {
+	num_of_rajput = 105
+	}
+	army_size = 600
+	NOT = {
+	army_size = 700
+	}	
+	}	
+
+	AND = {
+	NOT = {
+	num_of_rajput = 120
+	}
+	army_size = 700
+	NOT = {
+	army_size = 800
+	}	
+	}	
+
+	AND = {
+	NOT = {
+	num_of_rajput = 135
+	}
+	army_size = 800
+	NOT = {
+	army_size = 900
+	}	
+	}	
+
+	AND = {
+	NOT = {
+	num_of_rajput = 150
+	}
+	army_size = 900
+	NOT = {
+	army_size = 1000
+	}	
+	}	
+	}
+}
+
+can_summon_more_demons = {
+		NOT = {
+	army_size_percentage = 1
+	}
+	
+	OR = {
+	
+	AND = {
+	NOT = {
+	num_of_cossacks = 20	
+	}
+	NOT = {
+	army_size = 100
+	}	
+	}
+
+	AND = {
+	NOT = {
+	num_of_cossacks = 40
+	}
+	army_size = 100
+	NOT = {
+	army_size = 200
+	}	
+	}
+
+	AND = {
+	NOT = {
+	num_of_cossacks = 60
+	}
+	army_size = 200
+	NOT = {
+	army_size = 300
+	}	
+	}
+
+	AND = {
+	NOT = {
+	num_of_cossacks = 80
+	}
+	army_size = 300
+	NOT = {
+	army_size = 400
+	}	
+	}
+
+	AND = {
+	NOT = {
+	num_of_cossacks = 100
+	}
+	army_size = 400
+	NOT = {
+	army_size = 500
+	}	
+	}	
+	
+	AND = {
+	NOT = {
+	num_of_cossacks = 120
+	}
+	army_size = 500
+	NOT = {
+	army_size = 600
+	}	
+	}	
+
+	AND = {
+	NOT = {
+	num_of_cossacks = 140
+	}
+	army_size = 600
+	NOT = {
+	army_size = 700
+	}	
+	}	
+
+	AND = {
+	NOT = {
+	num_of_cossacks = 160
+	}
+	army_size = 700
+	NOT = {
+	army_size = 800
+	}	
+	}	
+
+	AND = {
+	NOT = {
+	num_of_cossacks = 180
+	}
+	army_size = 800
+	NOT = {
+	army_size = 900
+	}	
+	}	
+
+	AND = {
+	NOT = {
+	num_of_cossacks = 200
+	}
+	army_size = 900
+	NOT = {
+	army_size = 1000
+	}	
+	}	
+	}
+}
+
+
+phoenix_dynasty = {
+		OR = {
+		 	dynasty = "Feniks"
+		 	dynasty = "Eilan"
+		 	dynasty = "Shaar"
+			dynasty = "Sear Lavan"
+		}
+}
+
+
+consort_is_vampire = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_vampire
+		OR = {
+			ruler_is_vampire
+		}
+	}
+}
+
+ruler_is_vampire = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_vampire
+		OR = {
+			has_ruler_flag = vamp
+			ruler_culture = jarvinia
+			ruler_culture = aknivia
+			ruler_culture = yuutivan
+			ruler_culture = kekonnian
+			ruler_culture = sikkonen
+			ruler_culture = uli_vataan
+			ruler_culture = atta_vataan
+			ruler_culture = taevanian
+		}
+	}
+}
+
+ruler_is_dragon= {
+	custom_trigger_tooltip = {
+		OR = {
+			ruler_culture = mountain_dragon
+		}
+	}
+}
+
+ruler_is_scorpion= {
+	custom_trigger_tooltip = {
+		OR = {
+			ruler_culture = blulian
+			ruler_culture = apsuian
+			ruler_culture = tiamian
+		}
+	}
+}
+
+heir_is_scorpion = {
+	custom_trigger_tooltip = {
+		OR = {
+			heir_culture  = apsuian
+			heir_culture  = blulian
+			heir_culture  = tiamian
+
+		}
+	}
+}
+
+
+consort_is_scorpion = {
+	custom_trigger_tooltip = {
+		OR = {
+			consort_culture = apsuian
+			consort_culture = blulian
+			consort_culture = tiamian
+
+		}
+	}
+}
+
+heir_is_vampire = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_vampire
+		OR = {
+			ruler_culture = jarvinia
+			ruler_culture = aknivia
+			ruler_culture = yuutivan
+			ruler_culture = kekonnian
+			ruler_culture = sikkonen
+			ruler_culture = uli_vataan
+			ruler_culture = atta_vataan
+			ruler_culture = taevanian
+			has_ruler_flag = vamp
+			has_consort_flag = vamp
+		}
+	}
+}
+
+
+
+ruler_is_harpy = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_hapry
+		OR = {
+			ruler_culture = ayasa
+			ruler_culture = waya
+			ruler_culture = yellow_harpia
+			ruler_culture = beror
+			ruler_culture = arbor
+			ruler_culture = higa_harpia
+			ruler_culture = nago_harpia
+			ruler_culture = yama_harpia
+			ruler_culture = kaigain_harpia
+			ruler_culture = san_harpia
+			ruler_culture = shima_harpia
+		}
+	}
+}
+
+heir_is_harpy = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_harpy
+		OR = {
+			heir_culture = ayasa
+			heir_culture = waya
+			heir_culture = yellow_harpia
+			heir_culture = beror
+			heir_culture = arbor
+			heir_culture = higa_harpia
+			heir_culture = nago_harpia
+			heir_culture = yama_harpia
+			heir_culture = kaigain_harpia
+			heir_culture = san_harpia
+			heir_culture = shima_harpia
+		}
+	}
+}
+
+consort_is_harpy = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_harpy
+		OR = {
+			consort_culture = ayasa
+			consort_culture = waya
+			consort_culture = yellow_harpia
+			consort_culture = beror
+			consort_culture = arbor
+			consort_culture = higa_harpia
+			consort_culture = nago_harpia
+			consort_culture = yama_harpia
+			consort_culture = kaigain_harpia
+			consort_culture = san_harpia
+			consort_culture = shima_harpia
+		}
+	}
+}
+
+ruler_is_undead = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_undead
+		OR = {
+			ruler_culture = tritoni
+			ruler_culture = politi
+			ruler_culture = cumi
+			ruler_culture = tessarini
+			ruler_culture = erii
+		}
+	}
+}
+
+heir_is_undead = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_undead
+		OR = {
+			heir_culture = tritoni
+			heir_culture = politi
+			heir_culture = cumi
+			heir_culture = tessarini
+			heir_culture = erii
+		}
+	}
+}
+
+consort_is_undead = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_undead
+		OR = {
+			consort_culture = tritoni
+			consort_culture = politi
+			consort_culture = cumi
+			consort_culture = tessarini
+			consort_culture = erii
+		}
+	}
+}
+
+
+ruler_is_immortal = {
+	OR = {
+		has_ruler_flag = true_immortal
+	}
+}
+
+consort_is_troll = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_troll_tt
+		OR = {
+			consort_culture = snow_trolls
+			consort_culture = hill_trolls
+			consort_culture = forrest_trolls
+			consort_culture = river_trolls
+
+		}
+	}
+}
+
+heir_is_troll = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_troll_tt
+		OR = {
+			heir_culture  = snow_trolls
+			heir_culture  = hill_trolls
+			heir_culture  = forrest_trolls
+			heir_culture  = river_trolls
+
+		}
+	}
+}
+
+ruler_is_troll = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_troll_tt
+		OR = {
+			ruler_culture  = snow_trolls
+			ruler_culture  = hill_trolls
+			ruler_culture  = forrest_trolls
+			ruler_culture  = river_trolls
+
+		}
+	}
+}
+
+
+consort_is_giant = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_giant_tt
+		OR = {
+			consort_culture = muspel
+			consort_culture = jotun
+			consort_culture = niefel
+
+		}
+	}
+}
+
+heir_is_giant = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_giant_tt
+		OR = {
+			heir_culture  = muspel
+			heir_culture  = jotun
+			heir_culture  = niefel
+
+		}
+	}
+}
+
+ruler_is_giant = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_giant_tt
+		OR = {
+			ruler_culture  = muspel
+			ruler_culture  = jotun
+			ruler_culture  = niefel
+
+		}
+	}
+}
+
+
+consort_is_elv = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_elv_tt
+		OR = {
+			consort_culture = ice_elf
+			consort_culture = mountain_elv
+			consort_culture = sea_elv
+			consort_culture = desert_elv
+			consort_culture = sun_elf
+			consort_culture = forrest_elf
+
+		}
+	}
+}
+
+heir_is_elv = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_elv_tt
+		OR = {
+			heir_culture  = ice_elf
+			heir_culture  = mountain_elv
+			heir_culture  = sea_elv
+			heir_culture  = desert_elv
+			heir_culture  = sun_elf
+			heir_culture  = forrest_elf
+
+		}
+	}
+}
+
+ruler_is_elv = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_elv_tt
+		OR = {
+			ruler_culture  = ice_elf
+			ruler_culture  = sea_elv
+			ruler_culture  = mountain_elv
+			ruler_culture  = desert_elv
+			ruler_culture  = sun_elf
+			ruler_culture  = forrest_elf
+
+		}
+	}
+}
+
+consort_is_jhinn = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_jhinn_tt
+		OR = {
+			consort_culture = southern_jhinn		
+			consort_culture = northern_jinn
+
+		}
+	}
+}
+
+heir_is_jhinn = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_jhinn_tt
+		OR = {
+			heir_culture  = northern_jinn
+			heir_culture  = southern_jhinn
+
+		}
+	}
+}
+
+ruler_is_jhinn = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_jhinn_tt
+		OR = {
+			ruler_culture  = northern_jinn
+			ruler_culture  = southern_jhinn
+
+		}
+	}
+}
+
+has_magic_school = {
+OR = {
+	has_ruler_flag = necromancy
+	has_ruler_flag = elemental
+	has_ruler_flag = blood
+	has_ruler_flag = astral
+	has_ruler_flag = nature
+}
+}
+
+can_have_necromancy = {
+	OR = {	
+	culture_group  = north_trolls
+	culture_group  = northern_giants
+	culture_group  = east_harpy
+	culture_group  = peregma
+	culture_group  = vainomoi
+	culture_group  = arnian
+	culture_group  = wissian
+	culture_group  = amaria
+	culture_group  = romsque
+	culture_group  = khossor
+	culture_group  = keenian
+	culture_group  = cyusian
+	culture_group  = sumar
+	culture_group  = baylonian
+	culture_group  = baltarian
+	culture_group  = grand_zervo
+	culture_group  = atagord
+	culture_group  = saramara
+	culture_group  = krainian
+	culture_group  = undead_imperial
+			culture_group  = calernia
+	has_country_flag = necromancy_allowed
+	tag = GE8
+	}
+
+}
+
+can_not_have_necormancy = {
+	OR = {
+	has_country_flag = no_necromancy
+	}
+
+}
+
+can_have_elemental = {
+	OR = {
+		culture_group  = broden
+		culture_group  = viria
+		culture_group  = aylorian
+		culture_group  = east_harpy
+		culture_group  = lekirian
+		culture_group  = peregma
+		culture_group  = marelanda
+		culture_group  = verdani
+		culture_group  = girta
+		culture_group  = zylarian
+		culture_group  = smolder
+		culture_group  = amaria
+		culture_group  = romsque
+		culture_group  = marilian
+		culture_group  = robinian
+		culture_group  = jinnisch
+		culture_group  = minoan
+		culture_group  = shegean
+		culture_group  = grand_zervo
+		culture_group  = naga_culture
+		culture_group  = dragon_full
+			culture_group  = tian_hue
+			culture_group  = qarelian
+	culture_group  = epheretian
+	culture_group  = saramara
+	culture_group  = new_imperial
+	culture_group  = undead_imperial
+	culture_group = cymrian
+	culture_group = elvish
+
+	has_country_flag = elemental_allowed	
+	}
+
+}
+
+can_not_have_elemental = {
+	OR = {
+	has_reform = necromancy_tower
+	}
+}
+
+can_have_blood = {
+	OR = {
+	tag = CY2
+	ruler_is_vampire = yes
+	culture_group  = northern_giants
+	culture_group  = smolder
+	culture_group  = wissian
+	culture_group  = keenian
+	culture_group  = khossor
+	culture_group  = varjoren
+	culture_group  = lovian
+	has_country_flag = blood_allowed	
+	}
+
+}
+
+can_not_have_blood = {
+	OR = {
+		has_country_flag = no_blood
+	has_reform = necromancy_tower
+	}
+
+}
+
+can_have_astral = {
+	OR = {
+		culture_group  = northern_giants
+		culture_group  = broden
+		culture_group  = gelorian
+		culture_group  = lekirian
+		culture_group  = calernia
+		culture_group  = girta
+		culture_group  = arvenian
+		culture_group  = keenian
+		culture_group  = cyusian
+		culture_group  = baylonian
+		culture_group  = sumar
+		culture_group  = baltarian
+		culture_group  = kirmian
+		culture_group  = assay
+		culture_group  = thalassian
+		culture_group  = shegean
+		culture_group  = grand_zervo
+		culture_group  = valdovian
+		culture_group  = tian_hue
+		culture_group  = dragon_full
+		culture_group  = epheretian
+	culture_group  = atagord
+	culture_group  = saramara
+	culture_group  = krainian
+	culture_group  = eastern_imperial
+	culture_group  = finnlandian
+	culture_group  = berver
+	culture_group  = aiven
+	culture_group  = bostumer
+	culture_group  = milesian
+	culture_group  = tevonen
+	culture_group  = lechita
+	culture_group  = cephryian
+	culture_group  = visacarian_bestonian
+	culture_group  = lenarian
+	culture_group  = skogia
+	has_country_flag = astral_allowed	
+	}
+
+}
+
+can_not_have_astral= {
+	OR = {
+	has_reform = necromancy_tower
+		has_country_flag = no_astral
+		culture_group = north_trolls
+	}
+
+}
+
+can_have_nature = {
+	OR = {
+			culture_group  = calernia
+		culture_group  = northern_giants
+		culture_group  = north_trolls
+		culture_group  = broden
+		culture_group  = viria
+		culture_group  = aylorian
+		culture_group  = arvenian
+		culture_group  = zylarian
+		culture_group  = robinian
+		culture_group  = cyusian
+		culture_group  = minoan
+		culture_group  = kirmian
+		culture_group  = thalassian
+		culture_group  = naga_culture
+		culture_group  = dragon_full
+	culture_group  = new_imperial
+	culture_group  = eastern_imperial
+	culture_group  = finnlandian
+	culture_group  = berver
+		culture_group = norderlander
+		culture_group = aiven
+		culture_group = bostumer
+		culture_group = cephryian
+		culture_group = milesian
+		culture_group = tevonen
+		culture_group = lechita
+	culture_group = gassala
+	culture_group = talarian
+	culture_group = bescos
+	culture_group = numarian
+	culture_group = great_lascarian
+	culture_group = visacarian_bestonian
+	culture_group = skogia
+		culture_group = elvish
+	has_country_flag = nature_allowed
+	}
+
+}
+
+can_not_have_nature = {
+	OR = {
+	has_reform = necromancy_tower
+		has_country_flag = no_nature
+	}
+
+}

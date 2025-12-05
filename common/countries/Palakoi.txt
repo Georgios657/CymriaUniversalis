@@ -1,0 +1,103 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 27 71 30 }
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+    "Ariarathes" = 60
+    "Zorsines" = 60
+    "Medosades" = 60
+    "Madyes" = 60
+    "Spargapeithes" = 60
+    "Palacus" = 60
+    "Taspar" = 60
+    "Rhodogune" = 60
+    "Phrataphernes" = 60
+    "Scopasis" = 60
+    "Targitaos" = 60
+    "Scythas" = 60
+    "Lycus" = 60
+    "Darius" = 60
+    "Ateas" = 60
+    "Octamasades" = 60
+    "Herodotus" = 60
+    "Taspar" = 60
+    "Idanthyrsus" = 60
+    "Ariapithes" = 60
+    "Roxane" = -20
+    "Tomiris" = -20
+    "Amage" = -20
+    "Saurmag" = -20
+    "Zarina" = -20
+    "Thaïs" = -20
+    "Medea" = -20
+    "Rhodogune" = -20
+    "Orsabia" = -20
+    "Alkidike" = -20
+}
+
+leader_names = {
+    "Ariarathes"
+    "Zorsines"
+    "Medosades"
+    "Madyes"
+    "Spargapeithes"
+    "Palacus"
+    "Taspar"
+    "Rhodogune"
+    "Phrataphernes"
+    "Scopasis"
+    "Targitaos"
+    "Scythas"
+    "Lycus"
+    "Darius"
+    "Ateas"
+    "Octamasades"
+    "Herodotus"
+    "Idanthyrsus"
+    "Ariapithes"
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Artesh $PROVINCE$" "Cabile $PROVINCE$" "Goruh $PROVINCE$"
+}
+
+fleet_names = {
+}

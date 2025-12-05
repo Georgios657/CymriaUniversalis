@@ -1,0 +1,36 @@
+bookmark =
+{
+	name = "EDGE_OF_WORLD"
+	desc = "EDGE_OF_WORLD_DESC"
+	date = 1444.1.1
+	
+	country = GW8
+	country = TO1
+	country = TO2
+	country = TO3
+	country = TO4
+	country = TO5
+	country = TO6
+	country = TO7
+	country = TO8
+	country = TO9
+	country = TN1
+	country = TN2
+	country = TN3
+	country = TN4
+	country = TN5
+
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

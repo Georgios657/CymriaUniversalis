@@ -1,0 +1,14 @@
+add_core = ZR3
+owner = ZR3
+controller = ZR3
+religion = yazida
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = iron
+base_manpower = 4
+capital = "Kavaradan"
+is_city = yes
+culture = tarsuvanian
+center_of_trade = 1
+fort_15th = yes

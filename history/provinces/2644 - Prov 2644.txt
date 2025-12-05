@@ -1,0 +1,14 @@
+
+culture = hegytori
+religion = rozalia
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Pledenfield"
+is_city = no
+
+native_size = 90
+native_ferocity = 20
+native_hostileness = 20

@@ -1,0 +1,31 @@
+government = undead_government
+add_government_reform = old_empire_hecontarchia
+government_rank = 1
+technology_group = muslim
+primary_culture = tritoni
+religion = undead_imperial_faith
+capital = 177	# Bayreuth
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+120.1.1 = {
+	monarch = {
+		name = "Titus Tolatus"
+		dynasty = "Tritoni"
+		birth_date = 12.9.21
+		dip = 4
+		adm = 2
+		mil = 4
+		
+				leader = {
+			name = "Titus Tritoni"	 # Name of the leader
+			type = general	   # Type of leader: general, admiral, explorer, conquistidor
+			fire = 0
+			shock = 5
+			manuever = 6
+			siege = 2
+		}
+	}
+		
+}
+

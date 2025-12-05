@@ -1,0 +1,13 @@
+add_core = AS2
+owner = AS2
+controller = AS2
+culture = waya
+religion = yazida
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = iron
+base_manpower = 4
+capital = "Way"
+is_city = yes
+center_of_trade = 1

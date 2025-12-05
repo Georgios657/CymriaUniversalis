@@ -1,0 +1,16 @@
+add_core = ZD5
+owner = ZD5
+controller = ZD5
+culture = sagen
+religion = phoenix_faith
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = livestock
+base_manpower = 5
+capital = "Sagen"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+
+center_of_trade = 1

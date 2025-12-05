@@ -1,0 +1,15 @@
+add_core = ZE6
+owner = ZE6
+controller = ZE6
+culture = karen
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = wool
+base_manpower = 2
+capital = "Karen"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+fort_15th = yes

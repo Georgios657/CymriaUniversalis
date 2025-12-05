@@ -1,0 +1,11 @@
+culture = lek
+religion = the_silvern_guide
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+capital = "Mustar"
+is_city = no
+native_size = 40
+native_ferocity = 5
+native_hostileness = 5

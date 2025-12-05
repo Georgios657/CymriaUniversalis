@@ -1,0 +1,12 @@
+add_core = GE2
+owner = GE2
+controller = GE2
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = sugar
+base_manpower = 3
+capital = "Thorvin"
+is_city = yes
+culture = trystane
+religion = velora

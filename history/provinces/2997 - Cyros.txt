@@ -1,0 +1,14 @@
+add_core = AI4
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Cyros"
+is_city = yes
+culture = tyraso
+religion = icearia
+add_core = NC7
+add_core = NC9

@@ -1,0 +1,12 @@
+add_core = WI4
+owner = WI4
+controller = WI4
+culture = high_jinai
+religion = mrogi_wa_damu
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = tea
+base_manpower = 3
+capital = "Biellan"
+is_city = yes

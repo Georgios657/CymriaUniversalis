@@ -1,0 +1,15 @@
+add_core = ZC9
+add_core = ZB2
+owner = ZB2
+controller = ZB2
+culture = kidonia
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Pril"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

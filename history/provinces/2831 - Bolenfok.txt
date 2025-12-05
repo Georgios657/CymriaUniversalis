@@ -1,0 +1,18 @@
+add_core = HY8
+owner = HY8
+controller = HY8
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 3
+capital = "Bolenfok"
+is_city = yes
+culture = shima_harpia
+religion = winged_one
+
+
+add_permanent_province_modifier = {
+	name = strait_modifier
+	duration = -1
+}

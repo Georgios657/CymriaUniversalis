@@ -1,0 +1,389 @@
+the_holy_mountains = {
+	icon = estate_god_telcontar_privilege_holy_swamp
+	max_absolutism = -10
+	land_share = 5	
+	is_valid = {
+		any_owned_province = {
+		OR = {
+			has_terrain = mountain
+		}
+		}
+	
+		
+	}
+	
+	on_granted = {
+		custom_tooltip = holy_mountains
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = mountain	
+				}
+				add_province_modifier = {
+					name = holy_m
+					duration = -1
+				}
+			}
+		}
+	}
+		on_granted_province = {
+			if = {
+				limit = {
+					has_terrain = mountain	
+				}
+				add_province_modifier = {
+					name = holy_m
+					duration = -1
+				}
+			}
+		}		
+
+	
+		mechanics = {
+		exempt_from_seize_land
+	}
+	
+	influence = 0.05
+	benefits = { 
+		
+	}
+	penalties = {
+	
+	}
+	
+	on_revoked = { 
+			custom_tooltip = holy_mountains_rev
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = holy_m
+		
+					}
+				}
+				remove_province_modifier = holy_m
+			}
+		}
+		
+	add_estate_loyalty = {
+    estate = estate_god_earth
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 30 }
+				estate_influence = {
+					estate = estate_god_earth
+					influence = 95
+				}
+			}
+			NOT = { has_estate_privilege = the_holy_mountains }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 35 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 55 }
+				}
+			}
+			NOT = { has_estate_privilege = the_holy_mountains }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+	}
+	}
+	
+safety_of_earth = {
+	icon = estate_god_peace_and_prosper
+	max_absolutism = -10
+	is_valid = {
+	
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = { 
+		 
+	}
+	
+	modifier_by_land_ownership = {
+		 	defensiveness = 0.10
+			garrison_size = 0.10
+	}	
+	
+	penalties = {
+		 	missionary_maintenance_cost = 0.5
+	}
+	
+	on_revoked = { 
+		add_estate_loyalty = {
+		estate = estate_god_earth
+		loyalty = -20
+		}
+	}
+	
+	ai_will_do = {
+
+	}	
+}	
+
+honor_the_old_lady = {
+	icon = estate_god_peace_and_prosper
+	max_absolutism = -5
+	is_valid = {
+	
+	}
+	influence = 0.05
+	loyalty = 0.05
+	benefits = { 
+		tolerance_own = 0.5	 
+	}
+
+	penalties = {
+		 prestige = -0.25 	
+	}
+	
+	on_revoked = { 
+		add_estate_loyalty = {
+		estate = estate_god_earth
+		loyalty = -20
+		}
+	}
+	
+	ai_will_do = {
+
+	}	
+}	
+
+harvest_festivals = {
+	icon = estate_god_peace_and_prosper
+	max_absolutism = -10
+	is_valid = {
+	
+	}
+	influence = 0.00
+	loyalty = 0.05
+	benefits = { 
+	}
+
+	penalties = {
+		 production_efficiency = -0.1
+	}
+	
+	on_revoked = { 
+		add_estate_loyalty = {
+		estate = estate_god_earth
+		loyalty = -20
+		}
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+hills_forts = {
+	icon = estate_god_telcontar_privilege_holy_swamp
+	max_absolutism = -10
+	influence = 0.05
+	is_valid = {
+		any_owned_province = {
+		OR = {
+			has_terrain = mountain
+			has_terrain = hills
+			has_terrain = highlands
+		}
+
+		}
+	
+		
+	}
+	
+	on_granted = {
+		custom_tooltip = hill_fort
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+		OR = {
+			has_terrain = mountain
+			has_terrain = hills
+			has_terrain = highlands
+		}
+				}
+				add_province_modifier = {
+					name = hill_forto
+					duration = -1
+				}
+			}
+		}
+	}
+		on_granted_province = {
+			if = {
+				limit = {
+		OR = {
+			has_terrain = mountain
+			has_terrain = hills
+			has_terrain = highlands
+		}
+				}
+				add_province_modifier = {
+					name = hill_forto
+					duration = -1
+				}
+			}
+		}		
+
+	
+		mechanics = {
+	}
+	
+	influence = 0.05
+	benefits = { 
+		
+	}
+	penalties = {
+	
+	}
+	
+	on_revoked = { 
+			custom_tooltip = hill_fort_rev
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = hill_forto
+		
+					}
+				}
+				remove_province_modifier = hill_forto
+			}
+		}
+		
+	add_estate_loyalty = {
+    estate = estate_god_earth
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 30 }
+				estate_influence = {
+					estate = estate_god_earth
+					influence = 95
+				}
+			}
+			NOT = { has_estate_privilege = hills_forts }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 35 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 55 }
+				}
+			}
+			NOT = { has_estate_privilege = hills_forts }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+	}
+	}
+	
+earth_burial = {
+	icon = estate_god_telcontar_privilege_holy_swamp
+	max_absolutism = -20
+	influence = 0.05
+	is_valid = {
+
+	
+		
+	}
+	
+	on_granted = {
+		custom_tooltip = earth_burial_tip
+	}
+
+	
+		mechanics = {
+	}
+	
+	influence = 0.05
+	benefits = { 
+		
+	}
+	penalties = {
+	
+	}
+	
+	on_revoked = { 
+			custom_tooltip = earth_burial_rev
+		
+	add_estate_loyalty = {
+    estate = estate_god_earth
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 30 }
+				estate_influence = {
+					estate = estate_god_earth
+					influence = 95
+				}
+			}
+			NOT = { has_estate_privilege = earth_burial }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 35 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 55 }
+				}
+			}
+			NOT = { has_estate_privilege = earth_burial }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+	}
+	}	

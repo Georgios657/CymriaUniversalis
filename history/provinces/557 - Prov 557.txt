@@ -1,0 +1,15 @@
+add_core = S18
+owner = S18
+controller = S18
+culture = gothrian
+religion = katrova_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = livestock
+base_manpower = 3
+capital = "Gothria"
+is_city = yes
+discovered_by = indian
+discovered_by = nomad_group
+center_of_trade = 1

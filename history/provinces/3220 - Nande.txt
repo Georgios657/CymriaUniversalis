@@ -1,0 +1,12 @@
+add_core = GE5
+owner = GE5
+controller = GE5
+hre = no
+base_tax = 4
+base_production =4
+trade_goods = grain
+base_manpower = 3
+capital = "Nande"
+is_city = yes
+culture = ithilan
+religion = velora

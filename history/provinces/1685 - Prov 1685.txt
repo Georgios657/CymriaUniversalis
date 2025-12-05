@@ -1,0 +1,12 @@
+add_core = MI3
+owner = MI3
+controller = MI3
+culture = eastern_laker
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Kleron"
+is_city = yes
+religion = moon_and_sun

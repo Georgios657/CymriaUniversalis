@@ -1,0 +1,520 @@
+
+namespace = heavensfather
+
+country_event = {
+	id = heavensfather.1
+	title = heavensfather.1.t
+	desc = heavensfather.1.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.1.a					
+		add_estate_loyalty = {
+			estate = estate_god
+			loyalty = -10
+		}
+		}
+		
+	option = {
+		name = heavensfather.1.b				
+		change_government_reform_progress = -25
+		}
+	}		
+	
+country_event = {
+	id = heavensfather.2
+	title = heavensfather.2.t
+	desc = heavensfather.2.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			
+			 	
+
+estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.2.a			
+		add_legitimacy = 10
+		}
+		
+	}	
+
+country_event = {
+	id = heavensfather.3
+	title = heavensfather.3.t
+	desc = heavensfather.3.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.3.a			
+		add_legitimacy = -20
+		}
+		
+	}	
+	
+country_event = {
+	id = heavensfather.4
+	title = heavensfather.4.t
+	desc = heavensfather.4.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.4.a			
+		add_stability = 1
+		}
+		
+	}	
+	
+country_event = {
+	id = heavensfather.5
+	title = heavensfather.5.t
+	desc = heavensfather.5.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.5.a			
+		add_legitimacy = 10
+		add_estate_loyalty = {
+			estate = estate_god
+			loyalty = 10
+		}		
+		
+		}
+		
+	}	
+	
+	
+province_event = {
+	id = heavensfather.6
+	title = heavensfather.6.t
+	desc = heavensfather.6.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+			owner = {
+			AND = {
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	NOT = {		
+	estate_loyalty = {
+			estate = estate_god
+			loyalty = 30
+		}	
+		}				
+			}
+			}
+		
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.6.a			
+
+		add_devastation = 75
+			
+		
+		}
+		
+	}	
+	
+province_event = {
+	id = heavensfather.7
+	title = heavensfather.7.t
+	desc = heavensfather.7.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			owner = {
+			AND = {
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	NOT = {		
+	estate_loyalty = {
+			estate = estate_god
+			loyalty = 30
+		}	
+		}				
+			}
+			}
+	
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.7.a			
+		add_devastation = 25
+			
+		
+		}
+		
+	}
+
+province_event = {
+	id = heavensfather.8
+	title = heavensfather.8.t
+	desc = heavensfather.8.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			
+			owner = {
+			
+			AND = {
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+		
+		OR = {
+			has_terrain = forest
+			has_terrain = woods
+		}
+	
+	NOT = {		
+	estate_loyalty = {
+			estate = estate_god
+			loyalty = 30
+		}	
+		}			
+			}
+				
+			
+			
+			
+			
+			
+			
+			
+			}
+	
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.8.a			
+		add_devastation = 50					
+		}
+		
+	}	
+
+country_event = {
+	id = heavensfather.9
+	title = heavensfather.9.t
+	desc = heavensfather.9.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+				NOT = {		
+	estate_loyalty = {
+			estate = estate_god
+			loyalty = 20
+		}	
+		}
+		has_heir = yes
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.9.a			
+		kill_heir = { allow_new_heir = no }		
+		
+		}
+		
+	}	
+	
+country_event = {
+	id = heavensfather.10
+	title = heavensfather.10.t
+	desc = heavensfather.10.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+				NOT = {		
+	estate_loyalty = {
+			estate = estate_god
+			loyalty = 20
+		}	
+		}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.10.a			
+		add_stability = -1
+		random_owned_province = {
+		spawn_rebels = {
+			type = noble_rebels
+			size = 1
+		}		
+		}
+
+		
+		}
+		
+	}	
+
+country_event = {
+	id = heavensfather.11
+	title = heavensfather.11.t
+	desc = heavensfather.11.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+				NOT = {		
+	estate_loyalty = {
+			estate = estate_god
+			loyalty = 10
+		}	
+		}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.11.a			
+		kill_ruler = yes
+		add_estate_loyalty = {
+			estate = estate_god
+			loyalty = 20
+		}		
+		}	
+	}	
+
+country_event = {
+	id = heavensfather.12
+	title = heavensfather.12.t
+	desc = heavensfather.12.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith		
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	estate_loyalty = {
+			estate = estate_god
+			loyalty = 60
+		}	
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.12.a			
+		add_years_of_income = 0.5
+		}	
+	}		
+	
+country_event = {
+	id = heavensfather.13
+	title = heavensfather.13.t
+	desc = heavensfather.13.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith		
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	estate_loyalty = {
+			estate = estate_god
+			loyalty = 60
+		}	
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.13.a			
+		create_general = { tradition = 75 }
+		add_yearly_manpower = 0.5
+		}	
+	}	
+	
+country_event = {
+	id = heavensfather.14
+	title = heavensfather.14.t
+	desc = heavensfather.14.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = imperial_faith		
+			estate_influence = {
+    estate = estate_god
+    influence = 30
+}
+	estate_loyalty = {
+			estate = estate_god
+			loyalty = 80
+		}	
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = heavensfather.14.a			
+		add_stability = 2
+		
+		}	
+	}	

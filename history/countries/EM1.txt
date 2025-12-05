@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = empire_of_man_reform
+government_rank = 3
+technology_group = imperial_tech
+primary_culture = high_culturian
+religion = imperial_cult
+capital = 2396
+
+1200.1.1 = {
+	monarch = {
+		name = "Arno"
+		dynasty = "Lichian"
+		birth_date = 12.9.51
+		dip = 3
+		adm = 3
+		mil = 3
+
+	}
+		
+	add_ruler_personality = wizard
+add_ruler_personality = cruel_personality
+}

@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = stateless_society
+government_rank = 1
+technology_group = naga_tech
+primary_culture = navi_naga
+religion = naga_faith
+capital = 1353	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Naga"
+		name = "Arya"
+		female = yes
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+
+	}
+
+}

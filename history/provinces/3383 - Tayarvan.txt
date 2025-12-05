@@ -1,0 +1,12 @@
+add_core = VP3
+owner = VP3
+controller = VP3
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Tayarvan"
+is_city = yes
+culture = ayas_valley

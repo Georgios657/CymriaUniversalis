@@ -1,0 +1,13 @@
+add_core = I37
+owner = I37
+controller = I37
+culture = capitilian
+religion = old_imperial_faith
+hre = no
+base_tax = 3 
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Ritterdorf"
+is_city = yes
+discovered_by = western

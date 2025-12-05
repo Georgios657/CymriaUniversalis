@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 2
+technology_group = selen_tech
+primary_culture = lek
+religion = the_silvern_guide
+capital = 3048	# Bayreuth
+religious_school = arakan_the_black
+
+1432.1.1 = {
+	monarch = {
+		dynasty = "Arsaka"
+		name = "Lek"
+		birth_date = 1415.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+}

@@ -1,0 +1,455 @@
+undead_mechanic = {
+	monarchy = yes
+	rulers_can_be_generals = no
+	monarchy = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+
+		heir = yes
+		
+			custom_attributes = {
+		enables_undead_idea_group = yes
+	}
+	
+	modifiers = {
+			nobles_influence_modifier = 0.1
+	}
+}
+
+old_empire_hecontarchia = {
+	icon = "old_empire_hecontarchia"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	 	fixed_rank = 1
+		rulers_can_be_generals = yes
+		
+
+	custom_attributes = {	
+
+		cannot_form_alliances = yes
+			}		
+	modifiers = {
+		leader_cost = -0.25
+		 	manpower_recovery_speed = 0.2
+
+		nobles_influence_modifier = 0.1
+		fabricate_claims_cost = 1
+		relation_with_same_culture_group = -200
+		relation_with_same_culture = -200
+		
+	}
+}
+
+old_empire_full = {
+	icon = "old_empire_full"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+		rulers_can_be_generals = no
+	heirs_can_be_generals = no
+
+ 	fixed_rank = 3
+		    potential = {
+       tag = U08
+    }	
+		custom_attributes = {	
+
+		cannot_form_alliances = yes	
+			}	
+			
+	 	different_religion_acceptance = -200
+	modifiers = {
+	 	no_cost_for_reinforcing = yes
+	 	manpower_recovery_speed = 0.3
+		war_exhaustion = -0.15
+
+		
+	}
+}
+
+reawakend_kingdom = {
+	icon = "old_empire_full"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+
+
+		    potential = {
+
+    }	
+		custom_attributes = {	
+
+
+			}	
+			
+
+	modifiers = {
+	 	manpower_recovery_speed = 0.25
+	}
+}
+####################
+
+
+abbandon_the_gods = {
+	icon = "abbandon_the_gods"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {					
+	}
+	
+					effect = {
+					
+		custom_tooltip = deactivate_god
+		custom_tooltip = deactivate_church
+		}		
+}
+
+
+
+embrace_the_death = {
+	icon = "embrace_the_death"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+			 	
+					
+	}
+	
+						effect = {
+		custom_tooltip = activate_the_death_gods
+		set_country_flag = activate_thanata
+		set_country_flag = activate_rigora
+		set_country_flag = activate_excita
+		}		
+}
+
+
+stand_fast_on_your_belief = {
+	icon = "stand_fast_on_your_belief"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+			tolerance_own = 2					
+	}
+}
+
+###########
+old_blood = {
+	icon = "old_blood"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		nobles_influence_modifier = 0.1
+		nobles_loyalty_modifier = 0.05
+		leader_cost = -0.2
+	}
+}
+
+new_mages = {
+	icon = "new_mages"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		all_power_cost = -0.05			
+	}
+}
+
+religious_figures = {
+	icon = "religious_figures"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+			stability_cost_modifier = -0.2
+			church_influence_modifier = 0.1				
+			god_influence_modifier = 0.1				
+	}
+}
+
+#############################
+
+leave_all_behind = {
+	icon = "leave_all_behind"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		can_not_build_buildings = yes
+		land_maintenance_modifier = -0.75
+	}
+}
+
+continue_old_life = {
+	icon = "continue_old_life"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+	 	global_tax_modifier = 0.1	
+		production_efficiency = 0.1
+	}
+}
+
+a_golden_death = {
+	icon = "a_golden_death"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 	inflation_reduction = -0.1	
+			 	interest = -0.5
+	}
+}
+
+##############################
+
+
+imperial_legion_of_old = {
+	icon = "imperial_legion_of_old"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+	free_mil_policy = 1
+	discipline = 0.05
+	}
+}
+
+adapt_new_ways = {
+	icon = "adapt_new_ways"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+	 	mil_tech_cost_modifier = -0.25
+	}
+}
+
+
+##################################
+
+
+seek_death = {
+	icon = "seek_death"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		overextension_impact_modifier = -0.25
+	}
+}
+
+integrate_them = {
+	icon = "integrate_them"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+
+	}
+	effect = {
+			custom_tooltip = integrate_living
+	}
+}
+
+
+enslave_them = {
+	icon = "enslave_them"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+	  	num_accepted_cultures = -5
+		development_cost_in_primary_culture = -0.3
+	}
+	
+	effect = {
+			custom_tooltip = enslave_living
+	}	
+}
+
+####################################
+
+
+old_provinces = {
+	icon = "old_provinces"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		governing_capacity = 300
+	}
+}
+
+local_autonomy = {
+	icon = "local_autonomy"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+	  	global_unrest = -2
+	}
+}
+
+
+direct_rule = {
+	icon = "direct_rule"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+	  	global_autonomy = -0.1
+	}
+}
+
+
+####################################
+
+
+deathless_system = {
+	icon = "deathless_system"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 	 	core_creation = -0.33
+	
+	}
+}
+
+lottery_system = {
+	icon = "lottery_system"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+			 	technology_cost = -0.1
+				 	idea_cost = -0.1
+	}
+}
+
+
+####################################
+
+
+living_advisors = {
+	icon = "living_advisors"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 	  	advisor_pool = 2
+	}
+}
+
+continue_the_old_council = {
+	icon = "continue_the_old_council"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+			  	same_culture_advisor_cost = -0.5
+				 	advisor_pool = -2
+				
+	}
+}
+
+new_undead_council = {
+	icon = "new_undead_council"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 	yearly_corruption = -0.1
+	}
+}
+
+####################################
+
+
+shade_spy = {
+	icon = "shade_spy"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 	spy_offence = 0.5
+			global_spy_defence = 0.5
+	}
+}
+
+stygian_paths = {
+	icon = "stygian_paths"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+			movement_speed = 0.25			
+	}
+}
+
+reforming_flesh = {
+	icon = "reforming_flesh"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 	regiment_manpower_usage = -0.33	 	
+	}
+}
+
+####################################
+
+
+expand_into_the_unkown = {
+	icon = "expand_into_the_unkown"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+ 	may_establish_frontier = yes
+	}
+}
+
+inner_peace = {
+	icon = "inner_peace"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 	global_unrest = -2		
+	}
+}
+
+ignore_the_uncivilzed = {
+	icon = "ignore_the_uncivilzed"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+	province_warscore_cost = -0.3	
+	}
+}
+
+
+####################################
+
+
+open_soul_gates = {
+	icon = "open_soul_gates"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 global_manpower_modifier = 1
+		 land_forcelimit_modifier = 0.5
+		  	ae_impact = 2
+	}
+}
+
+alliance_with_living = {
+	icon = "alliance_with_living"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+
+	modifiers = {
+			
+				
+	}
+	
+	effect = {
+	
+	}
+	
+	custom_attributes = {	
+
+		cannot_form_alliances = no
+			}	
+}
+
+eternal_empire = {
+	icon = "eternal_empire"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		max_absolutism = 30
+		governing_capacity_modifier = 0.25
+	}
+}

@@ -1,0 +1,33 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = skoger
+primary_culture = taurenian
+religion = phoenix_faith
+capital = 1462	# Bayreuth
+
+
+1430.1.1 = {
+	monarch = {
+		dynasty = "Priidu"
+		name = "Janis"
+		birth_date = 1375.9.21
+		dip = 1
+		adm = 2
+		mil = 2
+
+	}
+
+	
+		heir = {
+		name = "Leili Vanema"
+		dynasty = "Priidu"
+		birth_date = 1430.1.1
+				death_date = 1480.1.1
+		female = yes
+		claim = 100
+		adm = 6
+		dip = 6
+		mil = 4
+	}
+}

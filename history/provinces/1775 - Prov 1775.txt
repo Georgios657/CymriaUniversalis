@@ -1,0 +1,12 @@
+add_core = TR7
+owner = TR7
+controller = TR7
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 2
+capital = "Tutuba"
+is_city = yes
+culture = tigirian
+religion = ishtara

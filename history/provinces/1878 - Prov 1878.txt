@@ -1,0 +1,12 @@
+add_core = ZR6
+owner = ZR6
+controller = ZR6
+religion = yazida
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = slaves
+base_manpower = 3
+capital = "Farha"
+is_city = yes
+culture = high_zervonian

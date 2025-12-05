@@ -1,0 +1,12 @@
+add_core = TH6
+owner = TH6
+controller = TH6
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Velran"
+is_city = yes
+culture = arkadian
+religion = gayism

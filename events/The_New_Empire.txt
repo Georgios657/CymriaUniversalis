@@ -1,0 +1,589 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = new_empire
+
+country_event = {
+	id = new_empire.1
+	title = new_empire.1.t
+	desc = new_empire.1.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = I17
+	}
+
+	immediate = {
+		define_ruler = {
+		name = "Schattenfeuer"
+		dynasty = "The Black Dragon"
+		adm = 0
+		dip = 0
+		mil = 0
+		min_age = 233
+		claim = 0
+}
+
+hidden_effect = {
+		 	every_subject_country = { 
+			limit = {
+			 	 NOT = {	has_reform = imperial_wizardy }
+			}
+					country_event = { 
+    id = new_empire.3
+    days = 1
+}
+}
+
+		kill_heir = { allow_new_heir = no }
+		
+		add_stability = -3
+		
+
+	}
+}
+	option = {
+	name = new_empire.1.a				
+		set_country_flag = dragon_invasion
+		
+		
+		add_country_modifier = { 
+			name = no_autority
+			duration = -1  
+		}
+		
+		add_country_modifier = { 
+			name = fire_and_smoke
+			duration = -1  
+		}
+		every_owned_province = { 		add_local_autonomy = 80 }
+
+		70 = {
+		add_devastation = 100
+		add_base_tax = -2
+		add_base_production = -2
+		add_base_manpower = -2
+		}
+		add_government_reform = broken_empire_reform
+		
+				country_event = { 
+    id = new_empire.2
+    days = 250
+}
+		}
+		
+
+	}
+	
+	
+country_event = {
+	id = new_empire.2
+	title = new_empire.2.t
+	desc = new_empire.2.desc
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = I17
+	}
+
+	immediate = {
+		add_stability = 1
+		remove_country_modifier =fire_and_smoke
+		change_government = republic
+		add_government_reform = imperial_buero_reform
+		 	kill_ruler = yes
+				add_country_modifier = { 
+			name = fire_and_smoke2
+			duration = 3650
+		}
+		
+		70 = {
+		add_province_modifier = { 
+    name = a_dragons_rage
+    duration = -1  
+}
+}		
+		
+						add_country_modifier = { 
+			name = a_dragons_hunger
+			duration = -1
+		}
+	}
+
+	option = {
+		name = new_empire.2.a					
+
+		}
+		
+	option = {
+		name = new_empire.2.b
+		trigger = { ai = yes }
+		ai_chance = { factor = 100 }
+		add_treasury = 1250
+		}
+	}	
+	
+country_event = {
+	id = new_empire.3
+	title = new_empire.3.t
+	desc = new_empire.3.desc
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = new_empire.3a					
+		I17 = {	
+			create_subject = {
+			subject_type = new_out_of_control_imperial_prince
+			subject = ROOT
+		}	
+		}
+		}
+		
+
+	}		
+	
+country_event = {
+	id = new_empire.4
+	title = new_empire.4.t
+	desc = new_empire.4.desc
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+
+	immediate = {
+	hidden_effect = {
+					country_event = { 
+    id = new_empire.5
+    days = 100
+}
+}	
+	}
+	
+
+
+	option = {
+		name = new_empire.4a				
+			change_innovativeness = 1
+			add_inflation = 2
+		}
+		
+
+	}		
+	
+country_event = {
+	id = new_empire.5
+	title = new_empire.5.t
+	desc = new_empire.5.desc
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+	hidden_effect = {
+					country_event = { 
+    id = new_empire.6
+    days = 650
+}
+}
+	}
+	
+	
+
+	option = {
+		name = new_empire.5a	
+		change_innovativeness = 2	
+		add_inflation = 5
+		add_stability = -1
+		}
+		
+
+	}	
+	
+country_event = {
+	id = new_empire.6
+	title = new_empire.6.t
+	desc = new_empire.6.desc
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+
+	}
+	fire_only_once = yes
+	immediate = {
+	add_government_reform = dukedom_of_schworingen_reform
+	
+	define_ruler = {
+		name = "Adalbert"
+		dynasty = "von Schwoeringen"
+		culture  = jarvinia
+		adm = 4
+		dip = 5
+		mil = 6
+		age = 78	
+		claim = 50
+}
+	add_ruler_personality = wizard
+	set_ruler_flag = vamp
+define_consort = {
+    name = "Karen"
+	culture  = zephrian
+    adm = 5
+    dip = 5
+    mil = 5
+    female = yes
+	age = 58
+
+}
+	set_consort_flag = vamp
+	
+define_heir = {
+    male = yes
+    dynasty = ROOT
+    name = "Friederich"
+    monarch_name = "Friederich III"
+    claim = 100
+		adm = 2
+		dip = 2
+		mil = 3
+		age = 18
+}
+set_heir_flag = vamp
+	}
+	
+
+	option = {
+		name = new_empire.6a		
+		add_stability = -2		
+		set_ruler_flag = vampire
+		set_country_flag = adalbert
+		set_country_flag = friederich
+				save_ruler_stats = yes
+		}
+
+	option = {
+		name = new_empire.6b	
+		trigger = { ai = yes }
+		ai_chance = { factor = 100 }
+		add_stability = 1		
+		set_ruler_flag = vampire
+		set_country_flag = adalbert
+		
+		add_ruler_modifier = { 
+			name = unruly_duke
+			duration = 36500 
+			hidden = yes
+		}
+		add_legitimacy = 100
+		set_country_flag = friederich
+				save_ruler_stats = yes
+		}			
+	}	
+
+country_event = {
+	id = new_empire.7
+	title = new_empire.7.t
+	desc = new_empire.7.desc
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = new_empire.7a					
+		I17 = {	
+			create_subject = {
+			subject_type = new_imperial_prince
+			subject = ROOT
+		}	
+		}
+		}
+		
+
+	}	
+	
+country_event = {
+	id = new_empire.8
+	title = new_empire.8.t
+	desc = new_empire.8.desc
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = new_empire.8.a
+		FROM = {
+				declare_war_with_cb = {
+			who = ROOT
+		casus_belli = cb_war_for_new_empire
+		}
+		}
+		}
+	}		
+	
+country_event = {
+	id = new_empire.9
+	title = new_empire.9.t
+	desc = new_empire.9.desc
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = new_empire.9.a
+		FROM = {
+				declare_war_with_cb = {
+			who = ROOT
+		casus_belli = cb_independence_war
+		}
+		}
+		}
+	}	
+
+province_event = {
+	id = new_empire.10
+	title = new_empire.10.t
+	desc = new_empire.10.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+	is_capital_of = I00
+	I00 = {
+	mission_completed = unite_the_empire
+	}
+	controller = {
+		NOT = {
+		tag = I00
+		}
+			ruler_has_personality = wizard
+			}
+
+	}
+
+
+		mean_time_to_happen = {
+	months = 12
+}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = new_empire.10.a
+	controller = {		country_event = { 
+    id = new_empire.11
+}
+}
+
+
+
+		I00 = {
+		set_country_flag = killed_vamp
+		clr_country_flag = friederich
+		add_country_modifier = { 
+    name = vampire_defeat
+    duration = 3525  
+}
+		add_stability = -3
+		kill_heir = { allow_new_heir = no }
+		kill_ruler = yes
+		change_tag = NEP
+		define_ruler = {
+			culture = ROOT
+			religion = ROOT
+		}
+		}
+		}
+	}
+
+country_event = {
+	id = new_empire.11
+	title = new_empire.11.t
+	
+
+	desc = {
+   trigger = { culture_group = varjoren}
+   desc = "new_empire.11.var"
+}
+
+	desc = {
+   trigger = { 
+   NOT = { culture_group = varjoren }
+   has_ruler_flag = nature
+   }
+   desc = "new_empire.11.nat"
+}
+
+	desc = {
+   trigger = { 
+   NOT = { culture_group = varjoren }
+   has_ruler_flag = necromancy
+   }
+   desc = "new_empire.11.necro"
+}
+
+	desc = {
+   trigger = { 
+   NOT = { culture_group = varjoren }
+   has_ruler_flag = elemental
+   }
+   desc = "new_empire.11.elem"
+}
+
+	desc = {
+   trigger = { 
+   NOT = { culture_group = varjoren }
+   has_ruler_flag = blood
+   }
+   desc = "new_empire.11.blood"
+}
+
+	desc = {
+   trigger = { 
+   NOT = { culture_group = varjoren }
+   has_ruler_flag = astral
+   }
+   desc = "new_empire.11.ast"
+}
+
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = new_empire.11.a
+		add_prestige = 10
+		}
+	}	
+
+country_event = {
+	id = new_empire.12
+	title = new_empire.7.t
+	desc = new_empire.7.desc
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = new_empire.7a					
+		I00 = {	
+			create_subject = {
+			subject_type = new_imperial_prince
+			subject = ROOT
+		}	
+		}
+		}
+		
+
+		
+	}
+	
+
+country_event = {
+	id = new_empire.13
+	title = new_empire.7.t
+	desc = new_empire.7.desc
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = new_empire.7a					
+		I10 = {	
+			create_subject = {
+			subject_type = new_imperial_prince
+			subject = ROOT
+		}	
+		}
+		}
+		
+
+	}		

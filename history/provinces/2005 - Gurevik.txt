@@ -1,0 +1,12 @@
+add_core = CA0
+owner = CA0
+controller = CA0
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = spices
+base_manpower = 3
+capital = "Gurevik"
+is_city = yes
+culture = cassalan
+religion = ishtara

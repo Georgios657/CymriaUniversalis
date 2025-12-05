@@ -1,0 +1,13 @@
+add_core = HE8
+owner = HE8
+controller = HE8
+culture = riefinian
+religion = tengri
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = gold
+base_manpower = 3
+capital = "Cieno"
+is_city = yes
+discovered_by = nomad_group

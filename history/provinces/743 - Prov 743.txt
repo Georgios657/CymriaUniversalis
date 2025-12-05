@@ -1,0 +1,13 @@
+add_core = LO7
+owner = LO7
+controller = LO7
+culture = lovian_yangara
+religion = telcontarian
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = tropical_wood
+base_manpower = 1
+capital = "Bossomo"
+is_city = yes
+discovered_by = ottoman

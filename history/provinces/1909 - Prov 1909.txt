@@ -1,0 +1,12 @@
+add_core = ZR1
+owner = ZR1
+controller = ZR1
+culture = ekterianian
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 2
+capital = "Ruv Tok"
+is_city = yes

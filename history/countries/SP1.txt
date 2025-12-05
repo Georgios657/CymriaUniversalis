@@ -1,0 +1,7 @@
+government = magocracy
+add_government_reform = warlock_circle
+government_rank = 1
+technology_group = indian
+primary_culture = tandelan
+religion = amatism_faith
+capital = 524

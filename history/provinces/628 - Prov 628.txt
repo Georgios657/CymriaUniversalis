@@ -1,0 +1,14 @@
+add_core = LA9
+add_core = LE0
+owner = LA9
+controller = LA9
+culture = kalinian
+religion = amatism_faith
+hre = yes
+base_tax = 5
+base_production = 5
+trade_goods = cloth
+base_manpower = 3
+capital = "Caria"
+is_city = yes
+discovered_by = ottoman

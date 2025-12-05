@@ -1,0 +1,79 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 64 31 72 }
+
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	steppe_riders
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_cavalry
+	steppe_uhlans
+	steppe_raiders
+	steppe_footmen
+	steppe_musketeers
+	steppe_infantry
+	steppe_rifles
+	reformed_steppe_rifles
+}
+
+monarch_names = {
+	"Meinse #0" = 20
+	"Maron #0" = 20
+	"Ijsel #0" = 20
+	"Fressel #0" = 20
+	"Ivon #0" = 20
+	"Sanos #0" = 20
+	"Sarin #0" = 20
+	"Tares #0" = 20
+	"Messi #0" = 20
+	"Dessi #0" = 20
+	
+	"Marin #0" = 20
+	"Maros #0" = 20
+	"Taros #0" = 20
+	"Meinsos #0" = 20
+	"Isel #0" = 20
+	"Mejsel #0" = 20
+	"Wolsen #0" = 20
+	"Garsos #0" = 20
+	"Kil #0" = 20
+	"Issote #0" = 20
+	"Vissote #0" = 20
+	"Torita #0" = 20
+	"Galas #0" = 20
+	"Aurich #0" = 20
+	
+	"Melis #0" = -20
+	"Marvis #0" = -20
+	"Moran #0" = -20
+	"Salis #0" = -20
+	"Ivis #0" = -20
+	"Taras #0" = -20
+	"Desis #0" = -20
+	"Meises #0" = -20
+
+
+
+}
+
+leader_names = {
+		Dessi Sarin Galas Aurich Torita  Garsos Wolsen Mejsel
+
+}
+
+ship_names = {
+
+}

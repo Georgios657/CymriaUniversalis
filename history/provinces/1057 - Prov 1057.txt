@@ -1,0 +1,11 @@
+culture = woodlander
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+# Anything typed here will be added to all selected province history files
+trade_goods = fur
+base_manpower = 1
+capital = "Kulusuk"
+is_city = yes
+discovered_by = north_american

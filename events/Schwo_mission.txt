@@ -1,0 +1,53 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = schwor_mission
+
+country_event = {
+	id = schwor_mission.1
+	title = schwor_mission.1.t
+	desc = schwor_mission.1.d
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes	#this should be triggered by other events like adventurers destroying phylactery
+	
+	trigger = {
+	}
+	
+	immediate = {
+
+	}
+	
+	# Set Ruler
+	option = {
+		name = schwor_mission.1.a
+		ai_chance = {
+			factor = 99
+			
+							modifier = {
+				factor = 0
+				war_with = I00
+			}
+		}
+		
+		 	grant_independence = yes
+	every_owned_province  = {
+	add_core = I00
+	cede_province = I00
+	}
+	}
+
+	option = {
+		name = schwor_mission.1.b
+		ai_chance = {
+			factor = 2
+
+		}
+	every_owned_province  = {
+	add_permanent_claim = I00
+	}
+	}	
+}

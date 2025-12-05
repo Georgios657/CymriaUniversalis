@@ -1,0 +1,13 @@
+add_core = TW6
+owner = TW6
+controller = TW6
+religion = the_silvern_guide
+hre = no
+base_tax = 10
+base_production = 10
+trade_goods = dyes
+base_manpower = 7
+capital = "Ermor"
+is_city = yes
+culture = northern_baylonian
+fort_15th = yes

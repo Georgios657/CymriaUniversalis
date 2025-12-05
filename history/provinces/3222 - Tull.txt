@@ -1,0 +1,12 @@
+add_core = GE3
+owner = GE3
+controller = GE3
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = grain
+base_manpower = 4
+capital = "Tull"
+is_city = yes
+culture = myuiran
+religion = velora

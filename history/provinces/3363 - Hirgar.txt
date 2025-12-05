@@ -1,0 +1,12 @@
+add_core = AS2
+owner = AS2
+controller = AS2
+culture = waya
+religion = yazida
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wool
+base_manpower = 4
+capital = "Hirgar"
+is_city = yes

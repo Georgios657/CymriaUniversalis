@@ -1,0 +1,12 @@
+add_core = AS4
+owner = AS4
+controller = AS4
+culture = beror
+religion = yazida
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = cloth
+base_manpower = 3
+capital = "Featasia"
+is_city = yes

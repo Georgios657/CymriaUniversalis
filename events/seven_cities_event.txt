@@ -1,0 +1,50 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = seven_cities
+
+country_event = {
+	id = seven_cities.1
+	title = seven_cities.1.t
+	desc = seven_cities.1.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+		fire_only_once = yes
+	
+	trigger = {
+		 has_reform = great_city
+		ai = yes
+		is_year = 1515
+		NOT = {
+		is_vassal = yes
+		}
+	}
+	
+	immediate = {
+
+	}
+	
+	
+	option = {
+		name = seven_cities.1.a
+		complete_mission = defend_each_other
+		complete_mission = unite_the_seven_cities
+		complete_mission = armata_blessing
+		complete_mission = incoperate_the_nomads
+		complete_mission = the_greatest_of_the_seven
+		complete_mission = economic_profits
+		add_country_modifier = { 
+			name = incooperate_nomads
+			duration = 3650
+		}
+		
+				add_country_modifier = { 
+			name = rise_of_seven
+			duration = 3650
+		}
+	}
+	}
+

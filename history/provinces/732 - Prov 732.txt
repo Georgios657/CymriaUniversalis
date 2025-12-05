@@ -1,0 +1,22 @@
+add_core = LO2
+add_core = LO3
+owner = LO2
+controller = LO2
+culture = pullanian
+religion = telcontarian
+hre = no
+base_tax = 5
+base_production = 6
+trade_goods = ivory
+base_manpower = 5
+capital = "Venade"
+is_city = yes
+discovered_by = ottoman
+
+
+fort_15th = yes
+
+add_permanent_province_modifier = {
+	name = minor_estuary_modifier
+	duration = -1
+}

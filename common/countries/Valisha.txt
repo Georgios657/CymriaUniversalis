@@ -1,0 +1,69 @@
+graphical_culture = asiangfx
+
+color = { 62  243  124 }
+revolutionary_colors = { 4 0 4 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+	spy_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+leader_names = {
+
+}
+
+ship_names = {
+	
+}
+
+monarch_names = {
+	"Talkudis #0" = 20
+	"Ratalis #0" = 20
+	"Kuder #0" = 20
+	"Teren #0" = 10
+	"Likud #0" = 10
+	"Prevdo #0" = 10
+	"Klavedes #0" = 5
+	"Janis #0" = 5
+	"Valdis #0" = 5
+	"Seken #0" = 0
+	"Vilkudis #0" = 0
+	"Yudiki #0" = 0
+	
+	"Savna #0" = -1
+	"Rita #0" = -1
+	"Dula #0" = -1
+	"Ria #0" = -1
+	"Ele #0" = -1
+	"Givi #0" = -1
+	"Hevi #0" = -1
+	"Lima #0" = -1
+	"Metara #0" = -1
+	"Eileen #0" = -1
+	"Matiri #0" = -1
+	"Nemara #0" = -1
+	"Rashi #0" = -1
+}

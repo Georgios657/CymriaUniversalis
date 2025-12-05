@@ -1,0 +1,19 @@
+add_core = HE3
+owner = HE3
+controller = HE3
+culture = taki
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = gold
+base_manpower = 1
+capital = "Shizuka"
+is_city = yes
+discovered_by = chinese
+
+
+add_permanent_province_modifier = {
+	name = mountain_pass_modifier
+	duration = -1
+}

@@ -1,0 +1,38 @@
+zephyrian_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+		culture_group = eastern_imperial		
+		culture_group = cephryian		
+		culture_group = milesian		
+		culture_group = bostumer		
+		culture_group = lechita		
+		culture_group = tevonen		
+		culture_group = aiven		
+		culture_group = berver		
+		culture_group = finnlandian		
+		}
+
+	}
+
+	sprite_infantry = {
+		0 = POR_INFANTRY_1
+		1 = POR_INFANTRY_2
+		2 = POR_INFANTRY_3
+		3 = POR_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = POL_CAVALRY_1
+		1 = POL_CAVALRY_2
+		2 = POL_CAVALRY_3
+		3 = POL_CAVALRY_4
+	}
+	
+	sprite_artillery = {
+		0 = POR_ARTILLERY_1
+		1 = POR_ARTILLERY_2
+		2 = POR_ARTILLERY_3
+		3 = POR_ARTILLERY_4
+	}
+}

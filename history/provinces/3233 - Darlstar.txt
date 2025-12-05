@@ -1,0 +1,12 @@
+add_core = GE2
+owner = GE2
+controller = GE2
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = grain
+base_manpower = 5
+capital = "Darstar"
+is_city = yes
+culture = darloinian
+religion = velora

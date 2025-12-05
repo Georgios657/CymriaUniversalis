@@ -1,0 +1,13 @@
+add_core = S19
+owner = S19
+controller = S19
+culture = kravolian
+religion = katrova_faith
+hre = no
+base_tax = 2
+base_production = 4
+trade_goods = copper
+base_manpower = 2
+capital = "Aerol"
+is_city = yes
+discovered_by = indian

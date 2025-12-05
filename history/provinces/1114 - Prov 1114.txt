@@ -1,0 +1,13 @@
+add_core = ND6
+owner = ND6
+controller = ND6
+culture = icelander
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Falendor"
+is_city = yes
+discovered_by = north_american

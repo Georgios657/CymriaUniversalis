@@ -1,0 +1,13 @@
+add_core = I18
+owner = I18
+controller = I18
+culture = capitilian
+religion = old_imperial_faith
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = cloth
+base_manpower = 3
+capital = "Rittin"
+is_city = yes
+discovered_by = western

@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 6
+base_production = 7
+trade_goods = cloth
+base_manpower = 5
+capital = "High Keep"
+is_city = yes
+culture = moorian
+religion = grand_mother
+add_core = AV4

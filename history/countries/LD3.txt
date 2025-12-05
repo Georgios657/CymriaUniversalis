@@ -1,0 +1,21 @@
+government = republic
+add_government_reform = signoria_reform
+government_rank = 1
+technology_group = ottoman
+primary_culture = gerossi
+religion = amatism_faith
+capital = 669	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Zanna"
+		name = "Dukat"
+		birth_date = 1385.9.21
+		dip = 2
+		adm = 1
+		mil = 2
+
+	}
+
+}

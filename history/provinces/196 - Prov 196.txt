@@ -1,0 +1,13 @@
+add_core = U03
+owner = U03
+controller = U03
+culture = cumi
+religion = undead_imperial_faith
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = iron
+base_manpower = 2
+capital = "Netamia"
+is_city = yes
+discovered_by = muslim

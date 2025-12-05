@@ -1,0 +1,12 @@
+add_core = WI2
+owner = WI2
+controller = WI2
+culture = jirai
+religion = asae_ya
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = slaves
+base_manpower = 2
+capital = "Urashami"
+is_city = yes

@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = azur_tech
+primary_culture = malian
+religion = asae_ya
+capital = 2025	# Bayreuth
+religious_school = oyor_the_eternal_betrayer
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Corda"
+		name = "Flamur"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+}

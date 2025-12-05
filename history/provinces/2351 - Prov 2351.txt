@@ -1,0 +1,12 @@
+add_core = MA3
+owner = MA3
+controller = MA3
+culture = marionian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = ivory
+base_manpower = 1
+capital = "Hivar"
+is_city = yes

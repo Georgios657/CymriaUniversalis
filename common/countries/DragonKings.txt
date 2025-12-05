@@ -1,0 +1,97 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 15 63 172}
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+	
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+    "Long" = 60
+    "Qinglong" = 60
+    "Huanglong" = 60
+    "Yinglong" = 60
+    "Zhulong" = 60
+    "Taotie Long" = 60
+    "Ao Guang" = 60
+    "Ao Qin" = 60
+    "Ao Run" = 60
+    "Ao Shun" = 60
+    "Hei Long" = 60
+    "Chi Long" = 60
+    "Bai Long" = 60
+    "Xuanwu Long" = 60
+    "Nu Long" = 60
+    "Xiang Long" = 60
+    "Feng Long" = 60
+    "Yu Long" = 60
+    "Lei Long" = 60
+    "Dian Long" = 60
+
+	
+    "Long Nu" = -60
+    "Long Mu" = -60
+    "Yu Long" = -60
+    "Yin Long" = -60
+    "Tian Long" = -60
+    "Feng Long" = -60
+    "Caiyun Long" = -60
+    "Yunshan Long" = -60
+    "Nishan Long" = -60
+    "Hua Long" = -60
+    "Zhenshu Long" = -60
+    "Ling Long" = -60
+    "Bing Long" = -60
+    "Hai Long" = -60
+    "Ye Long" = -60
+    "Xing Long" = -60
+    "Huan Long" = -60
+
+
+}
+
+leader_names = {
+	Zhulong  Yinglong Zhenshu Caiyun Yunshan Xing Dian Hei
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+
+}
+
+fleet_names = {
+}

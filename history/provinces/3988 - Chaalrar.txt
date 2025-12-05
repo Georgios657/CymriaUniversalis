@@ -1,0 +1,17 @@
+add_core = MO4
+owner = MO4
+controller = MO4
+culture = chaararian
+religion = tilidian_little_gods
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = cotton
+base_manpower = 3
+capital = "Chaalrar"
+is_city = yes
+
+add_permanent_province_modifier = {
+	name = minor_estuary_modifier
+	duration = -1
+}

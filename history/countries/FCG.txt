@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 2
+technology_group = indian
+primary_culture = bescilian
+religion = amatism_faith
+capital = 449
+mercantilism = 20

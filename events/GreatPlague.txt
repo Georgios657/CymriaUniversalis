@@ -1,0 +1,471 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = great_plague
+
+
+#### start_of_the_plague
+country_event = {
+	id = great_plague.1
+	title = great_plague.1.t
+	desc = {
+		desc = great_plague.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+
+	immediate = {
+	
+	
+				set_variable = {
+				which = numDead
+				value = 0
+			}
+	
+	random_province = { 
+	limit = {
+	region = averia_region
+	 has_port = yes
+	}
+	set_province_flag = plague_start	
+	}
+	
+	random_province = { 
+	limit = {
+	region = averia_region
+	 has_port = yes
+	}
+	set_province_flag = plague_start	
+	}
+
+	random_province = { 
+	limit = {
+	region = averia_region
+	 has_port = yes
+	}
+	set_province_flag = plague_start	
+	}	
+	}
+
+	option = {
+		name = great_plague.1.a					
+		set_global_flag = grand_plague_start
+		}
+	}
+
+###Plague Starts
+province_event = {
+	id = great_plague.2
+	title = great_plague.2.t
+	desc = {
+		desc = great_plague.2.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+
+		mean_time_to_happen = {
+	months = 5
+}
+
+
+	trigger = {
+	has_province_flag = plague_start	
+	}
+	
+	immediate = {
+	add_province_modifier = { 
+			name = grand_plague
+			duration = -1  
+		}
+		
+	clr_province_flag = plague_start	
+	}
+
+	option = {
+		name = great_plague.2.a					
+
+		}
+	}
+
+#### contain or let it spread (emp of man)
+country_event = {
+	id = great_plague.3
+	title = great_plague.3.t
+	desc = {
+		desc = great_plague.3.desc
+
+	}
+
+	fire_only_once = yes
+	picture = RELIGION_eventPicture
+
+		mean_time_to_happen = {
+	months = 2
+}
+
+
+	trigger = {
+	tag = EM1
+	any_owned_province = {
+	has_province_modifier = grand_plague
+	}
+
+
+	
+	}
+
+	option = {
+		name = great_plague.3.a					
+	set_country_flag = isolation
+	
+	hidden_effect = {
+	country_event = { 
+    id = great_plague.7
+    days = 95
+    random = 30
+}
+	}
+		}
+		
+	option = {
+		name = great_plague.3.b			
+	set_country_flag = free_spread
+		}		
+	}
+
+###Plague Spreads
+province_event = {
+	id = great_plague.4
+	title = great_plague.4.t
+	desc = {
+		desc = great_plague.4.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	
+		mean_time_to_happen = {
+	months = 15
+	
+		modifier = {
+		factor = 0.3
+		region = averia_region
+	}
+}
+
+
+
+
+	trigger = {
+	 	
+	NOT = {
+		had_global_flag = {
+			flag = grand_plague_start
+			days = 900
+		}	
+	}
+
+		
+		
+	NOT = {
+	has_province_modifier = grand_plague
+	}	
+	
+	superregion  = empire_of_humanity	
+		
+	any_neighbor_province = { 
+
+	has_province_modifier = grand_plague
+	}
+	
+	OR = {
+	owner = {
+	has_country_flag = isolation			
+	}
+		region = averia_region
+		region = vaino_region
+		region = zytar_region
+	}
+
+
+	
+
+
+	}
+	immediate = {
+	if = {
+	limit = {
+		region = averia_region	
+	}
+	 	add_devastation = 40
+	}
+
+		 	add_devastation = 15
+	
+		add_province_modifier = { 
+			name = grand_plague
+			duration = -1  
+		}
+		
+	clr_province_flag = plague_start	
+	}
+
+	option = {
+		name = great_plague.4.a					
+
+		}
+	}
+	
+	
+###Depopulation Starts
+province_event = {
+	id = great_plague.5
+	title = great_plague.5.t
+	desc = {
+		desc = great_plague.5.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+		mean_time_to_happen = {
+	months = 20
+	
+		
+		modifier = {
+		factor = 0.5
+		region = averia_region
+	}
+}
+
+
+	trigger = {
+	 devastation = 50
+	has_province_modifier = grand_plague	
+	}
+	immediate = {
+		
+	}
+
+	option = {
+		name = great_plague.5.a					
+remove_random_development = yes
+
+WI2 = {
+change_variable  = {
+    which = numDead
+    value = 1
+}
+}
+		}
+		
+		}
+		
+		
+	####End of Plague
+country_event = {
+	id = great_plague.6
+	title = great_plague.6.t
+	desc = {
+		desc = great_plague.6.desc
+
+	}
+
+	major = yes
+	
+	fire_only_once = yes
+	picture = RELIGION_eventPicture
+
+		mean_time_to_happen = {
+	months = 2
+}
+
+
+	trigger = {
+		had_global_flag = {
+			flag = grand_plague_start
+			days = 1000
+		}	
+
+
+	
+	}
+
+	option = {
+		name = great_plague.6.a				
+
+		set_global_flag = grand_plague_ended
+	every_province = {
+	limit = {
+	has_province_modifier = grand_plague	
+	}
+	 	remove_province_modifier = grand_plague
+				add_province_modifier = { 
+			name = aftermatch_of_plague
+			duration = 7500 
+		}
+	}
+		}
+		
+	
+	}
+
+
+	####Chaos in Avernia
+country_event = {
+	id = great_plague.7
+	title = great_plague.7.t
+	desc = {
+		desc = great_plague.7.desc
+
+	}
+
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	picture = RELIGION_eventPicture
+
+
+	trigger = {
+		
+
+	
+	}
+	
+	immediate = {
+		hidden_effect = {
+	 	release = AV2
+		
+		AV2 = {
+		 	change_government = theocracy
+			add_government_reform = monastic_order_reform
+		}
+	 	release = AV3
+		
+	 	release = AV4
+				
+		create_vassal = AV5
+		
+	 	release = AV6
+		
+	 	release = AV7
+		
+	 	release = AV8
+
+		AW4 = {
+		 	change_government = republic
+			add_government_reform = merchants_reform		
+		}
+		
+	 	release = AV9
+		
+	 	release = AW1
+		
+	 	release = AW2
+		
+	 	release = AW3
+		
+	 	release = AW4
+		
+		AW4 = {
+		 	change_government = republic
+			add_government_reform = peasants_republic		
+		}		
+		
+		}
+
+		}
+
+
+	option = {
+		name = great_plague.7.a				
+
+		}
+		
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AV2
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AV3
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AV4
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AV5
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AV6
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AV7
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AV8
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AV9
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AW1
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AW2
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AW3
+		}
+
+	option = {
+		name = great_plague.7.b		
+		 	
+				switch_tag = AW4
+		}		
+	}
+		

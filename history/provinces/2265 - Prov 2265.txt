@@ -1,0 +1,12 @@
+add_core = CA6
+owner = CA6
+controller = CA6
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Shkumbari"
+is_city = yes
+culture = badcoaster
+religion = asae_ya

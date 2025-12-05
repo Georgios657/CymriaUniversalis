@@ -1,0 +1,13 @@
+add_core = LD2
+owner = LD2
+controller = LD2
+culture = gassalian
+religion = amatism_faith
+hre = yes
+base_tax = 6
+base_production = 6
+trade_goods = ivory
+base_manpower = 5
+capital = "Izette"
+is_city = yes
+discovered_by = ottoman

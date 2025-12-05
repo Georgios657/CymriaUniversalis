@@ -1,0 +1,15 @@
+add_core = ZE8
+owner = ZE8
+controller = ZE8
+culture = caian
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Aman"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+fort_15th = yes

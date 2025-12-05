@@ -1,0 +1,16 @@
+add_core = GY1
+owner = GY1
+controller = GY1
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 1
+capital = "Erengard"
+is_city = yes
+culture = gynter
+religion = icearia
+add_permanent_province_modifier = {
+	name = strait_modifier
+	duration = -1
+}

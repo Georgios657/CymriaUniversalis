@@ -1,0 +1,925 @@
+##BranchStart 0
+rief1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	dig_for_more_gold = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			gold_income = 10
+		}
+		effect = {
+			 	add_inflation = -5
+		}
+	}
+	##Mission End
+	##Mission Start
+	riefen_gold_art = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			dig_for_more_gold
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			gold = 2
+			
+			OR = {
+			gems = 1
+			trading_part = {
+				trade_goods = gems
+				value = 0.1
+			}
+			}
+		}
+		effect = {
+			add_prestige = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	death_garbs = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			cloth_of_leferen
+			riefen_gold_art
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	treasury = 2000
+		}
+		effect = {
+			add_horde_unity = 25
+			add_legitimacy = 50			
+			add_republican_tradition = 15
+			add_stability = 1
+			add_treasury = -2000
+		}
+	}
+	##Mission End
+	##Mission Start
+	riefen_brooches = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			death_garbs
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			copper = 4
+			prestige = 25
+		}
+		effect = {
+			add_country_modifier = { 
+				name = riefen_brooches
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	riefian_armor = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			riefen_brooches
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			iron = 6
+			army_tradition  = 50
+		}
+		effect = {
+			add_country_modifier = { 
+				name = riefen_armor
+				duration = 7500 
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	riefnian_host = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		army_size_percentage = 1
+		manpower_percentage = 0.75
+		}
+		effect = {
+			add_army_tradition = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	gahter_horse_rief = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			riefnian_host
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_cavalry = 18
+		}
+		effect = {
+			create_general = { tradition = 100 }
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_most_famous_riders = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			gahter_horse_rief
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+				has_global_modifier_value = {
+					which = cavalry_power
+					value = 0.5
+				}
+				num_of_cavalry = 150			
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = riefen_rider
+				duration = -1 
+			}	
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+rief2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	iron_of_talio = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			1193 = {
+			base_production = 7
+			}
+		}
+		effect = {
+			 	add_mil_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	cloth_of_leferen = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			iron_of_talio
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			1197 = {
+				base_production = 8
+			}
+		}
+		effect = {
+			add_years_of_owned_provinces_production_income = {
+    years = 8
+			trigger = {
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+				}
+			}
+			custom_tooltip = MONOPOLY_INCOME_CLOTH_DESC
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	golden_cloths = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			cloth_of_leferen
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			cloth = 2
+			gold = 2
+			dip_tech = 10
+		}
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_kingdoms_edge = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			new_rulers_of_atagord
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	exists = LA4
+			 	owns = 560
+			 	owns = 565
+			 	owns = 566
+			 	owns = 567
+			 	owns = 568
+			 	owns = 570
+			 	owns = 571
+		}
+		effect = {
+			add_yearly_manpower = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	into_lascaria = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			the_kingdoms_edge
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					lascaria_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_army_tradition = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_qualian_people = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			into_lascaria
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = QUALIAN_FREE
+				NOT = {
+				any_province = {
+						OR = {
+					 	culture = qualian
+					 	culture = as_qualia					
+					}			
+
+					NOT = {
+					owner = {
+					culture_group = krainian
+					}					
+					}
+
+				}				
+				}
+
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = kranian_unity
+				duration = -1 
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	champions_of_people = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			riefnian_host
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_professionalism = 0.25 
+		}
+		effect = {
+			add_country_modifier = { 
+				name = kranian_champs
+				duration = 7500 
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	warlords_of_future = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			champions_of_people
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+ 	
+
+has_leader_with = {
+	total_pips = 15
+}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = kranian_lords
+				duration = -1 
+			}	
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+rief3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	our_hill_home = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 2
+		}
+		effect = {
+			406 = {
+    add_claim = ROOT
+}
+			403 = {
+    add_claim = ROOT
+}
+			404 = {
+    add_claim = ROOT
+}
+
+			390 = {
+    add_claim = ROOT
+}
+
+			391 = {
+    add_claim = ROOT
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	raid_the_border = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			our_hill_home
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 406
+			owns = 403
+			owns = 404
+			owns = 390
+			owns = 391
+		}
+		effect = {
+			add_yearly_manpower = 1
+			add_horde_unity = 20
+		}
+	}
+	##Mission End
+	##Mission Start
+	new_rulers_of_atagord = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			raid_the_border
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 35
+	region = great_steppe_region
+	is_city = yes
+}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = cavalry_crace
+				duration = 7500 
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_zephyrian_border = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			new_rulers_of_atagord
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 20
+	region = zephyrian_border_region
+	is_city = yes
+}
+		}
+		effect = {
+		change_government_reform_progress = 100
+		
+			milesia_region = {
+    discover_country = ROOT
+}
+			lechia_region = {
+    discover_country = ROOT
+}
+			finnen_region = {
+    discover_country = ROOT
+}
+
+			ephyria_region = {
+    discover_country = ROOT
+}
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	cephyrian_campagin = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			the_zephyrian_border
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 25
+	region = cephyria_region
+	is_city = yes
+}
+		}
+		effect = {
+			add_prestige = 50
+			868 = {
+			add_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	siege_the_city_of_sun = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			cephyrian_campagin
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 868
+		}
+		effect = {
+			country_event = { 
+			id = riefen.2
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_grand_horde = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			siege_the_city_of_sun
+			the_qualian_people
+			the_dead_land
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 3000
+		}
+		effect = {
+			 	add_splendor = 2000
+		}
+	}
+	##Mission End
+	##Mission Start
+	modernize_the_army = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			champions_of_people
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_professionalism = 0.75 
+		}
+		effect = {
+			add_mil_power = 150
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+rief4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	grass_armour = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			the_plague_of_grass
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				 	has_province_modifier = heavy_ghost_gras
+				is_city = yes
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = grass_armour
+				duration = 7500
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_brave_grass = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			grass_armour
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				 	has_province_modifier = heavy_ghost_gras
+				is_city = yes
+			}
+			has_commanding_three_star = yes
+			
+		}
+		effect = {
+			add_country_modifier = { 
+				name = kranian_honor_guard
+				duration = -1 
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_western_steppe = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			new_rulers_of_atagord
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 20
+	region = western_steppe_region
+	is_city = yes
+}
+		}
+		effect = {
+			add_mercantilism = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_bridge = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			the_western_steppe
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 303
+			303 = {
+			has_great_project = {
+				type = any
+				tier = 2
+			}
+			}
+		}
+		effect = {
+							old_empire_superregion = {
+    discover_country = ROOT
+	 add_permanent_claim = ROOT
+}
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_dead_land = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			the_bridge
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+							the_dead_land_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		effect = {
+			 	reset_golden_age = yes
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+rief5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = HE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_plague_of_grass = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				 	has_province_modifier = heavy_ghost_gras
+				is_city = yes
+			}
+			
+			stability = 1
+		}
+		effect = {
+			add_splendor = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	search_for_the_start = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			the_plague_of_grass
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 23
+	region = eastern_steppe_region
+	is_city = yes
+}
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	ask_the_ghosts = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			search_for_the_start
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 3
+			adm_power = 500
+			dip_power = 500
+			mil_power = 500
+		}
+		effect = {
+			add_adm_power = -500
+			add_dip_power = -500
+			add_mil_power = -500
+			 	custom_tooltip = mage_heir
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_the_poleia = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			ask_the_ghosts
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 375 
+
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	end_curse = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			secure_the_poleia
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+						treasury = 7500
+						375 = {
+			has_great_project = {
+				type = any
+				tier = 2
+			}						
+						}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+						375 = {
+			has_great_project = {
+				type = any
+				tier = 2
+			}						
+						}	
+						
+				}
+				add_splendor = 1000
+			}
+			else = {
+			add_treasury = -7500
+					country_event = { 
+    id = ghost_gras.8
+    days = 1
+}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	ask_forgiveness = {
+				icon = mission_build_up_to_force_limit
+		required_missions {
+			end_curse
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			375 = {
+			 	development = 25
+			}
+		}
+		effect = {
+			every_owned_province = {
+			 	add_prosperity = 100
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

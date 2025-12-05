@@ -1,0 +1,51 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = broken_seal
+
+
+####seal is broken
+country_event = {
+	id = broken_seal.1
+	title = broken_seal.1.t
+	desc = broken_seal.1.desc
+
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	immediate = {
+
+}
+	option = {
+	name = broken_seal.1.a		
+		ai_chance = { factor = 0 }
+		add_stability = -6
+		
+	2512 = {
+	destroy_great_project = {
+    type = the_grave_of_gods
+}
+
+	set_base_tax = 1
+	set_base_production = 1
+	set_base_manpower = 1
+	}
+	
+	 	add_corruption = 50
+		set_global_flag = destroyed_grave
+		
+		every_province = {
+		limit = {
+		region = red_region
+		}
+		
+		add_permanent_province_modifier = { 
+    name = vision_of_gods
+    duration = 36500
+}
+		}
+		}	
+	}

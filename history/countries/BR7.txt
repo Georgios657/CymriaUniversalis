@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = imperial_tech
+primary_culture = kiralyfi
+religion = rozalia
+capital = 2659
+
+1444.1.1 = {
+	monarch = {
+		name = "Zsoka"
+		dynasty = "Batthany"
+		birth_date = 1420.9.21
+		dip = 5
+		adm = 2
+		mil = 2
+		female = yes
+
+	}
+
+}

@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = tanistry_reform
+government_rank = 1
+technology_group = ottoman
+primary_culture = hagener
+religion = amatism_faith
+capital = 680	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Haegen"
+		name = "Eric"
+		birth_date = 1385.9.21
+		dip = 2
+		adm = 1
+		mil = 2
+
+	}
+
+}

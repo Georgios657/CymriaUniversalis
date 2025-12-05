@@ -1,0 +1,15 @@
+add_core = GI1
+owner = GI1
+controller = GI1
+hre = no
+base_tax = 8
+base_production = 9
+trade_goods = iron
+base_manpower = 8
+capital = "Jotunheim"
+is_city = yes
+culture = jotun
+religion = fore_bearers
+
+center_of_trade = 2
+fort_15th = yes

@@ -1,0 +1,95 @@
+country_decisions = {
+	gov_me = {
+		major = yes
+		potential = {
+		NOT = {
+			ai = yes
+		}
+		OR = {
+		 	has_government_mechanic = varjorjen_hunger_mechanic
+		 	has_government_mechanic = ogebin_mechanic
+		 	has_government_mechanic = magic_spell_mechanic
+		 	has_government_mechanic = slave_mechanic
+		 	has_government_mechanic = beast_mechanic
+		}
+			
+		}
+		allow = {
+		OR = {
+		 	has_government_mechanic = varjorjen_hunger_mechanic
+		 	has_government_mechanic = ogebin_mechanic
+		 	has_government_mechanic = magic_spell_mechanic
+		 	has_government_mechanic = beast_mechanic
+		 	has_government_mechanic = slave_mechanic
+		}	
+		}
+		effect = {
+			if = {
+				limit = {
+					has_government_mechanic = varjorjen_hunger_mechanic
+				}
+				country_event = { 
+					id = gov_mechs.1
+				}
+			}
+			
+						if = {
+				limit = {
+					has_government_mechanic = ogebin_mechanic
+				}
+				country_event = { 
+					id = gov_mechs.2
+				}
+			}
+			
+						if = {
+				limit = {
+					has_government_mechanic = magic_spell_mechanic
+				}
+				country_event = { 
+					id = gov_mechs.3
+				}
+			}
+
+						if = {
+				limit = {
+					has_reform = necromancy_tower
+				}
+				country_event = { 
+					id = gov_mechs.7
+				}
+			}
+			
+						if = {
+				limit = {
+					has_government_mechanic = slave_mechanic
+				}
+				country_event = { 
+					id = gov_mechs.4
+				}
+			}
+			
+								if = {
+				limit = {
+					has_government_mechanic = beast_mechanic
+				}
+				country_event = { 
+					id = gov_mechs.5
+				}
+			}
+			
+								if = {
+				limit = {
+					has_reform = rogue_trader_reform
+				}
+				country_event = { 
+					id = gov_mechs.6
+				}
+			}			
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+}

@@ -1,0 +1,13 @@
+add_core = I32
+owner = I32
+controller = I32
+culture = jadisch
+religion = old_imperial_faith
+hre = no
+base_tax = 4 
+base_production = 4
+trade_goods = salt
+base_manpower = 3
+capital = "Vipperrow"
+is_city = yes
+discovered_by = western

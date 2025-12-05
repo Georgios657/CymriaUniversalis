@@ -1,0 +1,13 @@
+add_core = BR7
+owner = BR7
+controller = BR7
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 2
+capital = "White Castle"
+is_city = yes
+culture = kiralyfi
+religion = rozalia
+fort_15th = yes

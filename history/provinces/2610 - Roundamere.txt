@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = grain
+base_manpower = 4
+capital = "Roundamere"
+is_city = yes
+culture = boroner
+religion = imperial_cult
+add_core = AN6

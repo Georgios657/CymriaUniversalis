@@ -1,0 +1,12 @@
+add_core = TI2
+owner = TI2
+controller = TI2
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = sugar
+base_manpower = 3
+capital = "Larray-Is"
+is_city = yes
+culture = teyak
+religion = tilidian_little_gods

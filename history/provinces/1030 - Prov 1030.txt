@@ -1,0 +1,18 @@
+add_core = NO7
+owner = NO7
+controller = NO7
+culture = marshlander
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 2
+capital = "Rovmark"
+is_city = yes
+discovered_by = eastern
+
+
+native_size = 5
+native_ferocity = 3
+native_hostileness = 3

@@ -1,0 +1,13 @@
+add_core = VP1
+owner = VP1
+controller = VP1
+religion = the_silvern_guide
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = fish
+base_manpower = 3
+capital = "Lek by the Sea"
+is_city = yes
+culture = shansharian
+center_of_trade = 1

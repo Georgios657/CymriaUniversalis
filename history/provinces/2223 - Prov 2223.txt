@@ -1,0 +1,14 @@
+add_core = WI3
+owner = WI3
+controller = WI3
+culture = lemukan
+religion = mrogi_wa_damu
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = spices
+base_manpower = 3
+capital = "Lemukoro"
+is_city = yes
+center_of_trade = 1
+fort_15th = yes

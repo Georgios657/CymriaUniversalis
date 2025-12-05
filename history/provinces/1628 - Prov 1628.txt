@@ -1,0 +1,14 @@
+add_core = EP2
+owner = EP2
+controller = EP2
+culture = ephretera
+religion = phoenix_faith
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = copper
+base_manpower = 4
+capital = "Nivria"
+is_city = yes
+discovered_by = chinese
+fort_15th = yes

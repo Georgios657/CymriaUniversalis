@@ -1,0 +1,17 @@
+add_core = HB7
+owner = HB7
+controller = HB7
+culture = cangai
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = gems
+base_manpower = 1
+capital = "Cangai"
+is_city = yes
+discovered_by = chinese
+
+latent_trade_goods = {
+	coal
+}

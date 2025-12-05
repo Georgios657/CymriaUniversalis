@@ -1,0 +1,13 @@
+add_core = U03
+owner = U03
+controller = U03
+culture = cumi
+religion = undead_imperial_faith
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = wool
+base_manpower = 2
+capital = "Cumex"
+is_city = yes
+discovered_by = muslim

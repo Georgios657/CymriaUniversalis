@@ -1,0 +1,12 @@
+add_core = BR8
+owner = BR8
+controller = BR8
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Bastyavar"
+is_city = yes
+culture = hegytori
+religion = rozalia

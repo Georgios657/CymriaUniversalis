@@ -1,0 +1,981 @@
+##BranchStart 0
+yach1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = I17 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	a_dragons_due = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_country_flag = dragon_invasion
+		}
+		effect = {
+			add_adm_power = -100
+			add_Stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_dragons_hoard = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_dragons_due
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	treasury = 1000
+		}
+		effect = {
+			add_treasury = -1000
+			remove_country_modifier = a_dragons_hunger
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_dragons_taste = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_dragons_hoard
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	stability = 2
+		}
+		effect = {
+			add_stability = -2
+			70 = {
+			remove_province_modifier = a_dragons_rage
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_dragons_wisdom = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_dragons_taste
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				 	splendor = 400
+		}
+		effect = {
+						add_country_modifier = { 
+			name = dragon_wisdom
+			duration = -1
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_dragons_empire = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_dragons_wisdom
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					NOT = {
+			mission_completed = a_dragons_weakness
+			}
+			stability = 3
+			prestige = 50
+		}
+		effect = {
+				add_stability = -2
+		add_country_modifier = { 
+			name = dragon_emperor
+			duration = -1
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_dragons_will = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_dragons_empire
+		}
+		position = 6
+		provinces_to_highlight = {
+				superregion = new_empire_superregion
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+		NOT = {
+		num_of_subjects = 5
+		}
+			new_empire_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_stability = 2
+			add_prestige = 50
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_dragons_treasure = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_dragons_will
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		owns = 70
+			treasury = 100000
+		}
+		effect = {
+			add_treasury = -100000
+			add_power_projection = { 
+			type = 25_permanent_power_projection
+			amount = 25 
+			}
+			add_stability = 6
+			70 = {
+				add_province_modifier = { 
+			name = the_greatest_treasure
+			duration = -1
+		}
+		}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+yach2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = I17 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	look_upon_a_star = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_year = 1452
+		}
+		effect = {
+		add_splendor = 100
+		define_advisor = {
+    type = natural_scientist
+    name = "Sebastian Jäger"
+    skill = 2
+	discount = yes
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_astrology_school = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			look_upon_a_star
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		is_institution_enabled = astrology_i
+		natural_scientist = 2
+		adm_tech = 10
+		owns = 70
+		}
+		effect = {
+		change_government_reform_progress = 200
+			70 = {
+			add_institution_embracement = {
+				which = astrology_i
+				value = 100
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_red_comet = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_astrology_school
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_year = 1532
+			NOT = {
+			is_year = 1550
+			}
+		}
+		effect = {
+			add_splendor = 1000
+			change_innovativeness = 20		
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_dragons_weakness = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_dragons_wisdom
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		legitimacy_equivalent = 95
+		stability = 2
+			NOT = {
+			mission_completed = a_dragons_empire
+			}
+		}
+		effect = {
+			add_stability = 1
+			remove_country_modifier = dragon_wisdom
+			clr_country_flag = dragon_invasion
+			70 = {
+			add_devastation = 25
+			}
+			add_treasury = 1000
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_dragons_demise = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_dragons_weakness
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		owns = 70
+			70 = {
+			num_of_times_improved = 15
+			}
+		}
+		effect = {
+		add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_new_emperor = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_dragons_demise
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+	legitimacy_equivalent = 100
+		}
+		
+		effect = {
+		change_government = monarchy
+		add_government_reform = new_empire_reform
+		
+		define_ruler = {
+			name = "Johann-Kasimir"
+			dynasty = "Baumgarten"
+			adm = 5
+			dip = 4
+			mil = 4
+			age = 23
+			claim = 100
+}
+
+define_ruler_to_general = {
+    fire = 4
+    shock = 4
+    manuever = 4
+    siege = 3
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_norder_land = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			expand_the_empire
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+yach3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = I17 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	assemble_the_lords = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_year = 1450
+			70 = {
+			NOT = {
+			devastation = 50
+			}
+			}
+		}
+		effect = {
+		every_owned_province = { add_local_autonomy = -20 }			
+		add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	reign_in_the_outer = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			assemble_the_lords
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		estate_loyalty = {
+			estate = estate_burghers
+		loyalty = 35
+		}
+		
+		estate_loyalty = {
+			estate = estate_nobles
+		loyalty = 35
+		}
+
+		estate_loyalty = {
+			estate = estate_church
+		loyalty = 35
+		} 		
+		NOT = {
+		average_autonomy = 10
+		}
+		}
+		effect = {
+			add_adm_power = 100
+			add_mil_power = 100
+			
+			remove_country_modifier = no_autority
+		}
+	}
+	##Mission End
+	##Mission Start
+	reign_in_the_princes = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			assemble_the_lords
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			grown_by_development = 100
+		}
+		effect = {
+			add_dip_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_aub_proclamation = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			reign_in_the_princes
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_provinces_in_states = 25
+		}
+
+		effect = {
+		custom_tooltip = aub_proc
+		
+				hidden_effect = {
+		 	every_subject_country = { 
+			limit = {
+				NOT = { liberty_desire = 50 }
+			 	 NOT = {	has_reform = imperial_wizardy }
+			}
+					country_event = { 
+    id = new_empire.7
+    days = 1
+}
+}			
+		 	every_subject_country = { 
+			limit = {
+				 liberty_desire = 50
+			 	 NOT = {	has_reform = imperial_wizardy }
+			}
+			every_owned_province = {
+			add_permanent_claim = I17
+			}
+			 I17 = { free_vassal = PREV }	
+}	
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_safe_empire = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			the_aub_proclamation
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_unified_culture_group = yes
+			
+			NOT = {
+				num_of_owned_provinces_with   = {
+					value = 1
+					devastation = 5
+				}
+		}
+		}
+		effect = {
+		 	reset_golden_age = yes
+		}
+	}
+	##Mission End
+	##Mission Start
+	direct_rule_from_yach = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			the_safe_empire
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	total_development = 1000
+				NOT = {
+				 	average_autonomy = 5
+				}
+		}
+		effect = {
+			add_absolutism = 25
+			change_government_reform_progress = 250
+		}
+	}
+	##Mission End
+	##Mission Start
+	sublime_bureo = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			direct_rule_from_yach
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_owned_states_with  = {
+				value = 10
+				is_prosperous = yes
+				}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = sublime_buero
+				duration = -1
+		}		
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	expand_the_empire = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 1000
+			is_year = 1550
+		}
+		effect = {
+					old_empire_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_green_valley = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			expand_the_empire
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+yach4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = I17 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	a_new_trading_register = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+82 = { #Antwerpen
+	trade_share = {
+		country = ROOT
+		share = 25
+	}
+}
+		}
+		effect = {
+		add_mercantilism = 5
+		}
+	}
+	##Mission End
+	##Mission Start
+	trade_tabels = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_new_trading_register
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		mercantilism = 35
+		}
+		effect = {
+			add_mercantilism = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	building_building_build = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			trade_tabels
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		farm_estate = 10
+		}
+		effect = {
+			every_owned_province = { 
+				add_prosperity = 25
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	expand_prod_i17 = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			building_building_build
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			calc_true_if = {
+				desc = build_manufactories_mission_tooltip
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}			
+		}
+		effect = {
+			add_country_modifier = {
+				name = "proto_industrialization"
+				duration = 9125
+			}
+			add_years_of_income = 1.5
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_fiat_currency = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			expand_prod_i17
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			mercantilism = 60
+		}
+		effect = {
+			 	add_mercantilism = 20
+				add_inflation = -20
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_old_empire = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			expand_the_empire
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 20
+	superregion = old_empire_superregion
+	is_city = yes
+}
+		}
+		effect = {
+			add_prestige = 50
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+yach5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = I17 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	knights_and_reiksguard = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_cavalry = 15
+			num_of_infantry = 30
+		}
+		effect = {
+			add_yearly_manpower = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_new_officier_school = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			knights_and_reiksguard
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	army_tradition = 50
+		}
+		effect = {
+		add_army_professionalism = 0.2
+		}
+	}
+	##Mission End
+	##Mission Start
+	promote_cavalry = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			a_new_officier_school
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_cavalry = 40
+		}
+		effect = {
+			add_army_tradition = 30
+				define_general = {
+					shock = 6
+					fire = 0
+					manuever = 6
+					siege = 0
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	institute_landsregimenter = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			promote_cavalry
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_professionalism = 0.75 
+		}
+		effect = {
+							add_country_modifier = { 
+			name = landsregimenter
+			duration = -1
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_greatest_army_ever = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			institute_landsregimenter
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	army_size = 1000
+		}
+		effect = {
+		add_army_professionalism = 0.2
+		}
+	}
+	##Mission End
+	##Mission Start
+	to_defend_all = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					num_of_owned_provinces_with   = {
+					value = 5
+					fort_level = 2
+				}		
+		}
+		effect = {
+		define_advisor = {
+    type = fortification_expert
+    name = "Jochen Vierkant"
+    skill = 2
+	discount = yes
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	new_fort_buildings = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			to_defend_all
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					num_of_owned_provinces_with   = {
+					value = 6
+					fort_level = 4
+				}	
+		}
+		effect = {
+			every_owned_province = {
+		limit = {
+		fort_level = 4
+		}
+				add_province_modifier = {
+					name = "local_fortress"
+					duration = -1
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	garrision_cities = {
+		icon = mission_build_up_to_force_limit 
+		required_missions =  {
+			new_fort_buildings
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					num_of_owned_provinces_with   = {
+					value = 10
+					fort_level = 4
+				
+		}
+		}
+		effect = {
+			every_owned_province = {
+		limit = {
+		fort_level = 4
+		}
+		add_base_manpower = 1
+		add_base_production = 1
+		 	add_base_tax = 1
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

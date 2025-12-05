@@ -1,0 +1,12 @@
+add_core = GE7
+owner = GE7
+controller = GE7
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = glass
+base_manpower = 2
+capital = "Yalthan"
+is_city = yes
+culture = ithilan
+religion = velora

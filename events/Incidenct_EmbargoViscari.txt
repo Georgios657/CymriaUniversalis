@@ -1,0 +1,84 @@
+namespace = embargo_viscari
+# Event to fire the incident. Or the de facto incident for non-dlc owners
+country_event = {
+	id = embargo_viscari.1
+	title = embargo_viscari.1.t
+	desc = embargo_viscari.1.d
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+	tag = FC0
+		FC0 = {
+		 	has_country_flag = accepted_visataris	
+		}
+
+
+		NOT = { active_imperial_incident = any }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = embargo_viscari.1.a
+		trigger = {
+			has_dlc = "Emperor"
+		}
+		set_imperial_incident = incident_embargo_viscari
+	}
+	}
+	
+
+# dummy incident
+country_event = {
+	id = embargo_viscari.2
+	title = embargo_viscari.1.t
+	desc = embargo_viscari.2.d
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # Arm the Order
+		ai_chance = {
+			factor = 10000
+		}
+		name = embargo_viscari.2.a
+		 	every_country = { 
+			limit = {
+			is_part_of_hre = yes
+			}
+		add_opinion = {
+			who = FC0
+			modifier = opinion_traitor
+		}
+			}
+			
+		446 = {
+			add_trade_modifier = {
+				who = FC0
+				duration = 7300
+				power = -30
+				key = IMPERIAL_EMBARGO
+			}
+		}
+
+	}
+	
+	option = { # who cares
+		ai_chance = {
+			factor = 0
+		}
+		name = embargo_viscari.2.b
+		emperor = {
+		add_years_of_income = 0.5
+		}
+		every_elector = {
+		add_years_of_income = 0.1
+		}
+	}
+}	

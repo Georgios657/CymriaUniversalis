@@ -1,0 +1,12 @@
+add_core = VP6
+owner = VP6
+controller = VP6
+religion = the_silvern_guide
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = gems
+base_manpower = 1
+capital = "Khoren"
+is_city = yes
+culture = corean

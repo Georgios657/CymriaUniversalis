@@ -1,0 +1,12 @@
+add_core = CA7
+owner = CA7
+controller = CA7
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Herte"
+is_city = yes
+culture = yaan
+religion = ishtara

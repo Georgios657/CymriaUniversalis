@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = stateless_society
+government_rank = 1
+technology_group = naga_tech
+primary_culture = patala_naga
+religion = naga_rule_of_law
+capital = 1318	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Ephor"
+		name = "Nadav"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 1
+		mil = 3
+
+	}
+
+}

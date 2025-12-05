@@ -1,0 +1,7 @@
+government = undead_government
+add_government_reform = reawakend_kingdom
+government_rank = 1
+technology_group = muslim
+primary_culture = nopolian
+religion = amatism_faith
+capital = 199	# Bayreuth

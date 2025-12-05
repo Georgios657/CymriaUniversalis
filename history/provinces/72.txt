@@ -1,0 +1,13 @@
+add_core = I17
+owner = I17
+controller = I17
+culture = capitilian
+religion = old_imperial_faith
+hre = no
+base_tax = 6 
+base_production = 6
+trade_goods = glass
+base_manpower = 3
+capital = "Aub"
+is_city = yes
+discovered_by = western

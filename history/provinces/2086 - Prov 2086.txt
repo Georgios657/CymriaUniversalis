@@ -1,0 +1,12 @@
+add_core = QA2
+owner = QA2
+controller = QA2
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Morravel"
+is_city = yes
+culture = morivia
+religion = asae_ya

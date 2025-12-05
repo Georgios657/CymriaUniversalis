@@ -1,0 +1,16 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = salt
+base_manpower = 3
+capital = "Earthholme"
+is_city = yes
+culture = fayrin
+religion = grand_mother
+
+
+
+add_core = AV8

@@ -1,0 +1,12 @@
+add_core = TI2
+owner = TI2
+controller = TI2
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = sugar
+base_manpower = 2
+capital = "Lurkei"
+is_city = yes
+culture = teyak
+religion = tilidian_little_gods

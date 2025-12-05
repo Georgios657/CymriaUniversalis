@@ -1,0 +1,13 @@
+add_core = LO4
+owner = LO4
+controller = LO4
+culture = bozmosian
+religion = telcontarian
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Bosmoz Ir"
+is_city = yes
+discovered_by = ottoman

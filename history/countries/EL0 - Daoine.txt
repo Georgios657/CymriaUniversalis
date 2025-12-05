@@ -1,0 +1,46 @@
+government = monarchy
+add_government_reform = elfdom_reform
+government_rank = 2
+technology_group = elven
+primary_culture = mountain_elv
+religion = morriganism
+capital = 273# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1353.7.3 = {
+	monarch = {
+		name = "Aosi"
+		dynasty = "Ap Morriga"
+		birth_date = 1111.9.21
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+	
+	
+		heir = {
+		name = "Faelan"
+		dynasty = "Ap Morriga"
+		birth_date = 1353.7.3
+				death_date = 1480.1.1
+		claim = 100
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+		
+		
+	queen = {
+        country_of_origin = EL0
+        name = "Laoise"
+        dynasty = "Ap Tara"
+        birth_date = 1144.10.14
+				death_date = 1492.6.8
+        female = yes
+        adm = 4
+        dip = 6
+        mil = 2
+    }
+
+}
+

@@ -1,0 +1,13 @@
+add_core = AR0
+owner = AR0
+controller = AR0
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Aratero"
+is_city = yes
+culture = reakeenian
+religion = nyamism
+fort_15th = yes

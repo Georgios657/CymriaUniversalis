@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 2
+technology_group = azur_tech
+primary_culture = girai
+religion = asae_ya
+capital = 2115	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Girai"
+		name = "Gassa"
+		birth_date = 1395.9.21
+		dip = 2
+		adm = 2
+		mil = 6
+	}
+
+}
+
+
+1444.1.1 = {
+		leader = {
+		name = "Super"
+		type = general
+		fire = 4
+		shock = 6
+		manuever = 3
+		siege = 1
+		death_date = 1453.7.17
+	}
+}

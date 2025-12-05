@@ -1,0 +1,14 @@
+add_core = ZA6
+owner = ZA6
+controller = ZA6
+culture = ivano
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = wool
+base_manpower = 1
+capital = "Ruelntium"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

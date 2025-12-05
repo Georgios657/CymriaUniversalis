@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = imperial_tech
+primary_culture = kalyrian
+religion = rozalia
+capital = 2897
+
+1424.1.1 = {
+	monarch = {
+		name = "Setris"
+		dynasty = "Kaly"
+		birth_date = 1400.9.21
+		dip = 3
+		adm = 4
+		mil = 4
+	}
+
+}

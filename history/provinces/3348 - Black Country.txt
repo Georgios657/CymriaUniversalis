@@ -1,0 +1,12 @@
+add_core = VP8
+owner = VP8
+controller = VP8
+religion = the_silvern_guide
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Akra"
+is_city = yes
+culture = corean

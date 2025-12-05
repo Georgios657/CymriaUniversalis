@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = elective_monarchy_reform
+government_rank = 1
+technology_group = pegmr_tech
+primary_culture = misty_peregma
+religion = pygmer_ancestors
+capital = 3277# Bayreuth
+# Made junior partner of Ansbach 
+1430.1.1 = {
+	monarch = {
+		name = "Khrubnin"
+		dynasty = "Lan"
+		birth_date = 1391.9.21
+		dip = 0
+		adm = 1
+		mil = 1
+	}
+}
+

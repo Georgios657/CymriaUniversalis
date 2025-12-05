@@ -1,0 +1,12 @@
+add_core = ES0
+owner = ES0
+controller = ES0
+religion = the_silvern_guide
+hre = no
+base_tax = 2
+base_production = 4
+trade_goods = incense
+base_manpower = 2
+capital = "Zirv"
+is_city = yes
+culture = harian

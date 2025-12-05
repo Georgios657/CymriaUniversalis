@@ -1,0 +1,12 @@
+add_core = CA9
+owner = CA9
+controller = CA9
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Tarvashan"
+is_city = yes
+culture = far_malian
+religion = asae_ya

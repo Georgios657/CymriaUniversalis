@@ -1,0 +1,12 @@
+add_core = ES1
+owner = ES1
+controller = ES1
+religion = the_silvern_guide
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Las"
+is_city = yes
+culture = harian

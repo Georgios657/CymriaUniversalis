@@ -1,0 +1,12 @@
+add_core = ZR4
+owner = ZR4
+controller = ZR4
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 1
+capital = "Kharanesch"
+is_city = yes
+culture = parsai

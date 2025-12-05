@@ -1,0 +1,23 @@
+government = tribal
+add_government_reform = stateless_society
+government_rank = 1
+technology_group = naga_tech
+primary_culture = navi_naga
+religion = naga_rule_of_law
+capital = 1322	# Bayreuth
+
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Naga"
+		name = "Priyanka"
+		female = yes
+		birth_date = 1395.9.21
+		dip = 2
+		adm = 2
+		mil = 2
+
+	}
+
+}

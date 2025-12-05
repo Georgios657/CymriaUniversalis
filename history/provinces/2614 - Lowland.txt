@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = wool
+base_manpower = 4
+capital = "Lowcity"
+is_city = yes
+culture = khaserini
+religion = imperial_cult
+add_core = AN7

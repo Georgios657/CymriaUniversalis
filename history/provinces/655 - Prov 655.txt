@@ -1,0 +1,13 @@
+add_core = LB4
+owner = LB4
+controller = LB4
+culture = qualian
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Qavita"
+is_city = yes
+discovered_by = ottoman

@@ -1,0 +1,13 @@
+add_core = S06
+owner = S06
+controller = S06
+culture = ulaan
+religion = tengri
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 3
+capital = "Budini"
+is_city = yes
+discovered_by = nomad_group

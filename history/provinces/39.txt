@@ -1,0 +1,13 @@
+add_core = I02
+owner = I02
+controller = I02
+culture = badenian
+religion = old_imperial_faith
+hre = no
+base_tax = 5 
+base_production = 4
+trade_goods = cloth
+base_manpower = 2
+capital = "Neu-Fuggen"
+is_city = yes
+discovered_by = western

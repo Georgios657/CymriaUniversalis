@@ -1,0 +1,12 @@
+add_core = TR8
+owner = TR8
+controller = TR8
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wine
+base_manpower = 2
+capital = "Boheriga"
+is_city = yes
+culture = postalan
+religion = ishtara

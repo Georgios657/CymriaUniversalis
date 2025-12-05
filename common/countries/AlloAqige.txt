@@ -1,0 +1,68 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 75 240 240 }
+
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	steppe_riders
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_cavalry
+	steppe_uhlans
+	steppe_raiders
+	steppe_footmen
+	steppe_musketeers
+	steppe_infantry
+	steppe_rifles
+	reformed_steppe_rifles
+}
+
+monarch_names = {
+	"Zize #0" = 20
+	"Zeiz #0" = 20
+	"Mizes #0" = 20
+	"Schee #0" = 20
+	"Ziss #0" = 20
+	"Baumer #0" = 20
+	"Izze #0" = 20
+	"Hajis #0" = 20
+	"Mimis #0" = 20
+	"Vize #0" = 20
+	"Mize #0" = 20
+	"Hazi #0" = 20
+	"Taumer #0" = 20
+	"Kaumer #0" = 20
+	"Namer #0" = 20
+	"Naze #0" = 20
+	"Tebzes #0" = 20
+
+	"Ziza #0" = -50
+	"Miza #0" = -30
+	"Rin #0" = -30
+	"Haza #0" = -30
+	"Tauma #0" = -30
+	"Bauma #0" = -30
+	"Nama #0" = -30
+	"Naza #0" = -30
+}
+
+leader_names = {
+	Izze  Mize Schee Ziss Borb Mimis Tebezes Namer Kaumer
+	
+}
+
+ship_names = {
+
+}

@@ -1,0 +1,109 @@
+troll_rebellion = {
+	potential = {
+		tag = GI4
+		NOT = {
+		has_country_flag = troll_rebell
+		}
+	}
+
+	
+	
+	can_start = {
+		has_any_disaster = no
+		tag = GI4
+		any_owned_province = {
+		culture_group = north_trolls
+		}
+		NOT = {
+		stability = 3
+		}
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+		stability = 3
+		}
+	}
+		
+	
+	
+	progress = {	
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}		
+		
+		modifier = {
+			factor = 2
+			NOT = { stability = 2 }
+		}		
+		
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 90 }
+		}		
+
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 70 }
+		}			
+
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 50 }
+		}			
+
+		modifier = {
+			factor = 2
+			NOT = { legitimacy = 20 }
+		}					
+	}
+	
+	
+	
+	can_end = {
+		OR = {
+		AND = {
+		stability = 3
+		had_country_flag = {
+				flag = troll_rebell
+				days = 3650
+			}
+		}
+		NOT = {
+		any_owned_province = {
+		culture_group = north_trolls
+		}
+		}
+
+		}
+
+	}
+	
+
+	modifier = {
+		 legitimacy = -2
+			global_tax_modifier = -0.2
+			global_manpower_modifier = -0.20
+			 	stability_cost_modifier = 1
+	}	
+	
+	
+	on_start = troll_rebel.1
+	on_end = troll_rebel.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			50 = troll_rebel.3
+			50 = troll_rebel.4
+			50 = troll_rebel.5
+			50 = troll_rebel.6	
+		}
+	}
+}
+

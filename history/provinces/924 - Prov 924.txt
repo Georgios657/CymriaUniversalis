@@ -1,0 +1,14 @@
+add_core = ZC2
+owner = ZC2
+controller = ZC2
+culture = eesta
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Deiraigen"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

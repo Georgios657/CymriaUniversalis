@@ -1,0 +1,200 @@
+namespace = troll_rebel
+
+#  troll_rebel Starts
+country_event = {
+	id = troll_rebel.1
+	title = troll_rebel.1.t
+	desc = troll_rebel.1.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+			every_owned_province = {
+			limit = {
+			culture_group = north_trolls
+			}
+			
+			add_nationalism = 10
+			}
+	
+	
+	}
+	
+	
+	option = {
+		name = troll_rebel.1.a
+		add_legitimacy = -50
+		add_stability = -6
+		set_country_flag = troll_rebell
+		random_owned_province = {
+		limit = {
+		culture_group = north_trolls
+		}
+		 	nationalist_rebels = 1
+		}
+		
+	}
+
+}
+
+# Itroll_rebel Ends
+country_event = {
+	id = troll_rebel.2
+	title = troll_rebel.2.t
+	desc = troll_rebel.2.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = troll_rebel.2.a
+		add_stability = 1
+		add_legitimacy = 20
+	}
+}
+
+
+# troll_rebel
+country_event = {
+	id = troll_rebel.3
+	title = troll_rebel.3.t
+	desc = troll_rebel.3.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = troll_rebel.3.a
+		random_owned_province = {
+		limit = {
+		culture_group = north_trolls
+		}
+		 	nationalist_rebels = 3
+		}
+	}
+
+}
+
+# troll_rebel
+country_event = {
+	id = troll_rebel.4
+	title = troll_rebel.4.t
+	desc = troll_rebel.4.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = troll_rebel.4.a
+		random_owned_province = {
+		limit = {
+		culture_group = north_trolls
+		}
+		 	nationalist_rebels = 2
+		}
+	}
+
+}
+
+
+# troll_rebel
+country_event = {
+	id = troll_rebel.5
+	title = troll_rebel.5.t
+	desc = troll_rebel.5.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = troll_rebel.5.a
+		random_owned_province = {
+		limit = {
+		culture_group = north_trolls
+		}
+		 	nationalist_rebels = 4
+		}
+	}
+
+}
+
+
+# troll_rebel
+country_event = {
+	id = troll_rebel.6
+	title = troll_rebel.6.t
+	desc = troll_rebel.6.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = troll_rebel.6.a
+			every_owned_province = {
+			limit = {
+			culture_group = north_trolls
+			}
+			
+			add_local_autonomy = 10
+			
+			}
+	}
+
+}

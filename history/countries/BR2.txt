@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = wandering_army_reform
+government_rank = 1
+technology_group = imperial_tech
+primary_culture = batay
+religion = rozalia
+capital = 2677
+1444.1.1 = {
+	monarch = {
+		name = "Mate X"
+		dynasty = "Barhory"
+		birth_date = 1420.9.21
+		dip = 3
+		adm = 3
+		mil = 2
+
+	}
+
+}
+
+1444.1.1 = {
+		leader = {
+		name = "Petras Orbin"
+		type = conquistador
+		fire = 2
+		shock = 1
+		manuever = 2
+		siege = 0
+		death_date = 1453.7.17
+	}
+}

@@ -1,0 +1,29 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 2
+technology_group = nomad_group
+primary_culture = sagen
+religion = phoenix_faith
+capital = 940	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Madior"
+		name = "Saura"
+		birth_date = 1385.9.21
+		dip = 4
+		adm = 4
+		mil = 4
+
+				leader = {
+			name = "Saura the Conqueror"	 # Name of the leader
+			type = general	   # Type of leader: general, admiral, explorer, conquistidor
+			fire = 1
+			shock = 4
+			manuever = 3
+			siege = 3
+		}
+	}
+
+}

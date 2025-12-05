@@ -1,0 +1,69 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = aya_war
+
+country_event = {
+	id = aya_war.1
+	title = aya_war.1.t
+	desc = aya_war.1.desc
+
+	picture = RELIGION_eventPicture
+
+		mean_time_to_happen = {
+		months = 120
+		}		
+
+	trigger = {
+	NOT = {
+	has_country_modifier = unholy_warriors
+	}
+		NOT = {
+	has_country_modifier = unholy_nation
+	}
+		religion = yazida
+		 	any_war_enemy_country = { 
+			 	has_country_modifier = sacred_harpy_tech_military
+			}
+	}
+
+	immediate = {
+
+}
+	option = {
+	name = aya_war.1.a				
+	add_country_modifier = { 
+    name = unholy_warriors
+    duration = 3650  
+}
+		}
+
+
+	option = {
+	name = aya_war.1.b			
+	add_country_modifier = { 
+    name = unholy_nation
+    duration = 3650  
+}	
+		}
+		
+	option = {
+	name = aya_war.1.c		
+	change_religion = moon_and_sun
+		}
+
+	option = {
+	name = aya_war.1.d	
+	change_religion = the_silvern_guide
+		}
+
+	option = {
+	name = aya_war.1.e
+	change_religion = ishtara
+		}		
+	}
+	
+	

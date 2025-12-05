@@ -1,0 +1,529 @@
+human_sacrifice = {
+	icon = estate_eunuchs_bookkeepers_privilege
+	max_absolutism = -25
+	is_valid = {
+		
+	}
+	
+	influence = 0.05
+	loyalty = 0.0
+	benefits = { 
+		 	war_exhaustion_cost = -0.25
+	}
+	penalties = {
+	global_unrest = 2
+	}
+	
+	on_granted = {
+		add_stability = -2
+			custom_tooltip = enable_human_sacrifice
+			
+			enable_estate_action = {
+			estate_action = HUMAN_SAC
+		}		
+	}
+	on_revoked = { 
+	add_stability = -3
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -20
+	}
+		disable_estate_action = {
+			estate_action = HUMAN_SAC
+		}
+	}
+	
+	ai_will_do = {
+
+	}
+}
+
+holy_woods = {
+	icon = estate_god_privilege_holy_woods
+	max_absolutism = -10
+	land_share = 10	
+	is_valid = {
+		any_owned_province = {
+		OR = {
+			has_terrain = woods
+			has_terrain = hills
+			has_terrain = forest
+		}
+		}
+	
+		
+	}
+	
+		on_granted = {
+			custom_tooltip = holy_shrines_in_wood
+	}
+	
+		mechanics = {
+		exempt_from_seize_land
+	}
+	
+	influence = 0.05
+	benefits = { 
+		
+	}
+	penalties = {
+	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 30 }
+				estate_influence = {
+					estate = estate_god
+					influence = 95
+				}
+			}
+			NOT = { has_estate_privilege = holy_woods }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 35 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 55 }
+				}
+			}
+			NOT = { has_estate_privilege = holy_woods }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+	}
+	}	
+
+giant_temples = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		NOT = {
+		 	is_tribal = yes
+		}
+	}
+		land_share = 5
+	influence = 0.05
+	
+			on_granted = {
+			custom_tooltip = giant_temples_tt
+	}
+	
+	benefits = { 
+		
+	}
+	
+	
+	penalties = {
+	 	build_time = 0.2
+		build_cost = 0.05
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+great_ceremonies = {
+	icon = estate_god_privilege_great_ceremonies
+	is_valid = {
+		NOT = {
+		 	is_tribal = yes
+		}
+	}
+	influence = 0.05
+	loyalty = 0.05
+	benefits = { 
+	stability_cost_modifier = -0.1
+	}
+	penalties = {
+		global_tax_modifier = -0.15
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+holy_warriors = {
+	icon = estate_god_privilege_holy_warriors
+	max_absolutism = -5
+	is_valid = {
+		
+	}
+	
+	influence = 0.05
+	loyalty = 0.05
+				on_granted = {
+			custom_tooltip = holy_war_mp
+	}
+	benefits = { 
+		
+	}
+	conditional_modifier = {
+		trigger = {
+			any_known_country = {
+				OR = {
+				religion_group = death_faith
+				religion_group = sun_faith
+				
+				}
+				war_with = root
+			}
+		}
+		modifier = {
+			manpower_recovery_speed = 0.1
+		}
+	}	
+	
+	penalties = {
+	global_manpower_modifier = -0.10
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+consult_oracles = {
+	icon = estate_god_privilege_consult_oracles
+	max_absolutism = -20
+	is_valid = {
+		
+	}
+	influence = 0.1
+	loyalty = 0.1
+	benefits = { 
+		 tolerance_own = 1
+	}
+	
+		mechanics = {
+		exempt_from_seize_land
+	}
+	
+	penalties = {
+	 	all_power_cost = 0.05
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+read_divine_signs = {
+	icon = estate_god_privilege_read_divine_signs
+	max_absolutism = -20
+	is_valid = {
+		
+	}
+	influence = 0.0
+	loyalty = 0.05
+	benefits = { 
+		
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		stability_cost_modifier = 0.15
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+uphoald_godly_law = {
+	icon = estate_god_privilege_uphoald_godly_law
+	max_absolutism = -20
+	is_valid = {
+		
+	}
+	influence = 0.1
+	loyalty = 0.15
+	benefits = { 
+		
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		advisor_cost = 0.25
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+thanata = {
+	icon = estate_god_privilege_thanata
+	max_absolutism = -5
+	is_valid = {
+	has_country_flag = activate_thanata
+	}
+	influence = 0.05
+	loyalty = 0.05
+	benefits = { 
+		 	manpower_recovery_speed = 0.10
+	}
+	
+	
+	penalties = {
+
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -10
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+rigora = {
+	icon = estate_god_privilege_rigora
+	max_absolutism = -5
+	is_valid = {
+	has_country_flag = activate_rigora
+	}
+	influence = 0.05
+	loyalty = 0.05
+	benefits = { 
+		global_tax_modifier = 0.2
+	}
+	
+	
+	penalties = {
+
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -10
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+excita = {
+	icon = estate_god_privilege_excita
+	max_absolutism = -5
+	is_valid = {
+	has_country_flag = activate_excita
+	}
+	influence = 0.1
+	loyalty = 0.1
+	benefits = { 
+		legitimacy = 1
+	}
+	
+	
+	penalties = {
+
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -10
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+phoenix_king = {
+	icon = estate_god_privilege_phoenix_king
+	max_absolutism = 5
+	is_valid = {
+	has_matching_religion = phoenix_faith
+	}
+	influence = -0.05
+	loyalty = -0.1
+	benefits = { 
+		 years_of_nationalism = -5
+	}
+	
+	
+	penalties = {
+
+	}
+	
+	on_revoked = { 
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+stone_cirlces = {
+	icon = estate_god_privilege_stone_cirlces
+	max_absolutism = 0
+	is_valid = {
+	 	is_tribal = yes
+	}
+	influence = 0.05
+	loyalty = 0.1
+	benefits = { 
+		
+	}
+	
+	
+	penalties = {
+		defensiveness = -0.05
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -10
+	}
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+honor_the_stars_in_heaven = {
+	icon = estate_god_privilege_honor_the_stars_in_heaven
+	max_absolutism = -5
+	is_valid = {
+	 	is_tribal = yes
+	}
+	influence = 0.2
+	loyalty = 0.05
+	benefits = { 
+		horde_unity = 0.5
+		legitimacy = 1
+	}
+	
+	
+	penalties = {
+
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god
+    loyalty = -10
+	}
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}

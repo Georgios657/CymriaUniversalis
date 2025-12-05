@@ -1,0 +1,29 @@
+
+vassal = {
+    first = LO0
+    second = LO8
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = LO0
+    second = LO7
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = LO5
+    second = LV0
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = LO5
+    second = LO9
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+

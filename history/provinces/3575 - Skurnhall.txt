@@ -1,0 +1,12 @@
+add_core = TO9
+owner = TO9
+controller = TO9
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Skurnhall"
+is_city = yes
+culture = forrest_trolls
+religion = the_great_catfish

@@ -1,0 +1,16 @@
+# Anything typed here will be added to all selected province history files
+culture = icelander
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Meron"
+is_city = yes
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files
+add_core = ND7
+owner = ND7
+controller = ND7
+center_of_trade = 1

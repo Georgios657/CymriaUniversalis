@@ -1,0 +1,20 @@
+government = native
+add_government_reform = siberian_tribe
+government_rank = 1
+technology_group = skoger
+primary_culture = woodlander
+religion = skogian_religion
+capital = 1047# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1430.1.1 = {
+	monarch = {
+		name = "Katoinen"
+		dynasty = "Ura"
+		birth_date = 1391.9.21
+		dip = 3
+		adm = 1
+		mil = 4
+	}
+}
+

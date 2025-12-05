@@ -1,0 +1,13 @@
+add_core = U03
+owner = U03
+controller = U03
+culture = cumi
+religion = undead_imperial_faith
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = wool
+base_manpower = 4
+capital = "Mecum"
+is_city = yes
+discovered_by = muslim

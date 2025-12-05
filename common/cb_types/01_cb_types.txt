@@ -1,0 +1,297 @@
+# INSTRUCTIONS:
+# -------------
+# is_triggered_only - Triggered from within the code or by event effects. DO NOT REMOVE THE STOCK ONES.
+# months - The number of months this CB will be valid. Only works for triggered CBs.
+# prerequisites - A condition that automatically activates a CB. Does not work for triggered CBs.
+# no_opinion_hit - If yes you get no negative opinion from this
+#
+# ROOT = attacker
+# FROM = target
+#
+# NOTE: The order in which the peace options are listed is the order in which the AI will normally prioritize them in peace treaties
+#
+# TRIGGERED - Triggered from within the code or by event effects
+# --------------------------------------------------------------
+cb_vassalize_majapahit = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		mission_completed = the_assayian_war
+	}
+
+	prerequisites = {
+		FROM = {
+			is_free_or_tributary_trigger = yes
+			capital_scope = {
+			superregion = twin_river
+			}
+		}
+	}
+
+	war_goal = take_capital_vassalize_maj
+}
+
+
+cb_harpy_human = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+	NOT = {
+	is_year = 1500
+	}
+			culture_group = broden
+	}
+
+	prerequisites = {
+	FROM = {
+		culture_group = east_harpy	
+	}
+
+	}
+
+	
+		attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+	
+	war_goal = harpy_war
+}
+
+	
+# Holy War
+cb_assay_imp = {
+	valid_for_subject = no
+	holy_war = yes
+
+	prerequisites_self = {
+			has_country_flag = assay_expansion
+			current_age = age_of_discovery
+	}
+
+	prerequisites = {
+		is_neighbor_of = FROM
+	}
+
+	war_goal = superiority_crusade
+}
+
+
+
+# Holy War
+cb_the_universe = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		is_emperor_of_china = yes
+			
+	}
+
+	prerequisites = {
+		if = {
+		limit = {
+		empire_of_china_reform_passed = claim_on_sumar
+		}
+		FROM = {
+		capital_scope  = {
+		region = sumar_region
+		}		
+		}		
+		}
+
+		if = {
+		limit = {
+		empire_of_china_reform_passed = baylon_region
+		}
+		FROM = {
+		capital_scope  = {
+		region = claim_on_baylon
+		}		
+		}		
+		}
+		
+		if = {
+		limit = {
+		empire_of_china_reform_passed = claim_on_assay
+		}
+		FROM = {
+		capital_scope  = {
+		region = assay_region
+		}		
+		}		
+		}	
+
+		if = {
+		limit = {
+		empire_of_china_reform_passed = claim_on_the_northern_reaches
+		}
+		FROM = {
+		capital_scope  = {
+		OR = {
+		region = zevo_mountains_region		
+		region = minoria_region		
+		region = seeren_region		
+		}
+
+		}		
+		}		
+		}		
+		}
+
+	war_goal = take_capital_force_tributary
+}
+
+cb_free_people = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		is_revolutionary = no
+		has_reform = freed_slaves_reform
+	}
+
+	prerequisites = {
+		is_neighbor_of = FROM
+		FROM = {
+		capital_scope  = {
+		superregion = the_phoenix_empire
+		}		
+		}
+
+		}
+
+	war_goal = superiority_crusade
+}
+
+cb_change_cult = {
+	valid_for_subject = no
+		holy_war = yes
+	
+	ai_peace_desire = -10
+
+	prerequisites_self = {
+		has_country_flag = the_prophet_mino
+	}
+
+	prerequisites = {
+	FROM = {
+	OR = {
+		religious_school = {
+			group = moon_faith
+			school = arakan_the_black
+			
+		}	
+		religious_school = {
+			group = moon_faith
+			school = circe_the_loyal
+			
+		}			
+	}
+
+	}
+	
+	}
+
+
+		attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+	
+	war_goal = change_cult
+}
+
+cb_topple_vistaris = {
+	valid_for_subject = no
+	ai_peace_desire = -50
+
+	prerequisites_self = {
+		always = no
+	}
+
+	prerequisites = {
+		always = no
+	}
+
+		attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+	
+	war_goal = take_vistari_cap
+}
+
+
+cb_war_for_new_empire = {
+	valid_for_subject = no
+	ai_peace_desire = -50
+
+	prerequisites_self = {
+		always = no
+	}
+
+	prerequisites = {
+		always = no
+	}
+
+		attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+	
+	war_goal = take_imperial_cap
+}
+
+cb_unite_undead = {
+	valid_for_subject = no
+	ai_peace_desire = -50
+
+	prerequisites_self = {
+		has_reform = old_empire_hecontarchia
+	}
+
+	prerequisites = {
+		is_neighbor_of = FROM
+				FROM = {
+			has_reform = old_empire_hecontarchia
+		}
+	}
+	
+	war_goal = unite_undead
+}
+

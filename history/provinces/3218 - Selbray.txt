@@ -1,0 +1,14 @@
+add_core = GE5
+owner = GE5
+controller = GE5
+hre = no
+base_tax = 5
+base_production =5
+trade_goods = fish
+base_manpower = 4
+capital = "Selbray"
+is_city = yes
+culture = ithilan
+religion = velora
+
+fort_15th = yes

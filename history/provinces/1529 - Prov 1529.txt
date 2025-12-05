@@ -1,0 +1,12 @@
+add_core = PI2
+owner = PI2
+controller = PI2
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Xorath"
+is_city = yes
+culture = kharinian
+religion = nyamism

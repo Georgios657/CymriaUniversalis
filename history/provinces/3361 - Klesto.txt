@@ -1,0 +1,12 @@
+add_core = AS7
+owner = AS7
+controller = AS7
+culture = waya
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Kiesto"
+is_city = yes

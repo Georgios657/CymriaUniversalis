@@ -1,0 +1,25 @@
+﻿l_english:
+  HECONTARCHON:0 "Heconarchon"  
+  HECONTARCHONA:0 "Heconarchia"
+  
+  POTALIAN_EMPIRE:0 "Old Empire"
+  POTALIAN_EMPRESS: "Valissa"
+  POTALIAN_EMPEROR:0 "Valisso"
+  undead_mechanic:0 "Is Undead"
+  
+  NECRO_DUKE:0 "Necromancer"
+  NECRO_KING:0 "Arch-Necromancer"
+  NECRO_EMP:0 "Supreme Necromancer"
+ 
+  NECRO_DUKE_F:0 "Necromancess"
+  NECRO_KING_F:0 "Arch-Necromancess"
+  NECRO_EMP_F:0 "Supreme Necromancess" 
+  
+  NECRO_DUKEDOM:0 "Tower"
+  NECRO_KINGDOM:0 "Domain"
+  NECRO_EMPIRE:0 "Necromancer-Empire"
+  
+  SCHOLAR:0 "Apprentice"
+  SCHOLARA:0 "Necromancess-In-Waiting"
+  
+  undead_government_desc:0 "The undead never die, but still need to be governed."

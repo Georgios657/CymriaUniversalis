@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+technology_group = indian
+primary_culture = qabinian
+religion = amatism_faith
+capital = 531

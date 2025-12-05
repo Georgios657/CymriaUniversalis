@@ -1,0 +1,15 @@
+add_core = ZC0
+owner = ZC0
+controller = ZC0
+culture = alven
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 3
+
+trade_goods = grain
+base_manpower = 4
+capital = "Shearia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

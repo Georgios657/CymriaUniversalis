@@ -1,0 +1,12 @@
+add_core = GI3
+owner = GI3
+controller = GI3
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+capital = "Ginnungmykrir"
+is_city = yes
+culture = niefel
+religion = fore_bearers

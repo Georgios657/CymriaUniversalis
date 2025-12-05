@@ -1,0 +1,360 @@
+sacrifice_our_blood = {
+	icon = estate_god_privilege_giant_temples
+		max_absolutism = -5
+	is_valid = {
+		
+	}
+		land_share = 0
+	influence = 0.00
+	loyalty = 0.1
+	
+	
+			on_granted = {
+
+	}
+	
+	benefits = { 
+		
+	}
+	
+	
+	penalties = {
+	 			monthly_varjorjen_hunger = -0.05
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_shadow_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+nightly_hunts = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		culture_group = varjoren
+	}
+		land_share = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	
+			on_granted = {
+
+	}
+	
+	
+			influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_shadow_god
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			harsh_treatment_cost = -0.5
+			global_rebel_suppression_efficiency = 0.5
+		}
+	}
+	
+	benefits = { 
+		 	
+	}
+	
+	
+	penalties = {
+	 		
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_shadow_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+sacrifice_ourself = {
+	icon = estate_god_privilege_giant_temples
+		max_absolutism = -25
+	is_valid = {
+			culture_group = varjoren
+	}
+		land_share = 0
+	influence = 0.1
+	loyalty = 0.15
+	
+	
+			on_granted = {
+
+	}
+	
+	benefits = { 
+		
+	}
+	
+	
+	penalties = {
+	 	 	horde_unity = -1	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_shadow_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+thorrens_tithe = {
+	icon = estate_god_privilege_giant_temples
+		max_absolutism = -10
+	is_valid = {
+			culture_group = varjoren
+	}
+		land_share = 5
+	influence = 0.15
+	loyalty = 0.1
+	
+	
+			on_granted = {
+
+	}
+	
+	benefits = { 
+			horde_unity = 1	
+	}
+	
+	
+	penalties = {
+	 	 	varjorjen_hunger_gain_modifier = -0.5
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_shadow_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+the_blessed_lands_of_darkness_and_ice = {
+	icon = estate_god_privilege_giant_temples
+		max_absolutism = -5
+	is_valid = {
+		any_owned_province = {
+		AND = {
+			 	culture_group = varjoren
+			has_climate = arctic
+		}
+		}		
+	}
+		land_share = 5
+	influence = 0.05
+	loyalty = 0.0
+	
+	
+			on_granted = {
+		custom_tooltip = thorrens_gift
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+						AND = {
+			 	culture_group = varjoren
+			has_climate = arctic
+		}
+				}
+				add_province_modifier = {
+					name = blessed_artic
+					duration = -1
+				}
+			}
+		}
+	}
+	
+			on_granted_province = {
+			if = {
+				limit = {
+		AND = {
+			 	culture_group = varjoren
+			has_climate = arctic
+		}
+				}
+				add_province_modifier = {
+					name = blessed_artic
+					duration = -1
+				}
+			}
+		}	
+	
+	benefits = { 
+		
+	}
+	
+		mechanics = {
+		exempt_from_seize_land
+	}
+	
+	
+	penalties = {
+	 	
+	}
+	
+	on_revoked = { 
+				custom_tooltip = blessed_artic_removed
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = blessed_artic
+		
+					}
+				}
+				remove_province_modifier = blessed_artic
+			}
+		}
+		
+	add_estate_loyalty = {
+    estate = estate_shadow_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+invite_the_sages = {
+	icon = estate_god_privilege_giant_temples
+		max_absolutism = -10
+	is_valid = {
+		culture_group = varjoren	
+	}
+		land_share = 0
+	influence = 0.05
+	loyalty = 0.0
+	
+	
+			on_granted = {
+
+	}
+	
+		influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_shadow_god
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+				 idea_cost = -0.2	
+		}
+	}
+	
+	benefits = { 
+	
+	}
+	
+	
+	penalties = {
+	 	 	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_shadow_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+the_dark_prophecies = {
+	icon = estate_god_privilege_giant_temples
+		max_absolutism = -10
+	is_valid = {
+		
+	}
+		land_share = 0
+	influence = 0.05
+	loyalty = 0.0
+	
+	
+			on_granted = {
+
+	}
+	
+		influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_shadow_god
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+				stability_cost_modifier = -0.25
+		}
+	}
+	
+	benefits = { 
+	
+	}
+	
+	
+	penalties = {
+	 	 	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_shadow_god
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}

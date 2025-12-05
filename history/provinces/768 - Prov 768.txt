@@ -1,0 +1,14 @@
+add_core = ZE1
+owner = ZE1
+controller = ZE1
+culture = terephyian
+religion = phoenix_faith
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = tea
+base_manpower = 3
+capital = "Terephia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

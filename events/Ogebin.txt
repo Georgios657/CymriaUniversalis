@@ -1,0 +1,277 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = ogebin
+country_event = {
+	id = ogebin.1
+	title = ogebin.1.t
+	desc = {
+		desc = ogebin.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	
+	immediate = {
+		add_adm_tech = 2
+		add_dip_tech = 2
+		add_mil_tech = 2
+		}
+		
+	option = {
+			name = ogebin.1.b
+		trigger = {
+			ai = no
+		}
+		name = ogebin.1.a	
+	
+		}
+
+
+	option = {
+		name = ogebin.1.b
+		trigger = {
+			ai = yes
+		}
+			add_government_power = {
+			mechanic_type = ogebin_mechanic
+			power_type = blood_power
+			value = 100
+		}
+		}		
+	}		
+
+	
+country_event = {
+	id = ogebin.2
+	title = ogebin.2.t
+	desc = {
+		desc = ogebin.2.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	
+	immediate = {
+		 	random_owned_area = { 
+			change_religion = thorrinian
+			}
+			
+			random_owned_area = { 
+				change_religion = phoenix_faith
+				}
+		}
+		
+	option = {
+		name = ogebin.2.a	
+			change_religion = thorrinian
+		}
+
+	option = {
+		name = ogebin.2.b	
+			change_religion = phoenix_faith
+		}
+
+	option = {
+		name = ogebin.2.c
+			add_stability = 1
+			 	random_owned_province = {
+				change_religion = thorrinian
+				}
+							 	random_owned_province = {
+				change_religion = thorrinian
+				}
+							 	random_owned_province = {
+				change_religion = phoenix_faith
+				}
+		}		
+	}	
+	
+country_event = {
+	id = ogebin.3
+	title = ogebin.3.t
+	desc = {
+		desc = ogebin.3.desc
+
+	}
+
+		mean_time_to_happen = {
+	months = 800
+
+	modifier = {
+		factor = 0.5
+		NOT = { stability = 0 }
+	}
+	
+	modifier = {
+		factor = 0.5
+		NOT = { stability = -1 }
+	}	
+}
+	picture = RELIGION_eventPicture
+
+	trigger = {
+	tag = ND6
+	ND6 = {
+	owns = 1079
+	}
+	NOT = {
+	mission_completed = forbid_feuds
+	}
+	NOT = {
+	ai = yes
+	}
+	}
+
+	
+	immediate = {
+	1079 = {
+	 	add_unrest = 15
+	}
+		}
+		
+	option = {
+		name = ogebin.3.a	
+			add_republican_tradition = -5	
+		}
+
+	option = {
+		name = ogebin.3.b	
+		add_stability = -1
+		}
+
+		
+	}	
+
+country_event = {
+	id = ogebin.4
+	title = ogebin.4.t
+	desc = {
+		desc = ogebin.4.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+		mean_time_to_happen = {
+	months = 800
+
+	modifier = {
+		factor = 0.5
+		NOT = { stability = 0 }
+	}
+	
+	modifier = {
+		factor = 0.5
+		NOT = { stability = -1 }
+	}	
+}
+
+	trigger = {
+	tag = ND6
+	ND6 = {
+	owns = 1079
+	}
+	NOT = {
+	mission_completed = forbid_feuds
+	}
+	NOT = {
+	ai = yes
+	}
+	}
+
+	
+	immediate = {
+	1079 = {
+	 	add_unrest = 15
+	}	
+		}
+		
+	option = {
+		name = ogebin.4.a	
+				add_republican_tradition = -5
+		}
+
+	option = {
+		name = ogebin.4.b	
+			1079 = {
+			add_devastation = 10
+			}
+		}
+
+		
+	}	
+	
+country_event = {
+	id = ogebin.5
+	title = ogebin.5.t
+	desc = {
+		desc = ogebin.5.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	mean_time_to_happen = {
+	months = 800
+
+	modifier = {
+		factor = 0.5
+		NOT = { stability = 0 }
+	}
+	
+	modifier = {
+		factor = 0.5
+		NOT = { stability = -1 }
+	}	
+}
+
+	trigger = {
+	tag = ND6
+	ND6 = {
+	owns = 1079
+	}
+	NOT = {
+	mission_completed = forbid_feuds
+	}
+	NOT = {
+	ai = yes
+	}
+	}
+
+	
+	immediate = {
+	1079 = {
+	 	add_unrest = 15
+	}	
+		}
+		
+	option = {
+		name = ogebin.5.a	
+				add_republican_tradition = -5
+		}
+
+	option = {
+		name = ogebin.5.b	
+			add_yearly_manpower = -1
+		}
+
+		
+	}
+
+	

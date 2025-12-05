@@ -1,0 +1,12 @@
+add_core = GI3
+owner = GI3
+controller = GI3
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Skadir"
+is_city = yes
+culture = niefel
+religion = fore_bearers

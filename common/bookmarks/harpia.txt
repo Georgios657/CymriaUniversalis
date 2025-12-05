@@ -1,0 +1,40 @@
+bookmark =
+{
+	name = "HARPIA"
+	desc = "HARPIA_DESC"
+	date = 1444.1.1
+	
+	country = HA1
+	country = HA2
+	country = HA3
+	country = HA4
+	country = HA5
+	country = HA6
+	country = HA7
+	country = HA8
+	country = HA9
+	country = HY1
+	country = HY2
+	country = HY3
+	country = HY4
+	country = HY5
+	country = HY6
+	country = HY7
+	country = HY8
+	country = HY9
+
+
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

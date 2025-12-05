@@ -1,0 +1,12 @@
+add_core = PG1
+owner = PG1
+controller = PG1
+culture = misty_peregma
+religion = pygmer_ancestors
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Red Slope"
+is_city = yes

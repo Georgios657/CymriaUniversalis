@@ -1,0 +1,12 @@
+add_core = CA4
+owner = CA4
+controller = CA4
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Vera"
+is_city = yes
+culture = margatan
+religion = the_silvern_guide

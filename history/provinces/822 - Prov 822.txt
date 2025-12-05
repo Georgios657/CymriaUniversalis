@@ -1,0 +1,15 @@
+add_core = ZA3
+add_core = ZB2
+owner = ZB2
+controller = ZB2
+culture = gold_phonixian
+religion = phoenix_faith
+hre = no
+base_tax = 7
+base_production = 6
+trade_goods = chinaware
+base_manpower = 6
+capital = "Aeria"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

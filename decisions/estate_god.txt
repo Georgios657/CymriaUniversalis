@@ -1,0 +1,35 @@
+country_decisions = {
+
+	great_sacrifice = {
+		color = { 195 160 20 }
+		potential = {
+				has_enabled_estate_action = {
+				estate_action = HUMAN_SAC
+			}
+			has_estate = estate_god
+		}
+		allow = {
+			has_not_any_estate_disaster_active = yes
+			estate_action_off_cooldown = {
+				estate_action = HUMAN_SAC
+				days = 3650
+			}
+		}
+		effect = {
+			set_estate_action_cooldown = {
+				estate_action = HUMAN_SAC
+			}
+			estate_action = {
+				estate_action = HUMAN_SAC
+			}
+			
+		increase_estate_action_counter = {
+				estate = estate_god
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

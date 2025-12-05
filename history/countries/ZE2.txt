@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = terephyian
+religion = phoenix_faith
+capital = 769	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Eilan"
+		name = "Nadav"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 1
+		mil = 3
+
+	}
+
+}

@@ -1,0 +1,79 @@
+namespace = comet_children
+# Event to fire the incident. Or the de facto incident for non-dlc owners
+country_event = {
+	id = comet_children.1
+	title = comet_children.1.t
+	desc = comet_children.1.d
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+
+
+	}
+	
+	
+	option = {
+		name = comet_children.1.a
+		trigger = {
+			has_dlc = "Emperor"
+		}
+		set_imperial_incident = incident_comet_children
+	}
+	}
+	
+
+# dummy incident
+country_event = {
+	id = comet_children.2
+	title = comet_children.1.t
+	desc = comet_children.2.d
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # My heir stays and you like it!
+		ai_chance = {
+			factor = 10000
+		}
+		name = comet_children.2.a
+		LA9 = {
+			set_heir_flag = quantan	
+			
+			set_country_flag = promised_son
+		}
+		
+		
+
+	}
+	
+	option = { # You are free to elect another king!
+		ai_chance = {
+			factor = 0
+		}
+		name = comet_children.2.b
+			hre_inheritable = no
+			 	custom_tooltip = every_province_unrest_10
+			hidden_effect = {
+			 	every_province = { 
+				limit = {
+				is_part_of_hre = yes
+				}
+				add_unrest = 10
+				}			
+			}
+
+			LA9 = {
+			add_country_modifier = { 
+			name = cursed_prince
+			duration = 10000 
+			}			
+			}
+
+			
+	}
+}	

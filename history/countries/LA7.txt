@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = stem_duchys
+government_rank = 2
+technology_group = ottoman
+primary_culture = ascarien
+religion = amatism_faith
+capital = 609	# Bayreuth
+elector = yes
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Hizze"
+		name = "Tabeses"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 2
+		mil = 4
+
+	}
+
+}

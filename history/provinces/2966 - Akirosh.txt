@@ -1,0 +1,16 @@
+add_core = NC5
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 3
+base_production = 5
+trade_goods = grain
+base_manpower = 3
+capital = "Akirosh"
+is_city = yes
+culture = fretei
+religion = icearia
+add_core = NC7
+add_core = NC9
+
+center_of_trade = 1

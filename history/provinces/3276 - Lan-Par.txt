@@ -1,0 +1,12 @@
+add_core = PG1
+owner = PG1
+controller = PG1
+culture = misty_peregma
+religion = pygmer_ancestors
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = iron
+base_manpower = 4
+capital = "Lan-Par"
+is_city = yes

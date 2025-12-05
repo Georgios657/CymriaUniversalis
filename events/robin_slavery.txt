@@ -1,0 +1,106 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = robin_slavery
+
+province_event = {
+	id = robin_slavery.1
+	title = robin_slavery.1.t
+	desc = robin_slavery.1.d
+	picture = PEASANTS_BARTERING_eventPicture
+	
+	
+	trigger = {
+		 region = robin_region
+		 trade_goods = slaves
+		 OR = {
+		 devastation = 50
+		has_owner_accepted_culture = yes
+		 }
+
+	}
+	
+	immediate = {
+
+	}
+	
+	mean_time_to_happen = {
+	months = 24
+}
+
+	after = {
+
+	}
+
+	option = {
+		name = robin_slavery.1.a
+		ai_chance = {
+			factor = 25		}
+			REB = {
+			  change_variable = {
+        which = less_slaves_province
+        value = 1
+    }			
+			}
+
+		change_trade_goods = random
+	}
+}
+
+province_event = {
+	id = robin_slavery.2
+	title = robin_slavery.2.t
+	desc = robin_slavery.2.d
+	picture = PEASANTS_BARTERING_eventPicture
+	
+	
+	trigger = {
+			NOT = {
+				 region = robin_region	
+			}
+			
+			NOT = {
+			has_province_modifier = lowered_slavery
+			}
+		 trade_goods = slaves
+		 devastation = 50
+
+	}
+	
+	immediate = {
+
+	}
+	
+	mean_time_to_happen = {
+	months = 24
+}
+
+	after = {
+
+	}
+
+	option = {
+		name = robin_slavery.2.a
+		ai_chance = {
+			factor = 25		}
+			REB = {
+			  change_variable = {
+        which = less_slaves_province
+        value = 1
+    }			
+			}
+		change_trade_goods = random
+	}
+	
+	option = {
+		name = robin_slavery.2.b
+		ai_chance = {
+			factor = 25		}
+			add_province_modifier = { 
+			name = lowered_slavery
+		}		
+	}	
+}

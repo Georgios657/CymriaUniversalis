@@ -1,0 +1,13 @@
+add_core = LB7
+owner = LB7
+controller = LB7
+culture = vannian
+religion = amatism_faith
+hre = yes
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 2
+capital = "Arino"
+is_city = yes
+discovered_by = ottoman

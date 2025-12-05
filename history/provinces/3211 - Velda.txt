@@ -1,0 +1,12 @@
+add_core = GE1
+owner = GE1
+controller = GE1
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = cloth
+base_manpower = 3
+capital = "Velda"
+is_city = yes
+culture = ithilan
+religion = velora

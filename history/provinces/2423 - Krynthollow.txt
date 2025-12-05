@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = wool
+base_manpower = 3
+capital = "Krynthhollow"
+is_city = yes
+culture = dytasiia
+religion = imperial_cult
+add_core = AX2

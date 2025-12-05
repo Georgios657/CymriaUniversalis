@@ -1,0 +1,13 @@
+add_core = I02
+owner = I02
+controller = I02
+culture = sollingian
+religion = old_imperial_faith
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = grain
+base_manpower = 2
+capital = "Tabenheim"
+is_city = yes
+discovered_by = western

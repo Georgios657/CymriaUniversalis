@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 2
+technology_group = indian
+primary_culture = zhuvilian
+religion = amatism_faith
+capital = 525

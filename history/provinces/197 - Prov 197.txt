@@ -1,0 +1,13 @@
+add_core = U01
+owner = U01
+controller = U01
+culture = tritoni
+religion = undead_imperial_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Etus"
+is_city = yes
+discovered_by = muslim

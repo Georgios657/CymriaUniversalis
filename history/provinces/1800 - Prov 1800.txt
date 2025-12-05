@@ -1,0 +1,14 @@
+add_core = TW4
+owner = TW4
+controller = TW4
+hre = no
+base_tax = 9
+base_production = 8
+trade_goods = grain
+base_manpower = 7
+capital = "Ninua"
+is_city = yes
+culture = southern_baylonian
+center_of_trade = 1
+religion = ishtara
+fort_15th = yes

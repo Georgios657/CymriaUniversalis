@@ -1,0 +1,13 @@
+add_core = LO1
+owner = LO1
+controller = LO1
+culture = lovorian
+religion = telcontarian
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Contars Harbour"
+is_city = yes
+discovered_by = ottoman

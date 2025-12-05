@@ -1,0 +1,5 @@
+# No previous file for Laga
+
+discovered_by = AR1
+
+discovered_by = PI6

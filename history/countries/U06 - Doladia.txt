@@ -1,0 +1,23 @@
+government = undead_government
+add_government_reform = old_empire_hecontarchia
+government_rank = 1
+technology_group = muslim
+primary_culture = cumi
+religion = undead_imperial_faith
+capital = 157	# Bayreuth
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+120.1.1 = {
+	monarch = {
+		name = "Quintus"
+		dynasty = "Doladis"
+		birth_date = 12.9.21
+		dip = 2
+		adm = 2
+		mil = 3
+
+	}
+		
+}
+

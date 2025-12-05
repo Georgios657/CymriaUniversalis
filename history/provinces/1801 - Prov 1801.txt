@@ -1,0 +1,12 @@
+add_core = TW4
+owner = TW4
+controller = TW4
+hre = no
+base_tax = 6
+base_production = 7
+trade_goods = fish
+base_manpower = 5
+capital = "Urbilen"
+is_city = yes
+culture = southern_baylonian
+religion = ishtara

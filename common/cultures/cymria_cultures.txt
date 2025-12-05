@@ -1,0 +1,2994 @@
+gemharian = {
+	graphical_culture = polynesiangfx
+
+					male_names = {
+Aratoku Hemiaro Koratare Tainoru Marikoha Rautake Himarua Torawhitu Karumo Tehanu Rauhikiri Watorangi Nohiko Tamakiri Harunake
+
+}
+
+		female_names = {
+	Maruana Rihokiri Tehana Koruwera Hinearoa Waiori Tahurangi Norumea Karitoha Aruwera Raukiri Moerata Hanukiri Teorina Wakamea
+}
+
+		dynasty_names = {
+Harautiki Maruwhenua "Te Raukano" Hikotiri Wanuhera Korimako Taruwhitu Manahiri Otewhanga Himorangi Rautakea Takamori Wakatiri Hinewhara Rorimako Tehakiri Nuarangi Toruwhana Kiritau Marotiri		
+		}	
+		
+		
+		
+		genharia = {
+			primary = MO1
+		}
+		
+				chaararian = {
+			primary = MO3
+		}
+		
+		gemarian = {
+		primary = MO5
+		}
+		
+		ramorian = {
+		primary =MO7 
+		}
+		
+}
+
+leyak = {
+	graphical_culture = southamericagfx
+
+					male_names = {
+					"I Wayan Gede" "I Putu Agus" "I Gede Nyoman" "I Made Surya" "I Kadek Arya" "I Nengah Putra" "I Nyoman Adi" "I Komang Budi" "I Komang Guna" "I Ketut Wira" "I Ketut Putra" "I Ketut Jaya"
+}
+
+		female_names = {
+		"Ni Luh Wayan Ayu" "Ni Putu Sri" "Ni Gede Ayu" "Ni Made Dewi" "Ni Kadek Ayu" "Ni Nengah Sari" "Ni Nyoman Ayu" "Ni Komang Dewi" "Ni Komang Rani" "Ni Ketut Ayu" "Ni Ketut Sari" "Ni Ketut Dewi"
+}
+
+		dynasty_names = {
+		Sujana Wijaya Putra Ayu Arya Wira Darma Dharma Adi Sari Jaya
+		}	
+		
+		teyak = {
+			primary = TI2
+		}
+		
+		grand_leyak = {
+		primary = TI3
+		}
+		
+		tilak = {
+		
+		}
+}
+
+tilidin = {
+	graphical_culture = southamericagfx
+
+					male_names = {
+					"Lapu-Lapu" Datu "Rajah Humabon" Tindoy Dodong Bayani Makisig Amado  Lakan Bantug
+
+}
+
+		female_names = {
+		Luningning Luzviminda Ligaya "Dayang-Dayang" Mutya Marikit Inday Amihan Diwata Bayani 
+}
+
+		dynasty_names = {
+		Labajo Ablan Ybanez Dagohoy Balbuena
+		}	
+		
+		tilida = {
+			primary = TI1
+		}
+		
+		hasinian = {
+		primary = TI4
+		}
+		
+		celobo = {
+		primary = TI5
+		}
+		
+		nortio = {
+		primary = TI6
+		}
+		
+		nicotino = {
+		primary = TI7
+		}
+		
+		metona = {
+		primary = TI8
+		}
+		
+		tenoxa = {
+		primary = TI9
+		}
+
+}
+
+northern_giants = {
+	graphical_culture = inuitgfx
+
+					male_names = {
+					Jarnskald  Brimir Kaldgrim Draumnir Vargnarr Stenulf  Ymir  Suttung Thrym Hymir Hrungnir Skrymir 
+
+}
+
+		female_names = {
+		Angrboda Skadi Gerd Hyrrokkin Bestla Isruna Snaevild Thyrnara Vetra Jarnheid Grimhildr 
+}
+
+		dynasty_names = {
+		Jotunkin Muspelkin Nieflkin Angrkin Jarnkin Brikin Snaekin
+		}	
+		
+	muspel = {
+	primary = GI2
+	}
+	
+	jotun= {
+	primary = GI1	
+	}
+	
+	niefel = {
+	primary = GI3	
+	}
+	
+}
+
+north_trolls = {
+	graphical_culture = inuitgfx
+
+					male_names = {
+					Dovregubben Trym Rungnir Grendel Grottulf Skarnok Buldrek Mossgrim Tharkun Dravald Krungar Vraknir 
+
+}
+
+		female_names = {
+		Huldra Gygr Skogsra Tusse Grimaelda Myrvanda Druska Skarnhild Ylvina Tarnja Kraga Ismora 
+}
+
+		dynasty_names = {
+			Skarnfjell Djuprhaug Tindskalle Myrskogr Mosetraud Hulvedar Isvindr Frostravn Hrimulv Brennsteyn 
+		}	
+		
+	snow_trolls = {
+		primary = TO5
+	}
+	
+	hill_trolls = {
+		primary = TO3
+	}
+		
+	forrest_trolls = {
+		primary = TN2
+	}
+	
+	river_trolls = {
+		primary = TN4
+	}
+		
+}
+
+
+peregma 	= {
+	graphical_culture = aboriginalgfx
+		male_names = {
+		"Ark" "Urk" "Erk" "Urk" "Tak" "Tek" "Tuk" "Tok" "Ark-Tak" "Erk-Tek" "Irk" "Bec" "Warf" "Worf" "Werf"
+}
+		female_names = {
+		"A" "U" "E" "I" "O" "Ark-A" "Ark-U" "Ark-E" "Ark-I" "Ark-O" "Worf-A" "Werf-A" "Warf-A"
+		}
+				dynasty_names = {
+				"Bekkor" "Bekar" "Bektatuni" "Bektoriu" "Bektektuktok" "Bekarkurkerk"
+				}
+
+
+		misty_peregma = {
+		primary = PG1		
+		}
+		
+				sin_peregmar = {
+		primary = PG2		
+		}
+		
+				ky_peregmar = {
+		primary = PG3	
+		}
+		
+				ret_peregmar = {
+		primary = PG4	
+		}
+}
+
+northfolk 	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+	Per Lars Finn Harold Anter Tjorben Tjorsen
+}
+		female_names = {
+		Antje Ronja Marie Astrid Rosgarda Rovina Pera Veronica 
+		}
+				dynasty_names = {
+				"Gynt" "Jarol" "Gyntsi" "Draken"
+				}
+
+
+		gynter = {
+		primary = GY1			
+		}
+		
+		north_gynter = {
+		primary = GY3			
+		}
+}
+
+
+calernia 	= {
+	graphical_culture = easterngfx
+		male_names = {
+}
+		female_names = {
+		}
+				dynasty_names = {
+				}
+
+
+		outer_wooder = {
+		primary = GW8			
+		}
+		
+		inner_wooder = {		
+		}
+}
+
+lekirian	= {
+	graphical_culture = muslimgfx
+		male_names = {
+				Kurosh Daryush Khashayarsha Ardashir Kambujia Tirdad Mehrdad Ardavan  Rustam  Sassan  Bahram  Ardeshir  Fereydun  Ohrmazd Jamshid  Isfandiyar  Kaykhosrow 
+	
+		}
+		female_names = {
+				Farangis  Homai  Gordafarid  Zeinab  Azadeh  Denkird  Negar  Simin  Shahrazad 
+		Atossa Artemisia  Pari  Roxane  Mandana  Parysatis  Cassandane  Mitra  Shirin  Azarmidokht 
+
+}
+				dynasty_names = {
+							Haxamanishiyan Median  Kayaniden  Arsakia Haltamti Pishdadia Lekishiyan
+	
+		}
+	lek = {
+		primary = DH1			
+	}
+	
+	shansharian = {
+			primary = VP1
+	}
+	
+	high_shansharian = {
+				primary = VP2
+	}
+
+	ayas_valley = {
+			primary = VP4	
+	}
+	
+	corean = {
+				primary = VP6
+	}
+
+	
+}
+
+gelorian	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Tharen Eryk Malric Jostan Dareth Kelvan Braen Loric Faelen Marnor Cedrik Toran Varek Halgrim Silen
+		}
+		female_names = {
+		Elira Nysha Vaela Lirae Myrren Kaelith Thalia Serin Alenya Breya Isolde Neris Calira Ysalin Mareth
+}
+				dynasty_names = {
+				Lorian Meridun Tharnak Thalorin Valorae "D'Vorn" 
+		}
+	trystane = {
+				primary = GE2
+	}
+	
+	darloinian = {
+				primary = GE6
+	}
+
+	ithilan = {
+				primary = GE5
+	}
+	
+	astranor = {
+				primary = GE1	
+	}
+
+	myuiran = {
+				primary = GE3
+	}
+	
+}
+
+west_harpy 	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Sayfur Tayran Naír Bazman Uqabi Simraz Muratar Parvan Saqran Anzal Nawfal Hudan Ramvar Tayazd Gharan
+	}
+		female_names = {
+		Parvina Naylat Sinafar Humaya Tayba Simorgahan Zarpari Parnaz Lalehayr Humin Simpari Zaralun Nafarin Avapar Savara
+		}
+				dynasty_names = {
+				Bazadan Ashyanfar Paradani Ayar
+					}
+
+
+		ayasa = {
+				primary = AS1
+		}
+		
+		waya = {
+				primary = AS7		
+		}
+		
+		yellow_harpia = {
+				primary = AS3		
+		}
+		
+		beror = {
+				primary = AS4		
+		}
+		
+		arbor = {
+				primary = AS6		
+		}
+}
+
+east_harpy 	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Takayoru Hiryo Karasuma Raigetsu Tenzakura Hayakaze Aokarasu Kagetaka Shoryu Itsukage  Tobihane Yamikaze Kurohane Hoshikaze Akikumo 
+	}
+		female_names = {
+		Tsubameko Hiyoriko Kazehime Ayakaze Misorano Kamiko Chiharuka Renkari Hokuro Amayumi Tobihane Yamikaze Kurohane Hoshikaze Akikumo 
+		}
+				dynasty_names = {
+			Akabane Aobane Kurobane Shirobane Tsubasabane Hayatsume Akatsume Kagetora Tetsutsume Hoshitsume Kamitsume 
+					}
+
+
+		higa_harpia = {
+				primary = HA2			
+		}
+		
+		nago_harpia = {
+				primary = HA7			
+		}
+		
+		yama_harpia = {
+				primary = HY1			
+		}
+		
+		kaigain_harpia = {
+				primary = HY3			
+		}
+		
+		san_harpia = {
+				primary = HY5			
+		}
+		
+		shima_harpia = {
+				primary = HY9			
+		}
+}
+
+aylorian 	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Aylen Veyric Thalior Daemir Rhovan Aedric Veylor Kaedon Rhaelis Teryon Sivron Tarvek Keldan Vashir Orvian Lorien Taevor Rhysson Vaedor Malkor
+	}
+		female_names = {
+		Aylia Seraya Thalienne Elvira Vaelora Dayra Selmira Zyraelle Kallira Evoria Kalyria Vyressa Thayra Lorielle Elyssia
+		}
+				dynasty_names = {
+				"ya Ran" "ya Kos" "ya Lor" "ya Dor" "ya Darin" "ya Beila" "ya Siev" "ya Virjta" "ya Arno"
+				}
+sivir = {
+		primary = AY2		
+}
+
+lorer = {
+		primary = AY4		
+}
+	
+aylian = {
+		primary = AY1		
+}
+
+dayrer = {
+		primary = AY3		
+}
+	
+kalyrian = {
+		primary = AI1		
+}
+
+shiror = {
+		primary = AI2		
+}
+
+meyor = {
+		primary = AI3		
+}
+
+far_aylor = {
+		primary = GW2		
+}
+
+
+aylor_frontier = {
+		primary = PW6		
+}
+
+}
+viria 	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Setris Tayro Kanulon Sylos Tanurk Anon Ketar Kyr Lyr Tyr Iver Teer Kerker Ayler Tyler Ivon
+	}
+		female_names = {
+		 Bessa Astra Iveta Ivjeta Yva Kyra Teela Karka Nerka Syvera Ketara Nara Ivone 
+		}
+				dynasty_names = {
+				
+				Sassa Awake Kaly Shuo Tyell Enkarin Tego Freto Yuper Thevor "es Yan" "es Tirak" "es Kalvek" "es Nuyk"
+				}
+	
+
+	
+
+
+
+tyraso = {
+		primary = AI4	
+}
+
+yvir = {
+		primary = NC9	
+}
+
+vaskar = {
+		primary = AI6	
+}
+
+asyloria = {
+		primary = AI7	
+}
+
+sevnor = {
+		primary = AI8	
+}
+
+ossor = {
+		primary = AI9	
+}
+
+tegos = {
+		primary = NC1	
+}
+
+yupera = {
+		primary = NC2	
+}
+
+marcher = {
+		primary = NC3	
+}
+
+irjeva = {
+		primary = NC4	
+}
+
+fretei = {
+		primary = NC5	
+}
+}
+
+broden 	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Akos Bence Csaba David Elemer  Farkas Gyula Levente Mate Tamas Zalan Zoltan Zatan Botond Huba Aladar Somogyi Tas Vajk Csillag Nap Tavasz Nyir 
+	}
+		female_names = {
+Alma  Boglarka  Afonya Csilla Dalma Hanga Ibolya Jazmin Reka  Szilvia Virag  Zsoka Ajna Aranka Csenge Fruzsina Hajnal Zita 
+		}
+				dynasty_names = {
+			Herceg Vitez  Baro Grof Nador Zrynyi Nadasy Thokoly Batthany Palffy Ashazy Kisshasy Resterhas 
+					}
+
+tomyrian = {
+		primary = AY5	
+}
+					
+kiralyfi = {
+		primary = BR1	
+}
+
+parazsti = {
+		primary = BR2	
+}
+
+
+nagytori = {
+		primary = BR5	
+}
+
+hegytori = {
+		primary = BR8	
+}
+
+fenyodi = {
+		primary = BR9	
+}
+
+kissay = {
+		primary = BR4	
+}
+
+batay = {
+}
+
+halomi = {
+		primary = BR3	
+}
+}
+
+
+marelanda 	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Martus  Thalion Edmund Beren Fendral Kael Aeren Lorien Sylven Merrin Quenith Valen Rynor
+	}
+		female_names = {
+Elsera Mariselle Avelina Roswyn Gwyndara Lunara Calyssa Isolde Seraphine Elyndra
+		}
+				dynasty_names = {
+			"si Raynor" "si Kerri" "si Zerrigan" "si Mengsk" "si Artuor"
+					}
+		
+	marier = {
+		primary = MV1		
+	}
+	
+	boroner = {
+		primary = AN9		
+	}
+	
+	khaserini = {
+		primary = AN7		
+	}
+	
+	ponier = {
+		primary = AN8		
+	}
+}
+
+verdani	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Silvan Lorien Aurelian Faelan Eryndor Caelum Thorian Leofric Verdan Orin Arden Ashen Fern 
+	}
+		female_names = {
+		 Sylvana Aurelia Elowen Viridiana Serenna Iris Althea Thalia Nerina Elysia  
+		}
+				dynasty_names = {
+				"si Verda" "si Cavel" "si Ivi" "si Revar" "si Fere"
+					}
+		
+	verdano = {
+		primary = VE1		
+	}
+	
+
+
+
+}
+
+vainomoi	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Alejandroth Doménar Ricardioz Valentior Fernandozán Elíazur Santiagoré Leónidas Crisantor Gabríon Celerion Valioré Aurelioz Narcísar Florencio Cielomar Luzandro Raimel Espiridón Vidalía 
+	}
+		female_names = {
+		Isadora Marisola Serafina Rosalinda Cataliona Felícia Esmérida Violeta Lucrecia Anabella 
+		}
+				dynasty_names = {
+			"di Vivar" "di Diaz" "di Fere" "di Forte" "di Luna" "di Lerec"
+					}
+		
+	sali = {
+		primary = AN4		
+	}
+	
+	temai = {
+		primary = AN1		
+	}
+	
+	lauri = {
+		primary = AW8		
+	}
+	
+	seili = {
+		primary = AV7		
+	}
+
+	foceti = {
+		primary = AW7		
+	}
+
+
+}
+
+girta	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		Arkalzu Shulmesh  Dummuzi Enshadu Nergalzu Kadumish Zikarru Lamassur Urzikur Shargul 
+	}
+		female_names = {
+		Ishtarzu Ninsarra Belitzu Tammur Enkasharra Zaruma Lilithu Shamashra Kallamma Ursharra 
+		}
+				dynasty_names = {
+			Aqratu Shamuru Zikarra Belshar Nuramu 
+					}
+		
+	blulian = {
+		primary = YA5		
+	}
+	
+	apsuian = {
+		primary = YA7		
+	}
+	
+	tiamian = {
+	}
+
+
+}
+
+arnian	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Morvain Calderon Vargoth Necrosius Thalric Zerrath Draemir Velcaron Ashuron Malthazar Avarion Zerothal Nethralis Ozythar Velkyn Morthalis Ashanur Thalmaris Lycarion Vexarith 
+	}
+		female_names = {
+Selarica Nythera Eryndra Velrissa Maltheria Zyvalis Kaelitha Lirathra Osythia Thalendra Avarion Zerothal Nethralis Ozythar Velkyn Morthalis Ashanur Thalmaris Lycarion Vexarith 
+			}
+				dynasty_names = {
+					Lichian Morn Ulthwyk Hillar Varn Baldereth
+					}
+		
+	high_culturian = {
+		primary = EM1		
+	}
+	
+	low_culturian = {
+		primary = AX1		
+	}
+	
+	dytasiia = {
+		primary = AX2		
+	}
+	
+	dunarian = {
+		primary = AX3		
+	}
+	
+	arthian = {
+		primary = AN5		
+	}
+	
+	arnorian_forster = {
+		primary = GW3		
+	}
+}
+
+arvenian	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Aldric  Cedric Thalric Rowan Edric Gareth Kaelith Draven Veylan Lucian Aeron Quenlyn Ellorian Riven Thalos Emrynn Kaelyn Draylen Veylis Ceylon 
+	}
+		female_names = {
+Evelynn Seraphine Lyra Althea Roselyn Thalira Mirael Isolde Caelith Velanna Riven 
+			}
+				dynasty_names = {
+	Kael Sylva Wirda Aere Ember Amberlyn Wanderlyn Avarlyn
+					}
+		
+	moorian = {
+	primary = AV4	
+	}
+
+	verdanian = {
+	primary = AW4	
+	}
+	
+	zavonian = {
+	primary = AV7	
+	}
+	
+		sylvanian = {
+	primary = AW3	
+	}
+	
+	fayrin = {
+	primary = AV2	
+	}
+	
+	kaelwyn = {
+	primary = AV5	
+	}
+	
+	tarachian = {
+	primary = AV1	
+	}	
+}
+
+zylarian	= {
+	graphical_culture = southeastasiangfx
+		male_names = {
+		Armandien Juliennart Renault Théolain Clémentor Valérien Luciennart Benoîtan Floriennac Géraudric Adriennaux Solyverne Évaric Rémiel Noéthiel Caëlianne Jolivier Théonor Valnérie Ambrélis 
+	}
+		female_names = {
+Élodienne Améliane Séraphielle Marisande Laurienne Isabrielle Cléophise Félicianne Angelette Véroniquea 
+			}
+				dynasty_names = {
+	Nyrash Varna Ishanda Karazor
+					}
+		
+	bellis = {
+	primary = AW5		
+	}
+	
+	morash = {
+	primary = AW6		
+	}
+	
+	kandarian = {	
+	}
+
+}
+
+cyusian	= {
+	graphical_culture = muslimgfx
+		male_names = {
+			Adrianos Akakios Alexandros Alexios Anastasios Anatolios 
+			Andreas Andronikos Anthemios Anthimos Antiokhos Antonios Apollonios 
+			Arsenios Artemios Athanasios Bardas
+			Bartholomaios Basileios Belisarios Boethios Bosporios 
+			Khristophoros Khrysanthos Khrysogonos Damianos Daniel David Demetrios 
+			Diogenes Dionysios Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios 
+			Gerasimos Germanos Gregoras Gregorios Hektorios Helias 
+			Herakleios Hierotheos Himerios
+			Konstantinos Pavlos Nikolaos Aineias Alexeios Ambrosios
+			Dionysos Elpidios Hektor 
+			Kastor Manouel Matthaios Nestor Nikomedes Orestes Palaimon Pelagios Petros Philemon Philippos 
+			Skantarios Stefanos Theodoros Thomas Prokopios Ioannes Iason
+	}
+		female_names = {
+			Alexandra Adriane Agathe Agne Agnes Aikaterine Alexeia Anastasia 
+			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania 
+			Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene 
+			Ioanna Ioulia Iouliana Ioustina Kale Konstantia 
+			Konstantine Kyra Kyriake Hypatia Zoe
+			}
+				dynasty_names = {
+				
+				Valancius Chorda Cheimona Zygos Gouinterskeil Cheimonoklimaka Rougasta Calcazar Heuneman Terra 
+		}
+		
+	thallasian = {
+	primary = TH0			
+	}
+
+	getrudian = {
+	primary = TH3			
+	}
+		
+	arkadian = {
+	primary = TH5			
+	}
+
+	jovian = {
+	primary = TH1			
+	}
+	
+		gerodian = {
+	primary = TH8			
+	}
+	
+			xantian = {
+	primary = TH7			
+	}
+}
+
+robinian = {
+	graphical_culture = muslimgfx
+		male_names = {
+			Xanti  Gaizka  Oier  Aitor Iker  Ander  Eneko  Gorka  Mikel  Xabier  Argi  Endika  Ekaitz  Unai  Ibai 
+	}
+		female_names = {
+		Amaia  Ane  Miren  Maite  Nagore  Leire  Nahia  Arantxa  Ainhoa  Iratxe  Eider  Itxaro 
+			}
+				dynasty_names = {
+				Elixabete  Oihana  Haizea  Edurne  Irati  Ura 
+					}
+		
+	red_robin = {
+	primary = RB1		
+	}
+
+	blue_robin = {
+	
+	}
+	
+	black_robin = {
+	primary = RB3
+	}
+}
+
+keenian	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		Mago  Bodashtart Mathos  Abdmelqart  Adonibal  Baalyaton  Shofet  Malchus  Sufet  Zimrida  Gerbal  Ethbaal 
+	}
+		female_names = {
+	Sophonisbe Tanit  Baalshamar  Tadmelqart  Astaarte  Baalat Tadbaal Adonit  Hannitat  Gisgoa  Abibaal  Tanitiba 
+			}
+				dynasty_names = {
+				Valancius Chorda 
+					}
+		
+	arakeenian = {
+	primary = AR0	
+	}
+
+	reakeenian = {
+	primary = AR6	
+	}
+	
+	iolan = {
+	primary = AR2	
+	}
+
+}
+
+marilian = {
+	graphical_culture = muslimgfx
+
+		male_names = {
+		Alban  Edi  Endrit  Kreshnik  Ardit  Flamur Jetmir  Blerim  Altin  Dritan  Art  Ilir  Albi  Arion 
+	}
+		female_names = {
+		Flutura  Valbona  Drita  Shpresa  Besa  Lule Mira Fatmira  Arlinda  Arjeta  Albana  Elira 
+		}
+				dynasty_names = {
+				Valancius Chorda Corda Cassia Abelad
+					}
+
+	rheenian = {
+	primary = CA1		
+	}
+	
+		cassalan = {
+	primary = CA0		
+	}
+	
+	malian = {
+	primary = CA2		
+	}
+
+	far_malian = {
+	primary = CA9		
+	}
+
+	badcoaster = {
+	primary = CA6		
+	}
+	
+	reelambian = {
+	primary = CA8		
+	}
+}
+
+
+khossor	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		Zerthar  Malrik  Thalzor  Vynrok  Karnath  Ezthar  Drazor  Xerion Shakor  Arathor  Zamrek  Khazdan Ravoth Lorthar 
+	}
+		female_names = {
+		Zythera  Malyntha Thyrena Velhara Azrithia Nyxora Kaelrith Eryndra Samraia Aralith Zarhena Shalorra Veshria Tahlira  Zynara Morvethia Khassira 
+		}
+				dynasty_names = {
+				Khossor Samle Santiame Metor Machok
+					}
+		
+	khossorian = {
+	primary = AR1		
+	}
+	
+	gemerian = {
+	primary = PI6		
+	}
+	
+	kharinian = {
+	primary = PI3		
+	}
+	
+	mountain_khossorian = {
+	primary = AR7		
+	}
+
+}
+
+
+azari	= {
+	graphical_culture = muslimgfx
+		male_names = {
+			"Barama N'Golo" "Danfasri" "Suma" "Denkoro" "Bakari" "Ton Mansa Demele" "Kera Djugu" "Monson" "Tonkomo" 
+			"Fa Sine" "Da Kaha" "Tyefolo" "Nga Ngolo" "Sunsa" "Massa" "Sekolo" "Forokolo" "Seba Mana" "Deni ba Bo" 
+			"Sira Bo" "Dessekoro" "Saraba" "Nntinkoro" "Nanka" "Daoula" "Yadega" "Yolomfaogoma" "Kourita" "Geba" 
+			"Wobgho" "Saaga" "Kaongo" "Dulugu" "Sawadogo" "Karfo" "Baongo" "Tontuoriba"
+			
+	}
+		female_names = {
+				"Tabara" "Gaisiri" "Bello" "Diallo" "Nyako" Endana Gethera Hinya Ikeno Inira Inithia Itanya Jamba Kakena 
+			Kenja Kenithia Kenura Kiama Kiania Kianira Kiira Kirima Muney Muraty Oyana Therania Tia
+		}
+				dynasty_names = {
+				Qalam Hara Herom Krima
+					}
+		
+	qalumharan = {
+	primary = QA1		
+	}
+	
+	commorian = {
+	
+	}
+	
+	pennai = {
+	primary = QA8		
+	}
+}
+
+smolder	= {
+	graphical_culture = africangfx
+		male_names = {
+		Gassa Abassa Oiy Oloy Nik Sato Shalko Greuto Misso Super Eldaro Haile Sailas
+	}
+		female_names = {
+		 Aiy Aloy Gassi Araga Gasta Fina Sata Satara Shalka Greuta Missa
+		}
+				dynasty_names = {
+				Smolder Abyssiaassa Girai Finnikai Sataai
+					}
+	abyssa_cassa = {
+	
+	}	
+		
+	abyssian = {
+	primary = QA6		
+	}
+	
+	eldarian = {
+	primary = WI1		
+	}
+
+	lemukan = {
+	primary = WI3		
+	}
+	
+	girai = {
+	primary = QA7		
+	}	
+}
+
+wissian	= {
+	graphical_culture = africangfx
+		male_names = {
+			Ruhaga Bunyonya Kiteite Kahiyoza Rutahigwa Rwakyendera Rugacwa Lweikiza Kihira Rwasa
+			Kanyoni Kivunangoma Masimba Maziga Buhinda Kmenyi Ntare Karemera Rushatsi Rufuku Baridamunka
+			Mutaga Mwambutsa Cambarantama Birori Maconco Kigeli Mutara Cyilima Ruganzu Ndahiro Nsoro Rubanda
+			Nyarume Rumeza Kanyarwanda		
+	}
+		female_names = {
+		Baramparaye Ngenzahago Nyiramavugo Kanjogera Nyirarukangaga Garitika Tikara Barampara Ngenzara Maismra
+		}
+				dynasty_names = {
+							Songoro Ha Huma Iru Hima Kama Chwa Mpazi Bairu Waha Hinda Bajiji Bashubi Abacyaba
+			Abasinga Abashambo Abahinda Abazigaba Abungura Abarihira Abahondogo Abongera
+					}
+		
+	jirai = {
+	primary = WI2		
+	}
+	
+	marionian = {
+	primary = MA1		
+	}
+	
+	upper_jirai = {
+	}	
+	
+		jinai = {
+	primary = WI5		
+	}
+
+
+		high_jinai = {
+	primary = WI4		
+	}	
+	
+	darian = {
+	primary = WI7		
+	}
+}
+
+tzarati	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		Marvin Marin Maltar Menes Merres Natan Naton Tedor Ezeriel Kyle 
+		}
+		female_names = {
+		Marion Marlin Sheira Moira Marvis Eileen Marva
+	}
+				dynasty_names = {
+				Telan Ruinor Asta Stasa Stasi
+					}
+		
+	morivia = {
+	primary = QA2		
+	}
+}
+
+borondo	= {
+	graphical_culture = muslimgfx
+		male_names = {
+			Abidemi Abimbola Abiodun Abioye Aboubacar Abubakar Ade Adebayo Adebola Adebowale Adedayo Adegoke Adetokunbo Adisa 
+			Afolabi Akachi Akpofure Akuchi Alemayehu Alinafe Amadi Amadi Ameqran Anan Andile Awotwi Ayo Ayodele Ayokunle Ayomide 
+			Ayotunde Azubuike Baako Babajide Babatunde Bamidele Berhanu Berko Boipelo Boitumelo Bongani Chi Chibueze Chibuike 
+			Chibuzo Chidi Chidiebere Chidiebube Chidiegwu Chidike Chidubem Chiemeka Chifundo Chifuniro Chijindum Chike Chikelu 
+			Chikere Chikondi Chikumbutso Chima Chimwemwe Chinedu Chinonso Chinwe Chinweike Chinwendu Chinweuba Chioma Chisomo 
+			Chiumbo Chiyembekezo Chizoba Chuks Chukwudi Chukwuemeka Chukwuma Dakarai Dalitso Dayo Dejen Desta Dubaku Dumisani 
+			Efemena Ejiro Ejiroghene Ekene Ekenedilichukwu Ekundayo Ekwueme Emeka Emem Eniola Enitan Enu Enyinnaya Eseoghene 
+			Farai Faraji Fatsani Femi Folami Fungai Ganizani Gwandoya Idir Idowu Ikenna Imamu Imani Ime Isingoma Itri Itumeleng 
+			Izem Jelani Jengo Jumaane Katlego Kato Kayin Kayode Kefilwe Kgosi Khamisi Kibwe Kirabo
+		
+	}
+		female_names = {
+			Mavuto Mayamiko Mayeso Mbali Mchumba Meklit Mirembe Mojisola Monifa Mphatso Mtendere Mudiwa Munashe Mwanajuma Nakato 
+			Ndidi Neo Ngozi Nia Nkechi Nkechinyere Nkemdilim Nkiru Nkiruka Nkosazana Nkruma Nneka Nnenna Nnenne Nomusa Nontle 
+			Nosipho Nosizwe Nsia Nsonowa Nthanda Ntombi Nuru Nwanneka Nyah Nyarai Ogechi Ogechukwukama Oghenekaro Oghenekevwe 
+			Oghenero Olamide Olayinka Olubunmi Oluchi Olufunke Olufunmilayo Olufunmilola Oluwafunmilayo Oluwakanyinsola 
+			Oluwasegun Oluwaseun Oluwaseyi Oluwatoyin Oluwayemisi Omobolanle Omolara Oni Onyeka Onyekachi Onyekachukwu Opeyemi 
+			Oyibo Pemphero Pilirani Refilwe Rudo Rufaro Rumbidzai Rutendo Sanaa Sauda Seble Sekai Sethunya Sibonakaliso Simisola 
+			Sithembile Ssanyu Subira Tadala Tafadzwa Tajeddigt Takondwa Tamandani Taonga Tapiwa Tariro Tatenda Temitope Tendai 
+			Thandiwe Thema Themba Thoko Thokozani Thulile Tidir Tifawt Tinashe Titilayo Titrit Tiyamike Tsholofelo Tumelo Udo 
+			Uduak Ufuoma Unathi Uzoma Werknesh Worknesh Yaa Yamikani Yejide Yewande Zola Zuri
+		
+		}
+				dynasty_names = {
+			Mwenemutapa Rozwi Mutopa Lukeni Loanga Nabahani Zanzibari Mvita 
+			
+					}
+		
+	nsatsi = {
+	primary = QA3		
+	}
+	
+	botosi = {
+	primary = QA4		
+	}
+}
+
+romsque	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		Thalor  Nerion Marin Pelagos Azurian Kairos Navir Delmar Iskandor Calyor Lythan Ariston Selion Zorion Karion Solinos Helion Zephyrion Auron 
+	}
+		female_names = {
+		Nerissa Thalassa Marina Pelagia Coralia Ondina Delphina Sirena Isola Kyra Selina Calyssa Liora Zarina Aegina Arina Soleia Helia Calista 
+		}
+				dynasty_names = {
+			Mira Lia Nia Zia Eos Elia 
+					}
+		
+	margatan = {
+	primary = QA4		
+	}
+	
+	kussai = {
+	primary = CA5		
+	}
+	
+	yaan = {
+	primary = CA3		
+	}
+
+
+}
+
+amaria	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		Thalor  Nerion Marin Pelagos Azurian Kairos Navir Delmar Iskandor Calyor Lythan Ariston Selion Zorion Karion Solinos Helion Zephyrion Auron 
+	}
+		female_names = {
+		Nerissa Thalassa Marina Pelagia Coralia Ondina Delphina Sirena Isola Kyra Selina Calyssa Liora Zarina Aegina Arina Soleia Helia Calista 
+		}
+				dynasty_names = {
+			Mira Lia Nia Zia Eos Elia 
+					}
+		
+	pasatan = {
+	primary = AR5		
+	}
+
+	yatarian = {
+	primary = AR4		
+	}
+}
+
+grand_zervo	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		Kurosh Daryush Khashayarsha Ardashir Kambujia Tirdad Mehrdad Ardavan  Rustam  Sassan  Bahram  Ardeshir  Fereydun  Ohrmazd Jamshid  Isfandiyar  Kaykhosrow 
+		}
+		female_names = {
+		Farangis  Homai  Gordafarid  Zeinab  Azadeh  Denkird  Negar  Simin  Shahrazad 
+		Atossa Artemisia  Pari  Roxane  Mandana  Parysatis  Cassandane  Mitra  Shirin  Azarmidokht 
+		}
+				dynasty_names = {
+				Haxamanishiyan Median  Kayaniden  Arsakia Haltamti Pishdadia 
+		}
+	ekterianian = {
+	primary = ZR0		
+	}
+
+	tarsuvanian = {
+	primary = ZR3		
+	}
+
+	high_zervonian = {
+		primary = ZR6	
+	}
+
+	
+	karavanarian = {
+	primary = ZR7		
+	}	
+	
+	parsai = {
+	primary = ZR2		
+	}	
+	
+	low_zervonian = {
+
+	}		
+}
+
+shegean	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		Kurosh Daryush Khashayarsha Ardashir Kambujia Tirdad Mehrdad Ardavan  Rustam  Sassan  Bahram  Ardeshir  Fereydun  Ohrmazd Jamshid  Isfandiyar  Kaykhosrow 
+		}
+		female_names = {
+		Farangis  Homai  Gordafarid  Zeinab  Azadeh  Denkird  Negar  Simin  Shahrazad 
+		Atossa Artemisia  Pari  Roxane  Mandana  Parysatis  Cassandane  Mitra  Shirin  Azarmidokht 
+		}
+				dynasty_names = {
+				Haxamanishiyan Median  Kayaniden  Arsakia Haltamti Pishdadia 
+		}
+	shegen_highlanders = {
+	primary = SH2		
+	}
+
+	shegen_riverfolk = {
+	primary = SH0		
+	}
+
+	shegen_desertfolk = {
+	primary = SH1		
+	}
+	
+	shegen_soutfolk = {
+	primary = SH4		
+	}	
+	
+}
+
+
+assay	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		"Ashur-Nirari" "Tukulti-Adad" "Shalmanu-Usur" "Sargon-Bel" "Ninurta-Zakir" "Adad-Ramash" "Sin-Malik" "Ishme-Dagan" "Ashurban-Kudurru" "Tiglath-Sharru"
+		"Ashur-Adad" "Ashur-Usur" "Tukulti-Usur" "Shalanu-Bel" "Adad-Adad" "Zakir-Usur"
+		}
+		female_names = {
+		"Semiramis-Ninlil" "Belit-Ashura" "Nabu-Sarritu" "Shala-Ninzira" "Ishtar-Amedu" "Adara-Nergal" "Zamash-Belit" "Ninurta-Saratu" "Ashuri-Tiamat" "Ninshar-Ashura"
+}
+				dynasty_names = {
+				"Assay-Niari" "Say-Niari" "Tilgath-Assay" "Tilgath-Ni" "Tilgath-Say"
+		}
+	assayia = {
+	primary = TW0		
+	}
+
+	sayia = {
+	primary = TW1		
+	}
+
+	nian = {
+	primary = SH5		
+	}
+	
+
+	
+}
+
+kirmian	= {
+	graphical_culture = muslimgfx
+		male_names = {
+		Kurosh Daryush Khashayarsha Ardashir Kambujia Tirdad Mehrdad Ardavan  Rustam  Sassan  Bahram  Ardeshir  Fereydun  Ohrmazd Jamshid  Isfandiyar  Kaykhosrow 
+		}
+		female_names = {
+		Farangis  Homai  Gordafarid  Zeinab  Azadeh  Denkird  Negar  Simin  Shahrazad 
+		Atossa Artemisia  Pari  Roxane  Mandana  Parysatis  Cassandane  Mitra  Shirin  Azarmidokht 
+		}
+				dynasty_names = {
+				Haxamanishiyan Median  Kayaniden  Arsakia Haltamti Pishdadia 
+		}
+	harian = {
+	primary = ES0		
+	}	
+	
+	red_harian = {
+	primary = ES4		
+	}
+	
+	par_harian = {
+	primary = ES3		
+	}
+	
+	postalan = {	
+	}	
+}
+
+baltarian	= {
+	graphical_culture = muslimgfx
+		male_names = {
+			"Ur-Namtar" "Lugal-zagesh" "Enki-Nasir" "Dumu-Ilum" "Zamug-Ninurta" "Shulgi-Ashar" "Namtar-Tukulti" "Ishkun-Marduk" Urshubar "Lipit-Tummal"
+			"Lugal-Namtar" "Enki-Ilum" "Enki-Ninurta" "Enki-Ashar" "Shulgi-Ilum" "Shulgi-Nasir" "Ur-Zagesh" "Namtar-Zagesh"
+		}
+		female_names = {
+			"Enhedu-Ninna" "Ninsun-ashar" "Iltani-Dagash" "Belit-shala" "Zama-Ninlil" "Nin-Urash" "Ishara-Nammu" "Kishaya-Nina" "Shara-Emesh" "Zalutum-Nidaba"
+		}
+				dynasty_names = {
+			"Ur-Dagan" "Ur-Mari" "Kissu-Kizzu" "Girsu-Markud" "Seelen-Dagan" "Malgak-Mari" "Ur-Luwak" "Ur-Kyla" "Enlil-Damu" "Ninhursag" "Nammu-Zagal" "Gish-Tammuz"
+		}
+	utaschian = {
+	primary = TR2	
+	}	
+
+	paitoan = {
+	primary = TR1	
+	}	
+
+	obedian = {
+	primary = TR6	
+	}	
+	
+	tigirian = {
+	primary = TR7	
+	}		
+	
+	stirian = {
+	primary = TR5	
+	}
+}
+
+sumar	= {
+	graphical_culture = muslimgfx
+		male_names = {
+			"Ur-Namtar" "Lugal-zagesh" "Enki-Nasir" "Dumu-Ilum" "Zamug-Ninurta" "Shulgi-Ashar" "Namtar-Tukulti" "Ishkun-Marduk" Urshubar "Lipit-Tummal"
+			"Lugal-Namtar" "Enki-Ilum" "Enki-Ninurta" "Enki-Ashar" "Shulgi-Ilum" "Shulgi-Nasir" "Ur-Zagesh" "Namtar-Zagesh"
+		}
+		female_names = {
+			"Enhedu-Ninna" "Ninsun-ashar" "Iltani-Dagash" "Belit-shala" "Zama-Ninlil" "Nin-Urash" "Ishara-Nammu" "Kishaya-Nina" "Shara-Emesh" "Zalutum-Nidaba"
+		}
+				dynasty_names = {
+			"Ur-Dagan" "Ur-Mari" "Kissu-Kizzu" "Girsu-Markud" "Seelen-Dagan" "Malgak-Mari" "Ur-Luwak" "Ur-Kyla" "Enlil-Damu" "Ninhursag" "Nammu-Zagal" "Gish-Tammuz"
+		}
+	upper_sumar = {
+	primary = TW3		
+	}	
+	
+	middle_sumar = {
+	primary = TR0		
+	}
+	
+	lower_sumar = {
+	primary = TR9		
+	}	
+
+	
+}
+
+baylonian	= {
+	graphical_culture = muslimgfx
+		male_names = {
+			"Ur-Namtar" "Lugal-zagesh" "Enki-Nasir" "Dumu-Ilum" "Zamug-Ninurta" "Shulgi-Ashar" "Namtar-Tukulti" "Ishkun-Marduk" Urshubar "Lipit-Tummal"
+			"Lugal-Namtar" "Enki-Ilum" "Enki-Ninurta" "Enki-Ashar" "Shulgi-Ilum" "Shulgi-Nasir" "Ur-Zagesh" "Namtar-Zagesh"
+		}
+		female_names = {
+			"Enhedu-Ninna" "Ninsun-ashar" "Iltani-Dagash" "Belit-shala" "Zama-Ninlil" "Nin-Urash" "Ishara-Nammu" "Kishaya-Nina" "Shara-Emesh" "Zalutum-Nidaba"
+		}
+				dynasty_names = {
+			"Ur-Dagan" "Ur-Mari" "Kissu-Kizzu" "Girsu-Markud" "Seelen-Dagan" "Malgak-Mari" "Ur-Luwak" "Ur-Kyla" "Enlil-Damu" "Ninhursag" "Nammu-Zagal" "Gish-Tammuz"
+		}
+	northern_baylonian = {
+	primary = TW6		
+	}	
+	
+	central_baylonian = {
+	primary = TW9		
+	}
+	
+	southern_baylonian = {
+	primary = TR8		
+	}		
+}
+minoan	= {
+	graphical_culture = easterngfx
+		male_names = {
+		Minos Tauros Hydos Ogos Furos Satyros Maros Taros Saphos Artemos Tesmos
+		}
+		
+		female_names = {
+		Mare Tare Sappho Saphael Mina Minasa Artemia Tesmia Drosta Xantha Hyda Furia Xhippia
+		}
+		
+		dynasty_names = {
+		Minoa Tausria Hydea Xeia Octasia
+		}
+		
+	minosa = {
+	primary = MI0			
+	}
+	
+	perunian = {
+	primary = MI1			
+	}	
+	
+	eastern_laker = {
+	primary = MI3			
+	}		
+	
+	cold_laker = {
+	primary = MI6			
+	}	
+
+	
+	border_minoer = {
+	primary = MI4			
+	}		
+}
+
+
+
+valdovian	= {
+	graphical_culture = easterngfx
+
+	novy_valo = {
+	primary = EP4	
+	}
+	
+	taurenian = {
+		primary = VL0
+		male_names = {
+			Aishno Ako Ankad Baise Balodis Bikshe Borut Bulei Butovit Cirulis Dangeruthe Darbeslave 
+			Davins Demas Dobre Dovyat Dzintis Dausprungas Imanta
+			Elmede Erasts Erdzivil Galeine Gastile Gedere Gerden Gibedats Giemund Golovke Gotene Gunvald 
+			Janis John Jaunule Jedetus Juvage Kage Likiik
+			Kaire Karijotas Karnak Kaupo Kerstigens Kiten Klavess Kodere Kuliens Kurlemuse Lammekinus 
+			Litto Lonkogveni Manvydas Meinekinus Shutr
+			Mendune Nameisis Narvait Pliksov Pukiik Pukuveras Ringaudas Rushky Rusins Sabe Sargun Scurdo 
+			Shvarnas Skornand Sprudeik Stegut Viesturs
+			Steikint Sviendorog Talivaldis Tautvila Traidenis Treniota Vaishvilkas Valikaila Vetseke 
+			Visheiv Vishikut Vishly Vykantas Yudki 
+		}
+		female_names = {
+			Agita Ausala Balba Bitens Brita Daira Darate Dardedze Dose Dzeguze Galene Greze Gunda Gundega 
+			Imela Kordula Liga Maija Marite Naula Rasa Ruta Savna Viba Zigne Ieva
+		}
+	}
+
+	cessian = {
+	primary = VL1
+	}
+	
+	austrijian = {
+		primary = VL2
+	}
+	
+	baltara = {
+		primary = VL3
+	}
+	
+	auksian = {
+		primary = VL4
+	}
+	
+	saulgrivian = {
+		primary = VL6
+	}
+	
+	nerian = {
+		primary = VL7
+	}
+	male_names = {
+		Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas 
+		Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
+		Gediminas Gedivilas Gintaras Gintautas Girdenis Irmantas Jaunutis Jogaila Jovirdas Kantibutas 
+		Karijotas Kesgaila Kestutis Korigaila Korybutas
+		Lasukas Lingvenis Liudas Lubartas Lutuveras Merkelis Mindaugas Minigaila Mantvydas Movkoldas 
+		Narimantas Povilas Pukuveras Rimantas 
+		Rimgaila Rimvydas Ringaudas Sarunas Skirgaila Songaila Svarnas Svitrigaila Tarvydas Tovtivilas 
+		Traidenis Treniotas Vainius Vaisvilkas Valimantas Zygimantas
+		Vidmantas Vingoldas Virmantas Visvaldis Vizgirdas Vykintas Vytautas Vytenis Zivinbudas 
+	}
+	female_names = {
+		Aldona Anele Audra Ausra Birute Dannila Danute Evalda Gaudimante Giedre Gintare Jevna Kenna 
+		Mikova Roze Saule Svajone Vida Laima
+	}
+	dynasty_names = {
+		Ugandi Gediminai Radziwill Gostautas Astikas Kesgaila Chodkiewicz Olshanski Chartoryski
+		Giedraiciai Pac Plater Tyzenhaus Sapieha Ostrogski Oginski
+		"Karasi" "Ingrija" "Saaremaa" "Revala" "Virumaa" "L蒿nemaa" "Vaiga" "Ingeri" "Ingeri" "Livo" "Harjumaa" "Virumaa" 
+		"Ridala" "Saaremaa" "Vaiga" "Turaida"
+	}
+}
+
+epheretian = {
+	graphical_culture = asiangfx
+	
+male_names = {
+
+}
+
+female_names = {
+
+}
+dynasty_names = {
+
+}
+	sunoria = {
+		primary = EP3	
+	}
+	
+	ephretera = {
+		primary = EP0	
+	}
+
+	southern_ephereta = {	
+		primary = EP1		
+}
+
+		mistrali = {
+		
+		}
+
+
+}
+
+dragon_full = {
+	graphical_culture = asiangfx
+	
+	country = { has_samurai = yes }
+	province = { local_has_samurai = yes }	
+male_names = {
+
+}
+
+female_names = {
+
+}
+dynasty_names = {
+
+}
+
+	mountain_dragon = {	
+	primary = HE2	
+	province = { local_has_samurai = yes }
+}
+
+}
+
+qarelian = {
+	graphical_culture = asiangfx
+male_names = {
+
+}
+
+female_names = {
+
+}
+dynasty_names = {
+
+}
+
+	lohnia = {	
+		primary = HE4	
+}
+
+	shimiri = {	
+	primary = HE1	
+	}
+
+	yuhai = {
+		primary = HE6	
+	}
+	
+	taki = {
+		primary = HE3	
+	}
+	
+	baimu = {
+	
+	}
+	
+	lanhuian = {
+		primary = HB9	
+	}
+	
+	ganshi = {
+		primary = HE5	
+	}
+	
+	malindi = {
+		primary = HE7	
+	}
+	
+	
+	
+}
+
+
+tian_hue = {
+	graphical_culture = asiangfx
+male_names = {
+ Kazuki  Yoshio Chen Hiroshi Jiro Minjun Liang Riku Seung Wei Akio Bao Ichiro Kaito Ren
+}
+
+female_names = {
+Miko Airi Kaori Xia Emiko Nari Qing Sakura Yuna
+}
+dynasty_names = {
+Bailo Tienchi Yunchin Sakurchin Qinchin Narchin Xichin Emichin Aichin Michin
+}
+
+
+		huan = {	
+				primary = HC2	
+}
+
+		cangai = {
+				primary = HB7	
+		}
+
+	zhenyi = {	
+			primary = HB0	
+}
+
+	
+
+
+
+baio = {
+		primary = HB2	
+}
+
+laoi = {
+		primary = HB6	
+}
+
+
+}
+
+
+norderlander = {
+	graphical_culture = easterngfx
+male_names = {
+"Arvid" "Ludvig" "Nohr" "Eric" "Lasse" "Anders" "Aron" "Kjell" "Linus" "Ole" "Malte" "Avin" "Lief" "Bo"
+
+}
+
+female_names = {
+"Emma" "Ella" "Elsa" "Heeda" "Mia" "Amalie" "Julie" "Helene" "Lena" "Katarina" "Lykke"
+
+}
+dynasty_names = {
+"Hag" "Far" "Thu"
+}
+
+	hagener = {	
+			primary = LC6	
+}
+
+	farer = {
+			primary = LC3	
+	}
+	
+		thuli = {
+		primary = LC4		
+	}
+}
+
+gassala = {
+	graphical_culture = muslimgfx
+	
+		male_names = {
+	"Amir" "Rahim" "Malik" "Karim" "Nasir" "Rashid" "Adnan" "Samir" "Anwar" "Khaled"
+}
+
+		female_names = {
+"Leila" "Amira" "Zahra" "Nadia" "Safiya" "Amina" "Yasmin" "Sanaa"
+}
+
+		dynasty_names = {
+		"Izza" "Bekuna" "Andor" "Meia" "Marin" "Lapan"
+}		
+	
+	gassalian = {
+	primary = LD5		
+	}
+	
+	gerossi = {
+	primary = LD7		
+	}
+}
+
+talarian = {
+	graphical_culture = muslimgfx
+		male_names = {
+"Iayanne" "Talar" "Tissa" "Datis" "Phernes" "Triedes" "Narasimha" "Venkata" "Virupaksha" "Devaraya" "Vijaya" "Praudha" "Thimma" "Viranarasimha" "Krishna" "Achyuta" "Sadashiva" "Tirumala" "Rama" "Jagga" "Yethiraja" "Aliya Rama" "Tuluva" "Harihara" "Bukka" "Deva" "Ramachandra" "Vira Vijaya Bukka" "Mallikarjuna" "Adarsh" "Budhil" "Chaitanya" "Devarsi" "Devilal" "Gunda" "Hridaynath" "Kaushal" "Manprasad" "Markandeya" "Pranet" "Prabuddha" "Purandaradasa" "Rishi" "Sarasvat" "Sivvappa" "Narasa" "Thirumalai" "Gopa" "Gopana" "Viswanatha" "Lakshmidhara" "Isvara" "Salukaraya" "Saluva Mango" "Manabhusa" "Koniteraja" "Imadhi" "Kempe Gauda" "Vyasaraya" "Allasani Pedana" "Nagama" "Chellappa" "Aryavanata Mudaliar" "Dandanayaka" "Kanaka" "Kumara"
+
+
+}
+
+		female_names = {
+"Padmavati Devi" "Tirumala Devi" "China Devi" "Mangammal" "Meenakshi" "Velunatchiyar" "Lakshmi" "Jaganmohini" "Annapurna Devi" "Rudramba" "Anitalli" "Rudramadevi" "Pavaneh"
+
+}
+
+		dynasty_names = {
+		"Iyaeseia" "Mieelas" "Tieeras" "Ayayea" "Eyyea"
+}	
+		
+	putran = {
+	primary = LD9			
+	}
+	
+	mounta_talar = {
+		
+	}
+	
+	suyapa = {
+		
+	}
+}
+
+bescos = {
+	graphical_culture = muslimgfx
+
+		male_names = {
+"Trave" "Zalatan" "Keve" "Teve" "Tav" "Tave" "Kave" "Veve" "Bees" "Bescios" "Besces" "Yange" "Dilwar" "Cexos" "Yele" "Yale" "Klan" "Tavea" "Tuvin"
+
+
+}
+
+		female_names = {
+"Tavalina" "Keva" "Teva" "Besca" "Cecia" "Yela" "Yala" "Tuva"
+
+}
+
+		dynasty_names = {
+		"Tsarina" "Serein" "Bessos" "Darei" "Sodo" "Consors"
+}	
+	
+	bescilian = {
+			primary = FC16	
+	}
+
+}
+
+lovian = {
+	graphical_culture = indiangfx
+
+	
+		male_names = {
+"Cato" "Narim" "Elim" "Telassa" "Metir" "Dezim" "Cazim" "Carim" "Tarim" "Garak" "Zefon" "Elas" "Tessa" "Nesse" "Nessem"
+
+
+}
+
+		female_names = {
+"Aphala" "Ephele" "Iphili" "Uphale" "Eph-Cato" "Eph-Elim" "Eph-Dezim" "Eph-Tarim"
+
+
+}
+
+		dynasty_names = {
+		"Cato-Cato" "Elim-Elim" "Dezim-Dezim" "Tarim-Tarim" "Elas-Aphala" "Zefon-Uphale" "Garak-Ephele" "Metiriphil"
+}	
+	
+	tandelan = {
+	primary = LO0			
+	}
+	
+	lovorian = {
+	primary = LO1		
+	}
+	
+	pullanian = {
+	primary = LO2		
+	}
+	
+	cotralian = {
+	primary = LO3		
+	}
+
+	bozmosian = {
+		primary = LO4	
+	}
+	
+	golorian = {
+		primary = LO5	
+	}
+	
+	lovian_yangara = {
+		primary = LO7	
+	}
+	
+	onian = {
+	}
+}
+
+numarian = {
+	graphical_culture = indiangfx
+
+			male_names = {
+"Mephos" "Miltia" "Lakaon" "Nikomedo" "Tiades" "Komon" "Romon" "Ander" "Erodo" "Phyrru" "Adelphos" "Aigos" "Ainas"
+
+
+}
+
+		female_names = {
+"Melani" "Eunike" "Kore" "Phere" "Aikertine" "Klio" "Ectra" "Elena" "Lena" "Althaia"
+
+
+
+}
+
+		dynasty_names = {
+		"Alla" "Ella" "Kikadmo" "Adoke" "Laodike" "Dike" "Laote"
+		}	
+
+	vannian = {
+primary = LB7			
+	}
+	
+	zannian = {
+primary = LC7		
+	}
+	
+	gessi = {
+primary = LC1		
+	}
+	
+	apasi = {
+primary = LC2		
+	}
+
+}
+
+great_lascarian = {
+	graphical_culture = muslimgfx
+
+	
+			male_names = {
+"Babberb" "Rabberb" "Raberb" "Bob" "Berb" "Berben" "Terben" "Kerbert" "Bert" "Borb" "Retol" "Reninten" "Terbert" "Terfert" "Terb" "Berbberb" "Klepon" "Teddard" "Dard" "Todden"
+
+
+}
+
+		female_names = {
+"Katrin" "Iris" "Rin" "Is" "Kiris" "Tade" "Babara" "Reina"
+
+
+
+}
+
+		dynasty_names = {
+		"Ion" "Letnev" "Jord" "Trekken" "Gavro" "Merot" "Tarrot"
+		}	
+
+		
+	lascarian = {
+primary = LA0		
+	}
+
+	zimmern = {
+primary = LA5				
+	}
+
+	rosen = {
+		
+	}
+	
+	ascarien = {
+	primary = LA7
+	}
+
+	riven = {
+	
+	}
+	
+	tacher = {
+	
+	}
+}
+
+visacarian_bestonian = {
+	graphical_culture = muslimgfx
+
+				male_names = {
+"Bhajita" "Fuipo" "Jeipo" "Kaschmen" "Vira" "Taschka" "Geroz" "Aurelian" "Cormegil" "Zephyr" "Darian" "Xander" "Orion" "Zenith" "Draven" "Azriel" "Lasarus" "Oberon" "Vhasen"
+
+
+}
+
+		female_names = {
+"Fuipa" "Jeipa" "Zepha" "Drava" "Zepha" "Iroa" "Vasenja" "Vassessa" "Vasenia"
+
+
+
+
+}
+
+		dynasty_names = {
+		"Teschtesch" "Zete" "Visatari" "Amtam" "Taumer" "Mitari" "Mechanici"
+		}	
+		
+	viscarian = {
+			primary = FC0	
+	}
+	
+	bestonian = {
+			primary = FC1	
+	}
+	
+	trasilian = {
+			primary = FC2	
+	}
+
+	carian_nomad = {
+
+	}
+	
+	lian_nomad = {
+
+	}	
+	
+	kalinian = {
+	primary = LA9
+	}
+	
+	outer_kalinian = {
+		primary = LB0
+	}
+}
+
+old_lenarian = {
+	graphical_culture = muslimgfx
+
+
+				male_names = {
+"Bhajita" "Fuipo" "Jeipo" "Kaschmen" "Vira" "Taschka" "Geroz" "Aurelian" "Cormegil" "Zephyr" "Darian" "Xander" "Orion" "Zenith" "Draven" "Azriel" "Lasarus" "Oberon" "Vhasen"
+
+
+}
+
+		female_names = {
+"Fuipa" "Jeipa" "Zepha" "Drava" "Zepha" "Iroa" "Vasenja" "Vassessa" "Vasenia"
+
+
+
+
+
+}
+
+		dynasty_names = {
+		"Qabs" "Zess" "Hee" "Taae" "Ree" "Nee" "Vaa"
+		}	
+	
+	old_lenaria = {
+	
+	}
+}
+
+lenarian = {
+	graphical_culture = muslimgfx
+
+
+				male_names = {
+"Bhajita" "Fuipo" "Jeipo" "Kaschmen" "Vira" "Taschka" "Geroz" "Aurelian" "Cormegil" "Zephyr" "Darian" "Xander" "Orion" "Zenith" "Draven" "Azriel" "Lasarus" "Oberon" "Vhasen"
+
+
+}
+
+		female_names = {
+"Fuipa" "Jeipa" "Zepha" "Drava" "Zepha" "Iroa" "Vasenja" "Vassessa" "Vasenia"
+
+
+
+
+
+}
+
+		dynasty_names = {
+		"Qabs" "Zess" "Hee" "Taae" "Ree" "Nee" "Vaa"
+		}	
+	
+	nopolian = {
+			primary = FC3	
+	}
+	
+	qabinian = {
+			primary = FC6	
+	}
+	
+	phoneician = {
+			primary = FC11	
+	}
+	
+	zhuvilian = {
+			primary = FC12	
+	}	
+	
+		xomxian = {
+			primary = FC9	
+	}	
+	
+			yangaran = {
+	}	
+}
+
+
+skogia = {
+	graphical_culture = inuitgfx
+
+					male_names = {
+"Eero" "Aleksi" "Mikko" "Ville" "Juho" "Antti" "Tomi" "Joonas" "Sami" "Jani"
+
+}
+
+		female_names = {
+"Helmi" "Aino" "Lumi" "Sanni" "Venla" "Aada" "Ilona" "Ella" "Iida" "Siiri"
+}
+
+		dynasty_names = {
+		"Vasi" "Tovi" "Chud" "Rud" "Hel" "Ruven" "Laas"
+		}	
+		
+	skogian = {
+	}
+	
+	marshlander= {
+	}
+	
+	woodlander = {
+	
+	}
+	
+	icelander = {
+	
+	}
+	
+	eastern_skogen = {
+	
+	}
+}
+
+ogebinian = {
+	graphical_culture = inuitgfx
+
+	
+					male_names = {
+"Orek" "Tofegib" "Nofien" "Jabagon" "Hinfenin" "Ogasbos" "Nersis" "Dabradel" "Jejebo" "Kaspes" "Zanferis" "Rofegar" "Lintravo" "Binfadil" "Pajeton" "Klefador" "Xavolir" "Morzadan" "Fandrelis" "Yezgabor"
+
+}
+
+		female_names = {
+"Tangra" "Ogabva" "Kaspa" "Negre" "Lintravena" "Lorelia" "Zefrina" "Mirelin" "Tisandra" "Valeria" "Nimara" "Joriel" "Kasindra" "Fenessa" "Olivara"
+
+}
+
+		dynasty_names = {
+		"Malendar" "Dornas" "Braxil" "Farsin" "Radnor" "Jarelin" "Vakor" "Kintor" "Larinth" "Varnel"
+		}	
+		
+	ogebinian_true = {
+			primary = ND6
+	}
+
+}
+
+saramara = {
+	graphical_culture = muslimgfx
+
+					male_names = {
+"Ariarathes" "Zorsines" "Medosades" "Madyes" "Spargapeithes" "Palacus" "Taspar" "Rhodogune" "Phrataphernes" "Scopasis" "Targitaos" "Scythas" "Lycus" "Darius" "Ateas" "Octamasades" "Herodotus" "Taspar" "Idanthyrsus" "Ariapithes"
+
+}
+
+		female_names = {
+"Roxane" "Tomiris" "Amage" "Saurmag" "Zarina" "Thaïs" "Medea" "Rhodogune" "Orsabia" "Alkidike"
+
+}
+
+		dynasty_names = {
+		"Reutoro" "Dosset" "Crina" "Lodon" "Saga" "Vasca"
+		}	
+		
+		
+	samara = {
+		primary = ST0		
+	}
+
+	saganta = {
+		primary = S02		
+	}	
+	
+	sagen = {
+		primary = ZD5		
+	}	
+	
+		vsacanian = {
+		primary = S05		
+	}	
+	
+			tainai = {
+		primary = S03	
+	}	
+}
+
+atagord = {
+	graphical_culture = muslimgfx
+
+
+					male_names = {
+"Agbarjin" "Adai" "Altan" "Arigaba" "Arugtai" "Ayurparibhadra" "Bodi" "Bek" "Bahamu" "Bars" "Buyan" "Biligt・" "Dayan" "Darayisung" "Delbeg" "Ejei" "Elbeg" "Engke" "Gulichi" "Irinchibal" "Jorightu" "Ligdan" "Markgis" "Mgke" "Mulan" "Manduulun" "ﾖr・" "Oyiradai" "Qayshan" "Qoshila" "Sayn" "Suddhipala" "Tayisung" "Toghun" "T・en" "Tolui" "Toq" "Uskhal" "Yes・" "Ariq" "Batu" "Eljigidei" "Joichi"
+
+}
+
+		female_names = {
+"Teegene" "Tem・en" "Mandukhai" "Samar" "Zaufishan"
+
+}
+
+		dynasty_names = {
+		"Atajin"
+		}	
+		
+		
+	ulaan = {
+		primary = S06
+	}
+	
+	gordia = {
+	}
+	
+	sessea = {
+		primary = S12
+	}	
+			sai = {
+		primary = S07
+	}
+	
+		shiirian = {
+		primary = S08
+	}
+}
+
+krainian = {
+	graphical_culture = muslimgfx
+
+					male_names = {
+"Attila" "Bleda" "Ruga" "Mundzuk" "Ellac" "Dengizich" "Octar" "Ernak" "Uldin" "Rua"
+"Amalric" "Ermanaric" "Valamir" "Totila" "Walia" "Athanaric"
+
+}
+
+		female_names = {
+"Kreka" "Ildico" "Gudrun" "Hildr" "Ulduz" "Zebba" "Rodhene" "Amage" "Oeana" "Esen"
+"Athalind" "Alarice" "Fridugern"
+
+}
+
+		dynasty_names = {
+		"Kreves" "Visogot" "Osogot" "Ostravo" "Leric" "Gisic"
+		}	
+	
+	qualian = {
+	
+	}
+	
+	as_qualia = {
+	
+	}
+	
+	old_krainia = {
+		primary = S13
+	}
+	
+	riefinian = {
+		primary = HE8
+	}	
+	
+	liefnian = {
+		primary = FC4
+	}
+	
+	gothrian = {
+		primary = S18
+	}	
+	
+	menekian = {
+		primary = S17
+	}	
+	
+	kravolian = {
+		primary = S19
+	}		
+}
+
+
+cymrian = {
+	graphical_culture = easterngfx
+
+
+					male_names = {
+"Gael" "Lugh" "Mairtin" "Daithi" "Tadhg" "Conchur" "Eoin" "Padraig" "Cathal" "Fionn" "Cian"
+
+
+}
+
+		female_names = {
+"Aisling" "Caoimhe" "Sile" "Maeve" "Niamh" "Fionnuala" "Siobhan" "Eibhlin" "Orlaith" "Grainne" "Aoibhinn" "Saoirse" "Roisin" "Aine" "Caitriona"
+
+
+}
+
+		dynasty_names = {
+		"Ui Neill" "Eoganachta" "Dal Riata" "Ui Fiachrach" "Cenel nEogain" "Muirchertach" "Conaille Muirthemne" "Cenel Conaill" "Connachta" "Airgialla" "Erainn" "Laigin" "Corcu Loígde" "Mide" "Fir Ol nEchmacht"
+
+		}		
+	
+	weden = {
+		primary = C05	
+		dynasty_names = {
+		}
+}
+
+	birrian = {
+
+		dynasty_names = {
+		}
+}
+
+	colonian = {
+		primary = C00				
+		dynasty_names = {
+		}
+}
+
+	wyneddian = {
+			primary = C01	
+		dynasty_names = {
+		}
+}
+
+
+	cymriam = {
+			primary = C02	
+		dynasty_names = {
+		}
+}
+
+	morvach = {
+		primary = C03			
+		dynasty_names = {
+		}
+}
+
+	sliabian = {
+		primary = C04			
+		dynasty_names = {
+		}
+}
+
+}
+
+
+dwarf = {
+	graphical_culture = inuitgfx
+
+						male_names = {
+"Yutu" "Katjut" "Eero" "Jari" "Kari" "Lauri" "Matti" "Olli" "Petri" "Sami" "Timo"
+
+}
+
+		female_names = {
+
+"Akna" "Elina" "Lina" "Saana" "Riika" "Tiina" "Kava" "Kaleen" "Eveen"
+
+}
+
+		dynasty_names = {
+		"Virtanen" "Maekinen" "Nieminen" "Koskinen" "Jaervinen" "Lahtinen" "Karjalainen" "Laine"
+		}		
+	
+	
+	northern_dwarf = {
+		
+		dynasty_names = {
+		}
+}
+
+}
+
+varjoren = {
+	graphical_culture = inuitgfx
+
+						male_names = {
+"Yutu" "Katjut" "Eero" "Jari" "Kari" "Lauri" "Matti" "Olli" "Petri" "Sami" "Timo"
+
+}
+
+		female_names = {
+
+"Akna" "Elina" "Lina" "Saana" "Riika" "Tiina" "Kava" "Kaleen" "Eveen"
+
+}
+
+		dynasty_names = {
+		"Virtanen" "Maekinen" "Nieminen" "Koskinen" "Jaervinen" "Lahtinen" "Karjalainen" "Laine"
+		}		
+	
+	
+	jarvinia = {
+		
+		dynasty_names = {
+		}
+}
+
+	aknivia = {
+		
+		dynasty_names = {
+		}
+}
+
+	yuutivan = {
+		
+		dynasty_names = {
+		}
+}
+
+	kekonnian = {
+		
+		dynasty_names = {
+		}
+}
+
+	sikkonen = {
+		
+		dynasty_names = {
+		}
+}
+
+	uli_vataan = {
+		
+		dynasty_names = {
+		}
+}
+
+	atta_vataan = {
+		
+		dynasty_names = {
+		}
+}
+
+	taevanian = {
+		
+		dynasty_names = {
+		}
+}
+
+}
+
+elvish = {
+	graphical_culture = easterngfx
+
+							male_names = {
+"Aodh" "Lir" "Muir" "Darragh" "Ailill" "Cuan" "Lorcan" "Paidi" "Cathan" "Fintan" "Cianan" "Tadhgan" "Eoinin" "Fionnan"
+}
+
+		female_names = {
+
+"Aisling" "Caoimhe" "Sile" "Maeve" "Niamh" "Fionnuala" "Siobhan" "Eibhlin" "Orlaith" "Grainne" "Aoibhinn" "Saoirse" "Roisin" "Aine" "Caitriona" "Dahut"
+
+}
+
+		dynasty_names = {
+		"Ap Morriga" "Days"
+		}		
+	
+	
+	mountain_elv = {
+			primary = EL0			
+		dynasty_names = {
+		}
+}
+
+	sea_elv = {
+			primary = EL1			
+		dynasty_names = {
+		}
+}
+
+	desert_elv = {
+			primary = EL9			
+		dynasty_names = {
+		}
+}
+
+sun_elf = {
+
+}
+
+forrest_elf = {
+primary = GW7	
+}
+
+ice_elf = {
+primary = GW9	
+}
+
+}
+
+
+jinnisch = {
+	graphical_culture = muslimgfx
+
+							male_names = {
+							"Zarif" "Malik al-Nar" "Qadir" "Asfar" "Rashwan" "Nasir al-Din" "Samir" "Bahram" "Sahlab" "Faris al-Layl" "Zafir" "Kahil" "Najm al-Sabah" "Dahhak" "Jamal al-Rih"  	
+}
+
+		female_names = {
+			"Layali" "Shamsa" "Soraya" "Zahira" "Amira al-Layl" "Nour al-Hawa" "Bahiyya" "Farida" "Azara" "Sahar" "Mahrukh" "Gulnar" "Rihana" "Nimrah" "Rasha"
+}
+
+		dynasty_names = {
+			"Nashwa" "Lailan" "Anwar" "Janan" "Rih al-Sahar" "Rashaad"
+		}		
+	
+	
+	northern_jinn = {
+			primary = JH0			
+		dynasty_names = {
+		}
+		
+		}
+		southern_jhinn= {
+				
+		dynasty_names = {
+		}
+}
+
+
+}
+
+eastern_imperial = {
+	graphical_culture = muslimgfx
+
+	
+							male_names = {
+"Eitan" "Mordechai" "Abishai" "Aryeh" "Amos" "Gadi" "Elijahu" "Amit" "Amichai" "Nadav" "Ephraim" "Shirmon" "Eilan" "Chaim" "Adir" "Itamar" "Avner" "Meir" "Zev" "Jesophat" "Nir"}
+
+		female_names = {
+
+"Marta" "Leah" "Miriam" "Michal" "Shosanna" "Tzippora" "Naama" "Tamar" "Dana" "Orti" "Neta" "Ariela" "Ella" "Naomi" "Tamara" "Ravina" "Dina" "Liora" "Maia" "Chava" "Sarit"
+}
+
+		dynasty_names = {
+		"Shaar" "Ephor" "Cirio" "Davi" "Gantz" "Poen" "Feeren"
+		}	
+		
+	border_zephyrian = {	
+	primary = ZF5			
+		dynasty_names = {
+		}
+		
+		}
+		
+	zephrian = {		
+		primary = ZB2	
+		dynasty_names = {
+		}
+		}
+		
+	red_phonixian = {		
+			primary = ZB5
+		dynasty_names = {
+		}
+		}
+		
+				
+	gold_phonixian = {		
+			
+		dynasty_names = {
+		}
+		}
+		
+	vephyrian	= {		
+		primary = ZA9
+		dynasty_names = {
+		}
+		}
+		
+	asari	= {		
+		dynasty_names = {
+		}
+		}
+}
+
+finnlandian = {
+	graphical_culture = muslimgfx
+	
+							male_names = {
+"Eitan" "Mordechai" "Abishai" "Aryeh" "Amos" "Gadi" "Elijahu" "Amit" "Amichai" "Nadav" "Ephraim" "Shirmon" "Eilan" "Chaim" "Adir" "Itamar" "Avner" "Meir" "Zev" "Jesophat" "Nir"}
+
+		female_names = {
+
+"Marta" "Leah" "Miriam" "Michal" "Shosanna" "Tzippora" "Naama" "Tamar" "Dana" "Orti" "Neta" "Ariela" "Ella" "Naomi" "Tamara" "Ravina" "Dina" "Liora" "Maia" "Chava" "Sarit"
+}
+
+		dynasty_names = {
+		"Shaar" "Ephor" "Cirio" "Davi" "Gantz" "Poen" "Feeren"
+		}	
+		
+		
+	eesta = {		
+			primary = ZC2
+		dynasty_names = {
+		}
+		}
+	lativa = {		
+			primary = ZC2
+		dynasty_names = {
+		}
+		}
+		
+	sakara = {
+			primary = ZF2
+	}	
+	}
+
+berver = {
+	graphical_culture = muslimgfx
+	
+								male_names = {
+"Eitan" "Mordechai" "Abishai" "Aryeh" "Amos" "Gadi" "Elijahu" "Amit" "Amichai" "Nadav" "Ephraim" "Shirmon" "Eilan" "Chaim" "Adir" "Itamar" "Avner" "Meir" "Zev" "Jesophat" "Nir"}
+
+		female_names = {
+
+"Marta" "Leah" "Miriam" "Michal" "Shosanna" "Tzippora" "Naama" "Tamar" "Dana" "Orti" "Neta" "Ariela" "Ella" "Naomi" "Tamara" "Ravina" "Dina" "Liora" "Maia" "Chava" "Sarit"
+}
+
+		dynasty_names = {
+		"Shaar" "Ephor" "Cirio" "Davi" "Gantz" "Poen" "Feeren"
+		}	
+		
+	devor = {		
+				primary = ZC3
+		dynasty_names = {
+		}
+		}
+		
+	noria = {		
+			primary = ZC4
+		}
+		
+	dohnia = {		
+			primary = ZC5
+		}
+		
+	agene = {		
+			primary = ZC6
+		}
+		
+	garian = {		
+			primary = ZD1
+		}
+	}
+
+aiven = {
+	graphical_culture = muslimgfx
+	
+								male_names = {
+"Eitan" "Mordechai" "Abishai" "Aryeh" "Amos" "Gadi" "Elijahu" "Amit" "Amichai" "Nadav" "Ephraim" "Shirmon" "Eilan" "Chaim" "Adir" "Itamar" "Avner" "Meir" "Zev" "Jesophat" "Nir"}
+
+		female_names = {
+
+"Marta" "Leah" "Miriam" "Michal" "Shosanna" "Tzippora" "Naama" "Tamar" "Dana" "Orti" "Neta" "Ariela" "Ella" "Naomi" "Tamara" "Ravina" "Dina" "Liora" "Maia" "Chava" "Sarit"
+}
+
+		dynasty_names = {
+		"Shaar" "Ephor" "Cirio" "Davi" "Gantz" "Poen" "Feeren"
+		}	
+		
+		
+	aiyea = {		
+				primary = ZC7
+		}
+		
+			zaikya = {		
+						primary = ZF1
+		}
+		
+	xiraptoa = {	
+			primary = ZC8	
+		}
+		
+	kidonia = {		
+				primary =ZC9
+		}	
+		
+		leitis = {
+					primary = ZD0
+		}
+		
+		hymmnia = {
+					primary = ZD2
+		}
+	}
+
+bostumer = {
+	graphical_culture = muslimgfx
+	
+								male_names = {
+"Eitan" "Mordechai" "Abishai" "Aryeh" "Amos" "Gadi" "Elijahu" "Amit" "Amichai" "Nadav" "Ephraim" "Shirmon" "Eilan" "Chaim" "Adir" "Itamar" "Avner" "Meir" "Zev" "Jesophat" "Nir"}
+
+		female_names = {
+
+"Marta" "Leah" "Miriam" "Michal" "Shosanna" "Tzippora" "Naama" "Tamar" "Dana" "Orti" "Neta" "Ariela" "Ella" "Naomi" "Tamara" "Ravina" "Dina" "Liora" "Maia" "Chava" "Sarit"
+}
+
+		dynasty_names = {
+		"Shaar" "Ephor" "Cirio" "Davi" "Gantz" "Poen" "Feeren"
+		}	
+		
+		
+	gerea = {		
+						primary = ZD3
+		}
+	shae = {		
+						primary = ZD4
+		}
+		
+		varmor = {
+							primary = ZD7
+		}
+		
+	cironor = {
+						primary = ZF3
+	
+	}	
+	
+		dacer = {
+						primary = ZF4
+						
+	}	
+	}
+	
+cephryian = {
+	graphical_culture = muslimgfx
+	
+								male_names = {
+"Eitan" "Mordechai" "Abishai" "Aryeh" "Amos" "Gadi" "Elijahu" "Amit" "Amichai" "Nadav" "Ephraim" "Shirmon" "Eilan" "Chaim" "Adir" "Itamar" "Avner" "Meir" "Zev" "Jesophat" "Nir"}
+
+		female_names = {
+
+"Marta" "Leah" "Miriam" "Michal" "Shosanna" "Tzippora" "Naama" "Tamar" "Dana" "Orti" "Neta" "Ariela" "Ella" "Naomi" "Tamara" "Ravina" "Dina" "Liora" "Maia" "Chava" "Sarit"
+}
+
+		dynasty_names = {
+		"Shaar" "Ephor" "Cirio" "Davi" "Gantz" "Poen" "Feeren"
+		}	
+		
+		
+	terephyian = {		
+		primary = ZE3
+		dynasty_names = {
+		}
+		}
+		
+		
+	tassalonian = {
+		primary = ZE9
+	}
+	
+	karen = {
+	}
+	
+	boian = {
+		primary = ZA1
+	}
+	
+	ladia = {
+		primary = ZA8
+	}
+	}
+	
+milesian = {
+	graphical_culture = muslimgfx
+	
+								male_names = {
+"Eitan" "Mordechai" "Abishai" "Aryeh" "Amos" "Gadi" "Elijahu" "Amit" "Amichai" "Nadav" "Ephraim" "Shirmon" "Eilan" "Chaim" "Adir" "Itamar" "Avner" "Meir" "Zev" "Jesophat" "Nir"}
+
+		female_names = {
+
+"Marta" "Leah" "Miriam" "Michal" "Shosanna" "Tzippora" "Naama" "Tamar" "Dana" "Orti" "Neta" "Ariela" "Ella" "Naomi" "Tamara" "Ravina" "Dina" "Liora" "Maia" "Chava" "Sarit"
+}
+
+		dynasty_names = {
+		"Shaar" "Ephor" "Cirio" "Davi" "Gantz" "Poen" "Feeren"
+		}	
+		
+
+	caian = {
+	primary = ZE8	
+	}
+	
+	bonian = {
+	primary = ZA2	
+	}
+	
+	high_bonian = {
+	primary = ZA4	
+	}
+	
+	padian = {
+	}
+	
+	kithonian = {
+	primary = ZB3	
+	}
+}
+
+
+tevonen = {
+	graphical_culture = muslimgfx
+
+	
+								male_names = {
+"Eitan" "Mordechai" "Abishai" "Aryeh" "Amos" "Gadi" "Elijahu" "Amit" "Amichai" "Nadav" "Ephraim" "Shirmon" "Eilan" "Chaim" "Adir" "Itamar" "Avner" "Meir" "Zev" "Jesophat" "Nir"}
+
+		female_names = {
+
+"Marta" "Leah" "Miriam" "Michal" "Shosanna" "Tzippora" "Naama" "Tamar" "Dana" "Orti" "Neta" "Ariela" "Ella" "Naomi" "Tamara" "Ravina" "Dina" "Liora" "Maia" "Chava" "Sarit"
+}
+
+		dynasty_names = {
+		"Shaar" "Ephor" "Cirio" "Davi" "Gantz" "Poen" "Feeren"
+		}	
+		
+		
+	teonen = {
+	primary = ZB4		
+	}
+
+	vonen = {	
+	}
+	
+	neenen = {
+	primary = ZB7		
+	}
+	
+	alven = {
+	primary = ZC0		
+	}
+}
+
+lechita = {
+	graphical_culture = muslimgfx
+
+	
+								male_names = {
+"Eitan" "Mordechai" "Abishai" "Aryeh" "Amos" "Gadi" "Elijahu" "Amit" "Amichai" "Nadav" "Ephraim" "Shirmon" "Eilan" "Chaim" "Adir" "Itamar" "Avner" "Meir" "Zev" "Jesophat" "Nir"}
+
+		female_names = {
+
+"Marta" "Leah" "Miriam" "Michal" "Shosanna" "Tzippora" "Naama" "Tamar" "Dana" "Orti" "Neta" "Ariela" "Ella" "Naomi" "Tamara" "Ravina" "Dina" "Liora" "Maia" "Chava" "Sarit"
+}
+
+		dynasty_names = {
+		"Shaar" "Ephor" "Cirio" "Davi" "Gantz" "Poen" "Feeren"
+		}	
+		
+		
+	rezca = {
+	primary = ZA5		
+	}
+	
+	ivano = {
+	primary = ZA6		
+	}
+	
+	vahulu = {
+		primary = ZA7	
+	}
+	
+}
+undead_imperial = {
+	graphical_culture = muslimgfx
+
+		
+								male_names = {
+"Gaius Aurelius"
+"Lucius Octavius"
+"Marcus Tiberius"
+"Decimus Julius"
+"Titus Claudius"
+"Quintus Maximus"
+"Octavius Brutus"
+"Pompeius Crassus"
+"Quintilianus Augustus"
+"Valerius Marcellus"
+"Cato Calpurnius"
+}
+
+		female_names = {
+}
+
+		dynasty_names = {
+		"Marcellus" "Augustus" "Tiberius" "Aurelius" "Flavii" "Claudii" "Fabii"
+ 		}	
+		
+	politi = {
+		
+		dynasty_names = {
+		    "Servilius"
+		"Flavii"
+		"Antonius"
+		"Valerius"
+		"Cassius"
+		"Julii"
+		"Marcellus"
+		"Pulcher"
+		"Fabius"
+		"Claudii"
+		}
+}
+
+	tritoni = {
+		primary = U00 #Schworingen
+		
+		dynasty_names = {
+		    "Servilius"
+		"Flavii"
+		"Antonius"
+		"Valerius"
+		"Cassius"
+		"Julii"
+		"Marcellus"
+		"Pulcher"
+		"Fabius"
+		"Claudii"
+		}
+}
+
+	cumi = {
+		primary = U03 #Schworingen
+		
+		dynasty_names = {
+		    "Servilius"
+		"Flavii"
+		"Antonius"
+		"Valerius"
+		"Cassius"
+		"Julii"
+		"Marcellus"
+		"Pulcher"
+		"Fabius"
+		"Claudii"
+		"Cumii"
+		"Mecii"
+		"Exi"
+		}
+}
+
+	tessarini = {
+		primary = U02 #Schworingen
+		
+		dynasty_names = {
+		    "Servilius"
+		"Flavii"
+		"Antonius"
+		"Valerius"
+		"Cassius"
+		"Julii"
+		"Marcellus"
+		"Pulcher"
+		"Fabius"
+		"Claudii"
+		"Tessarini"
+		}
+}
+
+	erii = {
+		primary = U04 #Schworingen
+		
+		dynasty_names = {
+		    "Servilius"
+		"Flavii"
+		"Antonius"
+		"Valerius"
+		"Cassius"
+		"Julii"
+		"Marcellus"
+		"Pulcher"
+		"Fabius"
+		"Claudii"
+		"Erati"
+		}
+}
+
+}
+
+
+new_imperial = {
+	graphical_culture = westerngfx
+male_names = {
+	
+	"Albrecht" "Wilhelm" "Johann" "Ernst" "Ferdinand" "Karl Albrecht" "Karl Theodor" "Maximilian" "Maximilian Joseph" "Maximilian Emanuel" "Siegmund" "Ludwig" "Anton" "Christoph" "Ferdinand" "Joseph Clemens" "Joseph Ferdinand" "Karl" "Leopold Ferdinand" "Maximilian Philipp" "Philipp Wilhelm" "Theodor" "Adalbert" "Alois Johann" "Clemens August" "Friedrich" "Johann Theodor" "Ludwig" "Kajetan Maria" "Luitpold" "Otto" "Philipp Moritz" "Wolfgang" "Engelbert" "Gottfried" "Hieronymus" "Ignatz" "Markus" "Meinhard" "Raphael"
+}
+
+	female_names = {
+	"Hiltraud" "Friede" "Juliane" "Luise" "Anna" "Violante" "Josepha" "Theresa" "Amalie" "Sophia" "Ludovika" "Maximiliane" "Sibylle"
+
+	}
+	
+	
+	sollingian = {
+		primary = I00 #Schworingen
+		
+		dynasty_names = {
+			"von Schworingen" "von Adlen" "von Pfahlen" "von Fuggen" "von Fuggen-Schworingen" "von Schwesterland" "von Hohenlitze" "von Heinrichs" "von Konigenen" "von Tadea" "von Lichtenstein" "von Luxer" "von Culmenbach" "von Bakavia" 	}
+	}
+	
+	badenian = {
+		primary = I18 #Baden
+		
+		dynasty_names = {
+			"von Schworingen" "von Adlen" "von Pfahlen" "von Fuggen" "von Fuggen-Schworingen" "von Schwesterland" "von Hohenlitze" "von Heinrichs" "von Konigenen" "von Tadea" "von Lichtenstein" "von Luxer" "von Culmenbach" "von Bakavia" 	}
+	}	
+	
+	bakavian = {
+		primary = I10 #Bakavia
+		
+		dynasty_names = {
+			"von Schworingen" "von Adlen" "von Pfahlen" "von Fuggen" "von Fuggen-Schworingen" "von Schwesterland" "von Hohenlitze" "von Heinrichs" "von Konigenen" "von Tadea" "von Lichtenstein" "von Luxer" "von Culmenbach" "von Bakavia" 	}
+	}	
+
+	deutscherlander = {
+		primary = I04 #Deutscherland
+		
+		dynasty_names = {
+			"von Schworingen" "von Adlen" "von Pfahlen" "von Fuggen" "von Fuggen-Schworingen" "von Schwesterland" "von Hohenlitze" "von Heinrichs" "von Konigenen" "von Tadea" "von Lichtenstein" "von Luxer" "von Culmenbach" "von Bakavia" 	}
+	}	
+	
+	nordlander = {
+		primary = I11 #Norder
+		
+		dynasty_names = {
+			"von Schworingen" "von Adlen" "von Pfahlen" "von Fuggen" "von Fuggen-Schworingen" "von Schwesterland" "von Hohenlitze" "von Heinrichs" "von Konigenen" "von Tadea" "von Lichtenstein" "von Luxer" "von Culmenbach" "von Bakavia" 	}
+	}	
+	
+	ostlander = {
+		primary = I33 #Paten
+		
+		dynasty_names = {
+			"von Schworingen" "von Adlen" "von Pfahlen" "von Fuggen" "von Fuggen-Schworingen" "von Schwesterland" "von Hohenlitze" "von Heinrichs" "von Konigenen" "von Tadea" "von Lichtenstein" "von Luxer" "von Culmenbach" "von Bakavia" 	}
+	}	
+
+	capitilian = {
+		primary = I17 #Paten
+		
+		dynasty_names = {
+			"von Schworingen" "von Adlen" "von Pfahlen" "von Fuggen" "von Fuggen-Schworingen" "von Schwesterland" "von Hohenlitze" "von Heinrichs" "von Konigenen" "von Tadea" "von Lichtenstein" "von Luxer" "von Culmenbach" "von Bakavia" 	}
+	}		
+	
+	jadisch = {
+		primary = I22 #Paten
+		
+		dynasty_names = {
+			"von Schworingen" "von Adlen" "von Pfahlen" "von Fuggen" "von Fuggen-Schworingen" "von Schwesterland" "von Hohenlitze" "von Heinrichs" "von Konigenen" "von Tadea" "von Lichtenstein" "von Luxer" "von Culmenbach" "von Bakavia" 	}
+	}	
+}	
+
+
+naga_culture = {
+	graphical_culture = asiangfx
+	
+male_names = {
+
+}
+
+female_names = {
+
+}
+dynasty_names = {
+
+}
+
+	mountain_naga = {
+		primary = NA4		
+	}
+	
+	patala_naga = {	
+		primary = NA1	
+}
+
+	gandara_naga = {
+		primary = NA6		
+	}
+	
+	coastal_naga = {
+		primary = NB1		
+	}
+
+	
+	gondawi_naga = {
+		primary = NB6		
+	}
+	
+	navi_naga = {
+		primary = NA9		
+	}
+	
+
+
+	
+
+}

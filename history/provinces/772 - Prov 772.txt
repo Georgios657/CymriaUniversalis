@@ -1,0 +1,15 @@
+add_core = ZE3
+owner = ZE3
+controller = ZE3
+culture = terephyian
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 4
+trade_goods = copper
+base_manpower = 2
+capital = "Urris"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+fort_15th = yes

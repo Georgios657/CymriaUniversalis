@@ -1,0 +1,12 @@
+add_core = ZR3
+owner = ZR3
+controller = ZR3
+culture = tarsuvanian
+religion = yazida
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = glass
+base_manpower = 4
+capital = "Nacta"
+is_city = yes

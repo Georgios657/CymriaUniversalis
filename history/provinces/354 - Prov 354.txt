@@ -1,0 +1,13 @@
+add_core = S06
+owner = S06
+controller = S06
+culture = ulaan
+religion = tengri
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Khunnu"
+is_city = yes
+discovered_by = nomad_group

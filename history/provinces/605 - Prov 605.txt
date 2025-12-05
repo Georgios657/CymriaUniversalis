@@ -1,0 +1,14 @@
+add_core = LA3
+owner = LA3
+controller = LA3
+culture = lascarian
+religion = amatism_faith
+hre = yes
+base_tax = 4
+base_production = 5
+trade_goods = iron
+base_manpower = 4
+capital = "Pikkard"
+is_city = yes
+discovered_by = ottoman
+fort_15th = yes

@@ -1,0 +1,12 @@
+add_core = AR8
+owner = AR8
+controller = AR8
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = copper
+base_manpower = 2
+capital = "Velaroth"
+is_city = yes
+culture = mountain_khossorian
+religion = nyamism

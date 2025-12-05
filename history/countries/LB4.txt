@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = stem_duchys
+government_rank = 2
+technology_group = ottoman
+primary_culture = qualian
+religion = amatism_faith
+capital = 660	# Bayreuth
+elector = yes
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Qualis"
+		name = "Dessi"
+		birth_date = 1385.9.21
+		dip = 2
+		adm = 1
+		mil = 2
+
+	}
+
+}

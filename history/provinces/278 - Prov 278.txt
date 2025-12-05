@@ -1,0 +1,14 @@
+add_core = CY0
+owner = CY0
+controller = CY0
+culture = colonian
+religion = dagdism
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Algenal"
+is_city = yes
+discovered_by = eastern
+add_core = CY1

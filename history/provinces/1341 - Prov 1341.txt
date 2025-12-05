@@ -1,0 +1,14 @@
+add_core = LO4
+owner = LO4
+controller = LO4
+culture = coastal_naga
+religion = naga_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = slaves
+base_manpower = 1
+capital = "Nagacapa"
+is_city = yes
+# Anything typed here will be added to all selected province history files
+discovered_by = indian

@@ -1,0 +1,14 @@
+add_core = ZE7
+owner = ZE7
+controller = ZE7
+culture = karen
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Nessar"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

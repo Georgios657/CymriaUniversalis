@@ -1,0 +1,13 @@
+add_core = LD0
+owner = LD0
+controller = LD0
+culture = farer
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Retenberg"
+is_city = yes
+discovered_by = ottoman

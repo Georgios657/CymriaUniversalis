@@ -1,0 +1,13 @@
+add_core = QA2
+owner = QA2
+controller = QA2
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = glass
+base_manpower = 2
+capital = "Solvarin"
+is_city = yes
+culture = morivia
+religion = asae_ya
+center_of_trade = 1

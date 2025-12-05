@@ -1,0 +1,13 @@
+add_core = YA7
+owner = YA7
+controller = YA7
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "White Hills"
+is_city = yes
+culture = apsuian
+religion = ishtara
+add_province_modifier = { name = scoprion_man_climate duration = -1 }

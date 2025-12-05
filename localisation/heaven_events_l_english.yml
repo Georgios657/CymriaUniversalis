@@ -1,0 +1,57 @@
+﻿l_english:
+    heavensfather.1.t:0 "A Lighning Sign"
+    heavensfather.1.d:0 "Our farmers report strange signs they have seen: lightning that can only be attributed to the wrath of the Heavenly Father. It seems some of our politicians have angered Him, and now there is an opportunity to make a change."
+    heavensfather.1.a:0 "Ignore him"
+    heavensfather.1.b:0 "Appease him!"
+
+    heavensfather.2.t:0 "The Holy Lightning"
+    heavensfather.2.d:0 "Good omens! The Heavenly Father seems favorably disposed towards us, as indicated by his three lightning bolts at the twelfth hour of the day. Clearly, our course is the right one, and he bestows his blessing upon us!"
+    heavensfather.2.a:0 "Blessed be he!"
+    
+    heavensfather.3.t:0 "A burned corpse"   
+    heavensfather.3.d:0 "One of our officials was found struck by lightning. This is clearly a bad omen and is interpreted as such by the farmers. The foundation of our rule is in jeopardy!"   
+    heavensfather.3.a:0 "But I did nothing!"   
+    
+    heavensfather.4.t:0 "The Fulgaria"
+    heavensfather.4.d:0 "Since the earliest days of the empire, the Heavenly Father has been honored at the Fulgaria, a festival that celebrates His greatness. It is considered the greatest honor for anyone to participate in it."
+    heavensfather.4.a:0 "A great party!"
+    
+    heavensfather.5.t:0 "A burned corpse"
+    heavensfather.5.d:0 "A notorious bandit was struck by lightning as he tried to flee from our pursuers. The Heavenly Father has aided us directly, demonstrating the righteousness of our rule."
+    heavensfather.5.a:0 "This death was to fast"
+    
+    heavensfather.6.t:0 "Lighning storm over $PROVINCE$"
+    heavensfather.6.d:0 "An incredibly destructive lightning storm has ravaged $PROVINCE$, destroying countless homes and fields. This act of destruction signifies a great wrath that the Heavenly Father holds against us, and we must quickly appease Him"
+    heavensfather.6.a:0 "What can we do?"
+    
+    heavensfather.7.t:0 "Lighning storm over $PROVINCE$"
+    heavensfather.7.d:0 "A lightning strike hit the tallest building in the province, sparking a small fire that fortunately was quickly brought under control. Nevertheless, there are rumors that the Heavenly Father intended to punish us with this incident."   
+    heavensfather.7.a:0 "What can we do?" 
+
+    heavensfather.8.t:0 "A massive forest fire."
+    heavensfather.8.d:0 "A massive forest fire, triggered by a single powerful lightning strike, has swept through Province X, devastating many hectares of land. This can only be explained by a dissatisfaction of the Heavenly Father."
+    heavensfather.8.a:0 "But the trees!"
+    
+    heavensfather.9.t:0 "A killing lightning"
+    heavensfather.9.d:0 "$HEIR$ was out hunting when, out of the blue sky, a lightning bolt struck him, annihilating him along with his skin and hair, leaving only his charred remains on the forest floor. His hunting companions had no choice but to bring back his body in tears."
+    heavensfather.9.a:0 "WHY!"
+    
+    heavensfather.10.t:0 "A killing lightning"
+    heavensfather.10.d:0 "The lightning struck one of our most loyal supporters, and moved by this sign, he immediately decided to launch an armed uprising against our rule."
+    heavensfather.10.a:0 "May he pay"
+    
+    heavensfather.11.t:0 "The End of a Sinner"
+    heavensfather.11.d:0 "$MONARCHTITLE$ is dead! The Heavenly Father himself struck him down for his evilness and now he can live his unfaithful ways in the underworld."
+    heavensfather.11.a:0 "I hope this is now over"
+    
+    heavensfather.12.t:0 "Where the lightning strikes"
+    heavensfather.12.d:0 "At the site of a prominent lightning strike, we have found a treasure! A gift from heaven!"
+    heavensfather.12.a:0 "God is good"
+    
+    heavensfather.13.t:0 "The faithful"
+    heavensfather.13.d:0 "A well-known devout general has decided to serve you, as you are known for your services to the Heavenly Father. His zeal has called numerous other men to join your banners."
+    heavensfather.13.a:0 "Onward to victory!"
+    
+    heavensfather.14.t:0 "Vengeance of heaven"
+    heavensfather.14.d:0 "It is clear that heaven is on our side. In the past few days, a number of our internal enemies have been killed by lightning or other misfortunes, and now the rebels have fallen silent, fearing you, who enjoys the protection of the heavens."
+    heavensfather.14.a:0 "Die you unfaithful!"    

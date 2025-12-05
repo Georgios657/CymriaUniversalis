@@ -1,0 +1,13 @@
+add_core = FC4
+owner = FC4
+controller = FC4
+culture = liefnian
+religion = amatism_faith
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = livestock
+base_manpower = 3
+capital = "New Lifnen"
+is_city = yes
+discovered_by = indian

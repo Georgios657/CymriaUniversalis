@@ -1,0 +1,17 @@
+add_core = HB9
+owner = HB9
+controller = HB9
+culture = lanhuian
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 3
+capital = "Lanhua"
+is_city = yes
+discovered_by = chinese
+add_permanent_province_modifier = {
+	name = mountain_pass_modifier
+	duration = -1
+}

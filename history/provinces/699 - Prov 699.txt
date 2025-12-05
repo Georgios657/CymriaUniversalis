@@ -1,0 +1,13 @@
+add_core = LD4
+owner = LD4
+controller = LD4
+culture = gassalian
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 3
+trade_goods = wine
+base_manpower = 2
+capital = "Desalle"
+is_city = yes
+discovered_by = ottoman

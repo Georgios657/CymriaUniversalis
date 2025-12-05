@@ -1,0 +1,41 @@
+government = magocracy
+add_government_reform = imperial_wizardy
+government_rank = 1
+technology_group = western
+primary_culture = deutscherlander
+religion = old_imperial_faith
+capital = 56	# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1400.1.1 = {
+	monarch = {
+		female = yes
+		name = "Maria"
+		dynasty = "Tetschendorf"
+		birth_date = 1361.9.21
+		dip = 6
+		adm = 5
+		mil = 1
+	}
+	
+		add_ruler_personality = wizard
+		add_ruler_personality = inspiring_leader_personality
+		add_ruler_personality = well_advised_personality		
+}
+
+1403.2.22 = {
+	heir = {
+		female = yes
+		name = "Maria"
+		monarch_name = "Maria II"
+		dynasty = "Gummersbach"
+		birth_date = 1403.2.22
+		death_date = 1461.7.22
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 4
+
+	}
+	add_heir_personality = wizard
+}

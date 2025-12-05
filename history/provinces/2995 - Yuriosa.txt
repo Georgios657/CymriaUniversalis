@@ -1,0 +1,14 @@
+add_core = NC4
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Yuriosa"
+is_city = yes
+culture = irjeva
+religion = icearia
+add_core = NC8
+add_core = NC9

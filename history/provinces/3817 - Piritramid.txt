@@ -1,0 +1,16 @@
+add_core = TI6
+owner = TI6
+controller = TI6
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = spices
+base_manpower = 3
+capital = "Piritramid"
+is_city = yes
+culture = nortio
+religion = tilidian_little_gods
+owner = TI3
+controller = TI3
+add_core_of = TI3
+add_core = TI3

@@ -1,0 +1,14 @@
+add_core = ZF3
+owner = ZF3
+controller = ZF3
+culture = cironor
+religion = phoenix_faith
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = cloth
+base_manpower = 4
+capital = "Cririnia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

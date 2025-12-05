@@ -1,0 +1,1236 @@
+##BranchStart 0
+aca_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = LO2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	raise_sails = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			navy_size_percentage = 1
+		}
+		effect = {
+			add_navy_tradition = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_grand_pullanian_fleet = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			raise_sails
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_heavy_ship = 20
+		}
+		effect = {
+			add_country_modifier = { 
+				name = pullanian_heavy
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	defend_peninsula = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_grand_pullanian_fleet
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 733
+			owns = 735
+			
+			733 = {
+			fort_level = 4
+			}
+			
+			735 = {
+			fort_level = 4
+			}
+		}
+		effect = {
+		
+		733 = {
+			add_province_modifier = { 
+    name = inc_fort
+    duration = -1  
+}		
+		}
+
+		735 = {
+			add_province_modifier = { 
+    name = inc_fort
+    duration = -1  
+}		
+		}
+		
+		}
+	}
+	##Mission End
+	##Mission Start
+	naval_forces = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			defend_peninsula
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			navy_size = 150
+		}
+		effect = {
+			add_country_modifier = { 
+				name = marines_puallan
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	construct_great_ships = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			naval_forces
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_heavy_ship = 80
+		}
+		effect = {
+			add_country_modifier = { 
+				name = great_ship_pul
+				duration = 7500
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	naval_academy_of_pullana = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			construct_great_ships
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 730
+			730 = {
+			has_great_project = {
+				type = any
+				tier = 3
+			}
+			}
+		}
+		effect = {
+				add_country_modifier = { 
+				name = pulana_acadermy
+				duration = -1
+			}		
+		}
+	}
+	##Mission End
+	##Mission Start
+	dam_the_swamps = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	treasury = 2000
+		lovia_coast_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		lovo_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+	}
+		effect = {
+		add_treasury = -2000
+			 	every_province = { 
+				limit = {
+	OR=  {
+	area = lovia_coast_area
+	area = lovo_area
+	 
+	}				
+				}
+				add_permanent_province_modifier = { 
+    name = dams
+    duration = -1  
+}
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	develop_lower_lovia = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			dam_the_swamps
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+	value = 150
+	OR = {
+	has_terrain = marsh
+	has_terrain = jungle	
+	}
+
+	OR=  {
+	area = lovia_coast_area
+	area = lovo_area
+	 
+	}
+}
+		}
+		effect = {
+			 	add_mercantilism = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	highways_and_dykes = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			develop_lower_lovia
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	treasury = 5000
+					lovia_coast_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		lovo_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+
+		}
+		effect = {
+		add_treasury = -5000
+			 	every_province = { 
+				limit = {
+	OR=  {
+	area = lovia_coast_area
+	area = lovo_area
+	 
+	}				
+				}
+				add_permanent_province_modifier = { 
+    name = highway_dyke
+    duration = -1  
+}
+				}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+aca_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+			tag = LO2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_szegeni_traders = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			call_fo_telcontar
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_estate_privileges = {
+				estate = estate_burghers
+				value = 3
+			}
+		}
+		effect = {
+			define_advisor = {
+    type = treasurer
+    name = "Zatan Rzegom"
+    skill = 3
+    culture = parazsti
+    religion = rozalia
+	discount = yes
+	cost_multiplier = 0
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	expand_the_trade = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_szegeni_traders
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		capital_scope = {
+			is_strongest_trade_power = ROOT		
+		}
+
+		}
+		effect = {
+			add_years_of_income = 0.5
+		}
+	}
+	##Mission End
+	##Mission Start
+	promote_szegenis = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			expand_the_trade
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	
+OR = {
+num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 4
+	is_city = yes
+	OR = {
+	 has_province_modifier = szegeni_major_port
+	 has_province_modifier = szegeni_trading_port
+	}
+}
+
+num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 2
+	is_city = yes
+	OR = {
+	 has_province_modifier = szegeni_major_port
+	 has_province_modifier = szegeni_trading_port
+	}
+	num_of_times_improved = 6
+}
+}
+
+		}
+		effect = {
+		every_province = {
+		limit = {
+	OR = {
+	 has_province_modifier = szegeni_major_port
+	 has_province_modifier = szegeni_trading_port
+	}		
+		}
+		discover_country = ROOT	
+		}
+
+		
+					add_country_modifier = { 
+			name = szegeni_connection
+			duration = -1  
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_grand_trade_route = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			promote_szegenis
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		1336 = {
+		is_strongest_trade_power = ROOT		
+		}
+
+		1526 = {
+		is_strongest_trade_power = ROOT		
+		}
+
+		1973 = {
+		is_strongest_trade_power = ROOT		
+		}
+
+		2060 = {
+		is_strongest_trade_power = ROOT		
+		}		
+		
+		2085 = {
+		is_strongest_trade_power = ROOT		
+		}	
+
+		2115 = {
+		is_strongest_trade_power = ROOT		
+		}	
+	
+	OR = {
+		2209 = {
+		is_strongest_trade_power = ROOT		
+		}	
+
+		2222 = {
+		is_strongest_trade_power = ROOT		
+		}			
+	}
+	}
+
+		effect = {
+			add_mercantilism = 20
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_splendid_islands = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			telcontars_home
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+	value = 200
+	region = telcoria_region
+}
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			region = telcoria_region
+			}
+			
+			add_province_modifier = { 
+				name = blessed_telcors_earth
+				duration = -1  
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_sacred_home = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_splendid_islands
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 6
+	region = telcoria_region
+	OR = {
+	has_building = temple
+	has_building = cathedral
+	}
+	is_city = yes
+}
+		}
+		effect = {
+			reset_golden_age = yes
+			extend_golden_age = 360
+		}
+	}
+
+	
+}
+##BranchEnd 1
+##BranchStart 2
+aca_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = LO2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	call_fo_telcontar = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			estate_loyalty = {
+    estate = estate_god_telcontar
+    loyalty = 60
+}
+
+estate_influence = {
+    estate = estate_god_telcontar
+    influence = 80
+    
+}
+			}
+		}
+		effect = {
+			734 = {
+    add_claim = ROOT
+			}
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_second_cape = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			call_fo_telcontar
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 734
+		}
+		effect = {
+									lovo_area  = {					
+			add_permanent_claim = ROOT
+		}
+		add_claim = 1339
+		add_claim = 1513
+		}
+	}
+	##Mission End
+	##Mission Start
+	trade_in_naga = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_second_cape
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1339
+			owns = 1513
+			
+			1339 = {
+			province_has_center_of_trade_of_level = 2
+			}
+		}
+		effect = {
+			custom_tooltip = allow_explo
+			set_country_flag = allow_exploration
+		}
+	}
+	##Mission End
+	##Mission Start
+	call_of_discovery = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			trade_in_naga
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			has_idea_group = exploration_ideas
+			has_institution = new_world_i
+			}
+			has_discovered = 2874
+		}
+		effect = {
+			telcoria_region  = {					
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	telcontars_home = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			call_of_discovery
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2879
+					2879 = {
+			num_of_times_improved_by_owner = 5
+		}
+		}
+		effect = {
+
+			add_stability = 3
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_holy_archipel = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			telcontars_home
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		telcoria_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+
+		}
+		effect = {
+		
+					white_region  = {					
+				add_permanent_claim = ROOT
+			}
+				
+		}
+	}
+	##Mission End
+	##Mission Start
+	white_island = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_holy_archipel
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		white_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+
+		}
+		effect = {
+							ateara_archipelago_area  = {					
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	aterara_west = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			white_island
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		ateara_archipelago_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+
+		}
+		effect = {
+		 	add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+aca_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+	tag = LO2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	tellconars_servants = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			call_fo_telcontar
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_active_blessings = 5
+		} 
+		effect = {
+			add_devotion = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	highest_warlock = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			tellconars_servants
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 200
+		}
+		effect = {
+		lovia_region  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	claim_all_of_lovia = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			highest_warlock
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					lovia_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+	
+		}
+		effect = {
+							yangara_region  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	across_yanga = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			claim_all_of_lovia
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+development_in_provinces = {
+	value = 200
+	region = yangara_region
+}
+		}
+		effect = {
+							poorv  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	lords_of_poorv = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			across_yanga
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			poorv = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			set_government_rank = 3
+			add_prestige = 100
+			add_army_tradition = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	instute_blood_quotas = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			apply_demons_workforce
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 3
+		NOT = {
+		has_country_modifier = demon_days
+		}
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_adm_power
+	value = 100
+}		
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_dip_power
+	value = 100
+}
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_mil_power
+	value = 100
+}	
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = -100
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = -100
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -100
+			}
+			
+						add_country_modifier = { 
+				name = demon_days
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	deals_with_devil_lords = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			instute_blood_quotas
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+devotion = 75
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_mil_power
+	value = 100
+}
+		}
+		effect = {
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -100
+			}
+			
+			add_devotion = -50
+			
+			
+			add_country_modifier = { 
+				name = lords_of_hell
+				duration = -1
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	imprison_the_lords_of_hell = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			construct_a_soultrap
+			deals_with_devil_lords
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		devotion = 90
+		stability = 2
+			check_variable = {
+				which = num_of_souls
+				value = 100
+			}			
+		}
+		effect = {
+			remove_country_modifier = lords_of_hell
+			add_stability = -6
+			add_devotion = -50
+			add_country_modifier = { 
+				name = imp_lords_of_hell
+				duration = -1
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	harvest_lords_power = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			imprison_the_lords_of_hell
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		devotion = 90			
+
+			OR = {
+			monthly_adm = 13
+			monthly_dip = 13
+			monthly_mil = 13
+			}		
+		}
+		effect = {
+			add_country_modifier = { 
+				name = the_huge_power
+				duration = -1
+			}	
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+aca_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = LO2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	grand_blood_hunt = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 2
+		}
+		effect = {
+			add_stability = -3
+		
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = 100
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = 100
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	demon_season = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			grand_blood_hunt
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		stability = 3
+			OR = {
+			 	courthouse = 12
+				town_hall = 12
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = demon_days
+				duration = 9500
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_seekers = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			tellconars_servants
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			innovativeness = 10		
+			adm_tech = 15
+		}
+
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	study_demons = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_seekers
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_cossacks = 15
+		}
+		effect = {
+			 	change_innovativeness = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	small_demons = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			study_demons
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_adm_power
+	value = 150
+}
+		}
+		effect = {
+		
+		add_country_modifier = { 
+			name = advance_demonds
+			duration = 7500
+		}
+		
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = -150
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	apply_demons_workforce = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			small_demons
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			adm_tech = 24
+			innovativeness = 60
+				num_of_cossacks = 50
+			}
+		}
+		effect = {
+		add_country_modifier = { 
+			name = working_demons
+			duration = -1  
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_fleeting_soul = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			apply_demons_workforce
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			innovativeness = 100	
+
+			AND = {
+			monthly_adm = 12
+			monthly_dip = 12
+			monthly_mil = 12
+			}
+			
+			splendor = 3000
+			}
+		}
+		effect = {
+			 	add_corruption = -5
+		}
+	}
+	##Mission End
+	##Mission Start
+	construct_a_soultrap = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_fleeting_soul
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			treasury = 10000
+			NOT = {
+			inflation = 10
+			}
+		}
+		effect = {
+			add_inflation = 25
+			add_treasury = -10000
+			
+			add_ruler_modifier = { 
+				name = soul_trap
+				duration = -1  
+			}
+			
+			set_variable = {
+			which = num_of_souls
+			value = 0
+		}
+		custom_tooltip = soultrap
+		}
+	}
+	##Mission End
+	##Mission Start
+	power_from_mind = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			construct_a_soultrap
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			check_variable = {
+				which = num_of_souls
+				value = 25
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = soul_trap
+				duration = -1  
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	wisdom_of_the_dead = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			power_from_mind
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			check_variable = {
+				which = num_of_souls
+				value = 50
+			}			
+		}
+		effect = {
+			add_country_modifier = { 
+				name = dead_wisdom
+				duration = -1  
+			}				
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

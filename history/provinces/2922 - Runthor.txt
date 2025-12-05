@@ -1,0 +1,14 @@
+add_core = NC6
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = iron
+base_manpower = 2
+capital = "Runthor"
+is_city = yes
+culture = ossor
+religion = icearia
+add_core = NC8
+add_core = NC9

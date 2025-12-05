@@ -1,0 +1,13 @@
+add_core = EP5
+owner = EP5
+controller = EP5
+culture = novy_valo
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 2
+capital = "Ressia"
+is_city = yes
+discovered_by = chinese

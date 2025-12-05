@@ -1,0 +1,13 @@
+add_core = HB5
+owner = HB5
+controller = HB5
+culture = laoi
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = salt
+base_manpower = 2
+capital = "Cinno Di"
+is_city = yes
+discovered_by = chinese

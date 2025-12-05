@@ -1,0 +1,12 @@
+add_core = TR1
+owner = TR1
+controller = TR1
+hre = no
+base_tax = 5
+base_production = 6
+trade_goods = grain
+base_manpower = 5
+capital = "Paito"
+is_city = yes
+culture = paitoan
+religion = ishtara

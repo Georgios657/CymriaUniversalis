@@ -1,0 +1,12 @@
+add_core = WI6
+owner = WI6
+controller = WI6
+culture = darian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = slaves
+base_manpower = 2
+capital = "Tambaraka"
+is_city = yes

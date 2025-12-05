@@ -1,0 +1,13 @@
+add_core = I24
+owner = I24
+controller = I24
+culture = deutscherlander
+religion = old_imperial_faith
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = cloth
+base_manpower = 3
+capital = "Nantenbach"
+is_city = yes
+discovered_by = western

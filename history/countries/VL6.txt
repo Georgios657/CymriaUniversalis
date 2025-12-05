@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_despotism
+government_rank = 1
+technology_group = skoger
+primary_culture = saulgrivian
+religion = phoenix_faith
+capital = 1444	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Priidu"
+		name = "Klavess"
+		birth_date = 1395.9.21
+		dip = 4
+		adm = 4
+		mil = 2
+
+	}
+
+}

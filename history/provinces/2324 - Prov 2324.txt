@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = wool
+base_manpower = 4
+capital = "Peregrine"
+is_city = yes
+culture = zavonian
+religion = grand_mother
+add_core = AV4

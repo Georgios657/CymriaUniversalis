@@ -1,0 +1,12 @@
+add_core = SH5
+owner = SH5
+controller = SH5
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = slaves
+base_manpower = 1
+capital = "Scherech"
+is_city = yes
+culture = nian

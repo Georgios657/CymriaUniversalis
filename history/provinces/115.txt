@@ -1,0 +1,13 @@
+add_core = I25
+owner = I25
+controller = I25
+culture = ostlander
+religion = old_imperial_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Unna"
+is_city = yes
+discovered_by = western

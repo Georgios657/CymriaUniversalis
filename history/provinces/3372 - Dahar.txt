@@ -1,0 +1,13 @@
+add_core = VP4
+add_core = AS1
+owner = AS1
+controller = AS1
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 1
+capital = "Dahar"
+is_city = yes
+culture = ayas_valley

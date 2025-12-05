@@ -1,0 +1,13 @@
+add_core = WI2
+owner = WI2
+controller = WI2
+culture = jirai
+religion = mrogi_wa_damu
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = spices
+base_manpower = 4
+capital = "Kiboshaar"
+is_city = yes
+center_of_trade = 1

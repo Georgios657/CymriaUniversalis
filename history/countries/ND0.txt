@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = skoger
+primary_culture = marshlander
+religion = skogian_religion
+capital = 1076# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1430.1.1 = {
+	monarch = {
+		name = "Katoinen"
+		dynasty = "Van"
+		birth_date = 1391.9.21
+		dip = 3
+		adm = 1
+		mil = 4
+	}
+}
+

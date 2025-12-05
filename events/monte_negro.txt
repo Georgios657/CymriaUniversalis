@@ -1,0 +1,524 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = monte_negro
+
+
+####start up
+country_event = {
+	id = monte_negro.1
+	title = monte_negro.1.t
+	desc = monte_negro.1.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+
+	trigger = {
+		has_country_flag = third_visit
+		tag = U07
+		is_year = 1490
+
+	}
+		mean_time_to_happen = {
+		months = 24
+		}
+		
+	option = {
+	name = monte_negro.1.a		
+		ai_chance = { factor = 20 }
+		country_event = { 
+		id = monte_negro.2
+	}
+		}		
+		
+	option = {
+	name = monte_negro.1.b
+		ai_chance = { factor = 20 }
+		add_stability = -2
+		set_country_flag = cato_victorious
+		capital_scope = {
+					spawn_rebels = {
+				size = 4
+				type = religious_rebels
+			}
+		}
+		}		
+	}
+
+country_event = {
+	id = monte_negro.2
+	title = monte_negro.2.t
+	desc = monte_negro.2.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+		
+	option = {
+	name = monte_negro.2.a		
+		ai_chance = { factor = 20 }
+		country_event = { 
+		id = monte_negro.3
+	}
+		}		
+		
+	option = {
+	name = monte_negro.2.b
+		ai_chance = { factor = 20 }
+		add_stability = -1
+		set_country_flag = cato_victorious
+		capital_scope = {
+					spawn_rebels = {
+				size = 5
+				type = religious_rebels
+			}
+		}
+		}		
+	}
+	
+country_event = {
+	id = monte_negro.3
+	title = monte_negro.3.t
+	desc = monte_negro.3.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	immediate = {
+	define_ruler = {
+    name = "Nefara"
+    dynasty = "Politivia"
+    adm = 5
+    dip = 5
+    mil = 5
+    age = 20
+    claim = 95
+	female = yes
+}
+
+
+add_ruler_personality = wizard
+add_ruler_personality = scholar_personality
+
+
+set_country_flag = nefara
+
+	}
+		
+	option = {
+	name = monte_negro.3.a		
+		
+		
+		
+	swap_non_generic_missions = yes
+		ai_chance = { factor = 20 }
+		add_stability = -6
+
+
+		
+	add_government_reform = wizardom_monte
+		}		
+				
+	}
+
+country_event = {
+	id = monte_negro.4
+	title = monte_negro.4.t
+	desc = monte_negro.4.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+
+	trigger = {
+		has_ruler = "Cato"
+		tag = U07
+		is_year = 1450
+
+	}
+		mean_time_to_happen = {
+		months = 24
+		}
+		
+	option = {
+	name = monte_negro.4.a		
+		ai_chance = { factor = 20 }
+		set_country_flag = first_visit
+		
+		change_innovativeness = 1
+		
+				schworingen_area = {
+			discover_country = FROM
+		}
+		}		
+				
+	}
+
+	
+	#witchmaster
+country_event = {
+	id = monte_negro.5
+	title = monte_negro.5.t
+	desc = monte_negro.5.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+
+	trigger = {
+		has_country_flag = first_visit
+		tag = U07
+		is_year = 1465
+
+	}
+		mean_time_to_happen = {
+		months = 24
+		}
+		
+	option = {
+	name = monte_negro.5.a		
+		ai_chance = { factor = 20 }
+		country_event = { 
+		id = monte_negro.6
+	}
+		}		
+		
+	option = {
+	name = monte_negro.5.b
+		ai_chance = { factor = 20 }
+		add_stability = -1
+		set_country_flag = second_visit
+		}		
+	}
+	
+country_event = {
+	id = monte_negro.6
+	title = monte_negro.6.t
+	desc = monte_negro.6.desc
+
+	picture = RELIGION_eventPicture
+
+	
+		is_triggered_only = yes
+
+	immediate = {
+	define_ruler = {
+    name = "Nefara"
+    dynasty = "Politivia"
+    adm = 5
+    dip = 5
+    mil = 5
+    age = 20
+    claim = 95
+	female = yes
+}
+
+
+add_ruler_personality = wizard
+add_ruler_personality = scholar_personality
+
+
+set_country_flag = nefara
+
+	}
+		
+	option = {
+	name = monte_negro.6.a		
+		
+		hidden_effect = {
+			every_country = {
+				limit = { has_opinion_modifier = { who = ROOT modifier = evil } }
+				remove_opinion = { who = ROOT modifier = evil }
+				reverse_remove_opinion = { who = ROOT modifier = evil }
+				
+			
+			}
+			
+						every_country = {
+				limit = { has_opinion_modifier = { who = ROOT modifier = both_evil } }
+				remove_opinion = { who = ROOT modifier = both_evil }
+				reverse_remove_opinion = { who = ROOT modifier = both_evil }
+				
+			
+			}
+		}		
+		
+	swap_non_generic_missions = yes
+		ai_chance = { factor = 20 }
+		add_stability = -6
+
+
+		
+	add_government_reform = wizardom_monte
+		}		
+				
+	}
+	
+###Third Visit
+country_event = {
+	id = monte_negro.7
+	title = monte_negro.7.t
+	desc = monte_negro.7.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+
+	trigger = {
+		has_country_flag = second_visit
+		tag = U07
+		is_year = 1480
+
+	}
+		mean_time_to_happen = {
+		months = 24
+		}
+		
+	option = {
+	name = monte_negro.7.a		
+		ai_chance = { factor = 20 }
+		country_event = { 
+		id = monte_negro.8
+	}
+		}		
+		
+	option = {
+	name = monte_negro.7.b
+		ai_chance = { factor = 20 }
+		change_innovativeness = 5
+		add_stability = -4
+		set_country_flag = third_visit
+		}		
+	}
+	
+country_event = {
+	id = monte_negro.8
+	title = monte_negro.8.t
+	desc = monte_negro.8.desc
+
+	picture = RELIGION_eventPicture
+		
+		is_triggered_only = yes
+
+	immediate = {
+	define_ruler = {
+    name = "Nefara"
+    dynasty = "Politivia"
+    adm = 5
+    dip = 5
+    mil = 5
+    age = 20
+    claim = 95
+	female = yes
+}
+
+
+add_ruler_personality = wizard
+add_ruler_personality = scholar_personality
+
+
+set_country_flag = nefara
+
+	}
+		
+	option = {
+	name = monte_negro.8.a		
+		
+		
+		
+	swap_non_generic_missions = yes
+		ai_chance = { factor = 20 }
+		add_stability = -6
+
+
+		
+	add_government_reform = wizardom_monte
+		}		
+				
+	}
+
+##Use Soul	
+country_event = {
+	id = monte_negro.9
+	title = monte_negro.9.t
+	desc = monte_negro.9.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+
+	trigger = {
+		has_ruler = "Cato"
+		tag = U07
+		is_year = 1515
+		
+		NOT = {
+		has_global_flag = thorren_free
+		}
+
+	}
+		mean_time_to_happen = {
+		months = 12
+		}
+		
+	option = {
+	name = monte_negro.9.a		
+		ai_chance = { factor = 20 }
+		 change_innovativeness = 50
+		}		
+				
+	}	
+	
+	
+####Move Capital	
+country_event = {
+	id = monte_negro.10
+	title = monte_negro.10.t
+	desc = monte_negro.10.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+
+	trigger = {
+		has_ruler = "Cato"
+		tag = U07
+		owns = 131
+		
+		NOT = {
+		131 = {
+		is_capital_of = ROOT
+		}
+		}
+
+	}
+		mean_time_to_happen = {
+		months = 240
+		}
+		
+	option = {
+	name = monte_negro.10.a		
+		ai_chance = { factor = 20 }
+ 	set_capital = 131
+	
+	131 = {
+				add_province_modifier = { 
+				name = place_of_power
+				duration = -1  
+			}
+	}
+		}		
+
+	option = {
+	name = monte_negro.10.b	
+		ai_chance = { factor = 20 }
+		capital_scope = {
+		add_base_production = 1
+		}
+	
+	add_stability_or_adm_power = yes
+		}	
+		
+	}	
+	
+	
+####Relicts of the Past	- Phoenix Shield
+country_event = {
+	id = monte_negro.11
+	title = monte_negro.11.t
+	desc = monte_negro.11.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+
+	trigger = {
+				owns = 131			
+				131 = {
+					has_great_project = {
+						type = any
+						tier = 3
+					}
+				}
+
+	}
+		mean_time_to_happen = {
+		months = 240
+		}
+		
+	option = {
+	name = monte_negro.11.a		
+		ai_chance = { factor = 20 }
+		add_army_tradition = 15
+		}		
+				
+	}	
+	
+####Relicts of the Past	- Crown of the Empire
+country_event = {
+	id = monte_negro.12
+	title = monte_negro.12.t
+	desc = monte_negro.12.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+
+	trigger = {
+				owns = 131			
+				131 = {
+					has_great_project = {
+						type = any
+						tier = 2
+					}
+				}
+
+	}
+		mean_time_to_happen = {
+		months = 240
+		}
+		
+		
+	option = {
+	name = monte_negro.12.a		
+		ai_chance = { factor = 20 }
+		add_prestige = 25
+		}		
+				
+	}		
+	
+	
+####Kill the Emperor
+country_event = {
+	id = monte_negro.13
+	title = monte_negro.13.t
+	desc = monte_negro.13.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+
+	trigger = {
+		has_ruler = "Cato"
+		tag = U07
+		is_year = 1515
+		owns = 131
+	}
+		mean_time_to_happen = {
+		months = 24
+		}
+		
+	option = {
+	name = monte_negro.13.a		
+		ai_chance = { factor = 20 }
+
+		
+	add_stability_or_adm_power = yes
+			}
+	}		
+	

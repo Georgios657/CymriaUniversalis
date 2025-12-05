@@ -1,0 +1,14 @@
+add_core = NA9
+owner = NA9
+controller = NA9
+culture = navi_naga
+religion = naga_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 4
+capital = "Ishnavan"
+is_city = yes
+# Anything typed here will be added to all selected province history files
+discovered_by = naga_tech

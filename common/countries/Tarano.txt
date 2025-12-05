@@ -1,0 +1,96 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 148 77 92 }
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+    "Fuipo" = 60
+    "Jeipo" = 60
+    "Vira" = 60
+    "Aurelian" = 60
+    "Cormegil" = 60
+    "Zephyr" = 60
+    "Darian" = 60
+    "Xander" = 60
+    "Orion" = 60
+    "Zenith" = 60
+    "Vhasen" = 60
+    "Visatari" = 60
+    "Visacan" = 60
+    "Visaran" = 60
+    "Vhasenjen" = 60
+    "Macar" = 60
+    "Amatam" = 60
+    "Vira" = 60
+    "Tieran" = 60
+    "Quantan" = 60
+
+    "Fuipa" = -20
+    "Jeipa" = -20
+    "Zepha" = -20
+    "Drava" = -20
+    "Zepha" = -20
+    "Iroa" = -20
+    "Vasenja" = -20
+    "Vassessa" = -20
+    "Vasenia" = -20
+    "Vhasenja" = -20
+}
+
+leader_names = {
+    Vhasen
+    Draven
+    Zenith
+    Zephyr
+    Tieran
+    Macar
+   Quantan
+    Visatari
+    Taschka
+    Vira
+
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Tas aea $PROVINCE$" "Aela $PROVINCE$" "Tase $PROVINCE$"
+}
+
+fleet_names = {
+}

@@ -1,0 +1,12 @@
+add_core = WI7
+owner = WI7
+controller = WI7
+culture = darian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Ndunshar"
+is_city = yes

@@ -1,0 +1,198 @@
+country_decisions = {
+	grand_harpian_nation = {
+		major = yes
+		potential = {
+		culture_group  = east_harpy
+		NOT = { exists = HY9 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2827
+				province_id = 2820
+				province_id = 2814
+				province_id = 2834
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = HY9 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 2827	# Mukha
+			owns_core_province = 2820	# Zabid
+			owns_core_province = 2814	# Mukha
+			owns_core_province = 2834	# Zabid
+		}
+		effect = {
+			change_tag = HY9
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			harpy_mountains_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core = HY9
+			}			
+
+			eastern_broden_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = HY9
+			}	
+			
+			add_prestige = 25
+			set_capital = 2827		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+
+	nishi = {
+		major = yes
+		potential = {
+				NOT = {
+		tag = HY9
+		}
+		culture_group  = east_harpy
+		NOT = { exists = HR2 }		
+		capital_scope = {
+		region = broden_region
+		}
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			NOT = { exists = HR2 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			total_development = 100
+		}
+		effect = {
+			change_tag = HR2
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}		
+
+			broden_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = HR2
+			}	
+				
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+	
+
+	azuma = {
+		major = yes
+		potential = {
+				NOT = {
+		tag = HY9
+		}
+		culture_group  = east_harpy
+		NOT = { exists = HR3 }		
+		capital_scope = {
+		region = eastern_broden_region
+		}
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			NOT = { exists = HR3 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			total_development = 100
+		}
+		effect = {
+			change_tag = HR3
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}		
+
+			eastern_broden_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = HR3
+			}	
+				
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+
+
+	kita = {
+		major = yes
+		potential = {
+		NOT = {
+		tag = HY9
+		}
+		
+		culture_group  = east_harpy
+		NOT = { exists = HR1 }		
+		capital_scope = {
+		region = northern_broden_region
+		}
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			NOT = { exists = HR1 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			total_development = 100
+		}
+		effect = {
+			change_tag = HR1
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}		
+
+			northern_broden_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = HR1
+			}	
+				
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}		
+}

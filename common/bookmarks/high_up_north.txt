@@ -1,0 +1,23 @@
+bookmark =
+{
+	name = "HIGH_NORTH"
+	desc = "HIGH_NORTH_DESC"
+	date = 1444.1.1
+	
+	country = ND6
+	country = VA2
+
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

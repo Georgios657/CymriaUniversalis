@@ -1,0 +1,13 @@
+add_core = FC9
+owner = FC9
+controller = FC9
+culture = yangaran
+religion = amatism_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Zyra"
+is_city = yes
+discovered_by = indian

@@ -1,0 +1,54 @@
+﻿l_english:
+ gather_the_people_title:0 "Find Survivors"
+ gather_the_people_desc:0 "Our land is devastated, and wherever we turn, we see death and decay. Yet many have survived; we just need to find them and convince them to follow us."
+ find_suitable_places_title:0 "Find a new Home"
+ find_suitable_places_desc:0 "The land we once knew is now completely changed—fields lie fallow and overgrown, cities are ruins, and where peace once reigned, danger now looms. We must scout the land anew."
+ a_secure_home_title:0 "Secure our new Home"
+ a_secure_home_desc:0 "We must fortify our new home if we are to survive."
+ organize_power_transfer_title:0 "Secure our Government"
+ organize_power_transfer_desc:0 "Our old laws have lost much of their power, and with the fall of the kingdom, the foundational trust in our society has been shaken. But we are still strong, and the next generation will lead us just as well."
+ organize_new_structures_title:0 "New Alliances"
+ organize_new_structures_desc:0 "We must forge new alliances in this world if we are to survive."
+ reclits_of_past_title:0 "Relicts of the Past"
+ reclits_of_past_desc:0 "In the ruins of our kingdom, many remnants from the old land remain hidden: heirlooms, relics, and other treasures once highly valued. They are our fortress in this storm of despair."
+ gather_equipment_title:0 "Gather Equipment"
+ gather_equipment_desc:0 "We need all the equipment we can get to establish our land. Only if the armories are well-stocked will our endeavor have a chance of success."
+ strike_fear_title:0 "Strike fear into their hearts!"
+ strike_fear_desc:0 "Kill all Haryies. Let them know fear"
+ 
+ brodia.1.t:0 "The Battle of Brodenfield"
+ brodia.1.desc:0 "We marched onto the fields of Broden against the harpy hordes to defend our kingdom. Duke Farkas led the forces of Kisso and held the right flank, to his left stood Duke Mate with his troops, while Duke Zatan commanded the remaining forces of the Ostfold armies on the left. The Imperial Army, under General Foir Lichian, held the center. Together, we entered the battle on the cold fields..."
+ brodia.1.a:0 "To Victory!"
+ 
+ brodia.2.t:0 "Victory at Brodenfield"
+ brodia.2.desc:0 "The bodies—of both humans and harpies alike—littered the vast field, piling into great heaps. But by the end of the day, it was clear that we had won. Yet, there is little left of the kingdom; most of it has been seized by the Imperials, and now they seek to subjugate us as well. If we are to preserve our freedom, we must, armies without land, return home and rebuild."
+ brodia.2.a:0 "A long march awaits" 
+ 
+ brodia.3.t:0 "The Brodian War"
+ brodia.3.desc:0 "The last ten years have not been merely difficult for Brodia—they have been catastrophic. Harpies from the eastern mountains, united under their leader Shinu, defeated the royal armies one after another, burned the cities to the ground, and devoured everything they could find. After years of relentless war, all remaining troops finally retreated west to join forces with the devil—the Imperials. But we stayed in our homeland and defended it!"
+ brodia.3.a:0 "We will rebuilt"
+ 
+ brodia.4.t:0 "Our March to Glory"
+ brodia.4.desc:0 "Under our leader Shinu, the Chosen of the Goddess, we have united under his banner and driven the weak—and utterly delicious—humans of Broden before us like cattle. City after city burned as the humans fled ever further, calling for their brothers from the west. Now we march on their last stand. If we triumph at Broden Field, new, rich hunting grounds await us..."
+ brodia.4.a:0 "Tasty"
+ 
+ brodia.5.t:0 "Shinu goes missing"
+ brodia.5.desc:0 "The battle was going very well until a sudden storm arose, and in the dense rain, we lost sight of Shinu! One after another, the wings retreated until, at last, the humans claimed victory. Shinu never reappeared, and now it is time for every wing to seek its own fortune."
+ brodia.5.a:0 "Back to Buisness" 
+ 
+ brodia.6.t:0 "Blood and Feathers"
+ brodia.6.desc:0 "At long last, after hours of talk and endless disputes, the iron was finally drawn, and every member of the council set about backing their arguments with steel. Soon, even the guards joined the fray, and an hours-long battle raged within the council chambers. This is undoubtedly the end of the united harpy people, for the government, the stewards of Shinu, are no more. None of them survived the slaughter."
+ brodia.6.a:0 "I will kill them all!"  
+ 
+ brodia.7.t:0 "Send the search parties"
+ brodia.7.desc:0 "We have arrived in a new region and must now decide where our scouts should focus their efforts: should they venture into the cities and castles to search for our heirlooms, or prioritize finding survivors?"
+ brodia.7.a:0 "Survivors!"
+ brodia.7.b:0 "Heirlooms!"
+ 
+ brodia.8.t:0 "The Scouts return with empty hands"
+ brodia.8.desc:0 "Our scouts have returned, but unfortunately, they have found nothing."
+ brodia.8.a:0 "Sad"
+ 
+ brodia.9.t:0 "The Scouts found something!"
+ brodia.9.desc:0 "Our scouts have returned, and they have successfully completed their mission!"
+ brodia.9.a:0 "Great" 

@@ -1,0 +1,13 @@
+add_core = I19
+owner = I19
+controller = I19
+culture = badenian
+religion = old_imperial_faith
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Jonsdorf"
+is_city = yes
+discovered_by = western

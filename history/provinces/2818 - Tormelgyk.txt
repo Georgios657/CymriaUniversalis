@@ -1,0 +1,13 @@
+add_core = HY1
+owner = HY1
+controller = HY1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wool
+base_manpower = 3
+capital = "Tormel"
+is_city = yes
+culture = yama_harpia
+religion = winged_one
+

@@ -1,0 +1,14 @@
+add_core = NB3
+owner = NB3
+controller = NB3
+culture = coastal_naga
+religion = naga_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = ivory
+base_manpower = 5
+capital = "Rasatal"
+is_city = yes
+# Anything typed here will be added to all selected province history files
+discovered_by = naga_tech

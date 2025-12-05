@@ -1,0 +1,157 @@
+estate_dragon_get_hoard = {
+	can_select = {
+		NOT = {
+			 	years_of_income = 3
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	task_requirements = {
+			if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_dragon
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_dragon
+			}
+		}
+		else = {
+			years_of_income = 3
+		}
+		
+
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dragon
+		}
+		add_estate_loyalty = {
+			estate = estate_dragon
+			loyalty = 10
+		}
+		add_country_modifier = { 
+    name = dragon_in_the_army
+    duration = 900
+
+}
+		 	add_years_of_income = -2
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_dragon
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+estate_dragon_get_huge_hoard = {
+	can_select = {
+		 	years_of_income = 3
+		NOT = {
+			 	years_of_income = 10
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	task_requirements = {
+			if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_dragon
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_dragon
+			}
+		}
+		else = {
+			years_of_income = 9
+		}
+		
+
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dragon
+		}
+		add_estate_loyalty = {
+			estate = estate_dragon
+			loyalty = 10
+		}
+		add_country_modifier = { 
+    name = dragon_in_the_army
+    duration = 1200
+
+}
+		 	add_years_of_income = -8
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_dragon
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+estate_dragon_get_giant_hoard = {
+	can_select = {
+		 	years_of_income = 11
+	}
+	selection_weight = {
+		factor = 1
+	}
+	task_requirements = {
+			if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_dragon
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_dragon
+			}
+		}
+		else = {
+			years_of_income = 20
+		}
+		
+
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dragon
+		}
+		add_estate_loyalty = {
+			estate = estate_dragon
+			loyalty = 10
+		}
+		add_country_modifier = { 
+    name = dragon_in_the_army
+    duration = 1800
+
+}
+		 	add_years_of_income = -19
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_dragon
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}

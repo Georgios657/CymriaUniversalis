@@ -1,0 +1,12 @@
+add_core = TW3
+owner = TW3
+controller = TW3
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = spices
+base_manpower = 3
+capital = "Kiss"
+is_city = yes
+culture = central_baylonian
+religion = ishtara

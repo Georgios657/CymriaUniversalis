@@ -1,0 +1,13 @@
+add_core = HC0
+owner = HC0
+controller = HC0
+culture = huan
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Biahoi Zhou"
+is_city = yes
+discovered_by = chinese

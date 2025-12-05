@@ -1,0 +1,92 @@
+country_decisions = {
+	cancel_mil_support = {
+		potential = {
+		tag = EM1
+		exists = EM2
+		
+		EM2 = {
+		has_country_modifier  = support_broden_army_rev
+		}
+		
+		EM2 = {		 	
+			is_subject_of_type_with_overlord = {
+				who = MNG
+				type = EM1
+			}
+
+		}
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		
+		}
+		effect = {
+		 	remove_country_modifier = support_broden_army
+			EM2 = {
+			remove_country_modifier = support_broden_army_rev
+				country_event = { 
+				id = eom.3
+				days = 1
+			}
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					  	war_exhaustion = 15
+				}
+			}
+		}
+		ai_importance = 400 #
+	}
+	
+	integrate_the_army = {
+		potential = {
+		tag = EM1
+		exists = EM2
+		
+		EM2 = {		 	
+			is_subject_of_type_with_overlord = {
+				who = MNG
+				type = EM1
+			}
+
+		}
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		 dip_power = 500
+			 	is_at_war = no
+				total_development = 2000
+		}
+		effect = {
+		 	add_dip_power = -500
+			EM2 = {
+				country_event = { 
+				id = eom.1
+				days = 30
+			}
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					 	is_year = 1525
+				}
+			}
+		}
+		ai_importance = 400 #
+	}	
+
+
+}

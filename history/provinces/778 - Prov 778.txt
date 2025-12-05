@@ -1,0 +1,15 @@
+add_core = ZE1
+owner = ZE1
+controller = ZE1
+culture = terephyian
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = tea
+base_manpower = 3
+capital = "Ganden"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+fort_15th = yes

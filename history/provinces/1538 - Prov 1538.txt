@@ -1,0 +1,17 @@
+add_core = TH6
+owner = TH6
+controller = TH6
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wine
+base_manpower = 1
+capital = "Korinth"
+is_city = yes
+culture = arkadian
+religion = gayism
+
+add_permanent_province_modifier = {
+	name = strait_modifier
+	duration = -1
+}

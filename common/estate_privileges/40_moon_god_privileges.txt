@@ -1,0 +1,297 @@
+the_twin_religion = {
+	icon = estate_god_privilege_the_twin_religion
+	is_valid = {
+		has_matching_religion = moon_and_sun
+	}
+		land_share = 0
+	influence = 0.00
+	
+			on_granted = {
+		custom_tooltip = respect_the_sun
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion_group = sun_faith
+				}
+				add_province_modifier = {
+					name = tolerated_cults
+					duration = -1
+				}
+			}
+		}			
+	}
+
+			on_granted_province = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion_group = sun_faith
+				}
+				add_province_modifier = {
+					name = tolerated_cults
+					duration = -1
+				}
+			}
+		}			
+	}
+	
+	benefits = { 
+		
+	}
+	
+	
+	penalties = {
+	 	
+	}
+	
+	on_revoked = { 
+	custom_tooltip = respect_the_sun_rev
+	add_estate_loyalty = {
+    estate = estate_moon_god
+    loyalty = -20
+	}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = tolerated_cults
+		
+					}
+				}
+				remove_province_modifier = tolerated_cults
+			}
+		}
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}			
+}
+
+guide_of_the_death = {
+	icon = estate_god_guide_of_the_death
+	max_absolutism = -15
+	is_valid = {
+	
+	}
+	influence = 0.05
+	loyalty = 0.0
+	benefits = { 
+		 
+	}
+	
+	modifier_by_land_ownership = {
+		 	global_unrest = -2
+	}	
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+		add_estate_loyalty = {
+		estate = estate_moon_god
+		loyalty = -20
+		}
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+the_grand_ziggurats = {
+	icon = estate_god_the_grand_ziggurats
+	max_absolutism = -5
+	is_valid = {
+	
+	}
+	influence = 0.05
+	loyalty = 0.1
+	benefits = { 
+		 
+	}
+	
+	modifier_by_land_ownership = {
+	 	great_project_upgrade_time = -0.33
+		global_tax_modifier = -0.33
+	}	
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+		add_estate_loyalty = {
+		estate = estate_moon_god
+		loyalty = -20
+		}
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+full_moon_festivals = {
+	icon = estate_god_full_moon_festivals
+	max_absolutism = -5
+	is_valid = {
+	
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = { 
+		 tolerance_own = 0.5
+	}
+	
+	modifier_by_land_ownership = {
+	
+	}	
+	
+	penalties = {
+		 	global_tax_modifier = -0.05
+	}
+	
+	on_revoked = { 
+		add_estate_loyalty = {
+		estate = estate_moon_god
+		loyalty = -20
+		}
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+sacred_baths = {
+	icon = estate_god_sacred_baths
+	max_absolutism = -5
+	is_valid = {
+	
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = { 
+		  	land_attrition = -0.10
+	}
+	
+	modifier_by_land_ownership = {
+	 	
+	}	
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+		add_estate_loyalty = {
+		estate = estate_moon_god
+		loyalty = -20
+		}
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+guide_of_the_calendar = {
+	icon = estate_god_guide_of_the_calendar
+	max_absolutism = -5
+	is_valid = {
+	
+	}
+	influence = 0.05
+	loyalty = 0.1
+	benefits = { 
+		 
+	}
+	
+	modifier_by_land_ownership = {
+
+	}	
+
+			on_granted = {
+		custom_tooltip = calendarar
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = farmlands
+					superregion = twin_river
+				}
+				add_province_modifier = {
+					name = the_knowing_of_tidings
+					duration = -1
+				}
+			}
+		}			
+	}
+
+			on_granted_province = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = farmlands
+					superregion = twin_river
+				}
+				add_province_modifier = {
+					name = the_knowing_of_tidings
+					duration = -1
+				}
+			}
+		}			
+	}
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+			custom_tooltip = calendarar_rev
+			hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = the_knowing_of_tidings
+		
+					}
+				}
+				remove_province_modifier = the_knowing_of_tidings
+			}
+		}
+		
+		add_estate_loyalty = {
+		estate = estate_moon_god
+		loyalty = -20
+		}
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}

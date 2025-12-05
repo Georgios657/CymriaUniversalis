@@ -1,0 +1,29 @@
+bookmark =
+{
+	name = "THE_DAWNING_ELF"
+	desc = "THE_DAWNING_ELF_DESC"
+	date = 1444.1.1
+	
+	country = EL0
+	country = EL1
+	country = EL2
+	country = EL3
+	country = EL4
+	country = EL5
+	country = EL6
+	country = EL7
+
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

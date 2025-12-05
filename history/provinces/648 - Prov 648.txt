@@ -1,0 +1,13 @@
+add_core = LB6
+owner = LB6
+controller = LB6
+culture = qualian
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 1
+capital = "Dredenfel"
+is_city = yes
+discovered_by = ottoman

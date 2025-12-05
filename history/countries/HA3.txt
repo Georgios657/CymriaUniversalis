@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = harpy_host_reform
+government_rank = 1
+technology_group = harpy_tech
+primary_culture = higa_harpia
+religion = winged_one
+capital = 2697
+
+1444.1.1 = {
+	monarch = {
+		name = "Nagisa"
+		dynasty = "Pera"
+		birth_date = 1420.9.21
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}

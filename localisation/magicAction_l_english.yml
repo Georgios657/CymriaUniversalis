@@ -1,0 +1,158 @@
+﻿l_english:
+ magicAction.1.t:0 "Mastery of Elements"
+ magicAction.1.desc:0 "The power of the elements obeys us, and for the years to come, they shall continue to serve us and support the development of our nation"
+ magicAction.1.a:0 "Splendid"
+
+ magicAction.2.t:0 "Lead to Gold"
+ magicAction.2.desc:0 "The old dream of the alchemists is easily fulfilled by mages: lead becomes gold!"
+ magicAction.2.a:0 "Splendid"
+
+ magicAction.3.t:0 "Arts of Legends"
+ magicAction.3.desc:0 "Through a grand display of our formidable magical art, we strike awe into the hearts of all who witness it."
+ magicAction.3.a:0 "Splendid"
+
+ magicAction.4.t:0 "The Bloodhunt"
+ magicAction.4.desc:0 "The search for suitable victims for magical blood rituals can only be carried out by mages, for only they can discern who is fit — and who is not."
+ magicAction.4.a:0 "Splendid"
+
+ magicAction.5.t:0 "The Iron Grip"
+ magicAction.5.desc:0 "Through a blood-soaked ritual, we strike fear into the hearts of our people and remind them of the obligations they owe us."
+ magicAction.5.a:0 "Splendid"
+
+ magicAction.6.t:0 "The Future-Sight"
+ magicAction.6.desc:0 "He who gazes into the stars can glimpse the future; and he who knows the future is invincible"
+ magicAction.6.a:0 "Splendid"
+
+ magicAction.7.t:0 "See the Schemes"
+ magicAction.7.desc:0 "In the stars lies truth — and lies as well. But he who knows how to read them shall never be deceived."
+ magicAction.7.a:0 "Splendid"
+
+ magicAction.8.t:0 "The Art of the Deal"
+ magicAction.8.desc:0 "Those who seek the counsel of the stars in all things shall never err. Through our wisdom, we secured several most favorable dealings with the noble estates"
+ magicAction.8.a:0 "Splendid"
+
+ magicAction.9.t:0 "Sing to the Plants"
+ magicAction.9.desc:0 ""With humble songs and arcane rites, we awaken the strength of the plants — and soon, the harvest shall reward our toil!"
+ magicAction.9.a:0 "Splendid"
+
+ magicAction.10.t:0 "Bountiful Harvest"
+ magicAction.10.desc:0 "Through magic, a rich harvest was summoned — and with it, a golden era dawned upon the whole region."
+ magicAction.10.a:0 "Splendid"
+
+ magicAction.11.t:0 "Fertility Song"
+ magicAction.11.desc:0 "Where the light of many healthy children shines, there the land will blossom and thrive."
+ magicAction.11.a:0 "Splendid"
+ 
+ magicAction.12.t:0 "Undead Labor to improve the Capital"
+ magicAction.12.desc:0 "The undead will serve in our capital for a time, aiding in its expansion."
+ magicAction.12.a:0 "Splendid"
+ 
+ magicAction.13.t:0 "Undead Builders"
+ magicAction.13.desc:0 "Across our entire realm, the awakened shall build structures and raise palaces!"
+ magicAction.13.a:0 "Splendid"
+
+ magicAction.14.t:0 "Zombies in Mines and Fields"
+ magicAction.14.desc:0 "There is no better labor force than the dead; they do not complain and work tirelessly. The bodies we awaken today will serve us for a long time"
+ magicAction.14.a:0 "Splendid"
+
+ magicAction.15.t:0 "Summon a Succubus"
+ magicAction.15.desc:0 "A succubus, forged from the blood of a hundred sacrificed virgins, will give our suggestions immense power and influence."
+ magicAction.15.a:0 "Splendid"
+
+ magicAction.16.t:0 "Bind Rebel Leaders"
+ magicAction.16.desc:0 "Any man can be bound by magic to loyalty, and we are willing to pay the price of a sacrifice for a rebel leader."
+ magicAction.16.a:0 "Splendid"
+
+ magicAction.17.t:0 "Sell slaves"
+ magicAction.17.desc:0 "Though we lack the leisure for a grand spell, we can exchange a few of our blood slaves for the services of lesser mages to further the development of our province"
+ magicAction.17.a:0 "Splendid"
+
+ magicAction.18.t:0 "Secrets of the Ancestors"
+ magicAction.18.desc:0 "The stars also hold the wisdom of our ancestors, and through the proper rituals, we can commune with the exalted part of their souls — not the dark essence of death, as the necromancers do."
+ magicAction.18.a:0 "Splendid"
+
+ magicAction.19.t:0 "New Tariffs"
+ magicAction.19.desc:0 "By knowing how market prices shift, one can levy the ideal tariffs with precision"
+ magicAction.19.a:0 "Splendid"
+
+ magicAction.20.t:0 "Gift of Natures Bounty"
+ magicAction.20.desc:0 "Mother Nature is abundant enough to provide for us all!"
+ magicAction.20.a:0 "Splendid"
+
+ magicAction.21.t:0 "Forces of Growth"
+ magicAction.21.desc:0 "Constant growth, even with a gentle push, is always within reach."
+ magicAction.21.a:0 "Splendid" 
+ 
+ magicAction.22.t:0 "Winds of Trade"
+ magicAction.22.desc:0 "With this spell, the wind will always be favorable to our traders"
+ magicAction.22.a:0 "Splendid" 
+
+
+ magicAction.23.t:0 "Helping Elementals"
+ magicAction.23.desc:0 "Elementals of earth, air, water, and fire aid us in our provinces, ensuring that the necessary work is completed"
+ magicAction.23.a:0 "Splendid" 
+
+ magicAction.24.t:0 "Summon new treasures"
+ magicAction.24.desc:0 "By harnessing the power of the elements, we can uncover new minerals and ores, or enrich the fields for greater harvests."
+ magicAction.24.a:0 "Splendid" 
+
+ magicAction.25.t:0 "Guidance of the Stars"
+ magicAction.25.desc:0 "The stars reveal our future, and we follow their guidance, for those blessed by them rarely falter and almost never lose a fight."
+ magicAction.25.a:0 "Splendid" 
+ 
+ magicAction.26.t:0 "The Scrying"
+ magicAction.26.desc:0 "Through the power of the stars, we can peer into distant realms and uncover the secrets of what unfolds there."
+ magicAction.26.a:0 "Splendid" 
+
+ magicAction.27.t:0 "Seek new tactis"
+ magicAction.27.desc:0 "New strategies, new tactics, and new techniques are still unknown to us, but not to the stars, for they have already seen them."
+ magicAction.27.a:0 "Splendid" 
+
+ magicAction.28.t:0 "Battle Elementals"
+ magicAction.28.desc:0 "Elementals, conjured from fire, water, ice, earth, and air, are formidable magical entities, capable of annihilating all who dare stand in their way"
+ magicAction.28.a:0 "Splendid" 
+
+
+ magicAction.29.t:0 "Summon a Elemental Fort"
+ magicAction.29.desc:0 "A fortress forged from the very earth itself, mightier than any stronghold crafted by mortal hands"
+ magicAction.29.a:0 "Splendid"  
+ 
+ magicAction.30.t:0 "Eternal Smithery"
+ magicAction.30.desc:0 "A fire elemental provides the heat, and an earth elemental forges the blades. Through this ingenious system, we can equip even more men"
+ magicAction.30.a:0 "Splendid"  
+ 
+ magicAction.31.t:0 "More Banes"
+ magicAction.31.desc:0 "The dread banes of the underworld, beings of immense power, now serve at our command!"
+ magicAction.31.a:0 "Splendid"  
+
+ magicAction.32.t:0 "The Power of the Death"
+ magicAction.32.desc:0 "The power of death courses through the Banes, forging them into forces mightier than ever known."
+ magicAction.32.a:0 "Splendid"  
+
+ magicAction.33.t:0 "Sceleton Soldiers"
+ magicAction.33.desc:0 "While common skeletons lack durability, they are still sufficient to fill the ranks in place of living soldiers"
+ magicAction.33.a:0 "Splendid"  
+
+ magicAction.34.t:0 "The Demons"
+ magicAction.34.desc:0 "Through sacrifice, demons are summoned — and they will fight for us until they fall."
+ magicAction.34.a:0 "Splendid"  
+
+ magicAction.35.t:0 "Demon Lord"
+ magicAction.35.desc:0 "A Hell Lord has heeded our summons and pledged to command our armies — if only for a brief but fearsome time."
+ magicAction.35.a:0 "Splendid"   
+ 
+ magicAction.36.t:0 "Power of Blood"
+ magicAction.36.desc:0 "With yet another grand sacrifice, the demons are empowered — their strength sharpened, their fury unleashed in battle"
+ magicAction.36.a:0 "Splendid"   
+
+ magicAction.37.t:0 "Awaken Sleeper"
+ magicAction.37.desc:0 ""Beneath the earth lie the heroes of ages past, sleeping until the final battle foretold by the Ancients. Yet through our command of nature’s magic, we may rouse them early — to lead our forces in the battles of today!"
+ magicAction.37.a:0 "Splendid"   
+
+ magicAction.38.t:0 "Relief"
+ magicAction.38.desc:0 "This mighty spell restores all the living — and with its power, no burden feels too heavy, no toil too great."
+ magicAction.38.a:0 "Splendid"   
+
+ magicAction.39.t:0 ""
+ magicAction.39.desc:0 ""
+ magicAction.39.a:0 "Splendid"    

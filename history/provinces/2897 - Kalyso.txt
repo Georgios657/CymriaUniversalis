@@ -1,0 +1,15 @@
+add_core = AI1
+owner = AI1
+controller = AI1
+hre = no
+base_tax = 7
+base_production = 7
+trade_goods = cloth
+base_manpower = 5
+capital = "Kalyso"
+is_city = yes
+culture = kalyrian
+religion = rozalia
+add_core = NC7
+center_of_trade = 1
+fort_15th = yes

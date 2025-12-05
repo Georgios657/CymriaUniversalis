@@ -1,0 +1,12 @@
+add_core = WI3
+owner = WI3
+controller = WI3
+culture = lemukan
+religion = mrogi_wa_damu
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = slaves
+base_manpower = 2
+capital = "Kiobsara"
+is_city = yes

@@ -1,0 +1,15 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 14
+base_production = 14
+trade_goods = glass
+base_manpower = 8
+capital = "Arno"
+is_city = yes
+culture = high_culturian
+religion = imperial_cult
+
+
+center_of_trade = 3

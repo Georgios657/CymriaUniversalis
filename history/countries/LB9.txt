@@ -1,0 +1,21 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+technology_group = ottoman
+primary_culture = vannian
+religion = amatism_faith
+capital = 664	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Desa"
+		name = "Konom"
+		birth_date = 1385.9.21
+		dip = 2
+		adm = 1
+		mil = 2
+
+	}
+
+}

@@ -1,0 +1,13 @@
+add_core = AI1
+owner = AI1
+controller = AI1
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Lyso"
+is_city = yes
+culture = kalyrian
+religion = rozalia
+add_core = NC7

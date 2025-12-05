@@ -1,0 +1,12 @@
+add_core = GW6
+owner = GW6
+controller = GW6
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = salt
+base_manpower = 2
+capital = "North Castle"
+is_city = yes
+culture = aylor_frontier
+religion = rozalia

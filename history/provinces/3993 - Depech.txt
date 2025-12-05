@@ -1,0 +1,12 @@
+add_core = MO3
+owner = MO3
+controller = MO3
+culture = chaararian
+religion = tilidian_little_gods
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = cotton
+base_manpower = 1
+capital = "Depech"
+is_city = yes

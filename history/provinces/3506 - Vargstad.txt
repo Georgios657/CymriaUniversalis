@@ -1,0 +1,12 @@
+add_core = TO3
+owner = TO3
+controller = TO3
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = gold
+base_manpower = 2
+capital = "Vargstadt"
+is_city = yes
+culture = hill_trolls
+religion = fore_bearers

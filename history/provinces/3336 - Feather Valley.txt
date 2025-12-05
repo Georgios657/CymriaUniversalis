@@ -1,0 +1,12 @@
+add_core = VP2
+owner = VP2
+controller = VP2
+religion = the_silvern_guide
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Feather-Jar"
+is_city = yes
+culture = high_shansharian

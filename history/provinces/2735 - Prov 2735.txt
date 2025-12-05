@@ -1,0 +1,16 @@
+add_core = HA9
+owner = HA9
+controller = HA9
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = iron
+base_manpower = 1
+capital = "Nyirtala"
+is_city = yes
+culture = yama_harpia
+religion = winged_one
+
+native_size = 90
+native_ferocity = 20
+native_hostileness = 20

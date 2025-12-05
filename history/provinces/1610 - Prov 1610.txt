@@ -1,0 +1,13 @@
+add_core = MI5
+owner = MI5
+controller = MI5
+culture = minosa
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = wool
+capital = "Acretei"
+is_city = yes
+religion = moon_and_sun
+discovered_by = chinese

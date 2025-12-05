@@ -1,0 +1,15 @@
+add_core = CY0
+owner = CY0
+controller = CY0
+culture = colonian
+religion = dagdism
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Colone"
+is_city = yes
+discovered_by = eastern
+center_of_trade = 2
+fort_15th = yes

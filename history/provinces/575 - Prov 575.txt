@@ -1,0 +1,15 @@
+add_core = LA3
+owner = LA3
+controller = LA3
+culture = lascarian
+religion = amatism_faith
+hre = yes
+base_tax = 6
+base_production = 4
+trade_goods = livestock
+base_manpower = 4
+capital = "Jamatau"
+is_city = yes
+discovered_by = ottoman
+center_of_trade = 1
+fort_15th = yes

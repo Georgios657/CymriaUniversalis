@@ -1,0 +1,13 @@
+add_core = CY5
+owner = CY5
+controller = CY5
+culture = weden
+religion = dagdism
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = fur
+base_manpower = 1
+capital = "Pontiveda"
+is_city = yes
+discovered_by = eastern

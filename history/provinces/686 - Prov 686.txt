@@ -1,0 +1,13 @@
+add_core = LC4
+owner = LC4
+controller = LC4
+culture = thuli
+religion = amatism_faith
+hre = yes
+base_tax = 1
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Hull"
+is_city = yes
+discovered_by = ottoman

@@ -1,0 +1,13 @@
+add_core = HB7
+owner = HB7
+controller = HB7
+culture = cangai
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Shantan"
+is_city = yes
+discovered_by = chinese

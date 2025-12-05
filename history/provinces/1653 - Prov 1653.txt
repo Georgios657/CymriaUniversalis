@@ -1,0 +1,13 @@
+add_core = MI0
+owner = MI0
+controller = MI0
+culture = minosa
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Mino-Asto"
+is_city = yes
+religion = moon_and_sun
+discovered_by = chinese

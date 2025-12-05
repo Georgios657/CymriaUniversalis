@@ -1,0 +1,14 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = salt
+base_manpower = 4
+capital = "Greyscarr"
+is_city = yes
+culture = dunarian
+religion = imperial_cult
+add_core = AN6
+add_core = AX3

@@ -1,0 +1,10 @@
+
+culture = patala_naga
+religion = moon_and_sun
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Inucia"
+is_city = yes

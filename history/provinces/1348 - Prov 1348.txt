@@ -1,0 +1,11 @@
+culture = coastal_naga
+religion = naga_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Jaganathpur"
+# Anything typed here will be added to all selected province history files
+discovered_by = naga_tech
+is_city = no

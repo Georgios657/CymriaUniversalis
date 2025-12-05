@@ -1,0 +1,18 @@
+add_core = NC4
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 7
+base_production = 5
+trade_goods = fish
+base_manpower = 4
+capital = "Ivrjetta"
+is_city = yes
+culture = irjeva
+religion = icearia
+add_core = NC8
+add_core = NC9
+
+center_of_trade = 2
+
+fort_15th = yes

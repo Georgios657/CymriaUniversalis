@@ -1,0 +1,15 @@
+# Anything typed here will be added to all selected province history files
+culture = auksian
+religion = skogian_religion
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = salt
+base_manpower = 4
+capital = "Sviesava"
+is_city = yes
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files
+add_core = VL5
+owner = VL5
+controller = VL5

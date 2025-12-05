@@ -1,0 +1,20 @@
+add_core = ND6
+owner = ND6
+controller = ND6
+culture = ogebinian_true
+religion = varkanoth
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = iron
+base_manpower = 2
+capital = "Tagebin"
+is_city = yes
+discovered_by = north_american
+center_of_trade = 1
+
+fort_15th = yes
+
+latent_trade_goods = {
+	coal
+}

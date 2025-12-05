@@ -1,0 +1,13 @@
+add_core = FC4
+owner = FC4
+controller = FC4
+culture = liefnian
+religion = amatism_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 1
+capital = "Facea"
+is_city = yes
+discovered_by = indian

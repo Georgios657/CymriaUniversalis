@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 5
+base_production = 6
+trade_goods = wine
+base_manpower = 4
+capital = "Xaldris"
+is_city = yes
+culture = sylvanian
+religion = grand_mother
+add_core = AV4

@@ -1,0 +1,364 @@
+##BranchStart 0
+jot1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = GI1
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_wolf_conclave = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			prestige = 15
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	hunt_dissidents = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_wolf_conclave
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			adm_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+			add_ruler_modifier = { 
+    name = werwolf_support
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+jot2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = GI1
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	smelt_iron = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_giants_are_preparing
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	iron = 4
+		}
+		effect = {
+			add_army_tradition = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	muspelhjeim = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			preparing_for_war
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+									muspelland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}			
+		}
+		effect = {
+			 	add_splendor = 200
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+jot3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = GI1
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_giants_are_preparing = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 1
+			army_size_percentage = 1
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	in_jotunheim = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_giants_are_preparing
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			3500 = {
+			 	development = 30
+			}
+		}
+		effect = {
+			3500 = {
+			 	add_prosperity = 100
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	preparing_for_war = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			in_jotunheim
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size = 15
+		}
+		effect = {
+			muspelland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}	
+			
+			niefelland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	unite_the_giantsland = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			niefelheim
+			muspelhjeim
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			exists = GI2
+			}
+			
+						NOT = {
+			exists = GI3
+			}
+			
+			 	has_unified_culture_group = yes
+		}
+		effect = {
+			jotunheim_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	united_under_a_banner = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			unite_the_giantsland
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 3
+			total_development = 250
+		}
+		effect = {
+			change_tag = GI4
+			swap_non_generic_missions = yes
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+jot4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = GI1
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gather_taxes = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_giants_are_preparing
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			dip_power = 150
+			
+		}
+		effect = {
+		add_dip_power = -150
+					add_ruler_modifier = { 
+    name = war_Taxes
+    duration = -1  
+}
+			 	add_years_of_income = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	niefelheim = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			preparing_for_war
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+									niefelland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+		}
+		effect = {
+			add_yearly_manpower = 1
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+jot5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = GI1
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_jarl_thing = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			splendor = 150
+		}
+		effect = {
+			 	add_splendor = -150
+				add_army_professionalism = 0.05
+		}
+	}
+	##Mission End
+	##Mission Start
+	jarl_leading = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_jarl_thing
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_leader_with = {
+				total_pips = 10
+			}
+		}
+		effect = {
+			add_army_tradition = 15
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

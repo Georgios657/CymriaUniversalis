@@ -1,0 +1,13 @@
+add_core = HE7
+owner = HE7
+controller = HE7
+culture = malindi
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Malinda"
+is_city = yes
+discovered_by = chinese

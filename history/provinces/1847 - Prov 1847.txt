@@ -1,0 +1,12 @@
+add_core = TW0
+owner = TW0
+controller = TW0
+religion = yazida
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = copper
+base_manpower = 5
+capital = "Paruzhad"
+is_city = yes
+culture = assayia

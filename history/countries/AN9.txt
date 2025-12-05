@@ -1,0 +1,6 @@
+
+government_rank = 2
+technology_group = imperial_tech
+primary_culture = ponier
+religion = imperial_cult
+capital = 2641	# Bayreuth

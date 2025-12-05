@@ -1,0 +1,14 @@
+add_core = AY3
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = wool
+base_manpower = 5
+capital = "Cescil"
+is_city = yes
+culture = dayrer
+religion = rozalia
+add_core = EM1
+add_core = NC9

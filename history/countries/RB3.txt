@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = stateless_society
+government_rank = 1
+technology_group = selen_tech
+primary_culture = black_robin
+religion = mother_robin
+capital = 2010# Bayreuth
+
+1444.11.11 = {
+	monarch = {
+		name = "Tribe Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

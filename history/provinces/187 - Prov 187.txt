@@ -1,0 +1,13 @@
+add_core = U02
+owner = U02
+controller = U02
+culture = tessarini
+religion = undead_imperial_faith
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = wool
+base_manpower = 3
+capital = "Sitia"
+is_city = yes
+discovered_by = muslim

@@ -1,0 +1,21 @@
+government = magocracy
+add_government_reform = warlock_circle
+government_rank = 1
+technology_group = indian
+primary_culture = golorian
+religion = telcontarian
+capital = 738	# Bayreuth
+
+1410.1.1 = {
+	monarch = {
+		name = "Sisken"
+		dynasty = "AnGoloro"
+		birth_date = 1371.9.21
+		dip = 5
+		adm = 4
+		mil = 4
+	}
+
+	clear_scripted_personalities = yes
+	add_ruler_personality = wizard
+}

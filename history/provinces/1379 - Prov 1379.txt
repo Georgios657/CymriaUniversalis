@@ -1,0 +1,11 @@
+culture = southern_ephereta
+religion = naga_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Nagivini"
+is_city = yes
+center_of_trade = 1
+discovered_by = chinese

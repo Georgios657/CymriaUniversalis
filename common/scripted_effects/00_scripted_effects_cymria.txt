@@ -1,0 +1,5189 @@
+
+
+
+
+summon_banes = {
+	while = {
+    limit = {
+        can_summon_more_banes = yes
+    }
+    
+    capital_scope = {
+		rajput_infantry = ROOT
+	}
+}
+}
+
+summon_demons = {
+	while = {
+    limit = {
+        can_summon_more_demons = yes
+    }
+    
+    capital_scope = {
+		 cossack_infantry = ROOT
+	}
+}
+}
+
+
+necro_adm_ability = {
+	random_list = {
+		50 = {
+			add_years_of_income = 1		
+		}
+		
+		50 = {
+			add_legitimacy = 10
+			add_devotion = 10
+			add_republican_tradition = 2			
+		}
+	
+	}
+}
+
+ele_adm_ability = {
+	random_list = {
+		50 = {
+						trigger = {
+		NOT = {
+		has_country_modifier = mastery_of_elements
+		}			
+			}
+			
+			country_event = { 
+    id = magicAction.1
+			}
+			
+
+		}
+		
+		50 = {
+			country_event = { 
+    id = magicAction.2
+			}		
+		}
+
+		50 = {
+			country_event = { 
+    id = magicAction.3
+			}
+		}
+		
+	}
+}
+
+blood_adm_ability = {
+	random_list = {
+		
+		50 = {
+					country_event = { 
+    id = magicAction.4
+			}
+					add_government_power = {
+						mechanic_type = magic_spell_mechanic
+						power_type = magic_mil_power
+						value = 20
+					}
+					add_government_power = {
+						mechanic_type = magic_spell_mechanic
+						power_type = magic_dip_power
+						value = 10
+					}
+					
+							country_event = { 
+					id = lovia.2
+					}
+					hidden_effect = {
+					every_owned_province = {						
+								add_province_modifier = { 
+									name = blood_song
+									duration = 1825
+								}
+						}					
+					}
+		}
+
+		50 = {
+			trigger = {
+				any_owned_province = {
+					local_autonomy_above_min = 10
+				}
+			}	
+					country_event = { 
+    id = magicAction.5
+			}
+					tooltip = {
+						add_local_autonomy_no_authority_effect = -10
+					}
+					hidden_effect = {
+						every_owned_province = {
+							add_local_autonomy_no_authority_effect = -10
+						}
+					}			
+		}
+		
+	}
+}
+
+astral_adm_ability = {
+	random_list = {
+		50 = {
+						trigger = {
+
+		NOT = {
+		has_country_modifier = forsight_of_future
+		}			
+			}
+			
+														country_event = { 
+    id = magicAction.6
+			}
+	
+		}
+		
+		50 = {
+						trigger = {
+		NOT = {
+		stability = 2
+		}			
+			}		
+		
+					add_stability = 1
+		}
+
+		50 = {
+			trigger = {
+		corruption = 2		
+			}
+			
+																	country_event = { 
+    id = magicAction.7
+			}
+				
+		}
+
+		10 = {
+	
+
+														country_event = { 
+    id = magicAction.8
+			}				
+		}
+		
+	}
+}
+
+nature_adm_ability = {
+	random_list = {
+		50 = {
+						trigger = {
+				any_owned_province = {
+							OR = {
+							 	trade_goods = grain
+							 	trade_goods = wine
+							 	trade_goods = spices
+							 	trade_goods = tea
+							 	trade_goods = coffee
+							 	trade_goods = cotton
+							 	trade_goods = sugar
+							 	trade_goods = tobacco
+							 	trade_goods = cocoa
+							 	trade_goods = dyes
+							 	trade_goods = incense
+							 	trade_goods = cloves
+							}
+					NOT = {
+					has_province_modifier = promote_growth
+					}
+								
+				}
+			}
+			
+			
+																	country_event = { 
+    id = magicAction.9
+			}			
+					hidden_effect = {
+						every_owned_province = {
+						limit = {
+							OR = {
+							 	trade_goods = grain
+							 	trade_goods = wine
+							 	trade_goods = spices
+							 	trade_goods = tea
+							 	trade_goods = coffee
+							 	trade_goods = cotton
+							 	trade_goods = sugar
+							 	trade_goods = tobacco
+							 	trade_goods = cocoa
+							 	trade_goods = dyes
+							 	trade_goods = incense
+							 	trade_goods = cloves
+							}
+							
+						}
+							add_province_modifier = { 
+					name = promote_growth
+					duration = 3650
+				}
+						}
+					}				
+		}
+		
+		50 = {
+								trigger = {
+						any_state = { 
+							is_prosperous = no
+						}		
+			}
+			
+						
+																	country_event = { 
+    id = magicAction.10
+			}
+
+		}
+
+		10 = {
+		
+																			country_event = { 
+    id = magicAction.11
+			}
+
+		}
+		
+	}
+}
+
+necro_dip_ability = {
+		random_list = {
+			50 = {
+			
+country_event = { 
+    id = magicAction.12
+			}
+			
+				
+			}
+			
+			50 = {
+			country_event = { 
+    id = magicAction.13
+			}
+			
+			}
+
+			50 = {
+						country_event = { 
+    id = magicAction.14
+			}
+
+			}
+			
+		}
+}
+
+blood_dip_ability = {
+	random_list = {
+	50 = {
+						trigger = {
+		NOT = {
+		has_country_modifier = succubus
+		}			
+			}
+						country_event = { 
+    id = magicAction.15
+			}			
+
+
+	}
+	
+	
+	50 = {
+		trigger = {
+				rebel_progress_at_least = { value = 20 }
+		}
+											country_event = { 
+    id = magicAction.16
+			}
+				
+	}
+	
+	40 = {
+												country_event = { 
+    id = magicAction.17
+			}
+
+	}
+	}
+
+}
+
+
+astral_dip_ability = {
+	random_list = {
+	50 = {
+						trigger = {
+		NOT = {
+		has_country_modifier = secret_of_the_ancestors
+		}	
+			}		
+		
+														country_event = { 
+    id = magicAction.18
+			}
+
+
+	}
+	
+	
+	50 = {
+														country_event = { 
+    id = magicAction.19
+			}	
+	 	
+
+	}
+	
+	}
+
+}
+
+
+nature_dip_ability = {
+	random_list = {
+	50 = {
+	trigger = {
+	any_owned_province = {
+		limit = {
+			OR = {
+				has_terrain = farmlands
+				has_terrain = forest
+				has_terrain = hills
+				has_terrain = woods
+				has_terrain = grasslands
+				has_terrain = jungle
+				has_terrain = coastline
+				}
+			NOT = {
+				has_climate = arctic
+			}
+		}
+		NOT = {
+		has_province_modifier = gift_of_natures_bounty
+		}
+	
+	}
+	}
+	
+															country_event = { 
+    id = magicAction.20
+			}	
+							every_owned_province = {
+						limit = {
+							OR = {
+								has_terrain = farmlands
+								has_terrain = forest
+								has_terrain = hills
+								has_terrain = woods
+								has_terrain = grasslands
+								has_terrain = jungle
+								has_terrain = coastline
+							}
+						NOT = {
+						has_climate = arctic
+						}
+							
+						}
+							add_province_modifier = { 
+					name = gift_of_natures_bounty
+					duration = 3650
+				}
+						}
+						
+	}
+	
+	50 = {
+	
+																country_event = { 
+    id = magicAction.21
+			}
+			
+
+	}
+	
+	}
+
+}
+
+ele_dip_ability = {
+	random_list = {
+	50 = {
+						trigger = {
+		NOT = {
+		has_country_modifier = trade_winds_elementals
+		}			
+			}
+			
+																			country_event = { 
+    id = magicAction.22
+			}
+
+	}
+	
+	
+	50 = {
+		trigger = {
+		any_owned_province = {
+		NOT = {
+		has_province_modifier = elementar_buff_prov
+		}
+		}
+		}
+																					country_event = { 
+    id = magicAction.23
+			}
+	
+	}
+	
+	40 = {
+	
+country_event = { 
+    id = magicAction.24
+			}
+
+	}
+	}
+
+}
+
+astral_mil_ability = {
+	random_list = {
+		50 = {
+			trigger = {
+		NOT = {
+		has_country_modifier = star_guidance
+		}			
+			}
+			
+			country_event = { 
+    id = magicAction.25
+			}
+			
+		}	
+	
+		50 = {
+			trigger = {
+				is_at_war = yes
+			}
+			
+						country_event = { 
+    id = magicAction.26
+			}
+			
+
+		}		
+
+		25 = {
+		
+								country_event = { 
+    id = magicAction.27
+			}
+			
+	
+		}	
+		
+	}
+
+
+}
+
+
+ele_mil_ability = {
+
+	random_list = {
+		50 = {
+			trigger = {
+		NOT = {
+		has_country_modifier = elementals_in_battle
+		}			
+			}
+											country_event = { 
+    id = magicAction.28
+			}
+
+		}
+	
+		35 = {
+		trigger = {
+		any_owned_province = {
+			 	fort_level = 1
+				NOT = {
+				has_province_modifier = elemental_fort
+				}		
+		}		
+		}
+		
+													country_event = { 
+    id = magicAction.29
+			}
+
+		}
+		
+		25 = {
+														country_event = { 
+    id = magicAction.30
+			}
+		}
+	
+	
+	}	
+	
+}
+
+
+neco_mil_ability = {
+
+
+	random_list = {
+		60 = {
+	trigger = {
+	can_summon_more_banes = yes	
+	}
+	country_event = { 
+    id = magicAction.31
+			}
+			
+	}
+		60 = {
+	trigger = {
+		can_summon_more_banes = no
+		NOT = {
+		has_country_modifier = power_up_banes
+		}	
+	}
+		
+	country_event = { 
+    id = magicAction.32
+			}	
+}		
+
+	
+10 = {	
+																country_event = { 
+    id = magicAction.33
+			}	
+	 	
+	}
+	}
+	
+}
+
+blood_mil_ability = {
+
+	random_list = {
+		60 = {
+				trigger = {
+			can_summon_more_demons = yes
+			}
+			
+																			country_event = { 
+    id = magicAction.34
+			}
+	country_event = { 
+    id = magocracy.7
+}	
+	}
+	
+		10 = {	
+
+			
+																			country_event = { 
+    id = magicAction.35
+			}		
+
+	}
+
+		30 = {
+		trigger = {
+			can_summon_more_demons = no
+		NOT = {
+		has_country_modifier = power_up_cossacks
+		}
+		}
+		
+																				country_event = { 
+    id = magicAction.36
+			}
+			
+
+	}
+	
+	}
+
+}
+
+nature_mil_ability = {
+
+	random_list = {
+	
+	
+	20 = {		
+	
+																					country_event = { 
+    id = magicAction.37
+			}
+			
+			
+
+	}
+	
+	80 = {
+		trigger = {
+		NOT = {
+		has_country_modifier = relief
+		}
+		}
+																					country_event = { 
+    id = magicAction.38
+			}		
+
+	}
+}
+	
+}
+
+clear_magic_school = {
+	 	clr_ruler_flag = necromancy
+	 	clr_ruler_flag = blood
+	 	clr_ruler_flag = elemental
+	 	clr_ruler_flag = astral
+	 	clr_ruler_flag = nature
+		
+		remove_country_modifier = necormancer
+		remove_country_modifier = elemencer
+		remove_country_modifier = blood_mage
+		remove_country_modifier = astralogist
+		remove_country_modifier = master_of_nature
+}
+
+manpower_burn_effect = {
+if = {
+	limit = {
+	 	development = 4
+		NOT = {
+		development = 5
+		}
+	}
+	
+	owner = { add_manpower = 1 }
+}
+if = {
+	limit = {
+	 	development = 5
+		NOT = {
+		development = 6
+		}
+	}
+	owner = { add_manpower = 2 }
+}
+if = {
+	limit = {
+	 	development = 6
+		NOT = {
+		development = 7
+		}
+	}
+	owner = { add_manpower = 3 }
+}
+if = {
+	limit = {
+	 	development = 7
+		NOT = {
+		development = 8
+		}
+	}
+	owner = { add_manpower = 4 }
+}
+if = {
+	limit = {
+	 	development = 8
+		NOT = {
+		development = 9
+		}
+	}
+owner = { add_manpower = 5 }
+}
+if = {
+	limit = {
+	 	development = 9
+		NOT = {
+		development = 10
+		}
+	}
+owner = { add_manpower = 6 }
+}
+if = {
+	limit = {
+	 	development = 10
+		NOT = {
+		development = 11
+		}
+	}
+	owner = { add_manpower = 7 }
+}
+if = {
+	limit = {
+	 	development = 11
+		NOT = {
+		development = 12
+		}
+	}
+	owner = { add_manpower = 8 }
+}
+if = {
+	limit = {
+	 	development = 12
+		NOT = {
+		development = 13
+		}
+	}
+	owner = { add_manpower = 9 }
+}
+if = {
+	limit = {
+	 	development = 13
+		NOT = {
+		development = 14
+		}
+	}
+	owner = { add_manpower = 10 }
+}
+if = {
+	limit = {
+	 	development = 14
+		NOT = {
+		development = 15
+		}
+	}
+	owner = { add_manpower = 11 }
+}
+if = {
+	limit = {
+	 	development = 15
+		NOT = {
+		development = 16
+		}
+	}
+	owner = { add_manpower = 12 }
+}
+if = {
+	limit = {
+	 	development = 16
+		NOT = {
+		development = 17
+		}
+	}
+	owner = { add_manpower = 13 }
+}
+if = {
+	limit = {
+	 	development = 17
+		NOT = {
+		development = 18
+		}
+	}
+	owner = { add_manpower = 14 }
+}
+if = {
+	limit = {
+	 	development = 18
+		NOT = {
+		development = 19
+		}
+	}
+	owner = { add_manpower = 15 }
+}
+if = {
+	limit = {
+	 	development = 19
+		NOT = {
+		development = 20
+		}
+	}
+	owner = { add_manpower = 16 }
+}
+if = {
+	limit = {
+	 	development = 20
+		NOT = {
+		development = 21
+		}
+	}
+	owner = { add_manpower = 17 }
+}
+if = {
+	limit = {
+	 	development = 21
+		NOT = {
+		development = 22
+		}
+	}
+	owner = { add_manpower = 18 }
+}
+if = {
+	limit = {
+	 	development = 22
+		NOT = {
+		development = 23
+		}
+	}
+	owner = { add_manpower = 19 }
+}
+if = {
+	limit = {
+	 	development = 23
+		NOT = {
+		development = 24
+		}
+	}
+	owner = { add_manpower = 20 }
+}
+if = {
+	limit = {
+	 	development = 24
+		NOT = {
+		development = 25
+		}
+	}
+	owner = { add_manpower = 21 }
+}
+if = {
+	limit = {
+	 	development = 25
+		NOT = {
+		development = 26
+		}
+	}
+	owner = { add_manpower = 22 }
+}
+if = {
+	limit = {
+	 	development = 26
+		NOT = {
+		development = 27
+		}
+	}
+	owner = { add_manpower = 23 }
+}
+if = {
+	limit = {
+	 	development = 27
+		NOT = {
+		development = 28
+		}
+	}
+	owner = { add_manpower = 24 }
+}
+if = {
+	limit = {
+	 	development = 28
+		NOT = {
+		development = 29
+		}
+	}
+	owner = { add_manpower = 25 }
+}
+if = {
+	limit = {
+	 	development = 29
+		NOT = {
+		development = 30
+		}
+	}
+	owner = { add_manpower = 26 }
+}
+if = {
+	limit = {
+	 	development = 30
+		NOT = {
+		development = 31
+		}
+	}
+	owner = { add_manpower = 27 }
+}
+if = {
+	limit = {
+	 	development = 31
+		NOT = {
+		development = 32
+		}
+	}
+	owner = { add_manpower = 28 }
+}
+if = {
+	limit = {
+	 	development = 32
+		NOT = {
+		development = 33
+		}
+	}
+	owner = { add_manpower = 29 }
+}
+if = {
+	limit = {
+	 	development = 33
+		NOT = {
+		development = 34
+		}
+	}
+	owner = { add_manpower = 30 }
+}
+if = {
+	limit = {
+	 	development = 34
+		NOT = {
+		development = 35
+		}
+	}
+	owner = { add_manpower = 31 }
+}
+if = {
+	limit = {
+	 	development = 35
+		NOT = {
+		development = 36
+		}
+	}
+	owner = { add_manpower = 32 }
+}
+if = {
+	limit = {
+	 	development = 36
+		NOT = {
+		development = 37
+		}
+	}
+	owner = { add_manpower = 33 }
+}
+if = {
+	limit = {
+	 	development = 37
+		NOT = {
+		development = 38
+		}
+	}
+	owner = { add_manpower = 34 }
+}
+if = {
+	limit = {
+	 	development = 38
+		NOT = {
+		development = 39
+		}
+	}
+	owner = { add_manpower = 35}
+}
+if = {
+	limit = {
+	 	development = 39
+		NOT = {
+		development = 40
+		}
+	}
+	owner = { add_manpower = 36 }
+}
+if = {
+	limit = {
+	 	development = 40
+	}
+	owner = { add_manpower = 37 }
+}
+
+}
+
+reduce_skill = {
+		random_list = {
+		1 = { trigger = { ADM = 0 } change_adm = -1 }
+		1 = { trigger = { DIP = 0 } change_dip = -1 }
+		1 = { trigger = { MIL = 0  } change_mil = -1 }
+	}
+}
+
+get_more_slaves_trade = {
+if = {
+    limit = {
+			   trading_part = {
+			trade_goods = slaves
+			value = 0.05
+		}
+        NOT = { 		   trading_part = {
+			trade_goods = slaves
+			value = 0.1
+		}}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 1
+    }
+}
+if = {
+    limit = {
+			   trading_part = {
+			trade_goods = slaves
+			value = 0.1
+		}
+        NOT = { 		   trading_part = {
+			trade_goods = slaves
+			value = 0.2
+		}}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 2
+    }
+}
+if = {
+    limit = {
+			   trading_part = {
+			trade_goods = slaves
+			value = 0.2
+		}
+        NOT = { 		   trading_part = {
+			trade_goods = slaves
+			value = 0.3
+		}}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 4
+    }
+}
+if = {
+    limit = {
+			   trading_part = {
+			trade_goods = slaves
+			value = 0.3
+		}
+        NOT = { 		   trading_part = {
+			trade_goods = slaves
+			value = 0.4
+		}}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 6
+    }
+}
+if = {
+    limit = {
+			   trading_part = {
+			trade_goods = slaves
+			value = 0.4
+		}
+        NOT = { 		   trading_part = {
+			trade_goods = slaves
+			value = 0.5
+		}}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 8
+    }
+}
+if = {
+    limit = {
+			   trading_part = {
+			trade_goods = slaves
+			value = 0.5
+		}
+        NOT = { 		   trading_part = {
+			trade_goods = slaves
+			value = 0.6
+		}}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 10
+    }
+}
+if = {
+    limit = {
+			   trading_part = {
+			trade_goods = slaves
+			value = 0.6
+		}
+        NOT = { 		   trading_part = {
+			trade_goods = slaves
+			value = 0.7
+		}}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 12
+    }
+}
+if = {
+    limit = {
+			   trading_part = {
+			trade_goods = slaves
+			value = 0.7
+		}
+        NOT = { 		   trading_part = {
+			trade_goods = slaves
+			value = 0.8
+		}}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 14
+    }
+}
+if = {
+    limit = {
+			   trading_part = {
+			trade_goods = slaves
+			value = 0.9
+		}
+
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 16
+    }
+}
+}
+
+get_more_slaves_production = {
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 1
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 2
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 1
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 2
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 3
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 2
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 3
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 4
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 3
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 4
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 5
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 4
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 5
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 6
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 5
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 6
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 7
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 6
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 7
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 8
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 7
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 8
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 9
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 8
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 9
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 10
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 9
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 10
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 11
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 10
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 11
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 12
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 11
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 12
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 13
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 12
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 13
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 14
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 13
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 14
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 15
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 14
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 15
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 16
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 15
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 16
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 17
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 16
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 17
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 18
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 17
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 18
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 19
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 18
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 19
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 20
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 19
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 20
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 21
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 20
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 21
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 22
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 21
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 22
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 23
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 22
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 23
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 24
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 23
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 24
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 25
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 24
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 25
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 26
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 25
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 26
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 27
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 26
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 27
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 28
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 27
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 28
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 29
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 28
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 29
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 30
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 29
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 30
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 31
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 30
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 31
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 32
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 31
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 32
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 33
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 32
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 33
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 34
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 33
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 34
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 35
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 34
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 35
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 36
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 35
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 36
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 37
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 36
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 37
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 38
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 37
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 38
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 39
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 38
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 39
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 40
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 39
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 40
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 41
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 40
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 41
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 42
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 41
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 42
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 43
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 42
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 43
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 44
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 43
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 44
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 45
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 44
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 45
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 46
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 45
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 46
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 47
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 46
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 47
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 48
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 47
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 48
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 49
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 48
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 49
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 50
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 49
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 50
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 51
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 50
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 51
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 52
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 51
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 52
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 53
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 52
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 53
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 54
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 53
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 54
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 55
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 54
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 55
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 56
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 55
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 56
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 57
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 56
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 57
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 58
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 57
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 58
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 59
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 58
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 59
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 60
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 59
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 60
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 61
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 60
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 61
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 62
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 61
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 62
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 63
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 62
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 63
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 64
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 63
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 64
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 65
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 64
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 65
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 66
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 65
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 66
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 67
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 66
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 67
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 68
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 67
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 68
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 69
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 68
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 69
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 70
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 69
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 70
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 71
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 70
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 71
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 72
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 71
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 72
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 73
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 72
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 73
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 74
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 73
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 74
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 75
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 74
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 75
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 76
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 75
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 76
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 77
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 76
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 77
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 78
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 77
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 78
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 79
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 78
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 79
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 80
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 79
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 80
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 81
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 80
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 81
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 82
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 81
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 82
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 83
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 82
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 83
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 84
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 83
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 84
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 85
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 84
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 85
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 86
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 85
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 86
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 87
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 86
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 87
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 88
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 87
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 88
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 89
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 88
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 89
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 90
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 89
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 90
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 91
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 90
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 91
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 92
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 91
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 92
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 93
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 92
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 93
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 94
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 93
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 94
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 95
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 94
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 95
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 96
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 95
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 96
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 97
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 96
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 97
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 98
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 97
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 98
+        }
+        NOT = { trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 99
+        }}
+    }
+    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 98
+    }
+}
+
+if = {
+    limit = {
+        trade_goods_produced_amount = {
+            trade_goods = slaves
+            amount = 99
+        }
+		}
+		    add_government_power = {
+        mechanic_type = slave_mechanic
+        power_type = slave_status
+        value = 99
+    }
+    }
+
+}
+
+grand_marunji_zombie_army = {
+while = {
+    limit = {
+       check_variable = {
+    which = numDead
+    value = 1
+}
+    }
+    
+        subtract_variable = {
+        which = numDead
+        value = 1
+    }
+	
+	add_manpower = 1
+}
+}
+
+zombie_awakening = {# 1–3 → 1
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 1 }
+        NOT = { check_variable = { which = zombie_bodies value = 4 } }
+    }
+    add_manpower = 1
+}
+
+# 4–7 → 2
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 4 }
+        NOT = { check_variable = { which = zombie_bodies value = 8 } }
+    }
+    add_manpower = 2
+}
+
+# 8–11 → 3
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 8 }
+        NOT = { check_variable = { which = zombie_bodies value = 12 } }
+    }
+    add_manpower = 3
+}
+
+# 12–15 → 4
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 12 }
+        NOT = { check_variable = { which = zombie_bodies value = 16 } }
+    }
+    add_manpower = 4
+}
+
+# 16–19 → 5
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 16 }
+        NOT = { check_variable = { which = zombie_bodies value = 20 } }
+    }
+    add_manpower = 5
+}
+
+# 20–23 → 6
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 20 }
+        NOT = { check_variable = { which = zombie_bodies value = 24 } }
+    }
+    add_manpower = 6
+}
+
+# 24–27 → 7
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 24 }
+        NOT = { check_variable = { which = zombie_bodies value = 28 } }
+    }
+    add_manpower = 7
+}
+
+# 28–31 → 8
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 28 }
+        NOT = { check_variable = { which = zombie_bodies value = 32 } }
+    }
+    add_manpower = 8
+}
+
+# 32–35 → 9
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 32 }
+        NOT = { check_variable = { which = zombie_bodies value = 36 } }
+    }
+    add_manpower = 9
+}
+
+# 36–39 → 10
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 36 }
+        NOT = { check_variable = { which = zombie_bodies value = 40 } }
+    }
+    add_manpower = 10
+}
+
+# 40–43 → 11
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 40 }
+        NOT = { check_variable = { which = zombie_bodies value = 44 } }
+    }
+    add_manpower = 11
+}
+
+# 44–47 → 12
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 44 }
+        NOT = { check_variable = { which = zombie_bodies value = 48 } }
+    }
+    add_manpower = 12
+}
+
+# 48–51 → 13
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 48 }
+        NOT = { check_variable = { which = zombie_bodies value = 52 } }
+    }
+    add_manpower = 13
+}
+
+# 52–55 → 14
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 52 }
+        NOT = { check_variable = { which = zombie_bodies value = 56 } }
+    }
+    add_manpower = 14
+}
+
+# 56–59 → 15
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 56 }
+        NOT = { check_variable = { which = zombie_bodies value = 60 } }
+    }
+    add_manpower = 15
+}
+
+# 60–63 → 16
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 60 }
+        NOT = { check_variable = { which = zombie_bodies value = 64 } }
+    }
+    add_manpower = 16
+}
+
+# 64–67 → 17
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 64 }
+        NOT = { check_variable = { which = zombie_bodies value = 68 } }
+    }
+    add_manpower = 17
+}
+
+# 68–71 → 18
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 68 }
+        NOT = { check_variable = { which = zombie_bodies value = 72 } }
+    }
+    add_manpower = 18
+}
+
+# 72–75 → 19
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 72 }
+        NOT = { check_variable = { which = zombie_bodies value = 76 } }
+    }
+    add_manpower = 19
+}
+
+# 76–79 → 20
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 76 }
+        NOT = { check_variable = { which = zombie_bodies value = 80 } }
+    }
+    add_manpower = 20
+}
+
+# 80–83 → 21
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 80 }
+        NOT = { check_variable = { which = zombie_bodies value = 84 } }
+    }
+    add_manpower = 21
+}
+
+# 84–87 → 22
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 84 }
+        NOT = { check_variable = { which = zombie_bodies value = 88 } }
+    }
+    add_manpower = 22
+}
+
+# 88–91 → 23
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 88 }
+        NOT = { check_variable = { which = zombie_bodies value = 92 } }
+    }
+    add_manpower = 23
+}
+
+# 92–95 → 24
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 92 }
+        NOT = { check_variable = { which = zombie_bodies value = 96 } }
+    }
+    add_manpower = 24
+}
+
+# 96–99 → 25
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 96 }
+        NOT = { check_variable = { which = zombie_bodies value = 100 } }
+    }
+    add_manpower = 25
+}
+
+# 100–103 → 26
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 100 }
+        NOT = { check_variable = { which = zombie_bodies value = 104 } }
+    }
+    add_manpower = 26
+}
+
+# 104–107 → 27
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 104 }
+        NOT = { check_variable = { which = zombie_bodies value = 108 } }
+    }
+    add_manpower = 27
+}
+
+# 108–111 → 28
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 108 }
+        NOT = { check_variable = { which = zombie_bodies value = 112 } }
+    }
+    add_manpower = 28
+}
+
+# 112–115 → 29
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 112 }
+        NOT = { check_variable = { which = zombie_bodies value = 116 } }
+    }
+    add_manpower = 29
+}
+
+# 116–119 → 30
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 116 }
+        NOT = { check_variable = { which = zombie_bodies value = 120 } }
+    }
+    add_manpower = 30
+}
+
+# 120–123 → 31
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 120 }
+        NOT = { check_variable = { which = zombie_bodies value = 124 } }
+    }
+    add_manpower = 31
+}
+
+# 124–127 → 32
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 124 }
+        NOT = { check_variable = { which = zombie_bodies value = 128 } }
+    }
+    add_manpower = 32
+}
+
+# 128–131 → 33
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 128 }
+        NOT = { check_variable = { which = zombie_bodies value = 132 } }
+    }
+    add_manpower = 33
+}
+
+# 132–135 → 34
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 132 }
+        NOT = { check_variable = { which = zombie_bodies value = 136 } }
+    }
+    add_manpower = 34
+}
+
+# 136–139 → 35
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 136 }
+        NOT = { check_variable = { which = zombie_bodies value = 140 } }
+    }
+    add_manpower = 35
+}
+
+# 140–143 → 36
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 140 }
+        NOT = { check_variable = { which = zombie_bodies value = 144 } }
+    }
+    add_manpower = 36
+}
+
+# 144–147 → 37
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 144 }
+        NOT = { check_variable = { which = zombie_bodies value = 148 } }
+    }
+    add_manpower = 37
+}
+
+# 148–151 → 38
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 148 }
+        NOT = { check_variable = { which = zombie_bodies value = 152 } }
+    }
+    add_manpower = 38
+}
+
+# 152–155 → 39
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 152 }
+        NOT = { check_variable = { which = zombie_bodies value = 156 } }
+    }
+    add_manpower = 39
+}
+
+# 156–159 → 40
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 156 }
+        NOT = { check_variable = { which = zombie_bodies value = 160 } }
+    }
+    add_manpower = 40
+}
+
+# 160–163 → 41
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 160 }
+        NOT = { check_variable = { which = zombie_bodies value = 164 } }
+    }
+    add_manpower = 41
+}
+
+# 164–167 → 42
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 164 }
+        NOT = { check_variable = { which = zombie_bodies value = 168 } }
+    }
+    add_manpower = 42
+}
+
+# 168–171 → 43
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 168 }
+        NOT = { check_variable = { which = zombie_bodies value = 172 } }
+    }
+    add_manpower = 43
+}
+
+# 172–175 → 44
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 172 }
+        NOT = { check_variable = { which = zombie_bodies value = 176 } }
+    }
+    add_manpower = 44
+}
+
+# 176–179 → 45
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 176 }
+        NOT = { check_variable = { which = zombie_bodies value = 180 } }
+    }
+    add_manpower = 45
+}
+
+# 180–183 → 46
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 180 }
+        NOT = { check_variable = { which = zombie_bodies value = 184 } }
+    }
+    add_manpower = 46
+}
+
+# 184–187 → 47
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 184 }
+        NOT = { check_variable = { which = zombie_bodies value = 188 } }
+    }
+    add_manpower = 47
+}
+
+# 188–191 → 48
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 188 }
+        NOT = { check_variable = { which = zombie_bodies value = 192 } }
+    }
+    add_manpower = 48
+}
+
+# 192–195 → 49
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 192 }
+        NOT = { check_variable = { which = zombie_bodies value = 196 } }
+    }
+    add_manpower = 49
+}
+
+# 196–199 → 50
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 196 }
+        NOT = { check_variable = { which = zombie_bodies value = 200 } }
+    }
+    add_manpower = 50
+}
+
+# 200–203 → 51
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 200 }
+        NOT = { check_variable = { which = zombie_bodies value = 204 } }
+    }
+    add_manpower = 51
+}
+
+# 204–207 → 52
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 204 }
+        NOT = { check_variable = { which = zombie_bodies value = 208 } }
+    }
+    add_manpower = 52
+}
+
+# 208–211 → 53
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 208 }
+        NOT = { check_variable = { which = zombie_bodies value = 212 } }
+    }
+    add_manpower = 53
+}
+
+# 212–215 → 54
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 212 }
+        NOT = { check_variable = { which = zombie_bodies value = 216 } }
+    }
+    add_manpower = 54
+}
+
+# 216–219 → 55
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 216 }
+        NOT = { check_variable = { which = zombie_bodies value = 220 } }
+    }
+    add_manpower = 55
+}
+
+# 220–223 → 56
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 220 }
+        NOT = { check_variable = { which = zombie_bodies value = 224 } }
+    }
+    add_manpower = 56
+}
+
+# 224–227 → 57
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 224 }
+        NOT = { check_variable = { which = zombie_bodies value = 228 } }
+    }
+    add_manpower = 57
+}
+
+# 228–231 → 58
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 228 }
+        NOT = { check_variable = { which = zombie_bodies value = 232 } }
+    }
+    add_manpower = 58
+}
+
+# 232–235 → 59
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 232 }
+        NOT = { check_variable = { which = zombie_bodies value = 236 } }
+    }
+    add_manpower = 59
+}
+
+# 236–239 → 60
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 236 }
+        NOT = { check_variable = { which = zombie_bodies value = 240 } }
+    }
+    add_manpower = 60
+}
+
+# 240–243 → 61
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 240 }
+        NOT = { check_variable = { which = zombie_bodies value = 244 } }
+    }
+    add_manpower = 61
+}
+
+# 244–247 → 62
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 244 }
+        NOT = { check_variable = { which = zombie_bodies value = 248 } }
+    }
+    add_manpower = 62
+}
+
+# 248–251 → 63
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 248 }
+        NOT = { check_variable = { which = zombie_bodies value = 252 } }
+    }
+    add_manpower = 63
+}
+
+# 252–255 → 64
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 252 }
+        NOT = { check_variable = { which = zombie_bodies value = 256 } }
+    }
+    add_manpower = 64
+}
+
+# 256–259 → 65
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 256 }
+        NOT = { check_variable = { which = zombie_bodies value = 260 } }
+    }
+    add_manpower = 65
+}
+
+# 260–263 → 66
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 260 }
+        NOT = { check_variable = { which = zombie_bodies value = 264 } }
+    }
+    add_manpower = 66
+}
+
+# 264–267 → 67
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 264 }
+        NOT = { check_variable = { which = zombie_bodies value = 268 } }
+    }
+    add_manpower = 67
+}
+
+# 268–271 → 68
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 268 }
+        NOT = { check_variable = { which = zombie_bodies value = 272 } }
+    }
+    add_manpower = 68
+}
+
+# 272–275 → 69
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 272 }
+        NOT = { check_variable = { which = zombie_bodies value = 276 } }
+    }
+    add_manpower = 69
+}
+
+# 276–279 → 70
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 276 }
+        NOT = { check_variable = { which = zombie_bodies value = 280 } }
+    }
+    add_manpower = 70
+}
+
+# 280–283 → 71
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 280 }
+        NOT = { check_variable = { which = zombie_bodies value = 284 } }
+    }
+    add_manpower = 71
+}
+
+# 284–287 → 72
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 284 }
+        NOT = { check_variable = { which = zombie_bodies value = 288 } }
+    }
+    add_manpower = 72
+}
+
+# 288–291 → 73
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 288 }
+        NOT = { check_variable = { which = zombie_bodies value = 292 } }
+    }
+    add_manpower = 73
+}
+
+# 292–295 → 74
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 292 }
+        NOT = { check_variable = { which = zombie_bodies value = 296 } }
+    }
+    add_manpower = 74
+}
+
+# 296–299 → 75
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 296 }
+        NOT = { check_variable = { which = zombie_bodies value = 300 } }
+    }
+    add_manpower = 75
+}
+
+# 300 → 76
+if = {
+    limit = {
+        check_variable = { which = zombie_bodies value = 300 }
+    }
+    add_manpower = 76
+}
+
+
+}
+
+varjorjen_hunger_bodies = {
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 1
+		}
+		NOT = { check_variable = { bodies = 2 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 1
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 2
+		}
+		NOT = { check_variable = { bodies = 3 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 2
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 3
+		}
+		NOT = { check_variable = { bodies = 4 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 3
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 4
+		}
+		NOT = { check_variable = { bodies = 5 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 4
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 5
+		}
+		NOT = { check_variable = { bodies = 6 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 5
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 6
+		}
+		NOT = { check_variable = { bodies = 7 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 6
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 7
+		}
+		NOT = { check_variable = { bodies = 8 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 7
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 8
+		}
+		NOT = { check_variable = { bodies = 9 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 8
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 9
+		}
+		NOT = { check_variable = { bodies = 10 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 9
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 10
+		}
+		NOT = { check_variable = { bodies = 11 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 10
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 11
+		}
+		NOT = { check_variable = { bodies = 12 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 11
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 12
+		}
+		NOT = { check_variable = { bodies = 13 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 12
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 13
+		}
+		NOT = { check_variable = { bodies = 14 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 13
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 14
+		}
+		NOT = { check_variable = { bodies = 15 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 14
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 15
+		}
+		NOT = { check_variable = { bodies = 16 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 15
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 16
+		}
+		NOT = { check_variable = { bodies = 17 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 16
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 17
+		}
+		NOT = { check_variable = { bodies = 18 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 17
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 18
+		}
+		NOT = { check_variable = { bodies = 19 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 18
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 19
+		}
+		NOT = { check_variable = { bodies = 20 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 19
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 20
+		}
+		NOT = { check_variable = { bodies = 21 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 20
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 21
+		}
+		NOT = { check_variable = { bodies = 22 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 21
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 22
+		}
+		NOT = { check_variable = { bodies = 23 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 22
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 23
+		}
+		NOT = { check_variable = { bodies = 24 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 23
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 24
+		}
+		NOT = { check_variable = { bodies = 25 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 24
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 25
+		}
+		NOT = { check_variable = { bodies = 26 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 25
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 26
+		}
+		NOT = { check_variable = { bodies = 27 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 26
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 27
+		}
+		NOT = { check_variable = { bodies = 28 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 27
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 28
+		}
+		NOT = { check_variable = { bodies = 29 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 28
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 29
+		}
+		NOT = { check_variable = { bodies = 30 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 29
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 30
+		}
+		NOT = { check_variable = { bodies = 31 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 30
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 31
+		}
+		NOT = { check_variable = { bodies = 32 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 31
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 32
+		}
+		NOT = { check_variable = { bodies = 33 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 32
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 33
+		}
+		NOT = { check_variable = { bodies = 34 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 33
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 34
+		}
+		NOT = { check_variable = { bodies = 35 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 34
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 35
+		}
+		NOT = { check_variable = { bodies = 36 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 35
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 36
+		}
+		NOT = { check_variable = { bodies = 37 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 36
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 37
+		}
+		NOT = { check_variable = { bodies = 38 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 37
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 38
+		}
+		NOT = { check_variable = { bodies = 39 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 38
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 39
+		}
+		NOT = { check_variable = { bodies = 40 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 39
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 40
+		}
+		NOT = { check_variable = { bodies = 41 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 40
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 41
+		}
+		NOT = { check_variable = { bodies = 42 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 41
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 42
+		}
+		NOT = { check_variable = { bodies = 43 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 42
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 43
+		}
+		NOT = { check_variable = { bodies = 44 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 43
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 44
+		}
+		NOT = { check_variable = { bodies = 45 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 44
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 45
+		}
+		NOT = { check_variable = { bodies = 46 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 45
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 46
+		}
+		NOT = { check_variable = { bodies = 47 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 46
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 47
+		}
+		NOT = { check_variable = { bodies = 48 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 47
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 48
+		}
+		NOT = { check_variable = { bodies = 49 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 48
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 49
+		}
+		NOT = { check_variable = { bodies = 50 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 49
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 50
+		}
+		NOT = { check_variable = { bodies = 51 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 50
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 51
+		}
+		NOT = { check_variable = { bodies = 52 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 51
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 52
+		}
+		NOT = { check_variable = { bodies = 53 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 52
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 53
+		}
+		NOT = { check_variable = { bodies = 54 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 53
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 54
+		}
+		NOT = { check_variable = { bodies = 55 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 54
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 55
+		}
+		NOT = { check_variable = { bodies = 56 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 55
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 56
+		}
+		NOT = { check_variable = { bodies = 57 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 56
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 57
+		}
+		NOT = { check_variable = { bodies = 58 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 57
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 58
+		}
+		NOT = { check_variable = { bodies = 59 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 58
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 59
+		}
+		NOT = { check_variable = { bodies = 60 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 59
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 60
+		}
+		NOT = { check_variable = { bodies = 61 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 60
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 61
+		}
+		NOT = { check_variable = { bodies = 62 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 61
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 62
+		}
+		NOT = { check_variable = { bodies = 63 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 62
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 63
+		}
+		NOT = { check_variable = { bodies = 64 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 63
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 64
+		}
+		NOT = { check_variable = { bodies = 65 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 64
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 65
+		}
+		NOT = { check_variable = { bodies = 66 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 65
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 66
+		}
+		NOT = { check_variable = { bodies = 67 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 66
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 67
+		}
+		NOT = { check_variable = { bodies = 68 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 67
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 68
+		}
+		NOT = { check_variable = { bodies = 69 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 68
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 69
+		}
+		NOT = { check_variable = { bodies = 70 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 69
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 70
+		}
+		NOT = { check_variable = { bodies = 71 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 70
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 71
+		}
+		NOT = { check_variable = { bodies = 72 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 71
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 72
+		}
+		NOT = { check_variable = { bodies = 73 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 72
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 73
+		}
+		NOT = { check_variable = { bodies = 74 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 73
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 74
+		}
+		NOT = { check_variable = { bodies = 75 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 74
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 75
+		}
+		NOT = { check_variable = { bodies = 76 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 75
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 76
+		}
+		NOT = { check_variable = { bodies = 77 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 76
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 77
+		}
+		NOT = { check_variable = { bodies = 78 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 77
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 78
+		}
+		NOT = { check_variable = { bodies = 79 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 78
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 79
+		}
+		NOT = { check_variable = { bodies = 80 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 79
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 80
+		}
+		NOT = { check_variable = { bodies = 81 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 80
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 81
+		}
+		NOT = { check_variable = { bodies = 82 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 81
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 82
+		}
+		NOT = { check_variable = { bodies = 83 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 82
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 83
+		}
+		NOT = { check_variable = { bodies = 84 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 83
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 84
+		}
+		NOT = { check_variable = { bodies = 85 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 84
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 85
+		}
+		NOT = { check_variable = { bodies = 86 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 85
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 86
+		}
+		NOT = { check_variable = { bodies = 87 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 86
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 87
+		}
+		NOT = { check_variable = { bodies = 88 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 87
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 88
+		}
+		NOT = { check_variable = { bodies = 89 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 88
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 89
+		}
+		NOT = { check_variable = { bodies = 90 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 89
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 90
+		}
+		NOT = { check_variable = { bodies = 91 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 90
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 91
+		}
+		NOT = { check_variable = { bodies = 92 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 91
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 92
+		}
+		NOT = { check_variable = { bodies = 93 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 92
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 93
+		}
+		NOT = { check_variable = { bodies = 94 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 93
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 94
+		}
+		NOT = { check_variable = { bodies = 95 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 94
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 95
+		}
+		NOT = { check_variable = { bodies = 96 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 95
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 96
+		}
+		NOT = { check_variable = { bodies = 97 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 96
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 97
+		}
+		NOT = { check_variable = { bodies = 98 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 97
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 98
+		}
+		NOT = { check_variable = { bodies = 99 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 98
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 99
+		}
+		NOT = { check_variable = { bodies = 100 } } 
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 99
+	}	
+}
+
+if = { 
+	limit = { 
+		check_variable = {
+			which = bodies
+			value = 100
+		}
+	}
+	add_government_power = {
+		mechanic_type = varjorjen_hunger_mechanic
+		power_type = varjorjen_hunger
+		value = 100
+	}	
+}
+}
+
+add_mage_school = {
+	if = {
+		limit = {
+			FROM = {
+				NOT = { development = 18 }
+			}
+		}
+		add_ruler_flag = elemental
+	}
+}
+
+destroy_province_effect = {
+		if = {
+		limit = {
+			FROM = {
+				 	base_manpower = 2
+			}
+			 	add_base_manpower = -1
+		}
+	}
+		if = {
+		limit = {
+			FROM = {
+				 	base_tax  = 2
+			}
+			 	add_base_tax = -1
+		}
+	}
+		if = {
+		limit = {
+			FROM = {
+				 	base_production  = 2
+			}
+			 	add_base_production = -1
+		}
+	}	
+}

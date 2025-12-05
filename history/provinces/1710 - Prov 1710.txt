@@ -1,0 +1,13 @@
+add_core = ZR2
+owner = ZR2
+controller = ZR2
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 2
+capital = "Pol"
+is_city = yes
+culture = parsai
+add_permanent_province_modifier = { name = mountain_pass_modifier duration = -1 } 

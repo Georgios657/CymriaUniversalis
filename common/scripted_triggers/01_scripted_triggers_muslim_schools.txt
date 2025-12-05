@@ -1,0 +1,59 @@
+knows_of_scholar_country_capital_trigger = { #Must know from scope to use this - Currently used only for religious scholars in religion file.
+	FROM = {
+		exists = yes
+		capital_scope = {
+			ROOT = {
+				has_discovered = PREV
+			}
+		}
+	}
+}
+
+
+#Any religious Scholar?
+#Country Scope
+has_religious_scholars_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = has_religious_scholars_trigger_tooltip
+		OR = {
+			has_country_modifier = the_grey_wanderer_modifier
+			has_country_modifier = arakan_the_black_modifier
+			has_country_modifier = neshar_the_four_armed_modifier
+			has_country_modifier = circe_the_loyal_modifier
+			has_country_modifier = oyor_the_eternal_betrayer_modifier
+		}
+	}
+}
+
+#Scholars from where?
+#Country Scope
+scholar_from_our_school_trigger = {
+	has_country_modifier = $school$_scholar_modifier
+	ROOT = {
+		religious_school = {
+			group = moon_faith
+			school = $school$_school
+		}
+	}
+}
+our_scholar_matches_their_school_trigger = {
+	PREV = { has_country_modifier = $school$_scholar_modifier }
+	religious_school = {
+		group = moon_faith
+		school = $school$_school
+	}
+}
+
+#Country Scope
+hidden_progressive_opinion_for_scholar_trigger = { #Used to pick best fit to invite scholar.
+	hidden_trigger = {
+		reverse_has_opinion = { who = FROM value = -50 }
+		reverse_has_opinion = { who = FROM value = -25 }
+		reverse_has_opinion = { who = FROM value = 0 }
+		reverse_has_opinion = { who = FROM value = 25 }
+		reverse_has_opinion = { who = FROM value = 50 }
+		reverse_has_opinion = { who = FROM value = 75 }
+		reverse_has_opinion = { who = FROM value = 100 }
+		reverse_has_opinion = { who = FROM value = 125 }
+	}
+}

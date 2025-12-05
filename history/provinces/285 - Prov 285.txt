@@ -1,0 +1,19 @@
+add_core = CY3
+owner = CY3
+controller = CY3
+culture = morvach
+religion = dagdism
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+capital = "Morvach"
+is_city = yes
+discovered_by = eastern
+center_of_trade = 1
+fort_15th = yes
+
+latent_trade_goods = {
+	coal
+}

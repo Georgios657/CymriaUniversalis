@@ -1,0 +1,12 @@
+add_core = AS7
+owner = AS7
+controller = AS7
+culture = beror
+religion = yazida
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 3
+capital = "Flandras"
+is_city = yes

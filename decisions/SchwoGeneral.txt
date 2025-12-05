@@ -1,0 +1,69 @@
+country_decisions = {
+	recruit_the_son = {
+		potential = {
+		tag = I00
+		has_ruler = "Adalbert"
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		 	legitimacy = 95
+		mission_completed = the_old_empress
+		
+					NOT = {
+			has_leader = "Friederich Bluttrinker"
+			}
+			
+		}
+		effect = {
+		add_legitimacy = -50
+		
+		define_general = {
+		name = "Friederich Bluttrinker"
+		shock = 5
+		fire = 4
+		manuever = 1
+		siege = 1
+	}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	recruit_daughter = {
+		potential = {
+		tag = I00
+		has_ruler = "Adalbert"
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		 	legitimacy = 95
+		mission_completed = the_son
+		
+				
+					NOT = {
+			has_leader = "Marta von Schwöringen"
+			}
+		}
+		effect = {
+		add_legitimacy = -50
+		define_conquistador = {
+			name = "Marta von Schwöringen"
+			shock = 1
+			fire = 1
+			manuever = 6
+			siege = 2
+		}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+}

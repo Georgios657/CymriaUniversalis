@@ -1,0 +1,18 @@
+add_core = TI3
+owner = TI3
+controller = TI3
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = cotton
+base_manpower = 2
+capital = "Ray"
+is_city = yes
+culture = tilak
+religion = tilidian_little_gods
+
+center_of_trade = 1
+add_permanent_province_modifier = {
+	name = minor_estuary_modifier
+	duration = -1
+}

@@ -1,0 +1,13 @@
+add_core = HB6
+owner = HB6
+controller = HB6
+culture = laoi
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = gems
+base_manpower = 1
+capital = "Setere"
+is_city = yes
+discovered_by = chinese

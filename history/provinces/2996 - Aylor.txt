@@ -1,0 +1,15 @@
+add_core = AY1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = grain
+base_manpower = 5
+capital = "Aylor"
+is_city = yes
+culture = aylian
+religion = rozalia
+add_core = EM1
+add_core = NC9
+fort_15th = yes

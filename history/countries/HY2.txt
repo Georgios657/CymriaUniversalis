@@ -1,0 +1,7 @@
+government = tribal
+add_government_reform = harpy_host_reform
+government_rank = 1
+technology_group = harpy_tech
+primary_culture = kaigain_harpia
+religion = winged_one
+capital = 2809

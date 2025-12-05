@@ -1,0 +1,14 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = iron
+base_manpower = 4
+capital = "Kestralyn"
+is_city = yes
+culture = zavonian
+religion = grand_mother
+add_core = AV6
+add_core = AV7

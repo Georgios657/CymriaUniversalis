@@ -1,0 +1,17 @@
+add_core = HB6
+owner = HB6
+controller = HB6
+culture = laoi
+religion = phoenix_faith
+hre = no
+base_tax =5
+base_production = 4
+trade_goods = cloth
+base_manpower = 4
+capital = "Guo Si Di"
+is_city = yes
+discovered_by = chinese
+
+
+center_of_trade = 1
+fort_15th = yes

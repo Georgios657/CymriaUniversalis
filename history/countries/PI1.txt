@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = pirate_republic_reform
+government_rank = 1
+technology_group = selen_tech
+primary_culture = kharinian
+religion = nyamism
+capital = 1526	# Bayreuth

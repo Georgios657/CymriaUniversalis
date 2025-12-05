@@ -1,0 +1,496 @@
+##BranchStart 0
+harpy1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = east_harpy
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	find_stragglers = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			regather_army
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_tradition = 50
+		}
+		effect = {
+			add_mil_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_second_host = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			find_stragglers
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size = 45
+		}
+		effect = {
+			add_army_professionalism = 0.1
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_reserve_army = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			a_second_host
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			manpower = 100
+		}
+		effect = {
+			add_country_modifier = { 
+    name = more_harpies
+    duration = 6500
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+harpy2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = east_harpy
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	regather_army = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_army_tradition = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	sort_out_cowards = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			regather_army
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.1
+			}
+			has_global_modifier_value = {
+				which = land_morale 
+				value = 0.2
+			}
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+    name = brave_harpy
+    duration = 6500
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_army_of_brave = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			sort_out_cowards
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	army_professionalism = 0.5 
+		}
+		effect = {
+			create_general = { tradition = 100 }
+		}
+	}
+	##Mission End
+	##Mission Start
+	soldier_caste = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			a_army_of_brave
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			barracks = 20
+			training_fields = 20
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+    name = caste_soldiers
+    duration = -1
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+harpy3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = east_harpy
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	secure_our_home = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		stability = 1
+		horde_unity = 95
+		}
+		effect = {
+		
+		capital_scope = {
+			area = {
+				limit = {
+					NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+						add_permanent_claim = ROOT
+			}
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	claim_the_region = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			secure_our_home
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = unite_home_area_ct
+				capital_scope = {
+					area_for_scope_province = {
+						type = all
+						owned_by = ROOT #Subjects won't count, empty provinces will need to be colonized.
+					}
+				}
+			}		
+		}
+		effect = {
+		capital_scope = {
+			region = {
+				limit = {
+					NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+						add_permanent_claim = ROOT
+			}
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_mighty_harpy_kingdom = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			claim_the_region
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = unite_home_region_ct
+				capital_scope = {
+					region_for_scope_province = {
+						type = all
+						owned_by = ROOT #Subjects won't count, empty provinces will need to be colonized.
+					}
+				}
+			}
+		}
+		effect = {
+			 	set_government_rank = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_mighty_empire = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			a_mighty_harpy_kingdom
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			government_rank = 3
+		}
+		effect = {
+			 	add_splendor = 1000
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+harpy4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = east_harpy
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	attract_migrants = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			secure_our_home
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			prestige = 50
+		}
+		effect = {
+			 	every_owned_province = { 
+				limit = {
+				NOT = {
+					 	development = 9				
+				}
+
+				}
+				choose_random_development_bonus_effect = yes
+				apply_random_development_bonus_bonus_effect = yes
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	more_wanderers = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			claim_the_region
+			attract_migrants
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			adm_tech = 10
+		}
+		effect = {
+			 	every_owned_province = { 
+				limit = {
+				NOT = {
+					 	development = 9				
+				}
+
+				}
+				choose_random_development_bonus_effect = yes
+				apply_random_development_bonus_bonus_effect = yes
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	call_tribals_to_seltte = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			a_mighty_harpy_kingdom
+			more_wanderers
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			prestige = 75	
+			adm_tech = 15			
+		}
+		effect = {
+			 	every_owned_province = { 
+				limit = {
+				NOT = {
+					 	development = 12			
+				}
+
+				}
+				choose_random_development_bonus_effect = yes
+				apply_random_development_bonus_bonus_effect = yes
+				}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+harpy5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = east_harpy
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	plunder_our_enemy = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			treasury = 500
+		}
+		effect = {
+			add_manpower = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	build_new_places = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			plunder_our_enemy
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 6
+			num_of_buildings_in_province = 3
+			NOT = {
+			num_free_building_slots = 1
+			}
+			}
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_safe_heart = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			build_new_places
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 6
+			 	fort_level = 2
+			}
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	call_to_expand = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			a_safe_heart
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			grown_by_development = 400
+		}
+		effect = {
+			add_country_modifier = { 
+    name = expansive_fever
+    duration = 750
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

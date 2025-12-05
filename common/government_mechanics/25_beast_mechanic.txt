@@ -1,0 +1,47 @@
+beast_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 10
+	available = {
+		has_dlc = "Domination"
+		OR = {
+			has_reform = beast_tribe
+
+		}
+
+
+	}
+
+	powers = {
+		beast_status = {
+			max = 100
+			 default = 50
+			scaled_modifier = {
+					start_value = 50
+					end_value = 100
+				modifier = {
+					development_cost = -0.2
+					idea_cost = -0.1
+				}
+			}
+			reverse_scaled_modifier = {
+			start_value = 0
+			end_value = 50
+			modifier = {
+					infantry_power = 0.25
+				 	global_autonomy = 0.05		
+					diplomatic_reputation = -10
+					relation_with_other_culture = -100
+					relation_with_same_culture = 50
+				}
+				}
+				
+			    on_min_reached = {
+               
+                }	
+		}
+	}
+	
+	interactions = {
+
+	}
+}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = jarldom
+government_rank = 2
+technology_group = giant
+primary_culture = jotun
+religion = fore_bearers
+capital = 3500
+
+1434.1.1 = {
+	monarch = {
+		name = "Ymir"
+		dynasty = "Jotunkin"
+		birth_date = 1405.9.21
+		dip = 5
+		adm = 5
+		mil = 4
+	}
+
+}

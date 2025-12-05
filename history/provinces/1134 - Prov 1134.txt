@@ -1,0 +1,13 @@
+add_core = VA0
+owner = VA0
+controller = VA0
+culture = jarvinia
+religion = thorrinian
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = fur
+base_manpower = 3
+capital = "Rantasa"
+is_city = yes
+discovered_by = north_american

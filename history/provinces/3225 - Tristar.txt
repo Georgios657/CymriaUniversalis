@@ -1,0 +1,17 @@
+add_core = GE2
+owner = GE2
+controller = GE2
+hre = no
+base_tax = 8
+base_production = 8
+trade_goods = chinaware
+base_manpower = 6
+capital = "Tristar"
+is_city = yes
+culture = trystane
+religion = velora
+
+
+center_of_trade = 2
+
+fort_15th = yes

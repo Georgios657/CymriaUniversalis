@@ -1,0 +1,23 @@
+government = theocracy
+add_government_reform = celestial_justice_reform
+government_rank = 2
+technology_group = naga_tech
+primary_culture = patala_naga
+religion = naga_rule_of_law
+capital = 1311 # Bayreuth
+
+
+
+1444.1.1 = {
+	monarch = {
+		dynasty = "Naga"
+		name = "Devika"
+		female = yes
+		birth_date = 1415.9.21
+		dip = 4
+		adm = 5
+		mil = 4
+
+	}
+
+}

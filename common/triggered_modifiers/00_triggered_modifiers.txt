@@ -1,0 +1,301 @@
+#######################################
+############ai is bad and need buff ######
+###########################################
+
+ai_first = {
+	potential = {
+		ai = yes
+	}
+
+	trigger = {
+		ai = yes
+		is_year = 1510
+	}
+
+	land_maintenance_modifier  = -0.05
+	land_forcelimit_modifier = 0.05
+		 	great_project_upgrade_cost = -0.25
+			 	build_cost = -0.1
+}
+
+ai_second = {
+	potential = {
+		ai = yes
+	}
+
+	trigger = {
+		ai = yes
+		is_year = 1620
+	}
+
+	land_maintenance_modifier  = -0.1
+	land_forcelimit_modifier = 0.1
+			 	great_project_upgrade_cost = -0.5
+				 	build_cost = -0.2
+}
+
+ai_third = {
+	potential = {
+		ai = yes
+	}
+
+	trigger = {
+		ai = yes
+		is_year = 1730
+	}
+
+	land_maintenance_modifier  = -0.1
+	land_forcelimit_modifier = 0.1
+	great_project_upgrade_cost = -0.1
+	build_cost = -0.1
+}	
+	
+religious_center = {
+	potential = {
+	always = no
+	}
+	trigger = {
+		if = {
+			limit = {
+				province_id = 25 # Roma
+			}
+			religion = catholic
+		}
+		}
+	#viewer = {
+	#}
+	}
+	
+######################################
+# Italian - Submission to Emperor
+######################################
+submission_to_emperor = {
+	potential = {
+		# AI will avoid joining HRE when this modifier is potential:
+
+		has_global_flag = italians_leave_hre
+		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
+		is_emperor = no
+		NOT = { is_year = 1550 }
+		culture_group = latin
+	}
+
+	trigger = {
+		is_part_of_hre = yes
+		NOT = { tag = ITA }
+		NOT = { emperor = { alliance_with = ROOT } }
+		NOT = { is_year = 1550 } # Duplicating so it shows in tooltip
+	}
+
+	global_unrest = 3
+	stability_cost_modifier = 0.1
+	prestige = -1
+}
+	
+######################################
+# Counter Revolution
+######################################
+counter_revolution = {
+	potential = {
+		revolution_target_exists = yes
+		is_revolutionary = no
+		any_country = {
+			is_revolution_target = yes
+			OR = {
+				capital_scope = {
+					continent = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+	}
+
+	trigger = {
+		revolution_target_exists = yes
+		is_revolutionary = no
+		is_free_or_tributary_trigger = yes
+		NOT = {
+			revolution_target = {
+				war_with = ROOT
+			}
+			revolution_target = {
+				truce_with = ROOT
+			} 
+		}
+		government = monarchy
+	}
+
+	prestige = -5
+	stability_cost_modifier = 0.3
+	global_unrest = 5
+}
+
+
+
+######################################
+# Reaction
+######################################
+reaction = {
+	potential = {
+		revolution_target_exists = yes
+		is_revolutionary = no
+		any_country = {
+			is_revolution_target = yes
+			capital_scope = {
+				continent = ROOT
+			}
+		}
+	}
+
+	trigger = {
+		revolution_target_exists = yes
+		is_revolutionary = no
+		is_free_or_tributary_trigger = yes
+		government = monarchy
+		revolution_target = {
+			war_with = ROOT
+		}  
+
+	}
+
+	prestige = 10
+	stability_cost_modifier = -0.1
+	global_unrest = -10
+}
+
+
+##################################################
+# HRE modifiers
+##################################################
+hre_visatari = {
+	potential = {
+		capital_scope = {
+			continent = asia
+		}
+
+	}
+
+	trigger = {
+		religion = vistarism_faith
+		hre_religion = vistarism_faith
+		hre_religion_locked = yes
+		dynasty = "Visatari"
+	}
+	
+	reasons_to_elect = 50
+}
+
+hre_dominant_catholic = {
+	potential = {
+		capital_scope = {
+			continent = asia
+		}
+		OR = {
+			religion = vistarism_faith
+			religion = amatism_faith
+		}
+	}
+
+	trigger = {
+		religion = amatism_faith
+		hre_religion = amatism_faith
+		hre_religion_locked = yes
+	}
+	
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+hre_dominant_protestant = {
+	potential = {
+		capital_scope = {
+			continent = asia
+		}
+		OR = {
+			religion = vistarism_faith
+			religion = amatism_faith
+		}
+	}
+
+	trigger = {
+		religion = vistarism_faith
+		hre_religion = vistarism_faith
+		hre_religion_locked = yes
+	}
+	
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+
+
+great_peasants_war_triggered_modifier = {
+	potential = {
+		has_global_flag = great_peasants_war_flag
+		capital_scope = {
+			continent = europe
+		}
+	}
+	trigger = {
+		is_part_of_hre = yes
+		NOT = { has_government_attribute = is_peasants_republic }
+	}
+	global_unrest = 6
+}
+
+great_peasants_war_concessions_triggered_modifier = {
+	potential = {
+		OR = {
+			has_global_flag = gpw_peasants_win_major
+			has_global_flag = gpw_peasants_win_minor
+		}
+		capital_scope = {
+			continent = europe
+		}
+	}
+	trigger = {
+		is_part_of_hre = yes
+		NOT = { has_government_attribute = is_peasants_republic }
+	}
+	global_tax_modifier = -0.05
+}
+
+######################################
+# Pope is in the empire
+######################################
+
+pope_in_hre_triggered_modifier = {
+	potential = {
+		PAP = { is_part_of_hre = yes }
+		religion = catholic
+	}
+	trigger = {
+		PAP = { is_part_of_hre = yes }
+		religion = catholic
+		NOT = { is_part_of_hre = yes }
+	}
+	prestige = -0.5
+}
+
+
+defense_of_the_empire_modifier = {
+	potential = {
+		has_dlc = "Emperor"
+		OR = {
+			is_emperor = yes
+			is_elector = yes
+		}
+		hre_reform_passed = emperor_reichskrieg
+	}
+	trigger = {
+		any_country = {
+			war_with = ROOT
+			NOT = { is_part_of_hre = yes }
+		}
+	}
+	war_taxes_cost_modifier = -1.0
+}

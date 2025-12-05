@@ -1,0 +1,14 @@
+add_core = AI2
+owner = AI2
+controller = AI2
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = iron
+base_manpower = 2
+capital = "Karupe"
+is_city = yes
+culture = shiror
+religion = icearia
+add_core = NC7
+fort_15th = yes

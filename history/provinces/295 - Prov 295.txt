@@ -1,0 +1,13 @@
+add_core = CY8
+owner = CY8
+controller = CY8
+culture = wyneddian
+religion = dagdism
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = wool
+base_manpower = 3
+capital = "Carlow"
+is_city = yes
+discovered_by = eastern

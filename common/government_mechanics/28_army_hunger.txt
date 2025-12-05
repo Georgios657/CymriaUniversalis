@@ -1,0 +1,115 @@
+army_hunger_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 10
+	available = {
+		has_dlc = "Domination"
+		OR = {
+			has_reform = harpy_host_reform
+			has_reform = wandering_army_reform
+		}
+
+
+	}
+
+	powers = {
+		army_hunger = {
+		
+					development_scaled_monthly_growth = 10
+					base_monthly_growth  = -1
+			max = 100
+			 default = 80
+			scaled_modifier = {
+			modifier = {
+				land_forcelimit = 20
+				land_maintenance_modifier = -0.75
+				}
+			}
+			reverse_scaled_modifier = {
+			modifier = {
+				 	manpower_recovery_speed = -0.5
+			
+				}
+				}
+				
+			               on_min_reached = {
+
+                }	
+		}
+	}
+	
+	interactions = {
+		buy_food = {
+
+			trigger = {
+			treasury = 50
+			}
+			effect = { 
+			add_treasury = -50
+			
+				add_government_power = {
+					mechanic_type = army_hunger_mechanic
+					power_type = army_hunger
+					value = 25
+
+				}
+			}
+			cooldown_years = 3
+
+			}
+			
+		plunder_landscape = {
+			trigger = {
+
+			capital_scope = {
+						NOT = {
+			devastation = 50
+			}
+			
+			OR = {
+			trade_goods = grain
+			trade_goods = livestock
+			trade_goods = fish
+			}
+			}
+			
+			
+			}
+
+			effect = { 
+			capital_scope = {
+			add_devastation = 50
+			}
+			
+				add_government_power = {
+					mechanic_type = army_hunger_mechanic
+					power_type = army_hunger
+					value = 25
+
+				}
+			}
+			cooldown_years = 3
+
+			}
+
+			
+		rationing = {
+			trigger = {
+
+			army_tradition = 15
+			
+			}
+
+			effect = { 
+			add_army_tradition = -10
+				add_government_power = {
+					mechanic_type = army_hunger_mechanic
+					power_type = army_hunger
+					value = 25
+
+				}
+			}
+			cooldown_years = 3
+
+			}			
+		}
+	}

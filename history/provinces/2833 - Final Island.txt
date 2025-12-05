@@ -1,0 +1,13 @@
+add_core = HY9
+owner = HY9
+controller = HY9
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = ivory
+base_manpower = 2
+capital = "Restur"
+is_city = yes
+culture = shima_harpia
+religion = winged_one
+

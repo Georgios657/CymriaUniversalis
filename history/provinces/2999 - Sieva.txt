@@ -1,0 +1,17 @@
+add_core = AY2
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = cloth
+base_manpower = 3
+capital = "Sieva"
+is_city = yes
+culture = sivir
+religion = rozalia
+add_core = EM1
+add_core = NC9
+add_core = AI1
+center_of_trade = 1
+fort_15th = yes

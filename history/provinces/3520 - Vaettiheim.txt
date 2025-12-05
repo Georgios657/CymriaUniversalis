@@ -1,0 +1,12 @@
+add_core = GI3
+owner = GI3
+controller = GI3
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fur
+base_manpower = 4
+capital = "Vaettiheim"
+is_city = yes
+culture = hill_trolls
+religion = fore_bearers

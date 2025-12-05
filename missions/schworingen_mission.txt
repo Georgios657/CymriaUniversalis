@@ -1,0 +1,1250 @@
+##BranchStart 0
+schwo1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = I00
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gather_family = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_country_flag = adalbert
+			legitimacy = 90
+		}
+		effect = {
+					grafschaft_bendheim_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		
+I03 = {			country_event = { 
+    id = schwor_mission.1
+ tooltip = annex_into_schwor
+}
+}
+
+I05 = {
+country_event = { 
+    id = schwor_mission.1
+}
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	to_the_sea = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			gather_family
+		}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = grafschaft_bendheim_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			grafschaft_bendheim_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+							patener_land_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+					fuggen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	break_fuggen = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			to_the_sea
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = fuggen_area
+				area = patener_land_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			fuggen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+						patener_land_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	deutscherland_alliance = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			break_fuggen
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			ai = yes
+		 	alliance_with = I04
+			AND = {
+			NOT = {
+			exists = I04
+			}
+			deutscherland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			}
+		}
+		}
+		effect = {
+		add_yearly_manpower = 2
+		
+			 	add_historical_friend = I04
+				
+				I04 = {
+				 	add_historical_friend = I00
+				}
+				
+				add_trust = {
+    who = I04
+    value = 100
+    mutual = yes
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	bakavia_attack = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			deutscherland_alliance
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+
+			OR = {
+
+			total_development = 250
+		is_rival = I10
+		AND = {
+			NOT = {
+			exists = I10
+			}
+			total_development = 150	
+			}
+			
+		
+		}
+		}
+		effect = {
+						ober_bakava_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }	
+				}
+				add_permanent_claim = ROOT
+			}		
+			
+									bakavia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}		
+		}
+	}
+	##Mission End
+	##Mission Start
+	corvinus_and_coast = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			bakavia_attack
+		}
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = ober_bakava_area
+				area = bakavia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+					ai = yes
+
+AND = {
+			NOT = {
+			ober_bakava_area = {
+					NOT = {
+					 	owned_by = I17
+					}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core =  ROOT }
+    }
+}
+
+			NOT = {
+			bakavia_area = {
+					NOT = {
+					OR = {
+						province_id = 94
+							 	owned_by = I17	
+					}
+		
+					}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core =  ROOT }
+    }
+}
+}
+}
+		}
+		effect = {
+									das_leere_land_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+									corvinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	kill_a_dragon = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			corvinus_and_coast
+		}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = das_leere_land_area
+				area = corvinia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+		OR = {
+AND = {
+ai = yes
+owns = 70
+}
+
+		AND = {
+
+					NOT = {
+			das_leere_land_area = {
+					NOT = {
+					 	owned_by = I17
+					}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core =  ROOT }
+    }
+}
+
+			NOT = {
+			corvinia_area = {
+					NOT = {
+					OR = {
+						owned_by = I07
+					 	owned_by = I17					
+					}
+
+					}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core =  ROOT }
+    }
+}
+
+
+
+		}
+}}
+
+		effect = {
+		I17 = {
+		every_owned_province = {
+					add_permanent_claim = I00	
+		}
+		}
+		
+				overlord = { 
+				country_event = { 
+				id = new_empire.8
+				days = 1
+				}				
+				}
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	unite_the_empire = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			kill_a_dragon
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			exists = I17
+			}
+			owns = 70
+		}
+		effect = {
+			add_power_projection = { 
+	type = 25_permanent_power_projection
+	amount = 25 
+}
+
+		custom_tooltip = aub_proc
+		
+				hidden_effect = {
+		 	every_subject_country = { 
+			limit = {
+				NOT = { liberty_desire = 50 }
+			 	 NOT = {	has_reform = imperial_wizardy }
+			}
+					country_event = { 
+    id = new_empire.12
+    days = 1
+}
+}			
+		 	every_subject_country = { 
+			limit = {
+				 liberty_desire = 50
+			 	 NOT = {	has_reform = imperial_wizardy }
+			}
+			every_owned_province = {
+			add_permanent_claim = I00
+			}
+			 I00 = { free_vassal = PREV }	
+}	
+		}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+schwo2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = I00
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	built_schworingen = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			province_id = 23
+		}
+		trigger = {
+			23 = {
+			 	development = 21
+			}
+		}
+		effect = {
+		23 = {
+		
+			add_prosperity = 100
+			}
+			add_legitimacy = 10
+		} 	
+	}
+	##Mission End
+	##Mission Start
+	pearl_of_the_east = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			built_schworingen
+		}
+		position = 2
+		provinces_to_highlight = {
+			province_id  = 23
+		}
+		trigger = {
+		23 = {
+			NOT = {
+			num_free_building_slots = 1
+			}
+			development = 25
+			}
+		}
+		effect = {
+		23 = {
+		add_province_modifier = { 
+				name = pearl_of_the_eat_mod
+			duration = -1  
+			desc = pearl_of_the_eat_mod
+}
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	castle_of_schworingen = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			pearl_of_the_east
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_id  = 23
+		}
+		trigger = {
+		23 = {
+				has_great_project = {
+				type = castle_of_schworingen_monument
+				tier = 2
+			}	
+		}
+
+		}
+		effect = {
+			23 = {
+			add_great_project_tier = {
+				type = castle_of_schworingen_monument
+				tier = 1
+		}
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_fleet = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			develop_entlistment
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			navy_size = 45
+		}
+		effect = {
+		 	add_navy_tradition = 15
+			94 = {
+    create_colony = 200
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	plunder_woods = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_fleet
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+	num_of_owned_provinces_with = {
+		value = 5
+		has_building = wharf
+}
+		}
+		effect = {
+		custom_tooltip = can_use_exploration
+		set_country_flag = allow_expansion
+		}
+	}
+	##Mission End
+	##Mission Start
+	search_the_sea = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			plunder_woods
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		
+		OR = {
+		colony = 1
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3 
+				OR = {
+				continent = astralia
+				continent = cerula
+				continent = lantar
+				}
+				}
+		}
+			
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_stellar_world = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			search_the_sea
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	destroy_the_stars = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_stellar_world
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_great_exodus = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			destroy_the_stars
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+schwo3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = I00
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	train_the_army = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+		add_army_professionalism = 0.1
+		}
+	}
+	##Mission End
+	##Mission Start
+	new_technologies = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			train_the_army
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			mil_tech = 8
+			innovativeness = 40
+			}	
+		}
+		effect = {
+			 	add_mil_power = 200
+		}
+	}
+	##Mission End
+	##Mission Start
+	develop_entlistment = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			new_technologies
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				num_of_owned_provinces_with = {
+	value = 10
+		has_building = barracks
+}
+		}
+		effect = {
+		add_country_modifier = { 
+    name = schworingen_entlistment
+    duration = 36500  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_new_impieral_army = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			develop_entlistment
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			exists = I17
+			}
+			army_size = 150
+		}
+		effect = {
+			add_army_professionalism = 0.1
+		}
+	}
+	##Mission End
+	##Mission Start
+	power_of_water = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			promote_techo
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			adm_tech = 16
+			innovativeness = 75
+			treasury = 2000
+		}
+		effect = {
+		add_treasury = -2000
+		add_country_modifier = { 
+    name = hydro_power
+    duration = -1
+}		
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+schwo4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = I00
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_old_empress = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_consort = yes
+			has_country_flag = adalbert
+			 	treasury = 250
+		}
+		effect = {
+				set_country_flag = has_heir_won
+				set_variable = {
+					which = friederich_var
+					value = 0
+				}
+				
+		add_treasury = -250
+			add_ruler_modifier = { 
+    name = empress_of_schworingan
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_son = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_old_empress
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_country_flag = heir_has_won_enough				
+		}
+		effect = {
+			add_ruler_modifier = { 
+    name = the_blood_sword
+    duration = -1  
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_daughter = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_son
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		is_year = 1500
+		prestige = 60
+		}
+		effect = {
+			add_ruler_modifier = { 
+    name = a_well_traveled_daughter
+    duration = -1  
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	promote_techo = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			great_mines
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		adm_tech = 9
+		mil_tech = 9
+		dip_tech = 9
+			innovativeness = 50
+		}
+		effect = {
+		change_innovativeness = 25
+		add_country_modifier = { 
+    name = innovation_wave
+    duration = 3650
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	invite_alchemists = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			promote_techo
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		treasury = 1000
+		}
+		effect = {
+		add_treasury = -1000
+		
+		define_advisor = {
+    type = artist
+    name = "Johann Silbereisen"
+    skill = 3
+discount = yes
+}
+
+define_advisor = {
+    type = philosopher
+    name = "Richard Tedesco"
+    skill = 3
+discount = yes
+}
+
+define_advisor = {
+    type = natural_scientist
+    name = "Samuel Jader"
+    skill = 3
+discount = yes
+}
+
+add_mil_power = 100
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	nitroglyzerin = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			invite_alchemists
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		mil_tech = 14
+		innovativeness = 95
+		natural_scientist = 3
+		}
+		effect = {
+		add_country_modifier = { 
+    name = nitroglyzerin_mod
+    duration = -1
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_the_border = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 9
+		provinces_to_highlight = {
+			province_id = 26
+			province_id = 24
+			province_id = 53
+			
+		}
+		trigger = {
+		is_year = 1525
+		26 = {
+		fort_level = 4
+		}
+				24 = {
+		fort_level = 4
+		}
+		
+				53 = {
+		fort_level = 4
+		}
+		}
+		effect = {
+		26 = {
+		add_province_modifier = { 
+    name = prepared_defense_imp
+    duration = -1  
+}
+		}
+		
+		24 = {
+		add_province_modifier = { 
+    name = prepared_defense_imp
+    duration = -1  
+}
+		}
+
+		83 = {
+		add_province_modifier = { 
+    name = prepared_defense_imp
+    duration = -1  
+}
+		}		
+		
+		}
+	}
+	##Mission End
+	##Mission Start
+	lands_of_the_dead = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_the_border
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			the_dead_land_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+
+			great_flevia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}				
+		}
+		effect = {
+			add_splendor = 1500
+		}
+	}
+	##Mission End
+	##Mission Start
+	inherit_the_mantle = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			lands_of_the_dead
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 300
+				region = the_dead_land_region
+			}
+			development_in_provinces = {
+				value = 200
+				region = great_flevia_region
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "imperial_glory_inheritor"
+				duration = 9125 #25 years
+			}			
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+schwo5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = I00
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	paficify_schworingen = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	stability = 2
+				has_country_flag = adalbert
+		}
+		effect = {
+			add_legitimacy = 15
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	markets_and_trade = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			paficify_schworingen
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			35 = { #Antwerpen
+	trade_share = {
+		country = ROOT
+		share = 40
+	}
+}
+		}
+		effect = {
+		add_mercantilism = 10
+		add_inflation = -2
+		}
+	}
+	##Mission End
+	##Mission Start
+	production_building = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			markets_and_trade
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+	num_of_owned_provinces_with = {
+		value = 5
+		has_building = workshop
+}
+	
+		}
+		effect = {
+			add_adm_power = 50
+			add_inflation = -2			
+			add_treasury = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	great_mines = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			production_building
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_id = 23
+		}
+		trigger = {
+		owns = 23
+	num_of_owned_provinces_with = {
+		value = 5
+		has_building = weapons
+}
+		}
+		effect = {
+		23 = {
+			 	change_trade_goods = coal
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	coal_coal = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			great_mines
+		}
+		position = 5
+		provinces_to_highlight = {
+		province_id = 23
+		}
+		trigger = {
+			23 = {
+			 	base_production = 14
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	smoke_and_prosperity = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			coal_coal
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+	trade_goods_produced_amount = {
+		trade_goods = coal
+		amount = 25
+	}
+		}
+		effect = {
+			add_country_modifier = { 
+    name = smoke_and_pros
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_ice_coast = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_year = 1600
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10 # how many provinces should be owned in the areas below
+					region = nordland_region
+						development = 10
+				}			
+		}
+		effect = {
+										vhineland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	fortify_the_north = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_ice_coast
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10 # how many provinces should be owned in the areas below
+					OR = {
+					region = vhineland_region
+					region = nordland_region
+					}
+					fort_level = 4
+				}
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	thorstens_throne = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			fortify_the_north
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			controls = 1158
+		}
+		effect = {
+			add_splendor = 5000
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

@@ -1,0 +1,12 @@
+add_core = ES4
+owner = ES4
+controller = ES4
+religion = the_silvern_guide
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Assark"
+is_city = yes
+culture = red_harian

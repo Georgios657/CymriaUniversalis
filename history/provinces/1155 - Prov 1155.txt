@@ -1,0 +1,15 @@
+add_core = VA5
+owner = VA5
+controller = VA5
+# Anything typed here will be added to all selected province history files
+culture = sikkonen
+religion = thorrinian
+hre = no
+base_tax = 2
+base_production = 2
+# Anything typed here will be added to all selected province history files
+trade_goods = fur
+base_manpower = 3
+capital = "Huippo"
+is_city = yes
+discovered_by = north_american

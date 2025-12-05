@@ -1,0 +1,13 @@
+add_core = CYB
+owner = CYB
+controller = CYB
+culture = colonian
+religion = dagdism
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+capital = "Tonn"
+is_city = yes
+discovered_by = eastern

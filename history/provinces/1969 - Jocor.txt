@@ -1,0 +1,13 @@
+# No previous file for Jocor
+add_core = AR1
+owner = AR1
+controller = AR1
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Jocor"
+is_city = yes
+culture = khossorian
+religion = nyamism

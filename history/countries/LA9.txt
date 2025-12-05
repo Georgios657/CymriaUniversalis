@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 3
+technology_group = ottoman
+primary_culture = kalinian
+religion = amatism_faith
+capital = 627	# Bayreuth
+elector = yes
+
+1420.1.1 = {
+	monarch = {
+		dynasty = "Visatari"
+		name = "Amtam"
+		birth_date = 1385.9.21
+		dip = 2
+		adm = 1
+		mil = 2
+
+	}
+
+		heir = {
+		name = "Vira"
+		dynasty = "Visatari"
+		birth_date = 1420.1.1
+				death_date = 1480.1.1
+		claim = 100
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+		add_heir_personality = infertile_personality	
+
+}

@@ -1,0 +1,9 @@
+culture = politi
+religion = undead_imperial_faith
+hre = no
+base_tax = 6
+base_production = 3
+trade_goods = grain
+base_manpower = 6
+capital = "Pepulitana"
+discovered_by = muslim

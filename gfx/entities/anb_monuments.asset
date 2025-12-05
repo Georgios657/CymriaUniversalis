@@ -1,0 +1,6 @@
+
+entity = {
+	name = "dam_entity"
+	pdxmesh = "dam_mesh"
+}
+  

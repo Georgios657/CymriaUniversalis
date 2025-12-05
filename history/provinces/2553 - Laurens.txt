@@ -1,0 +1,14 @@
+add_core = AW8
+owner = EM1
+# Anything typed here will be added to all selected province history files
+controller = EM1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = gold
+base_manpower = 2
+capital = "Laurens"
+is_city = yes
+culture = lauri
+religion = imperial_cult
+add_core = EM1

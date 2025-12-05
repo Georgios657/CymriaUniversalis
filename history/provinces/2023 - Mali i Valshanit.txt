@@ -1,0 +1,12 @@
+add_core = CA2
+owner = CA2
+controller = CA2
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Valshanit"
+is_city = yes
+culture = malian
+religion = asae_ya

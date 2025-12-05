@@ -1,0 +1,12 @@
+add_core = GE4
+owner = GE4
+controller = GE4
+hre = no
+base_tax = 4
+base_production =4
+trade_goods = grain
+base_manpower = 3
+capital = "Brellin"
+is_city = yes
+culture = myuiran
+religion = velora

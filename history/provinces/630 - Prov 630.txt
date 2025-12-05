@@ -1,0 +1,16 @@
+add_core = LA9
+owner = LA9
+controller = LA9
+add_core = LD4
+add_core = LE0
+culture = kalinian
+religion = amatism_faith
+hre = yes
+base_tax = 5
+base_production = 6
+trade_goods = fish
+base_manpower = 4
+capital = "Navaria"
+is_city = yes
+discovered_by = ottoman
+fort_15th = yes

@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 2
+technology_group = selen_tech
+primary_culture = harian
+religion = the_silvern_guide
+capital = 1862	# Bayreuth
+religious_school = oyor_the_eternal_betrayer
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Ashyukaya"
+		name = "Timiro"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+}

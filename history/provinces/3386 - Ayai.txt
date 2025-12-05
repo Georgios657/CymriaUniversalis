@@ -1,0 +1,13 @@
+add_core = AS1
+owner = AS1
+controller = AS1
+culture = ayasa
+religion = yazida
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = wool
+base_manpower = 4
+capital = "Ayai"
+is_city = yes
+center_of_trade = 2

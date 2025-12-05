@@ -1,0 +1,13 @@
+add_core = LA7
+owner = LA7
+controller = LA7
+culture = ascarien
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 4
+trade_goods = grain
+base_manpower = 3
+capital = "Luoqatra"
+is_city = yes
+discovered_by = ottoman

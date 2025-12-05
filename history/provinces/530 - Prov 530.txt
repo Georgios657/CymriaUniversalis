@@ -1,0 +1,15 @@
+add_core = FCB
+owner = FCB
+controller = FCB
+culture = phoneician
+religion = amatism_faith
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = fish
+base_manpower = 3
+capital = "Phoneica"
+is_city = yes
+discovered_by = indian
+center_of_trade = 1
+fort_15th = yes

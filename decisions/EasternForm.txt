@@ -1,0 +1,405 @@
+country_decisions = {
+	grand_court = {
+		major = yes
+		potential = {
+		
+		NOT = { exists = PI7 }		
+		has_reform = pirate_republic_reform
+		OR = {
+		tag = PI6
+		capital_scope = {
+		region = piraten_coast_region
+		}		
+		}
+
+				OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 6
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1526
+				province_id = 1530
+				province_id = 1524
+				province_id = 1528
+				province_id = 1960
+				province_id = 1517
+				}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = PI7 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 1526	# Mukha
+			owns_core_province = 1530	# Zabid
+			owns_core_province = 1524	# Mukha
+			owns_core_province = 1528	# Zabid
+			OR = {
+			owns_core_province = 1960	# Zabid			
+			owns_core_province = 1517	# Zabid			
+			}
+		}
+		effect = {
+			
+		
+			change_tag = PI7
+			on_change_tag_effect = yes
+			 	swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			piraten_coast_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= PI7
+			}			
+
+					set_capital = 1526
+					
+					1526 = {
+					 	add_random_development = 5
+					}
+			add_prestige = 50
+			add_navy_tradition = 50		
+
+		PI7 = {
+		set_variable = {
+			which = numOfcourtRaids
+			value = 0
+		}
+		}			
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	grand_ephrete = {
+		major = yes
+		potential = {
+		culture_group  = epheretian
+		NOT = { exists = TF2 }		
+		
+				OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1613
+				province_id = 1620
+				province_id = 1617
+				province_id = 1628
+				province_id = 1635
+				}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = TF2 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 1613	# Mukha
+			owns_core_province = 1620	# Zabid
+			owns_core_province = 1617	# Mukha
+			owns_core_province = 1628	# Zabid
+			owns_core_province = 1635	# Zabid
+		}
+		effect = {
+			change_tag = TF2
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			ephrete_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= TF2
+			}			
+
+					set_capital = 1613
+					
+					1613 = {
+					 	add_random_development = 5
+					}
+			add_prestige = 25	
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	grand_assay = {
+		major = yes
+		potential = {
+				OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			
+		culture_group  = assay
+		NOT = { exists = TF0 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = assay_area 
+				area = upper_assay_area 
+				area = zervoan_desert_area 
+				area = southern_assay_area 
+				area = eastlands_area 
+				area = southern_eastlands_area 
+				
+				}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = TF0 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			assay_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				type = all
+			}
+
+			southern_eastlands_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				type = all
+			}			
+						upper_assay_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				type = all
+			}
+			
+						zervoan_desert_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				type = all
+			}
+			
+						southern_assay_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				type = all
+			}
+			
+						eastlands_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				type = all
+			}
+		}
+		effect = {
+			change_tag = TF0
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			assay_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= TF0
+			}			
+			
+			baylon_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim= TF0
+			}	
+			
+				set_capital = 1825
+					
+				
+			add_prestige = 50	
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+	
+	grand_zervo = {
+		major = yes
+		potential = {
+		
+				OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			
+		culture_group  = grand_zervo
+		NOT = { exists = TF1 }		
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1907
+				province_id = 1896
+				province_id = 1872
+				province_id = 1710
+				province_id = 1843
+				}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = TF1 }
+			owns_core_province = 1907	# Mukha
+			owns_core_province = 1896	# Zabid
+			owns_core_province = 1872	# Mukha
+			owns_core_province = 1710	# Zabid
+			owns_core_province = 1843	# Zabid
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			prestige = 50
+			total_development = 250
+		}
+		effect = {
+			change_tag = TF1
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			zevo_mountains_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= TF1
+			}			
+			
+			seeren_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= TF1
+			}	
+
+			assay_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= TF1
+			}
+			
+					
+				
+			add_prestige = 15	
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	end_slave_state	= {
+		major = yes
+		potential = {
+		has_government_mechanic = slave_mechanic
+		
+				NOT = {
+			has_government_power = {
+	mechanic_type = slave_mechanic
+	power_type = slave_status
+	value = 10
+}	
+		}
+		}
+		
+
+		allow = {
+
+		
+		OR = {
+		ai = yes
+		years_of_income = 5.0
+		}
+
+		}
+		effect = {
+		if = {
+		limit = {
+		ai = no
+		}
+		add_years_of_income = -5
+		}
+		
+		if = {
+		limit = {
+		has_reform = slaver_kingdom_reform
+		}
+		add_government_reform = autocracy_reform
+		}
+		
+		if = {
+		limit = {
+		has_reform = slaver_theocracy
+		}
+		add_government_reform = leading_clergy_reform
+		}		
+		
+			if = {
+		limit = {
+		has_reform = rogue_trader_reform
+		}
+		add_government_reform = merchants_reform
+		}	
+		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}		
+}

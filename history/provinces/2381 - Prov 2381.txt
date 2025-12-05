@@ -1,0 +1,15 @@
+add_core = AW6
+owner = EM1
+# Anything typed here will be added to all selected province history files
+controller = EM1
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = incense
+base_manpower = 1
+capital = "Orvendar"
+is_city = yes
+culture = kandarian
+religion = grand_mother
+add_core = EM1
+fort_15th = yes

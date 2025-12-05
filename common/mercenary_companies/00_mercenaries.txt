@@ -1,0 +1,3092 @@
+
+garai_company = {
+    regiments_per_development = 0.025
+    cavalry_weight = 0.0
+    artillery_weight = 0.1
+	    home_province = 2199
+    cavalry_cap = 0
+    cost_modifier = 1.5
+	
+
+     max_size = 20                         # Maximum size of the mercenary army
+	 
+    trigger = {
+			is_allowed_to_recruit_mercenaries = yes
+		capital_scope = { 
+			OR = {
+				region = eastern_azar_region
+				region = witch_region
+			}
+		}
+    }
+    # No home province means local mercenary company
+}
+
+girais_chosen = {
+    regiments_per_development = 0.05
+    cavalry_weight = 0.3
+    artillery_weight = 0.2
+	    home_province = 2115
+    cavalry_cap = 8
+    cost_modifier = 1.75
+	
+	 min_size = 10                          # Minimum size of the mercenary army	
+    trigger = {
+			is_allowed_to_recruit_mercenaries = yes
+		capital_scope = { 
+			OR = {
+				region = eastern_azar_region
+				region = witch_region
+			}
+		}
+    }
+	
+	    modifier = {
+		land_morale = 0.1	
+	}
+    # No home province means local mercenary company
+}
+
+black_islander = {
+    regiments_per_development = 0.025
+    cavalry_weight = 0.0
+    artillery_weight = 0.1
+	    home_province = 2196
+    cavalry_cap = 0
+    cost_modifier = 1.5
+	     max_size = 20  
+    trigger = {
+			is_allowed_to_recruit_mercenaries = yes
+		capital_scope = { 
+			OR = {
+				region = eastern_azar_region
+				region = witch_region
+			}
+		}
+    }
+    # No home province means local mercenary company
+}
+
+free_troll_clan = {
+    regiments_per_development = 0.1
+    artillery_weight = 0.0
+	  cavalry_weight = 0.0
+    home_province = 3632
+	cost_modifier = 2
+	counts_towards_force_limit = no
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_estate_privilege = estate_nobles_free_clans
+	}
+    modifier = {
+	
+	}
+	
+
+     min_size = 2                        
+     max_size = 5   	
+}
+
+
+keeper_of_light = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.2
+    home_province = 519
+	cost_modifier = 1.6
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		NOT = {
+		religion = telcontarian		
+		}
+		
+				any_owned_province = {
+		OR = {
+		region = yangara_region			
+		}
+
+		}
+
+	}
+    modifier = {
+		land_morale = 0.1	
+	}
+}
+
+
+demon_masters = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.2
+    home_province = 730
+	cost_modifier = 2
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		religion = telcontarian
+	}
+    modifier = {
+		shock_damage = 0.2	
+	}
+}
+
+blood_guards = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.2
+    home_province = 725
+	cost_modifier = 1.7
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		religion = telcontarian
+	}
+    modifier = {
+		land_morale = 0.1		
+	}
+}
+
+bloodletter = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.2
+    home_province = 748
+	cost_modifier = 1.8
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		religion = telcontarian
+	}
+    modifier = {
+		infantry_power = 0.1	
+	}
+}
+
+bukaneers = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.2
+    home_province = 1526
+	cost_modifier = 1.65
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+		region = piraten_coast_region			
+		}
+
+		}
+	}
+    modifier = {
+		transport_attrition = -1
+		shock_damage = 0.1
+		land_morale = -0.1		
+	}
+}
+
+
+shipless = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.0
+	  cavalry_weight = 0.0
+    home_province = 1530
+	cost_modifier = 1
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			region = piraten_coast_region		
+		}
+
+		}
+	}
+    modifier = {
+		transport_attrition = -1
+		land_morale = -0.1
+	}
+}
+
+the_old_watch = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.2
+    home_province = 1613
+	cost_modifier = 2.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			region = ephrete_region			
+		}
+
+		}
+	}
+    modifier = {
+		discipline = 0.075
+	}
+}
+
+blue_coats = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.2
+    home_province = 1455
+	cost_modifier = 1.65
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_year = 1550
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			superregion = eastern_high_north			
+		}
+
+		}
+	}
+    modifier = {
+		fire_damage = 0.1
+	}
+}
+
+red_coats = {
+    regiments_per_development = 0.06
+    artillery_weight = 0.4
+	  cavalry_weight = 0.1
+    home_province = 1440
+	cost_modifier = 2
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+	is_year = 1600
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			superregion = eastern_high_north		
+		}
+
+		}
+	}
+    modifier = {
+		artillery_power = 0.2
+	}
+}
+
+last_laker = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.0
+    home_province = 1675
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			superregion = eastern_high_north		
+		}
+
+		}
+	}
+    modifier = {
+		
+	}
+}
+
+cliffers = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.1
+    home_province = 1626
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			region = ephrete_region	
+		}
+
+		}
+	}
+    modifier = {
+		
+	}
+}
+
+pass_watchers = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 1225
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			region = hue_region		
+			region = qareli_region		
+		}
+
+		}
+	}
+    modifier = {
+		
+	}
+}
+
+great_waller = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 1237
+	cost_modifier = 1.8
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			region = hue_region		
+			region = qareli_region		
+		}
+
+		}
+	}
+    modifier = {
+		land_morale = 0.1
+	}
+}
+
+highvalley_man = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 1244
+	cost_modifier = 1.7
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			region = hue_region		
+			region = qareli_region		
+		}
+
+		}
+	}
+    modifier = {
+		land_attrition = -0.1
+		loot_amount = 0.5
+	}
+}
+
+
+
+panther_brothers = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 1234
+	cost_modifier = 1.9
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			region = hue_region		
+			region = qareli_region		
+		}
+
+		}
+	}
+    modifier = {
+		movement_speed = 0.1
+		discipline = 0.025
+	}
+}
+
+
+tiger_brothers = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 1255
+	cost_modifier = 1.9
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			region = hue_region		
+			region = qareli_region		
+		}
+
+		}
+	}
+    modifier = {
+		infantry_power = 0.05
+	}
+}
+
+
+dragons_watchers = {
+    regiments_per_development = 0.07
+    artillery_weight = 0.1
+	  cavalry_weight = 0.0
+    home_province = 1215
+	cost_modifier = 1.3
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+		OR = {
+			region = hue_region		
+			region = qareli_region		
+		}
+
+		}
+	}
+    modifier = {
+		land_morale = -0.1
+	}
+}
+
+
+harian_camp = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 1869
+	cost_modifier = 1.7
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			region = haria_region
+		}
+	}
+    modifier = {
+		cavalry_power = 0.1
+		cavalry_flanking = 0.5
+	}
+}
+
+harian_camp_2 = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 3411
+	cost_modifier = 1.7
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			region = haria_region
+		}
+	}
+    modifier = {
+		cavalry_power = 0.1
+		cavalry_flanking = 0.5
+	}
+}
+
+
+styrian_raiders = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 1760
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = twin_river
+		}
+	}
+    modifier = {
+		loot_amount = 0.5
+		land_attrition = -0.1
+	}
+}
+
+
+tigrian_raiders = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 1779
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = twin_river
+		}
+	}
+    modifier = {
+		loot_amount = 0.5
+		land_attrition = -0.1
+	}
+}
+
+
+shegen_slave_soldiers = {
+    regiments_per_development = 0.06
+    artillery_weight = 0.2
+	  cavalry_weight = 0.2
+    home_province = 1692
+	cost_modifier = 2.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = twin_river
+		}
+	}
+    modifier = {
+		land_morale = 0.1
+		discipline = 0.05
+	}
+}
+
+
+xavisfan = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 1896
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = twin_river
+		}
+	}
+    modifier = {
+		land_attrition = -0.2
+	}
+}
+
+yaani_youth = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.2
+    home_province = 2042
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+		 	land_attrition = -0.2
+	}
+}
+
+badland_company = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2024
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+		cavalry_power = 0.1
+	}
+}
+
+badland_1_company = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2271
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+		 	movement_speed = 0.10
+	}
+}
+
+cassan_company = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.1
+    home_province = 2003
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+	 	transport_attrition = -1		
+	}
+}
+
+
+arakeen_company = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.1
+    home_province = 1973
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+	 	transport_attrition = -1		
+	}
+}
+
+cycusian_company = {
+    regiments_per_development = 0.04
+    artillery_weight = 0.2
+	  cavalry_weight = 0.1
+    home_province = 1546
+	cost_modifier = 1.6
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+	 	infantry_power = 0.05
+	}
+}
+
+ionian_company = {
+    regiments_per_development = 0.04
+    artillery_weight = 0.2
+	  cavalry_weight = 0.1
+    home_province = 1734
+	cost_modifier = 1.6
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+	 	infantry_power = 0.05
+	}
+}
+
+magma_guard = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.3
+	  cavalry_weight = 0.0
+    home_province = 2114
+	cost_modifier = 1.6
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = azar
+		}
+	}
+    modifier = {
+	 	discipline = 0.025
+	}
+}
+
+hidden_guard = {
+    regiments_per_development = 0.04
+    artillery_weight = 0.1
+	  cavalry_weight = 0.1
+    home_province = 2060
+	cost_modifier = 1.9
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = azar
+		}
+	}
+    modifier = {
+	 	discipline = 0.05
+	}
+}
+
+youth_tribe = {
+    regiments_per_development = 0.08
+    artillery_weight = 0.0
+	  cavalry_weight = 0.0
+    home_province = 2102
+	cost_modifier = 1.2
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = azar
+		}
+	}
+    modifier = {
+	 	land_morale = -0.05
+	}
+}
+
+hill_warrior_azari = {
+    regiments_per_development = 0.04
+    artillery_weight = 0.0
+	  cavalry_weight = 0.0
+    home_province = 2052
+	cost_modifier = 1.3
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+	 	land_attrition = -0.2
+	}
+}
+
+holy_band = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.1
+    home_province = 1973
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+		religion = tanatism
+	}
+    modifier = {
+	 	discipline = 0.05
+	}
+}
+
+
+thalassor_company = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.1
+    home_province = 1543
+	cost_modifier = 1.5
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+	 	transport_attrition = -1		
+	}
+}
+
+robin_company = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.0
+    home_province = 2014
+	cost_modifier = 1.7
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+    trigger = {
+	is_year = 1600
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = rouge_lands
+		}
+	}
+    modifier = {
+		 	fire_damage = 0.10
+	}
+}
+
+lacher = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.0
+    home_province = 3104
+	cost_modifier = 1.5
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = gloomwood_region
+				region = arno_region
+			}
+		}
+	}
+    modifier = {
+		  	land_morale = -0.05		 
+	}
+}
+
+pear_farmer = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.0
+    home_province = 3112
+	cost_modifier = 1.2
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = gloomwood_region
+				region = aylor_region
+			}
+		}
+	}
+    modifier = {
+		  	land_morale = -0.1		 
+	}
+}
+
+gyntan_militia = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.0
+    home_province = 3530
+	cost_modifier = 1.2
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = gyntenland_region
+			}
+		}
+	}
+    modifier = {
+		  	land_morale = -0.1		 
+	}
+}
+
+frontier_man = {
+    regiments_per_development = 0.03
+    artillery_weight = 0.0
+	  cavalry_weight = 0.0
+    home_province = 3617
+	cost_modifier = 1
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = gyntenland_region
+			}
+		}
+	}
+    modifier = {
+		  	land_morale = -0.15
+	}
+}
+
+trapper = {
+    regiments_per_development = 0.03
+    artillery_weight = 0.0
+	  cavalry_weight = 0.0
+    home_province = 3627
+	cost_modifier = 1
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = gyntenland_region
+			}
+		}
+	}
+    modifier = {
+		  	land_morale = -0.15
+	}
+}
+
+white_host = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 3012
+	cost_modifier = 1.4
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = aylor_region
+				region = viria_region
+				region = asyloria_region
+			}
+		}
+	}
+    modifier = {
+		 
+	}
+}
+
+southern_nobles = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2907
+	cost_modifier = 1.4
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = aylor_region
+				region = viria_region
+				region = asyloria_region
+			}
+		}
+	}
+    modifier = {
+		 cavalry_power = 0.1
+	}
+}
+
+northern_nobles = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2992
+	cost_modifier = 1.4
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = meiren_march_region
+				region = viria_region
+				region = asyloria_region
+			}
+		}
+	}
+    modifier = {
+		 cavalry_power = 0.1		 
+	}
+}
+
+tweenty_banner = {
+    regiments_per_development = 0.1
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2941
+	cost_modifier = 1.4
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = aylor_region
+				region = viria_region
+				region = asyloria_region
+			}
+		}
+	}
+    modifier = {
+		 
+	}
+}
+
+choppers = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2921
+	cost_modifier = 1.4
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = meiren_march_region
+				region = viria_region
+				region = asyloria_region
+			}
+		}
+	}
+    modifier = {
+		  	shock_damage = 0.15
+	}
+}
+
+blackrock_raider = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.0
+    home_province = 3213
+	cost_modifier = 1.2
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = gelros_region
+			}
+		}
+	}
+    modifier = {
+		  	loot_amount = 1
+	}
+}
+
+
+darloin_marines = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 3230
+	cost_modifier = 1.2
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = averia_region
+				region = gelros_region
+			}
+		}
+	}
+    modifier = {
+		 	transport_attrition = -1
+			regiment_disembark_speed = 1
+	}
+}
+
+old_guard = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2622
+	cost_modifier = 1.2
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = aylor_region
+				region = mareland_region
+				region = arno_region
+				region = averia_region
+			}
+		}
+	}
+    modifier = {
+		
+	}
+}
+
+new_guard = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2640
+	cost_modifier = 1.2
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = aylor_region
+				region = mareland_region
+				region = arno_region
+				region = averia_region
+			}
+		}
+	}
+    modifier = {
+		
+	}
+}
+
+barrow_keeper = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.1
+    home_province = 2633
+	cost_modifier = 1.4
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = aylor_region
+				region = mareland_region
+				region = arno_region
+				region = averia_region
+			}
+		}
+	}
+    modifier = {
+		 	shock_damage_received = -0.2
+	}
+}
+
+
+prince_company = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2564
+	cost_modifier = 1.2
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = vaino_region
+				region = arno_region
+				region = averia_region
+			}
+		}
+	}
+    modifier = {
+		cavalry_power = 0.10
+	}
+}
+
+custodes = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.1
+	  cavalry_weight = 0.3
+    home_province = 2396
+	cost_modifier = 2
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = vaino_region
+				region = arno_region
+				region = averia_region
+			}
+		}
+	}
+    modifier = {
+		 	land_morale = 0.10
+	}
+}
+
+seilis_guaridnas = {
+    regiments_per_development = 0.06
+    artillery_weight = 0.1
+	  cavalry_weight = 0.1
+    home_province = 2543
+	cost_modifier = 1.2
+	sprites = {  asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = vaino_region
+				region = arno_region
+				region = averia_region
+			}
+		}
+	}
+    modifier = {
+	
+	}
+}
+
+eagle_squadorn = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+	  cavalry_weight = 0.1
+    home_province = 2405
+	cost_modifier = 1.2
+	sprites = { dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = vaino_region
+				region = arno_region
+				region = averia_region
+			}
+		}
+	}
+    modifier = {
+		recover_army_morale_speed = 0.33
+	}
+}
+
+merc_zytar_company = {
+    regiments_per_development = 0.05
+    artillery_weight = 0.2
+    home_province = 2383
+	cost_modifier = 1.1
+	sprites = { dlc062_tmb_sprite_pack africangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = ztar_region
+				region = red_region
+				region = vaino_region
+			}
+		}
+	}
+    modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+merc_red_beduins_company = {
+    regiments_per_development = 0.04
+    artillery_weight = 0.2
+    home_province = 2450
+	cost_modifier = 1.1
+	sprites = { dlc062_tmb_sprite_pack africangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			OR = {
+				region = ztar_region
+				region = red_region
+				region = vaino_region
+			}
+		}
+	}
+    modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+averia_1_company = {
+    regiments_per_development = 0.03
+	    cost_modifier = 2.5  
+		
+		    cavalry_weight = 0.1
+    artillery_weight = 0.25
+    cavalry_cap = 4
+	
+    home_province = 2347 # Ceh Pech
+	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		averia_region = {
+			country_or_non_sovereign_subject_holds = root
+		}
+	}
+    modifier = {
+	discipline = 0.1
+	}
+}
+
+averia_2_company = {
+    regiments_per_development = 0.04
+		    cost_modifier = 1.25 
+		
+		    cavalry_weight = 0.2
+    artillery_weight = 0.1
+    cavalry_cap = 6
+	
+	
+    home_province = 2302 # Ceh Pech
+	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		averia_region = {
+			country_or_non_sovereign_subject_holds = root
+		}
+	}
+    modifier = { }
+}
+
+averia_3_company = {
+    regiments_per_development = 0.04
+		    cost_modifier = 1.25 
+		
+		    cavalry_weight = 0.3
+    artillery_weight = 0.1
+    cavalry_cap = 6
+		
+    home_province = 2306 # Ceh Pech
+	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		averia_region = {
+			country_or_non_sovereign_subject_holds = root
+		}
+	}
+    modifier = { }
+}
+
+averia_4_company = {
+    regiments_per_development = 0.07
+		    cost_modifier = 1.25 
+		
+		    cavalry_weight = 0.1
+    artillery_weight = 0.1
+    cavalry_cap = 4
+		
+    home_province = 2284 # Ceh Pech
+	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		averia_region = {
+			country_or_non_sovereign_subject_holds = root
+		}
+	}
+    modifier = { }
+}
+
+black_guard = {
+	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	cavalry_weight = 0.2
+    artillery_weight = 0.4
+	cavalry_cap = 4
+	home_province = 2207
+	sprites = { dlc102_hun_sprite_pack easterngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		culture_group = wissian
+	}
+	cost_modifier = 1
+	modifier = {
+		discipline = 0.025
+	}
+}
+
+black_guard_2 = {
+	regiments_per_development = 0.06
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	cavalry_weight = 0.2
+    artillery_weight = 0.3
+	cavalry_cap = 8
+	home_province = 2207
+	sprites = { dlc102_hun_sprite_pack easterngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			has_idea = the_black_guard
+		}
+	}
+	cost_modifier = 1
+	modifier = {
+		discipline = 0.05
+	}
+}
+
+merc_jungle_company = {
+    regiments_per_development = 0.04
+    home_province = 2253 # Ceh Pech
+	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		witch_region = {
+			country_or_non_sovereign_subject_holds = root
+		}
+	}
+    modifier = { }
+}
+
+merc_jungle_2_company = {
+    regiments_per_development = 0.04
+    home_province = 2202 # Ceh Pech
+	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		witch_region = {
+			country_or_non_sovereign_subject_holds = root
+		}
+	}
+    modifier = { }
+}
+
+merc_jungle_3_company = {
+    regiments_per_development = 0.04
+    home_province = 2246 # Ceh Pech
+	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		witch_region = {
+			country_or_non_sovereign_subject_holds = root
+		}
+	}
+    modifier = { }
+}
+
+merc_jungle_4_company = {
+    regiments_per_development = 0.04
+    home_province = 2221 # Ceh Pech
+	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		witch_region = {
+			country_or_non_sovereign_subject_holds = root
+		}
+	}
+    modifier = { }
+}
+
+deutscher_rifles = {
+
+
+    regiments_per_development = 0.05        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 50                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1                 # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.3                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 5                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { dlc028_hes_sprite_pack westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+      is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			capital_scope = { 
+				OR = {
+					superregion = new_empire_superregion
+				}
+			}
+		}
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		fire_damage_received = -0.1
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 15                          # Minimum size of the mercenary army
+     max_size = 40                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+deutscher_jeager = {
+
+
+    regiments_per_development = 0.05        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2.5                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 54                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1                 # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.2                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 3                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { dlc028_hes_sprite_pack westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+      is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			capital_scope = { 
+				OR = {
+					superregion = new_empire_superregion
+				}
+			}
+		}
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		fire_damage_received = -0.1
+		shock_damage_received = -0.1
+		discipline = 0.075
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 8                          # Minimum size of the mercenary army
+     max_size = 20                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+norder_sailor = {
+
+
+    regiments_per_development = 0.03        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 97                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                 # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 3                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { dlc028_hes_sprite_pack westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+      is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			capital_scope = { 
+				OR = {
+					superregion = new_empire_superregion
+				}
+			}
+		}
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		discipline = -0.025
+		movement_speed_onto_off_boat_modifier = -0.75
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit                      # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+free_rifles_company = {
+
+
+    regiments_per_development = 0.08        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 70                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.3                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 5                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        discipline = 0.05
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 4                          # Minimum size of the mercenary army
+     max_size = 50                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+durchbruch_and_co_kg_company = {
+
+
+    regiments_per_development = 0.08        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 3                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 70                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.5                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 2                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        artillery_power = 0.2
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 5                          # Minimum size of the mercenary army
+     max_size = 25                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+
+bear_brother = {
+
+
+    regiments_per_development = 0.02        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.1                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 1022                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { inuitgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					high_up_north = {
+				country_or_non_sovereign_subject_holds = root
+			}
+					the_near_north = {
+				country_or_non_sovereign_subject_holds = root
+			}			
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        shock_damage = 0.1 
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+     max_size = 10                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+wolf_brother = {
+
+
+    regiments_per_development = 0.02        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.1                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 1042                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { inuitgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					high_up_north = {
+				country_or_non_sovereign_subject_holds = root
+			}
+					the_near_north = {
+				country_or_non_sovereign_subject_holds = root
+			}			
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        prestige_from_land = 1
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+     max_size = 10                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+
+colone_gallowglasses = {
+
+
+    regiments_per_development = 0.06        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 277                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					green_valley_region = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+     shock_damage = 0.1
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+     max_size = 25                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+morvach_gallowglasses = {
+
+
+    regiments_per_development = 0.06        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 285                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					green_valley_region = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+     shock_damage = 0.2
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+     max_size = 15                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+birr_gallowglasses = {
+
+
+    regiments_per_development = 0.03       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 285                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					green_valley_region = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+     shock_damage = 0.1
+	 shock_damage_received = -0.2
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+     max_size = 8                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+vascaunian_nobles = {
+
+
+    regiments_per_development = 0.06       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 310                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.6                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_great_steppe = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+     	cavalry_power = 0.1
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 8                          # Minimum size of the mercenary army
+     max_size = 30                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+palakoi_guardian = {
+
+
+    regiments_per_development = 0.06       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.3                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 324                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.4                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			owns = 324
+			religion = tengri
+			}
+	
+
+    
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+     	cavalry_power = 0.05
+		land_morale = 0.1
+    }
+
+     counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+     max_size = 12                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+horse_brothers = {
+
+
+    regiments_per_development = 0.06       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 340                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.8                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_great_steppe = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+     	cavalry_power = 0.1
+		reinforce_speed = -0.25
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 8                          # Minimum size of the mercenary army
+     max_size = 30                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+campguard_company = {
+
+
+    regiments_per_development = 0.06       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 389                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_great_steppe = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		shock_damage_received = -0.25
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+     max_size = 15                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+vamor_giant_slayer = {
+
+
+    regiments_per_development = 0.06       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 951                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.1                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        infantry_power = 0.05
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 5                          # Minimum size of the mercenary army
+     max_size = 20                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+the_fifth_order = {
+
+
+    regiments_per_development = 0.06       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 918                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.1                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 5                          # Minimum size of the mercenary army
+     max_size = 40                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+hymmnian_border_patroller = {
+
+
+    regiments_per_development = 0.06       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.3                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 906                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.2                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		movement_speed = 0.2
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 5                          # Minimum size of the mercenary army
+     max_size = 25                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+zaikayan_company = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.3                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 971                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.2                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 5                          # Minimum size of the mercenary army
+    # max_size = 25                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+xiraptoan_sun_guard = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 4                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 971                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.2                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {     
+			reinforce_speed = -0.25
+			discipline = 0.15
+	# Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 5                          # Minimum size of the mercenary army
+     max_size = 15                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+leitis_compangions = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.8                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 966                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.3                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.2                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+	        cavalry_power = 0.1
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 5                          # Minimum size of the mercenary army
+     max_size = 25                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+milesian_fey = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 808                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.3                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.2                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+			fire_damage_received = -0.1        
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 5                          # Minimum size of the mercenary army
+     max_size = 12                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+duran_duran = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 813                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.1                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+				movement_speed = 0.1       
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 5                          # Minimum size of the mercenary army
+    # max_size = 12                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+harrows_hawks = {
+
+
+    regiments_per_development = 0.02       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 843                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.25                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 15                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+						cavalry_shock = 1 
+				movement_speed = 0.1       
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 5                          # Minimum size of the mercenary army
+    # max_size = 12                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+karavata_krevola = {
+
+
+    regiments_per_development = 0.02       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.1                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 834                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 5                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+					land_morale = -0.15      
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 10                          # Minimum size of the mercenary army
+    # max_size = 12                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+avenian_freefolk = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.0                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 834                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 5                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+					land_morale = -0.1
+		morale_damage_received = -0.1					
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 15                          # Minimum size of the mercenary army
+    # max_size = 12                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+eshen_freefolk = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.0                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 861                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 5                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					the_phoenix_empire = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+					land_morale = -0.1
+		morale_damage_received = -0.1					
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 15                          # Minimum size of the mercenary army
+    # max_size = 12                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+
+ogebiner_plebian_horde = {
+
+
+    regiments_per_development = 0.07       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 0.8                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 1079                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 0                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			owns = 1079	
+			}
+	
+
+  
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+					land_morale = -0.2
+		morale_damage_received = 0.25					
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 15                          # Minimum size of the mercenary army
+     max_size = 50                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+
+blood_trackers = {
+
+
+    regiments_per_development = 0.03       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.8                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 1079                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 5                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			owns = 1079	
+			}
+	
+
+  
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+					land_morale = 0.1					
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 15                          # Minimum size of the mercenary army
+     max_size = 20                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+ice_walker = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.0                  # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 1088                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 5                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { inuitgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					ogebinian_wastes_region = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+				land_attrition = -0.25					
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+    # max_size = 12                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+knights_retinue = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.8                # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 628                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.6                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.1                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 15                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					almodoszra = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+				cav_to_inf_ratio = 0.5			
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+     max_size = 25                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+lascaran_black_knights = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2                # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 581                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.6                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.1                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 15                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					almodoszra = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+				fire_damage_received = -0.2			
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 4                          # Minimum size of the mercenary army
+     max_size = 40                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+ascarian_billman = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.4                # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 616                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.2                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 1                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					almodoszra = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+			infantry_power = 0.1		
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 10                          # Minimum size of the mercenary army
+     max_size = 40                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+free_city_watch = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.3                # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 662                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.2                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 1                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					almodoszra = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+			reinforce_speed = -0.25	
+			land_morale = -0.05
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 20                          # Minimum size of the mercenary army
+     max_size = 40                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+gassala_free_company = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.6                # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 699                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.3                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 1                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { westerngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			OR = {
+					almodoszra = {
+				country_or_non_sovereign_subject_holds = root
+			}	
+			}
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 10                          # Minimum size of the mercenary army
+     max_size = 40                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+dorcha_aosi = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 273                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.3                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 1                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			has_great_project = {
+				type = halls_of_thje_mountain_king
+				tier = 2
+			}
+			 	culture_group = elvish
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		reinforce_speed = -0.25
+		fire_damage_received = -0.1
+		shock_damage_received = -0.1
+		land_morale = 0.1		
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 10                          # Minimum size of the mercenary army
+     max_size = 20                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+dorcha_aosi_host = {
+
+
+    regiments_per_development = 0.05       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2.3               # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 273                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.3                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 1                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			has_great_project = {
+				type = halls_of_thje_mountain_king
+				tier = 3
+			}
+			 	culture_group = elvish
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		reinforce_speed = -0.33
+		fire_damage_received = -0.1
+		shock_damage_received = -0.1
+		land_morale = 0.1		
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 20                          # Minimum size of the mercenary army
+     max_size = 40                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+silver_company = {
+
+
+    regiments_per_development = 0.08        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 451                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.4                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+       OR = {
+	   culture_group = visacarian_bestonian
+	   culture_group = lenarian	   
+	   }
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        discipline = 0.05
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 4                          # Minimum size of the mercenary army
+     max_size = 25                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+green_company = {
+
+
+    regiments_per_development = 0.12        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.1                   # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 451                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.4                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+       OR = {
+	   culture_group = visacarian_bestonian
+	   culture_group = lenarian	   
+	   }
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 4                          # Minimum size of the mercenary army
+     max_size = 30                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+red_company = {
+
+
+    regiments_per_development = 0.1        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.2              # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 451                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.2                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.4                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+       OR = {
+	   culture_group = visacarian_bestonian
+	   culture_group = lenarian	   
+	   }
+
+    }
+
+    modifier = { 
+		 	land_morale = 0.10	
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 4                          # Minimum size of the mercenary army
+     max_size = 40                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+golden_company = {
+
+
+    regiments_per_development = 0.06        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 2                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 449                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.6                    # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.1                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 20                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+
+
+    }
+
+    modifier = { 
+		 	land_morale = 0.2	
+			 cavalry_power = 0.3
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 4                          # Minimum size of the mercenary army
+     max_size = 25                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+almodoasarian_company = {
+
+
+    regiments_per_development = 0.14        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 446                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.3                # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.2                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 20                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+       OR = {
+	   culture_group = visacarian_bestonian
+	   culture_group = lenarian	   
+	   }
+    }
+
+    modifier = { 
+			 cavalry_power = 0.1
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 4                          # Minimum size of the mercenary army
+     max_size = 50                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+lenarian_outstriders = {
+
+
+    regiments_per_development = 0.1        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.2                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 455                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1               # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.1                 # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 3                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+       OR = {
+	   culture_group = visacarian_bestonian
+	   culture_group = lenarian	   
+	   }
+    }
+
+    modifier = { 
+	movement_speed = 0.10
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 4                          # Minimum size of the mercenary army
+     max_size = 50                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+qbianian_sappers = {
+    regiments_per_development = 0.08        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 3                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 455                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.1               # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.4                 # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 5                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+       OR = {
+	   culture_group = visacarian_bestonian
+	   culture_group = lenarian	   
+	   }
+    }
+
+    modifier = { 
+	discipline = 0.10
+	shock_damage_received = -0.25
+	fire_damage_received = -0.25
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 4                          # Minimum size of the mercenary army
+     max_size = 30                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+sailors_company = {
+    regiments_per_development = 0.2        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 0.9                 # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 452                     # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0               # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.0                 # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 5                         # Mercenary company will never have more than this many cavalry.
+
+    sprites = { muslimgfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+       OR = {
+	   culture_group = visacarian_bestonian
+	   culture_group = lenarian	   
+	   }
+    }
+
+    modifier = { 
+	discipline = -0.10
+    }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+    # min_size = 4                          # Minimum size of the mercenary army
+     max_size = 15                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}
+
+
+dorcha_aosi_lirae = {
+
+
+    regiments_per_development = 0.04       # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 1.5                # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 3225 # Mercenary company's province of origin. Distance determines recruitment time and range. If unspecified, will be a local company.
+
+    cavalry_weight = 0.0                  # Fraction of the army that is composed of cavalry.
+    artillery_weight = 0.3                  # Fraction of the army that is composed of artillery.
+    
+    cavalry_cap = 6                        # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+			is_allowed_to_recruit_mercenaries = yes
+			mission_completed = call_dark_elves
+	
+
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+		reinforce_speed = -0.25
+		fire_damage_received = -0.15
+		shock_damage_received = -0.15
+		land_morale = 0.25		
+   }
+
+    # counts_towards_force_limit = no       # If mercenary company counts toward force limit
+     min_size = 10                          # Minimum size of the mercenary army
+     max_size = 30                         # Maximum size of the mercenary army
+    # manpower_pool = 50                    # Starting manpower pool
+    # no_additional_manpower_from_max_size = yes  # If extra manpower from company being above max_size is transfered to company's manpower pool
+}

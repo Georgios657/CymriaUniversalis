@@ -1,0 +1,14 @@
+add_core = ZD2
+owner = ZD2
+controller = ZD2
+culture = hymmnia
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Caelidohnia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

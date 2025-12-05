@@ -1,0 +1,103 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 23 55 101 }
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+    "Aodh" = 60
+    "Lir" = 60
+    "Muir" = 60
+    "Darragh" = 60
+    "Ailill" = 60
+    "Cuan" = 60
+    "Lorcan" = 60
+    "Paidi" = 60
+    "Cathan" = 60
+    "Fintan" = 60
+    "Cianan" = 60
+    "Tadhgan" = 60
+    "Eoinin" = 60
+    "Fionnan" = 60
+    "Aisling" = -60
+    "Caoimhe" = -60
+    "Sile" = -60
+    "Maeve" = -60
+    "Niamh" = -60
+    "Fionnuala" = -60
+    "Siobhan" = -60
+    "Eibhlin" = -60
+    "Orlaith" = -60
+    "Grainne" = -60
+    "Aoibhinn" = -60
+    "Saoirse" = -60
+    "Roisin" = -60
+    "Aine" = -60
+    "Caitriona" = -60
+}
+
+leader_names = {
+    "Aodh"
+    "Lir"
+    "Muir"
+    "Darragh"
+    "Ailill"
+    "Cuan"
+    "Lorcan"
+    "Paidi"
+    "Cathan"
+    "Fintan"
+    "Cianan"
+    "Tadhgan"
+    "Eoinin"
+    "Fionnan"
+    "Aisling"
+    "Caoimhe"
+    "Sile"
+    "Maeve"
+    "Niamh"
+    "Fionnuala"
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Arm $PROVINCE$" "Cuige $PROVINCE$" "Kernea $PROVINCE$"
+}
+
+fleet_names = {
+}

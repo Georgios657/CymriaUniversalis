@@ -1,0 +1,12 @@
+add_core = TW4
+owner = TW4
+controller = TW4
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Ebla"
+is_city = yes
+culture = southern_baylonian
+religion = ishtara

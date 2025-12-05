@@ -1,0 +1,12 @@
+add_core = TR5
+owner = TR5
+controller = TR5
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = iron
+base_manpower = 5
+capital = "Stiria"
+is_city = yes
+culture = stirian
+religion = ishtara

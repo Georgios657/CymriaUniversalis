@@ -1,0 +1,12 @@
+add_core = VP6
+owner = VP6
+controller = VP6
+religion = the_silvern_guide
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 3
+capital = "Chalin"
+is_city = yes
+culture = corean

@@ -1,0 +1,13 @@
+add_core = LO6
+owner = LO6
+controller = LO6
+culture = onian
+religion = amatism_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 1
+capital = "Oon"
+is_city = yes
+discovered_by = ottoman

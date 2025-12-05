@@ -1,0 +1,12 @@
+add_core = QA3
+owner = QA3
+controller = QA3
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Tnagna"
+is_city = yes
+culture = nsatsi
+religion = azarian_folk_tales

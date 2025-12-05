@@ -1,0 +1,12 @@
+add_core = TW5
+owner = TW5
+controller = TW5
+religion = the_silvern_guide
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = grain
+base_manpower = 6
+capital = "Bad"
+is_city = yes
+culture = northern_baylonian

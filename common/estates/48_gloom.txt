@@ -1,0 +1,138 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_gloom= {
+	icon = 25
+
+	# If true, country will get estate
+	trigger = {
+		religion = the_gloom
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		 	hostile_attrition = 2
+			max_hostile_attrition = 2	
+			manpower_recovery_speed = 0.2
+			
+	}
+	country_modifier_neutral = {	
+		 	hostile_attrition = 1
+			manpower_recovery_speed = 0.1	
+	}	
+	country_modifier_angry = {
+		 	global_monthly_devastation = 0.15
+			 	manpower_recovery_speed = -0.25
+	}
+	land_ownership_modifier = {
+			
+	}
+	
+
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = EST_VERY_LOW_UNITY
+		trigger = {
+		NOT = {
+		religious_unity = 0.5
+		}
+		}	
+		influence = -10
+	}
+	
+	influence_modifier = {
+		desc = EST_LOW_UNITY
+		trigger = {
+			religious_unity = 0.5	
+		NOT = {
+		religious_unity = 0.75
+		}
+		}	
+		influence = -5
+	}
+	
+	
+	influence_modifier = {
+		desc = EST_MEDIUM_UNITY
+		trigger = {
+			religious_unity = 0.75	
+		NOT = {
+		religious_unity = 0.99
+		}
+		}	
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_HIGH_UNITY
+		trigger = {
+		religious_unity = 0.99
+		}	
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = EST_TOLERANCE_MEDIUM
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 4
+				}
+			NOT = {
+		ROOT = {
+			 	tolerance_to_this = 6
+				}			
+			}
+		}	
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_TOLERANCE_HIGH
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 6
+				}
+							NOT = {
+		ROOT = {
+			 	tolerance_to_this = 8
+				}			
+			}
+		}	
+		influence = 5
+	}
+
+	influence_modifier = {
+		desc = EST_TOLERANCE_VERY_HIGH
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 8
+				}
+		}	
+		influence = 10
+	}
+
+	
+	privileges = {
+		higher_gloom_power
+		vengeful_woods
+		betraying_woods
+		harness_gloompower
+		expand_the_gloom_spell
+		rekindle_gloom
+	}
+
+	agendas = {
+		spread_gloom
+		claim_gloom_province
+		stabalize_gloom
+		protect_gloom
+		awaken_gloom
+		feed_gloom
+		colonize_gloom
+	}
+
+	color = { 21 25 42 }
+	
+	influence_from_dev_modifier = 2
+}

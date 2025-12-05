@@ -1,0 +1,12 @@
+add_core = TH7
+owner = TH7
+controller = TH7
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = salt
+base_manpower = 2
+capital = "Thevais"
+is_city = yes
+culture = xantian
+religion = gayism

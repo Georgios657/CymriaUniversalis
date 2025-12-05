@@ -1,0 +1,12 @@
+add_core = CA7
+owner = CA7
+controller = CA7
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 3
+capital = "Haru-Janar"
+is_city = yes
+culture = yaan
+religion = ishtara

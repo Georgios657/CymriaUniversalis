@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = elfdom_reform
+government_rank = 2
+technology_group = elven
+primary_culture = forrest_elf
+religion = morriganism
+capital = 3070# Bayreuth
+1443.7.3 = {
+	monarch = {
+		name = "Basidhe"
+		dynasty = "Ap Morriga"
+		birth_date = 1311.9.21
+		dip = 4
+		adm = 4
+		mil = 4
+female = yes
+	}
+	
+
+
+}
+

@@ -1,0 +1,13 @@
+add_core = LB0
+owner = LB0
+controller = LB0
+culture = outer_kalinian
+religion = amatism_faith
+hre = yes
+base_tax = 4
+base_production = 5
+trade_goods = cloth
+base_manpower = 3
+capital = "Sonoro"
+is_city = yes
+discovered_by = ottoman

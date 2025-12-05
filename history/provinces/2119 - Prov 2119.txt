@@ -1,0 +1,12 @@
+add_core = QA7
+owner = QA7
+controller = QA7
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = ivory
+base_manpower = 2
+capital = "Kenpoe"
+is_city = yes
+culture = girai
+religion = asae_ya

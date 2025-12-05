@@ -1,0 +1,101 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 55 207 66}
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+	
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+    "Nagaraj" = 60
+    "Vasuki" = 60
+    "Shesha" = 60
+    "Takshaka" = 60
+    "Ananta" = 60
+    "Kaliya" = 60
+    "Padmanabha" = 60
+    "Manasa" = 60
+    "Kulika" = 60
+    "Dhritarashtra" = 60
+    "Bhujanga" = 60
+    "Aravinda" = 60
+    "Dhananjaya" = 60
+    "Kartika" = 60
+    "Gadaksha" = 60
+    "Pingala" = 60
+    "Sarpati" = 60
+    "Nagendra" = 60
+    "Uraga" = 60
+    "Ahirbudhnya" = 60
+
+
+	
+    "Manasa" = -60
+    "Ulupi" = -60
+    "Kundalini" = -60
+    "Parvati" = -60
+    "Nagini" = -60
+    "Jaratkaru" = -60
+    "Arya" = -60
+    "Sarpa" = -60
+    "Sumana" = -60
+    "Varuni" = -60
+    "Ananta" = -60
+    "Kumudini" = -60
+    "Nagashree" = -60
+    "Kamala" = -60
+    "Vishalakshi" = -60
+    "Revati" = -60
+    "Malini" = -60
+    "Priyanka" = -60
+    "Devika" = -60
+    "Chandrika" = -60
+
+
+}
+
+leader_names = {
+	Ahirbudhnya Priyanka Arya Chandrika Kartika Dhananjaya Aravinda Kulika Takshaka
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+
+}
+
+fleet_names = {
+}

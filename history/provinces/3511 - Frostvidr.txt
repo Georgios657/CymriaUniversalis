@@ -1,0 +1,12 @@
+add_core = TO2
+owner = TO2
+controller = TO2
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = iron
+base_manpower = 1
+capital = "Frostvidr"
+is_city = yes
+culture = hill_trolls
+religion = fore_bearers

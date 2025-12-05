@@ -1,0 +1,12 @@
+add_core = ZR5
+owner = ZR5
+controller = ZR5
+religion = yazida
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = iron
+base_manpower = 2
+capital = "Varak"
+is_city = yes
+culture = high_zervonian

@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = elfdom_reform
+government_rank = 1
+technology_group = elven
+primary_culture = desert_elv
+religion = elven_ancestors
+capital = 1564
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1433.7.3 = {
+	monarch = {
+		name = "Faelan"
+		dynasty = "Sidhe"
+		birth_date = 1391.9.21
+		dip = 2
+		adm = 4
+		mil = 4
+	}
+	
+	
+
+		
+}
+

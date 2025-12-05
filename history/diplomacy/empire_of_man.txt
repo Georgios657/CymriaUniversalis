@@ -1,0 +1,241 @@
+vassal = {
+    first = NC9
+    second = AI7
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = NC9
+    second = AI2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = NC9
+    second = AI4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = NC9
+    second = AI1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+dependency = {
+    subject_type = "man_familty_subject"
+    first = EM1
+    second = VE1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+dependency = {
+    subject_type = "man_familty_subject"
+    first = EM1
+    second = MV1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+dependency = {
+    subject_type = "man_familty_subject"
+    first = EM1
+    second = AY4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+dependency = {
+    subject_type = "man_familty_subject"
+    first = EM1
+    second = GW1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+dependency = {
+    subject_type = "man_familty_subject"
+    first = EM1
+    second = GW2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+dependency = {
+	subject_type = "tributary_state"
+	first = EM1
+	second = EM2
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = EM1
+	second = NC9
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = EM1
+	second = GW3
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = EM1
+	second = CA9
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = EM1
+	second = AV1
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = EM1
+	second = GW4
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+vassal = {
+    first = HY9
+    second = HY1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HY2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HY3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = HY9
+    second = HY4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = HY9
+    second = HY5
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HY6
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = HY9
+    second = HY7
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = HY9
+    second = HY8
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = HY9
+    second = HA1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HA2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HA3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HA4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HA5
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HA6
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HA7
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HA8
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HY9
+    second = HA9
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}

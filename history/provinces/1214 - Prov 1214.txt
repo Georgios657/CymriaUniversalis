@@ -1,0 +1,13 @@
+add_core = HE6
+owner = HE6
+controller = HE6
+culture = yuhai
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = iron
+base_manpower = 1
+capital = "Yunhai"
+is_city = yes
+discovered_by = chinese

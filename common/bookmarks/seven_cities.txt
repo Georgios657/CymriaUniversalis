@@ -1,0 +1,30 @@
+bookmark =
+{
+	name = "SEVEN_CITIES"
+	desc = "SEVEN_CITIES_DESC"
+	date = 1444.1.1
+	
+	country = FC0
+	country = FC1
+	country = FC2
+	country = FC3
+	country = FC4
+	country = FC5
+	country = FC6
+	country = FC7
+	country = LO2
+
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

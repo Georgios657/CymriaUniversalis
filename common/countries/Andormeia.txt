@@ -1,0 +1,65 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 24 177 133 }
+
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	steppe_riders
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_cavalry
+	steppe_uhlans
+	steppe_raiders
+	steppe_footmen
+	steppe_musketeers
+	steppe_infantry
+	steppe_rifles
+	reformed_steppe_rifles
+}
+
+monarch_names = {
+	"Amir #0" = 20
+	"Rahim #0" = 20
+	"Malik #0" = 20
+	"Karim #0" = 20
+	"Nasir #0" = 20
+	"Rashid #0" = 20
+	"Adnan #0" = 20
+	"Samir #0" = 20
+	"Anwar #0" = 20
+	"Khaled #0" = 20
+
+	
+	"Leila #0" = -20
+	"Amira #0" = -20
+	"Zahra #0" = -20
+	"Nadia #0" = -20
+	"Safiya #0" = -20
+	"Amina #0" = -20
+	"Yasmin #0" = -20
+	"Sanaa #0" = -20
+
+
+
+}
+
+leader_names = {
+		Anwar Khaled Adnan Malik Rahim  Amir Avin Samir
+
+}
+
+ship_names = {
+
+}

@@ -1,0 +1,12 @@
+add_core = PG1
+owner = PG1
+controller = PG1
+culture = misty_peregma
+religion = pygmer_ancestors
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = gold
+base_manpower = 4
+capital = "Lan-Dert"
+is_city = yes

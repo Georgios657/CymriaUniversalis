@@ -1,0 +1,65 @@
+country_decisions = {
+	the_elven_kingdom = {
+		major = yes
+		potential = {
+		culture = desert_elv
+		NOT = { exists = EL9 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1574
+				province_id = 1557
+				province_id = 1594
+				province_id = 1563
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = EL9 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 1574	# Mukha
+			owns_core_province = 1557	# Zabid
+			owns_core_province = 1594	# Mukha
+			owns_core_province = 1563 # Zabid
+		}
+		effect = {
+			change_tag = EL9
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			great_desert_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= EL9
+			}			
+
+			add_prestige = 25
+			set_capital = 1557		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+}

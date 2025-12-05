@@ -1,0 +1,12 @@
+add_core = TR7
+owner = TR7
+controller = TR7
+religion = ishtara
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = slaves
+base_manpower = 1
+capital = "Raschnur"
+is_city = yes
+culture = tigirian

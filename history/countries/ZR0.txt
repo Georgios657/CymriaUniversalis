@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = selen_tech
+primary_culture = ekterianian
+religion = yazida
+capital = 1907	# Bayreuth
+religious_school = the_grey_wanderer
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Zalgar"
+		name = "Taxitan"
+		birth_date = 1395.9.21
+		dip = 2
+		adm = 2
+		mil = 1
+
+	}
+
+}

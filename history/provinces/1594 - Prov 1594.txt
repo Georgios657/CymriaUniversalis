@@ -1,0 +1,13 @@
+add_core = EL5
+owner = EL5
+controller = EL5
+religion = elven_ancestors
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = incense
+base_manpower = 1
+capital = "Jaruth"
+is_city = yes
+culture = desert_elv
+center_of_trade = 1

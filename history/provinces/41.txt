@@ -1,0 +1,16 @@
+add_core = I00
+owner = I00
+controller = I00
+culture = deutscherlander
+religion = old_imperial_faith
+hre = no
+base_tax = 2 
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+capital = "Eilenheim"
+is_city = yes
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

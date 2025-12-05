@@ -1,0 +1,15 @@
+add_core = LO0
+owner = LO0
+controller = LO0
+culture = tandelan
+religion = telcontarian
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = ivory	
+base_manpower = 4
+capital = "Randeka"
+is_city = yes
+discovered_by = ottoman
+
+fort_15th = yes

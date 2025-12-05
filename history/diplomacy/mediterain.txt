@@ -1,0 +1,70 @@
+
+vassal = {
+    first = CA7
+    second = YA3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = CA7
+    second = YA1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = QA6
+    second = QQ1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+vassal = {
+    first = CA7
+    second = YA2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = CA7
+    second = YA4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = AR0
+    second = AR6
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = AR0
+    second = AR3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = TH0
+    second = TH2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = TH0
+    second = TH4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = TH3
+    second = TH8
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}

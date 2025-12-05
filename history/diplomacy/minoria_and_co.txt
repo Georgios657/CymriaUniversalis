@@ -1,0 +1,122 @@
+vassal = {
+    first = TR9
+    second = TW4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = TR9
+    second = TW2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TR9
+	second = TR5
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TR9
+	second = TR8
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TR9
+	second = TW3
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TR9
+	second = TR7
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TW0
+	second = SH5
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TW0
+	second = TW1
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TW0
+	second = ES1
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TW0
+	second = ES2
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TR9
+	second = TR0
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+vassal = {
+    first = SH0
+    second = SH1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = SH0
+    second = SH2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = SH0
+    second = SH3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = MI0
+    second = MI4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = MI0
+    second = MI3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}

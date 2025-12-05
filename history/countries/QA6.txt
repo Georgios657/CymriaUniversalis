@@ -1,0 +1,25 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = azur_tech
+primary_culture = abyssian
+religion = asae_ya
+capital = 2114	# Bayreuth
+add_army_professionalism = 0.15
+change_estate_land_share = {
+	estate = estate_nobility
+	share = 10
+}
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Abyssiaassa"
+		name = "Aiy"
+		birth_date = 1395.9.21
+		female = yes
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+
+}

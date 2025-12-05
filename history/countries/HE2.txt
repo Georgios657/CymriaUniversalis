@@ -1,0 +1,42 @@
+government = republic
+add_government_reform = dragon_protectorate_reform
+government_rank = 2
+technology_group = chinese
+primary_culture = mountain_dragon
+religion = dragon_faith
+capital = 1205	# Bayreuth
+
+
+1400.1.1 = {
+change_estate_land_share = {
+	estate = estate_dragon
+	share = 20
+}
+
+
+
+
+	monarch = {
+		dynasty = "Huyoan Fengbao"
+		name = "Long"
+		birth_date = 1295.9.21
+		dip = 2
+		adm = 2
+		mil = 4
+
+	}
+	
+	
+}
+
+1444.1.1 = {
+		leader = {
+		name = "Linda"
+		type = general
+		fire = 2
+		shock = 6
+		manuever = 3
+		siege = 4
+		death_date = 1453.7.17
+	}
+}

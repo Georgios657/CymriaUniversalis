@@ -1,0 +1,12 @@
+add_core = PI4
+owner = PI4
+controller = PI4
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 2
+capital = "Askari"
+is_city = yes
+culture = kharinian
+religion = nyamism

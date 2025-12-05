@@ -1,0 +1,15 @@
+add_core = LB4
+owner = LB4
+controller = LB4
+culture = qualian
+religion = amatism_faith
+hre = yes
+base_tax = 7
+base_production = 6
+trade_goods = cloth
+base_manpower = 4
+capital = "Almos"
+is_city = yes
+discovered_by = ottoman
+center_of_trade = 2
+fort_15th = yes

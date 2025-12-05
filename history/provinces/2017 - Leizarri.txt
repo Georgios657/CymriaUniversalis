@@ -1,0 +1,16 @@
+# No previous file for Leizarri
+add_core = CA0
+owner = CA0
+controller = CA0
+hre = no
+base_tax = 4
+base_production = 6
+trade_goods = slaves
+base_manpower = 4
+capital = "Leizarri"
+is_city = yes
+culture = black_robin
+religion = ishtara
+center_of_trade = 1
+add_permanent_province_modifier = { name = blessed_earth_of_robin duration = -1 }
+fort_15th = yes

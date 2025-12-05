@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = nomad_group
+primary_culture = kravolian
+religion = katrova_faith
+capital = 554
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1400.1.1 = {
+	monarch = {
+		name = "Volfat"
+		dynasty = "Osteen"
+		birth_date = 1374.9.21
+		dip = 4
+		adm = 4
+		mil = 3
+	}
+
+}
+

@@ -1,0 +1,14 @@
+add_core = HB4
+owner = HB4
+controller = HB4
+culture = laoi
+religion = phoenix_faith
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = tea
+base_manpower = 3
+capital = "Lao"
+is_city = yes
+discovered_by = chinese
+fort_15th = yes

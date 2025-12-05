@@ -1,0 +1,13 @@
+add_core = LB5
+owner = LB5
+controller = LB5
+culture = as_qualia
+religion = amatism_faith
+hre = yes
+base_tax = 1
+base_production = 2
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Ya-As"
+is_city = yes
+discovered_by = ottoman

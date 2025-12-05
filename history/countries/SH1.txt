@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = selen_tech
+primary_culture = shegen_desertfolk
+religion = moon_and_sun
+capital = 1607	# Bayreuth
+religious_school = neshar_the_four_armed
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Shalei"
+		name = "Andare"
+		birth_date = 1395.9.21
+		dip = 2
+		adm = 3
+		mil = 4
+
+	}
+
+}

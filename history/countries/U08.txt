@@ -1,0 +1,8 @@
+government = undead_government
+add_government_reform = old_empire_full
+government_rank = 3
+technology_group = muslim
+primary_culture = politi
+religion = undead_imperial_faith
+
+

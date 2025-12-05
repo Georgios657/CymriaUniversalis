@@ -1,0 +1,12 @@
+add_core = CA3
+owner = CA3
+controller = CA3
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Shkumbarne"
+is_city = yes
+culture = malian
+religion = the_silvern_guide

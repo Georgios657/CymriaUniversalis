@@ -1,0 +1,13 @@
+add_core = I03
+owner = I03
+controller = I03
+culture = deutscherlander
+religion = old_imperial_faith
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = grain
+base_manpower = 3
+capital = "Stockholm"
+is_city = yes
+discovered_by = western

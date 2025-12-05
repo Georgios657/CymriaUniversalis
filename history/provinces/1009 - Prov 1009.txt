@@ -1,0 +1,17 @@
+
+culture = marshlander
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Isford"
+is_city = yes
+discovered_by = eastern
+center_of_trade = 1
+
+
+native_size = 10
+native_ferocity = 5
+native_hostileness = 5

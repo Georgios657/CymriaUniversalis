@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = settled_harpy_host_reform
+government_rank = 3
+technology_group = harpy_tech
+primary_culture = shima_harpia
+religion = winged_one
+capital = 2827
+
+1444.1.1 = {
+	monarch = {
+		name = "Shinu"
+		dynasty = "Hapsca"
+		birth_date = 1420.9.21
+		dip = 6
+		adm = 6
+		mil = 6
+
+	}
+
+}

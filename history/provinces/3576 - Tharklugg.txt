@@ -1,0 +1,12 @@
+add_core = TN1
+owner = TN1
+controller = TN1
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Tharkklugg"
+is_city = yes
+culture = forrest_trolls
+religion = the_great_catfish

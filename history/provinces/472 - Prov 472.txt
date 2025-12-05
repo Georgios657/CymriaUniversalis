@@ -1,0 +1,13 @@
+add_core = FC5
+owner = FC5
+controller = FC5
+culture = nopolian
+religion = amatism_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Hajida"
+is_city = yes
+discovered_by = indian

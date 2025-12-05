@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = grain
+base_manpower = 5
+capital = "Rosemarch"
+is_city = yes
+culture = ponier
+religion = imperial_cult
+add_core = AN8

@@ -1,0 +1,13 @@
+add_core = S16
+owner = S16
+controller = S16
+culture = kravolian
+religion = katrova_faith
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = copper
+base_manpower = 3
+capital = "Huella"
+is_city = yes
+discovered_by = indian

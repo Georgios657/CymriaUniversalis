@@ -1,0 +1,12 @@
+add_core = MI4
+owner = MI4
+controller = MI4
+culture = border_minoer
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Dadai"
+is_city = yes
+religion = moon_and_sun

@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 2
+technology_group = selen_tech
+primary_culture = tigirian
+religion = ishtara
+capital = 1778	# Bayreuth
+religious_school = arakan_the_black
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Nestor-Akar"
+		name = "Gabal"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+}

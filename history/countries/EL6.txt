@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = elfdom_reform
+government_rank = 1
+technology_group = elven
+primary_culture = desert_elv
+religion = elven_ancestors
+capital = 1557
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1403.7.3 = {
+	monarch = {
+		name = "Conall"
+		dynasty = "Sidhe"
+		birth_date = 1241.9.21
+		dip = 3
+		adm = 2
+		mil = 4
+	}
+	
+	
+
+		
+}
+

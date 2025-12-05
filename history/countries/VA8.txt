@@ -1,0 +1,23 @@
+government = tribal
+add_government_reform = varjorjen_tribe
+government_rank = 1
+technology_group = varjorjen
+primary_culture = sikkonen
+religion = thorrinian
+capital = 1158# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1090.1.1 = {
+	monarch = {
+		name = "Perko"
+		dynasty = "Firstborn"
+		birth_date = 100.9.21
+		dip = 2
+		adm = 1
+		mil = 3
+	}
+	
+	add_ruler_personality = wizard
+	add_ruler_personality = zealot_personality
+}
+

@@ -1,0 +1,12 @@
+add_core = CA4
+owner = CA4
+controller = CA4
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Valbukura"
+is_city = yes
+culture = margatan
+religion = the_silvern_guide

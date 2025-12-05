@@ -1,0 +1,953 @@
+##BranchStart 0
+c1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = CY2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	a_central_autority = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	grown_by_development = 50
+					NOT = {
+					average_autonomy = 10
+					}
+		}
+		effect = {
+					add_country_modifier = { 
+    name = centralisation
+    duration = 7500
+}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	tax_season = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_central_autority
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			grown_by_states = 5
+			
+			 	
+
+employed_advisor = {
+	category = ADM
+	type = treasurer
+        skill = 3
+}
+		}
+		effect = {
+					add_country_modifier = { 
+    name = tax_seasion
+    duration = -1
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_great_census = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			tax_season
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	absolutism = 75
+		}
+		effect = {
+					add_country_modifier = { 
+    name = a_census
+    duration = -1
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	central_buero = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_great_census
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	government_reform_progress = 250
+		}
+		effect = {
+					add_country_modifier = { 
+    name = centralisation
+    duration = -1
+}			
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+c2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = CY2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	study_seasons = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			cymrian_winter
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_institution = astrology_i
+		}
+		effect = {
+			add_ruler_modifier = { 
+    name = astrologer
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	gather_wisdwoms = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			study_seasons
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = 60
+		}
+		
+					has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_dip_power
+			value = 60
+		}
+		
+					has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_mil_power
+			value = 60
+		}
+		}
+		effect = {
+		capital_scope = {
+		 	add_next_institution_embracement = 100
+		}
+		
+		
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = -60
+		}
+		
+					add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_mil_power
+			value = -60
+		}
+		
+					add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_dip_power
+			value = -60
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	friends_in_the_west = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			gather_wisdwoms
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			reverse_has_opinion = {
+				who = I00
+				value = 100
+			}
+			 	innovativeness = 25
+		}
+
+		}
+		effect = {
+			change_innovativeness = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	gather_tributes = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			friends_in_the_west
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 500
+		}
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_new_summer = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			gather_tributes
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				stability = 3
+				 	treasury = 10000
+						has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = 100
+		}
+		
+					has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_dip_power
+			value = 100
+		}
+		
+					has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_mil_power
+			value = 100
+		}
+		}
+		effect = {
+			country_event = { 
+    id = cymria.7
+}
+		
+			set_global_flag = new_sun
+			 every_province = {
+				limit = {
+				has_province_modifier = harsh_winter
+				}
+				remove_province_modifier = harsh_winter
+				}
+		every_province = {
+				limit = {
+				has_province_modifier = harsher_winter
+				}
+				remove_province_modifier = harsher_winter
+				}
+			every_province = {
+				limit = {
+				has_province_modifier = harshest_winter
+				}
+				remove_province_modifier = harshest_winter
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	whipser_in_west = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			fortify_the_passes
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		western_valley_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			
+		}
+		effect = {
+			osterland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			osterland_region = {
+    discover_country = FRA
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_west = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			whipser_in_west
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 15
+	region = osterland_region
+}
+		}
+		effect = {
+			add_absolutism = 30
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+c3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = CY2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	cymrian_winter = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 1
+		}
+		effect = {
+			add_prestige = 10
+			add_splendor = 150
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_new_cmyria = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			cymrian_winter
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		NOT = {
+			 	has_ruler = "Anapura"	
+		}
+	
+				stability = 1
+				army_size_percentage = 1
+		}
+		effect = {
+			cymria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_core = ROOT
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	our_enemies = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_new_cmyria
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		cymria_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		OR = {
+		morvach_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		wynedd_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			
+		}
+				
+		}
+		effect = {
+			morvach_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			
+			wynedd_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	be_the_biggest_dog = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			our_enemies
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 20
+			region = green_valley_region
+			is_city = yes
+		}
+		}
+		effect = {
+			green_valley_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	absolute_rule = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			be_the_biggest_dog
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		cymria_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		morvach_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		wynedd_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		sliab_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		colone_valley_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		caobdh_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			 	add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	fortify_the_passes = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			absolute_rule
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			286 = {
+			fort_level = 4
+			}
+			
+						302 = {
+			fort_level = 4
+			}
+			
+						279 = {
+			fort_level = 4
+			}
+						278 = {
+			fort_level = 4
+			}
+			
+			
+		}
+		effect = {
+			marschland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_the_northern_marsch = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			fortify_the_passes
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 20
+			region = marschland_region
+			is_city = yes
+		}			
+		}
+		effect = {
+			add_army_tradition = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	destroy_the_northern_danger = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_the_northern_marsch
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			 	exists = VB0
+			}
+			is_year = 1650
+		}
+		effect = {
+			add_power_projection = { 
+	type = 25_permanent_power_projection
+	amount = 25 
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+c4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = CY2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	a_paragon = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			cymrian_winter
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			calc_true_if = {
+				all_states  = {
+					 	is_prosperous = yes
+				}
+				amount = 5
+
+		}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+			 	add_base_manpower = 2
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	bringer_of_order = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_paragon
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		NOT = {	
+			unrest = -4
+			num_of_revolts = 1
+		}
+
+		}
+		effect = {
+			 	add_mercantilism = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_avatar_of_god = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			bringer_of_order
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_global_modifier_value = {
+				which = tolerance_own
+				value = 2
+			}
+			
+			has_global_modifier_value = {
+				which = devotion
+				value = 2
+			}
+			
+		}
+		effect = {
+				add_ruler_modifier = { 
+    name = god_wse
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	whisper_east = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			fortify_the_passes
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		sliab_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		army_size = 50
+		}
+		effect = {
+			ikaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			gera_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	use_the_chaos = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			whisper_east
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		ikaria_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		gera_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			finnen_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	destroy_the_sun_lover = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			use_the_chaos
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			religious_unity = 1
+		}
+		effect = {
+			add_estate_loyalty = {
+    estate = estate_god
+    loyalty = 30
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_new_valleys = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			destroy_the_sun_lover
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		finnen_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			region = finnen_region
+			NOT = {
+			culture_group = cymrian
+			}
+			}
+			
+			add_province_modifier = { 
+				name = a_cmyrian_future
+				duration = -1  
+			}
+
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+c5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = CY2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	integrate_the_wanderers = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 292
+			owns = 280
+		}
+		effect = {
+			 	change_government_reform_progress = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	diversity = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			integrate_the_wanderers
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_different_cultures_in_court = 3
+				 	num_accepted_cultures = 4
+		}
+		effect = {
+add_country_modifier = { 
+    name = diverse
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	demolish_the_clans = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_paragon
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	stability = 2
+				 	devotion = 100
+		}
+		effect = {
+		remove_country_modifier = clans_of_the_highlands
+		every_owned_province = {
+			limit = {
+			culture_group = cymrian
+			OR = {
+			has_terrain  = hills			
+			has_terrain  = highlands			
+			has_terrain  = mountain			
+			}
+
+			}
+				add_local_autonomy = 30
+			 	add_unrest = 20
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	integrate_the_clans = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			demolish_the_clans
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		NOT = {
+			average_home_autonomy = 5	
+		}
+
+		}
+		effect = {
+			add_army_tradition = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_unified_cymrian_army = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			integrate_the_clans
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	army_professionalism = 0.5 
+		}
+		effect = {
+add_country_modifier = { 
+    name = united_cymrian_army
+    duration = 7500
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	ensure_loyalty = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_unified_cymrian_army
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			estate_loyalty = {
+    estate = estate_burghers
+    loyalty = 65
+}
+
+estate_loyalty = {
+    estate = estate_church
+    loyalty = 65
+}
+
+estate_loyalty = {
+    estate = estate_nobles
+    loyalty = 65
+}
+		}
+		effect = {
+			add_army_professionalism = 0.25
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

@@ -1,0 +1,520 @@
+country_decisions = {
+	reform_zephyrian_empire = {
+		major = yes
+		potential = {
+		
+		
+		OR = {
+		culture_group  = eastern_imperial
+		phoenix_dynasty = yes
+		tag = ZA2
+		tag = ZX2
+		tag = ZX4
+		tag = ZX6
+		
+		}
+		
+		OR = {
+		NOT = {
+		tag = ZB2
+		}
+		has_country_flag = sucesslful_revolt		
+		}
+
+		
+		NOT = { exists = ZX0 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 868
+				province_id = 869
+				province_id = 820
+				province_id = 977
+				province_id = 818
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = ZX0 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 868	# Mukha
+			owns_core_province = 869	# Zabid
+			owns_core_province = 820	# Mukha
+			owns_core_province = 977	# Zabid
+			owns_core_province = 818	# Zabid
+			
+			development_in_provinces = {
+				value = 250
+				region = zephyria_region
+			}
+			
+		development_in_provinces = {
+				value = 150
+				region = milesia_region
+			}	
+		}
+		effect = {
+			if = {
+		limit = {
+			tag = ZB2
+		}
+		 	change_government = monarchy
+		
+	}
+	
+			change_tag = ZX0
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			the_phoenix_empire = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= ZX0
+			}			
+
+			add_prestige = 100
+			add_splendor = 500
+			set_capital = 868		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	form_lechita = {
+		major = yes
+		potential = {
+		culture_group  = lechita
+		NOT = { exists = ZX1 }		
+				NOT = { exists = ZX0 }	
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 855
+				province_id = 834
+				province_id = 846
+				province_id = 853
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+					NOT = { exists = ZX0 }	
+			NOT = { exists = ZX1 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 855	# Mukha
+			owns_core_province = 834	# Zabid
+			owns_core_province = 846	# Mukha
+			owns_core_province = 853	# Zabid	
+		}
+		effect = {
+			change_tag = ZX1
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			lechia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= ZX1
+			}			
+
+			add_prestige = 25
+			set_capital = 855
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}		
+	
+	form_avia = {
+		major = yes
+		potential = {
+		culture_group  = aiven
+		NOT = { exists = ZX2 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 929
+				province_id = 977
+				province_id = 963
+				province_id = 971
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = ZX2 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			OR = {
+			owns_core_province = 929 # Mukha
+			owns_core_province = 977	# Zabid			
+			}
+
+			owns_core_province = 963	# Mukha
+			owns_core_province = 971	# Zabid	
+		}
+		effect = {
+			change_tag = ZX2
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			zephyrian_border_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= ZX2
+			}			
+
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+	
+	
+	form_bervia = {
+		major = yes
+		potential = {
+		culture_group  = berver
+		NOT = { exists = ZX3 }		
+				NOT = { exists = ZX0 }	
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 921
+				province_id = 984
+				province_id = 906
+				province_id = 899
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+				NOT = { exists = ZX0 }	
+			NOT = { exists = ZX3 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 921 # Mukha
+			owns_core_province = 984	# Zabid			
+
+			owns_core_province = 906	# Mukha
+			owns_core_province = 899	# Zabid	
+		}
+		effect = {
+			change_tag = ZX3
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			zephyrian_border_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					culture_group = berver
+				}
+				add_core = ZX3
+			}			
+
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	form_ephyria = {
+		major = yes
+		potential = {
+		OR = {
+		tag = ZX2
+		culture_group = tevonen
+		tag = ZB5
+		}
+				NOT = { exists = ZX0 }	
+		NOT = { exists = ZX4 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 896
+				province_id = 888
+				province_id = 882
+				province_id = 921
+				province_id = 917
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+				NOT = { exists = ZX0 }	
+			NOT = { exists = ZX4 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 896 # Mukha
+			owns_core_province = 888	# Zabid			
+
+			owns_core_province = 882	# Mukha
+			owns_core_province = 921	# Zabid	
+			owns_core_province = 917	# Zabid	
+		}
+		effect = {
+			change_tag = ZX4
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			ephyria_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ZX4
+			}			
+
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+
+	form_finyra = {
+		major = yes
+		potential = {
+		OR = {
+		
+		culture_group = finnlandian
+		culture_group = bostumer
+		}
+				NOT = { exists = ZX0 }	
+		NOT = { exists = ZX5 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 926
+				
+				province_id = 927
+				
+				province_id = 943
+				province_id = 940
+				
+				province_id = 907
+				
+				province_id = 951
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+				NOT = { exists = ZX0 }	
+			NOT = { exists = ZX5 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 926 # Mukha
+			owns_core_province = 927	# Zabid			
+
+			owns_core_province = 943	# Mukha
+			owns_core_province = 940	# Zabid	
+			owns_core_province = 907	# Zabid	
+			owns_core_province = 951	# Zabid	
+		}
+		effect = {
+			change_tag = ZX5
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			finnen_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ZX5
+			}			
+
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+	
+	form_cetephyria = {
+		major = yes
+		potential = {
+		OR = {
+		
+		culture_group = cephryian
+		tag = ZE9
+		tag = ZE5
+		tag = ZE6
+		tag = ZE3
+		tag = ZE1
+		}
+		NOT = { exists = ZX6 }		
+				NOT = { exists = ZX0 }	
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 768
+				
+				province_id = 769
+				
+				province_id = 763
+				province_id = 777
+				
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = ZX6 }
+					NOT = { exists = ZX0 }	
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 768 # Mukha
+			owns_core_province = 769	# Zabid			
+
+			owns_core_province = 763	# Mukha
+			owns_core_province = 777	# Zabid	
+		}
+		effect = {
+			change_tag = ZX6
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			cephyria_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ZX5
+			}			
+
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+	
+	form_milesia = {
+		major = yes
+		potential = {
+			
+		culture_group = milesian
+		NOT = { exists = ZA2 }	
+		NOT = { exists = ZX0 }			
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 788
+				
+				province_id = 811			
+				province_id = 829
+				
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = ZA2 }
+					NOT = { exists = ZX0 }	
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 788 # Mukha
+			owns_core_province = 811	# Zabid			
+
+			owns_core_province = 829	# Mukha
+		}
+		effect = {
+			change_tag = ZA2
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			milesia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ZX5
+			}			
+
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+}

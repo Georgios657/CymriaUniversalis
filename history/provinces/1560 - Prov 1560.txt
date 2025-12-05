@@ -1,0 +1,12 @@
+add_core = EL8
+owner = EL8
+controller = EL8
+religion = elven_ancestors
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = cloves
+base_manpower = 2
+capital = "Siothru"
+is_city = yes
+culture = desert_elv

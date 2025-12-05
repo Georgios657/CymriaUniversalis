@@ -1,0 +1,172 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_god_earth = {
+	icon = 23
+
+	# If true, country will get estate
+	trigger = {
+			NOT = { has_government_attribute = disables_estate_god }
+		religion_group = earth_goddes
+		NOT = {
+		has_reform = abbandon_the_gods
+		}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		 	shock_damage_received = -0.5
+			fort_maintenance_modifier = -0.10
+			production_efficiency = 0.2
+	}
+	country_modifier_neutral = {	
+			fort_maintenance_modifier = -0.05
+			production_efficiency = 0.1	
+	}	
+	country_modifier_angry = {
+			production_efficiency = -0.1	
+			global_garrison_growth = -0.33
+	}
+	land_ownership_modifier = {
+			god_earth_loyalty_modifier = 0.2
+	}
+	
+
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = EST_VERY_LOW_UNITY
+		trigger = {
+		NOT = {
+		religious_unity = 0.5
+		}
+		}	
+		influence = -10
+	}
+	
+	influence_modifier = {
+		desc = EST_LOW_UNITY
+		trigger = {
+			religious_unity = 0.5	
+		NOT = {
+		religious_unity = 0.75
+		}
+		}	
+		influence = -5
+	}
+	
+	
+	influence_modifier = {
+		desc = EST_MEDIUM_UNITY
+		trigger = {
+			religious_unity = 0.75	
+		NOT = {
+		religious_unity = 0.99
+		}
+		}	
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_HIGH_UNITY
+		trigger = {
+		religious_unity = 0.99
+		}	
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = EST_TOLERANCE_MEDIUM
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 4
+				}
+			NOT = {
+		ROOT = {
+			 	tolerance_to_this = 6
+				}			
+			}
+		}	
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_TOLERANCE_HIGH
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 6
+				}
+							NOT = {
+		ROOT = {
+			 	tolerance_to_this = 8
+				}			
+			}
+		}	
+		influence = 5
+	}
+
+	influence_modifier = {
+		desc = EST_TOLERANCE_VERY_HIGH
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 8
+				}
+		}	
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_STATE_RELIGIOUS_MINORITY
+		trigger = {
+			NOT = { dominant_religion = ROOT }
+		}	
+		influence = -15
+	}
+	
+	influence_modifier = {
+		desc = EST_WRONG_RELIGION_RULER
+		trigger = {
+		NOT = {
+					ruler_religion = ROOT
+		}
+		}	
+		influence = -15
+	}	
+
+	loyalty_modifier = {
+		desc = EST_FANACTIC_KING
+		trigger = {
+				OR = {
+		 	 	ruler_has_personality = zealot_personality
+		 	 	ruler_has_personality = pious_personality				
+				}
+		}
+		loyalty = 5
+	}
+
+	
+	loyalty_modifier = {
+		desc = EST_HOLY_WAR
+		trigger = {
+		 	at_war_with_religious_enemy = yes
+		}
+		loyalty = 5
+	}
+	
+	privileges = {
+	the_holy_mountains
+	safety_of_earth
+	honor_the_old_lady
+	harvest_festivals
+	hills_forts
+	earth_burial
+	}
+
+	agendas = {
+
+	}
+
+	color = { 21 36 49 }
+	
+	influence_from_dev_modifier = 2
+}

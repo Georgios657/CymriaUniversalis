@@ -1,0 +1,19 @@
+add_core = ZA3
+add_core = ZB2
+owner = ZB2
+controller = ZB2
+culture = zephrian
+religion = phoenix_faith
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = wine
+base_manpower = 4
+capital = "Emserina"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = major_estuary_modifier
+	duration = -1
+}

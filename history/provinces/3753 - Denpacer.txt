@@ -1,0 +1,16 @@
+add_core = TI3
+owner = TI3
+controller = TI3
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = cotton
+base_manpower = 3
+capital = "Denpacer"
+is_city = yes
+culture = grand_leyak
+religion = tilidian_little_gods
+add_permanent_province_modifier = {
+	name = strait_modifier
+	duration = -1
+}

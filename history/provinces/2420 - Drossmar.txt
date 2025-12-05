@@ -1,0 +1,12 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = cloth
+base_manpower = 2
+capital = "DDrossmar"
+is_city = yes
+culture = high_culturian
+religion = imperial_cult

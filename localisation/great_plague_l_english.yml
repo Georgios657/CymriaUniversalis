@@ -1,0 +1,21 @@
+﻿l_english:
+ great_plague.1.t:0 "The Plague"
+ great_plague.1.desc:0 "For ages we have prepared the plague — and now we set it loose. Thousands shall die and rise again under our command! Whole nations will wither, left powerless to oppose us!"
+ great_plague.1.a:0 "Our plans will come true!"
+ great_plague.2.t:0 "First Plague"
+ great_plague.2.desc:0 "First Plague"
+ great_plague.2.a:0 "First Plague"
+ 
+ great_plague.3.t:0 "What to do"
+ great_plague.3.desc:0 "First Plague"
+ great_plague.3.a:0 "Isolation" 
+ great_plague.3.a:0 "No isolation" 
+ 
+ great_plague.4.t:0 "Plague spreads"
+ great_plague.4.desc:0 "First Plague"
+ great_plague.4.a:0 "First Plague"
+  
+ great_plague.6.t:0 "Plague Ends"
+ great_plague.6.desc:0 "Ends Plague"
+ great_plague.6.a:0 "Ends Plague"
+   

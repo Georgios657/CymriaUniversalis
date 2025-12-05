@@ -1,0 +1,13 @@
+add_core = CYC
+owner = CYC
+controller = CYC
+culture = birrian
+religion = dagdism
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Listowel"
+is_city = yes
+discovered_by = eastern

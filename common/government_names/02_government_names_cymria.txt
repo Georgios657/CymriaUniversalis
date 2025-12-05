@@ -1,0 +1,775 @@
+# For specific government types
+# Will pick the first valid one it finds in list
+
+undead_kingdom = {
+	rank = {
+		1 = UNDEAD_DUCHY
+		2 = UNDEAD_KING
+		3 = UNDEAD_EMPIRE
+	}
+	ruler_female= {
+		1 = DEAD_QUEEN
+		2 = DEAD_QUEEN
+		3 = DEAD_QUEEN
+	}
+
+	
+	trigger = {
+		has_reform = reawakend_kingdom
+	}
+}
+
+twin_council = {
+	rank = {
+		1 = TWIN_COUNILOR
+		2 = TWIN_COUNILOR
+		3 = TWIN_COUNILOR
+	}
+	ruler_female= {
+		1 = TWIN_COUNCIL
+		2 = TWIN_COUNCIL
+		3 = TWIN_COUNCIL
+	}
+
+	
+	trigger = {
+		has_reform = twin_council
+	}
+}
+
+emp_man = {
+	rank = {
+
+		3 = EMPIRE_OF_MAN
+	}
+	ruler_male = {
+		3 = EMPEROR_OF_MAN
+	}
+
+	
+	trigger = {
+		has_reform = empire_of_man_reform
+	}
+}
+
+sacred_harpy = {
+	rank = {
+		1 = NIDAHAN
+		2 = RISHASHR
+		3 = ASHIYAN
+	}
+	ruler_female = {
+
+		1 = SAHIBAT
+		2 = HAMILAT
+		3 = SAWTAT
+	}
+
+	ruler_male = {
+
+		1 = SABAT
+		2 = HAMIL
+		3 = SAWT
+	}
+	
+	heir_female = {
+
+		1 = RISHARA
+		2 = ASHINYANZA
+		3 = MUBAKARAT
+	}
+
+	heir_male = {
+
+		1 = RISHAVAR
+		2 = ASHINYABARD
+		3 = MUBARAK
+	}
+	
+	trigger = {
+		has_reform = sacred_harpy_host
+	}
+}
+
+
+witchking = {
+	rank = {
+		1 = WITCHLAND
+		2 = WITCHLAND
+		3 = GREAT_WITCHLAND
+	}
+	ruler_female = {
+
+		1 = WITCHQUEEN
+		2 = WITCHQUEEN
+		3 = GREAT_WITCHQUEEN
+	}
+
+	
+	heir_female = {
+
+		1 = SMALL_WITCH
+		2 = SMALL_WITCH
+		3 = WITCHQUEEN
+	}
+	
+	trigger = {
+		has_reform = witchking
+	}
+}
+
+the_universe = {
+	rank = {
+		3 = UNIVERSE
+	}
+	ruler_female = {
+
+		3 = QUEEN_UNI
+	}
+
+	ruler_male = {
+
+		3 = KING_UNI
+	}
+	
+	heir_male = {
+
+		3 = PRINCE_UNI
+	}
+	
+	heir_female = {
+
+		3 = PRINCESS_UNI
+	}
+	
+	trigger = {
+		has_reform = king_of_the_universe
+	}
+}
+
+jhinn_gov = {
+	rank = {
+		1 = CITY_OF_DEATH
+		2 = REALM_OF_DEATH
+		3 = EXALTED_REALM_OF_DEATH
+	}
+	ruler_female = {
+		1 = GUARDIAN_FLAME
+		2 = MISTRESS_FLAME
+		3 = FLAME
+	}
+
+	ruler_male = {
+		1 = GUARDIAN_FLAME
+		2 = MASTER_FLAME
+		3 = FLAME
+	}
+	
+	heir_male = {
+		1 = SULTANAR
+		2 = SULTANAR
+		3 = SULTANAR
+	}
+	
+	heir_female = {
+		1 = SULSHANA
+		2 = SULSHANA
+		3 = SULSHANA
+	}
+	
+	trigger = {
+		has_reform = wizardom
+		tag = JH0
+	}
+}
+
+wizardom_ermor_gov = {
+	rank = {
+		1 = CITY_OF_DEATH
+		2 = REALM_OF_DEATH
+		3 = EXALTED_REALM_OF_DEATH
+	}
+	ruler_female = {
+		1 = GUIDE_OF_DEATH
+		2 = VIRGIL
+		3 = MATRON_OF_DEATH
+	}
+
+	ruler_male = {
+		1 = GUIDE_OF_DEATH
+		2 = VIRGIL
+		3 = MASTER_OF_DEATH
+	}
+	
+	heir_male = {
+		1 = GUIDE_IN_WAITING
+		2 = GUIDE_IN_WAITING
+		3 = GUIDE_IN_WAITING
+	}
+	
+	heir_female = {
+		1 = GUIDE_IN_WAITING
+		2 = GUIDE_IN_WAITING
+		3 = GUIDE_IN_WAITING
+	}
+	
+	trigger = {
+		has_reform = wizardom
+		tag = TW6
+	}
+}
+
+rogue_trader_gov = {
+	rank = {
+		1 = FREE_DOMAIN
+		2 = FREE_DOMAIN
+		3 = FREE_DOMAIN
+	}
+	ruler_female = {
+		1 = LORD_CAPTAIN
+		2 = LORD_CAPTAIN
+		3 = LORD_CAPTAIN
+	}
+
+	ruler_male = {
+		1 = LORD_CAPTAIN
+		2 = LORD_CAPTAIN
+		3 = LORD_CAPTAIN
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+	
+	heir_female = {
+		1 = HEIRESS
+		2 = HEIRESS
+		3 = HEIRESS
+	}
+	
+	trigger = {
+		has_reform = rogue_trader_reform
+	}
+}
+
+patala_snake_gov = {
+	rank = {
+		1 = JUSTICARY
+		2 = GRAND_JUSTICARY
+		3 = ETERNAL_JUSTICARY
+	}
+	ruler_female = {
+		1 = JUSTICAR
+		2 = GRAND_JUSTICAR
+		3 = SUPREME_JUSTICAR
+	}
+	
+	ruler_male = {
+		1 = JUSTICAR
+		2 = GRAND_JUSTICAR
+		3 = SUPREME_JUSTICAR
+	}
+	trigger = {
+		has_reform = celestial_justice_reform
+	}
+}
+
+freed_slaves_gov = {
+	rank = {
+		1 = FREE_STATE
+		2 = FREE_STATE
+		3 = FREE_STATE
+	}
+	ruler_female = {
+		1 = CHAMPION
+		2 = CHAMPION
+		3 = CHAMPION
+	}
+	
+	ruler_male = {
+		1 = CHAMPION
+		2 = CHAMPION
+		3 = CHAMPION
+	}
+	trigger = {
+		has_reform = freed_slaves_reform
+	}
+}
+
+dragon_protectorate_reform_gov = {
+	rank = {
+		1 = DRAGON_KINGDOM
+		2 = DRAGON_KINGDOM
+		3 = DRAGON_EMPIRE
+	}
+	ruler_female = {
+		1 = LADY_PROTECTOR
+		2 = LADY_PROTECTOR
+		3 = PRINCESS_PROTECTOR
+	}
+	
+	ruler_male = {
+		1 = LORD_PROTECTOR
+		2 = LORD_PROTECTOR
+		3 = PRINCE_PROTECTOR
+	}
+	trigger = {
+		has_reform = dragon_protectorate_reform
+	}
+}
+
+imperial_wizardy_gov = {
+	rank = {
+		1 = IMPERIAL_WIZARDY
+		2 = GRAND_IMPERIAL_WIZARDY
+		3 = SUPREME_IMPERIAL_WIZARDY
+	}
+	ruler_female = {
+		1 = GREAT_WITCH
+		2 = GREAT_WITCH
+		3 = GREAT_WITCH_EMPRESS
+	}
+	
+	consort_male = {
+		1 = COUNT_CONSORT
+		2 = DUKE_CONSORT
+		3 = IMPERIAL_CONSORT
+	}
+	
+	heir_female = {
+		1 = SCHOLARI
+		2 = SCHOLARI
+		3 = SCHOLARI
+	}
+	
+	trigger = {
+		has_reform = imperial_wizardy
+	}
+}
+
+warlock_gov = {
+	rank = {
+		1 = WARLOCKRY
+		2 = GRAND_WARLOCKRY
+		3 = IMPERIAL_WARLOCKRY
+	}
+	ruler_female = {
+		1 = WARLOCK
+		2 = BIG_WARLOCK
+		3 = BIGGER_WARLOCK
+	}
+
+	ruler_male = {
+		1 = WARLOCK
+		2 = BIG_WARLOCK
+		3 = BIGGER_WARLOCK
+	}
+	
+	
+	trigger = {
+		has_reform = warlock_circle
+	}
+}
+necromancy_gov = {
+	rank = {
+		1 = NECRO_DUKEDOM
+		2 = NECRO_KINGDOM
+		3 = NECRO_EMPIRE
+	}
+	ruler_female = {
+		1 = NECRO_DUKE_F
+		2 = NECRO_KING_F
+		3 = NECRO_EMP_F
+	}
+
+	ruler_male = {
+		1 = NECRO_DUKE
+		2 = NECRO_KING
+		3 = NECRO_EMP
+	}
+	
+	heir_male = {
+		1 = SCHOLAR
+		2 = SCHOLAR
+		3 = SCHOLAR
+	}
+	
+	heir_female = {
+		1 = SCHOLARA
+		2 = SCHOLARA
+		3 = SCHOLARA
+	}
+	
+	trigger = {
+		has_reform = necromancy_tower
+	}
+}
+
+erl_elf_ranks = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+	
+ruler_female = {
+    1 = ERLDUCHESS
+    2 = ERLQUEEN
+    3 = ERLQUEEN
+}
+
+ruler_male = {
+    1 = ERLDUKE
+    2 = ERLKING
+    3 = ERLKING
+}
+
+	
+	trigger = {
+		tag = EL0
+		has_mission = kidnap_children
+	}
+}
+
+cymria_ranks = {
+rank = {
+    1 = BEAG
+    2 = RIOCHT
+    3 = ARD_RI
+}
+
+ruler_female = {
+    1 = BANPHRIONSA
+    2 = BANRION
+    3 = BANARDRION
+}
+
+ruler_male = {
+    1 = TIARNA
+    2 = RI
+    3 = ARDRI
+}
+
+heir_male = {
+    1 = FANACHT
+    2 = RIF
+    3 = RIARD
+}
+
+heir_female = {
+    1 = FANACHTF
+    2 = RIFF
+    3 = BIARD
+}
+	
+	trigger = {
+		government = monarchy
+		culture_group = cymrian
+	}
+}
+
+cymria_ranks_rep = {
+ rank = {
+        1 = CATHAIR
+        2 = STAT
+        3 = POBLACHT
+    }
+    ruler_female = {
+        1 = CATHAOIRLEACH
+        2 = CEANNAIRE
+        3 = UACHTARAN
+    }
+    ruler_male = {
+        1 = CATHAOIRLEACH
+        2 = CEANNAIRE
+        3 = UACHTARAN
+    }
+
+	
+	trigger = {
+		government = republic
+		culture_group = cymrian
+	}
+}
+
+lady_cymria = {
+	rank = {
+		1 = TIRDACH_CYM
+		2 = TIRDACH_CYM
+		3 = RIOCHT
+	}
+	ruler_female = {
+		1 = LADY_CYM
+		2 = LADY_CYM
+		3 = EMPRESS_CYM
+	}
+
+	ruler_male = {
+		1 = LORD_CYM
+		2 = LORD_CYM
+		3 = EMP_CYM
+	}
+	
+	heir_male = {
+		1 = LORD_WAITING
+		2 = LORD_WAITING
+		3 = LORD_CYM
+	}
+	
+	heir_female = {
+		1 = LADY_WAITNG
+		2 = LADY_WAITNG
+		3 = LADY_CYM
+	}
+	
+	trigger = {
+		has_reform = wizardom
+		tag = CY2
+	}
+}
+
+
+wizardom_south = {
+	rank = {
+		1 = WITCHDOM
+		2 = WITCHREALM
+		3 = WICTH_EMPIRE
+	}
+	ruler_female = {
+		1 = WITCH
+		2 = WITCH_QUEEN
+		3 = WITCH_EMPRESS
+	}
+
+	ruler_male = {
+		1 = WITCH
+		2 = WITCH_KING
+		3 = WITCH_EMPEROR
+	}
+	
+	heir_male = {
+		1 = NOVICE
+		2 = NOVICE
+		3 = NOVICE
+	}
+	
+	heir_female = {
+		1 = NOVICE
+		2 = NOVICE
+		3 = NOVICE
+	}
+	
+	trigger = {
+		has_reform = wizardom
+	}
+}
+
+old_empire_hecontarchia_gov = {
+	rank = {
+		1 = HECONTARCHONA
+		2 = GRAND_IMPERIAL_WIZARDY
+		3 = SUPREME_IMPERIAL_WIZARDY
+	}
+	ruler_female = {
+		1 = HECONTARCHON
+		2 = GREAT_WITCH
+		3 = GREAT_WITCH_EMPRESS
+	}
+	ruler_male = {
+		1 = HECONTARCHON
+		2 = GREAT_WITCH
+		3 = GREAT_WITCH_EMPRESS
+	}	
+	
+	
+	trigger = {
+		has_reform = old_empire_hecontarchia
+	}
+}
+
+god_on_earth = {
+	rank = {
+
+		3 = GODS_KINGDOM
+	}
+
+	ruler_male = {
+
+		3 = GOD
+	}
+
+	ruler_female = {
+
+		3 = GODDESS
+	}
+
+	consort_male = {
+
+		3 = CONSORT
+	}
+
+	consort_female = {
+
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		3 = SCION
+	}
+
+	heir_female = {
+		3 = SCIONESS
+	}
+
+	trigger = {
+		has_reform = god_on_earth
+	}
+}
+
+wall_watch = {
+	rank = {
+		1 = BORDERWATCH
+		2 = BORDERGUARD
+		3 = BORDERFORCE
+	}
+
+	ruler_male = {
+		1 = LORD_COMMANDER
+		2 = SUPREME_LORD_COMMANDER
+		3 = LORD_PROTECTOR
+	}
+
+	ruler_female = {
+		1 = LORD_COMMANDER
+		2 = SUPREME_LORD_COMMANDER
+		3 = LORD_PROTECTOR
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		has_reform = monastic_order_reform
+		tag = LA4
+	}
+}
+
+hre_county = {
+	rank = {
+		1 = COUNTY
+		2 = GRAND_DUCHY
+		3 = KINGDOM
+	}
+
+	ruler_male = {
+		1 = COUNT
+		2 = GRAND_DUKE
+		3 = KING
+	}
+
+	ruler_female = {
+		1 = COUNTESS
+		2 = GRAND_DUCHESS
+		3 = QUEEN
+	}
+
+	consort_male  = {
+		1 = PRINCE_CONSORT
+		2 = PRINCE_CONSORT
+		3 = PRINCE_CONSORT
+	}
+
+	consort_female = {
+		1 = COUNTESS
+		2 = QUEEN_CONSORT
+		3 = QUEEN_CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	government_reform = monarchy_mechanic
+
+	trigger = {
+		has_reform = monarchy_mechanic
+		is_part_of_hre = yes
+		
+	}
+}
+
+old_empire_full_gov = {
+	rank = {
+		1 = HECONTARCHONA
+		2 = GRAND_IMPERIAL_WIZARDY
+		3 = POTALIAN_EMPIRE
+	}
+	ruler_female = {
+		1 = HECONTARCHON
+		2 = GREAT_WITCH
+		3 = POTALIAN_EMPRESS
+	}
+	ruler_male = {
+		1 = HECONTARCHON
+		2 = GREAT_WITCH
+		3 = POTALIAN_EMPEROR
+	}	
+	
+
+	
+	
+	trigger = {
+		has_reform = old_empire_full
+	}
+}
+
+imperial_buero_reform_name = {
+	rank = {
+		3 = SUPREME_BUEROCRACE
+	}
+	ruler_female = {
+		3 = SUPREME_BUERO
+	}
+	ruler_male = {
+
+		3 = SUPREME_BUERO
+	}	
+	
+
+	
+	
+	trigger = {
+		has_reform = imperial_buero_reform
+	}
+}

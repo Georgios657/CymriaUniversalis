@@ -1,0 +1,9 @@
+culture = pullanian
+religion = telcontarian
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = wool
+base_manpower = 2
+capital = "Anron"
+is_city = no

@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = chinese
+primary_culture = lohnia
+religion = phoenix_faith
+capital = 1202	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Lo"
+		name = "Ho"
+		birth_date = 1395.9.21
+		dip = 2
+		adm = 2
+		mil = 2
+
+	}
+
+}

@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = elfdom_reform
+government_rank = 2
+technology_group = elven
+primary_culture = ice_elf
+religion = morriganism
+capital = 3310# Bayreuth
+1443.7.3 = {
+	monarch = {
+		name = "Oighir"
+		dynasty = "Ap Morriga"
+		birth_date = 1311.9.21
+		dip = 2
+		adm = 2
+		mil = 6
+female = yes
+	}
+	
+
+
+}
+

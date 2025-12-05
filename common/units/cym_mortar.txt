@@ -1,0 +1,20 @@
+
+type = artillery
+
+
+trigger = {
+	OR = {
+	
+   technology_group = eastern
+   technology_group = skoger
+   technology_group = elven
+	}
+}
+maneuver = 2
+
+offensive_fire = 4
+defensive_fire = 3
+offensive_shock = 1
+defensive_shock = 2
+offensive_morale = 4
+defensive_morale = 3

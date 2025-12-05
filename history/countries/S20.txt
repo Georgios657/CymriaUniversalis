@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = nomad_group
+primary_culture = menekian
+religion = amatism_faith
+capital = 506
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1436.1.1 = {
+	monarch = {
+		name = "Teotila"
+		dynasty = "Drachee"
+		birth_date = 1414.9.21
+		dip = 3
+		adm = 4
+		mil = 2
+	}
+
+}
+

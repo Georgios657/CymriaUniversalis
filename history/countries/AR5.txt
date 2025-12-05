@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 2
+technology_group = azur_tech
+primary_culture = pasatan
+religion = nyamism
+capital = 1984	# Bayreuth
+
+1444.11.11 = {
+	monarch = {
+		name = "Tribe Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

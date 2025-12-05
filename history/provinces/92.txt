@@ -1,0 +1,14 @@
+add_core = I10
+owner = I10
+controller = I10
+culture = bakavian
+religion = old_imperial_faith
+hre = no
+base_tax = 7
+base_production = 7
+trade_goods = paper
+base_manpower = 4
+capital = "Tatsachen"
+is_city = yes
+discovered_by = western
+fort_15th = yes

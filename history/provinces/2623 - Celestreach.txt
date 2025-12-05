@@ -1,0 +1,12 @@
+add_core = MV1
+owner = MV1
+controller = MV1
+hre = no
+base_tax = 7
+base_production = 6
+trade_goods = fish
+base_manpower = 6
+capital = "Celestreach"
+is_city = yes
+culture = marier
+religion = imperial_cult

@@ -1,0 +1,12 @@
+add_core = PG3
+owner = PG3
+controller = PG3
+culture = ky_peregmar
+religion = pygmer_ancestors
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = gold
+base_manpower = 2
+capital = "Lan-Peg"
+is_city = yes

@@ -1,0 +1,13 @@
+add_core = U00
+owner = U00
+controller = U00
+culture = tritoni
+religion = undead_imperial_faith
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = wine
+base_manpower = 5
+capital = "Catellia"
+is_city = yes
+discovered_by = muslim

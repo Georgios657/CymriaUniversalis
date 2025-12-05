@@ -1,0 +1,10 @@
+
+culture = patala_naga
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Inucia"
+is_city = no

@@ -1,0 +1,13 @@
+add_core = U05
+owner = U05
+controller = U05
+culture = politi
+religion = undead_imperial_faith
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = gold
+base_manpower = 4
+capital = "Selga"
+is_city = yes
+discovered_by = muslim

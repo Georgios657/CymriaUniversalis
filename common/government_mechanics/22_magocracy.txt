@@ -1,0 +1,224 @@
+	magic_spell_mechanic	= {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 8
+	available = {
+
+	}
+	
+	powers = {
+		magic_adm_power = {
+			max = 150
+			monarch_power = ADM	
+			reset_on_new_ruler = yes
+		}
+		magic_dip_power = {
+			max = 150
+			monarch_power = DIP
+			reset_on_new_ruler = yes
+		}
+		magic_mil_power = {
+			max = 150
+			monarch_power = MIL
+			reset_on_new_ruler = yes
+		}
+		
+	}
+
+	interactions = {
+		magic_adm_ability = {
+			gui = russian_mechanics_interaction_gui
+			icon = GFX_magic_adm
+			cost_type = magic_adm_power
+			cost = 100
+			trigger = {
+			}
+			effect = {
+				if = {
+					limit = { has_ruler_flag = necromancy }				
+			
+									tooltip = {
+						custom_tooltip = necro_adm
+					}
+					necro_adm_ability = yes
+				}			
+
+				if = {
+					limit = { has_ruler_flag = elemental }
+					tooltip = {
+			custom_tooltip = element_adm
+					}
+					
+					ele_adm_ability = yes
+					
+				}	
+				
+				if = {
+					limit = { has_ruler_flag = blood }
+					tooltip = {
+			custom_tooltip = blood_adm
+					}
+					
+					blood_adm_ability = yes
+					
+
+			
+
+	
+				}	
+				if = {
+					limit = { has_ruler_flag = astral }
+					tooltip = {
+			custom_tooltip = astral_adm
+					}
+					
+					astral_adm_ability = yes
+					
+					
+			
+					
+				}
+				if = {
+					limit = { has_ruler_flag = nature }
+					tooltip = {
+					custom_tooltip = nature_adm
+					}
+					
+					nature_adm_ability = yes
+					
+
+				}					
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+			}
+		}
+		
+		magic_dip_ability = {
+			gui = russian_mechanics_interaction_gui
+			icon = GFX_magic_dip
+			cost_type = magic_dip_power
+			cost = 100
+			trigger = {
+			}
+			effect = {
+				if = {
+					limit = { has_ruler_flag = necromancy }		
+					tooltip = {
+					custom_tooltip = necro_dip
+					}
+
+					necro_dip_ability = yes
+
+
+				}				
+					
+					
+
+				if = {
+					limit = { has_ruler_flag = elemental }
+					tooltip = {
+			custom_tooltip = element_dip
+					}
+				ele_dip_ability = yes				
+					
+				}	
+				if = {
+					limit = { has_ruler_flag = blood }
+					tooltip = {
+						custom_tooltip = blood_dip
+					}
+					
+					blood_dip_ability = yes
+				}	
+				if = {
+					limit = { has_ruler_flag = astral }
+					tooltip = {
+						custom_tooltip = astra_dip
+					}
+					
+					astral_dip_ability = yes
+									
+					
+				}
+				
+				if = {
+					limit = { has_ruler_flag = nature }
+					tooltip = {
+						custom_tooltip = nature_dip
+					}
+					nature_dip_ability = yes					
+				}					
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+			}
+		}	
+
+		magic_mil_ability = {
+			gui = russian_mechanics_interaction_gui
+			icon = GFX_magic_mil
+			cost_type = magic_mil_power
+			cost = 100
+			trigger = {
+			}
+			effect = {
+				if = {
+					limit = { has_ruler_flag = necromancy }	
+					tooltip = {
+						custom_tooltip = necro_mil
+					}
+										
+					
+                neco_mil_ability = yes				
+				}				
+					
+					
+
+				if = {
+					limit = { has_ruler_flag = elemental }
+					tooltip = {
+											custom_tooltip = element_mil
+					}
+					
+					
+					 ele_mil_ability = yes	
+	
+					
+				}	
+				if = {
+					limit = { has_ruler_flag = blood }
+					tooltip = {
+											custom_tooltip = blood_mil
+					}
+				  blood_mil_ability = yes
+				}	
+				if = {
+					limit = { has_ruler_flag = astral }
+					tooltip = {
+											custom_tooltip = astra_mil
+					}
+					
+					astral_mil_ability = yes
+	
+					
+				}
+				if = {
+				
+					limit = { has_ruler_flag = nature }
+					tooltip = {
+								custom_tooltip = nature_mil
+					}
+						
+					nature_mil_ability = yes
+					
+				}					
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+			}
+		}		
+	}	
+}

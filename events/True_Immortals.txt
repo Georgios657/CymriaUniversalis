@@ -1,0 +1,46 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = true_immortal
+
+country_event = {
+	id = true_immortal.2
+	title = true_immortal.2.t
+	desc = true_immortal.2.d
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes	#this should be triggered by other events like adventurers destroying phylactery
+	
+	trigger = {
+		has_country_flag = friederich
+		is_lesser_in_union = no #Breaks PUs otherwise
+	}
+	
+	immediate = {
+
+	}
+	
+	# Set Ruler
+	option = {
+		name = true_immortal.2.a
+		ai_chance = {
+			factor = 50
+		}
+define_heir = {
+    male = yes
+    dynasty = ROOT
+    name = "Friederich"
+    monarch_name = "Friederich III"
+    claim = 100
+		adm = 2
+		dip = 2
+		mil = 3
+		age = 18
+}
+set_heir_flag = vamp
+	}
+	
+}

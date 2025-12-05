@@ -1,0 +1,2341 @@
+riefen_ideas = {
+	start = {
+	 	 discipline = 0.05
+		 	available_province_loot = 0.5
+	}
+	
+	bonus = {
+		 	 	num_accepted_cultures = 1
+	}
+	
+	trigger = {
+	tag  = HE8
+	}
+	
+	free = yes
+	
+	riefen_plan = {
+				raze_power_gain = 0.10
+				loot_amount = 0.5
+		  	}
+
+	metal_artist = {
+		 	 	production_efficiency = 0.1
+	}	
+	
+	riders_of_the_plain = {
+		 	cavalry_power = 0.2
+	}
+
+	listen_to_travelers = {
+		 	tolerance_heathen = 3
+			 	religious_unity = 0.25
+	}
+	
+	
+	honored_dead = {
+		 	global_unrest = -1
+			 	no_stability_loss_on_monarch_death = yes
+	}
+	
+	clan_woerks = {
+	  	 	global_monthly_devastation = -0.05
+	}
+	
+	kranian_ambition = {
+		 core_creation = -0.2
+	}
+}
+
+
+miqqel_ideas = {
+	start = {
+	 	 	trade_efficiency = 0.1
+			 	naval_forcelimit_modifier = 0.33	
+	}
+	
+	bonus = {
+		 	discipline = 0.05
+	}
+	
+	trigger = {
+	tag  = LE2
+	}
+	
+	free = yes
+	
+	far_trade_and_wide = {
+		trade_range_modifier = 0.5	
+		naval_attrition = -0.1			
+		  	}
+
+	man_of_high_sea = {
+		 	global_sailors_modifier = 0.33
+	}	
+	
+	recruiter_in_the_kingdom = {
+		manpower_recovery_speed = 0.10
+	}
+
+	establisch_free_trade = {
+		 	ship_trade_power_modifier = 0.25
+			global_trade_power = 0.1			
+	}
+	
+	
+	standarized_ship_building = {
+		 global_ship_cost = -0.1
+		  	global_ship_recruit_speed = -0.1
+	}
+	
+	strategic_floodings = {
+	  	defensiveness = 0.25
+	}
+	
+	establich_new_lands = {
+		 	development_cost = -0.1	
+	}
+}
+
+sveri_ideas = {
+	start = {
+	 	legitimacy = 1
+		global_autonomy = -0.05
+	}
+	
+	bonus = {
+		 	land_maintenance_modifier = -0.15
+	}
+	
+	trigger = {
+	tag  = TN6
+	}
+	
+	free = yes
+	
+	heirs_of_an_empire = {
+		core_creation = -0.15		
+		  	}
+
+	high_seith_bender = {
+		reform_progress_growth = 0.33		 
+	}	
+	
+	wisdom_regained = {
+		 	idea_cost = -0.1
+	}
+
+	troll_attack = {
+		shock_damage = 0.10 
+		land_morale = 0.05		
+	}
+	
+	
+	reclaiming_sveri = {
+		 	colonists = 1
+	}
+	
+	sverian_forti = {
+	  	defensiveness = 0.15
+	}
+	
+	nation_of_all_troll = {
+		advisor_cost = -0.15 	
+	}
+}
+
+jotun_ideas = {
+	start = {
+		  	land_forcelimit_modifier = 0.15
+			 	siege_ability = 0.10
+	}
+	
+	bonus = {
+		 	artillery_power = 0.10
+	}
+	
+	trigger = {
+	tag  = GI1
+	}
+	
+	free = yes
+	
+	the_iron_city = {
+		  	artillery_cost = -0.15
+	}
+
+	noble_heritages = {
+		 	army_tradition_decay = -0.01
+	}	
+	
+	the_lands_of_ice = {
+		 	land_attrition = -0.15
+	}
+
+	the_warriors_of_frost = {
+		 	land_morale = 0.10
+	}
+	
+	
+	giant_bards = {
+		prestige_from_land = 1
+		army_tradition_from_battle = 1
+	}
+	
+	jarlsdoms = {
+	  	global_manpower_modifier = 0.15
+	}
+	
+	iron_fist = {
+		 	shock_damage = 0.10
+	}
+}
+
+muspel_ideas = {
+	start = {
+		  	war_exhaustion = -0.10
+			fort_maintenance_modifier = -0.25
+	}
+	
+	bonus = {
+		 	discipline = 0.05
+	}
+	
+	trigger = {
+	tag  = GI2
+	}
+	
+	free = yes
+	
+	the_heat_city = {
+		  	global_tax_modifier = 0.2
+	}
+
+	bordergarder = {
+		 	land_maintenance_modifier = -0.10
+	}	
+	
+	troll_servants = {
+		 	production_efficiency = 0.1
+	}
+
+	fire_and_ice = {
+		 	idea_cost = -0.1
+	}
+	
+	
+	the_jarl_council = {
+		 	reform_progress_growth = 0.33
+	}
+	
+	the_deeper_mines = {
+	 infantry_cost = -0.1
+	}
+	
+	bridges_and_roads = {
+		 	movement_speed = 0.10
+	}
+}
+
+niefel_ideas = {
+	start = {
+		core_creation = -0.1
+		 	num_accepted_cultures = 1
+		
+	}
+	
+	bonus = {
+		 	free_policy = 1
+	}
+	
+	trigger = {
+	tag  = GI3
+	}
+	
+	free = yes
+	
+	secret_policying = {
+		 	global_unrest = -2
+	}
+
+	song_of_glacier_giants = {
+		 prestige = 0.5
+	}	
+	
+	fight_gynter = {
+		  	mil_tech_cost_modifier = -0.15
+	}
+
+	rimvaetti = {
+		 	spy_offence = 0.2
+			global_spy_defence = 0.2
+	}
+	
+	
+	leader_of_north = {
+		 	diplomatic_upkeep = 1
+	}
+	
+	the_winters_host = {
+	  	infantry_power = 0.10
+	}
+	
+	icewalls = {
+		  	defensiveness = 0.2
+	}
+}
+
+virjirta_ideas = {
+	start = {
+		 global_manpower_modifier = 0.15
+		 advisor_pool = 1
+	}
+	
+	bonus = {
+		 	state_maintenance_modifier = -0.5
+	}
+	
+	trigger = {
+	tag  = NC9
+	}
+	
+	free = yes
+	
+	increased_serfitude = {
+		 	production_efficiency = 0.15
+	}
+
+	expand_fishery = {
+		 	light_ship_cost = -0.15
+	}	
+	
+	grand_capiutal = {
+		 	build_cost = -0.1
+	}
+
+	found_foundory = {
+		 	artillery_power = 0.15
+	}
+	
+	
+	claim_the_west = {
+		 	native_assimilation = 1
+			native_uprising_chance = -0.5
+	}
+	
+	reconcile_houses = {
+	  	  	global_unrest = -1
+	}
+	
+	the_unifying_church = {
+		 	tolerance_own = 1
+	}
+}
+
+gloomwood_ideas = {
+	start = {
+		 	colonists = 1
+			hostile_attrition = 1
+	}
+	
+	bonus = {
+		  	years_of_nationalism = -5
+	}
+	
+	trigger = {
+	tag  = GW8
+	}
+	
+	free = yes
+	
+	tears_of_children = {
+		 	idea_cost = -0.1
+	}
+
+	the_rising_gloom = {
+		 	global_missionary_strength = 0.02
+	}	
+	
+	the_carrion_woods = {
+		land_maintenance_modifier = -0.15
+	}
+
+	last_of_the_old_ones = {
+		  	core_creation = -0.1
+	}
+	
+	
+	clear_the_woods = {
+		  	infantry_cost = -0.10
+	}
+	
+	bewitching_voices = {
+	  	 	improve_relation_modifier = 0.2
+	}
+	
+	soul_drinker = {
+		 	free_policy = 2
+	}
+}
+
+iceelf_ideas = {
+	start = {
+		 	legitimacy = 1
+			nobles_loyalty_modifier = 0.1
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+	tag  = GW9
+	}
+	
+	free = yes
+	
+	harsh_winds = {
+		 	land_attrition = -0.1
+	}
+
+	cold_lands_cold_steel = {
+	 	shock_damage = 0.15
+	}	
+	
+	stiff_uper_lipp = {
+	 	war_exhaustion = -0.05
+	}
+
+	lonely_posts = {
+		 	hostile_attrition = 1
+	}
+	
+	
+	northern_watch = {
+		fort_maintenance_modifier = -0.2
+	}
+	
+	song_of_oighir = {
+	 	infantry_power = 0.10
+	}
+	
+	marcher_lords = {
+	 	vassal_forcelimit_bonus = 1
+		 	vassal_income = 0.2
+	}
+}
+
+woodelfs_ideas = {
+	start = {
+		 monarch_diplomatic_power = 1
+		  infantry_power = 0.2
+	}
+	
+	bonus = {
+		   	global_unrest = -2	
+	}
+	
+	trigger = {
+	tag  = GW7
+	}
+	
+	free = yes
+	
+	singers_of_nature = {
+		 	 	production_efficiency = 0.1
+	}
+
+	magical_mining = {
+		 	global_trade_goods_size_modifier = 0.1 	
+	}	
+	
+	small_elfen_courts = {
+		 	yearly_corruption = -0.1
+	}
+
+	help_all = {
+		 	diplomatic_reputation = 2
+	}
+	
+	
+	the_table_of_ranks = {
+		   	legitimacy = 0.5
+	}
+	
+	defender_of_good = {
+	  	  	army_tradition_decay = -0.01
+	}
+	
+	the_pixyie_alliance = {
+		 reform_progress_growth = 0.5
+	}
+}
+
+marunji_ideas = {
+	start = {
+		 	missionaries = 1
+			 	manpower_recovery_speed = 0.15	
+	}
+	
+	bonus = {
+		 max_absolutism = 25
+	}
+	
+	trigger = {
+	tag  = WI2
+	}
+	
+	free = yes
+	
+	the_jungles = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1		
+	}
+
+	in_his_service = {
+	 	global_missionary_strength = 0.02
+	}	
+	
+	recruit_animal_spies = {
+		spy_offence = 0.25
+	}
+	
+	into_the_monsun = {
+		 	land_attrition = -0.10
+	}
+	
+	
+	grand_aspirations = {
+		 	core_creation = -0.1
+	}
+	
+	cruel_beyond_reasons = {
+	  	global_rebel_suppression_efficiency = 0.5
+		 	harsh_treatment_cost = -0.33
+	}
+
+	the_black_guard = {
+	 	 mercenary_discipline = 0.05
+	}
+ 	
+
+	
+
+}
+
+pullana_ideas = {
+	start = {
+		trade_range_modifier = 0.33
+		fort_maintenance_modifier = -0.15
+	}
+	
+	bonus = {
+		 	light_ship_power = 0.33
+	}
+	
+	trigger = {
+	tag  = LO2
+	}
+	
+	free = yes
+	
+	cape_toll = {
+		global_prov_trade_power_modifier = 0.1
+		mercantilism_cost = -0.2
+			
+	}
+	
+	the_seawars_fortress = {
+	 	 	defensiveness = 0.2
+			garrison_size = 0.2
+	}
+
+	the_szegeni_conection = {
+		merchants = 1
+	}
+	
+	
+	south_city = {
+		 	diplomatic_upkeep = 1
+	}
+	
+	grand_city_council = {
+	  	advisor_pool = 2
+	}
+	
+	the_guilds_of_searchers = {
+		dip_tech_cost_modifier = -0.2	
+	}
+	
+	the_pullanian_fleet = {
+		 	naval_morale = 0.15
+	}	
+}
+
+imperial_ideas = {
+	start = {
+		tolerance_own = 2
+		prestige_decay = -0.01
+	}
+	
+	bonus = {
+		yearly_harmony = 1
+	}
+	
+	trigger = {
+	tag  = EM1
+	}
+	
+	free = yes
+	
+	imperal_infrastructre = {
+		 	movement_speed = 0.10
+	}
+	
+	emperor_forever = {
+	 	prestige = 1
+	}
+
+	imperial_mandates = {
+		all_estate_loyalty_equilibrium = 0.1
+	}
+	
+	
+	the_imperial_army = {
+		global_supply_limit_modifier = 0.5
+	}
+	
+	imperal_buero = {
+	 	governing_capacity_modifier = 0.25
+	}
+	
+	imperial_households = {
+		 	diplomatic_upkeep = 1
+			diplomatic_annexation_cost = -0.2
+	}
+	
+	will_of_the_emperor = {
+		 	land_morale = 0.2
+	}	
+}
+
+
+abyssia_ideas = {
+	start = {
+		 	infantry_power = 0.2
+			production_efficiency = 0.1
+	}
+	
+	bonus = {
+	 land_forcelimit_modifier = 0.15
+	}
+	
+	trigger = {
+	tag  = QA6
+	}
+	free = yes
+	
+	the_glowing_fire = {
+	 	infantry_cost = -0.10
+	}
+	
+	fire_of_forge = {
+		discipline = 0.05
+	}
+
+	abyssian_mountainsforts = {
+		garrison_size = 0.33
+	}
+	
+	
+	strongest_metalls = {
+		shock_damage_received = -0.10
+	}
+	
+	trade_networker = {
+			merchants = 1
+	}
+	
+	tribal_mercnearies = {
+		 	diplomatic_upkeep = 1
+	}
+	
+	heat_and_steel = {
+		leader_land_shock = 1
+	}	
+}
+
+khossor_ideas = {
+	start = {
+	 	 	global_missionary_strength = 0.02
+			 mil_advisor_cost = -0.25
+	}
+	
+	bonus = {
+	 	global_manpower_modifier = 0.33
+	}
+	
+	trigger = {
+	tag  = AR1
+	}
+	free = yes
+	
+	the_dark_necromancers = {
+     	idea_cost = -0.1
+	}
+	
+	the_net_of_the_spider = {
+	 spy_offence = 0.2
+	 global_spy_defence = 0.2
+	}
+
+	silk_sails = {
+	leader_naval_manuever = 1
+	}
+	
+	
+	primate_of_wizardy = {
+		 	max_absolutism = 25
+			yearly_absolutism = 0.5
+	}
+	
+	spider_riders = {
+	 	 cavalry_power = 0.2
+	}
+	
+	cruel_but_just = {
+	 	  	global_unrest = -2
+	}
+	
+	the_bane_guard = {
+		  	discipline = 0.05
+	}	
+}
+
+arakeen_ideas = {
+	start = {
+	 	 trade_efficiency = 0.1
+		 naval_morale = 0.2
+	}
+	
+	bonus = {
+	 	  	light_ship_cost = -0.33
+	}
+	
+	trigger = {
+	tag  = AR0
+	}
+	free = yes
+	
+	the_great_trading_city = {
+     	 	trade_steering = 0.3
+	}
+	
+	love_of_tanith = {
+		tolerance_heathen = 3
+	}
+
+	the_arakeen_armada = {
+		 	galley_power = 0.2
+	}
+	
+	
+	mercenaries_of_everywhere = {
+		 	mercenary_cost = -0.2
+			mercenary_discipline = 0.025
+	}
+	
+	high_office_armada = {
+	 	 	navy_tradition = 1
+	}
+	
+	the_sister_cities = {
+	 	diplomatic_upkeep = 1
+	}
+	
+	new_arakeen = {
+		  	global_colonial_growth = 20
+	}	
+}
+
+thallasor_ideas = {
+	start = {
+	 	 	light_ship_power = 0.15
+			mercenary_discipline = 0.05
+	}
+	
+	bonus = {
+	 	 	idea_cost = -0.1
+	}
+	
+	trigger = {
+	tag  = TH0
+	}
+	free = yes
+	
+	organize_wood = {
+     	global_ship_cost = -0.1
+	}
+	
+	gather_the_colonies = {
+		  	culture_conversion_cost = -0.25
+	}
+
+	advanced_fortresses = {
+			defensiveness = 0.10
+			fort_maintenance_modifier = -0.10
+	}
+	
+	
+	call_upon_the_brothers = {
+		global_foreign_trade_power = 0.2
+	}
+	
+	the_ashurrian_connection = {
+	 trade_efficiency = 0.1
+	}
+	
+	naval_lineage = {
+	 	ship_durability = 0.1
+	}
+	
+	hill_warriors = {
+	 	infantry_power = 0.10
+	}	
+}
+
+cassa_ideas = {
+	start = {
+	 	 transport_power = 0.33
+		 merchants = 1
+	}
+	
+	bonus = {
+	 	 	fire_damage_received = -0.15
+	}
+	
+	trigger = {
+	tag  = CA0
+	}
+	free = yes
+	
+	the_warrant = {
+     	  	republican_tradition = 0.5
+			 	legitimacy = 1
+	}
+	
+	bringer_of_faith = {
+		 	global_missionary_strength = 0.02
+	}
+
+	navay_of_the_pious = {
+			allowed_marine_fraction = 0.2
+		 	sunk_ship_morale_hit_recieved = -0.25
+	}
+	
+	
+	religious_trading_guilds = {
+		missionary_maintenance_cost = -0.1
+		trade_range_modifier = 0.25
+	}
+	
+	break_them_down = {
+	  	years_of_nationalism = -5
+	}
+	
+	the_shining_light = {
+	 	tolerance_own = 2
+	}
+	
+	heirs_to_the_universe = {
+	 	governing_capacity_modifier = 0.2
+	}	
+}
+
+high_mino_ideas = {
+	start = {
+	 	technology_cost = -0.1
+		 	drill_decay_modifier = -0.5
+	}
+	
+	bonus = {
+		 drill_gain_modifier = 0.5
+	}
+	
+	trigger = {
+	tag  = MI7
+	}
+	free = yes
+	
+	the_shores = {
+    	 	global_trade_goods_size_modifier = 0.2
+	}
+	
+	builders_of_the_labyrinth = {
+	 	  	idea_cost = -0.1
+	}
+
+	make_ammends = {
+	global_manpower_modifier = 0.33
+	}
+	
+	
+	pickled_fish = {
+		production_efficiency = 0.1
+	}
+	
+	the_great_library_of_mino = {
+	 	 	global_institution_spread = 0.33
+			embracement_cost = -0.15
+	}
+	
+	the_royal_armanent = {
+	 	  	artillery_power = 0.2
+	}
+	
+	the_post_service = {
+		 	global_autonomy = -0.05
+	}	
+}
+
+
+assay_central_ideas = {
+	start = {
+	 	land_forcelimit_modifier = 0.25
+		unjustified_demands = -0.2
+	}
+	
+	bonus = {
+		 	discipline = 0.05
+	}
+	
+	trigger = {
+	tag  = TW0
+	}
+	free = yes
+	
+	the_first_amry = {
+    	 infantry_cost = -0.1
+	}
+	
+	absolute_domination = {
+	 	 	years_of_nationalism = -5
+	}
+
+	all_must_serve = {
+	global_manpower_modifier = 0.33
+	}
+	
+	
+	feed_the_army = {
+		production_efficiency = 0.1
+	}
+	
+	the_comming_empire = {
+	 	  	siege_ability = 0.2
+	}
+	
+	the_red_riders = {
+	 	 	cavalry_cost = -0.15
+	}
+	
+	second_assayian_empire = {
+		administrative_efficiency = 0.05
+	}	
+}
+
+asshur_ideas = {
+	start = {
+	 	 	army_tradition = 0.5
+			 diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		 	shock_damage = 0.15
+	}
+	
+	trigger = {
+	tag  = TR9
+	}
+	free = yes
+	
+	
+	king_of_the_universe = {
+    	legitimacy = 1
+		meritocracy = 1
+	}
+	
+	tribute_from_all_over = {
+	 	 	vassal_income = 0.3
+	}
+
+	universal_soldier = {
+	  	 discipline = 0.05
+	}
+	
+	
+	secure_the_coast = {
+		 naval_morale = 0.1
+	}
+	
+	the_wisdom_of_ages = {
+	  idea_cost = -0.1
+	}
+	
+	the_three_armies = {
+	   	reinforce_speed = 0.33
+	}
+	
+	build_star_towers = {
+	build_cost = -0.1
+	}	
+}
+
+
+patala_ideas = {
+start = {
+	 	missionaries = 1
+		global_autonomy = -0.05
+	}
+	bonus = {
+		 	discipline = 0.05
+	}
+	trigger = {
+			tag = NA1
+	}
+	free = yes
+	
+	criminal_procedure = {
+		 	global_unrest = -2
+	}
+	
+	civil_procedure = {
+	 	 	global_tax_modifier = 0.1
+	}
+	
+	administrative_procedure = {
+	 	 	build_cost = -0.1
+	}
+	
+	constitional_procedure = {
+		 	 	devotion = 0.5
+	}
+	
+	labour_procedure = {
+	 	 	development_cost = -0.1
+	}
+	
+	familty_procedure = {
+	 	 global_manpower_modifier = 0.2
+	}
+	
+	bankruptcy_procedure	= {
+		 interest = -0.25
+	}
+}
+
+
+dragon_ideas = {
+start = {
+	 	tolerance_heretic = 3
+		leader_land_shock = 1
+	}
+	bonus = {
+		 	tolerance_of_heretics_capacity = 2
+			 	relation_with_heretics = 20
+				reverse_relation_with_heretic_religion = 20
+	}
+	trigger = {
+			tag = HE2
+	}
+	free = yes
+	
+	fury_of_the_ice_throne = {
+		leader_siege = 1
+	}
+	
+	wisdom_of_the_fire_throne = {
+	 	 adm_tech_cost_modifier = -0.15
+	 	 dip_tech_cost_modifier = -0.05
+	}
+	
+	the_mountain_carawans = {
+	 	caravan_power = 0.2
+	}
+	
+	dragon_born_soldiers = {
+		 	discipline = 0.05
+	}
+	
+	burner_of_cities = {
+	 	artillery_level_modifier = 0.5
+	}
+	
+	eleavte_successful_humans = {
+	 	 	global_manpower_modifier = 0.25
+	}
+	
+	cultivate_the_gardens	= {
+		 	development_cost = -0.15
+	}
+}
+
+yutu_ideas = {
+start = {
+	 	 	army_tradition = 0.5
+			infantry_cost = -0.15
+	}
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	trigger = {
+			tag = VA0
+	}
+	free = yes
+	
+	first_marshall = {
+		  	max_general_shock = 1
+			max_general_siege = 1
+	}
+	
+	the_long_war = {
+	 	 war_exhaustion = -0.10
+	}
+	
+	bringer_of_death = {
+	 	morale_damage = 0.1
+	}
+	
+	endless_arrogance = {
+		 	 	horde_unity = 0.5
+	}
+	
+	bringer_of_doom = {
+		land_morale = 0.10
+	}
+	
+	the_last_war = {
+	 	land_forcelimit_modifier = 0.25
+	}
+	
+	first_of_all_varjorjen	= {
+		 vassal_forcelimit_bonus = 1
+		  	vassal_manpower_bonus = 0.5
+	}
+}
+
+akna_ideas = {
+start = {
+	 	diplomatic_reputation = 2
+		 defensiveness = 0.25
+	}
+	bonus = {
+		 	diplomatic_upkeep = 1
+	}
+	trigger = {
+			tag = VA2
+	}
+	free = yes
+	
+	the_most_beatiful = {
+		accept_vassalization_reasons = 10
+		relation_with_same_culture_group = 25
+		relation_with_accepted_culture = 25
+	}
+	
+	the_island_ellemsera = {
+		monthly_varjorjen_hunger = 0.05
+	 	global_own_trade_power = 0.25
+	}
+	
+	meet_humans = {
+	 	 	technology_cost = -0.1
+	}
+	
+	finance_our_rule = {
+		  	global_tax_modifier = 0.1
+	}
+	
+	become_civilized = {
+		 	reform_progress_growth = 0.25
+	}
+	
+	seek_new_opportunities = {
+	 	diplomats = 1
+	}
+	
+	a_new_future	= {
+		development_cost_in_primary_culture = -0.25
+	}
+}
+
+
+ogebin_ideas = {
+start = {
+	 	 	land_forcelimit_modifier = 0.3
+			caravan_power = 0.33
+	}
+	bonus = {
+			global_regiment_cost = -0.10
+	}
+	trigger = {
+			tag = ND6
+	}
+	free = yes
+	
+	the_secret_of_blacksteel = {
+		 	infantry_power = 0.2
+	}
+	
+	the_plebs = {
+	 	 	manpower_recovery_speed = 0.25
+	}
+	
+	traders_of_ogebin = {
+	 trade_efficiency = 0.15
+	}
+	
+	to_dominate_the_north = {
+		 	harsh_treatment_cost = -0.25
+			years_of_nationalism = -5
+	}
+	
+	fire_and_blood = {
+		 	land_attrition = -0.10
+	}
+	
+	a_thousand_mile = {
+		envoy_travel_time = -0.2
+		 	movement_speed = 0.10
+	}
+	
+	the_great_houses	= {
+		 	republican_tradition = 0.5
+			legitimacy = 1
+	}
+}
+
+
+zephyria_phoenix_ideas = {
+start = {
+	 	tolerance_own = 2
+		prestige_decay = -0.01
+	}
+	bonus = {
+		fire_damage = 0.15
+	}
+	trigger = {
+			tag = ZX0
+			religion = phoenix_faith
+	}
+	free = yes
+	
+	the_great_administration = {
+		 	governing_capacity_modifier = 0.1
+			global_autonomy = -0.05
+	}
+	
+	the_fertile_land = {
+	 	 	production_efficiency = 0.1
+			 global_tax_modifier = 0.1
+	}
+	
+	zephyrian_engeenering = {
+	 	  	siege_ability = 0.2
+	}
+	
+	rebuild_the_temples = {
+		build_cost = -0.1
+		great_project_upgrade_cost = -0.1
+	}
+	
+	the_great_teachings = {
+		technology_cost = -0.1
+	}
+	
+	the_heavenly_order = {
+		 	global_unrest = -2
+	}
+	
+	the_phoenix_court = {
+		  	diplomatic_reputation = 2
+	}
+}
+
+zephyria_twin_ideas = {
+start = {
+	 	global_missionary_strength = 0.03
+		 	shock_damage = 0.10
+	}
+	bonus = {
+		 	discipline = 0.05
+	}
+	trigger = {
+			tag = ZX0
+			religion = twin_faith
+	}
+	free = yes
+	
+	the_fire_aboslution = {
+	 	missionaries = 1
+	}
+	
+	prepare_for_the_last_battle = {
+	 	 	land_morale = 0.10
+	}
+	
+	reinforce_belief = {
+	 	tolerance_own = 2
+	}
+	
+	eternal_faith = {
+		war_exhaustion = -0.10
+	}
+	
+	the_duality = {
+		  	development_cost_modifier = -0.1
+	}
+	
+	reform_the_great_chambers = {
+	 	free_leader_pool = 1
+	}
+	
+	neither_darkness_nor_light = {
+		 	production_efficiency = 0.1
+	}
+}
+
+zephyria_tabur_ideas = {
+start = {
+	 	 	idea_cost = -0.1
+			advisor_pool = 1
+	}
+	bonus = {
+		 	global_trade_goods_size_modifier = 0.2
+	}
+	trigger = {
+			tag = ZX0
+			religion = tarbutism
+	}
+	free = yes
+	
+	the_hidden_teachers = {
+		same_religion_advisor_cost = -0.25
+	}
+	
+	promote_social_mobility = {
+	 	  	yearly_corruption = -0.1
+	}
+	
+	spread_the_teachings = {
+	 	  technology_cost = -0.1
+		  embracement_cost = -0.2
+	}
+	
+	the_hidden_orders = {
+	 	global_spy_defence = 0.33
+		spy_offence = 0.2
+	}
+	
+	hunt_for_knowledge = {
+		 	institution_spread_from_true_faith = 1
+	}
+	
+	restore_the_civilisation = {
+		  	stability_cost_modifier = -0.2
+	}
+	
+	week_school = {
+		global_heretic_missionary_strength = 0.03
+	}
+}
+
+sagen_ideas = {
+start = {
+		 leader_land_shock = 1
+		cavalry_cost = -0.15
+	}
+	bonus = {
+		leader_land_manuever = 1
+	}
+	trigger = {
+			tag = ZD5
+	}
+	free = yes
+	
+	the_crossing = {
+		 	movement_speed = 0.10
+	}
+	
+	renown_leaders = {
+	 	 	army_tradition = 1
+	}
+	
+	southern_migrants = {
+	 	 	global_tax_modifier = 0.1
+	}
+	
+	man_for_hire = {
+		  	land_maintenance_modifier = -0.10
+	}
+	
+	the_great_tent = {
+		legitimacy = 1
+	}
+	
+	embrace_the_sun = {
+		tolerance_own = 1
+	}
+	
+	sagenian_horses = {
+		 cavalry_power = 0.10
+		 cav_to_inf_ratio = 0.25
+	}
+}
+
+zephyrian_free_ideas = {
+	start = {
+		 	land_morale = 0.10
+			governing_capacity_modifier = 0.1
+	}
+	bonus = {
+		infantry_cost = -0.2
+	}
+	trigger = {
+			tag = ZB2
+	}
+	free = yes
+	
+	destroy_the_nobilty = {
+		 	recover_army_morale_speed = 0.15
+	}
+	
+	free_the_servs = {
+	 	manpower_recovery_speed = 0.15
+	}
+	
+	end_the_monuments = {
+	 	republican_tradition = 0.5
+	}
+	
+	the_only_right = {
+		  	land_maintenance_modifier = -0.10
+	}
+	
+	join_or_die = {
+		years_of_nationalism = -5
+	}
+	
+	a_land_of_the_truly_free = {
+		 	global_unrest = -2
+	}
+	
+	the_only_souverain_of_might = {
+		 	 	core_creation = -0.25
+	}
+}
+
+lovian_free_ideas = {
+	start = {
+		global_unrest = -2
+		development_cost_modifier = -0.1	
+	}
+	bonus = {
+			discipline = 0.05
+	}
+	trigger = {
+			tag = LV1
+	}
+	free = yes
+	
+	banish_the_bloodcults = {
+		 	stability_cost_modifier = -0.25
+	}
+	
+	a_free_army = {
+	 	global_manpower_modifier = 0.25
+	}
+	
+	reformed_telcontarism = {
+	 	tolerance_heretic = 3
+		tolerance_heathen = 3
+	}
+	
+	the_many_waters = {
+		global_sailors_modifier = 0.33
+	}
+	
+	learn_from_the_north = {
+		 	technology_cost = -0.1
+	}
+	
+	cedden_den = {
+		  	land_morale = 0.10
+	}
+	
+	the_cape_toll = {
+		 	global_own_trade_power = 0.25
+	}
+}
+
+lovian_lodge_ideas = {
+	start = {
+		monthly_magic_adm_power = 0.5
+		allow_free_estate_privilege_revocation = yes	
+	}
+	bonus = {
+		 	shock_damage = 0.2
+	}
+	trigger = {
+			tag = LV2
+	}
+	free = yes
+	
+	summon_telcontars_will = {
+	 	hostile_attrition = 1
+		tolerance_own = 1
+	}
+	
+	demons_everywhere = {
+	 	 	global_spy_defence = 0.25
+			reinforce_speed = 0.33
+	}
+	
+	hunt_the_virgins = {
+		global_monthly_devastation = -0.1
+		monthly_magic_mil_power = 0.25	
+	}
+	
+	the_blood_sea = {
+		own_coast_naval_combat_bonus = 1.0
+		capture_ship_chance = 0.33
+	}
+	
+	all_suport_the_master = {
+		 devotion = 1
+		 yearly_absolutism = 0.25
+	}
+	
+	bleed_the_peasants = {
+		global_tax_modifier = 0.1
+		production_efficiency = 0.1
+	}
+	
+	send_mages_into_battle = {
+			leader_land_shock = 1
+		  	max_general_shock = 1
+	}
+}
+
+ascaria_ideas = {
+	start = {
+	 	land_attrition = -0.10
+		fort_maintenance_modifier = -0.2
+	}
+	bonus = {
+	 	 	merchants = 1
+	}
+	trigger = {
+			tag = LA7
+	}
+	free = yes
+	
+	
+	land_of_sea_and_mud = {
+	  	 	hostile_attrition = 1
+			max_hostile_attrition = 1
+	}
+	
+	billamn = {
+		infantry_cost = -0.2
+	}
+	
+	damm_builders = {
+	 great_project_upgrade_cost = -0.25	 	
+	}
+	
+	ascarian_sailors = {
+ 	   	global_sailors_modifier = 0.5
+	}
+	
+	expand_ascaria_into_sea = {
+		development_cost_modifier = -0.15
+	}
+	
+	swamp_fortresses = {
+	 	 	defensiveness = 0.2
+	}
+	
+	set_out_the_sails = {
+ 	  	 naval_forcelimit_modifier = 0.33
+	}
+}
+
+talaria_ideas = {
+	start = {
+		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.15
+	}
+	bonus = {
+	 	 	trade_efficiency = 0.1
+	}
+	trigger = {
+			tag = LD9
+	}
+	free = yes
+	
+	
+	lands_of_elefants = {
+	  	 	cavalry_cost = -0.10
+	}
+	
+	old_empire = {
+	 	core_creation = -0.1
+	}
+	
+	cultivate_the_mountains = {
+	 	 	development_cost_modifier = -0.1
+	}
+	
+	defend_the_coasts = {
+ 	  	 	 	galley_power = 0.15
+	}
+	
+	unlimited_manpower = {
+		global_manpower_modifier = 0.33
+	}
+	
+	the_talarian_rocket = {
+	 	 	fire_damage = 0.10
+	}
+	
+	campaing_seasons = {
+ 	  	  global_supply_limit_modifier = 0.25
+	}
+}
+
+almodosazra_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		land_morale = 0.10	
+	}
+	bonus = {
+	 	army_tradition_decay = -0.01
+	}
+	trigger = {
+			tag = LA9
+	}
+	free = yes
+	
+	
+	heirs_of_the_sun = {
+	  	heir_chance = 0.5
+		prestige = 0.5
+	}
+	
+	queens_guard = {
+		 	cav_to_inf_ratio = 0.10
+ 	 	cavalry_power = 0.15
+	}
+	
+	the_holy_mission = {
+	 	tolerance_own = 3
+	}
+	
+	the_sunny_lands = {
+ 	  	 	global_tax_modifier = 0.15
+	}
+	
+	vistaris_tale = {
+		global_unrest = -2
+	}
+	
+	imperial_taxes = {
+	 	vassal_forcelimit_bonus = 1
+	    	vassal_income = 0.25
+	}
+	
+	the_harvest_moon = {
+ 	  	  	production_efficiency = 0.1
+	}
+}
+
+shadow_ideas = {
+	start = {
+		cavalry_power = 0.2
+		cavalry_cost = -0.15
+	}
+	bonus = {
+		  	discipline = 0.05
+	}
+	trigger = {
+			tag = SKS
+	}
+	free = yes
+	
+	
+	merceneries_of_the_cities = {
+	 global_tax_modifier = 0.1
+	}
+	
+	the_treacherous_swamps = {
+ 	 	hostile_attrition = 1
+	}
+	
+	adapt_new_ideas = {
+	 	mil_tech_cost_modifier = -0.1
+		 	idea_cost = -0.05
+	}
+	
+	the_beasts = {
+ 	  	land_attrition = -0.2
+	}
+	
+	superior_copper = {
+		land_maintenance_modifier = -0.10
+	}
+	
+	legendary_warriors = {
+	   army_tradition_decay = -0.01
+	}
+	
+	the_darkness = {
+ 	  	 	global_manpower_modifier = 0.2
+	}
+}
+
+bescil_ideas = {
+	start = {
+		defensiveness = 0.25
+		 build_cost = -0.1
+	}
+	bonus = {
+		 	infantry_power = 0.2
+	}
+	trigger = {
+			tag = FCG
+	}
+	free = yes
+	
+	
+	the_black_stone = {
+	 fort_maintenance_modifier = -0.2
+	}
+	
+	mother_yanga = {
+ 	 	production_efficiency = 0.1
+	}
+	
+	home_of_many_cults = {
+	 	missionary_maintenance_cost = -0.25
+		missionaries = 1
+	}
+	
+	the_kranian_trade = {
+ 	  	global_own_trade_power = 0.2
+	}
+	
+	arcane_wisdom = {
+		 	idea_cost = -0.15
+	}
+	
+	bescilian_nobility = {
+	   	diplomatic_upkeep = 2
+	}
+	
+	the_dragons_visitors = {
+ 	  	free_dip_policy = 1
+	}
+}
+
+xomxi_ideas = {
+	start = {
+		trade_steering = 0.2
+		embargo_efficiency = 0.5
+	}
+	bonus = {
+	 	global_prov_trade_power_modifier = 0.33
+	}
+	trigger = {
+			tag = FC9
+	}
+	free = yes
+	
+	
+	yangian_floodlands = {
+	development_cost_modifier  = -0.1
+	}
+	
+	center_of_culture = {
+ 	 same_culture_advisor_cost = -0.3
+	}
+	
+	caravaning_to_all = {
+	  	caravan_power = 0.25
+	}
+	
+	restless_wanderer = {
+ 	 trade_range_modifier = 1
+	 	  	envoy_travel_time = -0.2
+	}
+	
+	connection_to_viscari = {
+		trade_efficiency = 0.1
+		mercantilism_cost = -0.2
+	}
+	
+	connection_to_lovien = {
+		improve_relation_modifier = 0.2
+	}
+	
+	words_not_blood = {
+ 	  	diplomatic_reputation = 2
+	}
+}
+
+bestos_ideas = {
+	start = {
+		mercenary_cost = -0.2
+		allow_mercenaries_to_split = yes
+		 	production_efficiency = 0.1
+	
+	}
+	bonus = {
+		merc_leader_army_tradition = 0.5
+	}
+	trigger = {
+			tag = FC1
+	}
+	free = yes
+	
+	
+	the_long_wars = {
+	war_exhaustion_cost = -0.5
+	}
+	
+	the_friendship_of_nomads = {
+ 	 	 	caravan_power = 0.5
+	}
+	
+	smithes_of_bestos = {
+		infantry_cost = -0.10
+		artillery_cost = -0.10
+	}
+	
+	the_companies = {
+ 	 	mercenary_manpower = 0.25
+	}
+	
+	bestos_mines = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	riders_of_bestos = {
+	  	 	cavalry_cost = -0.15
+	}
+	
+	asbestos = {
+ 	 	 	build_cost = -0.1
+	}
+}
+
+viscari_ideas = {
+	start = {
+		 	 	merchants = 1
+				global_foreign_trade_power = 0.1
+	}
+	bonus = {
+ 	mercenary_discipline = 0.05
+	}
+	trigger = {
+			tag = FC0
+	}
+	free = yes
+	
+	
+	the_old_city = {
+		 	prestige = 1
+	}
+	
+	blessing_of_the_sun_vis = {
+ 	 	tolerance_own = 2
+	}
+	
+	dock_of_viscari = {
+ 	 	global_sailors_modifier = 0.25
+	}
+	
+	man_of_coin = {
+ 	merc_maintenance_modifier = -0.15
+	}
+	
+	visataris_home = {
+	 	diplomatic_reputation = 1
+	}
+	
+	viscarian_trading_company = {
+	  	trade_range_modifier = 0.5
+		caravan_power = 0.25
+	}
+	
+	the_great_council = {
+ 	 	reform_progress_growth = 0.5
+	}
+}
+
+cymria_ideas = {
+	start = {
+		 	 	advisor_cost = -0.1
+				diplomatic_reputation = 2
+	}
+	bonus = {
+ 	discipline = 0.05
+	}
+	trigger = {
+			tag = CY2
+	}
+	free = yes
+	
+	
+	founded_by_the_lady = {
+		land_morale = 0.10
+	}
+	
+	eternal_guidance = {
+ 	idea_cost = -0.1
+	embracement_cost = -0.25
+	}
+	
+	the_cymrian_valley = {
+ 	global_tax_modifier = 0.15
+	}
+	
+	rivers_gift = {
+ 	global_own_trade_power = 0.2
+	}
+	
+	new_cymria = {
+		build_cost = -0.2
+	}
+	
+	farwide_connections = {
+	 	advisor_pool = 1
+ 	prestige = 0.5
+	}
+	
+	the_wise_lady = {
+ 	global_unrest = -2
+	}
+}
+
+ys_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.25
+		heavy_ship_cost = -0.1		
+	}
+	bonus = {
+		leader_naval_manuever = 1
+	}
+	trigger = {
+			tag = EL1
+	}
+	free = yes
+	
+	
+	knights_of_morvach = {
+		 	cavalry_power = 0.33
+	}
+	
+	the_water_elfs = {
+	  	sailor_maintenance_modifer = -0.25
+	}
+	
+	the_splendid_city = {
+	 	prestige = 0.5
+	}
+	
+	reach_out_to_humans = {
+		diplomatic_reputation = 2
+	}
+	
+	the_blessed_isles = {
+		development_cost_in_primary_culture = -0.2
+	}
+	
+	the_elven_fleet = {
+	  naval_morale = 0.2
+	}
+	
+	far_reaching_traders = {
+		merchants = 1
+		trade_range_modifier = 0.25
+	}
+}
+
+aosi_ideas = {
+	start = {
+		 	defensiveness = 0.3
+			max_general_shock = 1
+	}
+	bonus = {
+		max_general_maneuver = 1
+	}
+	trigger = {
+			tag = EL0
+	}
+	free = yes
+	
+	
+	kingdom_of_the_mountain = {
+		 	production_efficiency = 0.1
+	}
+	
+	breathren_from_below = {
+	 	 	manpower_recovery_speed = 0.10
+	}
+	
+	eternal_beatuy = {
+	diplomatic_reputation = 1
+	}
+	
+	sidhe_and_priosas = {
+		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.15
+	}
+	
+	servant_of_morrigan = {
+		 	tolerance_own = 2
+	}
+	
+	glamour = {
+	 	 	spy_offence = 0.25
+			global_spy_defence = 0.25
+	}
+	
+	land_of_ever_young = {
+		diplomatic_upkeep = 1
+	}
+}
+
+colone_ideas = {
+	start = {
+		 infantry_cost = -0.2
+		 land_forcelimit_modifier = 0.2
+			
+	}
+	bonus = {
+		shock_damage = 0.10
+	}
+	trigger = {
+			tag = CY0
+	}
+	free = yes
+	
+	
+	the_great_city = {
+		 	 	build_cost = -0.1
+	}
+	
+	fertile_plain = {
+	 	 	development_cost_in_primary_culture = -0.2
+	}
+	
+	mountain_passes = {
+	caravan_power = 0.25
+	}
+	
+	the_high_king = {
+		prestige_decay = -0.01
+	}
+	
+	the_hill_tribes = {
+	 	global_manpower_modifier = 0.25
+	}
+	
+	all_the_valley = {
+	core_creation = -0.15
+	}
+	
+	gate_to_the_steppes = {
+	trade_efficiency = 0.1
+	mercantilism_cost = -0.25
+	}
+}
+
+politia_ideas = {
+	start = {
+		 	discipline = 0.05
+			land_morale = 0.2
+	}
+	bonus = {
+		 	army_tradition = 1
+	}
+	trigger = {
+			tag = U08
+	}
+	free = yes
+	
+	
+	capital_of_splendour = {
+		prestige_decay = -0.02
+	}
+	great_archives = {
+	 	monthly_reform_progress = 0.5
+	}
+	unending_riches = {
+	global_tax_modifier = 0.2
+	}
+	the_great_legion = {
+		 land_forcelimit_modifier = 0.33
+	}
+	the_imperal_creed = {
+		 	tolerance_own = 2
+	}
+	agama = {
+		 	cavalry_power = 0.2
+	}
+	imperial_will = {
+	 	core_creation = -0.2
+		 max_absolutism = 20
+	}
+}
+
+negro_ideas = {
+	start = {
+		defensiveness = 0.2
+		global_garrison_growth = 0.5
+	}
+	bonus = {
+		yearly_corruption = -0.2
+	}
+	trigger = {
+			tag = U07
+	}
+	free = yes
+	
+	
+	tower_of_wisdom = {
+		technology_cost = -0.1
+	}
+	the_gate_to_west = {
+	  	global_trade_power = 0.2
+	}
+	magical_abundance = {
+		monthly_magic_adm_power = 0.1
+		monthly_magic_dip_power = 0.1
+		monthly_magic_mil_power = 0.1
+	}
+	black_stone = {
+	garrison_size = 0.33
+	}
+	the_alchemists = {
+		 	production_efficiency = 0.15
+	}
+	the_high_magisters = {
+		 	idea_cost = -0.15
+	}
+	soul_of_god = {
+	 	possible_policy = 1
+	}
+}
+
+norder_ideas = {
+	start = {
+		global_sailors_modifier = 0.25
+		leader_land_shock = 1
+	}
+	bonus = {
+		  	heavy_ship_power = 0.2
+	}
+	trigger = {
+			tag = I11
+	}
+	free = yes
+	
+	
+	old_country = {
+		 	global_unrest = -2
+	}
+	call_of_the_north = {
+		naval_maintenance_modifier = -0.25
+	}
+	fischers_and_whaling = {
+	 	production_efficiency = 0.1
+		 	global_tax_modifier = 0.1
+	}
+	the_winterland = {
+		land_attrition = -0.10
+	}
+	cold_steel_hot_hearts = {
+		land_morale = 0.2
+	}
+	the_limitless_sea = {
+		naval_forcelimit_modifier = 0.5
+	}
+	norder_landvolk = {
+	infantry_cost = -0.2
+	}
+}
+
+schworingen_ideas = {
+	start = {
+		ae_impact = -0.2
+		land_maintenance_modifier = -0.10
+	}
+	bonus = {
+		 	siege_ability = 0.15
+	}
+	trigger = {
+			tag = I00
+	}
+	free = yes
+	
+	
+	a_common_sold = {
+		discipline = 0.05
+	}
+	pacification_of_adalbert = {
+		yearly_corruption = -0.1
+	}
+	cut_down_nobles = {
+	 	max_absolutism = 20
+		yearly_absolutism = 0.5
+	}
+	shrapnell_artillery = {
+		 artillery_fire = 1
+	}
+	black_steel = {
+		land_morale = 0.10
+	}
+	wheels_and_gears = {
+		production_efficiency = 0.1
+	}
+	to_rule_the_empire = {
+		 	province_warscore_cost = -0.2
+	}
+}
+
+deutscherlander_ideas = {
+	start = {
+	possible_condottieri = 1
+	global_manpower_modifier = 0.33
+	}
+	bonus = {
+		 	discipline = 0.05
+	}
+	trigger = {
+			tag = I04
+	}
+	free = yes
+	
+	oldest_legacy = {
+	legitimacy = 1
+	}
+	
+	a_poor_land = {
+ 	manpower_recovery_speed = 0.2
+	}
+	
+	the_great_woods = {
+		production_efficiency = 0.1
+	}
+	
+	hard_soldiers = {
+ 	land_attrition = -0.2
+	}
+	
+	the_great_river = {
+		global_trade_power = 0.1
+	}
+	
+	the_death_pass = {
+	 	hostile_attrition = 1
+	}	
+	
+	the_most_famous_mercs = {
+	 	land_morale = 0.10
+		shock_damage = 0.10
+	}
+}
+
+yach_ideas = {
+	start = {
+	 	diplomatic_reputation = 2
+		improve_relation_modifier = 0.2
+	}
+	bonus = {
+		 	free_adm_policy = 1
+	}
+	trigger = {
+			tag = I17
+	}
+	free = yes
+	
+	the_empire_cpaital = {
+	 	diplomatic_annexation_cost = -0.1
+		 max_absolutism = 10
+	}
+	
+	a_dragons_tale = {
+ 	 	war_exhaustion = -0.10
+	}
+	
+	the_greaT_ministerium = {
+		 	adm_advisor_cost = -0.3
+	}
+	
+	the_reichsgarde = {
+ 	 	cavalry_power = 0.25
+	}
+	
+	invite_all_princes = {
+		diplomatic_upkeep = 2
+	}
+	
+	rondartschier = {
+	 	 	shock_damage = 0.2
+			fire_damage_received = -0.1
+	}	
+	
+	organitation_perfected = {
+	 	 	governing_capacity_modifier = 0.2
+			 	governing_cost = -0.2
+	}
+}
+
+bakavia_ideas = {
+	start = {
+		 	development_cost = -0.1
+			production_efficiency = 0.1
+	}
+	bonus = {
+		 	embracement_cost = -0.2
+	}
+	trigger = {
+			tag = I10
+	}
+	free = yes
+	
+	
+	bakavian_wine = {
+		global_trade_goods_size = 0.1
+	}
+	star_of_south = {
+		 	prestige_decay = -0.01
+	}
+	lands_of_splendor = {
+	 	 	global_unrest = -2
+	}
+	guardians_of_the_west = {
+		 land_forcelimit_modifier = 0.15
+	}
+	land_of_never_winter = {
+		 	global_tax_modifier = 0.15
+	}
+	order_of_the_lion = {
+		army_tradition_decay = -0.01
+	}
+	palaces_jungfrauen = {
+		 	 	prestige = 1
+	}
+}

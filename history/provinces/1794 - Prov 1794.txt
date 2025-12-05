@@ -1,0 +1,12 @@
+add_core = TW3
+owner = TW3
+controller = TW3
+hre = no
+base_tax = 7
+base_production = 8
+trade_goods = copper
+base_manpower = 5
+capital = "Mari"
+is_city = yes
+culture = upper_sumar
+religion = ishtara

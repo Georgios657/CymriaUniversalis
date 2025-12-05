@@ -1,0 +1,10 @@
+culture = northern_jinn
+religion = all_puryfing_flame
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+capital = "Terath"
+is_city = no
+discovered_by = chinese
+add_permanent_province_modifier = { name = harsh_desert duration = -1 }

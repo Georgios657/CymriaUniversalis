@@ -1,0 +1,593 @@
+##BranchStart 0
+eco_ud = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = U08
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+eco_ud2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = U08
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_north = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			reclaim_the_waste
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ponea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			ponti_area = {
+			type = all				
+				country_or_non_sovereign_subject_holds = ROOT
+			}			
+		}
+		effect = {
+							green_valley_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	conquer_cymria = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_north
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 15
+				region = green_valley_region
+			}
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	search_cymria = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			conquer_cymria
+		}
+		position = 5
+		provinces_to_highlight = {
+			province_id = 289
+		}
+		trigger = {
+			owns = 289
+			289 = {
+			has_great_project = {
+				type = any
+				tier = 3
+			}
+			}
+		}
+		effect = {
+			add_mil_power = 300
+		}
+	}
+	##Mission End
+	##Mission Start
+	war_in_zepyhria = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_new_hope
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_phoenix_throne = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			war_in_zepyhria
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	eternal_youth_search = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_empire_strikes_back
+		}
+		position = 9
+		provinces_to_highlight = {
+			province_id = 63
+			province_id = 136
+			province_id = 289
+			province_id = 83
+		}
+		trigger = {
+			owns = 63
+			owns = 136
+			owns = 83
+			owns = 289
+		}
+		effect = {
+			change_government_reform_progress = 250
+		}
+	}
+	##Mission End
+	##Mission Start
+	tower_of_south = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			eternal_youth_search
+		}
+		position = 10
+		provinces_to_highlight = {
+			province_id = 83
+		}
+		trigger = {
+			owns = 83
+			83 = {
+			NOT = {unrest = 0}
+			NOT = {
+			nationalism = 0
+			}
+			}
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	pillars_of_earth = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			tower_of_south
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+eco_ud3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = U08
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_empire_rises = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+		
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			negro_area = {
+					NOT = {
+					 	owned_by = U08
+					}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core =  ROOT }
+    }
+}				
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	reclaim_the_waste = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_empire_rises
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			adm_tech = 8
+		}
+		effect = {
+			add_country_modifier = { 
+    name = reclaiming_the_wastes
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_east = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			reclaim_the_waste
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			punaica_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hilitana_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	empires_edge = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_east
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	heavens_border = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			empires_edge
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_new_hope = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+		AND = {
+			search_cymria	
+			heavens_border		
+			burn_ys			
+		}
+
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			adm_tech = 14
+		}
+		effect = {
+							osterland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}		
+		}
+	}
+	##Mission End
+	##Mission Start
+	enter_the_new_empire = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_new_hope
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 20
+				region = osterland_region
+			}
+		}
+		effect = {
+							westland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+										nordland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_empire_strikes_back = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			enter_the_new_empire
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			innovativeness = 50
+			adm_tech = 18
+			}
+		}
+		effect = {
+			change_government_reform_progress = 500
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+eco_ud4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = U08
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_south = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			reclaim_the_waste
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			great_flevia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}			
+		}
+		effect = {
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_blessed_isles = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_south
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	burn_ys = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_blessed_isles
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	almodo = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_new_hope
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	talaria_delete = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			almodo
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	bloodshed_and_misery = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_empire_strikes_back
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	soul_gate_solution = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			bloodshed_and_misery
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_gate_of_polita = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			soul_gate_solution
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+eco_ud5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = U08
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##
+	
+}
+##BranchEnd 4

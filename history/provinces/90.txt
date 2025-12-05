@@ -1,0 +1,13 @@
+add_core = I10
+owner = I10
+controller = I10
+culture = bakavian
+religion = old_imperial_faith
+hre = no
+base_tax = 5
+base_production = 7
+trade_goods = wine
+base_manpower = 3
+capital = "Bad Vacha"
+is_city = yes
+discovered_by = western

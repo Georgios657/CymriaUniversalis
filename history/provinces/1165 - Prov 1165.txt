@@ -1,0 +1,15 @@
+add_core = VA9
+owner = VA9
+controller = VA9
+# Anything typed here will be added to all selected province history files
+culture = atta_vataan
+religion = thorrinian
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = dyes
+base_manpower = 1
+capital = "Sammalrinne"
+is_city = yes
+discovered_by = north_american
+add_permanent_province_modifier = { name = very_arctic duration = -1 }

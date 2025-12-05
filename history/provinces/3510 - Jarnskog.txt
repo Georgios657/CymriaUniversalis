@@ -1,0 +1,12 @@
+add_core = TO2
+owner = TO2
+controller = TO2
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 1
+capital = "Jarnskog"
+is_city = yes
+culture = hill_trolls
+religion = fore_bearers

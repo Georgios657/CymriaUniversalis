@@ -1,0 +1,12 @@
+add_core = TI3
+owner = TI3
+controller = TI3
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = spices
+base_manpower = 4
+capital = "Talrin"
+is_city = yes
+culture = grand_leyak
+religion = tilidian_little_gods

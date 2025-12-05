@@ -1,0 +1,16 @@
+base_tax = 1
+base_production = 1
+trade_goods = tropical_wood
+base_manpower = 1
+capital = "Kampanea"
+is_city = yes
+discovered_by = ottoman
+
+religion = amatism_faith
+discovered_by = indian
+
+
+add_permanent_province_modifier = {
+	name = treacherous_swamp
+	duration = -1
+}

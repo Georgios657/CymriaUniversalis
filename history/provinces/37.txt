@@ -1,0 +1,13 @@
+add_core = I03
+owner = I03
+controller = I03
+culture = sollingian
+religion = old_imperial_faith
+hre = no
+base_tax = 2 
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Bachen"
+is_city = yes
+discovered_by = western

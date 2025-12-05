@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = azur_tech
+primary_culture = darian
+religion = mrogi_wa_damu
+capital = 2228	# Bayreuth
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Abacyaba"
+		name = "Baridamunka"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 2
+	}
+
+}

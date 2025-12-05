@@ -1,0 +1,1145 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = magicAction
+
+country_event = {
+	id = magicAction.1
+	title = magicAction.1.t
+	desc = {
+		desc = magicAction.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.1.a		
+				add_country_modifier = { 
+			name = mastery_of_elements
+			duration = 3650
+		}			
+		}
+	}
+	
+country_event = {
+	id = magicAction.2
+	title = magicAction.2.t
+	desc = {
+		desc = magicAction.2.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.2.a		
+	add_inflation = 4
+			add_years_of_income = 2		
+		}
+	}
+
+country_event = {
+	id = magicAction.3
+	title = magicAction.3.t
+	desc = {
+		desc = magicAction.3.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.3.a		
+	add_splendor = 100		
+		}
+	}
+
+country_event = {
+	id = magicAction.4
+	title = magicAction.4.t
+	desc = {
+		desc = magicAction.4.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.4.a					
+		}
+	}
+
+country_event = {
+	id = magicAction.5
+	title = magicAction.5.t
+	desc = {
+		desc = magicAction.5.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.5.a					
+		}
+	}
+
+country_event = {
+	id = magicAction.6
+	title = magicAction.6.t
+	desc = {
+		desc = magicAction.6.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.6.a		
+				add_country_modifier = { 
+			name = forsight_of_future
+			duration = 3650
+		}		
+		}
+	}
+
+country_event = {
+	id = magicAction.7
+	title = magicAction.7.t
+	desc = {
+		desc = magicAction.7.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.7.a		
+add_corruption = -2				
+		}
+	}
+
+country_event = {
+	id = magicAction.8
+	title = magicAction.8.t
+	desc = {
+		desc = magicAction.8.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.8.a		
+					change_estate_land_share = {
+					estate = all
+					share = -5
+				}		
+		}
+	}
+
+country_event = {
+	id = magicAction.9
+	title = magicAction.9.t
+	desc = {
+		desc = magicAction.9.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.9.a					
+		}
+	}
+
+country_event = {
+	id = magicAction.10
+	title = magicAction.10.t
+	desc = {
+		desc = magicAction.10.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.10.a		
+			 	random_owned_area = { 
+				limit = {
+				is_prosperous = no
+				}
+				add_prosperity = 100
+				}		
+		}
+	}
+
+country_event = {
+	id = magicAction.11
+	title = magicAction.11.t
+	desc = {
+		desc = magicAction.11.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.11.a	
+			
+			random_owned_province = {
+			add_base_tax = 1
+			}
+			
+						random_owned_province = {
+			add_base_tax = 1
+			}
+			
+						random_owned_province = {
+			add_base_tax = 1
+			}
+			
+						random_owned_province = {
+			add_base_tax = 1
+			}		
+		}
+	}	
+	
+	
+country_event = {
+	id = magicAction.12
+	title = magicAction.12.t
+	desc = {
+		desc = magicAction.12.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.12.a	
+						capital_scope = { 
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+					}		
+		}
+	}
+
+country_event = {
+	id = magicAction.13
+	title = magicAction.13.t
+	desc = {
+		desc = magicAction.13.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.13.a	
+				every_owned_province = { 
+					 	add_construction_progress = 0.5						
+					}
+		}
+	}
+
+country_event = {
+	id = magicAction.14
+	title = magicAction.14.t
+	desc = {
+		desc = magicAction.14.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.14.a	
+						 	random_owned_province = { 
+					add_base_production = 1
+					}
+					
+					 	random_owned_province = { 
+						add_base_production = 1
+						}
+		}
+	}
+
+country_event = {
+	id = magicAction.15
+	title = magicAction.15.t
+	desc = {
+		desc = magicAction.15.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.15.a	
+						add_country_modifier = { 
+			name = succubus
+			duration = 3650
+		}
+		}
+	}
+
+country_event = {
+	id = magicAction.16
+	title = magicAction.16.t
+	desc = {
+		desc = magicAction.16.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.16.a	
+		add_rebel_progress = {
+						value = -20
+					}	
+		}
+	}
+
+country_event = {
+	id = magicAction.17
+	title = magicAction.17.t
+	desc = {
+		desc = magicAction.17.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.17.a	
+	random_owned_province = {
+		add_base_tax = 1
+	}		
+		}
+	}
+
+country_event = {
+	id = magicAction.18
+	title = magicAction.18.t
+	desc = {
+		desc = magicAction.18.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.18.a	
+						add_country_modifier = { 
+			name = secret_of_the_ancestors
+			duration = 3650
+		}
+		}
+	}
+
+country_event = {
+	id = magicAction.19
+	title = magicAction.19.t
+	desc = {
+		desc = magicAction.19.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.19.a	
+		add_mercantilism = 3
+		}
+	}	
+	
+country_event = {
+	id = magicAction.20
+	title = magicAction.20.t
+	desc = {
+		desc = magicAction.20.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.20.a	
+		
+		}
+	}	
+
+country_event = {
+	id = magicAction.21
+	title = magicAction.21.t
+	desc = {
+		desc = magicAction.21.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.21.a	
+			random_owned_province = {
+		add_base_tax = 1	
+		add_base_production = 1	
+	}
+	
+		random_owned_province = {
+		add_base_tax = 1	
+		add_base_production = 1	
+	}
+		}
+	}	
+
+country_event = {
+	id = magicAction.22
+	title = magicAction.22.t
+	desc = {
+		desc = magicAction.22.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.22.a	
+						add_country_modifier = { 
+			name = trade_winds_elementals
+			duration = 3650
+		}
+		}
+	}	
+
+country_event = {
+	id = magicAction.23
+	title = magicAction.23.t
+	desc = {
+		desc = magicAction.23.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.23.a	
+			
+			 	 	random_owned_province = { 
+			limit = {
+				NOT = {
+				has_province_modifier = elementar_buff_prov
+				}
+			}
+			
+		add_province_modifier = { 
+			name = elementar_buff_prov
+			duration = -1
+		}			
+			}			
+		}
+	}	
+
+country_event = {
+	id = magicAction.24
+	title = magicAction.24.t
+	desc = {
+		desc = magicAction.24.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.24.a	
+			random_owned_province = {
+		add_base_production = 1
+	}
+	
+		random_owned_province = {
+		add_base_production = 1
+	}
+		}
+	}	
+
+country_event = {
+	id = magicAction.25
+	title = magicAction.25.t
+	desc = {
+		desc = magicAction.25.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.25.a	
+			add_country_modifier = { 
+			name = star_guidance
+			duration = 3650
+		}
+		}
+	}	
+
+country_event = {
+	id = magicAction.26
+	title = magicAction.26.t
+	desc = {
+		desc = magicAction.26.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.26.a	
+					every_country  = {
+				limit = { war_with = ROOT }
+				remove_fow = 12
+			}
+		}
+	}	
+
+country_event = {
+	id = magicAction.27
+	title = magicAction.27.t
+	desc = {
+		desc = magicAction.27.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.27.a	
+		add_mil_power = 50
+		}
+	}	
+
+country_event = {
+	id = magicAction.28
+	title = magicAction.28.t
+	desc = {
+		desc = magicAction.28.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.28.a	
+						add_country_modifier = { 
+			name = elementals_in_battle
+			duration = 3650
+		}
+		}
+	}	
+
+country_event = {
+	id = magicAction.29
+	title = magicAction.29.t
+	desc = {
+		desc = magicAction.29.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.29.a	
+				
+			 	 	random_owned_province = { 
+			limit = {
+			 	fort_level = 1
+				NOT = {
+				has_province_modifier = elemental_fort
+				}
+			}
+			
+		add_province_modifier = { 
+			name = elemental_fort
+			duration = -1
+		}			
+			}
+		}
+	}
+
+country_event = {
+	id = magicAction.30
+	title = magicAction.30.t
+	desc = {
+		desc = magicAction.30.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.30.a	
+	random_owned_province = {
+	 	add_base_manpower = 2
+	}	
+		}
+	}
+
+country_event = {
+	id = magicAction.31
+	title = magicAction.31.t
+	desc = {
+		desc = magicAction.31.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.31.a	
+		summon_banes = yes
+		}
+	}
+
+country_event = {
+	id = magicAction.32
+	title = magicAction.32.t
+	desc = {
+		desc = magicAction.32.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.32.a	
+		add_country_modifier = { 
+			name = power_up_banes
+			duration = 3650
+		}
+		}
+	}
+
+country_event = {
+	id = magicAction.33
+	title = magicAction.33.t
+	desc = {
+		desc = magicAction.33.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.33.a	
+			add_yearly_manpower = 1
+		}
+	}
+
+country_event = {
+	id = magicAction.34
+	title = magicAction.34.t
+	desc = {
+		desc = magicAction.34.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.34.a	
+
+		}
+	}
+
+country_event = {
+	id = magicAction.35
+	title = magicAction.35.t
+	desc = {
+		desc = magicAction.35.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.35.a	
+	 	define_general = {
+			fire = 3			
+			shock = 5
+			manuever = 2
+			siege = 2
+			trait = demon_lord_personality
+		}
+		}
+	}	
+	
+country_event = {
+	id = magicAction.36
+	title = magicAction.36.t
+	desc = {
+		desc = magicAction.36.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.36.a	
+		add_country_modifier = { 
+			name = power_up_cossacks
+			duration = 3650
+		}
+		}
+	}
+
+country_event = {
+	id = magicAction.37
+	title = magicAction.37.t
+	desc = {
+		desc = magicAction.37.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.37.a	
+	 create_general = { 
+	 tradition = 50 
+	 add_fire = 2
+	 add_shock = 2
+	 add_manuever = 2
+	 add_siege = 1 
+	 }
+		}
+	}
+
+country_event = {
+	id = magicAction.38
+	title = magicAction.38.t
+	desc = {
+		desc = magicAction.38.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.38.a	
+		add_country_modifier  = { 
+					name = relief
+					duration = 3650
+				}	
+		}
+	}
+
+country_event = {
+	id = magicAction.39
+	title = magicAction.39.t
+	desc = {
+		desc = magicAction.39.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = magicAction.39.a	
+
+		}
+	}	

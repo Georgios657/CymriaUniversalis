@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = leitis
+religion = phoenix_faith
+capital = 966	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Letiso"
+		name = "Achan"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 4
+		mil = 4
+
+	}
+
+}

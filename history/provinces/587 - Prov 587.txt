@@ -1,0 +1,13 @@
+add_core = LA1
+owner = LA1
+controller = LA1
+culture = riven
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Steen"
+is_city = yes
+discovered_by = ottoman

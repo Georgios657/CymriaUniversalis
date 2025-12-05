@@ -1,0 +1,12 @@
+add_core = TO5
+owner = TO5
+controller = TO5
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = ivory
+base_manpower = 1
+capital = "Norrstrand"
+is_city = yes
+culture = snow_trolls
+religion = fore_bearers

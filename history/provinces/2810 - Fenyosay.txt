@@ -1,0 +1,13 @@
+add_core = HY3
+owner = HY3
+controller = HY3
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = salt
+base_manpower = 3
+capital = "Fenyo"
+is_city = yes
+culture = kaigain_harpia
+religion = winged_one
+

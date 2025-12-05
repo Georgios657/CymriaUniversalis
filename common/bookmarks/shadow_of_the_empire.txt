@@ -1,0 +1,25 @@
+bookmark =
+{
+	name = "SHADOW_EMPIRE"
+	desc = "SHADOW_EMPIRE_DESC"
+	date = 1444.1.1
+	
+	country = EM1
+	country = GE2
+	country = WI2
+
+
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

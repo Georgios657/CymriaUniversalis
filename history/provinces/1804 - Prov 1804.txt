@@ -1,0 +1,12 @@
+add_core = TW9
+owner = TW9
+controller = TW9
+religion = ishtara
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wool
+base_manpower = 2
+capital = "Watna"
+is_city = yes
+culture = central_baylonian

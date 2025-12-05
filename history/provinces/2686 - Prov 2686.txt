@@ -1,0 +1,14 @@
+add_core = BR5
+owner = BR5
+controller = BR5
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = chinaware
+base_manpower = 5
+capital = "Nonoro"
+is_city = yes
+culture = nagytori
+religion = rozalia
+
+center_of_trade = 1

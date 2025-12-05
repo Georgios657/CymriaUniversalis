@@ -1,0 +1,12 @@
+add_core = EL1
+owner = EL1
+controller = EL1
+culture = sea_elv
+religion = morriganism
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Corno"
+is_city = yes

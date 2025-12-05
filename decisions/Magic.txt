@@ -1,0 +1,124 @@
+country_decisions = {
+	change_school = {
+		color = { 195 160 20 }
+		potential = {
+			has_ruler_flag = immortal		
+			ruler_has_personality = wizard		
+			has_magic_school = yes
+			 	government = magocracy
+		}
+		
+		allow = {
+		 	devotion = 75
+			
+			ai = no
+		
+		OR = {
+		had_country_flag = {
+			flag = changed_school
+			days = 9000
+		}		
+		NOT = {
+		has_country_flag = changed_school
+		}
+		
+		}
+		}
+		effect = {
+			set_country_flag = changed_school
+		clear_magic_school = yes
+		add_devotion = -50
+			
+	
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+}
+
+	become_necromancy_tower = {
+		color = { 120 160 20 }
+		potential = {
+			 	government = magocracy
+
+				NOT = {
+				OR = {
+				has_reform = necromancy_tower				
+				has_reform = twin_council				
+				has_reform = imperial_wizardy				
+				has_reform = wizardom_monte				
+				}
+
+				}
+		}
+		
+		allow = {
+						has_ruler_flag = necromancy
+				
+		 	devotion = 75
+			stability = 3
+			 	government_reform_progress = 100
+		}
+		effect = {
+		change_government_reform_progress = -100
+	add_devotion = -25
+	add_stability = -2
+			add_government_reform = necromancy_tower
+	
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		}
+
+	raise_sceleton_army = {
+		color = { 120 150 20 }
+		potential = {
+			has_reform = necromancy_tower
+			
+			NOT = {
+			has_country_modifier = undead_military
+			}
+			
+
+		}
+		
+		allow = {
+		 	devotion = 75
+			stability = 3
+			
+									has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_mil_power
+	value = 150
+}
+
+		}
+		effect = {
+								add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -150
+			}
+			
+		add_devotion = -50
+	 	add_army_tradition = -100
+		add_army_professionalism = -1
+	
+				add_country_modifier = { 
+				name = undead_military
+				duration = -1  
+			}
+			
+	
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		}
+		
+}

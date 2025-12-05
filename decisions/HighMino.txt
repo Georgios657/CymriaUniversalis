@@ -1,0 +1,183 @@
+country_decisions = {
+	refound_small_mino = {
+		major = yes
+		potential = {
+		culture_group  = minoan
+		NOT = { exists = MI0 }		
+		NOT = {
+		tag = MI7
+		}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1649
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = MI0 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 1649	# Mukha
+		}
+		effect = {
+			change_tag = MI0
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			minoria_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= MI0
+			}			
+
+			add_prestige = 5
+			set_capital = 1649		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	refound_mino = {
+		major = yes
+		potential = {
+		has_country_flag = reform_to_human
+		has_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = 75
+}
+
+		culture_group  = minoan
+		OR = {
+		NOT = { exists = MI7 }		
+		AND = {
+		tag = MI7
+		government = tribal
+		}
+		}
+
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1649
+				province_id = 1717
+				province_id = 1685
+				province_id = 1650
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+		OR = {
+		NOT = { exists = MI7 }		
+		AND = {
+		tag = MI7
+		government = tribal
+		}
+		}
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 1649	# Mukha
+			owns_core_province = 1717	# Zabid
+			owns_core_province = 1685	# Mukha
+			owns_core_province = 1650	# Zabid
+		}
+		effect = {
+					if = {
+				limit = {
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			change_tag = MI7
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+						 	change_government = monarchy
+			add_government_reform = autocracy_reform
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			minoria_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= MI7
+			}	
+			oben_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= MI7			
+			}
+			
+			east_ephete_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= MI7			
+			}
+			
+			nivria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= MI7			
+			}
+			
+			vidonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= MI7			
+			}
+
+			east_tavonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= MI7			
+			}
+
+			tavonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= MI7			
+			}
+			
+			add_prestige = 25
+			set_capital = 1649		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+}

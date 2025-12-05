@@ -1,0 +1,12 @@
+add_core = QA6
+owner = QA6
+controller = QA6
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+capital = "Cybo"
+is_city = yes
+culture = abyssian
+religion = asae_ya

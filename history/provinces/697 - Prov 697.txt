@@ -1,0 +1,13 @@
+add_core = LD7
+owner = LD7
+controller = LD7
+culture = gerossi
+religion = amatism_faith
+hre = yes
+base_tax = 1
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Gan"
+is_city = yes
+discovered_by = ottoman

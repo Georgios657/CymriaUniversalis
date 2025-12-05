@@ -1,0 +1,12 @@
+add_core = TH0
+owner = TH0
+controller = TH0
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Luminosia"
+is_city = yes
+culture = thallasian
+religion = ishtara

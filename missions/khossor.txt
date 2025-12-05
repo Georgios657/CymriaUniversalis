@@ -1,0 +1,1352 @@
+##BranchStart 0
+kho1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = AR1 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_power_of_blood = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler_flag = blood
+			has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = 50
+		}
+		}
+		effect = {
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = -50
+		}
+		change_adm = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	demonic_wisdom = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_power_of_blood
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler_flag = blood
+			has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_mil_power
+			value = 50
+		}
+		num_of_cossacks = 25
+		}
+		effect = {
+					add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_mil_power
+			value = -50
+		}
+		change_mil = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_elder_blood = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			demonic_wisdom
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					has_ruler_flag = blood
+			OR = {
+			any_owned_province = { 
+			culture_group = elvish
+			}
+			 	any_province = { 
+			culture_group = elvish
+			controlled_by = ROOT
+			 	devastation = 40
+				
+				}
+			}
+		}
+		effect = {
+			change_dip = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	demonic_vigor = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_elder_blood
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler_flag = blood
+			has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_dip_power
+			value = 50
+		}
+			has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = 50
+		}
+			has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_mil_power
+			value = 50
+		}		
+		}
+		effect = {
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_dip_power
+			value = -50
+		}
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_mil_power
+			value = -50
+		}
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = -50
+		}		
+		change_dip = 1
+		change_adm = 1
+		change_mil = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	blood_youth = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			demonic_vigor
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler_flag = blood
+			
+		}
+		effect = {
+		every_owned_province = { 
+		limit = {
+		NOT = {
+		culture = khossorian
+		}
+		}
+		add_province_modifier = { 
+    name = great_blood_hunts
+    duration = 3650  
+}
+		}
+		change_dip = 2
+		change_adm = 2
+		change_mil = 2		
+		}
+	}
+	##Mission End
+	##Mission Start
+	cross_the_straits = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			stabilize_great_khossor
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		akaria_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+							thallasor_area  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_weak_thalassor = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			cross_the_straits
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		thallasor_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+							rogue_region  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	dethrone_the_universe = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_weak_thalassor
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1749
+		}
+		effect = {
+		add_prestige = 25
+		set_government_rank = 3
+			1816 = {
+			add_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	plunder_wisdom_of_the_ziggus = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			dethrone_the_universe
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1816
+		}
+		effect = {
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = 50
+		}
+					add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_dip_power
+			value = 50
+		}
+					add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_mil_power
+			value = 50
+		}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+kho2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = AR1 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gather_the_army = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size_percentage = 1
+			num_of_generals = 2
+			mil_tech = 3
+		}
+		effect = {
+					southern_khossor_mountains_area  = {					
+			add_permanent_claim = ROOT
+		}	
+		
+							moon_hills_area  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	subdue_khossor = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			gather_the_army
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				southern_khossor_mountains_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+				moon_hills_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_army_tradition = 10
+			hasser_area  = {					
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_khossor = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			subdue_khossor
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		hasser_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		 	total_development = 115
+		}
+		effect = {
+			derveen_area  = {					
+				add_permanent_claim = ROOT
+			}	
+			
+			arakeen_area  = {					
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	arakeenian_demise = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_khossor
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		derveen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+				arakeen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			 	change_government_reform_progress = 50
+				add_years_of_income = 2
+				1973 = {
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -1
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	stabilize_great_khossor = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			arakeenian_demise
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 2
+			unrest = -2
+			NOT = {
+			num_of_revolts = 1
+			}
+			NOT = {
+			inflation = 5
+			}
+		}
+		effect = {
+				robin_region  = {					
+				add_claim = ROOT
+			}			
+							akaria_area  = {					
+				add_permanent_claim = ROOT
+			}		
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_isle_of_robin = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			stabilize_great_khossor
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		robin_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			cassa_area  = {					
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	cassa_will_die = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_isle_of_robin
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		cassa_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			marilia_region  = {					
+				add_claim = ROOT
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_savage_badlands = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			cassa_will_die
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		num_of_provinces_owned_or_owned_by_subjects_with = {
+			value = 20
+			region = marilia_region
+		}
+		}
+		effect = {
+			witch_region = {
+				discover_country = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_witch_queen = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_savage_badlands
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			total_development = 1000
+any_subject_country = {
+	has_reform = witchking
+	NOT = {
+	liberty_desire = 25
+	}
+ }			
+		}
+
+		}
+		effect = {
+		add_mil_power = 50
+		 	add_dip_power = 50
+			add_adm_power = 50
+			witch_region = {
+				add_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_slaving_trade = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trading_bonus = {
+	trade_goods = slaves
+	value = yes
+}
+		}
+		effect = {
+	add_mercantilism = 20
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+kho3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = AR1 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_hunt_for_wisdom = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		1962 = {
+			num_of_times_improved = 5		
+		}
+
+		}
+		effect = {
+			change_innovativeness = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_court_of_advisors = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_hunt_for_wisdom
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	
+
+custom_trigger_tooltip = {
+	tooltip = NEED_FULL_LVL_2_ADVISOR
+			employed_advisor = {
+	category = ADM 
+        skill = 2
+	}
+	employed_advisor = {
+		category = DIP 
+			skill = 2
+	}
+	employed_advisor = {
+		category = MIL
+			skill = 2
+	}	
+}
+		
+		
+		}
+		effect = {
+		add_splendor = 250
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_old_archives = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_court_of_advisors
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		years_of_income = 3
+			1962 = {
+			num_of_times_improved = 10			
+			
+			}
+		}
+		effect = {
+		add_years_of_income = -3
+			add_country_modifier = { 
+    name = the_great_archives
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	decipher_texts = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_old_archives
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		
+custom_trigger_tooltip = {
+	tooltip = NEED_FULL_LVL_3_ADVISOR
+			employed_advisor = {
+	category = ADM
+        skill = 3
+	}
+	employed_advisor = {
+		category = DIP 
+			skill = 3
+	}
+	employed_advisor = {
+		category = MIL
+			skill = 3
+	}	
+}
+
+		}
+		effect = {
+		change_innovativeness = 25			
+		}
+	}
+	##Mission End
+	##Mission Start
+	prepare_the_grand_ritual = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			decipher_texts
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			adm_power = 600
+			dip_power = 600
+			mil_power = 600
+		}
+		effect = {
+		 	add_adm_power = -1000
+			 	add_dip_power = -1000
+				 	add_mil_power = -1000
+			add_country_modifier = { 
+    name = preperations
+    duration = 3650  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_dream_of_immortality = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			prepare_the_grand_ritual
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			has_country_modifier = preperations
+			}
+		}
+		effect = {
+			country_event = { 
+				id = khossor.10
+				days = 1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_comming_god = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_dream_of_immortality
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ruler_has_personality = immortal_personality
+			total_development = 1500
+		}
+		effect = {
+					add_ruler_modifier = { 
+    name = god_among_man
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_azar_route = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			2060 = { #Antwerpen
+	trade_share = {
+		country = ROOT
+		share = 50
+	}
+}
+
+			2085 = { #Antwerpen
+	trade_share = {
+		country = ROOT
+		share = 50
+	}
+}
+
+			2115 = { #Antwerpen
+	trade_share = {
+		country = ROOT
+		share = 50
+	}
+}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = azar_route
+				duration = 7800  
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+kho4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = AR1 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	secure_the_sea = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_galley = 20
+		}
+		effect = {
+			1958 = {
+			add_permanent_claim = ROOT
+			}
+			
+						1960 = {
+			add_permanent_claim = ROOT
+			}
+			
+						1959 = {
+			add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_outer_isles = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_the_sea
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1958
+			owns = 1960
+			owns = 1959
+		}
+		effect = {
+			western_azar_region = {
+				discover_country = ROOT
+			}	
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	trade_to_the_south = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_outer_isles
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			2060 = { #Antwerpen
+	trade_share = {
+		country = ROOT
+		share = 33
+	}
+}			
+		}
+		effect = {
+						2053 = {
+			add_permanent_claim = ROOT
+			}
+			
+						2065 = {
+			add_permanent_claim = ROOT
+			}
+			
+			2053 = {
+			add_siberian_construction = 5
+			}
+			
+			2065 = {
+			add_siberian_construction = 5
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	qalumahra_demise = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			trade_to_the_south
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		outer_bay_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		splendid_lands_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+							western_azar_region  = {					
+			add_claim = ROOT
+		}
+					southern_azar_region = {
+				discover_country = ROOT
+			}
+
+							isle_of_mourn_area  = {					
+			add_permanent_claim = ROOT
+		}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_scholars = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			qalumahra_demise
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		isle_of_mourn_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+		add_country_modifier = { 
+    name = wisdom_of_long_time
+    duration = 7500
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	deveolp_the_south = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_scholars
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+	value = 200
+	region = western_azar_region
+}
+
+			development_in_provinces = {
+	value = 200
+	region = southern_azar_region
+}
+		}
+		effect = {
+			 	every_owned_province = {
+				limit = {
+				OR = {
+				region = western_azar_region
+				region = southern_azar_region				
+				}
+
+				}
+				add_province_modifier = { 
+    name = exploited_south
+    duration = 9000  
+}
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	slaves_gold_and_ivory = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			deveolp_the_south
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	
+
+trade_goods_produced_amount = {
+	trade_goods = ivory
+	amount = 15
+}
+ 	
+
+trade_goods_produced_amount = {
+	trade_goods = gold
+	amount = 5
+}
+ 	
+
+trade_goods_produced_amount = {
+	trade_goods = spices
+	amount = 15
+}
+		}
+		effect = {
+			change_price = {
+    trade_goods = ivory
+    key = khossor_ivory
+    value = 0.25
+    duration = 3650
+}
+
+
+change_price = {
+    trade_goods = spices
+    key = khossor_spice
+    value = 0.25
+    duration = 3650
+}
+
+add_treasury = 2500
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_order_of_the_spider = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_idea = spider_riders
+			has_global_modifier_value = {
+			which = cavalry_power
+			value = 0.3
+		}
+		}
+		effect = {
+			add_country_modifier = { 
+			name = spider_knights
+			duration = -1  
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_sacred_web = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_order_of_the_spider
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_global_modifier_value = {
+			which = spy_offence
+			value = 0.3
+		}
+					has_global_modifier_value = {
+			which = global_spy_defence
+			value = 0.3
+		}
+		}
+		effect = {
+			add_country_modifier = { 
+			name = sacred_web
+			duration = -1  
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_eternal_spider_queen = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_sacred_web
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			1965 = {
+			has_great_project = {
+				type = any
+				tier = 3
+			}
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+			name = spider_queen
+			duration = -1  
+		}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+kho5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = AR1 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_grace_of_death = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler_flag = necromancy
+			 	ruler_age = 60
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_soulless = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_grace_of_death
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler_flag = necromancy
+			stability = 3
+		}
+		effect = {
+add_country_modifier = { 
+    name = soulless_worker
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	study_the_old_texs = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_soulless
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler_flag = necromancy
+			has_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = 50
+		}
+		}
+		effect = {
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = -50
+		}
+		create_unit_forcelimit_percentage = {
+			type = infantry
+			special_unit_category = cossacks
+			force_limit_percentage = 0.25
+		}
+		create_unit_forcelimit_percentage = {
+			type = cavalry
+			special_unit_category = cossacks
+			force_limit_percentage = 0.1
+		}		
+	}
+	
+	}
+	##Mission End
+	##Mission Start
+	the_cursed = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			study_the_old_texs
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler_flag = necromancy
+			OR = {
+			controls = 131
+			 any_ally = { 
+				owns = 131
+				trust = { who = ROOT value = 80 }
+				}
+			}
+		}
+		effect = {
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_adm_power
+			value = 50
+		}	
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_mil_power
+			value = 50
+		}	
+			add_government_power = {
+			mechanic_type = magic_spell_mechanic
+			power_type = magic_dip_power
+			value = 50
+		}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	bind_the_soul = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_cursed
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler_flag = necromancy
+			OR = {
+			ruler_age  = 75
+			AND = {
+			monthly_adm = 11		
+			monthly_dip = 11			
+			monthly_mil = 11			
+			}
+
+			}
+		}
+		effect = {
+add_country_modifier = { 
+    name = death_advisors
+    duration = -1  
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_head_tax = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			treasurer = 2
+		}
+		effect = {
+			every_owned_province = {
+			 	add_local_autonomy = -20
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	build_tax_infrastrucre = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_head_tax
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			courthouse = 15
+			state_house = 4
+		}
+		effect = {
+			add_country_modifier = { 
+			name = khossorian_tax_system
+			duration = 7800
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	money_or_service = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			build_tax_infrastrucre
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			absolutism = 75
+		}
+		effect = {
+			add_country_modifier = { 
+			name = money_or_serve
+			duration = 7500
+		}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	in_service_of_khossor = {
+				icon = mission_build_up_to_force_limit
+		required_missions =  {
+			money_or_service
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		adm_tech = 24
+		splendor = 1000
+		NOT = {
+		has_country_modifier = money_or_serve
+		}
+				NOT = {
+		has_country_modifier = khossorian_tax_system
+		}
+		}
+		effect = {
+			add_country_modifier = { 
+			name = khossor_service
+			duration = -1
+		}			
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

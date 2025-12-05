@@ -1,0 +1,12 @@
+add_core = BR1
+owner = BR1
+controller = BR1
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = iron
+base_manpower = 2
+capital = "Falen"
+is_city = yes
+culture = kiralyfi
+religion = rozalia

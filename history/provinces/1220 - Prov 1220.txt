@@ -1,0 +1,13 @@
+add_core = HE3
+owner = HE3
+controller = HE3
+culture = baimu
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Baimu"
+is_city = yes
+discovered_by = chinese

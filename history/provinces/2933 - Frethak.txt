@@ -1,0 +1,16 @@
+add_core = AI6
+add_core = AI7
+owner = AI7
+controller = AI7
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = gold
+base_manpower = 2
+capital = "Frethak"
+is_city = yes
+culture = vaskar
+religion = icearia
+add_core = NC8
+
+fort_15th = yes

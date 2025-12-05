@@ -1,0 +1,13 @@
+add_core = S20
+owner = S20
+controller = S20
+culture = menekian
+religion = amatism_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Fec"
+is_city = yes
+discovered_by = indian

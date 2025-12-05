@@ -1,0 +1,12 @@
+add_core = TW1
+owner = TW1
+controller = TW1
+culture = low_zervonian
+religion = yazida
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 3
+capital = "Baktisch"
+is_city = yes

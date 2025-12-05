@@ -1,0 +1,12 @@
+add_core = AS4
+owner = AS4
+controller = AS4
+culture = beror
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Fritta"
+is_city = yes

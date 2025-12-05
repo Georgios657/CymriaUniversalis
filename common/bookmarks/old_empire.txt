@@ -1,0 +1,27 @@
+bookmark =
+{
+	name = "THE_OLD_EMPIRE"
+	desc = "THE_OLD_EMPIRE_DESC"
+	date = 1444.1.1
+	
+	country = U07
+	country = U00
+	country = U04
+	country = U02
+	country = U05
+	country = U01
+	country = U03
+	country = U06
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}

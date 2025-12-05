@@ -1,0 +1,12 @@
+add_core = AR5
+owner = AR5
+controller = AR5
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = ivory
+base_manpower = 3
+capital = "Walla"
+is_city = yes
+culture = pasatan
+religion = nyamism

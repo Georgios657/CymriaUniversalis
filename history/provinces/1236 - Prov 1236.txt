@@ -1,0 +1,13 @@
+add_core = HB3
+owner = HB3
+controller = HB3
+culture = baio
+religion = phoenix_faith
+hre = no
+base_tax = 6
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Tinayu"
+is_city = yes
+discovered_by = chinese

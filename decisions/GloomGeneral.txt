@@ -1,0 +1,71 @@
+country_decisions = {
+	call_lucy = {
+		potential = {
+		
+		tag = GW8
+		 	has_reform = twin_council
+			NOT = {
+			has_leader = "Lucy"
+			}
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		 	devotion = 80
+		splendor = 50
+		}
+		effect = {
+			add_devotion = -25
+		add_splendor = -50
+			define_general = {
+				name = "Lucy"
+				shock = 4
+				fire = 4
+				manuever = 4
+				siege = 3
+				trait = strict_drillmaster_personality
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	call_lucan = {
+		potential = {
+		tag = GW8
+		 	has_reform = twin_council
+			NOT = {
+			has_leader = "Lucan"
+			}
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+				 	devotion = 80
+		splendor = 50
+		}
+		effect = {
+		
+	add_devotion = -25
+		add_splendor = -50
+			define_general = {
+				name = "Lucan"
+				shock = 4
+				fire = 3
+				manuever = 5
+				siege = 3
+				trait = cruel_tactician_personality
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+}

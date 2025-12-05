@@ -1,0 +1,16 @@
+add_core = EP3
+add_core = EP4
+owner = EP4
+add_core = EP2
+controller = EP4
+culture = sunoria
+religion = skogian_religion
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Borasthar"
+is_city = yes
+discovered_by = chinese
+discovered_by = selen_tech

@@ -1,0 +1,12 @@
+add_core = TW4
+owner = TW4
+controller = TW4
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Ernar"
+is_city = yes
+culture = postalan
+religion = ishtara

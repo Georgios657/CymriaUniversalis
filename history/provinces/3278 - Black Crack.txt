@@ -1,0 +1,14 @@
+add_core = PG1
+owner = PG1
+controller = PG1
+culture = misty_peregma
+religion = pygmer_ancestors
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = salt
+base_manpower = 2
+capital = "Troppes"
+is_city = yes
+
+add_permanent_province_modifier = { name = mountain_pass_modifier duration = -1 } 

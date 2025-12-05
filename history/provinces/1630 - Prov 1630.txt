@@ -1,0 +1,16 @@
+add_core = EP4
+owner = EP4
+controller = EP4
+culture = auksian
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Bahur"
+is_city = yes
+add_permanent_province_modifier = {
+	name = mountain_pass_modifier
+	duration = -1
+}

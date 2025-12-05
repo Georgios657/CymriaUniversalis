@@ -1,0 +1,12 @@
+add_core = SH4
+owner = SH4
+controller = SH4
+religion = moon_and_sun
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = slaves
+base_manpower = 2
+capital = "Hjak"
+is_city = yes
+culture = shegen_soutfolk

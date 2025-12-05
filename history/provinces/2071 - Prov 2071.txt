@@ -1,0 +1,12 @@
+add_core = QA1
+owner = QA1
+controller = QA1
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Zaranthiqa"
+is_city = yes
+culture = qalumharan
+religion = azarian_folk_tales

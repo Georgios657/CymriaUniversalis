@@ -1,0 +1,12 @@
+add_core = QA9
+owner = QA9
+controller = QA9
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = tropical_wood
+base_manpower = 3
+capital = "Tzanarath"
+is_city = yes
+culture = pennai
+religion = azarian_folk_tales

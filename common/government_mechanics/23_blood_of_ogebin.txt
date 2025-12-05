@@ -1,0 +1,116 @@
+ogebin_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 5
+	available = {
+		OR = {
+			has_dlc = "Cradle of Civilization"
+			has_dlc = "King of Kings"
+		}
+	}
+
+	powers = {
+		blood_power = {
+			max = 100
+			reset_on_new_ruler = no
+			base_monthly_growth = 0
+			development_scaled_capped_monthly_growth = 0.1
+			development_scale_cap = 1
+			
+			scaled_modifier = {
+				modifier = {
+					republican_tradition = 0.5
+					global_unrest = -3
+				}
+			}
+		}
+	}
+	
+	interactions = {
+		summon_demons = {
+			icon = GFX_magic_mil
+			cost_type = blood_power
+			cost = 35
+			trigger = {
+			}
+			effect = {
+                create_unit_forcelimit_percentage = {
+                    type = infantry
+                    special_unit_category = cossacks
+                    force_limit_percentage = 0.2
+                }	
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					is_at_war = no
+				}
+				modifier = {
+					factor = 10
+					is_in_important_war = yes
+					has_government_power = {
+						mechanic_type = ogebin_mechanic
+						power_type = blood_power
+						value = 95
+					}
+				}
+			}
+		}
+		
+		summon_a_guest = {
+			icon = GFX_magic_dip
+			cost_type = blood_power
+			cost = 50
+			trigger = {
+			}
+			effect = {
+			create_general = { 
+			
+			tradition = 100 
+			add_shock = 2
+			add_fire = 2
+			}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					is_at_war = no
+				}
+				modifier = {
+					factor = 10
+					is_in_important_war = yes
+					has_government_power = {
+						mechanic_type = ogebin_mechanic
+						power_type = blood_power
+						value = 95
+					}
+				}
+			}
+		}
+		
+		a_grand_sabbath = {
+			icon = GFX_magic_adm
+			cost_type = blood_power
+			cost = 100
+			trigger = {
+				capital_scope = {
+					controller = { 
+						tag = ROOT
+					}
+					has_siege = no
+				}
+			}
+			effect = {
+			 	add_stability = 3			
+				add_republican_tradition = 25
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 2	
+			}
+		}
+	}
+}

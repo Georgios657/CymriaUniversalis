@@ -1,0 +1,13 @@
+add_core = EL0
+owner = EL0
+controller = EL0
+culture = mountain_elv
+religion = morriganism
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fur
+base_manpower = 2
+capital = "Daosa"
+is_city = yes
+discovered_by = eastern

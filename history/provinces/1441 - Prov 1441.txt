@@ -1,0 +1,15 @@
+# Anything typed here will be added to all selected province history files
+culture = auksian
+religion = skogian_religion
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Siaurine"
+is_city = yes
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files
+add_core = VL4
+owner = VL4
+controller = VL4

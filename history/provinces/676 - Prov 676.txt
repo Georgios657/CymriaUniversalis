@@ -1,0 +1,14 @@
+add_core = LC2
+owner = LC2
+controller = LC2
+culture = apasi
+religion = amatism_faith
+hre = yes
+base_tax = 8
+base_production = 8
+trade_goods = spices
+base_manpower = 5
+capital = "Apas"
+is_city = yes
+discovered_by = ottoman
+fort_15th = yes

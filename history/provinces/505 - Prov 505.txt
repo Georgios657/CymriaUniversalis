@@ -1,0 +1,13 @@
+add_core = S20
+owner = S20
+controller = S20
+culture = menekian
+religion = katrova_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+capital = "Throw"
+is_city = yes
+discovered_by = indian

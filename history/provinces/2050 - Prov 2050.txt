@@ -1,0 +1,12 @@
+add_core = AR7
+owner = AR7
+controller = AR7
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = slaves
+base_manpower = 2
+capital = "Araknir"
+is_city = yes
+culture = mountain_khossorian
+religion = nyamism

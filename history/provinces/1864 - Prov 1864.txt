@@ -1,0 +1,12 @@
+add_core = ES0
+owner = ES0
+controller = ES0
+religion = the_silvern_guide
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = wool
+base_manpower = 3
+capital = "Rashuna"
+is_city = yes
+culture = harian

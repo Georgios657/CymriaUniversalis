@@ -1,0 +1,13 @@
+add_core = LO1
+owner = LO1
+controller = LO1
+culture = lovorian
+religion = telcontarian
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = tropical_wood
+base_manpower = 2
+capital = "Travoli"
+is_city = yes
+discovered_by = ottoman

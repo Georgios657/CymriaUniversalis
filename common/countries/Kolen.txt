@@ -1,0 +1,72 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 164 131 172 }
+
+
+preferred_religion = vistarism_faith
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	steppe_riders
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_cavalry
+	steppe_uhlans
+	steppe_raiders
+	steppe_footmen
+	steppe_musketeers
+	steppe_infantry
+	steppe_rifles
+	reformed_steppe_rifles
+}
+
+monarch_names = {
+	"Mephos #0" = 20
+	"Miltia #0" = 20
+	"Lakaon #0" = 20
+	"Nikomedo #0" = 20
+	"Tiades #0" = 20
+	"Komon #0" = 20
+	"Romon #0" = 20
+	"Ander #0" = 20
+	"Erodo #0" = 20
+	"Phyrru #0" = 20
+	"Adelphos #0" = 20
+	"Aigos #0" = 20
+	"Ainas #0" = 20
+
+	
+	"Melani #0" = -20
+	"Eunike #0" = -20
+	"Kore #0" = -20
+	"Phere #0" = -20
+	"Aikertine #0" = -20
+	"Klio #0" = -20
+	"Ectra #0" = -20
+	"Elena #0" = -20
+	"Lena #0" = -20
+	"Althaia #0" = -20
+
+
+
+}
+
+leader_names = {
+		Miltia Mephos Tiades Adelphos Aigos  Romon Komon Tiades
+
+}
+
+ship_names = {
+
+}

@@ -1,0 +1,13 @@
+add_core = I38
+owner = I38
+controller = I38
+culture = ostlander
+religion = old_imperial_faith
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = cloth
+base_manpower = 3
+capital = "Schatznitz"
+is_city = yes
+discovered_by = western

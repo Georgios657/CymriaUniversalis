@@ -1,0 +1,21 @@
+government = magocracy
+add_government_reform = witchking
+government_rank = 2
+technology_group = azur_tech
+primary_culture = jirai
+religion = mrogi_wa_damu
+capital = 2207	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Chwa"
+		name = "Tikara"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+		female = yes
+	}
+	add_ruler_personality = wizard
+}

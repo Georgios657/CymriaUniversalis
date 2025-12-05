@@ -1,0 +1,13 @@
+add_core = U06
+owner = U06
+controller = U06
+culture = cumi
+religion = undead_imperial_faith
+hre = no
+base_tax = 5
+base_production = 2
+trade_goods = gold
+base_manpower = 4
+capital = "Doladia"
+is_city = yes
+discovered_by = muslim

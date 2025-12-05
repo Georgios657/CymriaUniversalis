@@ -1,0 +1,16 @@
+add_core = TI4
+owner = TI4
+controller = TI4
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = cotton
+base_manpower = 4
+capital = "Hasin"
+is_city = yes
+culture = hasinian
+religion = tilidian_little_gods
+owner = TI3
+controller = TI3
+add_core_of = TI3
+add_core = TI3

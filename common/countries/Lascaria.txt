@@ -1,0 +1,71 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 75 22 22 }
+
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	steppe_riders
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_cavalry
+	steppe_uhlans
+	steppe_raiders
+	steppe_footmen
+	steppe_musketeers
+	steppe_infantry
+	steppe_rifles
+	reformed_steppe_rifles
+}
+
+monarch_names = {
+	"Babberb #0" = 20
+	"Rabberb #0" = 20
+	"Raberb #0" = 20
+	"Bob #0" = 20
+	"Berb #0" = 20
+	"Berben #0" = 20
+	"Terben #0" = 20
+	"Kerbert #0" = 20
+	"Bert #0" = 20
+	"Borb #0" = 20
+	"Retol #0" = 20
+	"Reninten #0" = 20
+	"Terbert #0" = 20
+	"Terfert #0" = 20
+	"Terb #0" = 20
+	"Berbberb #0" = 20
+	"Klepon #0" = 20
+	"Teddard #0" = 20
+	"Dard #0" = 20
+	"Todden #0" = 20
+
+	"Katrin #0" = -50
+	"Iris #0" = -30
+	"Rin #0" = -30
+	"Is #0" = -30
+	"Kiris #0" = -30
+	"Tade #0" = -30
+	"Babara #0" = -30
+	"Reina #0" = -30
+}
+
+leader_names = {
+	Todden  Dard Terbert Retol Borb Teddard Klepon Bob Kerbert
+	
+}
+
+ship_names = {
+
+}

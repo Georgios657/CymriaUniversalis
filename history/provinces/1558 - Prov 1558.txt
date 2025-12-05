@@ -1,0 +1,13 @@
+add_core = EL4
+owner = EL4
+controller = EL4
+religion = elven_ancestors
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = copper
+base_manpower = 2
+capital = "Caorthannach"
+is_city = yes
+culture = desert_elv
+center_of_trade = 1

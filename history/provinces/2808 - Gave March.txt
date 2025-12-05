@@ -1,0 +1,13 @@
+add_core = HY2
+owner = HY2
+controller = HY2
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Gave"
+is_city = yes
+culture = kaigain_harpia
+religion = winged_one
+

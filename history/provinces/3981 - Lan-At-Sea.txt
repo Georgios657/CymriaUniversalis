@@ -1,0 +1,12 @@
+add_core = PG2
+owner = PG2
+controller = PG2
+culture = sin_peregmar
+religion = pygmer_ancestors
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Lat-At-Sea"
+is_city = yes

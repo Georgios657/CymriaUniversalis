@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = two_courts
+government_rank = 3
+technology_group = imperial_tech
+primary_culture = yvir
+religion = icearia
+capital = 2907
+
+1444.1.1 = {
+	monarch = {
+		name = "Bessa"
+		dynasty = "Virga"
+		birth_date = 1434.9.21
+		dip = 0
+		adm = 0
+		mil = 0
+female = yes
+	}
+
+}

@@ -1,0 +1,13 @@
+add_core = I11
+owner = I11
+controller = I11
+culture = nordlander
+religion = old_imperial_faith
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = iron
+base_manpower = 1
+capital = "Gamischen"
+is_city = yes
+discovered_by = western

@@ -1,0 +1,12 @@
+add_core = MA1
+owner = MA1
+controller = MA1
+culture = marionian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = tropical_wood
+base_manpower = 3
+capital = "Jaro"
+is_city = yes

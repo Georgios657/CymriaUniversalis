@@ -1,0 +1,12 @@
+add_core = GW1
+owner = GW1
+controller = GW1
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = wool
+base_manpower = 2
+capital = "Arrington"
+is_city = yes
+culture = far_aylor
+religion = rozalia

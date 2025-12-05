@@ -1,0 +1,13 @@
+add_core = HE8
+owner = HE8
+controller = HE8
+culture = riefinian
+religion = tengri
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 1
+capital = "Rieven"
+is_city = yes
+discovered_by = nomad_group

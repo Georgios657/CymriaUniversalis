@@ -1,0 +1,13 @@
+culture = politi
+religion = undead_imperial_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 1
+capital = "Maenicia"
+
+add_permanent_province_modifier = {
+	name = mountain_pass_modifier
+	duration = -1
+}

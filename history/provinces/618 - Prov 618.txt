@@ -1,0 +1,14 @@
+add_core = LA7
+owner = LA7
+controller = LA7
+culture = tacher
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 4
+trade_goods = fish
+base_manpower = 3
+capital = "Duvlin"
+is_city = yes
+discovered_by = ottoman
+fort_15th = yes

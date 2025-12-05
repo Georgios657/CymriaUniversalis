@@ -1,0 +1,17 @@
+add_core = ND0
+owner = ND0
+controller = ND0
+culture = woodlander
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Qeqertalik"
+is_city = yes
+discovered_by = north_american
+
+native_size = 8
+native_ferocity = 5
+native_hostileness = 5

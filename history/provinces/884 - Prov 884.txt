@@ -1,0 +1,14 @@
+add_core = ZD9
+owner = ZD9
+controller = ZD9
+culture = teonen
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Nalore"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

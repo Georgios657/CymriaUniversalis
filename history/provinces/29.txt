@@ -1,0 +1,13 @@
+add_core = I31
+owner = I31
+controller = I31
+culture = sollingian
+religion = old_imperial_faith
+hre = no
+base_tax = 3 
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Benden"
+is_city = yes
+discovered_by = western

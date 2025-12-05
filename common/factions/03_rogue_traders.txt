@@ -1,0 +1,42 @@
+########################################
+# Celestial Empire Factions
+########################################
+# Cleared and replaced by Empire of China 
+# at start of game if MoH DLC is active.
+
+the_enforcers = {
+	#Allows to fight wars.
+	monarch_power = MIL
+	always = yes
+
+	modifier = {
+		 	global_rebel_suppression_efficiency = 0.5
+			global_unrest = -2
+			recover_army_morale_speed = 0.33
+			
+	}
+}
+
+the_nobles = {
+	monarch_power = ADM
+	always = yes
+
+	#Merchants, Traders, Expansions.
+	modifier = {
+		republican_tradition = 1
+		global_autonomy = -0.05
+		land_maintenance_modifier = -0.10
+	}
+}
+
+the_navigators = {
+	monarch_power = DIP
+	always = yes
+
+	#buildings, Internal Stability.
+	modifier = {
+		 	 	may_explore = yes
+				naval_attrition = -0.2
+				 global_ship_trade_power = 0.2
+	}
+}

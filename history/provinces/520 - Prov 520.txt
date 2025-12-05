@@ -1,0 +1,13 @@
+add_core = FCC
+owner = FCC
+controller = FCC
+culture = zhuvilian
+religion = amatism_faith
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = cotton
+base_manpower = 4
+capital = "Govria"
+is_city = yes
+discovered_by = indian

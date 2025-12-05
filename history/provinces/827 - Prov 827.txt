@@ -1,0 +1,14 @@
+add_core = ZC1
+owner = ZC1
+controller = ZC1
+culture = padian
+religion = phoenix_faith
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = wool
+base_manpower = 4
+capital = "Meineria"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

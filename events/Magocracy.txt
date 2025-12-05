@@ -1,0 +1,383 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = magocracy
+
+country_event = {
+	id = magocracy.1
+	title = magocracy.1.t
+	desc = {
+		desc = magocracy.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_reform = imperial_wizardy
+	}
+
+	immediate = {
+							define_heir = {
+					age = 12
+					female = yes
+					max_random_adm = 3
+					max_random_dip = 3
+					max_random_mil = 3
+			
+				}
+	}
+
+	option = {
+		name = magocracy.1.a					
+		add_heir_personality = wizard
+
+		}
+	}
+	
+country_event = {
+	id = magocracy.2
+	title = magocracy.2.t
+	desc =  magocracy.2.d
+
+	mean_time_to_happen = {
+	days = 1
+	}	
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+			has_reform = imperial_wizardy
+	NOT = {
+	heir_adm = 6
+	
+	}
+	}
+
+	option = {
+		name = magocracy.2.a		# A Local Noble
+		change_heir_adm = 1
+
+		}
+	}	
+	
+country_event = {
+	id = magocracy.3
+	title = magocracy.2.t
+	desc =  magocracy.2.d
+
+	mean_time_to_happen = {
+	days = 1
+
+}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+			has_reform = imperial_wizardy
+	NOT = {
+	heir_dip = 6
+	}
+	}
+
+	option = {
+		name = magocracy.3.a		# A Local Noble
+		 	change_heir_dip = 1
+
+		}
+	}	
+	
+
+country_event = {
+	id = magocracy.4
+	title = magocracy.2.t
+	desc =  magocracy.2.d
+
+	mean_time_to_happen = {
+	days = 1
+
+}	
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+			has_reform = imperial_wizardy
+	NOT = {
+	heir_mil = 6
+	}
+	}
+
+
+
+	option = {
+		name = magocracy.4.a		# A Local Noble
+		 	change_heir_mil = 1
+
+		}
+	}		
+	
+country_event = {
+	id = magocracy.5
+	title = magocracy.5.t
+	desc =  magocracy.5.d
+
+	mean_time_to_happen = {
+	days = 1
+	}	
+	picture = RELIGION_eventPicture
+
+
+	trigger = {
+	ruler_has_personality = wizard
+	NOT = {
+			has_magic_school = yes
+			}
+	}
+
+	immediate = {
+hidden_effect = {
+	if = {
+	limit = {
+	NOT = {
+	OR = {
+		government = magocracy
+		ruler_is_vampire = yes
+		ruler_is_dragon = yes
+		ruler_is_scorpion = yes
+		ruler_is_undead = yes
+		ruler_is_elv = yes
+		ruler_is_jhinn = yes	
+	}
+
+	
+
+		}	
+
+	}	
+							add_ruler_modifier = { 
+			name = mighty_magician
+
+		}
+	}
+	
+	
+	}
+
+
+	}	
+
+
+	option = {
+		name = magocracy.5.a
+
+		trigger = {
+			can_have_necromancy = yes
+			NOT = {
+			can_not_have_necormancy = yes
+			}
+		}
+					ai_chance = { factor = 55 }
+		set_ruler_flag = necromancy
+					add_ruler_modifier = { 
+				name = necormancer
+				duration = -1  
+			}
+		}
+		
+	option = {
+		name = magocracy.5.b
+		trigger = {
+
+			can_have_elemental  = yes
+						NOT = {
+			can_not_have_elemental = yes
+			}
+		}
+					ai_chance = { factor = 55 }
+		set_ruler_flag = elemental
+							add_ruler_modifier = { 
+				name = elemencer
+				duration = -1  
+			}
+		}
+
+
+	option = {
+		name = magocracy.5.c
+		trigger = {
+
+			can_have_blood  = yes
+						NOT = {
+			can_not_have_blood = yes
+			}
+		}
+					ai_chance = { factor = 55 }
+		set_ruler_flag = blood
+			add_ruler_modifier = { 
+				name = blood_mage
+				duration = -1  
+			}
+		}
+
+	option = {
+		name = magocracy.5.f
+		trigger = {
+
+			can_have_astral  = yes
+						NOT = {
+			can_not_have_astral = yes
+			}
+		}
+					ai_chance = { factor = 55 }
+		set_ruler_flag = astral
+									add_ruler_modifier = { 
+				name = astralogist
+				duration = -1  
+			}
+		}
+
+	option = {
+		name = magocracy.5.e
+		trigger = {
+
+			can_have_nature  = yes
+						NOT = {
+			can_not_have_nature = yes
+			}
+		}
+					ai_chance = { factor = 55 }
+									add_ruler_modifier = { 
+				name = master_of_nature
+				duration = -1  
+			}
+		set_ruler_flag = nature
+		}		
+	}		
+	
+country_event = {
+	id = magocracy.6
+	title = magocracy.6.t
+	desc =  magocracy.6.d
+
+	mean_time_to_happen = {
+	days = 1
+	}	
+	picture = RELIGION_eventPicture
+
+
+	trigger = {
+	
+	OR = {
+	has_reform = wizardom
+	has_reform = necromancy_tower
+	}
+	NOT = {
+	OR = {
+	ruler_has_personality = wizard		
+	has_ruler_flag = immortal
+	has_ruler = "Arna"	
+	has_ruler = "Nefara"	
+	}
+	}
+	}
+
+
+
+	option = {
+		name = magocracy.6.a
+
+		 	change_government = monarchy
+		}
+	
+	}		
+	
+	country_event = {
+	id = magocracy.7
+	title = magocracy.7.t
+	desc = {
+		desc = magocracy.7.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = magocracy.7.a					
+
+summon_demons = yes	
+		}
+	}
+	
+	country_event = {
+	id = magocracy.8
+	title = magocracy.8.t
+	desc = {
+		desc = magocracy.8.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+	tag = WI2
+	NOT = {
+	has_country_flag = peace_power
+	}
+	}
+
+	immediate = {
+			add_devotion = -25
+	}
+
+	option = {
+		name = magocracy.8.a					
+
+			every_owned_province = {
+			 	add_local_autonomy = 20		
+			}
+		}
+		
+	option = {
+		name = magocracy.8.b				
+
+			random_owned_province = {
+			spawn_rebels = {
+					type = noble_rebels
+					size = 2
+				}						
+			}
+			
+			random_owned_province = {
+			spawn_rebels = {
+					type = noble_rebels
+					size = 3
+				}						
+			}
+			
+			random_owned_province = {
+			spawn_rebels = {
+					type = noble_rebels
+					size = 2
+				}						
+			}
+		}		
+	}	

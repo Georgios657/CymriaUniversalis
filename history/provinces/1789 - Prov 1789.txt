@@ -1,0 +1,12 @@
+add_core = SH6
+owner = SH6
+controller = SH6
+religion = moon_and_sun
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Desful"
+is_city = yes
+culture = shegen_soutfolk

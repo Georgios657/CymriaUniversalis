@@ -1,0 +1,1084 @@
+magic_mechanic = {
+	religion = yes
+	has_devotion = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	royal_marriage = no
+	heir = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	government_abilities = { magic_spell_mechanic }
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	modifiers = {
+			nobles_influence_modifier = 0.05
+	}
+}
+
+twin_council = {
+	icon = "twin_council"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+
+	
+	modifiers = {
+	 	governing_capacity = -100
+		 	tolerance_own = 5
+			advisor_pool = -5
+			num_accepted_cultures -5
+	}
+
+		potential = {
+		tag = GW8
+	}
+	
+	custom_attributes = {
+
+		enables_undead_idea_group = yes
+
+		 	heir = no
+		 	raise_dead = yes
+			disables_estate_nobles = yes
+			disables_estate_church = yes
+			disables_estate_burghers = yes
+	}
+	
+}
+
+
+
+jhinn_magocracy = {
+	icon = "imperial_wizardy"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	
+		potential = {
+		culture_group = jinnisch
+	}
+	
+	modifiers = {
+		monthly_magic_adm_power = 0.05
+		monthly_magic_dip_power = 0.05
+		monthly_magic_mil_power = 0.05	
+	}
+	
+	custom_attributes = {
+		 	heir = no
+	}
+}
+
+wizardom = {
+	icon = "imperial_wizardy"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	modifiers = {
+	reverse_relation_with_same_religion = 30
+	reverse_relation_with_heretic_religion = 10
+	female_advisor_chance = 1
+	}
+	custom_attributes = {
+		royal_marriage = yes
+	}
+}
+
+wizardom_monte = {
+	icon = "imperial_wizardy"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	modifiers = {
+	 	global_institution_spread = 0.25
+	}
+	
+		potential = {
+		tag = U07
+	}
+	
+	custom_attributes = {
+		enables_undead_idea_group = yes
+
+		royal_marriage = no
+	}
+}
+
+witchking = {
+	icon = "imperial_wizardy"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+
+		potential = {	
+	culture_group = wissian
+	}
+	
+	modifiers = {
+		max_absolutism = 20
+	 	devotion = -0.5
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	custom_attributes = {
+		royal_marriage = yes
+	}
+}
+
+imperial_wizardy = {
+	icon = "imperial_wizardy"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	
+			potential = {	
+	culture_group = new_imperial
+	}
+	
+	modifiers = {
+	
+			stability_cost_to_declare_war = 1
+			discipline = 0.1
+		 	diplomatic_reputation = 2
+			no_stability_loss_on_monarch_death = yes
+	}
+	custom_attributes = {
+	}
+}
+
+necromancy_tower = {
+	icon = "necromancy_tower"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	
+				potential = {	
+	can_have_necromancy = yes
+	}
+	
+	modifiers = {
+	global_manpower_modifier = 0.5
+	 	ae_impact = 0.5
+		governing_capacity_modifier = -0.33
+		monthly_magic_adm_power = 0.05
+		monthly_magic_dip_power = 0.05
+		 	devotion = -0.5
+	}
+	custom_attributes = {
+		enables_undead_idea_group = yes
+
+		heir = no
+		raise_dead = yes
+	}
+}
+
+
+warlock_circle = {
+	icon = "warlock_circle"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	
+			potential = {	
+	culture_group = lovian
+	}
+	
+	modifiers = {
+		global_monthly_devastation = 0.1
+		monthly_magic_adm_power = 0.4
+		monthly_magic_dip_power = 0.05
+		monthly_magic_mil_power = 0.1
+	}
+	custom_attributes = {
+		heir = no
+	}
+}
+####################
+
+
+inward_perfection = {
+	icon = "inward_perfection"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		    potential = {
+			OR = {
+	   NOT = {
+			has_reform  = warlock_circle
+				has_ruler_flag = immortal
+	   }
+
+			}
+
+			}	
+			
+	modifiers = {
+			 	can_not_declare_war = yes
+				 monarch_military_power = 1
+				 monarch_diplomatic_power = 1
+				monarch_admin_power = 1	
+					
+	}
+	custom_attributes = {
+	}
+}
+
+inward_perfection_2 = {
+	icon = "inward_perfection"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		    potential = {
+		has_ruler_flag = immortal
+
+			}	
+			
+	modifiers = {
+			 	can_not_declare_war = yes
+				country_admin_power = 1
+				country_diplomatic_power = 1
+				country_military_power = 1
+				 	devotion = -0.25
+					
+	}
+	custom_attributes = {
+	}
+}
+
+outward_expansion = {
+	icon = "outward_expansion"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+			stability_cost_to_declare_war = -1
+			ae_impact = -0.1
+	}
+	custom_attributes = {
+	}
+}
+
+
+diplomatic_approach = {
+	icon = "diplomatic_approach"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+				    potential = {
+			NOT = {
+			has_reform = twin_council
+			}
+			}
+			
+	modifiers = {
+			diplomats = 1
+			envoy_travel_time = -0.2
+	}
+	custom_attributes = {
+	}
+}
+
+the_demon_host = {
+	icon = "the_demon_host"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+			    potential = {
+			has_reform  = warlock_circle
+			}
+			
+	modifiers = {
+		monthly_magic_mil_power = 0.2
+	 	land_forcelimit = 20
+	}
+	
+				effect = {
+		}
+	custom_attributes = {
+	}
+}
+
+the_lingering_wood = {
+	icon = "the_lingering_wood"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+			    potential = {
+			has_reform  = twin_council
+			}
+			
+	modifiers = {
+		garrison_size = 0.2
+	}
+	
+				effect = {
+		}
+	custom_attributes = {
+	}
+}
+
+the_expanding_wood = {
+	icon = "the_expanding_wood"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+			    potential = {
+			has_reform  = twin_council
+			}
+			
+	modifiers = {
+		 	siege_ability = 0.10
+	}
+	
+				effect = {
+		}
+	custom_attributes = {
+	}
+}
+#################
+educate_the_peasants = {
+	icon = "educate_the_peasants"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+
+	    potential = {
+	   			NOT = {
+			has_reform = twin_council
+			}	
+	   NOT = {
+			culture_group  = undead_imperial	   
+	   }
+
+
+			}		
+	
+	modifiers = {
+			innovativeness_gain = 0.5
+	}
+	custom_attributes = {
+	}
+}
+
+educate_the_nobles = {
+	icon = "educate_the_nobles"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+			 prestige_decay = -0.01
+	}
+	
+					    potential = {
+			NOT = {
+			has_reform = twin_council
+			}
+			}
+	custom_attributes = {
+	}
+}
+
+educate_the_mages = {
+	icon = "educate_the_mages"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+					    potential = {
+			NOT = {
+			has_reform = twin_council
+			}
+			}
+			
+	modifiers = {
+		 	monthly_magic_adm_power = 0.1
+		 	monthly_magic_dip_power = 0.1
+		 	monthly_magic_mil_power = 0.1
+			
+	}
+	custom_attributes = {
+	}
+}
+
+call_scholars = {
+	icon = "call_scholars"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+			    potential = {
+			has_reform  = twin_council
+			}
+			
+	modifiers = {
+		 	idea_cost = -0.1
+	}
+	
+				effect = {
+		}
+	custom_attributes = {
+	}
+}
+
+focus_on_gloom = {
+	icon = "focus_on_gloom"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+			    potential = {
+			has_reform  = twin_council
+			}
+			
+	modifiers = {
+		gloom_loyalty_modifier = 0.1
+		 	gloom_privilege_slots = 1
+	}
+	
+				effect = {
+		}
+	custom_attributes = {
+	}
+}
+
+#############################
+map_the_stars = {
+	icon = "map_the_stars"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	    potential = {
+	   NOT = {
+	   OR = {
+	   can_not_have_astral = yes
+	   	has_reform  = warlock_circle
+	   	has_reform  = twin_council
+	   }
+	   }
+			}	
+	
+	modifiers = {
+		monarch_lifespan = 0.25
+
+	}
+		effect = {
+		custom_tooltip = astral_allowed	
+		set_country_flag = astral_allowed		
+		}
+	custom_attributes = {
+	}
+}
+
+the_elements = {
+	icon = "the_elements"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	    potential = {
+	   NOT = {
+	   OR = {
+	   can_not_have_elemental = yes
+	   	has_reform  = warlock_circle
+	   }
+	   }
+			}	
+	
+	modifiers = {
+		global_prosperity_growth = 0.2
+
+
+	}
+	
+			effect = {
+		custom_tooltip = elemental_allowed	
+				set_country_flag = elemental_allowed
+		}
+	custom_attributes = {
+	}
+}
+
+the_souls = {
+	icon = "the_souls"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+			    potential = {
+	   NOT = {
+			has_reform  = warlock_circle
+	   }
+			}
+			
+	modifiers = {
+	production_efficiency = 0.1
+
+
+	}
+	
+				effect = {
+		custom_tooltip = necromancy_allowed
+		set_country_flag = necromancy_allowed
+		}
+	custom_attributes = {
+	}
+}
+
+tap_the_underworld = {
+	icon = "tap_the_underworld"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+			    potential = {
+	   can_have_necromancy = yes
+			}
+			
+	modifiers = {
+		 	regiment_manpower_usage = -0.1
+	}
+	
+				effect = {
+		
+		}
+	custom_attributes = {
+	}
+}
+
+great_blood_rituals = {
+	icon = "great_blood_rituals"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+			    potential = {
+			has_reform  = warlock_circle
+			}
+			
+	modifiers = {
+	monthly_magic_adm_power = 0.15
+	}
+	
+				effect = {
+				
+		}
+	custom_attributes = {
+	}
+}
+#########
+
+
+
+####################################
+summon_smallers_ghosts = {
+	icon = "summon_smallers_ghosts"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+				    potential = {
+				has_reform  = twin_council				
+
+			}
+			
+	modifiers = {
+		 	governing_capacity = 200
+		
+	}
+	custom_attributes = {
+	}
+}
+
+
+pure_magic = {
+	icon = "pure_magic"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 	monthly_magic_adm_power = 0.15
+		 	monthly_magic_dip_power = 0.15
+		 	monthly_magic_mil_power = 0.15
+	}
+	custom_attributes = {
+	}
+}
+
+involve_commoner = {
+	icon = "involve_commoner"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+
+	    potential = {
+				NOT = {
+			has_reform  = twin_council	
+		}
+
+
+	   NOT = {
+			culture_group  = undead_imperial	   
+	   }		
+
+			}	
+	
+			 	royal_marriage = yes
+	modifiers = {
+
+	}
+	custom_attributes = {
+	}
+}
+
+
+join_all_estates = {
+	icon = "join_all_estates"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+				    potential = {
+					NOT = {
+				has_reform  = twin_council				
+					}
+
+			}
+			
+	modifiers = {
+		all_estate_influence_modifier = -0.1
+		max_absolutism = 10
+		
+	}
+	custom_attributes = {
+	}
+}
+
+##############
+old_calernian_administration = {
+	icon = "royal_favoritism"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+				    potential = {
+				has_reform  = twin_council				
+
+			}
+			
+	modifiers = {
+		governing_capacity = 100
+		
+	}
+	custom_attributes = {
+	}
+}
+#########################################
+heal_the_world = {
+	icon = "heal_the_world"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+					    potential = {
+					NOT = {
+				has_reform  = twin_council				
+					}
+
+			}
+			
+	modifiers = {
+		diplomatic_upkeep = 1
+		garrison_size = 0.10
+	}
+	custom_attributes = {
+	}
+}
+
+to_ensure_survival = {
+	icon = "to_ensure_survival"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+					    potential = {
+				has_reform  = twin_council				
+			}
+			
+	modifiers = {
+			enemy_core_creation = 0.25
+			 	defensiveness = 0.10
+	}
+	custom_attributes = {
+	}
+}
+
+
+rule_the_world = {
+	icon = "rule_the_world"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+		 	province_warscore_cost = -0.1
+		
+	}
+	custom_attributes = {
+	}
+}
+
+save_the_world = {
+	icon = "save_the_world"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+					    potential = {
+					NOT = {
+				has_reform  = twin_council				
+					}
+
+			}
+			
+			
+	modifiers = {
+	 	 	province_warscore_cost = 0.5
+			land_morale = 0.2
+		
+	}
+	custom_attributes = {
+	}
+}
+
+####################
+
+lucans_tasks = {
+	icon = "lucans_tasks"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		
+					    potential = {
+				has_reform  = twin_council				
+			}
+			
+	modifiers = {
+		 	spy_offence = 0.25
+	}
+	custom_attributes = {
+	}
+}
+
+lucys_tasks = {
+	icon = "lucys_tasks"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		
+					    potential = {
+				has_reform  = twin_council				
+			}
+			
+	modifiers = {
+		 	global_unrest = -2
+	}
+	custom_attributes = {
+	}
+}
+
+
+
+absolute_magical_reform = {
+	icon = "absolute_magical_reform"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		
+					    potential = {
+					NOT = {
+				has_reform  = twin_council				
+					}
+
+			}
+			
+	modifiers = {
+		all_estate_influence_modifier = -0.3		
+	}
+	custom_attributes = {
+	}
+}
+#####
+mightiest_of_all = {
+	icon = "machiavellianism"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		
+					    potential = {
+				has_reform  = twin_council				
+			}
+			
+	modifiers = {
+		 	discipline = 0.05
+			devotion = -0.5
+	}
+	custom_attributes = {
+	}
+}
+
+last_survivor = {
+	icon = "the_social_contract"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		
+					    potential = {
+				has_reform  = twin_council				
+			}
+			
+	modifiers = {
+	 	devotion = 0.5
+		 	national_focus_years = -5
+		 	
+	}
+	custom_attributes = {
+	}
+}
+
+#####################
+all_is_gloom = {
+	icon = "all_is_gloom"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		
+					    potential = {
+				has_reform  = twin_council				
+			}
+			
+	modifiers = {
+		 	gloom_influence_modifier = 0.2
+	}
+	custom_attributes = {
+
+	}
+	
+	effect = {
+			custom_tooltip = fast_gloom_tp
+	}
+}
+
+let_some_survive = {
+	icon = "let_some_survive"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		
+					    potential = {
+				has_reform  = twin_council				
+			}
+			
+	modifiers = {
+	 	advisor_pool = 1
+		 	
+	}
+	custom_attributes = {
+	}
+}
+
+seperation_of_classes = {
+	icon = "seperation_of_classes"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+						    potential = {
+					NOT = {
+				has_reform  = twin_council				
+					}
+
+			}
+			
+	modifiers = {
+	max_general_fire = 1
+	 max_general_maneuver = 1
+	max_general_siege = 1
+	max_general_shock = 1
+	 	general_cost = 2
+	}
+	custom_attributes = {
+	}
+}
+
+
+inclusion_of_non_magic = {
+	icon = "inclusion_of_non_magic"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+						    potential = {
+					NOT = {
+				has_reform  = twin_council				
+					}
+
+			}
+			
+	modifiers = {
+		 	global_tax_modifier = 0.2
+	}
+	custom_attributes = {
+	}
+}
+
+
+benevolent_leadership = {
+	icon = "benevolent_leadership"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		    potential = {
+		   NOT = {
+			has_reform  = warlock_circle
+	   }
+	   					NOT = {
+				has_reform  = twin_council				
+					}		
+
+			}
+			
+	modifiers = {
+		global_rebel_suppression_efficiency = 0.5
+		harsh_treatment_cost = -0.5	
+	}
+	custom_attributes = {
+	}
+}
+
+
+#################
+the_last_spell = {
+	icon = "the_last_spell"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+		
+					    potential = {
+				has_reform  = twin_council
+				mission_completed = soul_furnace
+			}
+			
+	modifiers = {
+	 	discipline = 0.1
+		 	
+	}
+	custom_attributes = {
+	}
+}
+
+blood_vortex = {
+	icon = "blood_vortex"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+			    potential = {
+				OR = {
+			has_reform  = warlock_circle
+			has_reform  = witchking
+			tag = AR1
+			
+				}
+
+			}
+			
+	modifiers = {
+		monthly_magic_mil_power = 0.3
+		 	global_unrest = -2
+	}
+	
+				effect = {
+		}
+	custom_attributes = {
+	}
+}
+
+no_limits_at_all = {
+	icon = "no_limits_at_all"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+
+	}
+		    potential = {
+							NOT = {
+				has_reform  = twin_council				
+					}
+		   NOT = {
+			has_reform  = warlock_circle
+	   }		
+
+			}	
+					effect = {
+		custom_tooltip = all_magic
+			set_country_flag = necromancy_allowed
+	set_country_flag = elemental_allowed
+	set_country_flag = blood_allowed
+	set_country_flag = astral_allowed
+	set_country_flag = nature_allowed
+		}
+	custom_attributes = {
+	}
+}
+
+
+blood_magic_is_forbidden = {
+	icon = "blood_magic_is_forbidden"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	modifiers = {
+	  	all_power_cost = -0.05
+
+	}
+		    potential = {
+							NOT = {
+				has_reform  = twin_council				
+					}
+		   NOT = {
+			has_reform  = warlock_circle
+	   }		
+		
+
+			}
+						effect = {
+		custom_tooltip = all_magic_but_blood
+			set_country_flag = necromancy_allowed
+	set_country_flag = elemental_allowed
+	set_country_flag = astral_allowed
+	set_country_flag = nature_allowed
+	set_country_flag = no_blood
+		}
+	custom_attributes = {
+	}
+}
+
+
+
+
+elemental_magic_only = {
+	icon = "elemental_magic_only"
+	allow_normal_conversion = yes
+	nation_designer_cost = 0
+	
+	    potential = {
+       can_have_elemental = yes
+	   NOT = {
+	   OR = {
+	   can_not_have_elemental = yes
+	   	has_reform  = warlock_circle	   
+	   	has_reform  = no_limits_at_all	    
+		has_reform = twin_council
+	   }
+
+	   }
+			}
+			
+	modifiers = {
+	
+
+	 	free_policy = 1
+		
+		monthly_magic_adm_power = 0.3
+		 monthly_magic_dip_power = 0.3
+		 monthly_magic_mil_power = 0.3
+	}
+	
+							effect = {
+									set_country_flag = no_blood
+		set_country_flag = no_necromancy
+		set_country_flag = no_nature
+		set_country_flag = no_astral
+		custom_tooltip = only_elemental
+		}
+	custom_attributes = {
+	}
+}
+

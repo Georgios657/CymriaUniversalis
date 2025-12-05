@@ -1,0 +1,15 @@
+add_core = LB8
+owner = LB8
+controller = LB8
+culture = vannian
+religion = amatism_faith
+hre = yes
+base_tax = 6
+base_production = 6
+trade_goods = glass
+base_manpower = 4
+capital = "Kohen"
+is_city = yes
+discovered_by = ottoman
+center_of_trade = 1
+fort_15th = yes

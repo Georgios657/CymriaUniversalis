@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = mesoamerican
+primary_culture = grand_leyak
+religion = tilidian_little_gods
+capital = 3756
+
+1424.1.1 = {
+	monarch = {
+		name = "Ni Putu Sri"
+		dynasty = "Jaya"
+		birth_date = 1400.9.21
+		dip = 6
+		adm = 6
+		mil = 5
+	}
+
+}

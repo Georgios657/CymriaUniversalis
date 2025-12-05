@@ -1,0 +1,14 @@
+add_core = ZA5
+owner = ZA5
+controller = ZA5
+culture = rezca
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 1
+capital = "Harov"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

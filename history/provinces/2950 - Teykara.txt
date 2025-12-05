@@ -1,0 +1,14 @@
+add_core = AI3
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wool
+base_manpower = 3
+capital = "Teykara"
+is_city = yes
+culture = meyor
+religion = icearia
+add_core = NC7
+add_core = NC9

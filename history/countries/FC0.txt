@@ -1,0 +1,24 @@
+government = republic
+add_government_reform = great_city
+government_rank = 1
+technology_group = indian
+primary_culture = viscarian
+religion = amatism_faith
+capital = 446
+mercantilism = 30
+historical_friend = FC4
+historical_friend = FC2
+historical_friend = FC5
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1440.1.1 = {
+	monarch = {
+		name = "Reipo"
+		dynasty = "Teschtesch"
+		birth_date = 1400.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+

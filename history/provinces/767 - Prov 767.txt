@@ -1,0 +1,14 @@
+add_core = ZE1
+owner = ZE1
+controller = ZE1
+culture = terephyian
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Ferunia-Canidia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

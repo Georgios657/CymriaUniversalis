@@ -1,0 +1,12 @@
+add_core = ZR2
+owner = ZR2
+controller = ZR2
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 3
+capital = "Ormuzdan"
+is_city = yes
+culture = parsai

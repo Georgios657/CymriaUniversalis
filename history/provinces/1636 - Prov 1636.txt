@@ -1,0 +1,14 @@
+add_core = EP3
+owner = EP3
+controller = EP3
+culture = sunoria
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Zerrania"
+is_city = yes
+discovered_by = chinese
+discovered_by = selen_tech

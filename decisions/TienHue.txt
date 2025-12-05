@@ -1,0 +1,170 @@
+country_decisions = {
+	trade_federation = {
+		major = yes
+		potential = {	
+		OR = {
+		culture_group = tian_hue
+		culture_group = qarelian		
+		}
+		NOT = { exists = HC3 }	
+		OR = {
+		government = republic
+		has_reform = plutocratic_reform
+		}
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1237
+				province_id = 1231
+				province_id = 1240
+				province_id = 1255
+				province_id = 1241
+				province_id = 1225
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = HC3 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 1237	# Mukha
+			owns_core_province = 1231	# Zabid
+			owns_core_province = 1240	# Mukha
+			owns_core_province = 1255 # Zabid
+			owns_core_province = 1241 # Zabid
+			owns_core_province = 1225 # Zabid
+			years_of_income = 1
+		}
+		effect = {
+		add_years_of_income = -1
+			add_mercantilism = 10
+			change_tag = HC3
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			hue_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= HC3
+			}			
+
+			qareli_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= HC3
+			}	
+			
+			add_prestige = 25	
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	kingdom_of_heaven = {
+		major = yes
+		potential = {	
+		OR = {
+		culture_group = tian_hue
+		culture_group = qarelian		
+		}
+
+		NOT = { exists = HC4 }	
+		NOT = {
+		OR = {
+		government = republic
+		has_reform = plutocratic_reform
+		}	
+		}
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1237
+				province_id = 1231
+				province_id = 1240
+				province_id = 1255
+				province_id = 1241
+				province_id = 1225
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = HC4 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 1237	# Mukha
+			owns_core_province = 1231	# Zabid
+			owns_core_province = 1240	# Mukha
+			owns_core_province = 1255 # Zabid
+			owns_core_province = 1241 # Zabid
+			owns_core_province = 1225 # Zabid
+		}
+		effect = {
+			
+			change_tag = HC4
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			hue_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= HC4
+			}			
+
+			qareli_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= HC4
+			}	
+			
+			add_prestige = 25	
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+}

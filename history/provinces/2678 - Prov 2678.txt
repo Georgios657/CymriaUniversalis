@@ -1,0 +1,18 @@
+add_core = EM2
+owner = EM2
+controller = EM2
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Karpitfok"
+is_city = yes
+culture = parazsti
+religion = rozalia
+
+add_permanent_province_modifier = {
+	name = minor_estuary_modifier
+	duration = -1
+}
+

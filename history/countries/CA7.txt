@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 2
+technology_group = selen_tech
+primary_culture = yaan
+religion = ishtara
+capital = 2042	# Bayreuth
+religious_school = oyor_the_eternal_betrayer
+
+1430.1.1 = {
+	monarch = {
+		dynasty = "Ashyukaya"
+		name = "Mira"
+		birth_date = 1405.9.21
+		dip = 5
+		adm = 4
+		mil = 3
+	}
+	add_ruler_personality = benevolent_personality
+
+}

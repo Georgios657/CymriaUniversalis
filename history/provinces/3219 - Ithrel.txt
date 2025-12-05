@@ -1,0 +1,16 @@
+add_core = GE5
+owner = GE5
+controller = GE5
+hre = no
+base_tax = 6
+base_production =7
+trade_goods = glass
+base_manpower = 4
+capital = "Ithrel"
+is_city = yes
+culture = ithilan
+religion = velora
+
+
+
+center_of_trade = 1

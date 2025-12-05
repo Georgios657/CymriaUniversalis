@@ -1,0 +1,12 @@
+add_core = CA6
+owner = CA6
+controller = CA6
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+capital = "Liugnate"
+is_city = yes
+culture = far_malian
+religion = asae_ya

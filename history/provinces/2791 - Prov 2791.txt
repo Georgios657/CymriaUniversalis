@@ -1,0 +1,12 @@
+add_core = BR9
+owner = BR9
+controller = BR9
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Zovolyet"
+is_city = yes
+culture = fenyodi
+religion = rozalia

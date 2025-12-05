@@ -1,0 +1,13 @@
+add_core = HY8
+owner = HY8
+controller = HY8
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 4
+capital = "Budasa"
+is_city = yes
+culture = shima_harpia
+religion = winged_one
+

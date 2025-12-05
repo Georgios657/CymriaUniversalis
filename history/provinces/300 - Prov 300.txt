@@ -1,0 +1,15 @@
+add_core = CY4
+owner = CY4
+controller = CY4
+culture = sliabian
+religion = dagdism
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Thoir ap Sliab"
+is_city = yes
+discovered_by = eastern
+center_of_trade = 1
+fort_15th = yes

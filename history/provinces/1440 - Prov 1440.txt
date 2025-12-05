@@ -1,0 +1,15 @@
+# Anything typed here will be added to all selected province history files
+culture = baltara
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 4
+capital = "Naktara"
+is_city = yes
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files
+add_core = VL3
+owner = VL3
+controller = VL3

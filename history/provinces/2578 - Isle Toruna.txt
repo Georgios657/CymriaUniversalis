@@ -1,0 +1,12 @@
+add_core = WI6
+owner = WI6
+controller = WI6
+culture = darian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = sugar
+base_manpower = 1
+capital = "Toruna"
+is_city = yes

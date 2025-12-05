@@ -1,0 +1,13 @@
+add_core = HY6
+owner = HY6
+controller = HY6
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = copper
+base_manpower = 4
+capital = "Verhejek"
+is_city = yes
+culture = san_harpia
+religion = winged_one
+

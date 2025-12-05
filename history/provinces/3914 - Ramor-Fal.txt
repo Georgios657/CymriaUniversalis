@@ -1,0 +1,12 @@
+add_core = MO8
+owner = MO8
+controller = MO8
+culture = ramorian
+religion = tilidian_little_gods
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = tobacco
+base_manpower = 2
+capital = "Ramor-Fall"
+is_city = yes

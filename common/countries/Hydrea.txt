@@ -1,0 +1,65 @@
+graphical_culture = westerngfx
+
+color = { 145  87  121 }
+revolutionary_colors = { 4 0 4 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+	spy_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+leader_names = {
+
+}
+
+ship_names = {
+	
+}
+
+monarch_names = {
+	"Tharok #0" = 20
+	"Borrak #0" = 20
+	"Faelon #0" = 20
+	"Argun #0" = 10
+	"Dravon #0" = 10
+	"Lykos #0" = 10
+	"Zarok #0" = 5
+	"Karros #0" = 5
+	"Urthon #0" = 5
+	"Gravor #0" = 0
+
+	"Miraelle #0" = -1
+	"Selyra #0" = -1
+	"Thyra #0" = -1
+	"Lurona #0" = -1
+	"Yvara #0" = -1
+	"Kalyss #0" = -1
+	"Ariella #0" = -1
+	"Druena #0" = -1
+	"Melora #0" = -1
+	"Elowen #0" = -1
+
+}

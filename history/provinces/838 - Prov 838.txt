@@ -1,0 +1,14 @@
+add_core = ZD8
+owner = ZD8
+controller = ZD8
+culture = ivano
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = gold
+base_manpower = 2
+capital = "Steernetan"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

@@ -1,0 +1,13 @@
+add_core = FCD
+owner = FCD
+controller = FCD
+culture = qabinian
+religion = amatism_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+capital = "Sareb"
+is_city = yes
+discovered_by = indian

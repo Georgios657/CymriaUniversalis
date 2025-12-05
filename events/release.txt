@@ -1,0 +1,137 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = release
+
+
+####seal is broken
+country_event = {
+	id = release.1
+	title = release.1.t
+	desc = release.1.desc
+
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	immediate = {
+
+}
+	option = {
+	name = release.1.a		
+		ai_chance = { factor = 0 }
+		if = {
+				limit = {
+		technology_group = giant
+		culture_group = north_trolls
+		}
+			add_country_modifier = { 
+				name = troll_military
+				duration = -1  
+			}	
+	
+		}
+
+		if = {
+				limit = {
+		technology_group = giant
+		culture_group = northern_giants
+		}
+			add_country_modifier = { 
+				name = giant_military
+				duration = -1  
+			}	
+			
+						add_country_modifier = { 
+				name = giant_admin
+				duration = -1  
+			}	
+	
+		}
+		
+		if = {
+				limit = {
+		technology_group = harpy_tech
+		culture_group = west_harpy
+		}
+			add_country_modifier = { 
+				name = sacred_harpy_tech_military
+				duration = -1  
+			}	
+	
+		}
+		
+		if = {
+				limit = {
+		technology_group = harpy_tech
+		culture_group = east_harpy
+		}
+			add_country_modifier = { 
+				name = harpy_tech_military
+				duration = -1  
+			}	
+	
+		}
+		
+				if = {
+			limit = {
+		 	technology_group = naga_tech
+		}
+		add_country_modifier = { 
+				name = naga_military
+				duration = -1  
+			}						
+		}
+		
+				if = {
+		limit = {
+		 	technology_group = varjorjen
+		}
+		add_country_modifier = { 
+				name = varjorjen_military
+				duration = -1  
+			}
+		add_country_modifier = { 
+				name = no_navy
+				duration = -1  
+			}					
+		}
+
+				if = {
+		limit = {
+		 	technology_group = muslim
+		}
+		
+		add_country_modifier = { 
+				name = undead_military
+				duration = -1  
+			}
+		add_country_modifier = { 
+				name = no_navy
+				duration = -1  
+			}						
+		}
+
+				if = {
+			limit = {
+				technology_group = elven
+			}
+			add_country_modifier = { 
+				name = elven_military
+				duration = -1  
+			}					
+		}
+		
+		if = {
+		limit = {
+		culture_group = girta
+		}
+			add_country_modifier = { 
+				name = scorpion_military
+				duration = -1  
+			}	
+		}	
+	}
+	}

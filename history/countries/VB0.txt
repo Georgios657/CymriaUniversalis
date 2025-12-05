@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = varjorjen_tribe
+government_rank = 3
+technology_group = varjorjen
+primary_culture = yuutivan
+religion = thorrinian
+capital = 1158 # Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1030.1.1 = {
+	monarch = {
+		name = "Satuan"
+		dynasty = "Yutuvo"
+		birth_date = 980.9.21
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+	
+	add_ruler_personality = wizard
+}
+

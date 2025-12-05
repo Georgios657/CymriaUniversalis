@@ -1,0 +1,66 @@
+country_decisions = {
+
+	claim_imperial_throne= {
+		major = yes
+		potential = {
+			culture_group =new_imperial
+		 	is_subject = yes
+			liberty_desire = 50
+			total_development = 200
+			overlord = {
+			culture_group =new_imperial
+			}
+		}
+		allow = {
+			liberty_desire = 100
+			total_development = 300
+		}
+		effect = {
+				 	overlord = { 
+			country_event = { 
+			id = new_empire.8
+			days = 1
+			}				
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+		claim_independence= {
+		major = yes
+		potential = {
+					culture_group =new_imperial
+		 	is_subject = yes
+			liberty_desire = 50
+			total_development = 200
+			NOT = {
+			OR = {
+			tag = I10
+			tag = I00
+			}
+			}
+						overlord = {
+			culture_group =new_imperial
+			}
+		}
+		allow = {
+			stability = 3
+			liberty_desire = 100
+			total_development = 275
+		}
+		effect = {
+				 	overlord = { 
+			country_event = { 
+			id = new_empire.9
+			days = 1
+			}				
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+}

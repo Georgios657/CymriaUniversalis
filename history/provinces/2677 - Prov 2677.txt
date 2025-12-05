@@ -1,0 +1,12 @@
+add_core = BR2
+owner = BR2
+controller = BR2
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Crimsonvale"
+is_city = yes
+culture = parazsti
+religion = rozalia

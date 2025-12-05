@@ -1,0 +1,12 @@
+add_core = CA2
+owner = CA2
+controller = CA2
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 2
+capital = "Shprese"
+is_city = yes
+culture = malian
+religion = asae_ya

@@ -1,0 +1,15 @@
+add_core = ZC7
+owner = ZC7
+controller = ZC7
+culture = aiyea
+religion = phoenix_faith
+hre = no
+base_tax = 6
+base_production = 5
+trade_goods = wine
+base_manpower = 5
+capital = "Taeruioa"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+fort_15th = yes

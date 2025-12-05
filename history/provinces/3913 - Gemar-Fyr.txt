@@ -1,0 +1,12 @@
+add_core = MO7
+owner = MO7
+controller = MO7
+culture = ramorian
+religion = tilidian_little_gods
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Gemar-Fyr"
+is_city = yes

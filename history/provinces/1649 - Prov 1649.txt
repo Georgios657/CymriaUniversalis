@@ -1,0 +1,16 @@
+add_core = MI0
+owner = MI0
+controller = MI0
+culture = minosa
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Mino"
+is_city = yes
+religion = moon_and_sun
+center_of_trade = 1
+discovered_by = chinese
+add_permanent_province_modifier = { name = major_estuary_modifier duration = -1 } 
+fort_15th = yes

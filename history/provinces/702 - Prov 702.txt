@@ -1,0 +1,21 @@
+add_core = LD9
+owner = LD9
+controller = LD9
+culture = putran
+religion = amatism_faith
+hre = yes
+base_tax = 6
+base_production = 6
+trade_goods = cotton
+base_manpower = 7
+capital = "Varanpur"
+is_city = yes
+discovered_by = ottoman
+
+
+add_permanent_province_modifier = {
+	name = szegeni_major_port
+	duration = -1
+}
+
+center_of_trade = 1

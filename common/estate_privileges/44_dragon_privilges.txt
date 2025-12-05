@@ -1,0 +1,334 @@
+take_and_right = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -25
+			
+		land_share = 5
+		influence = 0.15
+		loyalty = 0.05
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+		leader_land_shock = 1
+	}
+	
+	
+	penalties = {
+	 	global_autonomy = 0.05
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_dragon
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+promote_dragonborn = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -5
+		influence = 0.05
+		loyalty = 0.0
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+		
+	}
+	
+	
+	penalties = {
+	 	
+	}
+
+	on_granted = {
+		add_country_modifier = { 
+    name = promoted_dragon_born
+    duration = -1  
+}
+	}
+	
+	on_revoked = { 
+	
+		remove_country_modifier =   promoted_dragon_born
+
+	add_estate_loyalty = {
+    estate = estate_dragon
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+magical_equipment_for_dragon = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -10
+		influence = 0.1
+		loyalty = 0.0
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+		
+	}
+	
+	
+	penalties = {
+	 	
+	}
+
+	on_granted = {
+		add_country_modifier = { 
+    name = ebony_bow
+    duration = -1  
+}
+	}
+	
+	on_revoked = { 
+	
+		remove_country_modifier =   ebony_bow
+
+	add_estate_loyalty = {
+    estate = estate_dragon
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+enlist_more_dragonsborns = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -5
+		land_share = 5
+		influence = 0.05
+		loyalty = 0.0
+
+	
+	benefits = { 
+		allowed_samurai_fraction = 0.1
+	}
+	
+	
+	penalties = {
+	
+	}
+
+	on_granted = {
+
+	}
+	
+	on_revoked = { 
+	
+
+	add_estate_loyalty = {
+    estate = estate_dragon
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+pay_dragonborns_more = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -5
+		land_share = 5
+		influence = 0.05
+		loyalty = 0.0
+
+	
+	benefits = { 
+		allowed_samurai_fraction = 0.1
+	}
+	
+	
+	penalties = {
+	 	 	land_maintenance_modifier = 0.15
+	}
+
+	on_granted = {
+
+	}
+	
+	on_revoked = { 
+	
+
+	add_estate_loyalty = {
+    estate = estate_dragon
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+dragonborn_farming = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+	
+		max_absolutism = -5
+		land_share = 0
+		influence = 0.05
+		loyalty = 0.05
+	
+	benefits = { 
+	production_efficiency = 0.1	
+	}
+	
+	
+	penalties = {
+	 	
+	}
+
+	on_granted = {
+
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_dragon
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+dragonborn_teaching = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+	
+		max_absolutism = -5
+		land_share = 0
+		influence = 0.05
+		loyalty = 0.05
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+	 	global_institution_spread = 0.5 	
+	}
+	
+	
+	penalties = {
+	 	
+	}
+
+	on_granted = {
+
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_dragon
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+finance_dragon_hoards = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+	
+		land_share = 0
+		influence = 0.00
+		loyalty = 0.1
+	
+	benefits = { 
+	
+	}
+	
+	
+	penalties = {
+	 	global_tax_income = -24 	
+	}
+
+	on_granted = {
+ 	add_years_of_income = -5
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_dragon
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}

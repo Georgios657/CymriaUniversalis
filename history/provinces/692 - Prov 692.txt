@@ -1,0 +1,13 @@
+add_core = LD6
+owner = LD6
+controller = LD6
+culture = gassalian
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Hedasse"
+is_city = yes
+discovered_by = ottoman

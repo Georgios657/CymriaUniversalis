@@ -1,0 +1,12 @@
+add_core = EL6
+owner = EL6
+controller = EL6
+religion = elven_ancestors
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = gold
+base_manpower = 2
+capital = "Gleaan"
+is_city = yes
+culture = desert_elv

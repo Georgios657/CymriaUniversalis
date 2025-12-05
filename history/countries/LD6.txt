@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = ottoman
+primary_culture = gassalian
+religion = amatism_faith
+capital = 691	# Bayreuth
+
+elector = yes
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Gassalam"
+		name = "Khamau"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 1
+		mil = 3
+
+	}
+
+}

@@ -1,0 +1,13 @@
+add_core = U04
+owner = U04
+controller =U04
+culture = erii
+religion = undead_imperial_faith
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+capital = "Iena"
+is_city = yes
+discovered_by = muslim

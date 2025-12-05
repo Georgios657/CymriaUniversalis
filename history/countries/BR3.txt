@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = wandering_army_reform
+government_rank = 1
+technology_group = imperial_tech
+primary_culture = halomi
+religion = rozalia
+capital = 2676
+1434.1.1 = {
+	monarch = {
+		name = "Zatan"
+		dynasty = "Herceg"
+		birth_date = 1400.9.21
+		dip = 4
+		adm = 4
+		mil = 5
+
+	}
+
+}
+
+1444.1.1 = {
+		leader = {
+		name = "Refa Tankeres"
+		type = conquistador
+		fire = 2
+		shock = 1
+		manuever = 2
+		siege = 0
+		death_date = 1453.7.17
+	}
+}

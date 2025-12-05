@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = slaver_kingdom_reform
+government_rank = 2
+technology_group = selen_tech
+primary_culture = assayia
+religion = yazida
+capital = 1825	# Bayreuth
+religious_school = oyor_the_eternal_betrayer
+
+1441.1.1 = {
+	monarch = {
+		dynasty = "Tilgath-Assay"
+		name = "Assay-Niari"
+		birth_date = 1410.9.21
+		dip = 5
+		adm = 6
+		mil = 6
+	}
+
+	
+		heir = {
+		name = "Assay-Tiari"
+		dynasty = "Tilgath-Assay"
+		birth_date = 1441.1.1
+				death_date = 1480.1.1
+		claim = 100
+		adm = 3
+		dip = 0
+		mil = 6
+	}
+}

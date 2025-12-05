@@ -1,0 +1,13 @@
+add_core = QA3
+owner = QA3
+controller = QA3
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = spices
+base_manpower = 2
+capital = "Ngol"
+is_city = yes
+culture = nsatsi
+religion = azarian_folk_tales
+add_permanent_province_modifier = { name = minor_estuary_modifier duration = -1 } 

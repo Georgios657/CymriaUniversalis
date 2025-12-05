@@ -1,0 +1,12 @@
+add_core = YA1
+owner = YA1
+controller = YA1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Tenre"
+is_city = yes
+culture = yaan
+religion = ishtara

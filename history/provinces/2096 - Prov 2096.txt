@@ -1,0 +1,12 @@
+culture = morivia
+religion = azarian_folk_tales
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Aschito"
+is_city = no
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2

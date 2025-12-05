@@ -1,0 +1,13 @@
+add_core = WI5
+owner = WI5
+controller = WI5
+culture = jinai
+religion = mrogi_wa_damu
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = ivory
+base_manpower = 4
+capital = "Marunjani"
+is_city = yes
+center_of_trade = 1

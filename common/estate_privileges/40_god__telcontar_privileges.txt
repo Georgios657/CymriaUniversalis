@@ -1,0 +1,459 @@
+holy_swamp = {
+	icon = estate_god_telcontar_privilege_holy_swamp
+	max_absolutism = -10
+	land_share = 10	
+	is_valid = {
+		religion = telcontarian
+		any_owned_province = {
+		OR = {
+			has_terrain = marsh
+		}
+		}
+	
+		
+	}
+	
+	on_granted = {
+		custom_tooltip = blessed_swamps_grant
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					AND = {
+					has_terrain = marsh	
+					region = lovia_region
+				}
+				}
+				add_province_modifier = {
+					name = blessed_swamps
+					duration = -1
+				}
+			}
+		}
+	}
+		on_granted_province = {
+			if = {
+				limit = {
+					AND = {
+					has_terrain = marsh	
+					region = lovia_region
+				}
+				}
+				add_province_modifier = {
+					name = blessed_swamps
+					duration = -1
+				}
+			}
+		}		
+
+	
+		mechanics = {
+		exempt_from_seize_land
+	}
+	
+	influence = 0.05
+	benefits = { 
+		
+	}
+	penalties = {
+	
+	}
+	
+	on_revoked = { 
+			custom_tooltip = blessed_swamps_removed
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = blessed_swamps
+		
+					}
+				}
+				remove_province_modifier = blessed_swamps
+			}
+		}
+		
+	add_estate_loyalty = {
+    estate = estate_god_telcontar
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 30 }
+				estate_influence = {
+					estate = estate_god_telcontar
+					influence = 95
+				}
+			}
+			NOT = { has_estate_privilege = holy_swamp }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 35 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 55 }
+				}
+			}
+			NOT = { has_estate_privilege = holy_swamp }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+	}
+	}
+
+lord_of_swamps_and_jungle = {
+	icon = estate_god_telcontar_privilege_lord_of_swamps_and_jungle
+	max_absolutism = -30
+	is_valid = {
+			religion = telcontarian
+		any_owned_province = {
+		OR = {
+			has_terrain = marsh
+			has_terrain = jungle
+		}
+		}
+	}
+	influence = 0.25
+	loyalty = 0.15
+	benefits = { 
+	}
+	
+		mechanics = {
+	}
+
+	on_granted = {
+		custom_tooltip = telconars_blessing_grant
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+					has_terrain = marsh
+					has_terrain = jungle	
+				}
+				}
+				add_province_modifier = {
+					name = telconars_blessing
+					duration = -1
+				}
+			}
+		}
+	}
+		on_granted_province = {
+			if = {
+				limit = {
+					OR = {
+					has_terrain = marsh
+					has_terrain = jungle	
+				}
+				}
+				add_province_modifier = {
+					name = telconars_blessing
+					duration = -1
+				}
+			}
+		}		
+		
+	penalties = {
+	}
+	
+	on_revoked = { 
+			custom_tooltip = telconars_blessing_remove
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = telconars_blessing
+		
+					}
+				}
+				remove_province_modifier = telconars_blessing
+			}
+		}
+		
+	add_estate_loyalty = {
+    estate = estate_god_telcontar
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+blood_sacrifices_for_him = {
+	icon = estate_god_telcontar_privilege_blood_sacrifices_for_him
+	max_absolutism = -10
+	is_valid = {
+		
+	}
+	influence = 0.1
+	loyalty = 0.15
+	benefits = { 
+		tolerance_own = 2
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+	 	global_unrest = 2
+	}
+	
+	on_revoked = { 
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+fight_the_unbelivers = {
+	icon = estate_god_telcontar_privilege_fight_the_unbelivers
+	max_absolutism = -10
+	is_valid = {
+
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = { 
+		
+	}
+
+	conditional_modifier = {
+		trigger = {
+			any_known_country = {
+				NOT = {
+				religion_group = blood_faith
+				}
+				war_with = root
+			}
+		}
+		modifier = {
+			land_morale = 0.1
+			manpower_recovery_speed = 0.05
+		}
+	}
+	
+	mechanics = {
+	
+	}
+	
+	penalties = {
+
+	}
+	
+	on_revoked = { 
+
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+ritual_sacrifces = {
+	icon = estate_god_morrigan_privilege_ritual_sacrifces
+	max_absolutism = -10
+	is_valid = {
+
+	}
+	influence = 0.00
+	loyalty = 0.05
+	benefits = { 
+		
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.05
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_telcontar
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+lord_of_pestilence = {
+	icon = estate_god_telcontar_privilege_lord_of_pestilence
+	max_absolutism = -10
+	is_valid = {
+	religion = telcontarian
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = { 
+		global_supply_limit_modifier = 0.2
+		land_attrition = -0.10
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		 	development_cost = 0.1
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_telcontar
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+increased_sacred_grounds = {
+	icon = estate_god_telcontar_privilege_lord_of_pestilence
+	land_share = 5
+	max_absolutism = -10
+	is_valid = {
+	
+	}
+	influence = 0.0
+	loyalty = 0.05
+	benefits = { 
+		stability_cost_modifier = -0.05
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		 	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_telcontar
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+blood_oracles = {
+	icon = estate_god_telcontar_privilege_lord_of_pestilence
+	land_share = 0
+	max_absolutism = -10
+	is_valid = {
+	
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = { 
+		 	legitimacy = 0.25
+			devotion = 0.5
+			republican_tradition = 0.25
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		 	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_telcontar
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+blood_for_mages = {
+	icon = estate_god_telcontar_privilege_lord_of_pestilence
+	land_share = 0
+	max_absolutism = -10
+	is_valid = {
+		has_government_mechanic = magic_spell_mechanic
+	}
+	influence = 0.05
+	loyalty = 0.0
+	benefits = { 
+		yearly_government_power = 1
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		 	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_telcontar
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}

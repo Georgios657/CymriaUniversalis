@@ -1,0 +1,18 @@
+add_core = TI9
+owner = TI9
+controller = TI9
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = spices
+base_manpower = 4
+capital = "Tenoxicam"
+is_city = yes
+culture = tenoxa
+religion = tilidian_little_gods
+owner = TI3
+controller = TI3
+add_core_of = TI3
+add_core = TI3
+
+add_permanent_province_modifier = { name = major_estuary_modifier duration = -1 } 

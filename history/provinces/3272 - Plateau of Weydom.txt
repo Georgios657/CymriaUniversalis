@@ -1,0 +1,12 @@
+add_core = PG1
+owner = PG1
+controller = PG1
+culture = misty_peregma
+religion = pygmer_ancestors
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = iron
+base_manpower = 1
+capital = "Weydom"
+is_city = yes

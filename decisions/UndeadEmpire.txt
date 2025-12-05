@@ -1,0 +1,238 @@
+country_decisions = {
+	unite_the_undead_empire = {
+		major = yes
+		potential = {
+		culture_group  = undead_imperial
+			NOT = { exists = U08 }		
+		NOT = {
+		OR = {
+		has_ruler = "Cato"		
+		has_ruler = "Nefara"		
+		}
+
+		}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = dimae_area
+				area = lallia_area
+				area = tritonis_area
+				area = flavia_area
+				area = mecum_area
+				area = eria_area
+				area = histria_area
+				province_id = 134
+				province_id = 152
+				province_id = 154
+				province_id = 156
+				province_id = 203
+				province_id = 144
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = U08 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 134	# Mukha
+			owns_core_province = 152	# Zabid
+			owns_core_province = 154	# Mukha
+			owns_core_province = 156	# Zabid
+			owns_core_province = 203	# Mukha
+			owns_core_province = 144	# Zabid	
+			dimae_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			lallia_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			tritonis_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			flavia_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			mecum_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			eria_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			histria_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+		}
+		effect = {
+			change_tag = U08
+			on_change_tag_effect = yes
+			 	swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			old_empire_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core= U08
+			}			
+
+
+			135 = {
+			cede_province = U08				
+			}
+
+			133 = {
+			cede_province = U08				
+			}
+
+			132 = {
+			cede_province = U08				
+			}			
+			
+			131 = {
+			cede_province = U08				
+			change_trade_goods = glass
+			}
+			
+
+			add_prestige = 100
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = AKS_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_capital = 131		
+
+			add_government_reform = old_empire_full
+			
+			define_ruler = {
+    name = "Jolien II."
+    dynasty = "Politivia"
+    adm = 4
+    dip = 4
+    mil = 4
+    age = 20
+    claim = 100
+}
+set_ruler_flag = immortal
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		ai_importance = 400 #
+	}
+	
+	end_the_great_curse_self = {
+		potential = {
+			NOT = {
+			
+				has_global_flag  = ended_the_curse
+			}
+			NOT = {
+			current_age = age_of_reformation
+			}
+			any_owned_province = {
+				has_province_modifier = land_of_the_dead
+			}
+			NOT = {
+				culture_group = undead_imperial
+			}
+		}
+
+		allow = {
+				owns = 131
+				has_ruler_flag = necromancy
+				 	adm_power = 300
+					dip_power = 300
+					mil_power = 300
+		}
+		effect = {
+					country_event = { 
+    id = undead_provinces.3
+}
+	
+				add_adm_power = -300
+				add_dip_power = -300
+				add_mil_power = -300
+
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+
+	end_the_great_curse_other_mage = {
+		potential = {
+			NOT = {
+			
+				has_global_flag = ended_the_curse
+			}
+			NOT = {
+			current_age = age_of_reformation
+			}
+			NOT = {
+				culture_group = undead_imperial
+			}
+						any_owned_province = {
+				has_province_modifier = land_of_the_dead
+			}
+		}
+
+		allow = {
+				owns = 131
+				OR = {
+				AND = {
+					can_have_necromancy = yes
+					treasury = 5000
+				}
+					treasury = 15000				
+				}
+
+		}
+		effect = {
+			country_event = { 
+    id = undead_provinces.3
+}
+	
+				 if = { 
+				 limit = {
+				 can_have_necromancy = yes
+				 }
+				 add_treasury = -5000
+				 }
+				 else = {
+				 add_treasury = -15000
+				 }
+
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+}

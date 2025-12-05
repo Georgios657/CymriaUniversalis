@@ -1,0 +1,12 @@
+add_core = MO9
+owner = MO9
+controller = MO9
+culture = ramorian
+religion = tilidian_little_gods
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = cotton
+base_manpower = 2
+capital = "Ramor-Velyn"
+is_city = yes

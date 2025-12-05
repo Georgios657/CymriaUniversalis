@@ -1,0 +1,14 @@
+add_core = CA0
+owner = CA0
+controller = CA0
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = spices
+base_manpower = 5
+capital = "Crusso"
+is_city = yes
+culture = cassalan
+religion = ishtara
+
+center_of_trade = 1

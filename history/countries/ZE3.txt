@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = terephyian
+religion = phoenix_faith
+capital = 772	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Eilan"
+		name = "Aryeh"
+		birth_date = 1385.9.21
+		dip = 3
+		adm = 4
+		mil = 3
+
+	}
+
+}

@@ -1,0 +1,16 @@
+# Anything typed here will be added to all selected province history files
+culture = taurenian
+religion = phoenix_faith
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = grain
+base_manpower = 5
+capital = "Taurene"
+is_city = yes
+center_of_trade = 2
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files
+add_core = VL0
+owner = VL0
+controller = VL0

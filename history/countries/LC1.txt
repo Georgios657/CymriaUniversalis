@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = ottoman
+primary_culture = gessi
+religion = amatism_faith
+capital = 672	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Auto"
+		name = "Mephos"
+		birth_date = 1385.9.21
+		dip = 2
+		adm = 1
+		mil = 2
+
+	}
+
+}

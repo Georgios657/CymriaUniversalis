@@ -1,0 +1,12 @@
+add_core = GW6
+owner = GW6
+controller = GW6
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Good Harvest"
+is_city = yes
+culture = aylor_frontier
+religion = rozalia

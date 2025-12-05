@@ -1,0 +1,23 @@
+spriteTypes = {
+ spriteType = {
+  name = "GFX_disaster_troll_rebellion"
+  texturefile = "gfx//interface//disasters//troll_rebellion.dds"
+  noOfFrames = 3
+  loadType = "INGAME"
+ }
+ 
+ 
+ spriteType = {
+  name = "GFX_disaster_grand_witch_hunt"
+  texturefile = "gfx//interface//disasters//grand_witch_hunt.dds"
+  noOfFrames = 3
+  loadType = "INGAME"
+ }
+ 
+ spriteType = {
+  name = "GFX_disaster_imperial_civil_war"
+  texturefile = "gfx//interface//disasters//imperial_civil_war.dds"
+  noOfFrames = 3
+  loadType = "INGAME"
+ } 
+}

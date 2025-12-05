@@ -1,0 +1,12 @@
+add_core = BR8
+owner = BR8
+controller = BR8
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 3
+capital = "Szelkut"
+is_city = yes
+culture = hegytori
+religion = rozalia

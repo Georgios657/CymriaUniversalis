@@ -1,0 +1,16 @@
+add_core = NC1
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 2
+capital = "Para Tego"
+is_city = yes
+culture = tegos
+religion = icearia
+add_core = NC8
+add_core = NC9
+
+center_of_trade = 1

@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = livestock
+base_manpower = 4
+capital = "Stormglen"
+is_city = yes
+culture = dytasiia
+religion = imperial_cult
+add_core = AX2

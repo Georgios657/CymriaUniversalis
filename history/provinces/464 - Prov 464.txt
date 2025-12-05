@@ -1,0 +1,14 @@
+
+culture = carian_nomad
+religion = amatism_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = wool
+base_manpower = 2
+capital = "Pacemi"
+discovered_by = indian
+
+native_size = 50
+native_ferocity = 0
+native_hostileness = 0

@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 2
+technology_group = azur_tech
+primary_culture = qalumharan
+religion = azarian_folk_tales
+capital = 2060

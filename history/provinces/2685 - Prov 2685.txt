@@ -1,0 +1,14 @@
+add_core = BR6
+owner = BR6
+controller = BR6
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = cloth
+base_manpower = 4
+capital = "Assend"
+is_city = yes
+culture = nagytori
+religion = rozalia
+
+center_of_trade = 1

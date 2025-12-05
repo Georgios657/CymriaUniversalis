@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = iron
+base_manpower = 4
+capital = "Orvinspire"
+is_city = yes
+culture = low_culturian
+religion = imperial_cult
+add_core = AX1

@@ -1,0 +1,17 @@
+add_core = EL1
+owner = EL1
+controller = EL1
+culture = sea_elv
+religion = morriganism
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 4
+capital = "Ker"
+is_city = yes
+
+add_permanent_province_modifier = {
+	name = strait_modifier
+	duration = -1
+}

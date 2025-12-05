@@ -1,0 +1,159 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = desert_elf
+
+
+country_event = {
+	id = desert_elf.1
+	title = desert_elf.1.t
+	desc = {
+		desc = desert_elf.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = desert_elf.1.a		
+			change_religion = phoenix_faith		
+		capital_scope = {
+					change_religion = phoenix_faith
+		}
+		
+		every_owned_province = {
+		limit = {
+		culture = desert_elv
+		NOT = {
+		 	local_autonomy = 30
+		}
+		}
+		
+			change_religion = phoenix_faith	
+		}
+		}
+		
+	option = {
+		name = desert_elf.1.b				
+		add_stability = 1
+
+		}
+
+	option = {
+		name = desert_elf.1.c					
+			trigger  = {
+						 	any_owned_province = { 
+				religion = moon_and_sun
+				}
+			}
+			
+						change_religion = moon_and_sun		
+		capital_scope = {
+					change_religion = moon_and_sun
+		}
+		
+		every_owned_province = {
+		limit = {
+		culture = desert_elv
+		NOT = {
+		 	local_autonomy = 30
+		}
+		}
+		
+			change_religion = moon_and_sun	
+		}
+
+		}		
+		
+	option = {
+		name = desert_elf.1.d					
+			trigger  = {
+						 	any_owned_province = { 
+				religion = the_silvern_guide
+				}
+			}
+			
+			
+									change_religion = the_silvern_guide		
+		capital_scope = {
+					change_religion = the_silvern_guide
+		}
+		
+		every_owned_province = {
+		limit = {
+		culture = desert_elv
+		NOT = {
+		 	local_autonomy = 30
+		}
+		}
+		
+			change_religion = the_silvern_guide	
+		}
+
+
+		}	
+
+
+	option = {
+		name = desert_elf.1.e					
+			trigger  = {
+						 	any_owned_province = { 
+				religion = ishtara
+				}
+			}
+			
+									change_religion = ishtara		
+		capital_scope = {
+					change_religion = ishtara
+		}
+		
+		every_owned_province = {
+		limit = {
+		culture = desert_elv
+		NOT = {
+		 	local_autonomy = 30
+		}
+		}
+		
+			change_religion = ishtara	
+		}
+
+
+		}	
+
+	option = {
+		name = desert_elf.1.f					
+			trigger  = {
+						 	any_owned_province = { 
+				religion = yazida
+				}
+			}
+
+									change_religion = yazida		
+		capital_scope = {
+					change_religion = yazida
+		}
+		
+		every_owned_province = {
+		limit = {
+		culture = desert_elv
+		NOT = {
+		 	local_autonomy = 30
+		}
+		}
+		
+			change_religion = yazida	
+		}
+
+		}			
+	}
+	

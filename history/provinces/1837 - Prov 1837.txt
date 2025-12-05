@@ -1,0 +1,12 @@
+add_core = ZR8
+owner = ZR8
+controller = ZR8
+culture = karavanarian
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 2
+capital = "Sardupar"
+is_city = yes

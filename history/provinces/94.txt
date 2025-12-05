@@ -1,0 +1,9 @@
+religion = old_imperial_faith
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+capital = "The Oracle"
+is_city = yes
+discovered_by = western

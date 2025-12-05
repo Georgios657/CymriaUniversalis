@@ -1,0 +1,13 @@
+add_core = HE5
+owner = HE5
+controller = HE5
+culture = ganshi
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+capital = "Longmen"
+is_city = yes
+discovered_by = chinese

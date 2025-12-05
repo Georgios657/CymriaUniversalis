@@ -1,0 +1,16 @@
+add_core = AR9
+owner = AR9
+controller = AR9
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = ivory
+base_manpower = 2
+capital = "Shadrzarar"
+is_city = yes
+culture = mountain_khossorian
+religion = nyamism
+
+latent_trade_goods = {
+	coal
+}

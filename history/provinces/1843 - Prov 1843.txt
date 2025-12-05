@@ -1,0 +1,12 @@
+add_core = ZR7
+owner = ZR7
+controller = ZR7
+culture = karavanarian
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 3
+capital = "Nashirud"
+is_city = yes

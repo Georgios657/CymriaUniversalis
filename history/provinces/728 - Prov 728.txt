@@ -1,0 +1,13 @@
+add_core = LO1
+owner = LO1
+controller = LO1
+culture = lovorian
+religion = telcontarian
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = ivory
+base_manpower = 4
+capital = "Lono"
+is_city = yes
+discovered_by = ottoman

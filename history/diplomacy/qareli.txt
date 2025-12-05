@@ -1,0 +1,13 @@
+vassal = {
+    first = HB2
+    second = HB8
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = HE3
+    second = HE1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}

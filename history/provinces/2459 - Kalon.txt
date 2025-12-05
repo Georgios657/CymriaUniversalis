@@ -1,0 +1,14 @@
+culture = apsuian
+religion = the_silvern_guide
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+capital = "KArton"
+is_city = no
+native_size = 120
+native_ferocity = 5
+native_hostileness = 5
+
+
+center_of_trade = 1

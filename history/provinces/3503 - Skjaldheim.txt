@@ -1,0 +1,12 @@
+add_core = GI1
+owner = GI1
+controller = GI1
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = gold
+base_manpower = 5
+capital = "Skjaldheim"
+is_city = yes
+culture = jotun
+religion = fore_bearers

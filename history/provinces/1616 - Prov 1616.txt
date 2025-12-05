@@ -1,0 +1,14 @@
+add_core = EP1
+add_core = EP0
+owner = EP1
+controller = EP1
+culture = southern_ephereta
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+capital = "Oruth"
+is_city = yes
+discovered_by = chinese

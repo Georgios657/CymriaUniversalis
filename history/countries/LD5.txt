@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = ottoman
+primary_culture = gassalian
+religion = amatism_faith
+capital = 689	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Gassalam"
+		name = "Malik"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 1
+		mil = 3
+
+	}
+
+}

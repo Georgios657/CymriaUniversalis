@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = eastern
+primary_culture = sliabian
+religion = dagdism
+capital = 301# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1436.1.1 = {
+	monarch = {
+		name = "Colm IV"
+		dynasty = "An Cross"
+		birth_date = 1430.9.21
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+

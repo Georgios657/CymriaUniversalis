@@ -1,0 +1,977 @@
+##BranchStart 0
+branch1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = EL0
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_dead_land_aosi = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_aosi_host
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			 	any_neighbor_province = {
+				owned_by = U08
+			}	
+			is_year = 1600
+		}
+
+		}
+		effect = {
+			the_dead_land_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	politia_elf = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_dead_land_aosi
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_id = 131
+		}
+		trigger = {
+			owns = 131
+		}
+		effect = {
+			great_flevia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	end_of_udroman = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			politia_elf
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			exists = U08
+			}
+			
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50 # how many provinces should be owned in the areas below
+				OR = {
+					region = great_flevia_region # this can also be region or colonial region
+					region = the_dead_land_region
+				}
+			}
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+branch12 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = EL0
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_aosi_host = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_kindom_under_the_mountain
+		}
+		position = 2
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			army_size_percentage = 1
+			army_size = 15
+	
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+			add_army_professionalism = 0.2
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_wisdom_of_war = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_aosi_host
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_regiments_at_full_drill = 20
+		}
+		effect = {
+			add_army_tradition = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_great_elfen_army = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_wisdom_of_war
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		army_size = 50
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_sword_host"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	kidnap_children = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_great_elfen_army
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			dominant_culture = mountain_elv
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fey_childrends"
+				duration = -1
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	ignore_morrigan = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_eastern_mountains
+			end_of_udroman
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 400
+		}
+		effect = {
+			add_country_modifier = {
+				name = "waining_faith"
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	end_the_curse_ud = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			ignore_morrigan
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 131
+			owns = 136
+			stability = 3
+			
+		}
+		effect = {
+				custom_tooltip = ending_undead.tooltip
+					country_event = { 
+    id = undead_provinces.3
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_new_home_for_elfdom = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			end_the_curse_ud
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 30 # how many provinces should be owned in the areas below
+					superregion = old_empire_superregion
+						has_owner_accepted_culture = yes
+						development = 9
+				}
+			
+
+		}
+		effect = {
+			add_splendor = 500
+		}
+	}
+	##Mission End
+	##Mission Start
+	unite_all_elfs = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_new_home_for_elfdom
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	has_unified_culture_group = yes
+		}
+		effect = {
+			set_government_rank = 3
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+branch13 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = EL0
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_kindom_under_the_mountain = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			province_id = 273 
+		}
+		trigger = {
+			 	stability = 2
+				273 = {
+				owned_by = ROOT
+				development = 28
+				}
+		}
+		effect = {
+			 	add_splendor = 100
+										western_valley_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_the_valley = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_kindom_under_the_mountain
+		}
+		position = 2
+		provinces_to_highlight = {
+				area = western_valley_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4 # how many provinces should be owned in the areas below
+					area = western_valley_area # this can also be region or colonial region
+			}
+		}
+		effect = {
+			colone_valley_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+				caobdh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	colone_and_valley = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_the_valley
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = colone_valley_area
+				area = caobdh_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+						colone_valley_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+						caobdh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				cymria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	destroy_wicked_witch = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			colone_and_valley
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = cymria_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			cymria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			CY2 = {
+			NOT = {
+			exists = yes
+			}
+			}
+		}
+		effect = {
+					sliab_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}		
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_eastern_mountains = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			destroy_wicked_witch
+		}
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = sliab_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			sliab_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+					green_valley_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	administer_valley_elf = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_eastern_mountains
+		}
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				region = green_valley_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					region = green_valley_region
+					local_autonomy = 20
+				}
+			}
+			
+		}
+		effect = {
+		add_country_modifier = { 
+				name = stolen_children
+				duration = 18250
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_new_ruler_class = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			administer_valley_elf
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		NOT = {
+			dominant_culture = mountain_elv
+			}
+		total_development = 150
+		NOT = {
+		 	has_country_modifier = stolen_children
+		}
+			 	
+		}
+		effect = {
+		add_country_modifier = { 
+				name = my_little_human
+				duration = -1
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	open_up_to_humans = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_new_ruler_class
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	is_year = 1550
+		total_development = 200
+			NOT = {
+			dominant_culture = mountain_elv
+			}
+			
+		}
+		effect = {
+		add_country_modifier = { 
+				name = acceptance_of_humans
+				duration = -1
+		}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_elf_human_alliance = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			open_up_to_humans
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						custom_trigger_tooltip = {
+				tooltip = building_alliances_elf.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+					NOT = {
+					culture_group = elvish
+					}
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 2
+				}
+			}
+		}
+		effect = {
+		add_country_modifier = { 
+				name = halfelfs
+				duration = -1
+		}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+branch14 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = EL0
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	praise_morrigan = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_kindom_under_the_mountain
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			temple = 2
+		}
+		effect = {
+		add_estate_loyalty = {
+				estate = estate_god_morrigan
+				loyalty = 30
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_first_king = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			praise_morrigan
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			has_ruler = "Aosi"
+			}
+		}
+		effect = {
+		custom_tooltip = first_elf_king.tooltip
+			set_global_flag = first_elf_king
+		}
+	}
+	##Mission End
+	##Mission Start
+	spread_the_word = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_first_king
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = obj_convert_10_provinces_tooltip
+				check_variable = { which = num_converted_religion value = 10 }
+			}
+		}
+		effect = {
+		add_estate_loyalty = {
+				estate = estate_god_morrigan
+				loyalty = 30
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	call_of_elfen_sea = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		naval_forcelimit = 15
+		}
+		effect = {
+		 	add_navy_tradition = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	elfen_ship = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			call_of_elfen_sea
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			navy_size = 50
+		}
+		effect = {
+		add_country_modifier = { 
+				name = elfen_ships
+				duration = -1
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	elfen_armada = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			elfen_ship
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+	num_of_heavy_ship = 75
+		}
+		effect = {
+		add_country_modifier = { 
+				name = elfe_fleet
+				duration = 18250
+		}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	elfen_coast = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			elfen_armada
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8 # how many provinces should be owned in the areas below
+						has_owner_accepted_culture = yes						
+						has_port = yes
+						development = 15
+			}
+			
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			has_port = yes
+			}
+			
+			add_province_modifier = { 
+    name = elfen_harbor
+    duration = -1  
+}
+
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+branch15 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = EL0
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	halls_of_the_mountain_king = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+		}
+		position = 1
+		provinces_to_highlight = {
+			province_id = 273
+		}
+		trigger = {
+				273 = {
+				owned_by = ROOT
+				 	is_prosperous = yes
+				}
+				
+		}
+		effect = {
+			273 ={
+			add_province_modifier = {
+			    name = the_mountain_kingdom
+			duration = -1  
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_jewel_hall = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			halls_of_the_mountain_king
+		}
+		position = 2
+		provinces_to_highlight = {
+				province_id = 273
+		}
+		trigger = {
+				273 = {
+				owned_by = ROOT
+				 development = 30
+				}
+		}
+		effect = {
+			273 ={
+			add_province_modifier = {
+			    name = hall_of_jewels
+			duration = -1  
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	expand_the_halls = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_jewel_hall
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_id = 273
+		}
+		trigger = {
+				273 = {
+				owned_by = ROOT
+				 development = 40
+				}
+		}
+		effect = {
+			change_government_reform_progress = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_fortress_of_earth = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			expand_the_halls
+		}
+		position = 4
+		provinces_to_highlight = {
+				province_id = 273
+		}
+		trigger = {
+				273 = {
+				owned_by = ROOT
+				 fort_level = 5
+				}
+		}
+		effect = {
+			273 ={
+			add_province_modifier = {
+			    name = the_fortified_kingdom
+			duration = -1  
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	kingdom_unter_the_earth_full = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_fortress_of_earth
+		}
+		position = 5
+		provinces_to_highlight = {
+				province_id = 273
+		}
+		trigger = {
+		273 = {
+			num_of_buildings_in_province = 6
+		}
+
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	gems_of_mountains = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						trade_goods_produced_amount = {
+				trade_goods = gems
+				amount = 10
+			}
+		}
+		effect = {
+			add_mercantilism = 5
+			
+						change_price = {
+				trade_goods = gems
+				key = elven_gems
+				value = 0.5
+				duration = 3650
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	elfen_copper = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						trade_goods_produced_amount = {
+				trade_goods = copper
+				amount = 20
+			}
+		}
+		effect = {
+			add_mercantilism = 5
+			add_mil_power = 200
+		}
+	}
+	##Mission End
+	##Mission Start
+	elfen_gold = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						trade_goods_produced_amount = {
+				trade_goods = gold
+				amount = 10
+			}
+		}
+		effect = {
+		add_inflation = -10
+		add_years_of_income = 2
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

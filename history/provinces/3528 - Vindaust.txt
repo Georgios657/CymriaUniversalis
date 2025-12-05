@@ -1,0 +1,12 @@
+add_core = GY1
+owner = GY1
+controller = GY1
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Vindaust"
+is_city = yes
+culture = gynter
+religion = icearia

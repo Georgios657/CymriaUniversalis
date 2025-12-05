@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 5
+base_production = 7
+trade_goods = incense
+base_manpower = 4
+capital = "Yrindel"
+is_city = yes
+culture = verdanian
+religion = grand_mother
+add_core = AW4

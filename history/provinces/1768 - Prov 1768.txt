@@ -1,0 +1,13 @@
+add_core = TW5
+add_core = TW3
+owner = TW5
+controller = TW5
+hre = no
+base_tax = 7
+base_production = 6
+trade_goods = grain
+base_manpower = 6
+capital = "Uruka"
+is_city = yes
+culture = central_baylonian
+religion = ishtara

@@ -1,0 +1,13 @@
+add_core = YA7
+owner = YA7
+controller = YA7
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 3
+capital = "Egarlo"
+is_city = yes
+culture = tiamian
+religion = ishtara
+add_province_modifier = { name = scoprion_man_climate duration = -1 }

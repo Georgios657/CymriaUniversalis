@@ -1,0 +1,26 @@
+government = theocracy
+add_government_reform = sacred_harpy_host
+government_rank = 2
+technology_group = harpy_tech
+primary_culture = ayasa
+religion = yazida
+capital = 3386 # Bayreuth
+# Made junior partner of Ansbach 
+religious_school = circe_the_loyal
+
+1430.1.1 = {
+	monarch = {
+		name = "Leof"
+		dynasty = "Ayar"
+		birth_date = 1401.9.21
+		dip = 5
+		adm = 4
+		mil = 5
+	}
+
+	add_ruler_modifier = { 
+    name = holy_founder
+    duration = -1  
+}
+}
+

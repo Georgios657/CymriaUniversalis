@@ -1,0 +1,15 @@
+add_core = MO6
+owner = MO6
+controller = MO6
+culture = gemarian
+religion = tilidian_little_gods
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = cotton
+base_manpower = 3
+capital = "Gemar-Helin"
+is_city = yes
+
+
+center_of_trade = 1

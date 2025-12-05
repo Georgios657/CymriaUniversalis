@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = skoger
+primary_culture = novy_valo
+religion = skogian_religion
+capital = 1638	# Bayreuth
+
+
+1415.1.1 = {
+	monarch = {
+		dynasty = "Priidu"
+		name = "Vario"
+		birth_date = 1395.9.21
+		dip = 1
+		adm = 3
+		mil = 5
+
+	}
+
+}

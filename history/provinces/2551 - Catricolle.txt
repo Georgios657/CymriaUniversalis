@@ -1,0 +1,14 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = cotton
+base_manpower = 3
+capital = "Catricolle"
+is_city = yes
+culture = foceti
+religion = imperial_cult
+add_core = AW7
+fort_15th = yes

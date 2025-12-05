@@ -1,0 +1,568 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = start_up
+
+country_event = {
+	id = start_up.1
+	title = start_up.1.t
+	desc = start_up.1.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+		fire_only_once = yes
+		is_triggered_only = yes
+	hidden = yes
+	immediate = {
+
+	hre_inheritable = yes
+	internal_hre_cb = no	
+	imperial_ban_allowed = yes
+	HE2 = {
+		add_country_modifier = { 
+				name = dragon_military
+				duration = -1  
+			}	
+	}
+	
+	QA6 = {
+	country_event = { 
+    id = fire_born_events.4
+}		
+	}
+	
+	HE8 = {
+	country_event = { 
+    id = riefen.1
+}	
+	
+	}
+	
+	GW9 = {
+	if = {
+	limit = {
+	ai = yes
+	}	
+	set_country_flag = colonies_allowed	
+	}
+
+	}
+
+	GW8 = {
+	if = {
+	limit = {
+	ai = yes
+	}	
+	set_country_flag = colonies_allowed	
+	}
+	}
+
+	LA4 = {
+	add_country_modifier = { 
+			name = defender_of_realm
+			duration = 36500
+		}	
+	
+	}
+	
+	GW7 = {
+	if = {
+	limit = {
+	ai = yes
+	}	
+	set_country_flag = colonies_allowed	
+	}
+	}
+	
+	NC9 = {
+	add_treasury = -500
+	add_manpower = -10
+	add_stability = -1
+	add_legitimacy = -60
+	add_country_modifier = { 
+    name = southern_capital
+    duration = -1  
+}
+
+country_event = {
+	id = virta.2
+}
+	}
+	
+	GE2 = {
+country_event = {
+	id = gelros.1
+}	
+	}
+	
+	REB = {
+	set_variable = {
+    which = less_slaves_province
+    value = 0
+}
+	}
+	
+	ZB2 = {
+	country_event = { 
+    id = zephy.15
+}
+	}
+	
+	every_province = {
+	limit = {
+	culture_group = north_trolls
+	}
+	
+	add_local_autonomy = 40
+	}
+	every_country = {
+	limit = {
+	has_reform = wandering_army_reform
+		culture_group = broden
+	}
+	
+	add_legitimacy = -50
+
+	set_variable = {
+    which = brodenVar
+    value = 0
+	}
+	
+	set_variable = {
+    which = relictsVar
+    value = 0
+	}
+
+	set_variable = {
+    which = killedHarpyVar
+    value = 0
+	}
+	
+	set_variable = {
+    which = peopleVar
+    value = 0
+	}
+		country_event = { 
+		id = brodia.1
+	}	
+	}
+
+	every_country = {
+	limit = {
+	culture_group = gassala
+	}
+		add_country_modifier = { 
+				name = gassalan_inheritance
+				duration = -1  
+			}		
+	
+		add_country_modifier = { 
+				name = gassalan_government
+				duration = -1  
+			}	
+	}
+	
+	
+	every_country = {
+	limit = {
+	NOT = {
+	has_reform = wandering_army_reform	
+	}
+	culture_group = broden
+	}
+		country_event = { 
+		id = brodia.3
+	}	
+	}
+
+	every_country = {
+	limit = {
+	culture_group = east_harpy
+	}
+		country_event = { 
+		id = brodia.4
+	}	
+	}
+	
+	ND6 = {
+	country_event = { 
+    id = ogebin.1
+}
+	}
+	
+ 	every_province = { 
+		limit = {
+		 	superregion  = old_empire_superregion
+			NOT = {
+			OR = {
+			province_id = 303
+			area = blessed_isles_area
+			}
+
+			}
+		}
+		add_permanent_province_modifier  = { 
+			name = land_of_the_dead
+			duration = -1  
+		}		
+	}
+
+ 	every_province = { 
+		limit = {
+		 	culture_group = minoan
+		}
+		add_local_autonomy = 30
+	}	
+ 	every_province = { 
+		limit = {
+		 	 	culture_group = naga_culture
+		}
+		add_local_autonomy = 85
+	}
+	
+	
+	every_country = {
+		limit = {
+		 	technology_group = naga_tech
+		}
+		add_country_modifier = { 
+				name = naga_military
+				duration = -1  
+			}		
+	}
+
+	every_country = {
+		limit = {
+		 	technology_group = muslim
+		}
+		
+		add_country_modifier = { 
+				name = undead_military
+				duration = -1  
+			}
+		add_country_modifier = { 
+				name = no_navy
+				duration = -1  
+			}		
+	}
+	
+	every_country = {
+		limit = {
+		OR = {
+		has_reform = pirate_republic_reform
+		has_reform = plutocratic_reform
+	
+		}
+
+		}
+		
+		add_dip_tech = 1
+	}
+
+	every_country = {
+
+		limit = {
+		 	technology_group = varjorjen
+		}
+		add_country_modifier = { 
+				name = varjorjen_military
+				duration = -1  
+			}
+		add_country_modifier = { 
+				name = no_navy
+				duration = -1  
+			}				
+	}
+
+	every_country = {
+
+		limit = {
+		technology_group = harpy_tech
+		culture_group = east_harpy
+		}
+			add_country_modifier = { 
+				name = harpy_tech_military
+				duration = -1  
+			}	
+	
+	}
+
+	every_country = {
+
+		limit = {
+		technology_group = giant
+		culture_group = north_trolls
+		}
+			add_country_modifier = { 
+				name = troll_military
+				duration = -1  
+			}	
+	
+	}
+
+	every_country = {
+
+		limit = {
+		technology_group = giant
+		culture_group = northern_giants
+		}
+		add_prestige = -10
+		add_inflation = 5
+		
+			add_country_modifier = { 
+				name = giant_military
+				duration = -1  
+			}	
+
+			add_country_modifier = { 
+				name = giant_admin
+				duration = -1  
+			}				
+	}
+	
+	every_country = {
+
+		limit = {
+		technology_group = harpy_tech
+		culture_group = west_harpy
+		}
+			add_country_modifier = { 
+				name = sacred_harpy_tech_military
+				duration = -1  
+			}	
+	
+	}
+		
+	every_country = {
+
+		limit = {
+		tag = GW8
+		}
+			add_country_modifier = { 
+				name = gloom_army
+				duration = -1  
+			}	
+	
+	}
+
+		every_country = {
+			limit = { 
+			OR = {
+			tag = U07
+			tag = GW8
+			}
+			}
+			add_country_modifier = {
+				name = setup_evil_nation
+				duration = -1
+				hidden = yes
+			}
+			# must be a modifier and not a flag so it disappears if the nation is annexed and released again
+			every_country = {
+				limit = { NOT = { tag = PREV } } # not the same nation
+				if = {
+									limit = { NOT = { has_country_modifier = setup_evil_nation } }
+					add_opinion = { who = PREV modifier = evil }
+							reverse_add_opinion = { who = PREV modifier = evil }
+				}
+				else = {
+					add_opinion = { who = PREV modifier = both_evil }
+					reverse_add_opinion = { who = PREV modifier = both_evil }
+				}
+					}
+					
+			}
+				
+	every_country = {
+
+		limit = {
+		technology_group = elven
+		NOT = {
+		tag = GW8
+		}
+		}
+			add_country_modifier = { 
+				name = elven_military
+				duration = -1  
+			}		
+	}
+
+		every_country = {
+
+		limit = {
+		culture_group = girta
+		}
+			add_country_modifier = { 
+				name = scorpion_military
+				duration = -1  
+			}	
+	}
+	
+	every_country = {
+		limit = {
+		 	culture_group = cymrian
+		}
+		add_country_modifier = { 
+				name = clans_of_the_highlands
+				duration = -1  
+			}	
+	}
+
+	every_country = {
+	
+	}
+	
+
+
+	
+
+
+
+
+	EL0 = {
+	if = {
+		limit = {
+		ai = yes
+		}
+		add_country_modifier = { 
+				name = daoine_go
+				duration = -1  
+			}	
+			
+			273 = {
+			add_province_modifier = { 
+				name = place_of_power
+				duration = -1  
+			}
+			}
+	
+	}
+
+	}
+	
+	EL1 = {
+	if = {
+		limit = {
+		ai = yes
+		}
+		add_country_modifier = { 
+				name = daoine_go
+				duration = -1  
+			}	
+			
+			718 = {
+			add_province_modifier = { 
+				name = place_of_power
+				duration = -1  
+			}
+			}
+	
+	}
+
+	}	
+
+	HE2 = {
+	if = {
+		limit = {
+		ai = yes
+		}
+		add_country_modifier = { 
+				name = rising_dragon
+				duration = -1  
+			}	
+			
+			1205 = {
+			add_province_modifier = { 
+				name = place_of_power
+				duration = -1  
+			}
+			}
+	
+	}
+
+	}
+	
+	I00 = {
+	if = {
+		limit = {
+		ai = yes
+		}
+
+			
+			23 = {
+			add_province_modifier = { 
+				name = place_of_power
+				duration = -1  
+			}
+			}
+	
+	}
+
+	}	
+
+	EM2 = {
+		add_country_modifier = { 
+			name = support_broden_army_rev
+			duration = -1  
+		}
+	}
+	
+	EM1 = {
+	set_ruler_flag = immortal
+	country_event = { id = eom.5}
+	add_country_modifier = { 
+    name = support_broden_army
+    duration = -1  
+}
+	if = {
+		limit = {
+		ai = yes
+		}
+
+		
+			
+			2396 = {
+			add_province_modifier = { 
+				name = imperial_capital
+				duration = -1  
+			}
+			}
+	
+	}
+	}
+	
+	GW8 = {
+	set_ruler_flag = immortal
+	}
+	
+
+
+
+	
+	VA2 = {
+	set_country_flag = akna
+	}
+	
+	VA0 = {
+	set_country_flag = yutu
+	}	
+	
+	
+		I17 = { country_event = { id = new_empire.1 days = 460 } }
+		
+		I00 = { country_event = { id = new_empire.4 days = 60 } }
+	
+		CY2 = { 
+		set_ruler_flag = vamp
+		country_event = { id = cymria.2 days = 30 } 
+		}		
+	}
+	
+	
+	option = {
+		name = start_up.1.a
+	}
+
+}

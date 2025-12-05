@@ -1,0 +1,13 @@
+add_core = I04
+owner = I04
+controller = I04
+culture = deutscherlander
+religion = old_imperial_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 5
+capital = "Arnstein"
+is_city = yes
+discovered_by = western

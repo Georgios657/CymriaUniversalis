@@ -1,0 +1,14 @@
+add_core = HE1
+add_core = HE2
+owner = HE2
+controller = HE2
+culture = shimiri
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Tienlong"
+is_city = yes
+discovered_by = chinese

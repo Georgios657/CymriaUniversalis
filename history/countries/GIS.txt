@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = azur_tech
+primary_culture = girai
+religion = asae_ya
+capital = 2199	# Bayreuth
+
+
+1435.1.1 = {
+	monarch = {
+		dynasty = "Girai"
+		name = "Kassy"
+		birth_date = 1415.9.21
+		dip = 5
+		adm = 5
+		mil = 6
+		female = yes
+	}
+
+}

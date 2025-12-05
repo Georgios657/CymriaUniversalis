@@ -1,0 +1,81 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 90 120 53 }
+
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	steppe_riders
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_cavalry
+	steppe_uhlans
+	steppe_raiders
+	steppe_footmen
+	steppe_musketeers
+	steppe_infantry
+	steppe_rifles
+	reformed_steppe_rifles
+}
+
+monarch_names = {
+
+    "Bhajita" = 60
+    "Fuipo" = 60
+    "Jeipo" = 60
+    "Kaschmen" = 60
+    "Vira" = 60
+    "Taschka" = 60
+    "Geroz" = 60
+    "Aurelian" = 60
+    "Cormegil" = 60
+    "Zephyr" = 60
+    "Darian" = 60
+    "Xander" = 60
+    "Orion" = 60
+    "Zenith" = 60
+    "Draven" = 60
+    "Azriel" = 60
+    "Lasarus" = 60
+    "Oberon" = 60
+    "Vhasen" = 60
+
+    "Fuipa" = -20
+    "Jeipa" = -20
+    "Zepha" = -20
+    "Drava" = -20
+    "Zepha" = -20
+    "Iroa" = -20
+    "Vasenja" = -20
+    "Vassessa" = -20
+    "Vasenia" = -20
+}
+
+leader_names = {
+    Vhasen
+    Draven
+    Zenith
+    Zephyr
+    Cormegil
+    Azriel
+   Lasarus
+    Geroz
+    Taschka
+    Vira	
+
+}
+
+ship_names = {
+
+}

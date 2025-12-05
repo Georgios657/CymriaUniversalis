@@ -1,0 +1,12 @@
+add_core = PI5
+owner = PI5
+controller = PI5
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Tahur"
+is_city = yes
+culture = kharinian
+religion = nyamism

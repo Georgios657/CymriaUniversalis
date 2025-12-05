@@ -1,0 +1,39 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 2
+technology_group = chinese
+primary_culture = baio
+religion = phoenix_faith
+capital = 1237	# Bayreuth
+
+
+1400.1.1 = {
+
+
+
+
+
+	monarch = {
+		dynasty = "Bai"
+		name = "Ying"
+		birth_date = 1395.9.21
+		dip = 4
+		adm = 3
+		mil = 3
+
+	}
+
+}
+
+
+1444.1.1 = {
+		leader = {
+		name = "Lao Tou"
+		type = general
+		fire = 4
+		shock = 4
+		manuever = 5
+		siege = 2
+		death_date = 1453.7.17
+	}
+}

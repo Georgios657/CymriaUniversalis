@@ -1,0 +1,84 @@
+march = {
+    first = LA0
+    second = LA1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+march = {
+    first = LA0
+    second = LA2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+march = {
+    first = LA0
+    second = LA3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+union = {
+    first = LA0
+    second = LA5
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = LA0
+    second = LA6
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = LA7
+    second = LA8
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = LB4
+    second = LB6
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+march = {
+    first = LB4
+    second = LB5
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = LA9
+    second = LB0
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+march = {
+    first = LA9
+    second = LB2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+march = {
+    first = LA9
+    second = LB1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = LA9
+    second = LB3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}

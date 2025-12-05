@@ -1,0 +1,1181 @@
+##BranchStart 0
+sveri1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = TN6
+			culture = snow_trolls
+	}
+
+		
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_great_fish = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion = the_great_catfish
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_permanent_claim = 3563
+			add_permanent_claim = 3555
+			add_permanent_claim = 3556
+			add_permanent_claim = 3566
+		}
+	}
+	##Mission End
+	##Mission Start
+	take_the_great_rivers = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_great_fish
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion = the_great_catfish
+		OR = {
+		AND = {
+			owns = 3563 
+			owns = 3566		
+			3563 = {
+			religion  = the_great_catfish
+			}
+						3566 = {
+			religion  = the_great_catfish
+			}
+		}
+		AND = {
+			owns = 3555  
+			owns = 3556	
+			3555 = {
+			religion  = the_great_catfish
+			}
+			3556 = {
+			religion  = the_great_catfish
+			}			
+		}
+		}
+
+		}
+		effect = {
+			define_advisor = {
+				type = inquisitor
+				skill = 3
+				cost_multiplier = 0.25
+				discount = yes
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	honor_the_fish = {
+		icon = mission_unite_home_region
+		required_missions {
+			take_the_great_rivers
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion = the_great_catfish
+			NOT = {
+			 	any_province = {
+				region = sveri_region
+				NOT = {
+				religion = the_great_catfish
+				}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+    name = gospel_of_scales
+    duration = -1  
+}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_spread_faith_fish = {
+		icon = mission_unite_home_region
+		required_missions {
+			honor_the_fish
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion = the_great_catfish
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				religion = the_great_catfish
+				is_city = yes
+			}
+					}
+		effect = {
+			define_advisor = {
+				type = theologian
+				skill = 2
+				cost_multiplier = 0.25
+				discount = yes
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_scaly_gospel = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_spread_faith_fish
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion = the_great_catfish
+			custom_trigger_tooltip = {
+				tooltip = obj_convert_100_provinces_tooltip
+				check_variable = { which = num_converted_religion value = 100 }
+			}
+		}
+		effect = {
+			 	add_splendor = 800
+		}
+	}
+	##Mission End
+	##Mission Start
+	gather_all_tribes_troll = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 100
+		}
+		effect = {
+			add_yearly_manpower = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	hit_the_legal = {
+		icon = mission_unite_home_region
+		required_missions {
+			gather_all_tribes_troll
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			 	average_autonomy = 20
+			}
+		}
+		effect = {
+			change_government_reform_progress = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	let_them_serve = {
+		icon = mission_unite_home_region
+		required_missions {
+			hit_the_legal
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_accepted_cultures = 3
+				num_of_different_cultures_in_court = 3
+		}
+		effect = {
+						add_country_modifier = { 
+						name = all_troll
+						duration = 7500  
+					}					
+		}
+	}
+	##Mission End
+	##Mission Start
+	select_the_brightest = {
+		icon = mission_unite_home_region
+		required_missions {
+			let_them_serve
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_unified_culture_group = yes
+		}
+		effect = {
+			change_innovativeness = 10
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+sveri2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = TN6
+			culture = snow_trolls
+	}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_eastern_expanse = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_core_lands
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					hettbrunnen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					froknet_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			 	add_prestige = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	rebuilt_east_troll = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_eastern_expanse
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+	value = 60
+	OR = {
+	area = hettbrunnen_area
+	area = froknet_area
+	}
+}
+
+
+		}
+		effect = {
+									muspelland_area  = {					
+			add_permanent_claim = ROOT
+		}
+									jotunheim_area  = {					
+			add_permanent_claim = ROOT
+		}
+									hellheim_area  = {					
+			add_permanent_claim = ROOT
+		}		
+		}
+	}
+	##Mission End
+	##Mission Start
+	to_the_eastern_mount = {
+		icon = mission_unite_home_region
+		required_missions {
+			rebuilt_east_troll
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					muspelland_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					jotunheim_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					hellheim_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_treasury = 500
+		}
+	}
+	##Mission End
+	##Mission Start
+	integrate_muspel = {
+		icon = mission_unite_home_region
+		required_missions {
+			to_the_eastern_mount
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			AND = {
+			 	accepted_culture = muspel
+				3601 = {
+				culture = muspel
+				development = 30
+				}			
+			}
+						NOT = {
+			 	any_province = {
+				area = muspelland_area
+				NOT = {
+				accepted_culture = ROOT
+				}
+				}
+			}
+			}
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	pacifiy_the_giants_east = {
+		icon = mission_unite_home_region
+		required_missions {
+			integrate_muspel
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			exists = GI1
+			exists = GI2
+			exists = GI3
+			}			
+		}
+		effect = {
+		jotunheim_region  = {					
+					add_permanent_claim = ROOT
+		}		}
+	}
+	##Mission End
+	##Mission Start
+	peace_with_humans = {
+		icon = mission_unite_home_region
+		required_missions {
+			unifiry_trolldom
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+				diplomatic_reputation = 5
+				dip_tech = 16
+			}
+		}
+		effect = {
+						add_country_modifier = { 
+						name = diplomatic_offensive
+						duration = 7500  
+					}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	alliances_with_humans = {
+		icon = mission_unite_home_region
+		required_missions {
+			peace_with_humans
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			AND = {
+				 	great_power_rank = 1
+					NOT = {
+					 	great_power_rank = 5
+					}			
+			}
+			dip_tech = 20
+
+			}			
+		}
+		effect = {
+			add_dip_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	learn_form_humans = {
+		icon = mission_unite_home_region
+		required_missions {
+			alliances_with_humans
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			innovativeness = 40
+		}
+		effect = {
+			add_army_professionalism = 0.2
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+sveri3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = TN6
+			culture = snow_trolls
+	}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_refounded_sveri = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			tag = TN6
+			total_development = 150
+			}
+		}
+		effect = {
+		old_sveri_area  = {					
+					add_permanent_claim = ROOT
+		}
+				trollen_area  = {					
+					add_permanent_claim = ROOT
+		}
+				vuttgard_area  = {					
+					add_permanent_claim = ROOT
+		}
+		
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_core_lands = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_refounded_sveri
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					old_sveri_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					trollen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					vuttgard_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+				vrundar_area  = {					
+					add_permanent_claim = ROOT
+		}
+		
+						nuntor_area  = {					
+					add_permanent_claim = ROOT
+		}
+		
+						myr_area  = {					
+					add_permanent_claim = ROOT
+		}
+		
+						hettbrunnen_area  = {					
+					add_permanent_claim = ROOT
+		}
+		
+						froknet_area  = {					
+					add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_new_capital_troll = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_core_lands
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			capital_scope = {
+			development = 20
+			}
+		}
+		effect = {
+			capital_scope = {
+			add_permanent_province_modifier = { 
+    name = new_sveri
+    duration = -1  
+}
+
+ 	change_province_name = "Nor-Sveri"
+	 	rename_capital = "Nor-Sveri"
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	search_for_texts = {
+		icon = mission_unite_home_region
+		required_missions {
+			a_new_capital_troll
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			innovativeness = 15
+			num_of_provinces_in_states = 35
+			}
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	finance_studies = {
+		icon = mission_unite_home_region
+		required_missions {
+			search_for_texts
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	treasury = 2000
+		}
+		effect = {
+			 	add_treasury = -2000
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	ask_shamans = {
+		icon = mission_unite_home_region
+		required_missions {
+			finance_studies
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+		OR = {
+			estate_influence = {
+				estate = estate_church
+				influence = 70
+			}			
+			crown_land_share = 60
+		}
+		
+		}
+		effect = {
+					add_country_modifier = { 
+						name = shaman_guidance
+						duration = 7500  
+					}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	dscivoer_the_truth = {
+		icon = mission_unite_home_region
+		required_missions {
+			ask_shamans
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			num_of_provinces_in_states = 50
+			innovativeness = 30
+			monthly_adm = 11
+			monthly_dip = 11
+			monthly_mil = 11
+			}
+		}
+		effect = {
+			country_event = { 
+				id = troll.2
+				days = 1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	unifiry_trolldom = {
+		icon = mission_unite_home_region
+		required_missions {
+			pacifiy_the_giants_east
+			dscivoer_the_truth
+			to_the_gloom
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+				 	has_unified_culture_group = yes	
+		 	
+
+				development_in_provinces = {
+					value = 500
+					culture_group = north_trolls
+				}
+		}
+
+		}
+		effect = {
+			 	add_splendor = 2000
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_new_old_border = {
+		icon = mission_unite_home_region
+		required_missions {
+			unifiry_trolldom
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					durron_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					bruggen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					khlarond_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					gianthead_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					zaran_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					northern_rift_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_power_projection = { 
+	type = 10_permanent_power_projection
+	amount = 10 
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	regain_wisdom = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_new_old_border
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+		monthly_adm = 13
+			monthly_dip = 13
+			monthly_mil = 13
+			}
+		}
+		effect = {
+					add_country_modifier = { 
+						name = regained_wisdom
+						duration = -1
+					}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_place_among_nations = {
+		icon = mission_unite_home_region
+		required_missions {
+			regain_wisdom
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	government_rank = 3
+		}
+		effect = {
+					add_country_modifier = { 
+						name = respected_nation
+						duration = -1
+					}				
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+sveri4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = TN6
+			culture = snow_trolls
+	}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_southern_esanse = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_core_lands
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				vrundar_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+				nuntor_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+				myr_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+					add_country_modifier = { 
+						name = southern_expeanse_colo
+						duration = 7000
+					}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	settle_the_border = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_southern_esanse
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+	value = 90
+	OR = {
+	area = vrundar_area
+	area = nuntor_area
+	area = myr_area
+	}
+}
+		}
+		effect = {
+			 	change_government_reform_progress = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	expand_into_the_riverland = {
+		icon = mission_unite_home_region
+		required_missions {
+			settle_the_border
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 20
+	region = aylorian_region
+	is_city = yes
+}
+		}
+		effect = {
+			 	add_years_of_income = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	populate_the_riverlands = {
+		icon = mission_unite_home_region
+		required_missions {
+			expand_into_the_riverland
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+	value = 300
+	region = aylorian_region
+}
+		}
+		effect = {
+						aylorian_region  = {					
+					add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	to_the_gloom = {
+		icon = mission_unite_home_region
+		required_missions {
+			populate_the_riverlands
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		aylorian_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }			
+		}
+		effect = {
+						gloomwood_region  = {					
+					add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	all_servants_of_death = {
+		icon = mission_unite_home_region
+		required_missions {
+			unifiry_trolldom
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			 	any_ally = { 
+				culture_group = elvish
+				}
+			accepted_culture = forrest_elf
+			accepted_culture = ice_elf			
+		}
+
+
+				
+				
+		}
+		effect = {
+			change_dip = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	no_death_gods = {
+		icon = mission_unite_home_region
+		required_missions {
+			all_servants_of_death
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			 	any_ally = { 
+				culture_group = elvish
+				trust = { who = ROOT value = 100 }
+				}	
+
+num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 15
+	culture_group =elvish
+	is_city = yes
+}				
+			}
+		}
+		effect = {
+			 	change_adm = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	learn_from_elves = {
+		icon = mission_unite_home_region
+		required_missions {
+			no_death_gods
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	prestige = 75
+		}
+		effect = {
+			change_mil = 1
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+sveri5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = TN6
+			culture = snow_trolls
+	}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	amasss_gold = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			treasury = 2500
+		}
+		effect = {
+			 	add_inflation = -4
+		}
+	}
+	##Mission End
+	##Mission Start
+	richest_troll_of_the_word = {
+		icon = mission_unite_home_region
+		required_missions {
+			amasss_gold
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			gold = 5
+		}
+		effect = {
+			add_legitimacy = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_brilliatna_sceme = {
+		icon = mission_unite_home_region
+		required_missions {
+			richest_troll_of_the_word
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			spymaster = 3
+			 	mercantilism = 30
+		}
+		effect = {
+					add_country_modifier = { 
+						name = tricked_market
+						duration = 9000
+					}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	spread_the_network = {
+		icon = mission_unite_home_region
+		required_missions {
+			a_brilliatna_sceme
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_global_modifier_value = {
+				which = spy_offence 
+				value = 0.3
+			}
+		}
+		effect = {
+					add_country_modifier = { 
+						name = ex_tricked_market
+						duration = -1
+					}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	ivory_scam = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+	trade_goods = ivory
+	amount = 5
+}
+		}
+		effect = {
+			add_owned_provinces_development_ducats = {
+    multiplier = 3
+    age_multiplier = 2
+    trigger = { trade_goods = ivory }
+}
+change_price = {
+    trade_goods = ivory
+    key = ivory_scam
+    value = -0.33
+    duration = 3650
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	iron_scam = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+	trade_goods = iron
+	amount = 15
+}
+		}
+		effect = {
+			add_owned_provinces_development_ducats = {
+    multiplier = 3
+    age_multiplier = 2
+    trigger = { trade_goods = iron }
+}
+change_price = {
+    trade_goods = iron
+    key = iron_scam
+    value = -0.33
+    duration = 3650
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	fur_scam = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+	trade_goods = fur
+	amount = 25
+}
+		}
+		effect = {
+			add_owned_provinces_development_ducats = {
+    multiplier = 3
+    age_multiplier = 2
+    trigger = { trade_goods = fur }
+}
+change_price = {
+    trade_goods = fur
+    key = fur_scam
+    value = -0.33
+    duration = 3650
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

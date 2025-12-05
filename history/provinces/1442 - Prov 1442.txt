@@ -1,0 +1,15 @@
+# Anything typed here will be added to all selected province history files
+culture = auksian
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 4
+capital = "Lietuva"
+is_city = yes
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files
+add_core = VL4
+owner = VL4
+controller = VL4

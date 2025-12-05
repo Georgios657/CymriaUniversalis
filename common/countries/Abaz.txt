@@ -1,0 +1,65 @@
+graphical_culture = muslimgfx
+
+color = { 3  241  14 }
+revolutionary_colors = { 4 0 4 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+	spy_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+leader_names = {
+
+}
+
+ship_names = {
+	
+}
+
+monarch_names = {
+	"Hattusili #0" = 20
+	"Suppiluliuma #0" = 20
+	"Muwattalli #0" = 20
+	"Tudhaliya #0" = 10
+	"Arnuwanda #0" = 10
+	"Huzziya #0" = 10
+	"Telipinu #0" = 5
+	"Piyassili #0" = 5
+	"Nerikkaili #0" = 5
+	"Labarna #0" = 0
+
+	"Puduhepa #0" = -1
+	"Danuhepa #0" = -1
+	"Asmunikal #0" = -1
+	"Sausga #0" = -1
+	"Tawananna #0" = -1
+	"Kilushepa #0" = -1
+	"Mursiliya #0" = -1
+	"Halpasulupi #0" = -1
+	"Arinniti #0" = -1
+	"Seruwa #0" = -1
+
+}

@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = stateless_society
+government_rank = 1
+technology_group = naga_tech
+primary_culture = mountain_naga
+religion = naga_faith
+capital = 1308	# Bayreuth
+
+
+1424.1.1 = {
+	monarch = {
+		dynasty = "Naga"
+		name = "Gadaksha"
+		birth_date = 1415.9.21
+		dip = 1
+		adm = 4
+		mil = 5
+
+	}
+
+}

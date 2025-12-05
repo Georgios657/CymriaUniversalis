@@ -1,0 +1,14 @@
+add_core = ZB7
+owner = ZB7
+controller = ZB7
+culture = neenen
+religion = phoenix_faith
+hre = no
+base_tax = 4
+base_production =5
+trade_goods = glas
+base_manpower = 4
+capital = "Anyenlenora"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

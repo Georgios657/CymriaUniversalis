@@ -1,0 +1,15 @@
+add_core = EP3
+owner = EP3
+controller = EP3
+culture = sunoria
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = cloth
+base_manpower = 4
+capital = "Valoria"
+is_city = yes
+religion = moon_and_sun
+center_of_trade = 1
+discovered_by = chinese
+discovered_by = selen_tech

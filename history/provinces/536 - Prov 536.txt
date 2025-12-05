@@ -1,0 +1,14 @@
+add_core = FCA
+owner = FCA
+controller = FCA
+culture = yangaran
+religion = amatism_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Mussai"
+is_city = yes
+discovered_by = indian
+fort_15th = yes

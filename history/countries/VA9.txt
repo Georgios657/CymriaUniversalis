@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = varjorjen_tribe
+government_rank = 1
+technology_group = varjorjen
+primary_culture = uli_vataan
+religion = thorrinian
+capital = 1169
+
+1090.1.1 = {
+	monarch = {
+		name = "Peere"
+		dynasty = "Rakata"
+		birth_date = 500.9.21
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+	
+	add_ruler_personality = wizard
+}
+

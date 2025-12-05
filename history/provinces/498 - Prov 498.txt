@@ -1,0 +1,15 @@
+add_core = FC9
+owner = FC9
+controller = FC9
+culture = xomxian
+religion = amatism_faith
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = cloth
+base_manpower = 4
+capital = "Xomxi"
+is_city = yes
+discovered_by = indian
+center_of_trade = 2
+fort_15th = yes

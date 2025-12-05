@@ -1,0 +1,12 @@
+add_core = ES0
+owner = ES0
+controller = ES0
+religion = the_silvern_guide
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Curcia"
+is_city = yes
+culture = harian

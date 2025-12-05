@@ -1,0 +1,22 @@
+government = magocracy
+add_government_reform = warlock_circle
+government_rank = 1
+technology_group = indian
+primary_culture = cotralian
+religion = telcontarian
+capital = 733	# Bayreuth
+
+
+1430.1.1 = {
+	monarch = {
+		name = "Ezim"
+		dynasty = "AnCantral"
+		birth_date = 1381.9.21
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+
+	clear_scripted_personalities = yes
+	add_ruler_personality = wizard
+}

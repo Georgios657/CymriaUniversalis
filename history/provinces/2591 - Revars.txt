@@ -1,0 +1,12 @@
+add_core = VE1
+owner = VE1
+controller = VE1
+hre = no
+base_tax = 5
+base_production =8
+trade_goods = cloth
+base_manpower = 3
+capital = "Revars"
+is_city = yes
+culture = verdano
+religion = imperial_cult

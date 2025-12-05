@@ -1,0 +1,12 @@
+add_core = WI8
+owner = WI8
+controller = WI8
+culture = darian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = cocoa
+base_manpower = 2
+capital = "Mwangiro"
+is_city = yes

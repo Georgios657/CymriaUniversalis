@@ -1,0 +1,14 @@
+add_core = SH0
+owner = SH0
+controller = SH0
+culture = shegen_riverfolk
+hre = no
+base_tax = 8
+base_production = 8
+trade_goods = slaves
+base_manpower = 5
+capital = "Shegen"
+is_city = yes
+religion = moon_and_sun
+center_of_trade = 2
+fort_15th = yes

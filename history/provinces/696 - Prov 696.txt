@@ -1,0 +1,13 @@
+add_core = LD3
+owner = LD3
+controller = LD3
+culture = gerossi
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 1
+capital = "Autora"
+is_city = yes
+discovered_by = ottoman

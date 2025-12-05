@@ -1,0 +1,495 @@
+######################################################
+# Islam events										 #
+# Relates to Piety, Religious Schools, Scholars		 #
+# and the Islamic world in the Early modern era		 #
+#                         							 #
+# Written by Henrik Lohmander						 #
+######################################################
+
+namespace = muslim_school_events
+namespace = muslim_school_opinion_events
+
+#Change opinion between schools
+
+#Increasing to like
+country_event = {
+	id = muslim_school_opinion_events.1
+	title = muslim_school_opinion_events.1.t
+	desc = muslim_school_opinion_events.1.d
+	picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+	
+	trigger = {
+		has_dlc = "Cradle of Civilization"
+		religion_group = moon_faith
+		has_religious_school = yes
+		total_development = 50
+		num_of_cities = 5
+		any_country = {
+			has_religious_school = yes
+			total_development = 50
+			num_of_cities = 5
+			NOT = { has_religious_school_of = ROOT }
+			school_opinion = { #0 or more
+				who = ROOT
+				opinion = 0
+			}
+			NOT = {
+				school_opinion = { #Below 1
+					who = ROOT
+					opinion = 1
+				}
+			}
+			trust = {
+				who = ROOT
+				value = 70
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_religious_school = yes
+					total_development = 50
+					num_of_cities = 5
+					NOT = { has_religious_school_of = ROOT }
+					school_opinion = { #0 or more
+						who = ROOT
+						opinion = 0
+					}
+					NOT = {
+						school_opinion = { #Below 1
+							who = ROOT
+							opinion = 1
+						}
+					}
+					trust = {
+						who = ROOT
+						value = 70
+					}
+				}
+				save_event_target_as = school_opinion_increase_country
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	option = {
+		name = muslim_school_opinion_events.1.a #
+		event_target:school_opinion_increase_country = {
+			set_school_opinion = {
+				who = ROOT
+				opinion = 1
+			}
+		}
+	}
+}
+
+#Increasing to neutral
+country_event = {
+	id = muslim_school_opinion_events.2
+	title = muslim_school_opinion_events.2.t
+	desc = muslim_school_opinion_events.2.d
+	picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+	
+	trigger = {
+		has_dlc = "Cradle of Civilization"
+		religion_group = moon_faith
+		has_religious_school = yes
+		total_development = 50
+		num_of_cities = 5
+		any_known_country = {
+			has_religious_school = yes
+			total_development = 50
+			num_of_cities = 5
+			NOT = { has_religious_school_of = ROOT }
+			NOT = {
+				school_opinion = {
+					who = ROOT
+					opinion = 0
+				}
+			}
+			NOT = { war_with = ROOT }
+			NOT = { truce_with = ROOT }
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_known_country = {
+				limit = {
+					has_religious_school = yes
+					total_development = 50
+					num_of_cities = 5
+					NOT = { has_religious_school_of = ROOT }
+					NOT = {
+						school_opinion = {
+							who = ROOT
+							opinion = 0
+						}
+					}
+					NOT = { war_with = ROOT }
+					NOT = { truce_with = ROOT }
+				}
+				save_event_target_as = school_opinion_increase_country
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 700
+	}
+	
+	option = {
+		name = muslim_school_opinion_events.2.a #
+		event_target:school_opinion_increase_country = {
+			set_school_opinion = {
+				who = ROOT
+				opinion = 0
+			}
+		}
+	}
+}
+
+#Decreasing opinion
+country_event = {
+	id = muslim_school_opinion_events.3
+	title = muslim_school_opinion_events.3.t
+	desc = muslim_school_opinion_events.3.d
+	picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+	
+	trigger = {
+		has_dlc = "Cradle of Civilization"
+		religion_group = moon_faith
+		has_religious_school = yes
+		total_development = 50
+		num_of_cities = 5
+		any_country = {
+			has_religious_school = yes
+			total_development = 50
+			num_of_cities = 5
+			war_with = ROOT
+			NOT = { has_religious_school_of = ROOT }
+			school_opinion = {
+				who = ROOT
+				opinion = 0
+			}
+			defensive_war_with = ROOT
+			is_in_war = {
+				defender_leader = THIS
+				attacker_leader = ROOT
+				duration = 1095
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_religious_school = yes
+					total_development = 50
+					num_of_cities = 5
+					war_with = ROOT
+					NOT = { has_religious_school_of = ROOT }
+					school_opinion = {
+						who = ROOT
+						opinion = 0
+					}
+					defensive_war_with = ROOT
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
+						duration = 1095
+					}
+				}
+				save_event_target_as = school_opinion_decrease_country
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 30
+		modifier = {
+			factor = 0.75
+			any_country = {
+				has_religious_school = yes
+				total_development = 50
+				num_of_cities = 5
+				war_with = ROOT
+				NOT = { has_religious_school_of = ROOT }
+				school_opinion = {
+					who = ROOT
+					opinion = 0
+				}
+				defensive_war_with = ROOT
+				is_in_war = {
+					defender_leader = THIS
+					attacker_leader = ROOT
+					duration = 1825 #5 years
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = muslim_school_opinion_events.3.a #
+		if = { # 0 is changed to -1
+			limit = {
+				event_target:school_opinion_decrease_country = {
+					NOT = {
+						school_opinion = {
+							who = ROOT
+							opinion = 1
+						}
+					}
+				}
+			}
+			event_target:school_opinion_decrease_country = {
+				set_school_opinion = {
+					who = ROOT
+					opinion = -1
+				}
+			}
+		}
+		else = { #1 is changed to 0
+
+			event_target:school_opinion_decrease_country = {
+				set_school_opinion = {
+					who = ROOT
+					opinion = 0
+				}
+			}
+		}
+	}
+}
+
+
+#Foreign Scholars influence local theology
+country_event = {
+	id = muslim_school_events.8
+	title = muslim_school_events.8.t
+	desc = muslim_school_events.8.d
+	picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+
+	trigger = {
+		religion_group = moon_faith
+		has_religious_scholars_trigger = yes
+		any_known_country = {
+			OR = {
+				our_scholar_matches_their_school_trigger = { school=the_grey_wanderer }
+				our_scholar_matches_their_school_trigger = { school=arakan_the_black }
+				our_scholar_matches_their_school_trigger = { school=neshar_the_four_armed }
+				our_scholar_matches_their_school_trigger = { school=circe_the_loyal }
+				our_scholar_matches_their_school_trigger = { school=oyor_the_eternal_betrayer }
+
+			}
+			has_opinion = { who = ROOT value = 150 }
+			OR = {
+				alliance_with = ROOT
+				is_subject_of = ROOT
+				overlord_of = ROOT
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_known_country = {
+				limit = {
+					OR = {
+				our_scholar_matches_their_school_trigger = { school=the_grey_wanderer }
+				our_scholar_matches_their_school_trigger = { school=arakan_the_black }
+				our_scholar_matches_their_school_trigger = { school=neshar_the_four_armed }
+				our_scholar_matches_their_school_trigger = { school=circe_the_loyal }
+				our_scholar_matches_their_school_trigger = { school=oyor_the_eternal_betrayer }
+
+					}
+					has_opinion = { who = ROOT value = 150 }
+					OR = {
+						alliance_with = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				save_event_target_as = scholar_country
+			}
+			set_saved_name = {
+				key = foreign_theologian
+				type = advisor
+				scope = event_target:scholar_country
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 460
+
+	}
+
+	option = {
+		name = muslim_school_events.8.a #
+		define_advisor = {
+			type = theologian
+			name = foreign_theologian
+			culture = event_target:scholar_country
+			religion = event_target:scholar_country
+			skill = 2
+			discount = yes
+		}
+	}
+	option = {
+		name = muslim_school_events.8.b #
+		add_adm_power = 25
+	}
+	after = {
+		clear_saved_name = foreign_theologian
+	}
+}
+
+#[scholar_country.GetReligiousSchool] Theologians
+country_event = {
+	id = muslim_school_events.9
+	title = muslim_school_events.9.t
+	desc = muslim_school_events.9.d
+	picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+
+	trigger = {
+		has_dlc = "Cradle of Civilization"
+		religion_group = moon_faith
+		has_religious_scholars_trigger = yes
+		any_known_country = {
+			OR = {
+				our_scholar_matches_their_school_trigger = { school=the_grey_wanderer }
+				our_scholar_matches_their_school_trigger = { school=arakan_the_black }
+				our_scholar_matches_their_school_trigger = { school=neshar_the_four_armed }
+				our_scholar_matches_their_school_trigger = { school=circe_the_loyal }
+				our_scholar_matches_their_school_trigger = { school=oyor_the_eternal_betrayer }
+
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_known_country = {
+				limit = {
+					OR = {
+						our_scholar_matches_their_school_trigger = { school=the_grey_wanderer }
+				our_scholar_matches_their_school_trigger = { school=arakan_the_black }
+				our_scholar_matches_their_school_trigger = { school=neshar_the_four_armed }
+				our_scholar_matches_their_school_trigger = { school=circe_the_loyal }
+				our_scholar_matches_their_school_trigger = { school=oyor_the_eternal_betrayer }
+
+					}
+				}
+				save_event_target_as = scholar_country
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 460
+
+	}
+
+	option = {
+		name = muslim_school_events.9.a #He is doing God's work.
+		event_target:scholar_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = academic_respect
+			}
+		}
+	}
+}
+
+#"Religious Scholars Disagree"
+country_event = {
+	id = muslim_school_events.10
+	title = muslim_school_events.10.t
+	desc = muslim_school_events.10.d
+	picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+
+	trigger = {
+		has_dlc = "Cradle of Civilization"
+		religion_group = moon_faith
+		has_religious_scholars_trigger = yes
+	}
+	
+
+	mean_time_to_happen = {
+		months = 460
+	}
+
+	option = {
+		name = muslim_school_events.10.a #Let us just ensure that this man is dealt with.
+		add_adm_power = -25
+		add_prestige = -10
+	}
+}
+
+
+
+#Choosing Madhhab - New Country
+country_event = {
+	id = muslim_school_events.20
+	title = muslim_school_events.20.t
+	desc = muslim_school_events.20.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	trigger = {
+		has_dlc = "Cradle of Civilization"
+		religion_group = moon_faith
+		has_religious_school = no
+	}
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = muslim_school_events.20.b #Hanafi
+
+		set_religious_school = {
+			group = moon_faith
+			school = the_grey_wanderer
+		}
+	}
+	option = {
+		name = muslim_school_events.20.c #Hanbali
+
+		set_religious_school = {
+			group = moon_faith
+			school = arakan_the_black
+		}
+	}
+	option = {
+		name = muslim_school_events.20.dd #Maliki
+
+		set_religious_school = {
+			group = moon_faith
+			school = neshar_the_four_armed
+		}
+	}
+	option = {
+		name = muslim_school_events.20.e #Shafi'i
+
+		set_religious_school = {
+			group = moon_faith
+			school = circe_the_loyal
+		}
+	}
+	option = {
+		name = muslim_school_events.20.f #Jafari
+
+		set_religious_school = {
+			group = moon_faith
+			school = oyor_the_eternal_betrayer
+		}
+	}
+}
+

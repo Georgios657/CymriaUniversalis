@@ -1,0 +1,13 @@
+add_core = AY4
+owner = AY4
+controller = AY4
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = copper
+base_manpower = 6
+capital = "Parako"
+is_city = yes
+culture = lorer
+religion = rozalia
+add_core = NC9

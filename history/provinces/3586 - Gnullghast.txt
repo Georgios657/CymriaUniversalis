@@ -1,0 +1,12 @@
+add_core = TO7
+owner = TO7
+controller = TO7
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = fur
+base_manpower = 3
+capital = "Gnullghast"
+is_city = yes
+culture = snow_trolls
+religion = the_great_catfish

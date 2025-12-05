@@ -1,0 +1,93 @@
+#Country Name: Please see filename.
+
+graphical_culture = inuitgfx
+
+color = { 25 20 25 }
+
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+    "Orek" = 60
+    "Tofegib" = 60
+    "Nofien" = 60
+    "Jabagon" = 60
+    "Hinfenin" = 60
+    "Ogasbos" = 60
+    "Nersis" = 60
+    "Dabradel" = 60
+    "Jejebo" = 60
+    "Kaspes" = 60
+	"Zanferis" = 60
+	"Rofegar" = 60
+	"Lintravo" = 60
+	"Binfadil" = 60
+	"Pajeton" = 60
+	"Klefador" = 60
+	"Xavolir" = 60
+	"Morzadan" = 60
+	"Fandrelis" = 60
+	"Yezgabor" = 60
+
+    "Tangra" = -60
+    "Ogabva" = -60
+    "Kaspa" = -60
+    "Negre" = -60
+    "Lintravena" = -60
+	"Lorelia" = -60
+	"Zefrina" = -60
+	"Mirelin" = -60
+	"Tisandra" = -60
+	"Valeria" = -60
+	"Nimara" = -60
+	"Joriel" = -60
+	"Kasindra" = -60
+	"Fenessa" = -60
+	"Olivara" = -60
+
+}
+
+leader_names = {
+
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Joukko  $PROVINCE$" "Aseistettu  $PROVINCE$" "Miehiä $PROVINCE$"
+}
+
+fleet_names = {
+}

@@ -1,0 +1,617 @@
+
+##BranchEnd 0
+##BranchStart 1
+vajos2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = varjoren
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+
+	##Mission End
+	##Mission Start
+	the_last_dwarf = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_varjojen_realm
+			
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		num_of_provinces_in_states = 50
+		}
+		effect = {
+			add_army_professionalism = 0.05
+		}
+	}
+	##Mission End
+	##Mission Start
+	reanimate_the_dead = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_last_dwarf
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		splendor = 800
+								has_government_power = {
+				mechanic_type = varjorjen_hunger_mechanic
+				power_type = varjorjen_hunger
+				value = 50
+			}
+		}
+		effect = {
+		 	add_splendor = -750
+						add_government_power = {
+				mechanic_type = varjorjen_hunger_mechanic
+				power_type = varjorjen_hunger
+				value = -40
+}
+
+			 	random_owned_province = { 
+				limit = {
+				has_terrain = mountain
+				NOT = {
+				province_id = 1158
+				}
+				}
+				change_culture = northern_dwarf
+				}
+		}
+	}	
+	##
+	##Mission Start
+	a_reborn_dwarafen_realm = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			reanimate_the_dead
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+	value = 8
+	OR = {
+	has_terrain = highlands	
+	has_terrain = mountain	
+	has_terrain = hills	
+	}
+
+	culture = northern_dwarf
+}
+		}
+		effect = {
+			add_country_modifier = { 
+    name = dwarfen_smiths
+    duration = -1  
+}
+		}
+	}	
+	##	
+	##Mission Start
+	the_glowing_forge = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_reborn_dwarafen_realm
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size = 400
+		}
+		effect = {
+			add_country_modifier = { 
+    name = the_hot_forge
+    duration = 7250  
+}
+		}
+	}	
+	##		
+}
+##BranchStart 1
+vajos3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = varjoren
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+
+	##Mission End
+	##Mission Start
+	the_return_of_evil = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_varjojen_realm
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_global_flag = thorren_free
+			owns = 1158
+		}
+		effect = {
+			1158 = {
+			add_province_modifier = { 
+    name = thorren
+    duration = -1  
+}
+			}
+		}
+	}
+	##Mission End
+	##
+	##Mission Start
+	gather_all_varjorjen = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_return_of_evil
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		has_unified_culture_group = yes
+		}
+		effect = {
+			high_up_north = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+				the_near_north = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	##Mission End
+	##	
+	##Mission Start
+	conquer_the_north = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			gather_all_varjorjen
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+	high_up_north = { 
+	type = all 
+	OR = {
+	country_or_subject_holds = ROOT 
+	is_empty = yes
+	religion = thorrinian
+	}
+
+	}
+	the_near_north = { 
+	type = all 
+	OR = {
+	country_or_subject_holds = ROOT 
+	is_empty = yes
+		religion = thorrinian
+	}
+
+	}		
+		}
+		effect = {
+			add_country_modifier = { 
+    name = awakaned_thorren
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##		
+	##Mission Start
+	prepare_the_great_war = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			conquer_the_north
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	army_size = 200
+				total_development = 1000
+		}
+		effect = {
+			 	every_province = {
+				limit = {
+				owner = {
+				ruler_is_vampire = yes
+				}
+				}
+				add_permanent_claim = ROOT
+				}
+		}
+	}
+	##Mission End
+	##	
+	##		
+	##Mission Start
+	remind_the_vampires_of_duty = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			prepare_the_great_war
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				any_country = {
+			ruler_is_vampire = yes
+			is_subject_of = ROOT
+			}	
+
+		}
+		effect = {
+				new_empire_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	##Mission End
+	##		
+	##		
+	##Mission Start
+	conquer_the_witches_of_the_new_empire = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			remind_the_vampires_of_duty
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			exists = I06
+			exists = I08
+			exists = I07
+			exists = I09
+			}
+		}
+		effect = {
+		136 = {
+			add_permanent_claim = ROOT		
+		}
+
+		}
+	}
+	##Mission End
+	##		
+	##		
+	##		
+	##Mission Start
+	reclaim_thorrens_fullpower = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			conquer_the_witches_of_the_new_empire
+		}
+		position = 12
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		has_country_modifier = awakaned_thorren
+			owns = 136
+			136 = {
+				has_great_project = {
+	type = tower_of_negro
+	tier = 3
+}		
+			}
+
+		}
+		effect = {
+				define_ruler = {
+			name = "Thorren"
+			dynasty = "Pimeys"
+			adm = 10
+			dip = 10
+			mil = 10
+			age = 20
+			claim = 100
+			
+
+		}
+		
+		set_country_flag = thorrens_reign
+					add_ruler_personality = wizard
+			
+			add_ruler_personality = immortal_personality
+			
+			add_ruler_personality = legendary_conqueror_personality
+		}
+	}
+	##Mission End
+	##		
+	##		
+	##		
+	##Mission Start
+	war_for_the_world = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			reclaim_thorrens_fullpower
+		}
+		position = 13
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 2500
+		}
+		effect = {
+			every_province = {
+			add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##			
+}
+
+vajos4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = varjoren
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+
+
+	##Mission End
+	##Mission Start
+	ancient_tombs = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_varjojen_realm
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		NOT = {
+			average_home_autonomy = 15
+		}
+
+		}
+		effect = {
+			add_years_of_income = 1
+		}
+
+	}
+	
+	
+
+	##Mission End
+	##Mission Start
+	use_slaves = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			ancient_tombs
+			
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+	trade_goods = gold
+	amount = 10
+}
+		}
+		effect = {
+		add_inflation = 10
+			add_owned_provinces_development_ducats = {
+    multiplier = 4
+    age_multiplier = 2
+    trigger = { trade_goods = gold }
+}
+		}
+	}
+	
+	
+	
+
+	##Mission End
+	##Mission Start
+	heralds_of_winter = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			use_slaves
+			
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			gold_income = 20
+			current_age = age_of_reformation
+			
+		}
+		effect = {
+			add_country_modifier = { 
+				name = winter_production
+				duration = -1  
+			}
+		}
+	}
+	
+	
+
+	##Mission End
+	##Mission Start
+	survive_and_adapt = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			heralds_of_winter
+			
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_unified_culture_group = yes
+			current_age = age_of_revolutions
+		}
+		effect = {
+			every_province = {
+			limit = {
+			OR = {
+			has_province_modifier = harsher_winter
+			has_province_modifier = harsh_winter
+			has_province_modifier = harshest_winter
+			}
+			culture_group = varjoren
+			owned_by = ROOT
+			}
+			add_province_modifier = { 
+					name = winter_devates
+					duration = -1  
+				}
+			
+			}
+		}
+	}
+}
+
+
+##BranchEnd 4
+anka6 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = VA2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission End
+	##Mission Start
+	a_new_path = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			remind_the_vampires_of_duty
+			
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		owns = 1158
+			horde_unity = 99
+			stability = 3
+		}
+		effect = {
+		add_stability = -6
+		1158 = {
+		remove_province_modifier = thorren
+		}
+		remove_country_modifier = awakaned_thorren
+		
+		
+			every_owned_province = { 
+			limit = {
+			religion = thorrinian
+			}
+			spawn_rebels = {
+			size = 4
+			type = religious_rebels
+		}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	destroy_darkness = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_new_path
+		}
+		position = 12
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			num_of_rebel_controlled_provinces = 1
+			}
+		}
+		effect = {
+			add_stability = 3
+			change_religion = phoenix_faith
+			add_country_modifier = {
+			name = "heralds_of_sun"
+			    duration = 10000
+			}
+		}
+	}	
+	##
+	##Mission Start
+	akna_new_goddes = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			destroy_darkness
+		}
+		position = 13
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	religious_unity = 0.99
+		}
+		effect = {
+			add_prestige = 15
+			change_personal_deity = akna_sun
+			change_government = theocracy
+			add_government_reform = god_on_earth
+		}
+	}	
+	##	
+	}

@@ -1,0 +1,912 @@
+country_decisions = {
+	reclaim_the_land = {
+		potential = {
+		culture_group = broden
+		 	is_nomad = no
+		is_year = 1500
+		NOT = {
+		has_country_flag = reclaimed
+		}
+		
+		any_owned_province = {
+			any_empty_neighbor_province = {
+		}
+				
+			
+
+		}
+		
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		is_subject = no
+		 	adm_tech = 4
+		}
+		effect = {
+		set_country_flag = reclaimed
+		
+		add_country_modifier = { 
+			name = reclaim_broden
+			duration = 15000  
+		}
+
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}		
+	
+	kanarian = {
+		major = yes
+		potential = {
+		owns_core_province = 2670
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BO5 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BO5 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2670 # Zabid
+		}
+		effect = {
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+			change_tag = BO5
+			on_change_tag_effect = yes
+			
+			set_country_flag = bro_duchy
+			
+			remove_non_electors_emperors_from_empire_effect = yes
+
+
+			close_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BO5
+			}			
+
+			add_prestige = 25
+			set_capital = 2670		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	small_broden = {
+		major = yes
+		potential = {
+		owns_core_province = 2680
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BO6 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BO6 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2680 # Zabid
+		}
+		effect = {
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+				set_country_flag = bro_duchy
+		
+			change_tag = BO6
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+
+
+			broden_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BO6
+			}			
+
+			add_prestige = 25
+			set_capital = 2680		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	plowden = {
+		major = yes
+		potential = {
+		owns_core_province = 2684
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BO7 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BO7 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2684 # Zabid
+		}
+		effect = {
+		
+				set_country_flag = bro_duchy
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+			change_tag = BO7
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+
+			nornor_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BO7
+			}			
+
+			add_prestige = 25
+			set_capital = 2684		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	kessen = {
+		major = yes
+		potential = {
+		owns_core_province = 2796
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BO8 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BO8 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2796 # Zabid
+		}
+		effect = {
+				set_country_flag = bro_duchy
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+			change_tag = BO8
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+
+			smallland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BO8
+			}			
+
+			add_prestige = 25
+			set_capital = 2796		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	arol = {
+		major = yes
+		potential = {
+		owns_core_province = 2804
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BO9 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BO9 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2804 # Zabid
+		}
+		effect = {
+				set_country_flag = bro_duchy
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+			change_tag = BO9
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+
+			starfield_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BO9
+			}			
+
+			add_prestige = 25
+			set_capital = 2804		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+
+	gyertesvar = {
+		major = yes
+		potential = {
+		owns_core_province = 2784
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BS1 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BS1 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2784 # Zabid
+		}
+		effect = {
+				set_country_flag = bro_duchy
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+			change_tag = BS1
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+
+			riverward_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BS1
+			}			
+
+			add_prestige = 25
+			set_capital = 2784		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	kisso = {
+		major = yes
+		potential = {
+		owns_core_province = 2755
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BS2 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BS2 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2755 # Zabid
+		}
+		effect = {
+				set_country_flag = bro_duchy
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+			change_tag = BS2
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+
+			kissaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BS2
+			}			
+
+			add_prestige = 25
+			set_capital = 2755		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	gelongom = {
+		major = yes
+		potential = {
+		owns_core_province = 2702
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BS3 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BS3 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2702 # Zabid
+		}
+		effect = {
+				set_country_flag = bro_duchy
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+			change_tag = BS3
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+
+			gelor_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BS3
+			}			
+
+			add_prestige = 25
+			set_capital = 2702		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	lavigater = {
+		major = yes
+		potential = {
+		owns_core_province = 2708
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BS4 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BS4 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2708 # Zabid
+		}
+		effect = {
+				set_country_flag = bro_duchy
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+			change_tag = BS4
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+
+			bokincoast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BS4
+			}			
+
+			add_prestige = 25
+			set_capital = 2708		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	
+	hastergom = {
+		major = yes
+		potential = {
+		owns_core_province = 2711
+		NOT = {
+		has_country_flag = bro_duchy
+		}
+		culture_group = broden
+		NOT = { exists = BS5 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		allow = {
+			NOT = { exists = BS5 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = {
+			has_reform = wandering_army_reform
+			}
+			owns_core_province = 2711 # Zabid
+		}
+		effect = {
+				set_country_flag = bro_duchy
+		if = {
+		limit = {
+		 	government = monarchy
+		}
+		
+		add_government_reform = grand_duchy_reform
+		}
+		
+			change_tag = BS5
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+
+			wind_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= BS5
+			}			
+
+			add_prestige = 25
+			set_capital = 2711		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	settle_down = {
+		potential = {
+		NOT = {
+	has_country_flag = bro_duchy			
+		}
+		has_reform = wandering_army_reform
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {
+			check_variable = {
+			which = brodenVar
+			value = 5
+		}		
+		}
+		effect = {
+		add_government_reform = feudalism_reform	
+		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+
+	settle_more_provinces = {
+		potential = {
+		has_country_flag = bro_duchy		
+			check_variable = {
+			which = peopleVar
+			value = 1
+		}		
+		
+		any_owned_province = {
+			any_empty_neighbor_province = {		
+				superregion = grand_brodia	
+		}							
+
+		}
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		}
+		effect = {
+			    subtract_variable= {
+				which = peopleVar
+				value = 1
+			}
+					
+		random_owned_province = {
+			limit = {
+				any_empty_neighbor_province = {	
+			superregion = grand_brodia			
+			}
+			}
+			random_empty_neighbor_province = {
+				limit = { 	
+				superregion = grand_brodia		
+			}
+			add_siberian_construction = 500
+			}
+		}			
+		
+		}
+		ai_will_do = {
+			factor = 50
+			
+					modifier = {
+				factor = 0
+				OR = {
+				NOT = {
+			check_variable = {
+			which = peopleVar
+			value = 4
+		}					
+				}
+				
+				NOT = {
+				num_of_cities = 2
+				}
+				}
+			}
+			
+			
+		}
+		ai_importance = 400 #
+	}
+
+	use_artefacts = {
+		potential = {
+		has_country_flag = bro_duchy		
+		
+			check_variable = {
+			which = relictsVar
+			value = 1
+		}		
+		
+
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		}
+		effect = {
+			    subtract_variable= {
+				which = relictsVar
+				value = 1
+			}
+					
+		add_stability = 1			
+		capital_scope = {
+		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 1
+		}
+		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+
+	sell_artefacts = {
+		potential = {
+		NOT = {
+		has_country_flag = bro_duchy	
+		}	
+		
+			check_variable = {
+			which = relictsVar
+			value = 1
+		}		
+		
+
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		}
+		effect = {
+			    subtract_variable= {
+				which = relictsVar
+				value = 1
+			}
+					
+		add_treasury = 200
+		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	use_harpy_kill = {
+		potential = {
+		
+
+			check_variable = {
+			which = killedHarpyVar
+			value = 1
+		}		
+		
+
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		}
+		effect = {
+			    subtract_variable= {
+				which = killedHarpyVar
+				value = 1
+			}
+					
+		add_manpower = 5
+		create_conquistador = { tradition = 50 }
+		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+
+	claim_harpy_kill = {
+		potential = {
+		has_country_flag = bro_duchy		
+		
+			check_variable = {
+			which = killedHarpyVar
+			value = 1
+		}		
+		
+		any_owned_province = {
+			any_empty_neighbor_province = {		
+				superregion = grand_brodia	
+				culture_group = east_harpy
+		}							
+
+		}
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {	
+		}
+		effect = {
+			    subtract_variable= {
+				which = killedHarpyVar
+				value = 1
+			}
+					
+		random_owned_province = {
+			limit = {
+				any_empty_neighbor_province = {	
+			superregion = grand_brodia		
+	culture_group = east_harpy			
+			}
+			}
+			random_empty_neighbor_province = {
+				limit = { 	
+			superregion = grand_brodia		
+	culture_group = east_harpy			
+			}
+			add_siberian_construction = 150
+			}
+		}
+		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}			
+}

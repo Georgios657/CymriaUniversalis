@@ -1,0 +1,15 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Hykarnis"
+is_city = yes
+culture = bellis
+religion = grand_mother
+fort_15th = yes
+add_core = AW5
+add_core = EM1

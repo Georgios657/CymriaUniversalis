@@ -1,0 +1,12 @@
+add_core = TH3
+owner = TH3
+controller = TH3
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Matrene"
+is_city = yes
+culture = getrudian
+religion = ishtara

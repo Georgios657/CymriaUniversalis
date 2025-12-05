@@ -1,0 +1,15 @@
+# Anything typed here will be added to all selected province history files
+culture = nerian
+religion = skogian_religion
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Ezergalva"
+is_city = yes
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files
+add_core = VL7
+owner = VL7
+controller = VL7

@@ -1,0 +1,14 @@
+add_core = I06
+owner = I06
+controller = I06
+culture = deutscherlander
+religion = old_imperial_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = gems
+base_manpower = 1
+capital = "Tower of the East"
+is_city = yes
+discovered_by = western
+fort_15th = yes

@@ -1,0 +1,18 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = wool
+base_manpower = 2
+capital = "Wisteria"
+is_city = yes
+culture = ponier
+religion = imperial_cult
+add_core = AN7
+add_core = AN9
+
+latent_trade_goods = {
+	coal
+}

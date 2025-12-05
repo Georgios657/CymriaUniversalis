@@ -1,0 +1,263 @@
+country_decisions = {
+	unite_the_samarians = {
+		major = yes
+		potential = {
+		culture_group  = saramara
+		NOT = { exists = S15 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 312
+				province_id = 320
+				province_id = 324
+				province_id = 336
+				province_id = 309
+				}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = S15 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 312	# Mukha
+			owns_core_province = 320	# Zabid
+			owns_core_province = 324	# Mukha
+			owns_core_province = 336	# Zabid
+			owns_core_province = 309	# Zabid
+		}
+		effect = {
+			change_tag = S15
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			western_steppe_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= S15
+			}			
+			great_steppe_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= S15
+			}	
+			
+			add_prestige = 25	
+			add_tribal_allegiance = 100
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	unite_the_atagoridans = {
+		major = yes
+		potential = {
+		culture_group  = atagord
+		NOT = { exists = S14 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 402
+				province_id = 352
+				province_id = 353
+				province_id = 384
+				province_id = 367
+				}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = S14 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 402	# Mukha
+			owns_core_province = 352	# Zabid
+			owns_core_province = 353	# Mukha
+			owns_core_province = 384	# Zabid
+			owns_core_province = 367	# Zabid
+		}
+		effect = {
+			change_tag = S14
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			western_steppe_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= S14
+			}			
+			great_steppe_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= S14
+			}	
+			
+			add_prestige = 25	
+			add_horde_unity = 100
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	the_shadow_kingdom = {
+		major = yes
+		potential = {
+		OR = {
+		NOT = {
+		tag = FC4
+		}
+		NOT = {
+		tag = SKR
+		}		
+		}
+
+		culture_group  = krainian
+		NOT = { exists = SKS }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 553
+				province_id = 549
+				province_id = 550
+				province_id = 551
+				province_id = 548
+				}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = SKS }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 553	# Mukha
+			owns_core_province = 549	# Zabid
+			owns_core_province = 550	# Mukha
+			owns_core_province = 551	# Zabid
+			owns_core_province = 548	# Zabid
+			
+		}
+		effect = {
+					if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			change_tag = SKS
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}		
+			near_krania_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= SKS
+			}	
+			dragons_flat_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= SKS
+			}				
+			krania_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= SKS
+			}	
+			
+			add_prestige = 50	
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+	new_kranian_kingdom = {
+		major = yes
+		potential = {
+		NOT = {
+		tag = FC4
+		}
+		culture_group  = krainian
+		NOT = { exists = SKR }		
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {
+			NOT = { exists = SKR }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			
+			total_development = 150
+			any_owned_province = { 
+			has_great_project = {
+				type = throne_of_the_kranian_kings
+				tier = 1
+			}
+			}
+		}
+		effect = {
+			change_tag = SKR
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			eastern_steppe_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= SKR
+			}			
+			krania_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= SKR
+			}	
+			
+			add_prestige = 25	
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+}

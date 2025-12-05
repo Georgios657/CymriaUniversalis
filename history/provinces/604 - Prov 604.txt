@@ -1,0 +1,13 @@
+add_core = LA3
+owner = LA3
+controller = LA3
+culture = lascarian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+capital = "Kalle"
+is_city = yes
+discovered_by = ottoman

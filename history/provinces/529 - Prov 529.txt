@@ -1,0 +1,13 @@
+add_core = FCB
+owner = FCB
+controller = FCB
+culture = phoneician
+religion = amatism_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Tuc"
+is_city = yes
+discovered_by = indian

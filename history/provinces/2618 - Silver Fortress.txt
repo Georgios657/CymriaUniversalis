@@ -1,0 +1,15 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = gold
+base_manpower = 3
+capital = "Silver Fortress"
+is_city = yes
+culture = boroner
+religion = imperial_cult
+add_core = AN9
+
+fort_15th = yes

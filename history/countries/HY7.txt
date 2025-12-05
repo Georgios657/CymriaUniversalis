@@ -1,0 +1,7 @@
+government = tribal
+add_government_reform = settled_harpy_host_reform
+government_rank = 3
+technology_group = harpy_tech
+primary_culture = shima_harpia
+religion = winged_one
+capital = 2828

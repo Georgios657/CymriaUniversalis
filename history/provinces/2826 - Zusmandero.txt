@@ -1,0 +1,13 @@
+add_core = HY9
+owner = HY9
+controller = HY9
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = iron
+base_manpower = 3
+capital = "Zusmandero"
+is_city = yes
+culture = san_harpia
+religion = winged_one
+

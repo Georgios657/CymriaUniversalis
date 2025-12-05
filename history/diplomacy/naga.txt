@@ -1,0 +1,27 @@
+vassal = {
+    first = NA1
+    second = NB6
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = NA1
+    second = NB4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = NA1
+    second = NB5
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = NA1
+    second = NA2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}

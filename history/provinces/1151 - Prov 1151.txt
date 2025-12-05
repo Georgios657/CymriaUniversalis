@@ -1,0 +1,16 @@
+add_core = VA5
+owner = VA5
+controller = VA5
+# Anything typed here will be added to all selected province history files
+culture = sikkonen
+religion = thorrinian
+hre = no
+base_tax = 1
+base_production = 1
+# Anything typed here will be added to all selected province history files
+trade_goods = fur
+base_manpower = 2
+capital = "Pohjanvo"
+is_city = yes
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files

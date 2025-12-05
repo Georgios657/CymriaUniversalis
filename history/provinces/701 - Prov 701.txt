@@ -1,0 +1,13 @@
+add_core = LD9
+owner = LD9
+controller = LD9
+culture = putran
+religion = amatism_faith
+hre = yes
+base_tax = 8
+base_production = 7
+trade_goods = ivory
+base_manpower = 7
+capital = "Putra"
+is_city = yes
+discovered_by = ottoman

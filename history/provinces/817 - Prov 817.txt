@@ -1,0 +1,15 @@
+add_core = ZA9
+add_core = ZB2
+owner = ZB2
+controller = ZB2
+culture = vephyrian
+religion = phoenix_faith
+hre = no
+base_tax = 8
+base_production = 6
+trade_goods = chinware
+base_manpower = 4
+capital = "Vephyria"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

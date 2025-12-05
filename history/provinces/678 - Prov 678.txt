@@ -1,0 +1,13 @@
+add_core = LC2
+owner = LC2
+controller = LC2
+culture = apasi
+religion = amatism_faith
+hre = yes
+base_tax = 4
+base_production = 3
+trade_goods = spices
+base_manpower = 3
+capital = "Boudisa"
+is_city = yes
+discovered_by = ottoman

@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_despotism
+government_rank = 1
+technology_group = chinese
+primary_culture = lanhuian
+religion = phoenix_faith
+capital = 1246	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Ganji"
+		name = "Rio"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+
+	}
+
+}

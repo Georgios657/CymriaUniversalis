@@ -1,0 +1,392 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = elfen_ruler
+
+
+####learning on the job
+country_event = {
+	id = elfen_ruler.1
+	title = elfen_ruler.1.t
+	desc = elfen_ruler.1.desc
+
+	picture = RELIGION_eventPicture
+	
+
+	mean_time_to_happen = {
+	months = 240
+	}
+
+	trigger = {
+	ruler_is_elv = yes
+		NOT = {
+	months_of_ruling = 480
+	}
+	
+	OR = {
+	NOT = {
+	adm = 4	
+	}
+	NOT = {
+	dip = 4	
+	}
+	NOT = {
+	mil = 4	
+	}
+
+	}		
+
+	}
+
+	immediate = {
+	
+}
+	option = {
+	name = elfen_ruler.1.a		
+		ai_chance = { factor = 20 }
+	
+random_list = {
+	33 = {
+		trigger = {
+			NOT = {
+			adm = 4
+			}
+		}
+		change_adm = 1
+	}
+	33 = {
+		trigger = {
+			NOT = {
+			dip = 4
+			}
+		}
+		change_dip = 1
+	}
+		33 = {
+		trigger = {
+			NOT = {
+			mil = 4
+			}
+		}
+		change_mil = 1
+	}
+}
+	
+		}	
+	}
+
+####olosing on the job
+country_event = {
+	id = elfen_ruler.2
+	title = elfen_ruler.2.t
+	desc = elfen_ruler.2.desc
+
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+	ruler_is_elv = yes
+	months_of_ruling = 480
+	OR = {
+	adm = 1
+	dip = 1
+	mil = 1
+	}	
+
+	}
+
+	mean_time_to_happen = {
+	months = 180
+	}
+	
+	immediate = {
+	
+}
+	option = {
+	name = elfen_ruler.2.a		
+		ai_chance = { factor = 20 }
+	
+random_list = {
+	33 = {
+		trigger = {
+			adm = 1
+		}
+		change_adm = -1
+	}
+	33 = {
+		trigger = {
+			dip = 1
+		}
+		change_dip = -1
+	}
+		33 = {
+		trigger = {
+			mil = 1
+		}
+		change_mil = -1
+	}
+}
+	
+		}	
+	}
+	
+	
+####Not 80 Legi
+country_event = {
+	id = elfen_ruler.3
+	title = elfen_ruler.3.t
+	desc = elfen_ruler.3.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	ruler_is_elv = yes
+	culture_group = elvish
+	NOT = {
+	 	legitimacy = 80
+	}
+	}
+
+
+	immediate = {
+	
+}
+	option = {
+	name = elfen_ruler.3.a		
+		ai_chance = { factor = 20 }
+			add_prestige = -15
+	
+		}	
+	}	
+	
+	
+####Not 70 Legi
+country_event = {
+	id = elfen_ruler.4
+	title = elfen_ruler.4.t
+	desc = elfen_ruler.4.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	ruler_is_elv = yes
+	culture_group = elvish
+	NOT = {
+	 	legitimacy = 70
+	}
+	}
+
+
+	immediate = {
+	
+}
+	option = {
+	name = elfen_ruler.4.a		
+		ai_chance = { factor = 20 }
+		
+		 	random_owned_province = { 
+			limit = {
+			culture_group = elvish
+			}
+			add_unrest = 10
+			add_local_autonomy = 40
+			}
+	
+		}	
+	}
+
+
+####Not 60 Legi
+country_event = {
+	id = elfen_ruler.5
+	title = elfen_ruler.5.t
+	desc = elfen_ruler.5.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	ruler_is_elv = yes
+	culture_group = elvish
+	NOT = {
+	 	legitimacy = 60
+	}
+	}
+
+
+	immediate = {
+	
+}
+	option = {
+	name = elfen_ruler.5.a		
+		ai_chance = { factor = 20 }
+	
+			add_stability = -1		
+	
+		}	
+	}
+
+
+####Not 50 Legi
+country_event = {
+	id = elfen_ruler.6
+	title = elfen_ruler.6.t
+	desc = elfen_ruler.6.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	ruler_is_elv = yes
+	culture_group = elvish
+	NOT = {
+	 	legitimacy = 50
+	}
+	}
+
+
+	immediate = {
+	
+}
+	option = {
+	name = elfen_ruler.6.a		
+		ai_chance = { factor = 20 }
+
+		 	random_owned_province = { 
+			limit = {
+			culture_group = elvish
+			}
+			spawn_rebels = {
+				size = 4
+				type = pretender_rebels
+			}
+			}
+		
+		}	
+	}	
+	
+####Not 40 Legi
+country_event = {
+	id = elfen_ruler.7
+	title = elfen_ruler.7.t
+	desc = elfen_ruler.7.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	ruler_is_elv = yes
+	culture_group = elvish
+	NOT = {
+	 	legitimacy = 40
+	}
+	}
+
+
+	immediate = {
+	
+}
+	option = {
+	name = elfen_ruler.7.a		
+		ai_chance = { factor = 20 }
+		
+		kill_ruler = yes
+		add_treasury = -10
+		}	
+		
+	option = {
+	name = elfen_ruler.7.b
+		ai_chance = { factor = 20 }
+		
+		kill_ruler = yes
+		add_prestige = -1
+	
+		}			
+	}
+
+####100 years
+country_event = {
+	id = elfen_ruler.8
+	title = elfen_ruler.8.t
+	desc = elfen_ruler.8.desc
+
+	picture = RELIGION_eventPicture
+	
+
+	mean_time_to_happen = {
+	months = 1
+	}
+
+	trigger = {
+	
+		NOT = {
+	has_ruler_modifier = 100_years
+	}
+	ruler_is_elv = yes
+	months_of_ruling = 1200
+
+	}
+
+	immediate = {
+	
+}
+	option = {
+	name = elfen_ruler.8.a		
+		ai_chance = { factor = 20 }
+		
+		add_ruler_modifier = { 
+    name = 100_years
+    duration = -1  
+}
+	
+		}	
+	}	
+	
+####200 years
+country_event = {
+	id = elfen_ruler.9
+	title = elfen_ruler.9.t
+	desc = elfen_ruler.9.desc
+
+	picture = RELIGION_eventPicture
+	
+
+	mean_time_to_happen = {
+	months = 1
+	}
+
+	trigger = {
+	
+	NOT = {
+	has_ruler_modifier = 200_years
+	}
+	ruler_is_elv = yes
+	months_of_ruling = 2400
+	
+		
+
+	}
+
+	immediate = {
+	
+}
+	option = {
+	name = elfen_ruler.9.a		
+		ai_chance = { factor = 20 }
+
+	add_ruler_modifier = { 
+    name = 200_years
+    duration = -1  
+}		
+	
+		}	
+	}		

@@ -1,0 +1,12 @@
+add_core = GY4
+owner = GY4
+controller = GY4
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Ljos"
+is_city = yes
+culture = north_gynter
+religion = icearia

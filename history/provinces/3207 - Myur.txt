@@ -1,0 +1,17 @@
+add_core = GE4
+owner = GE4
+controller = GE4
+hre = no
+base_tax = 6
+base_production =6
+trade_goods = cloth
+base_manpower = 5
+capital = "Myur"
+is_city = yes
+culture = myuiran
+religion = velora
+
+
+center_of_trade = 2
+
+fort_15th = yes

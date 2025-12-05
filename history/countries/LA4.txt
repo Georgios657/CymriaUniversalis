@@ -1,0 +1,7 @@
+government = theocracy
+add_government_reform = monastic_order_reform
+government_rank = 1
+technology_group = ottoman
+primary_culture = lascarian
+religion = amatism_faith
+capital = 566	# Bayreuth

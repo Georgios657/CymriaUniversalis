@@ -1,0 +1,12 @@
+add_core = ES2
+owner = ES2
+controller = ES2
+religion = the_silvern_guide
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = slaves
+base_manpower = 2
+capital = "Khasradan"
+is_city = yes
+culture = par_harian

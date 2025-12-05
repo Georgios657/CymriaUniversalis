@@ -1,0 +1,12 @@
+add_core = PI3
+owner = PI3
+controller = PI3
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = slaves
+base_manpower = 2
+capital = "Namar"
+is_city = yes
+culture = kharinian
+religion = nyamism

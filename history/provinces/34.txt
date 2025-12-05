@@ -1,0 +1,14 @@
+add_core = I19
+owner = I19
+controller = I19
+culture = sollingian
+religion = old_imperial_faith
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = wine
+base_manpower = 2
+capital = "Lorelei"
+is_city = yes
+discovered_by = western
+fort_15th = yes

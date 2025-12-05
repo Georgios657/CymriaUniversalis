@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = king_of_the_universe
+government_rank = 3
+technology_group = selen_tech
+primary_culture = middle_sumar
+religion = ishtara
+capital = 1749	# Bayreuth
+religious_school = neshar_the_four_armed
+add_accepted_culture = lower_sumar
+
+1420.1.1 = {
+	monarch = {
+		dynasty = "Enki-Ashur"
+		name = "Ur-Namtar"
+		birth_date = 1400.9.21
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+
+}

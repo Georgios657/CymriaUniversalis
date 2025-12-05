@@ -1,0 +1,12 @@
+add_core = TW3
+owner = TW3
+controller = TW3
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = iron
+base_manpower = 3
+capital = "Sayria-Schuppur"
+is_city = yes
+culture = obedian
+religion = ishtara

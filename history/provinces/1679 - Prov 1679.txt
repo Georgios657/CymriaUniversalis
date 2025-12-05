@@ -1,0 +1,18 @@
+# Anything typed here will be added to all selected province history files
+add_core = MI6
+owner = MI6
+controller = MI6
+culture = cold_laker
+religion = moon_and_sun
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Nadir"
+
+is_city = yes
+
+latent_trade_goods = {
+	coal
+}

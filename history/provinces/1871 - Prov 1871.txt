@@ -1,0 +1,12 @@
+add_core = ZR7
+owner = ZR7
+controller = ZR7
+culture = low_zervonian
+religion = yazida
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = cloth
+base_manpower = 3
+capital = "Tabac"
+is_city = yes

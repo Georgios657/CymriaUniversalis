@@ -1,0 +1,13 @@
+add_core = U05
+owner = U05
+controller = U05
+culture = politi
+religion = undead_imperial_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 3
+capital = "Postravia"
+is_city = yes
+discovered_by = muslim

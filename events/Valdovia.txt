@@ -1,0 +1,386 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = valdovia
+##Ring given to princess
+country_event = {
+	id = valdovia.1
+	title = valdovia.1.t
+	desc = {
+		desc = valdovia.1.desc
+
+	}
+
+		
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VL0
+		has_ruler = "Leili Vanema"	
+	}
+
+		mean_time_to_happen = {
+	months = 12
+}
+	
+	immediate = {
+		
+		}
+		
+	option = {
+		name = valdovia.1.a	
+		 		set_ruler_flag = immortal
+			add_ruler_modifier = { 
+				name = ring_wielder
+				duration = -1  
+			}
+			set_country_flag = has_ring
+			set_global_flag = ring_found
+			
+		
+		}
+		
+	}		
+	
+	####Mad with ring power
+	country_event = {
+	id = valdovia.2
+	title = valdovia.2.t
+	desc = {
+		desc = valdovia.2.desc
+
+	}
+
+		
+	picture = RELIGION_eventPicture
+
+
+	trigger = {
+		has_ruler_modifier = ring_wielder
+		NOT = {
+		has_ruler = "Leili Vanema"	
+		}
+		ruler_age = 60
+	}
+
+		mean_time_to_happen = {
+	months = 240
+}
+	
+	immediate = {
+		
+		}
+		
+	option = {
+		name = valdovia.2.a	
+		 	reduce_skill = yes
+		}
+		
+	}		
+
+###Find lost ring
+province_event = {
+	id = valdovia.3
+	title = valdovia.3.t
+	desc = {
+		desc = valdovia.3.desc
+
+	}
+
+		
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+	owner = {
+		NOT = {
+		has_ruler_flag = immortal
+	
+		}
+	}
+
+		
+		has_province_flag = lost_ring
+		NOT = {
+		has_global_flag = ring_found
+		}
+	}
+
+		mean_time_to_happen = {
+	months = 1
+}
+	
+	immediate = {
+		clr_province_flag = lost_ring
+		}
+		
+	option = {
+		name = valdovia.3.a	
+		owner = {
+			 		set_ruler_flag = immortal
+	
+			add_ruler_modifier = { 
+				name = ring_wielder
+				duration = -1  
+			}
+			set_country_flag = has_ring	
+			set_global_flag = ring_found
+								capital_scope = { 
+		set_province_flag = lost_ring		
+		}
+		}
+
+		}
+		
+	}	
+
+###Monarch Death to heir
+	country_event = {
+	id = valdovia.4
+	title = valdovia.4.t
+	desc = {
+		desc = valdovia.4.desc
+
+	}
+
+	trigger = {
+		
+	}
+	
+	picture = RELIGION_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		}
+		
+	option = {
+		name = valdovia.4.a	
+		 		set_ruler_flag = immortal
+	
+			add_ruler_modifier = { 
+				name = ring_wielder
+				duration = -1  
+			}
+		}
+		
+	}
+
+
+###Capital fallen but ring secured
+	country_event = {
+	id = valdovia.5
+	title = valdovia.5.t
+	desc = {
+		desc = valdovia.5.desc
+
+	}
+
+	trigger = {
+		
+	}
+	
+	picture = RELIGION_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		}
+		
+	option = {
+		name = valdovia.5.a	
+		 	
+		}
+		
+	}		
+	
+###Ring lost somewhere and ruler dies
+	country_event = {
+	id = valdovia.6
+	title = valdovia.6.t
+	desc = {
+		desc = valdovia.6.desc
+
+	}
+
+	trigger = {
+		
+	}
+	
+	picture = RELIGION_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	immediate = {
+	clr_country_flag = has_ring	
+			 	random_province = {
+			limit = {
+			is_in_capital_area = yes
+			}
+			set_province_flag = lost_ring
+			}
+		}
+		
+	option = {
+		name = valdovia.6.a	
+		 			
+		
+		kill_ruler = yes
+
+		}
+		
+	}
+
+###Enemy get the ring!
+	country_event = {
+	id = valdovia.7
+	title = valdovia.7.t
+	desc = {
+		desc = valdovia.7.desc
+
+	}
+
+	trigger = {
+		
+	}
+	
+	picture = RELIGION_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		}
+		
+	option = {
+		name = valdovia.7.a	
+		kill_ruler = yes
+		clr_country_flag = has_ring
+		FROM = {
+		country_event = { 
+			id = valdovia.8
+		}
+		}
+		}
+		
+	}	
+	
+	###We caputred the Ring
+	country_event = {
+	id = valdovia.8
+	title = valdovia.8.t
+	desc = {
+		desc = valdovia.8.desc
+
+	}
+
+	trigger = {
+		
+	}
+	
+	picture = RELIGION_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		}
+		
+	option = {
+		name = valdovia.8.a	
+		 		set_ruler_flag = immortal
+			set_country_flag = has_ring
+			add_ruler_modifier = { 
+				name = ring_wielder
+				duration = -1  
+			}
+		}
+		
+	}
+	
+	###Madness complete
+	country_event = {
+	id = valdovia.9
+	title = valdovia.9.t
+	desc = {
+		desc = valdovia.9.desc
+
+	}
+
+		
+	picture = RELIGION_eventPicture
+
+
+	trigger = {
+		has_ruler_modifier = ring_wielder
+		NOT = {
+		has_ruler_modifier = mad_king		
+		}
+		NOT = {
+		has_ruler = "Leili Vanema"	
+		}
+		ruler_age = 110
+	}
+
+		mean_time_to_happen = {
+	months = 240
+}
+	
+	immediate = {
+		
+		}
+		
+	option = {
+		name = valdovia.9.a	
+			add_ruler_modifier = { 
+				name = mad_king
+				duration = -1  
+			}
+		}
+		
+	}		
+	
+	###Dies of Old Age
+	country_event = {
+	id = valdovia.10
+	title = valdovia.10.t
+	desc = {
+		desc = valdovia.10.desc
+
+	}
+
+		
+	picture = RELIGION_eventPicture
+
+
+	trigger = {
+		has_ruler_modifier = ring_wielder
+		has_ruler_modifier = mad_king		
+
+		ruler_age = 150
+	}
+
+		mean_time_to_happen = {
+	months = 36
+}
+	
+	immediate = {
+		
+		}
+		
+	option = {
+		name = valdovia.10.a	
+			kill_ruler = yes
+		}
+		
+	}			

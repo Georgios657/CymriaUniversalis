@@ -1,0 +1,189 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+akna_sun = {
+	 	technology_cost = -0.1
+	
+	potential = { 
+	religion = phoenix_faith
+	 	any_known_country = {
+	mission_completed = akna_new_goddes
+		}
+
+	}
+	trigger = {}
+	sprite = 13
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+lario_shemshiel = {
+	 	technology_cost = -0.1
+	
+	potential = { religion = phoenix_faith }
+	trigger = {}
+	sprite = 13
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+aetherio_oran = {
+	 	development_cost_modifier = -0.1
+	
+	potential = { religion = phoenix_faith }
+	trigger = {}
+	sprite = 14
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+eshayim = {
+	 	build_cost = -0.1
+		great_project_upgrade_cost = -0.1
+	
+	potential = { religion = phoenix_faith }
+	trigger = {}
+	sprite = 15
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+zohar = {
+	global_unrest = -1
+	stability_cost_modifier = -0.1
+	
+	potential = { religion = phoenix_faith }
+	trigger = {}
+	sprite = 16
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+shahar = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+	
+	potential = { religion = phoenix_faith }
+	trigger = {}
+	sprite = 17
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+razial = {
+		 	prestige = 0.5
+		monarch_lifespan = 0.5
+
+	
+	potential = { religion = phoenix_faith }
+	trigger = {}
+	sprite = 18
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+foenio_baruch = {
+	 	discipline = 0.025
+		siege_ability = 0.10
+	
+	potential = { religion = phoenix_faith }
+	trigger = {}
+	sprite = 19
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}

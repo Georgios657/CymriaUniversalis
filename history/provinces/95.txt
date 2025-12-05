@@ -1,0 +1,14 @@
+add_core = I11
+owner = I11
+controller = I11
+culture = nordlander
+religion = old_imperial_faith
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = fish
+base_manpower = 3
+capital = "Nordburg"
+is_city = yes
+discovered_by = western
+fort_15th = yes

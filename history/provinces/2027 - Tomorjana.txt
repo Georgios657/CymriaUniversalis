@@ -1,0 +1,12 @@
+add_core = CA8
+owner = CA8
+controller = CA8
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Tomorjana"
+is_city = yes
+culture = reelambian
+religion = asae_ya

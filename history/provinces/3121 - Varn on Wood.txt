@@ -1,0 +1,12 @@
+add_core = GW1
+owner = GW1
+controller = GW1
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = naval_supplies
+base_manpower = 2
+capital = "Varn-on-Wood"
+is_city = yes
+culture = far_aylor
+religion = rozalia

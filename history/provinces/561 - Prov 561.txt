@@ -1,0 +1,15 @@
+add_core = LA5
+owner = LA5
+controller = LA5
+culture = zimmern
+religion = amatism_faith
+hre = yes
+base_tax = 5
+base_production = 4
+trade_goods = fish
+base_manpower = 3
+capital = "Kolonia-Zimra"
+is_city = yes
+discovered_by = ottoman
+fort_15th = yes
+center_of_trade = 1

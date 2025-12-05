@@ -1,0 +1,13 @@
+add_core = I16
+owner = I16
+controller = I16
+culture = badenian
+religion = old_imperial_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Steina"
+is_city = yes
+discovered_by = western

@@ -1,0 +1,12 @@
+add_core = AR0
+owner = AR0
+controller = AR0
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = spices
+base_manpower = 4
+capital = "Reakeen"
+is_city = yes
+culture = reakeenian
+religion = tanatism

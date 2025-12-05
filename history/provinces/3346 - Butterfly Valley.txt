@@ -1,0 +1,12 @@
+add_core = AS6
+owner = AS6
+controller = AS6
+culture = arbor
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 2
+capital = "Butterfly"
+is_city = yes

@@ -1,0 +1,13 @@
+add_core = LC7
+owner = LC7
+controller = LC7
+culture = zannian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Revino"
+is_city = yes
+discovered_by = ottoman

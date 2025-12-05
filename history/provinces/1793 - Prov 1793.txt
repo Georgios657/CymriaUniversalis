@@ -1,0 +1,12 @@
+add_core = TR9
+owner = TR9
+controller = TR9
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Girtasch"
+is_city = yes
+culture = upper_sumar
+religion = ishtara

@@ -1,0 +1,57 @@
+#Country Name: Please see filename.
+
+graphical_culture = indiangfx
+
+color = { 90 33 212 }
+
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	steppe_riders
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_cavalry
+	steppe_uhlans
+	steppe_raiders
+	steppe_footmen
+	steppe_musketeers
+	steppe_infantry
+	steppe_rifles
+	reformed_steppe_rifles
+}
+
+monarch_names = {
+	"Aditya  #0" = 20
+	"Kavita  #0" = 20
+	"Rajendra  #0" = 20
+	"Aarav  #1" = 10
+	"Nalini  #0" = 10
+	"Vikram  #1" = 10
+	"Priya   #1" = 10
+	"Arjun   #1" = 10
+	"Meera   #1" = 10
+	"Siddharth   #1" = 10
+	"Ishani   #1" = 10
+	"Pranav   #1" = 10
+	"Surya    #1" = 10
+	"Ananya    #1" = 10
+	"Rohan    #1" = 10
+
+}
+
+leader_names = {
+	Rohan  Ananya Siddharth Priya Nalini Aarav Rajendra
+}
+
+ship_names = {
+
+}

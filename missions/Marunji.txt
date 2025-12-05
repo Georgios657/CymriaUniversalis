@@ -1,0 +1,1038 @@
+##BranchStart 0
+mar1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = WI2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	prepare_the_brew = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		monthly_dip = 6
+			 	dip_tech = 5
+		}
+		effect = {
+			 	change_innovativeness = 5
+		}
+	}
+	##Mission End
+	##Mission Start
+	aquire_test_subjects = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			prepare_the_brew
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			grown_by_development = 200
+			num_of_times_used_pillage_capital = 5
+			}
+		}
+		effect = {
+			random_owned_province = {
+			 	add_unrest = 10
+			}
+			 	change_dip = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	summon_spirits = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			aquire_test_subjects
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {	
+		
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_adm_power
+	value = 50
+}		
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_dip_power
+	value = 50
+}
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_mil_power
+	value = 50
+}	
+				
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = -50
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = -50
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -50
+			}
+			
+			 	custom_tooltip = start_plague
+				country_event = { 
+    id = great_plague.1
+    days = 60
+    random = 300
+}
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	reap_the_dead = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			summon_spirits
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_global_flag = grand_plague_ended
+		}
+		effect = {
+			grand_marunji_zombie_army = yes
+			
+			add_country_modifier = { 
+			name = zombie_army
+				duration = 7500
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	claim_the_land = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			reap_the_dead
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			 	army_size_percentage = 1
+				army_size = 90
+			}
+		}
+		effect = {
+			averia_region = {
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	protective_wards_against_eom = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			claim_the_land
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+	value = 100
+	region = averia_region
+}
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_adm_power
+	value = 50
+}		
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_dip_power
+	value = 50
+}
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_mil_power
+	value = 50
+}
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = -50
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = -50
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -50
+			}
+			every_owned_province = {
+			limit = {
+			region = averia_region
+			}
+			add_province_modifier = { 
+			name = protect_ward_eom
+			duration = 9800
+		}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	taint_the_south_land = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			protective_wards_against_eom
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		emberland_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		velmoran_coast_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		gladenfields_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		
+		
+		}
+		effect = {
+			 	add_adm_power = 100
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+mar2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = WI2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_grand_rivals = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			gatherin_of_witch_doctors
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 NOT = {
+			  	any_country = {
+				NOT = {
+				tag = ROOT
+				}
+				culture_group = wissian
+				total_development = 70
+				}
+			 }
+		}
+		effect = {
+			witch_region = {
+			add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	unite_the_witchlands = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_grand_rivals
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		
+		num_of_owned_provinces_with = {
+			value = 60
+			region = witch_region
+		}	
+				}
+		effect = {
+			add_devotion = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	pacifiy_the_witchlands = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			unite_the_witchlands
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 calc_true_if = {
+				all_owned_province = {
+					region = witch_region
+					NOT = {
+					unrest = 0
+					}
+				}
+				amount = 40
+			}
+
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	rule_the_witchlands = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			pacifiy_the_witchlands
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 3
+			
+			NOT = {
+				any_province = { 	
+				owned_by = ROOT
+				region = witch_region
+				has_owner_accepted_culture = no
+
+				}			
+			}
+						
+		}
+		effect = {
+			change_government_reform_progress = 150
+		}
+	}
+	##Mission End
+	##Mission Start
+	taint_the_centre_land = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			protective_wards_against_eom
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		peregynar_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		averian_new_border_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		averian_border_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		calyndor_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		
+		}
+		effect = {
+			 	add_dip_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_loyal_province = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			taint_the_north_land
+			taint_the_south_land
+			taint_the_centre_land
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		averia_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+			 	NOT = {
+				any_province = { 
+					
+				region = averia_region
+				NOT = {
+				owned_by = ROOT
+				unrest = 0
+				nationalism = 0
+				}
+				}				
+				}				
+		}
+		effect = {
+			add_years_of_owned_provinces_production_income  = {
+	years = 4
+	trigger = {
+		region = averia_region
+	}
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	undying_loyalty = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_loyal_province
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	NOT = {
+				any_province = { 
+					
+				region = averia_region
+				NOT = {
+				owned_by = ROOT
+				has_owner_religion = yes
+				}
+				}				
+				}
+		}
+		effect = {
+			add_devotion = 50
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+mar3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = WI2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gatherin_of_witch_doctors = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			has_ruler = "Tikara"
+			}
+			devotion = 75
+		}
+		effect = {
+			add_stability = 1
+			
+			every_owned_province = {
+			add_local_autonomy = -10
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	poison_rivals = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			gatherin_of_witch_doctors
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 2
+			spymaster = 2
+		}
+		effect = {
+			add_stability = -2
+			add_devotion = 50
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	poison_their_families = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			poison_rivals
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			has_global_modifier_value = {
+				which = spy_offence 
+				value = 0.2
+			}
+			has_global_modifier_value = {
+				which = global_spy_defence 
+				value = 0.4
+			}		
+		}
+
+		}
+		effect = {
+			add_stability = 1
+			add_devotion = 10
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	institute_order = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			poison_their_families
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			unrest = -4
+			has_global_modifier_value = {
+				which = stability_cost_modifier  
+				value = 0.25
+			}		
+		}			
+		}
+		effect = {
+			every_owned_province = {
+			 	add_unrest = -10
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	organized_power_transfer = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			institute_order
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			devotion = 90
+			num_of_rebel_armies = 0
+			philosopher = 4
+		}
+		effect = {
+			set_country_flag = peace_power
+			custom_tooltip = peace_power
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_greatest_wichterland = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+		rule_the_witchlands
+		organized_power_transfer
+			the_western_and_eastern_trade
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	power_projection = 90
+				is_great_power = yes
+				government_rank = 3
+		}
+		effect = {
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	taint_the_north_land = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			protective_wards_against_eom
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		averia_heart_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		eryndor_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		rolythar_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		gomera_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		
+		}
+		effect = {
+			add_mil_power = 100
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+mar4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = WI2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	economic_development = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			gatherin_of_witch_doctors
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	monthly_income = 25
+		}
+		effect = {
+			 	add_years_of_income = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	count_the_man = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			economic_development
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_accepted_cultures = 3
+		}
+		effect = {
+			add_country_modifier = { 
+    name = counted_people
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_quota_for_every_village = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			count_the_man
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			grown_by_states = 3
+			NOT = {
+			average_home_autonomy = 5
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+					name = easy_tax
+					duration = -1  
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_western_and_eastern_trade = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_quota_for_every_village
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			2209 = {
+			trade_node_value = 50
+	trade_share = {
+		country = ROOT
+		share = 75
+	}
+}
+
+2222 = { 
+	trade_share = {
+		country = ROOT
+		share = 75
+	}
+}
+
+		}
+		effect = {
+			add_mercantilism = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	temple_of_temples = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			five_corners_of_divinity
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		owns = 2207
+			2207 = {
+			 	num_of_times_expanded_infrastructure = 3
+			}
+		}
+		effect = {
+			add_prestige = 50
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+mar5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = WI2
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gather_all_idols = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				religion = mrogi_wa_damu
+			}
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			religion = mrogi_wa_damu
+			}
+			add_unrest = 10
+			}
+			
+			add_country_modifier = { 
+				name = gathered_idols
+				duration = 7500  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_graaand_temple = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			gather_all_idols
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2207
+			artist = 2
+			2207 = {
+			has_building = temple
+			}
+		}
+		effect = {
+			2207 = {
+			add_permanent_province_modifier = { 
+    name = grand_central_temple
+    duration = -1  
+}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	mightiest_of_all_gods = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_graaand_temple
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	religious_unity = 1
+				grown_by_development = 350
+		}
+		effect = {
+			add_devotion = 50
+			define_advisor = {
+    type = inquisitor
+    skill = 3
+	discount = yes
+}
+
+define_advisor = {
+    type = theologian
+    skill = 3
+	discount = yes
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	sole_god_of_witch = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			mightiest_of_all_gods
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			any_province = {
+			region = witch_region
+			NOT = {
+			is_empty = yes
+			}
+			NOT = {
+			religion = mrogi_wa_damu
+			}
+			}
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = mightiest_of_gods
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_grander_temple = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			sole_god_of_witch
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2207
+			artist = 3
+			2207 = {
+			has_building = temple
+			num_of_times_improved_by_owner = 10
+			}
+		}
+		effect = {
+			2207 = {
+			 	add_base_tax = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_temple_district = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_grander_temple
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		owns = 2207
+			2207 = {
+			OR = {
+			has_building = cathedral
+			 	num_of_times_expanded_infrastructure = 2
+			}
+			
+						num_of_times_improved_by_owner = 20
+			}
+		}
+		effect = {
+			2207 = {
+			add_permanent_province_modifier = { 
+    name = temple_district
+    duration = -1  
+}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	five_corners_of_divinity = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_temple_district
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2273
+			owns = 2243
+			owns = 2194
+			owns = 2231
+			owns = 2217
+			religious_unity = 1
+			theologian = 5
+			
+		}
+		effect = {
+						add_estate_loyalty = {
+				estate = estate_god_telcontar
+				loyalty = 100
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_temple_in_every_city = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			five_corners_of_divinity
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			temple = 40
+		}
+		effect = {
+			add_corruption = -3
+		}
+	}
+	##Mission End
+	##Mission Start
+	grand_temples_in_every_city = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_temple_in_every_city
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			cathedral = 40
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			NOT = {
+			has_province_modifier = temple_district
+			}
+			has_building = cathedral
+			}
+			
+						add_permanent_province_modifier = { 
+    name = temple_district
+    duration = -1  
+}
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

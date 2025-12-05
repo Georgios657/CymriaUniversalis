@@ -1,0 +1,82 @@
+namespace = ascaria_in
+# Event to fire the incident. Or the de facto incident for non-dlc owners
+country_event = {
+	id = ascaria_in.1
+	title = ascaria_in.1.t
+	desc = ascaria_in.1.d
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+	tag = LA7
+		is_year = 1480
+		LA7 = {
+			total_development = 150
+		}
+		NOT = { active_imperial_incident = any }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = ascaria_in.1.a
+		trigger = {
+			has_dlc = "Emperor"
+		}
+		set_global_flag = ascaria_burger
+		set_imperial_incident = incident_ascaria_burgers
+	}
+	}
+	
+
+# dummy incident
+country_event = {
+	id = ascaria_in.2
+	title = ascaria_in.1.t
+	desc = ascaria_in.2.d
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # split the dukedom
+		ai_chance = {
+			factor = 50
+		}
+		name = ascaria_in.2.a
+		LA7 = {
+		add_estate_influence_modifier = {
+				estate = estate_burghers
+				desc = EST_VAL_FURTHERED_SPOUSES_FAMILY_NOBLES
+				influence = 10
+				duration = 7300
+			}
+		every_owned_province = { 
+		limit = {
+		has_port = yes
+		}
+		add_local_autonomy = 25
+		}
+		
+		add_opinion = {
+			who = emperor
+			modifier = opinion_traitor
+		}
+		}
+
+		 	emperor = { 
+			add_years_of_income = 0.5
+			}
+	}
+	
+	option = { # work harder to rein them in
+		ai_chance = {
+			factor = 50
+		}
+		name = ascaria_in.2.b
+	}
+}	

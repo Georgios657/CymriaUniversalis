@@ -1,0 +1,12 @@
+culture = misty_peregma
+religion = asae_ya
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Eiskin"
+is_city = no
+native_size = 40
+native_ferocity = 5
+native_hostileness = 5

@@ -1,0 +1,32 @@
+
+namespace = slave_state
+
+
+#####Rage of Shadows
+country_event = {
+	id = slave_state.1
+	title = slave_state.1.t
+	desc = slave_state.1.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+	has_government_mechanic = slave_mechanic
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = slave_state.1.a		
+		
+			get_more_slaves_trade = yes	
+			get_more_slaves_production = yes	
+		}
+		
+
+	}		

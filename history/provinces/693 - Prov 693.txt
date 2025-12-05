@@ -1,0 +1,13 @@
+add_core = LD8
+owner = LD8
+controller = LD8
+culture = gerossi
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Kumane"
+is_city = yes
+discovered_by = ottoman

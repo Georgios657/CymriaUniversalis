@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = chinese
+primary_culture = sunoria
+religion = phoenix_faith
+capital = 1635	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Rateen"
+		name = "Nevea"
+		birth_date = 1395.9.21
+		dip = 2
+		adm = 3
+		mil = 2
+
+	}
+
+}

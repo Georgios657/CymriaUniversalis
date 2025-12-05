@@ -1,0 +1,12 @@
+culture = outer_wooder
+religion = the_silvern_guide
+hre = no
+base_tax = 2
+base_production = 4
+base_manpower = 2
+capital = "Silver Tree"
+is_city = no
+native_size = 50
+native_ferocity = 10
+native_hostileness = 10
+center_of_trade = 1

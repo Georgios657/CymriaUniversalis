@@ -1,0 +1,156 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = gelros
+
+
+####liraes wedding prep
+country_event = {
+	id = gelros.1
+	title = gelros.1.t
+	desc = gelros.1.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+	option = {
+	name = gelros.1.a		
+		ai_chance = { factor = 20 }
+		country_event = { 
+		id = gelros.2
+		days = 65
+	}
+		}				
+	}
+
+###wedding	
+country_event = {
+	id = gelros.2
+	title = gelros.2.t
+	desc = gelros.2.desc
+
+	picture = RELIGION_eventPicture
+	
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		immediate = { 
+
+			every_country = {
+				limit = { NOT = { tag = PREV } } # not the same nation
+				if = {
+									limit = { NOT = { has_country_modifier = setup_evil_nation } }
+					add_opinion = { who = PREV modifier = evil }
+							reverse_add_opinion = { who = PREV modifier = evil }
+				}
+				else = {
+					add_opinion = { who = PREV modifier = both_evil }
+					reverse_add_opinion = { who = PREV modifier = both_evil }
+				}
+					}
+		
+		3225 = {
+		   add_core = GE8
+		   
+		   add_devastation = 100
+		   
+		}
+		
+		kill_ruler = yes
+		add_stability = -6
+		
+		release = GE8
+		
+		every_owned_province = {
+		add_core = GE8
+		}
+		
+		GE8 = {
+		define_general = {
+    shock = 6
+    fire = 0
+    manuever = 3
+    siege = 0
+	name = "Cedric V"
+}
+
+		define_general = {
+    shock = 5
+    fire = 5
+    manuever = 3
+    siege = 1
+	name = "Cedric X"
+}
+
+		define_general = {
+    shock = 5
+    fire = 3
+    manuever = 3
+    siege = 2
+	name = "Cedric VII"
+}
+
+		define_general = {
+    shock = 3
+    fire = 4
+    manuever = 3
+    siege = 4
+	name = "Cedric XII"
+}
+		
+		define_ruler = {
+				name = "Lirae"
+				dynasty = "Lorian"
+				adm = 2
+				dip = 2
+				mil = 5
+				age = 22
+				claim = 100
+				female = yes
+			}
+			
+				add_ruler_personality = wizard
+				set_ruler_flag = necromancy
+				set_ruler_flag = immortal
+					
+			add_ruler_modifier = { 
+				name = raised_dead
+				duration = -1  
+			}
+			
+			add_country_modifier = { 
+				name = undead_military
+				duration = -1  
+			}
+			
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				force_limit_percentage = 1
+			}
+			
+			declare_war = GE2
+			
+				change_government = magocracy
+				add_government_reform = necromancy_tower
+		}
+		
+		}
+		
+	option = {
+	name = gelros.2.a		
+		ai_chance = { factor = 20 }
+	switch_tag = GE8
+		}	
+
+	option = {
+	name = gelros.2.b		
+		ai_chance = { factor = 20 }
+		
+		}		
+	}
+	

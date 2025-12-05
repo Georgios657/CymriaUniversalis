@@ -1,0 +1,601 @@
+
+##BranchStart 0
+gtr1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		culture = hill_trolls
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	giants_due = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			is_subject = no
+			 	treasury = 500
+			}
+		}
+		effect = {
+			add_stability = 1
+			if = {
+			limit = {
+			is_subject = yes
+			}
+			add_treasury = -500
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	seek_independent_clans = {
+		icon = mission_unite_home_region
+		required_missions {
+			giants_due
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			 	prestige = 50
+				army_tradition = 50
+			}
+		}
+		effect = {
+			add_yearly_manpower = 3
+			every_owned_province = {
+				limit = {
+				culture = hill_trolls
+				}
+				 	add_local_autonomy = -15
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	our_freedom = {
+		icon = mission_unite_home_region
+		required_missions {
+			seek_independent_clans
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_subject = no
+		}
+		effect = {
+			add_army_tradition = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	our_free_home = {
+		icon = mission_unite_home_region
+		required_missions {
+			our_freedom
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		capital_scope = {
+			area_for_scope_province = { 
+			 	owned_by = ROOT
+			}		
+		}
+		 	num_of_cities = 10
+
+		}
+		effect = {
+			grimland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			
+						southern_jotun_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	our_free_people = {
+		icon = mission_unite_home_region
+		required_missions {
+			our_free_home
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 11
+	culture = hill_trolls
+	is_city = yes
+}
+		}
+		effect = {
+						jotunheim_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	destroy_the_giants = {
+		icon = mission_unite_home_region
+		required_missions {
+			our_free_people
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			exists = GI1
+			exists = GI2
+			exists = GI3
+			}
+		}
+		effect = {
+			add_splendor = 800
+			override_country_name = MOUNTAIN_KINGDOM
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+gtr2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		culture = hill_trolls
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	search_for_tricksers = {
+		icon = mission_unite_home_region
+		required_missions {
+			giants_due
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			spymaster = 2
+		}
+		effect = {
+				add_years_of_income = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	swindle_the_giants = {
+		icon = mission_unite_home_region
+		required_missions {
+			search_for_tricksers
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						3500 = {
+	trade_share = {
+		country = ROOT
+		share = 40
+	}
+}
+		}
+		effect = {
+			add_mercantilism = 5
+		}
+	}
+	##Mission End
+	##Mission Start
+	swindle_the_gynter = {
+		icon = mission_unite_home_region
+		required_missions {
+			swindle_the_giants
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						3624 = {
+	trade_share = {
+		country = ROOT
+		share = 40
+	}
+}
+		}
+		effect = {
+			add_mercantilism = 5
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+gtr3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		culture = hill_trolls
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	our_grand_ancestors = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 3
+		}
+		effect = {
+			 	add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50	
+		}
+	}
+	##Mission End
+	##Mission Start
+	dig_new_caves = {
+		icon = mission_unite_home_region
+		required_missions {
+			our_grand_ancestors
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_owned_provinces_with  = {
+	value = 4
+	OR = {
+	has_terrain  = hills
+	has_terrain  = mountain
+	has_terrain  = highlands
+	}
+	development = 12
+	culture_group = north_trolls
+	
+	is_city = yes
+}			
+		}
+		effect = {
+			change_government_reform_progress = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_grand_troll_capital = {
+		icon = mission_unite_home_region
+		required_missions {
+			dig_new_caves
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			capital_scope = {
+			development = 20
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_permanent_province_modifier = { 
+				name = troll_capital
+				duration = -1  
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_great_stone_worker = {
+		icon = mission_unite_home_region
+		required_missions {
+			a_grand_troll_capital
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+				adm_tech = 12
+				 	temple = 5
+			}
+		}
+		effect = {
+				add_splendor = 1500
+		}
+	}
+	##Mission End
+	##Mission Start
+	hall_of_stone_troll = {
+		icon = mission_unite_home_region
+		required_missions {
+			the_great_stone_worker
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			prestige = 75
+		}
+		effect = {
+			add_stability = 2
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+gtr4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		culture = hill_trolls
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	smith_weapons = {
+		icon = mission_unite_home_region
+		required_missions {
+			dig_iron
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+				army_professionalism = 0.10 
+				army_size = 40
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = troll_armoury
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	gates_and_doors = {
+		icon = mission_unite_home_region
+		required_missions {
+			smith_weapons
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			dip_tech = 9
+			innovativeness = 15
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = troll_civil
+				duration = -1  
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	trollian_metall_art = {
+		icon = mission_unite_home_region
+		required_missions {
+			gates_and_doors
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			dip_tech = 20
+			innovativeness = 30
+			trade_goods_produced_amount = {
+				trade_goods = iron
+				amount = 25
+			}
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = troll_metallurgy
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+gtr5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		culture = hill_trolls
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	dig_iron = {
+		icon = mission_unite_home_region
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			iron = 5
+		}
+		effect = {
+			add_mil_power = 150
+		}
+	}
+	##Mission End
+	##Mission Start
+	dig_gold = {
+		icon = mission_unite_home_region
+		required_missions {
+			dig_iron
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			gold = 5
+		}
+		effect = {
+			add_treasury = 1500
+			add_inflation = 5
+		}
+	}
+	##Mission End
+	##Mission Start
+	trollian_coins = {
+		icon = mission_unite_home_region
+		required_missions {
+			dig_gold
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			inflation = 5
+			}
+			OR = {
+			gold = 10
+			adm_tech = 10
+			}
+		}
+		effect = {
+			add_treasury = 2500
+			add_inflation = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	make_coins_secure = {
+		icon = mission_unite_home_region
+		required_missions {
+			trollian_coins
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			inflation = 5
+			}
+			OR = {
+			gold = 15
+			adm_tech = 15
+			spymaster = 2
+			natural_scientist = 2
+			}
+		}
+		effect = {
+			add_treasury = 5000
+			add_inflation = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	even_more_security = {
+		icon = mission_unite_home_region
+		required_missions {
+			make_coins_secure
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					NOT = {
+			inflation = 5
+			}
+			 	monthly_income = 100
+		}
+		effect = {
+			add_treasury = 10000
+			add_inflation = 10
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

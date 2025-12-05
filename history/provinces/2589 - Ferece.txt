@@ -1,0 +1,12 @@
+add_core = VE1
+owner = VE1
+controller = VE1
+hre = no
+base_tax = 4
+base_production =4
+trade_goods = fish
+base_manpower = 3
+capital = "Ferece"
+is_city = yes
+culture = verdano
+religion = imperial_cult

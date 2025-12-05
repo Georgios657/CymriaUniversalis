@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = stateless_society
+government_rank = 1
+technology_group = naga_tech
+primary_culture = coastal_naga
+religion = naga_faith
+capital = 1346	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Naga"
+		name = "Ananta"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 4
+		mil = 3
+
+	}
+
+}

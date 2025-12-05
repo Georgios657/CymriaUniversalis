@@ -1,0 +1,989 @@
+##BranchStart 0
+zervo1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = grand_zervo
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	wild_riders = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_tribal_rituals
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_cavalry = 20
+		}
+		effect = {
+			add_country_modifier = { 
+				name = wild_riders
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	honor_chiefs = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			wild_riders
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			legitimacy = 100
+		}
+		effect = {
+			 	add_yearly_manpower = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	integrate_into_soc = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			honor_chiefs
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR =  {
+		stability = 3
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 20
+	OR = {
+	culture = high_zervonian
+	culture = parsai
+	culture = karavanarian
+	}
+}		
+		}
+
+		}
+		effect = {
+			change_government_reform_progress = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	expansion_of_administration_zer = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	governing_capacity_percentage = 1
+				government_reform_progress = 150
+		}
+		effect = {
+			change_government_reform_progress = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	caste_of_beuro = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			expansion_of_administration_zer
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			monthly_adm = 12
+		}
+		effect = {
+			add_country_modifier = { 
+				name = satrapies
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	reform_the_satrapies = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			caste_of_beuro
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			diplomatic_reputation = 6
+		}
+		effect = {
+		remove_country_modifier = satrapies
+			add_country_modifier = { 
+				name = satrapies_2
+				duration = -1  
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	royal_messengers = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			reform_the_satrapies
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+has_global_modifier_value = {
+	which = movement_speed 
+	value = 0.2
+}
+
+			has_global_modifier_value = {
+	which = governing_capacity_modifier 
+	value = 0.25
+}		
+		}
+
+		}
+		effect = {
+			change_dip = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	timed_satrapies = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			royal_messengers
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			government_rank = 3
+			OR = {
+			years_of_income = 5
+			AND = {
+			num_of_estate_agendas_completed = {
+    estate = estate_nobility
+    value = 3
+}
+estate_loyalty = {
+    estate = estate_nobility
+    loyalty = 70
+}
+			}
+			}
+		}
+		effect = {
+remove_country_modifier = satrapies_2
+			add_country_modifier = { 
+				name = timed_satrapy_mod
+				duration = -1  
+			}	
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+zervo2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = grand_zervo
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_tribal_rituals = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			 	num_of_cavalry = 10
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 10
+	OR = {
+	culture = high_zervonian
+	culture = parsai
+	culture = karavanarian
+	}
+}
+			}
+		}
+		effect = {
+			add_army_tradition = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	sheppards = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_tribal_rituals
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			trade_goods_produced_amount = {
+	trade_goods = wool
+	amount = 5
+}
+
+trade_goods_produced_amount = {
+	trade_goods = livestock
+	amount = 5
+}
+			}
+		}
+		effect = {
+				add_years_of_income = 0.5
+				add_mercantilism = 2
+		}
+	}
+	##Mission End
+	##Mission Start
+	harsh_man = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			sheppards
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	army_tradition = 75
+		}
+		effect = {
+			add_manpower = 15
+			add_yearly_manpower = 2		
+		}
+	}
+	##Mission End
+	##Mission Start
+	priests_of_country = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			harsh_man
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_estate_agendas_completed = {
+    estate = estate_church
+    value = 3
+}
+estate_loyalty = {
+    estate = estate_church
+    loyalty = 70
+}			
+		}
+		effect = {
+			add_country_modifier = { 
+				name = unified_priesterhood
+				duration = 7500
+			}			
+			add_estate_influence_modifier = {
+    estate = estate_church
+    desc = EST_UNJIFIC
+    influence = -10
+    duration = -1
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	master_of_tribes = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			priests_of_country
+			integrate_into_soc
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			any_country = {
+			is_tribal = yes
+			culture_group = grand_zervo
+			}
+			}
+		}
+		effect = {
+			create_general = { tradition = 100 }
+		}
+	}
+	##Mission End
+	##Mission Start
+	study_their_wissdom = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_assayian_war
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1825
+		 	accepted_culture = assayia
+			OR = {
+			 	innovativeness = 25
+			1825 = {
+				has_great_project = {
+					type = any
+					tier = 2
+				}			
+			}	
+
+			}
+		}
+		effect = {
+			 	add_dip_power = 100
+				add_adm_power = 100
+				add_mil_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	vassal_kings = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			sub_the_south
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_subjects = 6
+		}
+		effect = {
+		add_country_modifier = { 
+				name = loyal_vas
+				duration = 7500
+			}	
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+zervo3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = grand_zervo
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	our_path_to_power = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			realm_of_king
+			the_tribal_rituals
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+
+				OR = {
+				 	power_projection = 50
+			 	total_development = 400
+				}
+
+		}
+		effect = {
+					zevo_mountains_region  = {					
+				add_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	master_of_moauntaind_valley = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			our_path_to_power
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 200
+				region = zevo_mountains_region
+			}
+		}
+		effect = {
+					zevo_mountains_region  = {					
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	zeronian_unifier = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			master_of_moauntaind_valley
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		zevo_mountains_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	administrate_zero = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			zeronian_unifier
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					 	num_of_owned_states_with  = {
+				value = 5
+				region = zevo_mountains_region
+				is_prosperous = yes
+				}
+		}
+		effect = {
+						assay_region  = {					
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_assayian_war = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			administrate_zero
+			master_of_tribes
+			a_grand_king
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+		assay_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+		AND = {
+		owns = 1831
+		owns = 1826
+		owns = 1824
+		owns = 1825
+			development_in_provinces = {
+	value = 400
+	region = assay_region
+}		
+		
+		}
+
+			}
+		
+		}
+		effect = {
+			custom_tooltip = vassalitions_wars
+		}
+	}
+	##Mission End
+	##Mission Start
+	sub_the_south = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_assayian_war
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	
+
+num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 25
+	OR = {
+	region = baylon_region
+	region = sumar_region
+	}
+
+}
+		}
+		effect = {
+			add_power_projection = { 
+	type = 25_permanent_power_projection
+	amount = 25 
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	king_of_the_universe = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			sub_the_south
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	is_emperor_of_china = yes
+		}
+		effect = {
+			add_mandate = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	king_of_kings = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			king_of_the_universe
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+	sumar_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+	baylon_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+	seeren_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_mandate = 100
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+zervo4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = grand_zervo
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	realm_of_king = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+				prestige = 50
+			 	government = monarchy		
+		}
+		}
+		effect = {
+			add_prestige = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_mages = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			realm_of_king
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_different_cultures_in_court = 3
+		}
+		effect = {
+			add_adm_power = 150
+		}
+	}
+	##Mission End
+	##Mission Start
+	royal_studies = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_mages
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	years_of_income = 2
+		}
+		effect = {
+			 	change_innovativeness = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	mager_court = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			royal_studies
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			monthly_adm = 11
+			monthly_dip = 11
+			monthly_mil = 11
+		}
+		effect = {
+			add_country_modifier = { 
+				name = mager_courts
+				duration = -1
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_grand_king = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			mager_court
+			the_savaran
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	government_rank = 2
+				prestige = 75
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	tame_assay = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			the_assayian_war
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					 	num_of_owned_states_with  = {
+				value = 5
+				region = assay_region
+				is_prosperous = yes
+				}	
+		}
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	honor_their_rituals = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			sub_the_south
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1816
+			owns = 1749
+			owns = 1753
+			owns = 1787
+			owns = 1800
+			
+		
+		}
+		effect = {
+			add_country_modifier = { 
+				name = zervo_tolernace
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+zervo5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = grand_zervo
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	a_great_king = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			realm_of_king
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	land_forcelimit = 25
+		}
+		effect = {
+			add_army_professionalism = 0.05
+		}
+	}
+	##Mission End
+	##Mission Start
+	royal_household = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			a_great_king
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	legitimacy = 100
+				stability = 2
+				capital_scope = {
+				development = 30
+				num_of_buildings_in_province = 4
+				}
+		}
+		effect = {
+			add_province_modifier = { 
+					name = zervo_capital
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_savaran = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			royal_household
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			 	army_professionalism = 0.5 
+				army_tradition = 50
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = saravan
+				duration = 36500
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	splendour_of_kings = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 splendor = 1200
+		}
+		effect = {
+			 reset_golden_age = yes
+			extend_golden_age = 360
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_grand_palace = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1873
+			1873 = {
+				has_great_project = {
+					type = any
+					tier = 2
+				}			
+			}
+		}
+		effect = {
+			 	change_government_reform_progress = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	riches_of_zervo = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			monthly_income = 75
+		}
+		effect = {
+			add_mercantilism = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	defender_of_west = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+
+			minoria_region  = {
+
+			type = all	
+			OR = {
+			country_or_non_sovereign_subject_holds = ROOT 			
+			owner = {
+			 	alliance_with = ROOT
+			}		
+			}
+
+
+
+			}		
+		}
+
+		effect = {
+			add_army_tradition = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	defender_of_east = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				haria_region  = {
+
+			type = all	
+			OR = {
+			country_or_non_sovereign_subject_holds = ROOT 			
+			owner = {
+			 	alliance_with = ROOT
+			}		
+			}
+
+
+
+			}	
+		}
+		effect = {
+			add_army_tradition = 25
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

@@ -1,0 +1,12 @@
+add_core = JH0
+owner = JH0
+controller = JH0
+religion = all_puryfing_flame
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Barin"
+is_city = yes
+culture = northern_jinn

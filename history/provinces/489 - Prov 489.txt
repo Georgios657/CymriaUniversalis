@@ -1,0 +1,13 @@
+add_core = FCG
+owner = FCG
+controller = FCG
+culture = bescilian
+religion = amatism_faith
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = fish
+base_manpower = 1
+capital = "Besos"
+is_city = yes
+discovered_by = indian

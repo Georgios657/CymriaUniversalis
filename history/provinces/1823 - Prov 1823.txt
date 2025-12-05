@@ -1,0 +1,12 @@
+add_core = TR1
+owner = TR1
+controller = TR1
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = salt
+base_manpower = 2
+capital = "Detek"
+is_city = yes
+culture = utaschian
+religion = ishtara

@@ -1,0 +1,1039 @@
+#For all the English Parliament Issues which should be unique.
+
+
+
+
+
+#the_habeas_corpus_act = {
+#	category = 4
+#
+#	allow = {
+#		has_not_enacted_parliament_action = {
+#			parliament_action = the_habeas_corpus_act
+#		}
+#		has_government_attribute = english_parliament
+#	}
+#	
+#	effect = {
+#		set_parliament_action_flag = {
+#			parliament_action = the_habeas_corpus_act
+#		}
+#	}
+#	
+#	chance = {
+#		factor = 0.5
+#	}
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
+#
+#the_quartering_act = {
+#	category = 4
+#
+#	allow = {
+#		has_not_enacted_parliament_action = {
+#			parliament_action = the_quartering_act
+#		}
+#		has_government_attribute = english_parliament
+#	}
+#	
+#	effect = {
+#		set_parliament_action_flag = {
+#			parliament_action = the_quartering_act
+#		}
+#	}
+#	
+#	chance = {
+#		factor = 0.5
+#	}
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
+#
+#the_mutiny_act = {
+#	category = 4
+#
+#	allow = {
+#		has_not_enacted_parliament_action = {
+#			parliament_action = the_mutiny_act
+#		}
+#		has_government_attribute = english_parliament
+#	}
+#	
+#	effect = {
+#		set_parliament_action_flag = {
+#			parliament_action = the_mutiny_act
+#		}
+#	}
+#		
+#	chance = {
+#		factor = 0.5
+#	}
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
+
+
+acts_of_impressment = {
+	category = 4
+
+	allow = {
+		has_issue_unlocked = {
+			issue = acts_of_impressment
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = acts_of_impressment
+		}
+		has_government_attribute = english_parliament
+	}
+	
+	effect = {
+		custom_tooltip = EXPENSIVE_ISSUE_TT
+		set_parliament_action_flag = {
+			parliament_action = acts_of_impressment
+		}
+		add_yearly_sailors = 1
+		unlock_issue = {
+			issue = acts_of_high_admiralty
+		}
+	}
+	
+	modifier = {
+		sailor_maintenance_modifer = -0.33
+	}
+	effect_duration = 5
+	backing_percentage = 0
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+acts_of_high_admiralty = {
+	category = 4
+
+	allow = {
+		has_issue_unlocked = {
+			issue = acts_of_high_admiralty
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = acts_of_high_admiralty
+		}
+		has_government_attribute = english_parliament
+	}
+	
+	effect = {
+		custom_tooltip = EXPENSIVE_ISSUE_TT
+		set_parliament_action_flag = {
+			parliament_action = acts_of_high_admiralty
+		}
+		unlock_issue = {
+			issue = acts_of_maritime_courage
+		}
+		unlock_issue = {
+			issue = acts_of_naval_professionalism
+		}
+		enable_admirals_army_professionalism = yes
+	}
+	
+	modifier = {
+		navy_tradition = 2
+	}
+	effect_duration = 5
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+acts_of_maritime_courage = {
+	category = 4
+
+	allow = {
+		has_issue_unlocked = {
+			issue = acts_of_maritime_courage
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = acts_of_maritime_courage
+		}
+		has_government_attribute = english_parliament
+	}
+	
+	effect = {
+		custom_tooltip = EXPENSIVE_ISSUE_TT
+		set_parliament_action_flag = {
+			parliament_action = acts_of_maritime_courage
+		}
+		if = {
+			limit = {
+				has_enacted_parliament_action = {
+					parliament_action = acts_of_naval_professionalism
+				}
+			}
+			unlock_issue = {
+				issue = acts_of_maritime_professionalism
+			}
+		}
+		add_navy_tradition = 15
+	}
+	
+	modifier = {
+		naval_morale = 0.15
+		sunk_ship_morale_hit_recieved = -0.25
+	}
+	effect_duration = 5
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+acts_of_naval_professionalism = {
+	category = 4
+
+	allow = {
+		has_issue_unlocked = {
+			issue = acts_of_naval_professionalism
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = acts_of_naval_professionalism
+		}
+		has_government_attribute = english_parliament
+	}
+	
+	effect = {
+		custom_tooltip = EXPENSIVE_ISSUE_TT
+		set_parliament_action_flag = {
+			parliament_action = acts_of_naval_professionalism
+		}
+		if = {
+			limit = {
+				has_enacted_parliament_action = {
+					parliament_action = acts_of_maritime_courage
+				}
+			}
+			unlock_issue = {
+				issue = acts_of_maritime_professionalism
+			}
+		}
+		add_navy_tradition = 15
+	}
+	
+	modifier = {
+		ship_durability = 0.1
+		recover_navy_morale_speed = 0.25
+	}
+	effect_duration = 5
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+acts_of_maritime_professionalism = {
+	category = 4
+
+	allow = {
+		has_issue_unlocked = {
+			issue = acts_of_maritime_professionalism
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = acts_of_maritime_professionalism
+		}
+		has_government_attribute = english_parliament
+	}
+	
+	effect = {
+		custom_tooltip = EXPENSIVE_ISSUE_TT
+		set_parliament_action_flag = {
+			parliament_action = acts_of_maritime_professionalism
+		}
+		unlock_government_reform = {
+			government_reform = professional_navy_reform
+		}
+		change_government_reform_progress = 50
+	}
+	
+	modifier = {
+		global_ship_trade_power = 0.5
+		global_foreign_trade_power = 0.5
+		naval_tradition_from_trade = 1
+	}
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+acts_of_taxation = {
+	category = 3
+
+	allow = {
+		has_issue_unlocked = {
+			issue = acts_of_taxation
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = acts_of_taxation
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = act_of_representation
+		}
+		has_government_attribute = english_parliament
+	}
+	
+	effect = {
+		set_parliament_action_flag = {
+			parliament_action = acts_of_taxation
+		}
+		custom_tooltip = acts_of_taxation_tt
+		add_country_modifier = {
+			name = acts_of_taxation_parliament
+			duration = -1
+		}
+	}
+	backing_percentage = 50
+	
+	modifier = {
+		global_tax_income = 60
+		trade_efficiency = 0.1
+	}
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+act_of_representation = {
+	category = 4
+
+	allow = {
+		has_issue_unlocked = {
+			issue = act_of_representation
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = act_of_representation
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = acts_of_taxation
+		}
+		has_government_attribute = english_parliament
+	}
+	
+	effect = {
+		set_parliament_action_flag = {
+			parliament_action = act_of_representation
+		}
+		custom_tooltip = act_of_representation_tt
+		add_country_modifier = {
+			name = act_of_representation_parliament
+			duration = -1
+		}
+	}
+	backing_percentage = 0
+	
+	modifier = {
+		diplomatic_reputation = 2
+		diplomatic_annexation_cost = -0.15
+	}
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+the_sugar_act = {
+	category = 2
+
+	allow = {
+		has_not_enacted_parliament_action = {
+			parliament_action = the_sugar_act
+		}
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = the_sugar_act
+		}
+	}
+	
+	effect = {
+		set_parliament_action_flag = {
+			parliament_action = the_sugar_act
+		}
+		increase_trade_goods_discovery = {
+			trade_goods = sugar
+		}
+	}
+	
+	modifier = {
+		colony_development_boost = 1
+	}
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+the_gold_act = {
+	category = 2
+
+	allow = {
+		has_not_enacted_parliament_action = {
+			parliament_action = the_gold_act
+		}
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = the_gold_act
+		}
+	}
+	
+	effect = {
+		set_parliament_action_flag = {
+			parliament_action = the_gold_act
+		}
+		increase_trade_goods_discovery = {
+			trade_goods = gold
+		}
+	}
+	
+	modifier = {
+		colony_development_boost = 1
+	}
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+the_spice_act = {
+	category = 2
+
+	allow = {
+		has_not_enacted_parliament_action = {
+			parliament_action = the_spice_act
+		}
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = the_spice_act
+		}
+	}
+	
+	effect = {
+		set_parliament_action_flag = {
+			parliament_action = the_spice_act
+		}
+		increase_trade_goods_discovery = {
+			trade_goods = spices
+		}
+		increase_trade_goods_discovery = {
+			trade_goods = cloves
+		}
+	}
+	
+	modifier = {
+		colony_development_boost = 1
+	}
+	
+	chance = {
+		factor = 0
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#English Laws
+royal_impressment_act = {
+	category = 5
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = english_ideas_laws
+		}
+		NOT = { has_country_modifier = royal_impressment_act_modifier }
+		NOT = { has_country_flag = eng_can_not_adjust_ideas }
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = royal_impressment_act_modifier
+			duration = -1
+			desc = UNTIL_ABOLITION
+		}
+	}
+	effect_duration = 1
+	
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+isolationism_act = {
+	category = 5
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = english_ideas_laws
+		}
+		NOT = { has_country_modifier = isolationism_act_modifier }
+		NOT = { has_country_flag = eng_can_not_adjust_ideas }
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = isolationism_act_modifier
+			duration = -1
+			desc = UNTIL_ABOLITION
+		}
+	}
+	effect_duration = 1
+	
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+colonial_act = {
+	category = 5
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = english_ideas_laws
+		}
+		has_idea = bill_of_rights
+		NOT = { has_country_modifier = colonial_act_modifier }
+		NOT = { has_country_flag = eng_can_not_adjust_ideas }
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = colonial_act_modifier
+			duration = -1
+			desc = UNTIL_ABOLITION
+		}
+	}
+	effect_duration = 1
+	
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#British Laws
+military_reassignment_act = {
+	category = 5
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = british_ideas_laws
+		}
+		NOT = { has_country_modifier = military_reassignment_act_modifier }
+		NOT = { has_country_flag = eng_can_not_adjust_ideas }
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = military_reassignment_act_modifier
+			duration = -1
+			desc = UNTIL_ABOLITION
+		}
+	}
+	
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+acts_of_annexation = {
+	category = 5
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = british_ideas_laws
+		}
+		NOT = { has_country_modifier = acts_of_development_modifier }
+		NOT = { has_country_flag = eng_can_not_adjust_ideas }
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = acts_of_development_modifier
+			duration = -1
+			desc = UNTIL_ABOLITION
+		}
+	}
+	effect_duration = 1
+	
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+global_empire_act = {
+	category = 5
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = british_ideas_laws
+		}
+		NOT = { has_country_modifier = global_empire_act_modifier }
+		NOT = { has_country_flag = eng_can_not_adjust_ideas }
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = global_empire_act_modifier
+			duration = -1
+			desc = UNTIL_ABOLITION
+		}
+	}
+	effect_duration = 1
+	
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#Angevin Laws
+naval_reassignment_act = {
+	category = 5
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = angevin_ideas_laws
+		}
+		NOT = { has_country_modifier = naval_reassignment_act_modifier }
+		NOT = { has_country_flag = eng_can_not_adjust_ideas }
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = naval_reassignment_act_modifier
+			duration = -1
+			desc = UNTIL_ABOLITION
+		}
+	}
+	effect_duration = 1
+	
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+diplomatic_act = {
+	category = 5
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = angevin_ideas_laws
+		}
+		NOT = { has_country_modifier = diplomatic_act_modifier }
+		NOT = { has_country_flag = eng_can_not_adjust_ideas }
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = diplomatic_act_modifier
+			duration = -1
+			desc = UNTIL_ABOLITION
+		}
+	}
+	effect_duration = 1
+	
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+internal_focus_act = {
+	category = 5
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = angevin_ideas_laws
+		}
+		NOT = { has_country_modifier = internal_focus_act_modifier }
+		NOT = { has_country_flag = eng_can_not_adjust_ideas }
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = internal_focus_act_modifier
+			duration = -1
+			desc = UNTIL_ABOLITION
+		}
+	}
+	effect_duration = 1
+	
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#New English Issues
+cultural_unity_act = {
+	category = 2
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = cultural_unity_act
+		}
+	}
+	
+	effect = {
+		issue_effect_scaling_with_estate_influence = {
+			estate = estate_church
+			effect1 = "add_dip_power = 25"
+			effect2 = "add_dip_power = 50"
+			effect3 = "add_dip_power = 75"
+			effect4 = "add_dip_power = 100"
+			effect5 = "add_dip_power = 125"
+			fallback_effect = "add_dip_power = 75"
+		}
+	}
+	effect_duration = 15
+	modifier = {
+		culture_conversion_time = -0.2
+		culture_conversion_cost = -0.1
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4
+			full_idea_group = religious_ideas
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+appointment_of_state_minister = {
+	category = 4
+
+	allow = {
+		has_issue_unlocked = {
+			issue = appointment_of_state_minister
+		}
+		has_government_attribute = english_parliament
+	}
+	
+	effect = {
+		country_event = {
+			tooltip = appointment_of_state_minister_tt
+		}
+	}
+	modifier = {
+		advisor_cost = -0.1
+	}
+	effect_duration = 1
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 5
+			OR = {
+				NOT = { employed_advisor = { category = ADM } }
+				NOT = { employed_advisor = { category = DIP } }
+				NOT = { employed_advisor = { category = MIL } }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+enact_mercantilism = {
+	category = 4
+
+	allow = {
+		has_issue_unlocked = {
+			issue = enact_mercantilism
+		}
+		has_government_attribute = english_parliament
+		NOT = { mercantilism = 100 }
+	}
+	
+	effect = {
+		add_mercantilism = 1
+	}
+	
+	modifier = {
+		trade_steering = 0.15
+	}
+	
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+promote_free_trade = {
+	category = 4
+
+	allow = {
+		has_issue_unlocked = {
+			issue = promote_free_trade
+		}
+		has_government_attribute = english_parliament
+		mercantilism = 1
+	}
+	
+	effect = {
+		add_mercantilism = -1
+		issue_effect_scaling_with_estate_influence = {
+			estate = estate_burghers
+			effect1 = "add_treasury = 50"
+			effect2 = "add_treasury = 125"
+			effect3 = "add_treasury = 200"
+			effect4 = "add_treasury = 275"
+			effect5 = "add_treasury = 350"
+			fallback_effect = "add_treasury = 125"
+		}
+	}
+	
+	modifier = {
+		trade_efficiency = 0.1
+	}
+	
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			ai = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+discipline_for_the_marines_acts = {
+	category = 1
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = discipline_for_the_marines_acts
+		}
+	}
+	
+	effect = {
+		add_mil_power = 50
+	}
+	
+	modifier = {
+		morale_damage = 0.1
+		is_marine_modifier = yes
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4
+			is_at_war = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+improved_man_of_war_acts = {
+	category = 1
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = improved_man_of_war_acts
+		}
+	}
+	
+	effect = {
+		add_navy_tradition = 5
+	}
+	
+	modifier = {
+		ship_durability = 0.15
+		is_man_of_war_modifier = yes
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4
+			is_at_war = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+army_reform_acts = {
+	category = 1
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_issue_unlocked = {
+			issue = army_reform_acts
+		}
+	}
+	
+	effect = {
+		add_army_tradition = 5
+	}
+	
+	modifier = {
+		fire_damage_received = -0.1
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 4
+			is_at_war = yes
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

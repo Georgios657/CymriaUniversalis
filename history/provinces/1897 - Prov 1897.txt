@@ -1,0 +1,13 @@
+add_core = ZR3
+add_core = ZR0
+owner = ZR3
+controller = ZR3
+culture = ekterianian
+religion = yazida
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Arjumaan"
+is_city = yes

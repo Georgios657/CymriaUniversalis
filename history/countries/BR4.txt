@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = wandering_army_reform
+government_rank = 1
+technology_group = imperial_tech
+primary_culture = kissay
+religion = rozalia
+capital = 2665
+
+1444.1.1 = {
+	monarch = {
+		name = "Farkas"
+		dynasty = "Kisshasy"
+		birth_date = 1416.9.21
+		dip = 1
+		adm = 1
+		mil = 5
+
+	}
+
+}
+
+1444.1.1 = {
+		leader = {
+		name = "Stepan Concris"
+		type = conquistador
+		fire = 2
+		shock = 1
+		manuever = 2
+		siege = 0
+		death_date = 1453.7.17
+	}
+}

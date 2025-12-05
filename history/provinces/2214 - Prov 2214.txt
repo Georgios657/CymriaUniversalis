@@ -1,0 +1,13 @@
+add_core = WI7
+owner = WI7
+controller = WI7
+culture = darian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = iron
+base_manpower = 1
+capital = "Mwaika"
+is_city = yes
+fort_15th = yes

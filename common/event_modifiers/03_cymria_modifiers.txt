@@ -1,0 +1,2575 @@
+great_city_of_giants = {
+ 	local_tax_modifier = 0.5
+	local_production_efficiency = 0.5
+	local_development_cost = -0.2
+}
+
+leader_less_trolls = {
+	local_unrest = -5
+	local_tax_modifier = 0.3
+}
+
+giant_land_tax = {
+	global_tax_income = 0.1
+}
+
+troll_servats = {
+	global_manpower_modifier = 0.15
+	production_efficiency = 0.1
+}
+
+giant_furue = {
+	culture_conversion_cost = -0.33
+	core_creation = -0.33
+}
+
+werewolves_giant = {
+	global_unrest = -1
+}
+
+werewolves_spies = {
+	spy_offence = 0.2
+	global_spy_defence = 0.2
+}
+
+bringer_of_horror_g = {
+	 	morale_damage = 0.1
+}
+
+new_jarls = {
+	leader_cost = -0.05
+	 	governing_capacity = 250
+}
+
+quota = {
+	production_efficiency = 0.15
+}
+
+stratified_soc = {
+	legitimacy = 1
+	stability_cost_modifier = -0.25
+}
+
+giant_armor = {
+	shock_damage_received = -0.15
+	fire_damage_received = -0.1
+}
+
+cheaper_prod_giant = {
+	infantry_cost = -0.1
+}
+
+resettle_trolls = {
+	local_culture_conversion_cost = -0.75
+	local_culture_conversion_time = -0.5
+}
+
+master_of_broden_giant = {
+	administrative_efficiency = 0.1
+}
+
+siege_amster_gia = {
+	artillery_cost = -0.15
+	 	artillery_levels_available_vs_fort = 1
+}
+
+bunderbluss = {
+	 	infantry_fire = 1
+}
+
+vaetti = {
+	 	movement_speed = 0.05
+		global_spy_defence = 0.1
+		leader_land_manuever = 1
+		global_tax_modifier = -0.15
+}
+
+draugr = {
+	global_manpower = 15
+}
+
+werwolf_support = {
+	global_unrest = -3
+	legitimacy = -0.5
+}
+
+war_Taxes = {
+	global_unrest = 1
+	 	global_tax_modifier = 0.15
+}
+mater_of_all = {
+	all_power_cost = -0.05
+}
+
+imperial_glory_inheritor = {
+	 	administrative_efficiency = 0.1
+}
+
+trade_quarter = {
+	province_trade_power_value = 10
+	local_development_cost = -0.05
+}
+
+sailing_quarter = {
+	local_sailors_modifier = 0.5
+	}
+
+salor_quota = {
+		 	global_sailors_modifier = 0.2
+}	
+
+foreign_sailor = {
+		 	global_sailors = 10000
+}
+
+mercenarie_garai = {
+		 	mercenary_discipline = 0.025
+}
+
+merc_office = {
+	 	merc_maintenance_modifier = -0.10
+		 	mercenary_cost = -0.10
+}
+
+clonial_dreams = {
+		colonists = 2
+}
+
+szgenie_route = {
+	 	global_foreign_trade_power = 0.25
+}
+
+fortress_island = {
+	 	block_slave_raid = yes
+		local_own_coast_naval_combat_bonus = 1
+	 	hostile_disembark_speed = 0.5
+		blockade_force_required = 1
+}
+
+garai_plaace = {
+		max_absolutism = 50
+}
+gloom_spreading = {
+	local_monthly_devastation = 0.4		
+}
+
+pearl_Garai = {
+	province_trade_power_modifier = 0.5
+	local_production_efficiency = 0.5
+	local_tax_modifier = 0.5
+}
+
+garian_admiral = {
+		 	admiral_cost = 0.25
+			max_admiral_shock = 1
+			max_admiral_maneuver = 1
+}
+
+vengeful_woods_mod = {
+	local_defensiveness = 0.15
+	local_hostile_attrition = 1
+	max_attrition = 1
+}
+
+fight_for_freedom = {
+	 	liberty_desire = 50
+		global_defender_dice_roll_bonus = 1
+		defensiveness = 0.2
+		garrison_size = 0.25
+}
+
+scorpion_servs = {
+	local_culture_conversion_cost = 1
+	local_manpower_modifier = -0.5
+	local_unrest = -4
+}
+
+defense_of_arossa = {
+	local_fort_maintenance_modifier = -0.75
+	local_defensiveness = 0.25
+	local_garrison_size = 0.5
+}
+
+grand_ship = {
+		 	build_cost = -0.1
+			 	great_project_upgrade_cost = -0.25
+}
+
+holy_grail = {
+		manpower_recovery_speed = 0.25
+}
+
+lost_ark = {
+		land_morale = 0.2
+}
+scoprion_liberty = {
+		land_morale = 0.2
+}
+
+pillar = {
+	 	local_unrest = -2
+		local_production_efficiency = 0.25
+}
+
+fire_born_plague = {
+	 	local_unrest = 4
+		local_production_efficiency = -0.25	
+		 	development_cost = 0.25
+}
+
+black_guard = {
+	discipline = 0.025
+}
+
+expaned_black_guard = {
+	 	land_morale_constant = 0.1
+}
+
+laval_citadel = {
+	local_defensiveness = 0.25
+	local_hostile_attrition = 5
+	max_attrition = 5
+}
+
+temple_income_ab = {
+	global_tax_modifier = 0.15
+}
+
+heat_forging = {
+	 	global_regiment_recruit_speed = -0.25
+		 	global_regiment_cost = -0.10
+}
+
+legendar_steel = {
+ 	shock_damage_received = -0.5
+	fire_damage_received = -0.05
+}
+
+industrial_gloom = {
+	production_efficiency = 0.25
+}
+
+golem_fabrication = {
+	defensiveness = 0.15
+	fort_maintenance_modifier = -0.10
+}
+
+supreme_asae = {
+	 	tolerance_own = 3
+}
+
+new_city_culture = {
+	expand_infrastructure_cost_modifier = -0.25
+	 	state_governing_cost = -0.1
+}
+
+expand_culture = {
+culture_conversion_cost = -0.33
+culture_conversion_time = -0.33
+ 	same_culture_advisor_cost = -0.2
+}
+
+fire_mount = {
+	trade_goods_size = 1
+	local_production_efficiency = 0.25
+}
+
+live_and_die_sword = {
+	republican_tradition = 0.5
+}
+
+new_zephy_city = {
+	local_tax_modifier = 0.3
+	local_production_efficiency = 0.3
+	local_manpower_modifier = 0.5
+}
+
+fay_hunter = {
+	global_unrest = -2
+}
+freed_people = {
+	development_cost = -0.1
+}
+
+mercieless_attack = {
+	 	morale_damage_received = -0.1
+}
+
+estate_less = {
+	 	global_unrest = -2
+		republican_tradition = 1
+}
+
+
+nation_of_skill = {
+	 	advisor_cost = -0.2
+}
+
+strengh_elader = {
+	land_morale = 0.1
+}
+
+eternal_revoluation = {
+	 	num_accepted_cultures = 4
+}
+
+new_state_church = {
+ 	global_heretic_missionary_strength = -0.01
+	 	tolerance_heretic = 2
+		 	tolerance_heathen = 1
+}
+
+free_serve = {
+	manpower_recovery_speed = 0.2
+}
+
+mass_war = {
+	 	global_supply_limit_modifier = 0.5
+		 	infantry_cost = -0.05
+}
+
+patala_city = {
+ 	local_tax_modifier = 1
+}
+
+temple_island = {
+	local_unrest = -3
+}
+
+ancient_awa = {
+ 	artillery_cost = -0.15
+}
+
+water_forts = {
+		 	local_defensiveness = 0.33
+			 	local_defender_dice_roll_bonus = 1
+}
+cave_fortrss = {
+	 	local_fort_maintenance_modifier = -0.5
+ 	fort_level = 1
+}
+
+law_of_religion = {
+	 	tolerance_own = 1
+		 	monthly_piety = 0.01
+}
+
+grand_judicary = {
+	 	global_autonomy = -0.05
+}
+
+first_codex = {
+	 	yearly_corruption = -0.05
+}
+
+fourt_codex = {
+ 	global_tax_modifier = 0.05
+}
+
+third_codex = {
+	 	global_unrest = -1
+}
+
+second_codex = {
+		 	stability_cost_modifier = -0.1
+}
+
+naga_navy = {
+	 	sailor_maintenance_modifer = -0.25
+}
+
+magic_gems = {
+	 	all_power_cost = -0.03
+}
+
+riefen_brooches = {
+		prestige = 0.25
+		 	production_efficiency = 0.05
+}
+
+kranian_unity = {
+		 	manpower_in_culture_group_provinces = 0.15
+}
+
+kranian_champs = {
+		 	leader_cost = -0.15
+}
+
+kranian_lords = {
+		 	max_general_shock = 1
+}
+
+cavalry_crace = {
+	cavalry_cost = -0.1
+}
+
+grass_armour = {
+	shock_damage_received = -0.10	
+}
+
+kranian_honor_guard = {
+		 	discipline = 0.025
+}
+
+riefen_armor = {
+	shock_damage_received = -0.10
+}
+
+riefen_rider = {
+	 	cavalry_flanking = 0.5
+		cav_to_inf_ratio = 0.15
+}
+
+defender_of_realm = {
+	 	can_not_declare_war = yes
+		fort_maintenance_modifier = -0.33
+}
+
+stalking_dragon = {
+	local_unrest = 40
+	 	trade_value = -1
+}
+
+
+blade_way = {
+	shock_damage = 0.10
+}
+
+sword_master = {
+	 	max_general_shock = 1
+}
+
+gassalan_government = {
+	 	reform_progress_growth = -0.2
+		 global_autonomy = 0.05
+		global_unrest = -1
+}
+
+gassalan_tax_reform = {
+	 	global_tax_modifier = 0.1
+}
+
+gassalan_inheritance = {
+	 	development_cost_in_primary_culture = 0.5
+		manpower_in_own_culture_provinces = 0.2
+}
+
+center_of_gassala = {
+	 	local_tax_modifier = 0.33
+		local_production_efficiency = 0.25
+		institution_growth = 1
+}
+
+pen_way = {
+	 	prestige_decay = -0.02
+}
+
+gassala_literature = {
+	 	prestige_decay = -0.01	
+}
+
+unholy_nation = {
+	 	tolerance_own = -2
+}
+
+unholy_warriors = {
+ 	land_morale = -0.10
+}
+
+imperial_reconstruction = {
+	 	can_not_declare_war = yes
+}
+
+soul_furnace = {
+ 	all_power_cost = -0.1
+	global_unrest = -2
+}
+
+souls = {
+		monthly_magic_mil_power = 0.1
+		monthly_magic_adm_power = 0.1
+		monthly_magic_dip_power = 0.1	
+}
+
+promosing_flood = {
+		local_tax_modifier = 0.25
+	 	local_production_efficiency = 0.25
+		trade_goods_size_modifier = 0.15
+}
+
+no_flood = {
+		local_tax_modifier = -0.33
+	 	local_production_efficiency = -0.33
+		local_monthly_devastation = 0.12
+}
+
+devastating_flood = {
+	 	local_friendly_movement_speed = -0.25
+		local_hostile_movement_speed = -0.25
+		trade_goods_size_modifier = -0.25
+		local_monthly_devastation = 0.12	
+}
+
+harian_horses = {
+		 	cavalry_cost = -0.02
+			cavalry_power = 0.03
+}
+
+roving_end  ={
+			 	global_unrest = -2
+}
+
+high_lance = {
+	 	land_morale = 0.05
+}
+
+harian_expansion = {
+		core_creation = -0.1
+}
+
+harian_patriot = {
+		 	local_years_of_nationalism = 15
+}
+
+harian_poets = {
+	 	advisor_cost = -0.05
+		 	diplomatic_reputation = 1
+}
+
+wild_riders = {
+		 	cavalry_cost = -0.05
+}
+
+satrapies = {
+		 	governing_capacity = 300
+			yearly_corruption = 0.1
+}
+
+satrapies_2 = {
+		 	governing_capacity = 450
+			yearly_corruption = 0.15
+}
+
+timed_satrapy_mod = {
+		 	governing_capacity = 450		
+}
+
+unified_priesterhood = {
+		 	tolerance_own = 1
+}
+
+loyal_vas = {
+ 	 	reduced_liberty_desire = 20
+}
+
+mager_courts = {
+		 	advisor_cost = -0.1
+			 yearly_corruption = 0.05
+}
+
+zervo_tolernace = {
+		 	tolerance_heretic = 1
+}
+
+zervo_capital = {
+		 	local_tax_modifier = 0.5
+			 local_production_efficiency = 0.5
+			local_manpower_modifier = 0.5
+			 	local_institution_spread = 0.5
+}
+
+saravan = {
+		cavalry_power = 0.10
+}
+
+werfvol = {
+	 	global_unrest = 1
+}
+
+more_harpies = {
+	 	manpower_recovery_speed = 0.25
+}
+
+brave_harpy = {
+		land_morale = 0.1
+}
+
+caste_soldiers = {
+	infantry_cost = -0.05
+	cavalry_cost = -0.05
+}
+
+expansive_fever = {
+	 	may_establish_frontier = yes
+}
+
+expanded_administration = {
+		 	expand_administration_cost = -0.5
+}
+
+troll_capital = {
+	local_development_cost = -0.25
+	local_tax_modifier = 0.5
+	local_production_efficiency = 0.5
+	
+}
+
+troll_armoury = {
+	infantry_cost = -0.05
+}
+
+new_sveri = {
+		 	local_institution_spread = 1
+			local_manpower_modifier = 0.5
+			local_tax_modifier = 0.5
+			local_production_efficiency = 0.5
+}
+
+scale_gospel = {
+	 	global_heretic_missionary_strength = 0.04
+		missionaries = 2
+}
+
+shaman_guidance = {
+		 	tolerance_own = 2
+			church_influence_modifier = 0.15
+}
+
+regained_wisdom = {
+		 	idea_cost = -0.1
+}
+
+respected_nation = {
+	diplomatic_reputation = 1
+}
+
+southern_expeanse_colo = {
+	 	colonists = 1
+}	
+
+tricked_market = {
+	global_foreign_trade_power = 0.5
+	merchants = 1
+	 	diplomatic_reputation = -2
+}
+
+ex_tricked_market = {
+	global_foreign_trade_power = 0.20
+	merchants = 1		
+}
+
+troll_civil = {
+	 	global_institution_spread = 0.15
+}
+
+troll_metallurgy = {
+		 	shock_damage_received = -0.10
+}
+
+gospel_of_scales = {
+		 	shock_damage_received = -0.10
+}
+
+all_troll = {
+	 	advisor_cost = -0.1
+		manpower_recovery_speed = 0.10
+		production_efficiency = 0.1
+}
+
+diplomatic_offensive = {
+		 	improve_relation_modifier = 0.33
+}
+
+fertility_love = {
+	trade_goods_size_modifier = 0.5
+}
+
+love_wine = {
+	 	local_unrest = -5
+}
+
+woes_of_war = {
+	 	stability_cost_to_declare_war = 1
+		 	yearly_corruption = -0.1
+}
+
+provincial_admin = {
+		 	governing_cost = -0.1
+}
+
+lichian_nobility = {
+	nobles_privilege_slots = 2
+	nobles_loyalty_modifier = 0.2
+}
+
+victory_south = {
+		 	land_attrition = -0.2
+}
+
+victory_asylor = {
+		land_morale = 0.10
+}
+
+imperal_conest = {
+	 	years_of_nationalism = -5
+}
+
+southern_victory = {
+	 	naval_morale = 0.2
+}
+
+imperial_arno_rule = {
+	 	governing_capacity = 400
+}
+
+never_ending_army = {
+ 	global_manpower_modifier = 0.15
+}
+
+powersurge = {
+	 	land_morale = 0.10
+}
+
+bane_general = {
+		 	leader_land_shock = 1
+			leader_land_manuever = 1
+			max_general_shock = 1
+			max_general_maneuver = 1
+}
+
+the_grand_army = {
+		 	land_forcelimit_modifier = 0.10
+}
+
+death_incarnate = {
+	 	 	years_of_nationalism = -5
+}
+
+land_of_death = {
+	 	local_hostile_attrition = 5
+		 	local_hostile_movement_speed = -0.25
+}
+
+gate_of_unlife = {
+	 	local_manpower_modifier = 5
+}
+
+palace_of_death = {
+		fort_level = 4
+		local_garrison_size = 0.5
+		max_attrition = 5
+}
+
+tower_of_power = {
+		monthly_magic_mil_power = 0.1
+		monthly_magic_adm_power = 0.1
+		monthly_magic_dip_power = 0.1
+}
+
+holy_founder = {
+	 	reduced_liberty_desire = 50
+}
+
+troll_military = {
+		 	shock_damage_received = -0.3
+			land_attrition = -0.2
+			general_cost = 0.5
+}
+
+new_troll_cap = {
+	 	local_development_cost = -0.25
+		 	local_tax_modifier = 0.5
+}
+
+troll_expansion = {
+	 	colonists = 2
+		 	colony_cost_modifier = -1
+}
+
+giant_admin = {
+	 	global_tax_modifier = -0.2
+		num_accepted_cultures = -8
+		monthly_gold_inflation_modifier = 0.33
+		gold_depletion_chance_modifier = -0.25
+}
+
+giant_military = {
+	 	infantry_power = 0.2
+		artillery_power = 0.2
+		land_maintenance_modifier = 0.33
+		artillery_cost = 0.15
+}
+
+
+sacred_harpy_tech_military = {
+	 	movement_speed = 0.25
+		siege_ability = 0.30
+		discipline = 0.10
+}
+
+gloom_army = {
+	 	global_manpower_modifier = 0.5		
+		land_forcelimit_modifier = 0.3
+		discipline = -0.1
+		infantry_cost = -0.25
+		
+}
+
+zombie_army = {
+	 	land_forcelimit = 150
+		infantry_power = -0.5
+		infantry_cost = -0.8			
+}
+
+gathered_idols = {
+	tolerance_own = 3
+	global_missionary_strength = 0.01
+}
+
+grand_central_temple = {
+	 	local_build_cost = -0.25
+		 	tax_income = 12
+}
+
+temple_district = {
+ 	local_development_cost = -0.1
+		 	allowed_num_of_buildings = 2
+	 	allowed_num_of_manufactories = 1
+}
+
+
+mightiest_of_gods  = {
+		tolerance_own = 1
+}
+
+protect_ward_eom = {
+	 	local_hostile_attrition = 2
+		local_defender_dice_roll_bonus = 1
+}
+
+counted_people = {
+	 	expand_administration_cost = -0.25
+}
+
+easy_tax = {
+	global_tax_modifier = 0.1
+}
+
+support_broden_army = {
+	 	land_forcelimit = -24
+		global_tax_income = -48
+		global_manpower = -48
+}
+
+support_broden_army_rev = {
+	 	land_forcelimit = 24
+		global_tax_income = 48
+		global_manpower = 48
+}
+
+reclaim_broden = {
+		 	colonists = 1
+			global_tax_income = 12
+}
+
+raised_dead = {
+	 	land_forcelimit = 30
+		global_manpower = 40
+		infantry_cost = -0.5	
+		global_tax_income = 12
+}
+
+rise_of_seven = {
+	global_tax_income = 36
+	land_forcelimit = 6
+	 	discipline = 0.1
+	}
+
+	the_uplifting_sun = {
+		 	land_morale = 0.10
+			extra_manpower_at_religious_war = yes
+	}
+	
+nothern_capital = {
+	monthly_balance_of_power = -0.4
+}
+
+slaver_lords = {
+	global_trade_goods_size_modifier = 0.1
+}
+
+raiding_lords = {
+	coast_raid_range = 1
+}
+
+protection_money = {
+	 	privateer_efficiency = -0.4
+}
+
+pirate_marines = {
+	 	discipline = 0.1
+ 	is_marine_modifier = yes
+	}
+	
+	smash_and_grab_mod = {
+		 	loot_amount = 1
+			 	available_province_loot = 1
+	}
+	
+	better_privateer = {
+		 	privateer_efficiency = 0.2
+			embargo_efficiency = 0.25
+	}
+
+	sailor_insurance = {
+		 	sailors_recovery_speed = 0.15
+			global_tax_modifier = -0.1
+ }
+ 
+ rum_rations = {
+	 	naval_morale = 0.1
+ }
+ 
+ great_kharin = {
+  	local_sailors_modifier = 0.5
+	 local_ship_repair = 0.33
+		ship_recruit_speed = -0.33
+		blockade_force_required = 1
+		 	hostile_fleet_attrition = 2
+ }
+
+ coastal_fortress = {
+	 	fort_level = 1
+		local_garrison_size = 0.3
+ }
+ 
+ honest_trading = {
+	 	global_foreign_trade_power = 0.1
+ }
+ 
+ merc_for_hire = {
+	 	possible_condottieri = 1
+ }
+ 
+ colonization_pirates = {
+	 	colonists = 1
+ }
+ 
+ southern_capital = {
+	monthly_balance_of_power = 0.4
+}
+
+lady_sassa = {
+	monthly_balance_of_power = 0.3
+	legitimacy = -0.25
+	 	advisor_cost = -0.1
+}
+
+lady_yuper = {
+	monthly_balance_of_power = -0.5
+	legitimacy = -0.25
+}
+
+lax_laws = {
+	 	global_autonomy = 0.05
+		 	global_unrest = -2
+}
+
+strict_laws = {
+  	global_autonomy = -0.05
+	legitimacy = 1
+	 	global_unrest = 4
+}
+
+southern_advisors = {
+	 	diplomatic_reputation = 1
+}
+
+northern_advisors = {
+		 	discipline = 0.025
+}
+
+szegeni_connection = {
+ 	global_foreign_trade_power = 0.2
+	burghers_influence_modifier = 0.1
+}
+
+blessed_telcors_earth = {
+		local_production_efficiency = -0.5
+	 	trade_goods_size_modifier = 1
+}
+
+soul_trap = {
+ 	all_power_cost = -0.05
+}
+
+haunt_for = {
+	local_hostile_attrition = 3
+	max_attrition = 3
+}
+
+dead_for = {
+	local_manpower_modifier = 1
+}
+
+expand_wood = {
+	local_hostile_attrition = 2
+	max_attrition = 2
+}
+
+horror_beyond = {
+	 morale_damage = 0.2
+}
+
+animal_car = {
+	 	global_manpower_modifier = 0.25
+		 	global_regiment_cost = -0.15
+}
+
+plant_zomb = {
+	 	discipline = 0.05
+}
+
+unstopp = {
+		core_creation = -0.33
+}
+
+gloom_home = {
+		local_defensiveness = 0.5
+		local_tax_modifier = 1
+		local_production_efficiency = 1
+		local_manpower_modifier = 1
+}
+
+magic_economy = {
+		 	global_tax_modifier = 0.2
+			production_efficiency = 0.2
+}
+
+dead_wisdom = {
+ 	all_power_cost = -0.05
+}
+
+the_huge_power = {
+	 	country_admin_power = 2
+		country_diplomatic_power = 2
+		country_military_power = 2
+}
+
+lords_of_hell = {
+ 	stability_cost_modifier = 1
+ 	devotion = -0.5
+		discipline = 0.10
+	 	is_cossack_modifier = yes
+}
+
+imp_lords_of_hell = {
+		discipline = 0.05
+	 	is_cossack_modifier = yes
+}
+
+demon_days = {
+	yearly_government_power = 2
+}
+
+advance_demonds = {
+		shock_damage = 0.33
+	 	is_cossack_modifier = yes
+}
+
+working_demons = {
+	 	production_efficiency = 0.2
+}
+
+pullanian_heavy = {
+	heavy_ship_power = 0.05
+}
+
+inc_fort = {
+	 	local_garrison_size = 0.3
+		 local_defensiveness = 0.2
+}
+
+highway_dyke = {
+	local_friendly_movement_speed = 0.25
+		trade_goods_size_modifier = 0.25
+		 	local_development_cost_modifier = -0.1
+}
+
+marines_puallan = {
+	 	allowed_marine_fraction = 0.15
+}
+
+great_ship_pul = {
+		heavy_ship_power = 0.1
+		naval_morale = 0.1
+}
+
+pulana_acadermy = {
+	max_admiral_maneuver = 1
+	max_admiral_fire = 1
+	max_admiral_shock = 1
+	max_admiral_siege = 1
+}
+
+dams = {
+	local_development_cost = -0.05
+	 	local_prosperity_growth = 0.25
+}
+
+szegeni_major_port = {
+	 local_autonomy = 0.05
+	 province_trade_power_value = 20
+}
+
+szegeni_trading_port = {
+	 local_autonomy = 0.02
+	 province_trade_power_value = 10	 
+}
+
+ruined_castle_city = {
+	
+}
+
+elementar_buff_prov = {
+	trade_goods_size_modifier = 0.33	
+}
+
+elemental_fort = {
+	 	local_defensiveness = 0.5
+		 local_hostile_attrition = 2
+		local_fort_maintenance_modifier = -0.5
+}
+
+power_up_banes = {
+	is_rajput_modifier = yes
+	discipline = 0.2		
+}
+
+power_up_cossacks = {
+	is_cossack_modifier = yes
+	discipline = 0.2		
+}
+
+a_cmyrian_future = {
+	local_culture_conversion_cost = -0.5
+	local_culture_conversion_time = -0.5
+	 	local_missionary_strength = 0.03
+}
+
+diverse = {
+	 	num_accepted_cultures = 1
+		manpower_in_accepted_culture_provinces = 0.10
+}
+
+united_cymrian_army = {
+	 	land_morale = 0.10
+}
+
+god_wse = {
+	max_absolutism = 15
+}
+
+centralisation = {
+	 	global_autonomy = -0.05
+}
+
+tax_seasion = {
+global_tax_modifier = 0.1
+}
+
+a_census = {
+	 	development_cost = -0.1
+}
+
+astrologer = {
+	 	advisor_cost = -0.05
+}
+
+nefaras_wisdom = {
+	 	technology_cost = -0.1
+}
+
+guardian = {
+	 	diplomatic_reputation = 1
+		monthly_favor_modifier = 0.33
+}
+
+heralds_of_victor = {
+		land_morale = 0.10
+}
+
+land_of_the_dead_second = {
+		province_trade_power_modifier = 0.5
+	 	local_development_cost = -0.5
+		trade_goods_size_modifier = 0.75
+}
+
+new_fleet_ud = {
+	naval_attrition = 1
+	naval_forcelimit_modifier = -0.25
+	global_ship_cost = 0.5	
+		
+}
+
+ghost_ship = {
+	naval_morale_damage_received = -0.25
+	naval_morale_damage = 0.1
+}
+
+
+restored_glory = {
+		local_build_cost = -0.5
+	 	local_manpower_modifier = 1
+		allowed_num_of_buildings = 3
+		allowed_num_of_manufactories = 3
+		local_tax_modifier = 2
+		local_production_efficiency = 2
+}
+
+eternal_nefara = {
+	global_institution_spread = 0.2
+	embracement_cost = -0.15
+}
+
+grand_journey = {
+	 	global_unrest = -5
+}
+
+loyal_servant = {
+	 	liberty_desire = -40
+}
+
+loyal_servant_guided = {
+	 	liberty_desire = -100
+		global_unrest = -2
+}
+
+the_palatina = {
+	army_tradition = 1
+	 	cavalry_power = 0.10
+}
+
+varjoren_age = {
+	land_forcelimit = 40
+	land_maintenance_modifier = -0.5
+	global_manpower = 150
+	global_tax_income = 60
+	all_power_cost = -0.3
+	mil_tech_cost_modifier = -0.7
+}
+
+imperial_capital = {
+ 	fort_level = 6
+}
+
+place_of_power = {
+ 	fort_level = 2
+}
+
+rising_dragon = {
+	global_tax_income = 20
+	land_forcelimit = 6
+		 	global_manpower = 5
+			 	leader_land_shock = 1
+}
+
+rising_dragon_2 = {
+	global_tax_income = 10
+	land_forcelimit = 4
+	 	global_manpower = 5
+		 	amount_of_samurai = 5
+			 	leader_land_shock = 1
+}
+
+rising_dragon_3 = {
+	global_tax_income = 18
+	land_forcelimit = 10
+	global_manpower = 15
+	amount_of_samurai = 5
+	 	leader_land_shock = 1
+}
+
+
+ghost_soldiers = {
+	siege_ability = 0.15
+}
+
+master_necromancer = {
+	land_forcelimit = 50
+}
+
+never_ending_tide = {
+	global_manpower = 200
+}
+
+march_of_undeath = {
+	 	land_maintenance_modifier = -0.25
+}
+
+hordes_of_banes = {
+	is_rajput_modifier = yes
+	reinforce_speed = 0.5
+	discipline = -0.05	
+}
+
+undead_navy = {
+	naval_morale_damage_received = -1
+	 	sunk_ship_morale_hit_recieved = -1
+}
+
+unlimited_knowledge_id = {
+	 	idea_cost = -0.33
+}
+
+use_riches = {
+ 	development_cost_modifier = -0.1
+}
+
+scele_work = {
+	 	production_efficiency = 0.25
+		global_tax_modifier = 0.25
+}
+
+
+demon_bride = {
+		global_monthly_devastation = 0.1
+	 	global_unrest = 5
+		discipline = 0.1	
+}
+
+melancholy = {
+		 	is_rajput_modifier = yes
+		discipline = -0.2
+}
+
+low_morale = {
+	land_morale = -0.10
+}
+
+no_favors = {
+		 	is_cossack_modifier = yes
+		discipline = -0.2
+		 	reinforce_speed = -0.90
+}
+
+harpy_tech_military = {
+	 	movement_speed = 0.25
+		cav_to_inf_ratio = 0.5
+		siege_ability = 0.2
+		 discipline = -0.05
+}
+
+
+mad_mage = {
+ 	monarch_lifespan = -0.5
+	global_autonomy = 0.05
+	global_unrest = 2
+}
+
+mighty_magician = {
+	 	all_power_cost = -0.05
+}
+
+grand_plague = {
+ 	local_monthly_devastation = 0.4
+}
+
+aftermatch_of_plague = {
+	 	local_tax_modifier = -0.33
+		local_production_efficiency =-0.33
+		local_manpower_modifier = -0.33
+		local_core_creation = -0.25
+}
+
+
+destroyed_villages = {
+	local_development_cost = 0.1
+	local_tax_modifier = -0.1
+	local_production_efficiency = -0.1
+}
+
+100_years = {
+	legitimacy = 0.5
+	 global_unrest = -2
+	 technology_cost = 0.05
+	 
+}
+
+200_years = {
+	legitimacy = 0.5
+	global_unrest = -2
+	technology_cost = 0.1
+	 	embracement_cost = 0.5
+}
+
+praise_moon = {
+	movement_speed = 0.10
+	 	spy_offence = 0.1
+		global_spy_defence = 0.1
+}
+
+praise_sun = {
+	manpower_in_own_culture_provinces = 0.15
+	development_cost_in_primary_culture = -0.15
+	 	same_culture_advisor_cost = -0.1
+}
+
+stand_by_our_father = {
+	global_missionary_strength = 0.01
+	missionaries = 1
+}
+
+elven_made_god = {
+	 	tolerance_own = 1
+		land_morale = 0.05
+}
+
+
+grand_desert_traders = {
+	 	trade_range_modifier = 1
+		caravan_power = 0.3
+		trade_steering = 0.2
+}
+
+holy_stones = {
+ 	tolerance_own = 0.33
+	local_unrest = -2
+	local_governing_cost_increase = 5
+}
+
+advanced_holy_stones  = {
+ 	tolerance_own = 0.5
+	local_unrest = -10
+	local_governing_cost_increase = 15
+}
+
+
+guardian_of_the_holy_places = {
+	legitimacy = 0.5
+ 	tolerance_own = 0.5
+	 	monthly_splendor = 1
+		
+}
+
+desert_way = {
+	land_attrition = -0.2
+}
+
+desert_power = {
+	 	own_territory_dice_roll_bonus = 1
+}
+
+the_sand_striders = {
+		 	movement_speed = 0.15
+}
+
+enchanted_mine = {
+ 	trade_goods_size_modifier = 0.25
+}
+
+entchaned_plants = {
+ 	trade_goods_size_modifier = 0.25
+}
+
+land_of_riches = {
+ 	inflation_reduction = 0.1
+	 	yearly_corruption = -0.1
+}
+
+raised_taxes_vassal = {
+	 	vassal_income = 0.2
+}
+
+axuillary_troops = {
+	vassal_manpower_bonus = 0.25
+}
+
+the_hidden_kingdom = {
+		local_hostile_movement_speed = -0.33
+	 	local_defensiveness = 0.25
+		local_fort_maintenance_modifier = -0.75
+		local_development_cost = -0.3
+}
+
+the_mirrage_lands = {
+		local_hostile_movement_speed = -0.2
+	 	local_defensiveness = 0.33
+		local_hostile_attrition = 1
+
+}
+
+legend_kingdom = {
+	prestige = 1
+	legitimacy = 1
+	 	monthly_splendor = 2	
+}
+
+elfen_empire = {
+	war_exhaustion = -0.1
+ 	stability_cost_modifier = -0.2
+}
+
+the_corpse_empress = {
+	global_unrest = 5
+	diplomatic_reputation = -3
+	all_power_cost = -0.05
+}
+
+harmonized_dark = {
+		 	land_morale = 0.10
+}
+
+scoprion_man_climate = {
+	local_development_cost = -0.25
+	local_manpower_modifier = 0.25
+	local_tax_modifier = 0.2
+	local_production_efficiency = 0.2
+}
+
+harmonized_heaven = {
+	 	legitimacy = 1
+}
+
+harmonized_earth = {
+	production_efficiency = 0.1
+}
+
+harmonized_death = {
+	stability_cost_modifier = -0.2
+}
+
+harmonized_moon = {
+	 	global_trade_goods_size_modifier = 0.1
+}
+
+harmonized_sun = {
+ 	development_cost = -0.1
+}
+
+harmonized_blood = {
+	global_unrest = -1
+}
+
+military_focus = {
+	army_tradition_decay = -0.01
+	 global_regiment_cost = -0.10
+	 cavalry_power = 0.25
+	global_tax_modifier = -0.10
+}
+
+civilian_focus = {
+	 	global_missionary_strength = 0.02
+		missionaries = 1
+		global_colonial_growth = 25
+		global_manpower_modifier = -0.25
+}
+
+vision_of_gods = {
+	local_unrest = 5
+ 	local_autonomy = 0.05
+	max_attrition = 5
+	attrition = 5
+}
+
+salt_flats = {
+	 	local_development_cost = 0.5
+	trade_goods_size = 1
+	trade_goods_size_modifier = 0.5
+}
+
+holy_m = {
+ local_unrest = -2
+ local_missionary_strength = 0.02
+}
+
+gem_mines = {
+ 	trade_goods_size = 1
+}
+
+
+the_blood_drinker = {
+	 	global_unrest = 2
+		diplomatic_reputation = -2
+}
+
+the_lich_queen = {
+	 global_institution_spread = -0.5
+	 stability_cost_modifier = 0.25
+}
+
+god_among_man = {
+	 	monthly_splendor = 1
+		 	max_absolutism = 30
+}
+
+azar_route = {
+	trade_steering = 0.5
+}
+
+wisdom_of_long_time = {
+		monthly_magic_mil_power = 0.15
+		monthly_magic_adm_power = 0.15
+		monthly_magic_dip_power = 0.15
+}
+
+
+exploited_south = {
+trade_goods_size_modifier = 0.25
+}
+
+spider_knights = {
+	cavalry_shock = 1
+	cavalry_cost = 0.15
+}
+
+sacred_web = {
+	 spy_offence = 0.2
+	 global_spy_defence = 0.2
+}
+
+spider_queen = {
+	cavalry_cost = -0.15
+	cav_to_inf_ratio = 0.10
+}
+
+soulless_worker = {
+	production_efficiency = 0.05
+}
+
+death_advisors = {
+	 	country_admin_power = 1
+		 	free_adm_policy = 1
+}
+
+khossorian_tax_system = {
+global_tax_modifier = 0.2
+}
+
+money_or_serve = {
+global_manpower_modifier = 0.15
+ 	development_cost = -0.1
+}
+
+khossor_service = {
+global_manpower_modifier = 0.1
+global_tax_modifier = 0.1
+}
+
+great_blood_hunts = {
+	local_unrest = 8
+	local_monthly_devastation = 0.15
+}
+
+the_great_archives = {
+	 	idea_cost = -0.1
+}
+
+preperations = {
+	stability_cost_modifier = 0.5
+	 	global_autonomy = 0.1
+}
+
+hill_forto = {
+	local_fort_maintenance_modifier = -0.25
+ 	local_garrison_size = 0.25
+	local_defensiveness = 0.1
+}
+
+the_end_times = {
+	 	may_establish_frontier = yes
+		global_tax_income = 24
+		manpower_recovery_speed = 0.4
+		land_forcelimit = 36
+		 	land_maintenance_modifier = -0.5
+}
+
+new_spiders = {
+	cavalry_power = 0.15
+}
+
+spider_mother = {
+	global_unrest = -5
+}
+
+spcie_of_qarumhala = {
+	trade_goods_size_modifier = 2
+}
+
+blessed_earth_of_robin = {
+	trade_goods_size_modifier = 0.75
+}
+
+lowered_slavery = {
+ 	 	trade_goods_size_modifier = -0.25
+		local_monthly_devastation = -0.1
+}
+
+
+tolerated_cults = {
+ 	local_tolerance_of_heathens = 3
+	local_religious_unity_contribution = -0.5
+	 	local_missionary_strength = -0.02
+}
+
+harsh_desert = {
+	local_hostile_attrition = 2
+	max_attrition = 1
+	local_development_cost = 0.25
+}
+
+new_city = {
+	global_tax_modifier = 0.15
+}
+
+grey_advice = {
+	all_power_cost = -0.1
+}
+
+the_cyclops = {
+ 	local_unrest = 10
+	land_morale = -0.05
+}
+
+cyclo_power = {
+siege_ability = 0.2
+}
+
+satyr_chaos = {
+ 	global_unrest = 2
+	stability_cost_modifier = 0.5
+}
+
+the_tauros = {
+	local_unrest = 5
+	 	local_autonomy = 0.1
+		legitimacy = -1
+}
+
+tauro_power = {
+ 	infantry_power = 0.2
+}
+
+
+the_hydra = {
+	local_unrest = 3
+	local_autonomy = 0.05
+	 	tolerance_own = -1
+}
+
+hydra_power = {
+ 	regiment_manpower_usage = -0.2
+}
+
+
+the_knowing_of_tidings = {
+ 	local_production_efficiency = 0.25
+	local_tax_modifier = 0.25
+	local_development_cost_modifier = -0.05
+}
+
+heralds_of_sun = {
+	missionaries = 4
+}
+
+shadow_castle = {
+ 	local_defensiveness = 0.25
+}
+
+cursed_prince = {
+ 	reasons_to_elect = -75
+}
+
+vampire_defeat = {
+	 	global_unrest = 5
+		land_morale = -0.20
+}
+
+mantle_of_darkness = {
+ 	 	fire_damage_received = -0.10
+}
+
+burner_of_civ = {
+	 	raze_power_gain = 0.5
+}
+
+ring_wielder = {
+	  	reform_progress_growth = 0.33
+		global_prosperity_growth = 0.5
+		all_power_cost = -0.1
+}
+
+mad_king =  {
+	  	legitimacy = -4
+		diplomatic_reputation = -2
+		 global_unrest = 4
+}
+
+demonology_mod = {
+	 	is_cossack_modifier = yes
+		discipline = 0.05	
+}
+
+heralds_of_faith = {
+ 	tolerance_own = 2
+}
+
+law_and_order = {
+ 	global_unrest = -1
+}
+
+demon_armor_mod = {
+	 	 	is_cossack_modifier = yes
+		fire_damage_received = -0.10
+		shock_damage_received = -0.10
+}
+
+the_prophet = {
+	 	 	is_cossack_modifier = yes
+		discipline = 0.05	
+}
+
+religious_fever = {
+global_missionary_strength = 0.03
+
+}
+
+second_capital = {
+	local_development_cost_modifier = -0.1
+	local_tax_modifier = 0.25
+	local_manpower_modifier = 0.25
+}
+
+obsidian = {
+	province_trade_power_value = 40
+	tax_income = 24
+}
+
+blood_quotas = {
+ 	yearly_government_power = 1
+}
+
+black_steel = {
+	shock_damage = 0.2
+}
+
+dragon_in_the_army = {
+	shock_damage = 0.2
+}
+
+fur_trade = {
+	local_production_efficiency = 0.25
+	province_trade_power_modifier = 0.5
+	local_development_cost = -0.1
+}
+
+ogebin_empire = {
+ 	state_maintenance_modifier = -0.25	
+	land_morale = 0.1
+}
+
+
+akna_advisors = {
+	country_admin_power  = 1
+	country_military_power  = 1
+}
+
+dream_chaser = {
+	monthly_varjorjen_hunger = 0.1
+}
+
+blood_of_kings = {
+	diplomatic_reputation = 2
+}
+
+my_daughter_in_law = {
+	country_admin_power  = 1
+	country_military_power  = 1
+}
+
+my_daughter_in_law_blood = {
+	country_admin_power  = 1
+	country_military_power  = 1
+	monthly_varjorjen_hunger = -0.15
+}
+
+ankas_soul = {
+	 	horde_unity = 2
+		legitimacy = 2
+}
+
+blood_tribute = {
+monthly_varjorjen_hunger = 0.15
+}
+
+marriage_market = {
+	diplomatic_upkeep = 1
+ 	vassal_income = 0.2
+}
+
+guided_by_prophecy = {
+	 	stability_cost_modifier = -0.2
+		horde_unity = 0.2
+}
+
+the_seer_council = {
+	local_unrest = -5
+ 	tax_income = 12
+	 local_defender_dice_roll_bonus = 1
+}
+
+servants_of_fate = {
+ 	spy_offence = 0.2
+	global_spy_defence = 0.2
+}
+
+dwarfen_smiths = {
+	 shock_damage_received = -0.10
+	fire_damage_received = -0.10
+}
+
+the_hot_forge = {
+	 	shock_damage = 0.25
+}
+
+awakaned_thorren = {
+	land_forcelimit_modifier = 0.25
+	land_maintenance_modifier = -0.2
+	global_manpower_modifier = 0.25
+}
+
+winter_production = {
+	production_efficiency = 0.2
+	global_trade_goods_size_modifier = 0.1
+}
+
+winter_devates = {
+	 	local_production_efficiency = 0.3
+		local_tax_modifier = 0.2
+		local_development_cost = -0.25
+}
+
+thorren = {
+	horde_unity = 1
+	local_hostile_attrition = 5
+}
+
+daoine_go = {
+	global_tax_income = 24
+	 	land_forcelimit = 8
+}
+
+dragon_gods = {
+		tolerance_own = 1
+}
+
+the_new_sun = {
+	local_development_cost_modifier = -0.25
+ 	allowed_num_of_buildings = 2
+}
+
+dragon_glory = {
+		global_missionary_strength = 0.03
+}
+dragon_call =  {
+	 	morale_damage = 0.2
+		morale_damage_received = -0.2
+}
+
+
+dragon_hunting =  {
+	local_autonomy = 0.05
+	local_monthly_devastation = 0.1
+}
+
+promoted_dragon_born = {
+	 	discipline = 0.1
+	is_samurai_modifier = yes 
+}
+
+ebony_bow = {
+	shock_damage = 0.1
+	 	morale_damage = 0.25
+	is_samurai_modifier = yes 
+}
+
+harshest_winter = {
+	 	trade_goods_size_modifier = -0.5
+		max_attrition = 2
+		local_development_cost = 0.3
+}
+
+
+harsher_winter = {
+	 	trade_goods_size_modifier = -0.25
+		max_attrition = 1
+		local_development_cost = 0.15
+}
+
+harsh_winter = {
+	 	trade_goods_size_modifier = -0.15
+		local_development_cost = 0.05
+}
+
+blessed_artic = {
+	local_development_cost = -0.4
+	local_manpower_modifier = 0.5
+	local_tax_modifier = 0.25
+}
+
+naga_military = {
+			may_recruit_female_generals = yes
+	 	 	land_attrition = -0.25
+			shock_damage = 0.10
+			fire_damage_received = -0.10
+			attack_bonus_in_capital_terrain = 1
+}
+
+dragon_military = {
+ 	may_recruit_female_generals = yes
+	 	loot_amount = 1
+		available_province_loot = 1
+		max_general_siege = 3
+		max_general_shock = 3
+}
+
+varjorjen_military = {
+ 	may_recruit_female_generals = yes
+	land_attrition = -0.4
+	shock_damage_received = -0.33
+}
+
+vampire_rulers = {
+	local_manpower_modifier = -0.75
+	local_monthly_devastation = 0.08
+	local_culture_conversion_cost = -0.25
+	local_culture_conversion_time = -0.25
+}
+
+very_arctic = {
+ 	local_hostile_attrition = 1
+	max_attrition = 2
+	trade_goods_size_modifier = -0.5
+	 	local_development_cost = 0.5
+}
+
+treacherous_swamp = {
+	max_attrition = 2
+	attrition = 3
+	local_hostile_movement_speed = -0.75
+	local_friendly_movement_speed = -0.75
+}
+
+telconars_blessing = {
+	max_attrition = 2
+	attrition = 1
+}
+
+blessed_swamps = {
+	local_monthly_devastation = -0.25
+	 local_production_efficiency = 0.25
+	 local_tax_modifier = 0.1
+	
+}
+
+the_poison_river = {
+	local_colonial_growth = -50
+	local_development_cost = 1
+	allowed_num_of_buildings = -1
+	max_attrition = 5
+	attrition = 5
+}
+
+great_mother_yanga = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.3
+	local_tax_modifier = 0.2
+}
+
+incooperate_nomads = {
+	may_establish_frontier = yes
+}
+
+sundering_sea = {
+	 	attrition = 2
+}
+
+invasion = {
+	land_forcelimit = 35
+	land_maintenance_modifier = -0.9
+	global_tax_income = 10
+}
+
+seven_cities_of_the_east = {
+	trade_goods_size_modifier = 0.25
+}
+
+passes_to_the_valley = {
+	 	local_defensiveness = 0.25
+		 	local_garrison_size = 0.2
+}
+
+highland_charge = {
+	 	shock_damage = 0.2
+}
+
+army_drill = {
+ 	drill_decay_modifier = -0.25
+	drill_gain_modifier = 0.25
+	yearly_army_professionalism = 0.01
+}
+
+valley_iron = {
+	trade_goods_size_modifier = 0.5
+}
+
+valley_of_colone = {
+		local_tax_modifier = 0.1
+		local_production_efficiency = 0.1
+		 	local_development_cost = -0.1
+}
+
+great_colone = {
+		local_tax_modifier = 0.3
+		local_production_efficiency = 0.3
+		 	local_development_cost = -0.15
+}
+
+clans_of_the_highlands = {
+ 	 	land_forcelimit = 3
+		stability_cost_modifier = 0.5
+		global_autonomy = 0.05
+		land_maintenance_modifier = -0.2
+}
+
+
+stolen_children = {
+ 	global_unrest = 2
+	governing_capacity = 200
+}
+
+my_little_human = {
+ 	global_unrest = -2
+	governing_capacity = 200
+}
+
+acceptance_of_humans = {
+num_accepted_cultures = 3
+}
+
+halfelfs = {
+ 	advisor_cost = -0.1
+	advisor_pool = 1
+ 	diplomatic_reputation = 2
+	
+}
+
+the_sword_host = {
+	shock_damage_received = -0.2
+	shock_damage = 0.2
+}
+
+fey_childrends = {
+	global_manpower_modifier = 0.2
+}
+
+waining_faith = {
+	tolerance_own = -2
+	production_efficiency = 0.1
+	global_tax_modifier = 0.1
+}
+
+elfen_ships = {
+ 	naval_attrition = -0.5
+}
+
+elfe_fleet = {
+ 	max_flagships = 2
+	 disengagement_chance = 0.2
+}
+
+elfen_harbor = {
+	 	local_sailors_modifier = 0.5
+		local_development_cost_modifier = -0.25
+		 local_unrest = -2
+}
+
+the_mountain_kingdom = {
+		local_development_cost_modifier = -0.5
+}
+
+hall_of_jewels = {
+	 	trade_goods_size_modifier  = 0.5
+}
+
+the_fortified_kingdom = {
+	local_hostile_attrition = 3
+	local_garrison_size = 0.5
+	local_garrison_damage = 2
+}
+
+necormancer = {
+		manpower_recovery_speed = 0.10
+		spy_offence = 0.25
+}
+
+elemencer = {
+	 	production_efficiency = 0.1
+		global_tax_modifier = 0.1
+}
+
+blood_mage = {
+	monarch_lifespan = 0.5
+	global_unrest = 2
+}
+
+astralogist = {
+	stability_cost_modifier = -0.25
+	global_spy_defence = 0.5
+}
+
+master_of_nature = {
+	 	development_cost_modifier = -0.05
+		global_prosperity_growth = 0.1
+}
+
+little_ghost_gras = {
+	local_monthly_devastation = 0.05
+	local_production_efficiency = 0.3
+}
+
+medium_ghost_gras = {
+	local_monthly_devastation = 0.2
+	 	local_tax_modifier = -0.25	
+		
+		 	local_friendly_movement_speed = -0.25
+			local_hostile_movement_speed = -0.25
+}
+
+heavy_ghost_gras = {
+	local_monthly_devastation = 0.6
+	 	local_tax_modifier = -0.75
+		
+		 	local_friendly_movement_speed = -0.5
+			local_hostile_movement_speed = -0.5
+}
+
+reclaiming_the_wastes = {
+ 	may_establish_frontier = yes
+}
+
+undead_military = {
+		movement_speed = 0.1
+		fire_damage_received = -0.2
+		morale_damage_received = -0.3
+		assault_fort_ability = 0.5		
+}
+
+scorpion_military = {
+			discipline = 0.1
+			infantry_power = 0.2
+			land_attrition = -0.33
+			global_regiment_cost = 0.25
+			reinforce_cost_modifier = 0.5
+}
+
+setup_evil_nation = {
+	
+}
+
+elven_military = {
+		discipline = 0.15
+		own_territory_dice_roll_bonus = 2
+		movement_speed = 0.1			
+}
+
+
+elven_admnin = {
+	 	local_manpower_modifier = -10
+		local_unrest = -1
+}
+
+no_navy = {
+ 	naval_forcelimit = -10
+	naval_forcelimit_modifier = -10
+	global_sailors = -10000
+	global_sailors_modifier = -10
+}
+
+promote_growth = {
+	 	local_production_efficiency = 0.1
+		trade_goods_size_modifier = 0.1
+		local_development_cost = -0.05
+}
+
+relief = {
+	 	movement_speed = 0.2
+		land_attrition = -0.5
+}
+
+enslaved_people = {
+		 	local_development_cost = 0.5
+			local_unrest = 2
+			local_manpower_modifier = -10
+			local_sailors_modifier = -10
+			local_production_efficiency = 0.25
+}
+
+elementals_in_battle = {
+		fire_damage = 0.10
+		shock_damage = 0.10
+		siege_ability = 0.25
+}
+
+
+star_guidance = {
+	movement_speed = 0.2	
+	 war_exhaustion = -0.10
+	global_naval_engagement_modifier = 0.15
+}
+
+gift_of_natures_bounty = {
+		local_development_cost = -0.2
+		local_unrest = -2		
+}
+
+succubus = {
+		diplomatic_reputation = 1
+		all_estate_loyalty_equilibrium = 0.1
+}
+
+secret_of_the_ancestors = {
+		all_power_cost = -0.05
+}
+
+trade_winds_elementals = {
+	global_trade_power = 0.1
+}
+
+blood_song = {
+	 	local_unrest = 2
+}
+
+mastery_of_elements = {
+		build_cost = -0.1 ##Earth
+	 	development_cost = -0.05 ##Fire
+		envoy_travel_time = -0.2 ##Water
+		movement_speed = 0.10	##Air
+}
+
+forsight_of_future = {
+		 	stability_cost_modifier = -0.1
+			global_unrest = -1
+			global_autonomy = -0.02
+			no_stability_loss_on_monarch_death = yes
+}
+
+unruly_imp_prince = {
+	 	liberty_desire = 25
+}
+
+land_of_the_dead = {
+		province_trade_power_modifier = -0.75
+	 	local_development_cost = 1
+		local_colonial_growth = -20
+		trade_goods_size_modifier = -1
+}
+
+extended_wood = {
+		local_production_efficiency = 0.2
+		 	trade_goods_size = 0.5
+}
+
+nordland_ships = {
+		ship_durability = 0.1
+}
+
+cold_steel_nord = {
+	 	shock_damage = 0.20
+}
+
+unified_nobility = {
+	 	nobles_loyalty_modifier = 0.1
+		nobles_privilege_slots = 1
+}
+
+a_new_home = {
+	local_development_cost = -0.25
+	local_production_efficiency = 0.2
+	local_tax_modifier = 0.25
+}
+
+fortuna_glass = {
+	trade_goods_size = 3
+}
+
+loyalty_to_nord = {
+	 	all_estate_loyalty_equilibrium = 0.05
+		all_estate_possible_privileges = 1
+}
+
+great_temple_of_west = {
+ 	all_estate_loyalty_equilibrium = 0.05
+	 	tolerance_own = 2
+}
+
+fleet_tax = {
+	naval_maintenance_modifier = -0.25
+}
+
+code_of_honor_mod = {
+ 	diplomatic_reputation = 1
+	nobles_loyalty_modifier = 0.05
+}
+
+colden_country = {
+ 	global_tax_modifier = 0.2
+}
+
+the_fair_lords = {
+	prestige_decay = -0.01
+}
+
+cake = {
+	global_unrest = -2
+}
+
+the_crown_bakava = {
+ 	legitimacy = 1
+	 	max_absolutism = 10
+}
+
+new_house_wisdom = {
+	 	all_power_cost = -0.05
+}
+
+a_dragons_hunger = {
+	 	 	diplomatic_reputation = -4
+			 	stability_cost_modifier = 0.5
+}
+
+unruly_duke = {
+	 	liberty_desire = 25
+		ae_impact = -0.2
+		global_manpower = 20
+		land_forcelimit = 5
+		global_tax_income = 6
+}
+
+
+a_dragons_rage = {
+		local_unrest = 5
+	 	local_monthly_devastation = 0.2
+		local_tax_modifier = -0.25
+		local_production_efficiency = -0.25
+}
+
+no_autority = {
+	diplomatic_reputation = -10
+}
+
+dragon_wisdom = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+
+sublime_buero = {
+	global_prosperity_growth = 0.1
+}
+
+landsregimenter = {
+		global_manpower_modifier = 0.10
+		global_regiment_recruit_speed = -0.25
+}
+
+
+dragon_emperor = {
+		republican_tradition = 1
+}
+
+the_greatest_treasure = {
+		 	local_prosperity_growth = 1
+			local_development_cost = -0.5
+			local_unrest = -10
+			
+}
+
+fire_and_smoke = {
+	stability_cost_modifier = 1
+	global_unrest = 5
+	 	legitimacy = -2
+}
+
+fire_and_smoke2 = {
+	stability_cost_modifier = 0.4
+	global_unrest = 1
+	 	legitimacy = -1
+}
+
+
+
+
+major_estuary_modifier = {
+	province_trade_power_value = 15
+	picture = "estuary_icon"
+}
+
+minor_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+mountain_pass_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+
+strait_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+pearl_of_the_eat_mod = {
+	local_development_cost = -0.1
+	local_prosperity_growth = 0.2
+}
+
+
+schworingen_entlistment = {
+	 	manpower_recovery_speed = 0.1
+}
+
+
+empress_of_schworingan = {
+	 monthly_splendor = 0.5
+	 prestige_decay = -0.01
+}
+
+the_blood_sword = {
+	 	shock_damage = 0.10
+}
+
+a_well_traveled_daughter = {
+spy_offence = 0.2
+}
+
+smoke_and_pros = {
+ 	global_prosperity_growth = 0.2
+	 	build_cost = -0.2
+}
+
+nitroglyzerin_mod = {
+ 	siege_ability = 0.05
+	production_efficiency = 0.05
+
+}	
+	prepared_defense_imp = {
+	local_defender_dice_roll_bonus = 1
+	 	local_defensiveness = 0.3
+	}
+	
+	hydro_power = {
+	trade_goods_size_modifier = 0.15
+	}

@@ -1,0 +1,12 @@
+add_core = MO9
+owner = MO9
+controller = MO9
+culture = gemarian
+religion = tilidian_little_gods
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Vrindal"
+is_city = yes

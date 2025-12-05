@@ -1,0 +1,12 @@
+add_core = GE3
+owner = GE3
+controller = GE3
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Blackrock"
+is_city = yes
+culture = myuiran
+religion = velora

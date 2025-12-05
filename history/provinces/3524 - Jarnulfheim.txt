@@ -1,0 +1,12 @@
+add_core = GI3
+owner = GI3
+controller = GI3
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 2
+capital = "Jarnulfheim"
+is_city = yes
+culture = niefel
+religion = fore_bearers

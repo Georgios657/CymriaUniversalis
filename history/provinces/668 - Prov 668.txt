@@ -1,0 +1,14 @@
+add_core = LC9
+owner = LC9
+controller = LC9
+culture = zannian
+religion = amatism_faith
+hre = yes
+base_tax = 4
+base_production = 4
+trade_goods = wool
+base_manpower = 3
+capital = "Merino"
+is_city = yes
+discovered_by = ottoman
+fort_15th = yes

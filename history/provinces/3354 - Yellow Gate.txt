@@ -1,0 +1,13 @@
+add_core = AS3
+owner = AS3
+controller = AS3
+culture = yellow_harpia
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = salt
+base_manpower = 3
+capital = "Yellow Gate"
+is_city = yes
+add_permanent_province_modifier = { name = mountain_pass_modifier duration = -1 } 

@@ -1,0 +1,15 @@
+add_core = ZA9
+add_core = ZB2
+owner = ZB2
+controller = ZB2
+culture = vephyrian
+religion = phoenix_faith
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = chinaware
+base_manpower = 3
+capital = "Pantalonia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

@@ -1,0 +1,46 @@
+
+vassal = {
+    first = GI1
+    second = TO4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = GI1
+    second = TO1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = GI3
+    second = TO3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = GI3
+    second = TO2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+
+vassal = {
+    first = GI2
+    second = TN3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = GI2
+    second = TO5
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}

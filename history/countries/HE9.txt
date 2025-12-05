@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = zephrian
+religion = phoenix_faith
+capital = 1230	# Bayreuth
+
+
+1420.1.1 = {
+	monarch = {
+		dynasty = "Terephor"
+		name = "Saul"
+		birth_date = 1380.9.21
+		dip = 3
+		adm = 2
+		mil = 2
+
+	}
+
+}

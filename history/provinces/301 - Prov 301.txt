@@ -1,0 +1,13 @@
+add_core = CY9
+owner = CY9
+controller = CY9
+culture = sliabian
+religion = dagdism
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Carrick ap Cross"
+is_city = yes
+discovered_by = eastern

@@ -1,0 +1,13 @@
+add_core = TW0
+add_core = TR1
+owner = TW0
+controller = TW0
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = copper
+base_manpower = 3
+capital = "Malia"
+is_city = yes
+culture = obedian
+religion = ishtara

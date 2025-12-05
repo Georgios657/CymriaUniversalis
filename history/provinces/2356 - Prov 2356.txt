@@ -1,0 +1,12 @@
+add_core = MA2
+owner = MA2
+controller = MA2
+culture = marionian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = tropical_wood
+base_manpower = 2
+capital = "Warron"
+is_city = yes

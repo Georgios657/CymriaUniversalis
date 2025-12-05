@@ -1,0 +1,13 @@
+add_core = LC8
+owner = LC8
+controller = LC8
+culture = vannian
+religion = amatism_faith
+hre = yes
+base_tax = 4
+base_production = 5
+trade_goods = cloth
+base_manpower = 3
+capital = "Kann"
+is_city = yes
+discovered_by = ottoman

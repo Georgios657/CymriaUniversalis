@@ -1,0 +1,17 @@
+add_core = ZC7
+add_core = ZB2
+owner = ZB2
+controller = ZB2
+culture = vephyrian
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = chinaware
+base_manpower = 3
+capital = "Numalonia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+
+center_of_trade = 1

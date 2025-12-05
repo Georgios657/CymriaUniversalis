@@ -1,0 +1,14 @@
+add_core = ZA2
+owner = ZA2
+controller = ZA2
+culture = bonian
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = silk
+base_manpower = 3
+capital = "Bonia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

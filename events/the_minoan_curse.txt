@@ -1,0 +1,257 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = the_minoan_curse
+
+country_event = {
+	id = the_minoan_curse.1
+	title = the_minoan_curse.1.t
+	desc = the_minoan_curse.1.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+		is_triggered_only = yes
+	major = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+}
+	option = {
+	name = the_minoan_curse.1.a		
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = -10
+}
+
+
+		}
+		
+	option = {
+	name = the_minoan_curse.1.b	
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = 10
+}
+
+
+		}
+	}
+
+
+
+country_event = {
+	id = the_minoan_curse.2
+	title = the_minoan_curse.2.t
+	desc = the_minoan_curse.2.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+		is_triggered_only = yes
+	major = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+}
+	option = {
+	name = the_minoan_curse.2.a		
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = -10
+}
+
+
+		}
+		
+	option = {
+	name = the_minoan_curse.2.b	
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = 10
+}
+
+
+		}
+	}
+
+country_event = {
+	id = the_minoan_curse.3
+	title = the_minoan_curse.3.t
+	desc = the_minoan_curse.3.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+		is_triggered_only = yes
+	major = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+}
+	option = {
+	name = the_minoan_curse.3.a		
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = -10
+}
+
+
+		}
+		
+	option = {
+	name = the_minoan_curse.3.b	
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = 10
+}
+
+
+		}
+	}
+
+country_event = {
+	id = the_minoan_curse.4
+	title = the_minoan_curse.4.t
+	desc = the_minoan_curse.4.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+		is_triggered_only = yes
+	major = yes
+
+	trigger = {
+	}
+
+	immediate = {
+
+}
+	option = {
+	name = the_minoan_curse.4.a		
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = -10
+}
+
+
+		}
+		
+	option = {
+	name = the_minoan_curse.4.b	
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = 10
+}
+
+
+		}
+	}
+
+country_event = {
+	id = the_minoan_curse.5
+	title = the_minoan_curse.5.t
+	desc = the_minoan_curse.5.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+		is_triggered_only = yes
+	major = yes
+
+	trigger = {
+	}
+
+	immediate = {
+	
+	add_country_modifier = { 
+    name = satyr_chaos
+    duration = -1  
+}
+
+1655 = {
+add_province_modifier = { 
+    name = the_cyclops
+    duration = -1  
+}
+}
+
+1717 = {
+add_province_modifier = { 
+    name = the_tauros
+    duration = -1  
+}
+}
+
+1683 = {
+add_province_modifier = { 
+    name = the_hydra
+    duration = -1  
+}
+}
+}
+	option = {
+	trigger = {
+			has_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = 50	
+	}
+
+		}
+	name = the_minoan_curse.5.b		
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = 100
+}
+set_country_flag = reform_to_human
+
+		}
+		
+	option = {
+	trigger = {
+	NOT = {
+			has_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = 50
+}	
+	}
+	
+		}
+	name = the_minoan_curse.5.a
+add_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+	value = -100
+}
+set_country_flag = beast_forever
+
+freeze_government_power = {
+	mechanic_type = beast_mechanic
+	power_type = beast_status
+}
+
+		}
+	}	

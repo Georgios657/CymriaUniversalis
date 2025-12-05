@@ -1,0 +1,13 @@
+add_core = LA7
+owner = LA7
+controller = LA7
+culture = ascarien
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 2
+trade_goods = salt
+base_manpower = 3
+capital = "Asqa"
+is_city = yes
+discovered_by = ottoman

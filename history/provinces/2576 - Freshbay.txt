@@ -1,0 +1,12 @@
+add_core = AV1
+owner = AV1
+controller = AV1
+hre = no
+base_tax = 4
+base_production =4
+trade_goods = naval_supplies
+base_manpower = 4
+capital = "Fes"
+is_city = yes
+culture = tarachian
+religion = grand_mother

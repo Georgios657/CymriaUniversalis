@@ -1,0 +1,95 @@
+#Country Name: Please see filename.
+
+graphical_culture = inuitgfx
+
+color = { 22 143 210 }
+
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+    "Eero" = 60
+    "Aleksi" = 60
+    "Mikko" = 60
+    "Ville" = 60
+    "Juho" = 60
+    "Antti" = 60
+    "Tomi" = 60
+    "Joonas" = 60
+    "Sami" = 60
+    "Jani" = 60
+    "Helmi" = -60
+    "Aino" = -60
+    "Lumi" = -60
+    "Sanni" = -60
+    "Venla" = -60
+    "Aada" = -60
+    "Ilona" = -60
+    "Ella" = -60
+    "Iida" = -60
+    "Siiri" = -60	
+}
+
+leader_names = {
+    "Onni Virtanen"
+    "Eetu Mäkinen"
+    "Aleksi Nieminen"
+    "Elias Koskinen"
+    "Eero Järvinen"
+    "Niko Lahtinen"
+    "Antti Karjalainen"
+    "Matias Kinnunen"
+    "Väinö Laine"
+    "Juho Tuominen"
+    "Olli Rantanen"
+    "Roope Harju"
+    "Aleksi Salminen"
+    "Juha Laitinen"
+    "Otto Peltola"
+    "Santeri Lindholm"
+    "Teemu Korpela"
+    "Ville Kallio"
+    "Mikko Salmi"
+    "Tomi Mattila"
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Joukko  $PROVINCE$" "Aseistettu  $PROVINCE$" "Miehiä $PROVINCE$"
+}
+
+fleet_names = {
+}

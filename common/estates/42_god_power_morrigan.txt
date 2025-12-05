@@ -1,0 +1,196 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_god_morrigan = {
+	icon = 17
+
+	# If true, country will get estate
+	trigger = {
+			NOT = { has_government_attribute = disables_estate_god }
+		religion_group = death_faith
+		NOT = {
+		has_reform = abbandon_the_gods
+		}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+	 	naval_morale = 0.1
+		manpower_recovery_speed = 0.10
+		magic_mil_power_gain_modifier  = 0.25
+		magic_dip_power_gain_modifier  = 0.25
+		magic_adm_power_gain_modifier  = 0.25		 
+	}
+	country_modifier_neutral = {
+	 	naval_morale = 0.05
+		manpower_recovery_speed = 0.05	
+	}	
+	country_modifier_angry = {
+	 	naval_morale = -0.1
+		manpower_recovery_speed = -0.10
+		magic_mil_power_gain_modifier  = -0.25
+		magic_dip_power_gain_modifier  = -0.25
+		magic_adm_power_gain_modifier  = -0.25		
+			
+	}
+	land_ownership_modifier = {
+			god_morrigan_loyalty_modifier = 0.00
+	}
+	
+
+
+	# Influence modifiers
+	base_influence = 0
+	influence_modifier = {
+		desc = EST_ELV
+		trigger = {
+		culture_group = elvish
+		}	
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = EST_VERY_LOW_UNITY
+		trigger = {
+		NOT = {
+		religious_unity = 0.5
+		}
+		}	
+		influence = -5
+	}
+	
+	influence_modifier = {
+		desc = EST_LOW_UNITY
+		trigger = {
+			religious_unity = 0.5	
+		NOT = {
+		religious_unity = 0.75
+		}
+		}	
+		influence = -2
+	}
+	
+	
+	influence_modifier = {
+		desc = EST_MEDIUM_UNITY
+		trigger = {
+			religious_unity = 0.75	
+		NOT = {
+		religious_unity = 0.99
+		}
+		}	
+		influence = 2
+	}
+	
+	influence_modifier = {
+		desc = EST_HIGH_UNITY
+		trigger = {
+		religious_unity = 0.99
+		}	
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_TOLERANCE_MEDIUM
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 4
+				}
+			NOT = {
+		ROOT = {
+			 	tolerance_to_this = 6
+				}			
+			}
+		}	
+		influence =5
+	}
+	
+	influence_modifier = {
+		desc = EST_TOLERANCE_HIGH
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 6
+				}
+							NOT = {
+		ROOT = {
+			 	tolerance_to_this = 8
+				}			
+			}
+		}	
+		influence = 5
+	}
+
+	influence_modifier = {
+		desc = EST_TOLERANCE_VERY_HIGH
+		trigger = {
+		ROOT = {
+			 	tolerance_to_this = 8
+				}
+		}	
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_STATE_RELIGIOUS_MINORITY
+		trigger = {
+			NOT = { dominant_religion = ROOT }
+		}	
+		influence = -10
+	}
+	
+	influence_modifier = {
+		desc = EST_WRONG_RELIGION_RULER
+		trigger = {
+		NOT = {
+					ruler_religion = ROOT
+		}
+		}	
+		influence = -10
+	}	
+
+	loyalty_modifier = {
+		desc = EST_FANACTIC_KING
+		trigger = {
+				OR = {
+		 	 	ruler_has_personality = zealot_personality
+		 	 	ruler_has_personality = pious_personality				
+				}
+		}
+		loyalty = 2
+	}
+
+	loyalty_modifier = {
+		desc = EST_NOFANACTIC_KING
+		trigger = {
+		 	 	ruler_has_personality = tolerant_personality
+		}
+		loyalty = -2
+	}
+	
+	loyalty_modifier = {
+		desc = EST_HOLY_WAR
+		trigger = {
+		 	at_war_with_religious_enemy = yes
+		}
+		loyalty = 5
+	}
+	
+	privileges = {
+	the_first_elven_king
+	the_first_elven_queen
+	holy_woods_morrigan
+	the_great_mother
+	ritual_sacrifces
+	battleipriests
+	the_great_festives
+	ritual_cannibalism
+	honor_the_sea
+	}
+
+	agendas = {
+
+	}
+
+	color = { 122 20 20 }
+	
+	influence_from_dev_modifier = 1
+}

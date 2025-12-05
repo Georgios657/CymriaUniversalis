@@ -1,0 +1,13 @@
+add_core = I39
+owner = I39
+controller = I39
+culture = jadisch
+religion = old_imperial_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 3
+capital = "Ilvesheim"
+is_city = yes
+discovered_by = western

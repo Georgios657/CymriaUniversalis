@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = cloth
+base_manpower = 4
+capital = "Fallowridge"
+is_city = yes
+culture = sylvanian
+religion = imperial_cult
+add_core = AV5

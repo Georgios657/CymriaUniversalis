@@ -1,0 +1,14 @@
+add_core = U04
+owner = U04
+controller =U04
+culture = erii
+religion = undead_imperial_faith
+hre = no
+base_tax = 9
+base_production = 4
+trade_goods = gems
+base_manpower = 6
+capital = "Eria"
+is_city = yes
+discovered_by = muslim
+fort_15th = yes

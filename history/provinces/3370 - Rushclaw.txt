@@ -1,0 +1,12 @@
+add_core = VP4
+owner = VP4
+controller = VP4
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = iron
+base_manpower = 1
+capital = "Rushdy"
+is_city = yes
+culture = ayas_valley

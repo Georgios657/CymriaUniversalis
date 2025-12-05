@@ -1,0 +1,381 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = fc
+
+country_event = {
+	id = fc.1
+	title = fc.1.t
+	desc = {
+		desc = fc.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = FC5
+		is_year = 1455
+	}
+
+	immediate = {
+		hidden_effect = {
+		467 = {
+		add_core = SP1
+		}
+		}
+		
+		}
+	option = {
+		name = fc.1.a					
+		467 = {
+		cede_province = SP1
+		} 
+		
+				hidden_effect = {
+			SP1 = {
+					the_seven_city_region = {
+			discover_country = SP1
+		}
+				define_ruler = {
+					name = "Priya"
+					dynasty = "Denianke"
+					change_mil = 3
+					claim = 100
+				}
+				add_ruler_personality = wizard
+				add_ruler_modifier = { 
+					name = invasion
+					duration = -1  
+					hidden = yes
+				}
+				adopt_reform_progress = ROOT
+				
+						create_unit_forcelimit_percentage = {
+						type = infantry
+						special_unit_category = cossacks
+						force_limit_percentage = 0.7
+					}
+					
+					create_unit_forcelimit_percentage = {
+						type = cavalry 
+						special_unit_category = cossacks
+						force_limit_percentage = 0.3
+					}
+					
+				capital_scope = {
+
+						add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}				
+				declare_war = FC5
+				add_treasury = 300
+				
+				add_mil_tech = 2
+				
+				every_country  = {
+				limit = {
+				 	has_reform = great_city
+					NOT = {
+					tag = FC5
+					}
+				}
+			country_event = { 
+				id = fc.2
+				days = 30
+				random = 15
+			}
+				}
+			}
+		}
+		}
+	}
+	
+country_event = {
+	id = fc.2
+	title = fc.2.t
+	desc = {
+		desc = fc.2.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+		
+
+	option = {
+		name = fc.2.a					
+		ai_chance = { factor = 75 }
+		set_country_flag = helped_seven
+		join_all_defensive_wars_of = FROM
+		create_alliance = FROM
+		}
+		
+	option = {
+	ai_chance = { factor = 10 }
+		name = fc.2.b
+
+		}		
+	}	
+	
+country_event = {
+	id = fc.3
+	title = fc.3.t
+	desc = {
+		desc = fc.3.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = FC0
+		is_year = 1465
+	}
+
+	immediate = {
+		hidden_effect = {
+		460 = {
+		add_core = SP2
+		}
+		}
+		
+		}
+	option = {
+		name = fc.3.a					
+		460 = {
+		cede_province = SP2
+		} 
+		
+				hidden_effect = {
+			SP2 = {
+					the_seven_city_region = {
+			discover_country = SP2
+		}
+				define_ruler = {
+					name = "Boten"
+					dynasty = "Kaganate"
+					change_mil = 3
+					claim = 100
+				}
+				add_ruler_modifier = { 
+					name = invasion
+					duration = -1  
+					hidden = yes
+				}
+				adopt_reform_progress = ROOT
+				
+				
+					
+				capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.5
+					cavalry = 0.5
+				}
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}				
+				declare_war = FC0
+				add_treasury = 300
+				
+				add_mil_tech = 2
+				
+				every_country  = {
+				limit = {
+				 	has_reform = great_city
+									NOT = {
+					tag = FC0
+					}
+				}
+			country_event = { 
+				id = fc.2
+				days = 30
+				random = 15
+			}
+				}
+			}
+		}
+		}
+	}	
+	
+	
+country_event = {
+	id = fc.4
+	title = fc.4.t
+	desc = {
+		desc = fc.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = FC3
+		is_year = 1500
+	}
+
+	immediate = {
+		hidden_effect = {
+		481 = {
+		add_core = SP3
+		}
+		}
+		
+		}
+	option = {
+		name = fc.4.a					
+		481 = {
+		cede_province = SP3
+		} 
+		
+				hidden_effect = {
+			SP3 = {
+					the_seven_city_region = {
+			discover_country = SP3
+		}
+				define_ruler = {
+					name = "Xaxa"
+					dynasty = "Hexe"
+					change_mil = 3
+					claim = 100
+				}
+				add_country_modifier = {
+				name = undead_military
+				duration = -1  
+				}
+				add_ruler_modifier = { 
+					name = invasion
+					duration = -1  
+					hidden = yes
+				}
+				add_ruler_flag = immortal
+				adopt_reform_progress = ROOT
+				
+						create_unit_forcelimit_percentage = {
+						type = infantry
+						special_unit_category = rajput
+						force_limit_percentage = 0.5
+					}
+	
+					
+				capital_scope = {
+
+						add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}				
+				declare_war = FC3
+				add_treasury = 300
+				
+				add_mil_tech = 2
+				
+				every_country  = {
+				limit = {
+				 	has_reform = great_city
+					NOT = {
+					tag = FC3
+					}
+				}
+			country_event = { 
+				id = fc.2
+				days = 30
+				random = 15
+			}
+				}
+			}
+		}
+		}
+	}	
+	
+country_event = {
+	id = fc.6
+	title = fc.6.t
+	desc = {
+		desc = fc.6.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+		
+
+	option = {
+		name = fc.6.a					
+		ai_chance = { factor = 75 }
+		FCS = {
+		inherit = ROOT		
+		}
+
+		}
+		
+	option = {
+	ai_chance = { factor = 10 }
+		name = fc.6.b
+		capital_scope = {
+			add_core = FCS
+		}
+		}		
+	}	
+	
+country_event = {
+	id = fc.7
+	title = fc.7.t
+	desc = {
+		desc = fc.7.desc
+
+	}
+
+			mean_time_to_happen = {
+	months = 12
+}
+
+	picture = RELIGION_eventPicture
+	trigger = {
+	tag = SP3
+	SP3 = {
+	is_at_war = no
+	}
+	}
+		
+
+	option = {
+		name = fc.7.a					
+		ai_chance = { factor = 75 }
+		remove_country = yes
+
+		}
+			
+	}	
+	
+country_event = {
+	id = fc.8
+	title = fc.8.t
+	desc = {
+		desc = fc.8.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+		
+
+	option = {
+		name = fc.8.a					
+		ai_chance = { factor = 75 }
+		FROM = {
+		inherit = ROOT		
+		}
+
+		}
+		
+	
+	}	
+		

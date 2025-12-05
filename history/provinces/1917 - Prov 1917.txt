@@ -1,0 +1,14 @@
+add_core = SH5
+owner = SH5
+controller = SH5
+religion = yazida
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = dyes
+base_manpower = 5
+capital = "Ni"
+is_city = yes
+culture = nian
+center_of_trade = 1
+fort_15th = yes

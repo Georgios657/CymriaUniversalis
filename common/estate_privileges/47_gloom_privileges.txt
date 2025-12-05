@@ -1,0 +1,306 @@
+higher_gloom_power = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -25
+			
+		land_share = 5
+		influence = 0.05
+		loyalty = 0.00
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+		all_power_cost = -0.05
+	}
+	
+	
+	penalties = {
+		 	tolerance_own = -2
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_gloom
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+vengeful_woods = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -10
+			
+		land_share = 5
+		influence = 0.05
+		loyalty = 0.05
+			on_granted = {
+			
+	}
+
+	
+			on_granted = {
+		custom_tooltip = vengeful_woods_gain
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = gloomwood_region
+				}
+				add_province_modifier = {
+					name = vengeful_woods_mod
+					duration = -1
+				}
+			}
+		}			
+	}
+
+		on_granted_province = {
+		if = {
+				limit = {
+					region = gloomwood_region
+				}
+				add_province_modifier = {
+					name = vengeful_woods_mod
+					duration = -1
+				}		
+		}
+
+		}	
+	
+	benefits = { 
+		
+	}
+	
+	
+	penalties = {
+	}
+	
+	on_revoked = { 
+	
+				custom_tooltip = vengeful_woods_mod_rev
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = vengeful_woods_mod
+		
+					}
+				}
+				remove_province_modifier = vengeful_woods_mod
+			}
+		}	
+	
+	
+	add_estate_loyalty = {
+    estate = estate_gloom
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+
+
+betraying_woods = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -5
+			
+		land_share = 0
+		influence = 0.05
+		loyalty = 0.05
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+		  	improve_relation_modifier = 0.3
+	}
+	
+	
+	penalties = {
+	 	morale_damage = -0.15
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_gloom
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+
+
+harness_gloompower = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -5
+			
+		land_share = 5
+		influence = 0.05
+		loyalty = 0.00
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+		monthly_magic_mil_power = 0.05
+		monthly_magic_adm_power = 0.05
+		monthly_magic_dip_power = 0.05		
+	}
+	
+	
+	penalties = {
+		all_power_cost = 0.02
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_gloom
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+
+
+expand_the_gloom_spell = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -25
+			
+		land_share = 5
+		influence = 0.05
+		loyalty = 0.05
+			on_granted = {
+			
+	}
+
+
+	modifier_by_land_ownership = {
+		global_manpower_modifier = 0.5
+		 	core_creation = 0.25
+	}	
+	
+	benefits = { 
+
+	}
+	
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_gloom
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+
+
+rekindle_gloom = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -25
+			
+		land_share = 5
+		influence = 0.1
+		loyalty = 0.0
+			on_granted = {
+			
+	}
+
+	modifier_by_land_ownership = {
+		 	global_missionary_strength = 0.05
+	}		
+	
+	benefits = { 
+	}
+	
+	
+	penalties = {
+		monthly_magic_mil_power = -0.05
+		monthly_magic_adm_power = -0.05
+		monthly_magic_dip_power = -0.05	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_gloom
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+
+

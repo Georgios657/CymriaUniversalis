@@ -1,0 +1,13 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 3
+base_production = 5
+trade_goods = paper
+base_manpower = 4
+capital = "Cinderfall"
+is_city = yes
+culture = zavonian
+religion = grand_mother
+add_core = AV6

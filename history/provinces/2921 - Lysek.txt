@@ -1,0 +1,14 @@
+add_core = AI7
+owner = AI7
+controller = AI7
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Lysek"
+is_city = yes
+culture = asyloria
+religion = icearia
+add_core = NC8
+center_of_trade = 1

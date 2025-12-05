@@ -1,0 +1,14 @@
+add_core = ZB2
+owner = ZB2
+controller = ZB2
+culture = zephrian
+religion = phoenix_faith
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = grain
+base_manpower = 2
+capital = "Caelaleah"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

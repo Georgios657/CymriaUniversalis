@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = slaver_kingdom_reform
+government_rank = 2
+technology_group = selen_tech
+primary_culture = obedian
+religion = ishtara
+capital = 1782	# Bayreuth
+religious_school = neshar_the_four_armed
+
+1420.1.1 = {
+	monarch = {
+		dynasty = "Nammu-Tiria"
+		name = "Ishkun-Marduk V"
+		birth_date = 1400.9.21
+		dip = 3
+		adm = 4
+		mil = 4
+	}
+
+}

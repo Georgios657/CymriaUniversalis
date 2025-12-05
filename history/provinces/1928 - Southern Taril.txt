@@ -1,0 +1,2 @@
+# No previous file for Southern Taril
+discovered_by = PI6

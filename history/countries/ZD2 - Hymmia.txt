@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = hymmnia
+religion = phoenix_faith
+capital = 906	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Ephor"
+		name = "Hieros"
+		birth_date = 1385.9.21
+		dip = 5
+		adm = 5
+		mil = 6
+
+	}
+
+}

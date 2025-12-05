@@ -1,0 +1,12 @@
+culture = outer_wooder
+religion = the_silvern_guide
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+capital = "Koes an Golow"
+is_city = no
+native_size = 80
+native_ferocity = 15
+native_hostileness = 15
+center_of_trade = 1

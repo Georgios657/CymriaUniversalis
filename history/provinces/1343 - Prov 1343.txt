@@ -1,0 +1,15 @@
+culture = coastal_naga
+religion = naga_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Bhutapuri"
+# Anything typed here will be added to all selected province history files
+discovered_by = indian
+# Anything typed here will be added to all selected province history files
+native_size = 5
+native_ferocity = 5
+native_hostileness = 5
+is_city = no

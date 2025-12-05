@@ -1,0 +1,13 @@
+add_core = AR2
+owner = AR2
+controller = AR2
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = silk
+base_manpower = 2
+capital = "Io"
+is_city = yes
+culture = iolan
+religion = tanatism
+fort_15th = yes

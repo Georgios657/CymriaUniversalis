@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = caian
+religion = phoenix_faith
+capital = 801	# Bayreuth
+
+
+1430.1.1 = {
+	monarch = {
+		dynasty = "Milesi-Silan"
+		name = "Amos"
+		birth_date = 1405.9.21
+		dip = 1
+		adm = 0
+		mil = 3
+
+	}
+
+}

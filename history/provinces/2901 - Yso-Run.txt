@@ -1,0 +1,13 @@
+add_core = AI1
+owner = AI1
+controller = AI1
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = glass
+base_manpower = 4
+capital = "Yso-Run"
+is_city = yes
+culture = kalyrian
+religion = rozalia
+add_core = NC7

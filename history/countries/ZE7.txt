@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = zephrian
+religion = phoenix_faith
+capital = 773	# Bayreuth
+
+
+1430.1.1 = {
+	monarch = {
+		dynasty = "Bossos"
+		name = "Amit"
+		birth_date = 1415.9.21
+		dip = 2
+		adm = 1
+		mil = 2
+
+	}
+
+}

@@ -1,0 +1,338 @@
+holy_woods_morrigan = {
+	icon = estate_god_morrigan_privilege_holy_woods
+	max_absolutism = -10
+	land_share = 10	
+	is_valid = {
+		any_owned_province = {
+		OR = {
+			has_terrain = woods
+			has_terrain = hills
+			has_terrain = forest
+		}
+		}
+	
+		
+	}
+	
+		on_granted = {
+			custom_tooltip = holy_shrines_in_wood
+	}
+	
+		mechanics = {
+		exempt_from_seize_land
+	}
+	
+	influence = 0.05
+	benefits = { 
+		
+	}
+	penalties = {
+	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_morrigan
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 30 }
+				estate_influence = {
+					estate = estate_god_morrigan
+					influence = 95
+				}
+			}
+			NOT = { has_estate_privilege = holy_woods_morrigan }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 35 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 55 }
+				}
+			}
+			NOT = { has_estate_privilege = holy_woods_morrigan }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+	}
+	}
+
+the_great_mother = {
+	icon = estate_god_morrigan_privilege_the_great_mother
+	max_absolutism = -30
+	is_valid = {
+		culture_group = elvish
+	}
+	influence = 0.25
+	loyalty = 0.15
+	benefits = { 
+	tolerance_own = 2
+	development_cost_in_primary_culture = -0.1
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+	may_not_convert_territories = yes
+ 	tolerance_heathen = -2
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_morrigan
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 10
+
+	}
+}
+
+the_first_elven_king = {
+	icon = estate_god_morrigan_privilege_the_first_elven_king
+	max_absolutism = 0
+	is_valid = {
+		culture_group = elvish
+		has_global_flag = first_elf_king
+	}
+	influence = -0.05
+	loyalty = -0.1
+	benefits = { 
+		legitimacy = 1
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+	}
+	
+	on_revoked = { 
+	}
+	
+	ai_will_do = {
+		factor = 10
+
+	}	
+}
+
+the_first_elven_queen = {
+	icon = estate_god_morrigan_privilege_the_first_elven_queen
+	max_absolutism = -10
+	is_valid = {
+		culture_group = elvish
+		has_global_flag = first_elf_king
+	}
+	influence = 0.05
+	loyalty = 0.05
+	benefits = { 
+		idea_cost = -0.1
+	}
+	
+	mechanics = {
+	
+	}
+	
+	penalties = {
+
+	}
+	
+	on_revoked = { 
+
+
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+ritual_sacrifces = {
+	icon = estate_god_morrigan_privilege_ritual_sacrifces
+	max_absolutism = -10
+	is_valid = {
+
+	}
+	influence = 0.00
+	loyalty = 0.05
+	benefits = { 
+		
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.05
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_morrigan
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+battleipriests = {
+	icon = estate_god_morrigan_privilege_battleipriests
+	max_absolutism = -10
+	is_valid = {
+
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = { 
+		 	land_morale = 0.10
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		leader_cost = 0.5
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_morrigan
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+the_great_festives = {
+	icon = estate_god_morrigan_privilege_the_great_festives
+	max_absolutism = -20
+	is_valid = {
+
+	}
+	influence = 0.05
+	loyalty = 0.05
+	benefits = { 
+		
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_morrigan
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}		
+}
+
+ritual_cannibalism = {
+	icon = estate_god_morrigan_privilege_ritual_cannibalism
+	max_absolutism = -20
+	is_valid = {
+		culture_group = krainian
+	}
+	influence = 0.05
+	loyalty = 0.1
+	benefits = { 
+		
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		 	diplomatic_reputation = -1
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_morrigan
+    loyalty = -10
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}
+
+
+honor_the_sea = {
+	icon = estate_god_morrigan_privilege_honor_the_sea
+	max_absolutism = -20
+	is_valid = {
+		naval_forcelimit = 15
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = { 
+		 	naval_attrition = -0.1
+	}
+	
+		mechanics = {
+	}
+	
+	penalties = {
+		 	
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_morrigan
+    loyalty = -10
+	}
+
+	}
+	
+	ai_will_do = {
+
+	}	
+}

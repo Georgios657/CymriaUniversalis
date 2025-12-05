@@ -1,0 +1,13 @@
+add_core = ST0
+owner = ST0
+controller = ST0
+culture = samara
+religion = tengri
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Tumutaran"
+is_city = yes
+discovered_by = nomad_group

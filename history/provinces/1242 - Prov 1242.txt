@@ -1,0 +1,13 @@
+add_core = HB9
+owner = HB9
+controller = HB9
+culture = lanhuian
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Ringuang"
+is_city = yes
+discovered_by = chinese

@@ -1,0 +1,13 @@
+add_core = HE4
+owner = HE4
+controller = HE4
+culture = lohnia
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+capital = "Verricci"
+is_city = yes
+discovered_by = chinese

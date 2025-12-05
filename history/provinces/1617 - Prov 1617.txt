@@ -1,0 +1,15 @@
+add_core = EP1
+add_core = EP0
+owner = EP1
+controller = EP1
+culture = southern_ephereta
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = iron
+base_manpower = 2
+capital = "Valisha"
+is_city = yes
+discovered_by = chinese
+fort_15th = yes

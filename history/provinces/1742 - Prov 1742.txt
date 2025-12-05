@@ -1,0 +1,17 @@
+add_core = TH2
+owner = TH2
+controller = TH2
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = fish
+base_manpower = 4
+capital = "Lamois"
+is_city = yes
+culture = jovian
+religion = the_silvern_guide
+
+add_permanent_province_modifier = {
+	name = strait_modifier
+	duration = -1
+}

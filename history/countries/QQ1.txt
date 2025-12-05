@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = azur_tech
+primary_culture = girai
+religion = asae_ya
+capital = 2110	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Abyssiaassa"
+		name = "Ariv"
+		birth_date = 1375.9.21
+		dip = 3
+		adm = 3
+		mil = 2
+	}
+
+}

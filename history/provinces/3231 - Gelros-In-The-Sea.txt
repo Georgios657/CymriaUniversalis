@@ -1,0 +1,12 @@
+add_core = GE6
+owner = GE6
+controller = GE6
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = sugar
+base_manpower = 3
+capital = "Gelors-In-The-Sea"
+is_city = yes
+culture = darloinian
+religion = velora

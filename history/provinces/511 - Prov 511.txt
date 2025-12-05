@@ -1,0 +1,13 @@
+add_core = S17
+owner = S17
+controller = S17
+culture = menekian
+religion = amatism_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Chas"
+is_city = yes
+discovered_by = indian

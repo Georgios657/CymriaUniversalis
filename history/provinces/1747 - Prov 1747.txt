@@ -1,0 +1,12 @@
+add_core = TR9
+owner = TR9
+controller = TR9
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = fish
+base_manpower = 4
+capital = "Sarissa"
+is_city = yes
+culture = gerodian
+religion = ishtara

@@ -1,0 +1,14 @@
+add_core = TR9
+add_core = TR8
+owner = TR9
+controller = TR9
+hre = no
+base_tax = 7
+base_production = 8
+trade_goods = grain
+base_manpower = 5
+capital = "Samuuruk"
+is_city = yes
+culture = lower_sumar
+religion = ishtara
+add_permanent_province_modifier = { name = major_estuary_modifier duration = -1 } 

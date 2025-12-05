@@ -1,0 +1,62 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = witchking
+
+country_event = {
+	id = witchking.1
+	title = witchking.1.t
+	desc = witchking.1.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	has_reform = witchking
+	}
+
+	immediate = {
+
+}
+	option = {
+	name = witchking.1.a		
+		ai_chance = { factor = 20 }
+	add_devotion = 30
+	
+					define_heir = {
+					female = yes
+					hidden = yes
+					age = 20
+					
+					max_random_dip = 5
+					max_random_adm = 5
+					max_random_mil = 5
+					dynasty = ROOT
+
+				}
+			add_heir_personality = wizard
+		}
+		
+		
+		
+	option = {
+	name = witchking.1.b	
+			ai_chance = { factor = 20 }
+		add_devotion = -30
+				define_heir = {
+					female = yes
+					hidden = yes
+					age = 20
+					change_adm = 1
+					change_dip = 1
+					change_mil = 1
+
+				}
+			add_heir_personality = wizard
+
+		}
+	}

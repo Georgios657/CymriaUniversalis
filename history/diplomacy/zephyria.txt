@@ -1,0 +1,29 @@
+
+vassal = {
+    first = ZD5
+    second = ZD6
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = ZD5
+    second = ZF2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = ZA2
+    second = ZA4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = ZA2
+    second = ZC1
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+

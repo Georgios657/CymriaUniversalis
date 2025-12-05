@@ -1,0 +1,13 @@
+add_core = FC0
+owner = FC0
+controller = FC0
+culture = carian_nomad
+religion = amatism_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = silk
+base_manpower = 1
+capital = "Sill"
+is_city = yes
+discovered_by = indian

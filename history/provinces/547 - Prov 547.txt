@@ -1,0 +1,13 @@
+add_core = S19
+owner = S19
+controller = S19
+culture = kravolian
+religion = katrova_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Toora"
+is_city = yes
+discovered_by = indian

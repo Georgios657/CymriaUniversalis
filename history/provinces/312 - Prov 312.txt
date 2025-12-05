@@ -1,0 +1,14 @@
+add_core = ST0
+owner = ST0
+controller = ST0
+culture = samara
+religion = tengri
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = livestock
+base_manpower = 3
+capital = "Saramata"
+is_city = yes
+discovered_by = nomad_group
+center_of_trade = 1

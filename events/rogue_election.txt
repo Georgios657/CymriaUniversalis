@@ -1,0 +1,154 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = rogue_election
+
+country_event = {
+	id = rogue_election.1
+	title = rogue_election.1.t
+	desc = rogue_election.1.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		 has_reform = rogue_trader_reform 
+	}
+	
+	immediate = {
+		define_ruler = {
+   min_age = 30
+   max_age = 50
+		}	
+	}
+	
+	after = {
+
+	}
+
+	option = {
+		name = rogue_election.1.a
+		ai_chance = {
+			factor = 25		}
+		add_faction_influence = {
+    faction = the_enforcers
+    influence = 25
+}
+		
+	}
+	
+	option = {
+		name = rogue_election.1.b
+		ai_chance = {
+			factor = 25		}
+
+		add_faction_influence = {
+    faction = the_nobles
+    influence = 25
+}
+		
+	}
+	
+	
+	option = {
+		name = rogue_election.1.c
+		add_faction_influence = {
+    faction = the_navigators
+    influence = 25
+}		
+		ai_chance = {
+			factor = 25
+		}
+
+	}
+}
+
+country_event = {
+	id = rogue_election.2
+	title = rogue_election.2.t
+	desc = rogue_election.2.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	mean_time_to_happen = {
+	months = 1
+}
+	
+	trigger = {
+		 has_reform = rogue_trader_reform 
+		 is_year = 1500
+		 NOT = {
+		 ai = yes
+		 }
+		 OR = {
+		 had_country_flag = {
+			flag = paid_tithe
+			days = 36500
+		}
+		NOT = {
+		 	has_country_flag = paid_tithe
+		}
+		 }
+
+	}
+	
+	immediate = {
+	
+	}
+	
+	after = {
+
+	}
+
+	option = {
+		name = rogue_election.2.a
+		trigger = {
+				NOT = {
+			is_year = 1600
+		}
+			is_year = 1500
+		}
+		add_treasury = -1000
+		add_manpower = -25
+		set_country_flag = paid_tithe
+		
+	}
+	
+	option = {
+		name = rogue_election.2.b
+	trigger = {
+			NOT = {
+			is_year = 1700
+		}
+			is_year = 1600
+		}		
+		add_treasury = -3000
+		add_manpower = -50
+		
+	}
+
+	option = {
+		name = rogue_election.2.c
+	trigger = {
+		NOT = {
+			is_year = 1800
+		}
+			is_year = 1700
+		}		
+		add_treasury = -9000
+		add_manpower = -100	
+		
+	}	
+
+	option = {
+		name = rogue_election.2.d
+	trigger = {
+			is_year = 1800
+		}		
+		add_treasury = -27000
+		add_manpower = -200	
+		
+	}	
+}

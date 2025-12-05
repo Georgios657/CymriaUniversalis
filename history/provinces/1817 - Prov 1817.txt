@@ -1,0 +1,13 @@
+add_core = TW8
+owner = TW8
+controller = TW8
+religion = the_silvern_guide
+hre = no
+base_tax = 10
+base_production = 9
+trade_goods = grain
+base_manpower = 5
+capital = "Kykla"
+is_city = yes
+culture = northern_baylonian
+fort_15th = yes

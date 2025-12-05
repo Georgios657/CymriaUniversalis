@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = eastern
+primary_culture = sliabian
+religion = dagdism
+capital = 299# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1430.1.1 = {
+	monarch = {
+		name = "Cathal"
+		dynasty = "An Tarvachgn"
+		birth_date = 1361.9.21
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+

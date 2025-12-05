@@ -1,0 +1,90 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = floods
+
+country_event = {
+	id = floods.1
+	title = floods.1.t
+	desc = floods.1.desc
+
+	picture = RELIGION_eventPicture
+
+	major = yes
+	
+	immediate = {
+			
+}
+
+	
+		mean_time_to_happen = {
+	months = 12
+	}
+	
+	trigger = {
+	 	owns = 1692
+		
+		OR = {
+		had_global_flag = {
+			flag = last_flood
+			days = 9125
+		}
+		NOT = {
+		has_global_flag = last_flood
+		}
+		}
+
+	}
+	
+	option = {
+	name = floods.1.a		
+		set_global_flag = last_flood
+		
+		random_list = {
+    70 = {
+		
+    }
+    10 = {
+	         	modifier = {
+			factor = 2
+			OR = {
+			 	current_age = age_of_reformation
+			 	current_age = age_of_revolutions				
+			}
+
+		}    
+		 twin_river_flood= {
+				add_permanent_province_modifier = { 
+				name = devastating_flood
+				duration = 3650
+			}	 
+		 }	
+
+   
+    }
+    10 = {   
+		 twin_river_flood= {
+				add_permanent_province_modifier = { 
+				name = no_flood
+				duration = 3650
+			}	 
+		 }
+   
+    }	
+    10 = {
+		 twin_river_flood= {
+				add_permanent_province_modifier = { 
+				name = promosing_flood
+				duration = 3650
+			}	 
+		 }   
+    }	
+}
+
+		}
+		
+
+	}

@@ -1,0 +1,12 @@
+add_core = DH1
+owner = DH1
+controller = DH1
+religion = the_silvern_guide
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = wool
+base_manpower = 3
+capital = "Vide"
+is_city = yes
+culture = lek

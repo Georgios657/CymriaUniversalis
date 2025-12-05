@@ -1,0 +1,77 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 147  96 12 }
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Gaius Aurelius" = 60
+	"Lucius Octavius" = 60
+	"Marcus Tiberius" = 60
+	"Decimus Julius" = 60
+	"Titus Claudius" = 60
+	"Quintus Maximus" = 60
+	"Octavius Brutus" = 60
+	"Pompeius Crassus" = 60
+	"Quintilianus Augustus" = 60
+	"Valerius Marcellus" = 60
+	"Cato Calpurnius" = 60
+
+}
+
+leader_names = {
+	"Gaius Aurelius Servilius"
+	"Lucius Octavius Flavii"
+	"Marcus Tiberius Antonius"
+	"Decimus Julius Valerius"
+	"Titus Claudius Cassius"
+	"Quintus Maximus Julii"
+	"Octavius Brutus Marcellus"
+	"Pompeius Crassus Pulcher"
+	"Quintilianus Augustus Fabius"
+	"Valerius Marcellus Fabius"
+	"Cato Calpurnius Claudii"	
+}
+
+ship_names = {
+
+}
+
+army_names = {
+	"Legio $PROVINCE$" "Conscripto $PROVINCE$" "Comitates $PROVINCE$"
+}
+
+fleet_names = {
+}

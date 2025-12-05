@@ -1,0 +1,12 @@
+add_core = TR7
+owner = TR7
+controller = TR7
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Nunna"
+is_city = yes
+culture = upper_sumar
+religion = ishtara

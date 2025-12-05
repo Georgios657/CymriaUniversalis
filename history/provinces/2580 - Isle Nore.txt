@@ -1,0 +1,12 @@
+add_core = AV1
+owner = AV1
+controller = AV1
+hre = no
+base_tax = 1
+base_production =1
+trade_goods = fish
+base_manpower = 1
+capital = "Nore"
+is_city = yes
+culture = tarachian
+religion = grand_mother

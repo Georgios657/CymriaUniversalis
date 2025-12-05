@@ -1,0 +1,14 @@
+add_core = ZB4
+owner = ZB4
+controller = ZB4
+culture = teonen
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Piekabrzeg"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

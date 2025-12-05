@@ -1,0 +1,12 @@
+add_core = MA2
+owner = MA2
+controller = MA2
+culture = marionian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = ivory
+base_manpower = 2
+capital = "Bisho"
+is_city = yes

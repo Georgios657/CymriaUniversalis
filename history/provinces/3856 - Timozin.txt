@@ -1,0 +1,12 @@
+add_core = TI3
+owner = TI3
+controller = TI3
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 3
+capital = "Timozin"
+is_city = yes
+culture = tilak
+religion = tilidian_little_gods

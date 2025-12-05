@@ -1,0 +1,12 @@
+add_core = GW2
+owner = GW2
+controller = GW2
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Kor"
+is_city = yes
+culture = far_aylor
+religion = rozalia

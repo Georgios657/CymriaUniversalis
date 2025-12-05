@@ -1,0 +1,1309 @@
+##BranchStart 0
+pir1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = PI7
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	slave_trade = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			trading_part = {
+	trade_goods = slaves
+	value = 0.2
+}
+
+trade_goods_produced_amount = {
+	trade_goods = slaves
+	amount = 10
+}		
+		
+		}
+
+		}
+		effect = {
+			add_country_modifier = { 
+				name = slaver_lords
+				duration = 7500 
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	coastal_raider = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				check_variable = {
+				which = numOfcourtRaids
+				value = 100
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = raiding_lords
+				duration = -1 
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_black_fleet = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			navy_size = 50
+		}
+		effect = {
+			add_navy_tradition = 20
+		}
+	}
+	##Mission End
+	##Mission Start
+	hunt_the_szegeni_traders = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_black_fleet
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		1336 = {
+			has_privateer_share_in_trade_node = {
+    who = ROOT
+    share = 0.2
+}		
+		}
+
+725 = {
+has_privateer_share_in_trade_node = {
+    who = ROOT
+    share = 0.2
+}
+}
+
+		}
+		effect = {
+			create_admiral = { tradition = 100
+		}
+			add_mercantilism = 10
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	safety_monty = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			hunt_the_szegeni_traders
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		1336 = {
+			has_privateer_share_in_trade_node = {
+    who = ROOT
+    share = 0.33
+}		
+		}
+
+725 = {
+has_privateer_share_in_trade_node = {
+    who = ROOT
+    share = 0.33
+}
+}	
+
+1973 = {
+has_privateer_share_in_trade_node = {
+    who = ROOT
+    share = 0.33
+}
+}	
+
+2060 = {
+has_privateer_share_in_trade_node = {
+    who = ROOT
+    share = 0.33
+}
+}	
+		}
+		effect = {
+			add_treasury = 2000
+			
+				add_country_modifier = { 
+					name = protection_money
+					duration = 7500 
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	organize_raids = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			safety_monty
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	navy_size = 300
+				naval_morale = 5
+		}
+		effect = {
+						add_country_modifier = { 
+				name = raiding_lords
+				duration = 7500
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_profffesional_navy = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			organize_raids
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	navy_tradition = 50
+				
+				
+			OR = {
+				has_global_modifier_value = {
+	which = ship_durability
+	value = 0.15
+}
+
+				has_global_modifier_value = {
+	which = navy_tradition 
+	value = 2
+}			
+			}	
+
+		}
+		effect = {
+			 	add_navy_tradition = 30
+		}
+	}
+	##Mission End
+	##Mission Start
+	pirate_marines = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_profffesional_navy
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_professionalism = 0.2 
+			
+			OR = {
+			army_tradition = 75
+			navy_tradition = 75
+			}
+		}
+		effect = {
+						add_country_modifier = { 
+				name = pirate_marines
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	smash_and_grab = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			pirate_marines
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_times_used_pillage_capital = 20
+		}
+		effect = {
+						add_country_modifier = { 
+				name = smash_and_grab_mod
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	sail_rivers = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			smash_and_grab
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_light_ship = 500
+		}
+		effect = {
+			add_army_professionalism = 0.15
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+pir2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = PI7
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	ivory_trade = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			trading_part = {
+	trade_goods = ivory
+	value = 0.2
+}
+
+trade_goods_produced_amount = {
+	trade_goods = ivory
+	amount = 10
+}		
+		
+		}
+		}
+		effect = {
+			 	add_mercantilism = 10
+		}
+	}
+
+	##Mission End
+	##Mission Start
+	privateering_she_calls_it = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_ships_privateering = 400
+		}
+		effect = {
+						add_country_modifier = { 
+				name = better_privateer
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_naga_coast = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			all_pirates
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					snake_island_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					chandral_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_dip_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	plunder_lovia = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_naga_coast
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			725 = {
+			has_privateer_share_in_trade_node = {
+				who = ROOT
+				share = 0.5
+			}
+			}
+
+		}
+		effect = {
+			add_mil_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	spoils_of_jungle = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			plunder_lovia
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 100
+				region = lower_nagava_region
+			}
+		}
+		effect = {
+			add_dip_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_western_raids = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			spoils_of_jungle
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			662 = {
+			has_privateer_share_in_trade_node = {
+				who = ROOT
+				share = 0.5
+			}
+			}	
+
+			617 = {
+			has_privateer_share_in_trade_node = {
+				who = ROOT
+				share = 0.5
+			}
+			}				
+		}
+		effect = {
+			outer_island_of_bay_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			inner_island_of_bay_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	pirates_holds_almodo = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_western_raids
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+				outer_island_of_bay_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+				inner_island_of_bay_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
+		}
+
+					
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	sailor_insurance = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_profffesional_navy
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	max_sailors = 50000
+				treasury = 1000
+					}
+		effect = {
+								add_country_modifier = { 
+				name = sailor_insurance
+				duration = -1
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	meritocratic_offizier = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			sailor_insurance
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_heavy_ship = 100
+		}
+		effect = {
+			change_innovativeness = 10	
+		}
+	}
+	##Mission End
+	##Mission Start
+	motivated_sailors = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			meritocratic_offizier
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+				trade_goods = sugar
+				amount = 30
+			}
+		}
+		effect = {
+								add_country_modifier = { 
+				name = rum_rations
+				duration = 7500
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+pir3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = PI7
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_united_courts = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			republican_tradition = 90
+			 	total_development = 150		
+				}
+			
+			
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	all_pirates = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_united_courts
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			exists = PI1
+			}
+						NOT = {
+			exists = PI2
+			}
+						NOT = {
+			exists = PI3
+			}
+						NOT = {
+			exists = PI4
+			}
+						NOT = {
+			exists = PI5
+			}
+						NOT = {
+			exists = PI6
+			}
+		}
+		effect = {
+									akaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+									snake_island_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+										chandral_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_pirate_coast = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			all_pirates
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+							sparkling_islea_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+							pirate_bay_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+							eastern_desert_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+							slaver_island_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		
+		}
+		effect = {
+	
+		add_republican_tradition = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	kharin_harbour = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_pirate_coast
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		1526 = {
+		 	num_of_times_improved = 10
+			has_building = fort_15th
+			OR = {
+			has_building = marketplace			
+			has_building = stock_exchange			
+			has_building = trade_depot			
+			}
+			province_has_center_of_trade_of_level = 3
+		}
+		}
+		effect = {
+			add_yearly_sailors = 0.2
+		}
+	}
+	##Mission End
+	##Mission Start
+	kharin_grand_palace = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			kharin_harbour
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			1526 = {
+			has_great_project = {
+					type = any
+					tier = 2
+				}
+			}
+		}
+		effect = {
+		1526 = {
+			add_province_modifier = { 
+				name = great_kharin
+				duration = -1  
+			}		
+		}
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	defend_the_pirate_bay = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			kharin_grand_palace
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1530
+			owns = 1531
+			owns = 1516
+
+			1530 = {
+			fort_level = 2
+			}
+			
+			1531 = {
+			fort_level = 2
+			}
+			
+			1516 = {
+			fort_level = 2
+			}
+		}
+		effect = {
+			1530 = {
+						add_permanent_province_modifier  = { 
+				name = coastal_fortress
+				duration = -1  
+			}	
+			}
+			
+						1531 = {
+						add_permanent_province_modifier  = { 
+				name = coastal_fortress
+				duration = -1  
+			}	
+			}
+			
+						1516 = {
+						add_permanent_province_modifier  = { 
+				name = coastal_fortress
+				duration = -1  
+			}	
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	harbour_in_desert = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			defend_the_pirate_bay
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+	value = 200
+	region = piraten_coast_region
+}
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	grand_pirate_leader = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			harbour_in_desert
+			pirates_holds_almodo
+			a_pirate_bastion
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			grown_by_development = 500
+			treasury = 5000			
+		}
+
+		}
+		effect = {
+			 	change_adm = 1
+				 change_dip = 1
+				change_mil = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	raid_the_universe = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			grand_pirate_leader
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			any_country = {
+			 	is_emperor_of_china = yes
+			}
+			}
+		}
+		effect = {
+		add_splendor = 600
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_age_of_piracy = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			raid_the_universe
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			navy_size = 1000
+		}
+		effect = {
+			add_power_projection = { 
+	type = 25_permanent_power_projection
+	amount = 25 
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	plunder_for_all = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_age_of_piracy
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			monthly_income = 500
+		}
+		effect = {
+			add_stability = 3
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+pir4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = PI7
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gold_fleet = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			gold_income = 15
+					custom_trigger_tooltip = {
+			tooltip = achievement_even_better_than_piet_heyn_tooltip
+			has_country_flag = treasure_fleet_looted
+		}
+			}
+		}
+		effect = {
+			add_treasury = 1000
+			add_inflation = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	honest_trading = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			monthly_income = 50
+			trade_income_percentage = 0.5
+		}
+		effect = {
+						add_country_modifier = { 
+				name = honest_trading
+				duration = -1
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	pirates_of_the_medi = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			all_pirates
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	
+
+num_of_provinces_owned_or_owned_by_subjects_with = {
+	value = 8
+	OR = {
+	region = rogue_region	
+	region = levante_region	
+	}
+
+}
+		}
+		effect = {
+		1532 = {
+			add_siberian_construction = 400
+		}
+
+		1534 = {
+			add_siberian_construction = 400
+		}
+
+		1535 = {
+			add_siberian_construction = 400
+		}
+	
+		}
+	}
+	##Mission End
+	##Mission Start
+	thallasor_arrakeen = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			pirates_of_the_medi
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			
+1973 = {
+has_privateer_share_in_trade_node = {
+    who = ROOT
+    share = 0.33
+}
+}
+
+
+1543 = {
+has_privateer_share_in_trade_node = {
+    who = ROOT
+    share = 0.33
+}
+}		
+		}
+		effect = {
+			1977 = {
+			add_permanent_claim = ROOT
+			}
+			
+					1742 = {
+			add_permanent_claim = ROOT
+			}
+			
+					2031 = {
+			add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_small_islands_medi = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			thallasor_arrakeen
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1977
+			owns = 1742
+			owns = 2031			
+		}
+		effect = {
+			define_admiral = {
+				shock = 6
+				fire = 6
+				manuever = 6
+				siege = 6
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	raid_robin = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_small_islands_medi
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+2014 = {
+has_privateer_share_in_trade_node = {
+    who = ROOT
+    share = 0.8
+}
+}			
+		}
+		effect = {
+						robin_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_pirate_bastion = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			raid_robin
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					robin_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		effect = {
+			add_power_projection = { 
+	type = 10_permanent_power_projection
+	amount = 10 
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_immortal_coin = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_grand_piece
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2580
+		}
+		effect = {
+			set_ruler_flag = immortal
+	}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+pir5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = PI7
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	spice_fleet = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+			trading_part = {
+	trade_goods = spices
+	value = 0.3
+}
+
+trade_goods_produced_amount = {
+	trade_goods = spices
+	amount = 15
+}		
+		
+		}
+		}
+		effect = {
+			add_mercantilism = 20
+		}
+	}
+	##Mission End
+	##Mission Start
+	merc_for_hire = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			subsidised_percent_amount = { 
+	value = 0.25
+}
+			}
+		effect = {
+						add_country_modifier = { 
+				name = merc_for_hire
+				duration = -1
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	hunt_for_more_loot = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_institution = astrology_i
+		}
+		effect = {
+			set_country_flag = allow_exploration
+			create_explorer = { tradition = 50 }
+		}
+	}
+	##Mission End
+	##Mission Start
+	unkown_plunder = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			hunt_for_more_loot
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_discovered = 2060
+			has_discovered = 2878
+		}
+		effect = {
+						add_country_modifier = { 
+				name = colonization_pirates
+				duration = 7500
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	new_ports = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			unkown_plunder
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 5
+	NOT = {
+	OR = {
+	continent = africa
+	continent = asia
+	region = levante_region
+	}
+	}
+	is_city = yes
+}
+		}
+		effect = {
+			 	add_dip_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	exotic_beaches_and_treasures = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			new_ports
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			###num of provinces in the new  world
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_grand_piece = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			exotic_beaches_and_treasures
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			treasury = 15000
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_staff_of_the_sea = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_grand_piece
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

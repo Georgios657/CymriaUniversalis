@@ -1,0 +1,12 @@
+add_core = TH5
+owner = TH5
+controller = TH5
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wine
+base_manpower = 2
+capital = "Jonia"
+is_city = yes
+culture = arkadian
+religion = gayism

@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = beast_tribe
+government_rank = 1
+technology_group = selen_tech
+primary_culture = perunian
+religion = moon_and_sun
+capital = 1717	# Bayreuth
+religious_school = the_grey_wanderer
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Minoa"
+		name = "Selyra"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 2
+		female = yes
+	}
+
+}

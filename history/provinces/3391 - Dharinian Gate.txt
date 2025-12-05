@@ -1,0 +1,12 @@
+add_core = VP4
+owner = VP4
+controller = VP4
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Dharian Gate"
+is_city = yes
+culture = ayas_valley

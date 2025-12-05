@@ -1,0 +1,12 @@
+add_core = GE3
+owner = GE3
+controller = GE3
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = iron
+base_manpower = 4
+capital = "Karethorn"
+is_city = yes
+culture = myuiran
+religion = velora

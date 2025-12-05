@@ -1,0 +1,17 @@
+add_core = RB1
+owner = RB1
+controller = RB1
+hre = no
+base_tax = 4
+base_production = 5
+trade_goods = wine
+base_manpower = 3
+capital = "Rovin"
+is_city = yes
+culture = red_robin
+religion = mother_robin
+add_permanent_province_modifier = { name = blessed_earth_of_robin duration = -1 } 
+
+latent_trade_goods = {
+	coal
+}

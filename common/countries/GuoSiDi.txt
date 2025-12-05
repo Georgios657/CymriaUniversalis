@@ -1,0 +1,95 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 27 77 82}
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+	
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+    "Kazuki  " = 60
+    "Yoshio " = 60
+    "Chen" = 60
+    "Hiroshi" = 60
+    "Jiro" = 60
+    "Minjun" = 60
+    "Liang" = 60
+    "Riku" = 60
+    "Seung" = 60
+    "Wei" = 60
+    "Akio" = 60
+    "Bao" = 60
+    "Daisuke" = 60
+    "Haruto" = 60
+    "Ichiro" = 60
+    "Jinhai" = 60
+    "Kaito" = 60
+    "Masato" = 60
+    "Ren" = 60
+    "Shinji" = 60
+    "Taichi" = 60
+    "Yamato" = 60
+    "Zhi" = 60
+
+
+	
+    "Airi" = -60
+    "Kaori" = -60
+    "Xia" = -60
+    "Emiko" = -60
+    "Miko" = -60
+    "Nari" = -60
+    "Qing"  = -60
+    "Sakura" = -60
+    "Yuna" = -60
+    "Zhen" = -60
+
+
+
+}
+
+leader_names = {
+	Hao   Kenji  Ryota  Shun  Taro  Yong  Dian Hei Zhu Goro 
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+
+}
+
+fleet_names = {
+}

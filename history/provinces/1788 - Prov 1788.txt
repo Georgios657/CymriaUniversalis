@@ -1,0 +1,12 @@
+add_core = TR2
+owner = TR2
+controller = TR2
+religion = ishtara
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Awan"
+is_city = yes
+culture = utaschian

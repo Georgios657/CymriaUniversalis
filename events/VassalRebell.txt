@@ -1,0 +1,48 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = vassal_rebel
+country_event = {
+	id = vassal_rebel.1
+	title = vassal_rebel.1.t
+	desc = {
+		desc = vassal_rebel.1.desc
+
+	}
+
+	
+	picture = RELIGION_eventPicture
+
+	
+		mean_time_to_happen = {
+	months = 360	
+	}
+	
+	trigger = {
+	ai = yes
+		 	is_vassal = yes
+			liberty_desire = 100
+			overlord = {
+			truce_with = PREV
+			}
+is_at_war = no
+
+	}
+
+	
+	immediate = {
+		
+		}
+		
+	option = {
+		name = vassal_rebel.1.a	
+		declare_war_with_cb = {
+    who = overlord
+    casus_belli = cb_independence_war
+}
+		}
+		
+	}		

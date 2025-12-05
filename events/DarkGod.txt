@@ -1,0 +1,454 @@
+
+namespace = darkgod
+
+
+#####Rage of Shadows
+country_event = {
+	id = darkgod.1
+	title = darkgod.1.t
+	desc = darkgod.1.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+			estate_influence = {
+    estate = estate_god_shadow
+    influence = 30
+}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.1.a					
+		add_estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = -10
+		}
+		}
+		
+	option = {
+		name = darkgod.1.b				
+		capital_scope = {  	add_devastation = 25
+		}
+		}
+	}		
+
+###Shadow is Angry 
+country_event = {
+	id = darkgod.2
+	title = darkgod.2.t
+	desc = darkgod.2.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+			estate_influence = {
+    estate = estate_god_shadow
+    influence = 30
+}
+
+	NOT = {		
+	estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = 30
+		}	
+		}
+	}
+
+	immediate = {
+
+
+	}
+
+
+		
+	option = {
+		name = darkgod.2.b				
+		add_stability = -1
+		}
+	}		
+		
+###  Shadow Reaps the Army	
+country_event = { 
+	id = darkgod.3
+	title = darkgod.3.t
+	desc = darkgod.3.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+			estate_influence = {
+    estate = estate_god_shadow
+    influence = 30
+}
+
+	NOT = {		
+	estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = 30
+		}	
+		}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.3.a					
+		add_yearly_manpower = -1
+		}
+		
+
+	}		
+	
+###  Shadow Reaps a Leader	
+country_event = { 
+	id = darkgod.4
+	title = darkgod.4.t
+	desc = darkgod.4.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+			estate_influence = {
+    estate = estate_god_shadow
+    influence = 30
+}
+
+	NOT = {		
+	estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = 30
+		}	
+		}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.4.a					
+		kill_leader = {
+			type = random
+		}
+		}
+		
+
+	}	
+
+###  Shadow loses loyality
+country_event = { 
+	id = darkgod.5
+	title = darkgod.5.t
+	desc = darkgod.5.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+			estate_influence = {
+    estate = estate_god_shadow
+    influence = 30
+}
+
+	NOT = {		
+	estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = 30
+		}	
+		}
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.5.a					
+				add_estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = -15
+		}
+		}
+		
+
+	}		
+	
+###  Shadow more influence
+country_event = { 
+	id = darkgod.6
+	title = darkgod.6.t
+	desc = darkgod.6.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.6.a					
+				add_estate_influence_modifier  = {
+			estate = estate_god_shadow
+			 desc = EST_RISING_SHAODW
+			influence  = 15
+			 duration = 7300
+		}
+		}
+		
+
+	}	
+	
+###  Shadow less influence
+country_event = { 
+	id = darkgod.7
+	title = darkgod.7.t
+	desc = darkgod.7.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.7.a					
+				add_estate_influence_modifier  = {
+			estate = estate_god_shadow
+			 desc = EST_DYING_SHAODW
+			influence  = -10
+			 duration = 7300
+		}
+		}
+		
+
+	}	
+	
+###  Shadow strneghts our fortresses
+country_event = { 
+	id = darkgod.8
+	title = darkgod.8.t
+	desc = darkgod.8.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+			estate_influence = {
+    estate = estate_god_shadow
+    influence = 30
+}
+
+	estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = 40
+		}				
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.8.a					
+			 	every_owned_province = {
+					limit = {
+					fort_level = 1
+					}
+					add_province_modifier = { 
+					name = shadow_castle
+					duration = 7300
+				}
+				}
+		}
+		
+
+	}	
+	
+###  Shadow protecting darkness
+country_event = { 
+	id = darkgod.9
+	title = darkgod.9.t
+	desc = darkgod.9.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+			estate_influence = {
+    estate = estate_god_shadow
+    influence = 30
+}
+
+	estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = 50
+		}				
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.9.a					
+			 	add_country_modifier = { 
+    name = mantle_of_darkness
+    duration = 3650  
+}
+		}
+	}	
+	
+###  Shadow burner of stuff
+country_event = { 
+	id = darkgod.10
+	title = darkgod.10.t
+	desc = darkgod.10.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+			estate_influence = {
+    estate = estate_god_shadow
+    influence = 30
+}
+
+	estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = 50
+		}				
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.10.a					
+			 	add_country_modifier = { 
+    name = burner_of_civ
+    duration = 3650  
+}
+		}
+	}	
+	
+###  Shadow send a messenger
+country_event = { 
+	id = darkgod.11
+	title = darkgod.11.t
+	desc = darkgod.11.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+			estate_influence = {
+    estate = estate_god_shadow
+    influence = 30
+}
+
+	estate_loyalty = {
+			estate = estate_god_shadow
+			loyalty = 60
+		}				
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.11.a					
+			create_general = { 
+			tradition = 100
+			add_siege = 2
+			add_manuever = 2		
+			}
+		}
+	}		
+	
+	
+### old treasure
+country_event = { 
+	id = darkgod.12
+	title = darkgod.12.t
+	desc = darkgod.12.d
+
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		 	religion_group = dark_faith
+			
+	}
+
+	immediate = {
+
+
+	}
+
+	option = {
+		name = darkgod.12.a					
+			add_treasury = 50
+		}
+	}			

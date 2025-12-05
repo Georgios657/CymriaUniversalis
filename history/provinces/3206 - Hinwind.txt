@@ -1,0 +1,12 @@
+add_core = GE1
+owner = GE1
+controller = GE1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 5
+capital = "Astranor"
+is_city = yes
+culture = astranor
+religion = velora

@@ -1,0 +1,12 @@
+add_core = TR5
+owner = TR5
+controller = TR5
+religion = ishtara
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = slaves
+base_manpower = 1
+capital = "Rapino"
+is_city = yes
+culture = stirian

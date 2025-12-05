@@ -1,0 +1,16 @@
+add_core = ZE2
+owner = ZE2
+controller = ZE2
+culture = terephyian
+religion = phoenix_faith
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+capital = "Terrebes"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+
+center_of_trade = 1

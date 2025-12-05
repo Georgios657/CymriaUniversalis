@@ -1,0 +1,14 @@
+add_core = ZA4
+owner = ZA4
+controller = ZA4
+culture = high_bonian
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Tuathia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

@@ -1,0 +1,14 @@
+add_core = TW0
+add_core = ES2
+owner = TW0
+controller = TW0
+religion = the_silvern_guide
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = cloth
+base_manpower = 3
+capital = "Zaras"
+is_city = yes
+culture = paitoan
+fort_15th = yes

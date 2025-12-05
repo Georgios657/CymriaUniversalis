@@ -1,0 +1,14 @@
+# Anything typed here will be added to all selected province history filesculture = icelander
+add_core = ND6
+owner = ND6
+controller = ND6
+culture = icelander
+religion = varkanoth
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Krake"
+is_city = yes
+discovered_by = north_american

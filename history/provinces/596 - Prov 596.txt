@@ -1,0 +1,13 @@
+add_core = LA6
+owner = LA6
+controller = LA6
+culture = zimmern
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 3
+capital = "Mirmar"
+is_city = yes
+discovered_by = ottoman

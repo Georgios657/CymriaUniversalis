@@ -1,0 +1,12 @@
+add_core = SH1
+owner = SH1
+controller = SH1
+culture = shegen_desertfolk
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Shaelan"
+is_city = yes
+religion = moon_and_sun

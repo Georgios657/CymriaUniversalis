@@ -1,0 +1,15 @@
+add_core = U02
+owner = U02
+controller = U02
+culture = tessarini
+religion = undead_imperial_faith
+hre = no
+base_tax = 5
+base_production = 3
+trade_goods = fish
+base_manpower = 4
+capital = "Tesserina"
+is_city = yes
+discovered_by = muslim
+fort_15th = yes
+center_of_trade = 1

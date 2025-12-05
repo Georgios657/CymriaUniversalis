@@ -1,0 +1,20 @@
+add_core = MO6
+owner = MO6
+controller = MO6
+culture = gemarian
+religion = tilidian_little_gods
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = cotton
+base_manpower = 3
+capital = "Gemar-Yal"
+is_city = yes
+
+
+center_of_trade = 2
+
+add_permanent_province_modifier = {
+	name = szegeni_trading_port
+	duration = -1
+}

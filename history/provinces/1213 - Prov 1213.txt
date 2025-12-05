@@ -1,0 +1,13 @@
+add_core = HE3
+owner = HE3
+controller = HE3
+culture = shimiri
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = glass
+base_manpower = 2
+capital = "Feng-Ta"
+is_city = yes
+discovered_by = chinese

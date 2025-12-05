@@ -1,0 +1,14 @@
+add_core = AN5
+owner = EM1
+# Anything typed here will be added to all selected province history files
+controller = EM1
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fur
+base_manpower = 3
+capital = "Frostmarch"
+is_city = yes
+culture = arthian
+religion = imperial_cult
+add_core = EM1

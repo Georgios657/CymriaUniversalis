@@ -1,0 +1,10 @@
+
+culture = nopolian
+religion = amatism_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 1
+capital = "Neden"
+discovered_by = indian

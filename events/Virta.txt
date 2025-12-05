@@ -1,0 +1,1267 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = virta
+
+
+####Capital back to home
+country_event = {
+	id = virta.1
+	title = virta.1.t
+	desc = virta.1.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+	
+	}
+
+	option = {
+	name = virta.1.a		
+		ai_chance = { factor = 20 }
+
+	if = {
+	limit = {
+	owns = 2907
+	}
+	 	set_capital = 2907
+	}
+	
+	else_if  = {
+	limit = {
+	owns = 2992
+	}
+		set_capital = 2992
+	}
+
+		else_if  = {
+	limit = {
+	owns = 2913
+	}
+		set_capital = 2913
+	}
+	
+		else_if  = {
+		limit = {
+	any_owned_province = {
+	development = 15
+			OR = {
+				is_core = NC7
+				is_core = NC8
+		}
+	
+
+	}		
+		}
+
+	
+	random_owned_province = { 
+		limit = {
+			development = 15
+			OR = {
+				is_core = NC7
+				is_core = NC8
+		}
+	}
+		move_capital_effect = yes
+	}
+	}
+	
+	else = {
+		random_owned_province = {
+		limit = {
+			OR = {
+				is_core = NC7
+				is_core = NC8
+		}
+				
+		}
+
+		move_capital_effect = yes
+	}
+}
+		
+		}		
+	}
+
+	
+####Virtas Start
+country_event = {
+	id = virta.2
+	title = virta.2.t
+	desc = virta.2.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+	
+	}
+
+	option = {
+	name = virta.2.a		
+	
+	country_event = { 
+    id = virta.3
+    days = 900
+    random = 200
+}
+
+		ai_chance = { factor = 20 }
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 20
+		}
+	
+	
+	add_country_modifier = { 
+    name = lady_sassa
+    duration = -1  
+}
+		
+		}		
+	}
+
+
+	
+####Virtas Attack EM
+country_event = {
+	id = virta.3
+	title = virta.3.t
+	desc = virta.3.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+	
+	}
+
+	option = {
+	name = virta.3.a		
+		ai_chance = { factor = 20 }
+		add_stability = -3
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -50
+		}
+	
+		
+		}	
+
+	option = {
+	name = virta.3.b		
+		ai_chance = { factor = 20 }
+		declare_war_with_cb = {
+    who = EM1
+    casus_belli = cb_insult
+}
+		}		
+	}		
+	
+	
+####Grand Diet
+country_event = {
+	id = virta.4
+	title = virta.4.t
+	desc = virta.4.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+	
+	}
+
+	###Presents!
+	option = {
+	name = virta.4.a		
+	add_years_of_income = -2
+	
+	set_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 50
+}
+
+
+		
+		}
+
+	###Land!
+	option = {
+	name = virta.4.b		
+	trigger = {
+		 	crown_land_share = 15
+		}
+	change_estate_land_share = {
+    estate = estate_nobles
+    share = 10
+}
+	
+	set_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 50
+}
+
+		
+		}
+
+	###Honor for North
+	option = {
+	name = virta.4.c
+		trigger = {
+		 	prestige = -50
+		}
+			add_estate_influence_modifier = {
+    estate = estate_nobles
+    desc = COURT_ADVISOR
+    influence = 10
+    duration = 7300
+}
+
+	add_prestige = -25
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -20
+		}
+		
+		}	
+
+	###Honor for South
+	option = {
+	name = virta.4.d
+			trigger = {
+		 	prestige = -50
+		}
+	add_estate_influence_modifier = {
+    estate = estate_nobles
+    desc = COURT_ADVISOR
+    influence = 10
+    duration = 7300
+}
+		
+	add_prestige = -25	
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 20
+		}
+		
+		}	
+
+	###Southern Advisors
+	option = {
+	name = virta.4.e
+		add_country_modifier = { 
+    name = southern_advisors
+    duration = 3650
+}
+
+	add_estate_influence_modifier = {
+    estate = estate_nobles
+    desc = COURT_ADVISOR
+    influence = 10
+    duration = 7300
+}
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 35	
+		}
+		
+		}
+
+	###Northern Advisors
+	option = {
+	name = virta.4.f
+	
+	add_estate_influence_modifier = {
+    estate = estate_nobles
+    desc = COURT_ADVISOR
+    influence = 10
+    duration = 7300
+}
+
+		add_country_modifier = { 
+    name = northern_advisors
+    duration = 3650  
+}
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -35
+		}
+		
+		}		
+	}
+	
+	
+	####A new ruler is needed!
+country_event = {
+	id = virta.5
+	title = virta.5.t
+	desc = virta.5.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 50
+	}
+	
+	has_reform = two_courts
+	}
+
+	immediate = {
+	kill_heir = { allow_new_heir = no }
+	
+	define_ruler = {
+    dynasty = "Virga"
+    max_random_adm  = 2
+    max_random_dip  = 2
+    max_random_mil  = 2
+    age = 14
+    claim = 70
+}
+	}
+
+		##Northern Support
+	option = {
+	name = virta.5.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -35
+		}
+
+		
+		}
+
+		##Southern Support
+	option = {
+	name = virta.5.b		
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 35
+		}
+		
+		}
+		
+	}
+	
+	####A new heir is needed!
+country_event = {
+	id = virta.6
+	title = virta.6.t
+	desc = virta.6.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 50
+	}
+		has_reform = two_courts
+	}
+
+	immediate = {
+	kill_heir = { allow_new_heir = no }
+	
+	define_heir = {
+    male = yes
+    dynasty = ROOT
+    claim = 100
+    max_random_adm  = 3
+    max_random_dip  = 3
+    max_random_mil   = 3
+}
+	}
+
+		##Northern Support
+	option = {
+	name = virta.6.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -10
+		}
+
+		
+		}
+
+		##Southern Support
+	option = {
+	name = virta.6.b		
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 10
+		}
+		
+		}
+		
+	}	
+	
+	####Lady Sassa dies
+country_event = {
+	id = virta.7
+	title = virta.7.t
+	desc = virta.7.desc
+
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+	is_year = 1480
+		has_reform = two_courts
+	}
+
+	immediate = {
+	
+	}
+	
+	mean_time_to_happen = {
+	months = 24
+
+		}
+
+
+		
+	option = {
+	name = virta.7.a		
+		remove_country_modifier = lady_sassa
+
+		}	
+	}	
+
+	
+	###Sassa removes Bessa
+country_event = {
+	id = virta.8
+	title = virta.8.t
+	desc = virta.8.desc
+
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+
+		mean_time_to_happen = {
+	months = 24
+
+		}
+		
+	trigger = {
+	 		has_reform = two_courts
+
+has_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 66
+}
+	
+	has_country_modifier = lady_sassa
+	
+	has_ruler = "Bessa"
+	
+	is_year = 1450
+	}
+
+		
+	immediate = {
+	kill_heir = { allow_new_heir = no }
+	kill_ruler = yes
+	}
+	
+
+
+
+		
+	option = {
+	name = virta.8.a		
+		define_ruler = {
+    name = "Yva"
+    dynasty = "Virga"
+    adm = 1
+    dip = 2
+    mil = 1
+    age = 11
+    claim = 80
+	female = yes
+}
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 10
+		}
+
+		}	
+	}	
+	
+	###Sassa removes Vya
+country_event = {
+	id = virta.9
+	title = virta.9.t
+	desc = virta.9.desc
+
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+	has_country_modifier = lady_sassa
+		has_reform = two_courts
+		 	
+
+has_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 66
+}
+
+	has_ruler = "Yva"
+	
+	is_year = 1460
+	}
+
+	immediate = {
+	kill_heir = { allow_new_heir = no }
+	kill_ruler = yes
+	}
+	
+	mean_time_to_happen = {
+	months = 24
+
+		}
+
+
+		
+	option = {
+	name = virta.9.a		
+		define_ruler = {
+    name = "Bessa II"
+    dynasty = "Virga"
+    adm = 2
+    dip = 2
+    mil = 2
+    age = 13
+    claim = 70
+	female = yes
+}
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 10
+		}
+
+		}	
+	}	
+
+	###Lady Yuper
+country_event = {
+	id = virta.10
+	title = virta.10.t
+	desc = virta.10.desc
+
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+	has_reform = two_courts
+	is_year = 1450
+	}
+
+	immediate = {
+	}
+	
+	mean_time_to_happen = {
+	months = 24
+
+		}
+
+
+		
+	option = {
+	name = virta.10.a	
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -10
+		}
+		
+		add_country_modifier = { 
+    name = lady_yuper
+    duration = -1  
+}
+
+define_general = {
+	name = "Lord Kyr Yuper"
+    shock = 3
+    fire = 2
+    manuever = 2
+    siege = 1
+}
+		}	
+	}	
+	
+	###Lady Yuper dies
+country_event = {
+	id = virta.11
+	title = virta.11.t
+	desc = virta.11.desc
+
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+	has_reform = two_courts
+	is_year = 1483
+	}
+
+	immediate = {
+	}
+	
+	mean_time_to_happen = {
+	months = 12
+
+		}
+
+
+		
+	option = {
+	name = virta.11.a	
+
+		remove_country_modifier = lady_yuper
+		}	
+	}	
+
+	###Lady Yuper Nephew
+country_event = {
+	id = virta.12
+	title = virta.12.t
+	desc = virta.12.desc
+
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+	is_year = 1455
+	
+		 	has_reform = two_courts	
+NOT = {
+has_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 33
+}
+}
+
+	}
+
+	immediate = {
+		kill_heir = { allow_new_heir = no }
+	kill_ruler = yes
+	}
+	
+	mean_time_to_happen = {
+	months = 24
+
+		}
+
+
+		
+	option = {
+	name = virta.12.a	
+		define_ruler = {
+    name = "Lyr"
+    dynasty = "Virga"
+    adm = 2
+    dip = 3
+    mil = 4
+    age = 17
+    claim = 40
+}
+		}	
+	}	
+	
+	###Lady Yuper grandchild
+country_event = {
+	id = virta.13
+	title = virta.13.t
+	desc = virta.13.desc
+
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		has_reform = two_courts
+NOT = {
+has_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 33
+}
+}
+	is_year = 1472
+	}
+
+	immediate = {
+	kill_heir = { allow_new_heir = no }
+	kill_ruler = yes
+	}
+	
+	mean_time_to_happen = {
+	months = 24
+
+		}
+
+
+		
+	option = {
+	name = virta.13.a	
+	
+		define_ruler = {
+    name = "Lyr II"
+    dynasty = "Virga"
+    adm = 4
+    dip = 3
+    mil = 4
+    age = 14
+    claim = 20
+}
+	
+		}	
+	}	
+	
+	####Court chaos
+country_event = {
+	id = virta.14
+	title = virta.14.t
+	desc = virta.14.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 75
+	}
+		has_reform = two_courts
+	}
+
+	immediate = {
+	add_stability = -1
+	}
+
+		##Northern Support
+	option = {
+	name = virta.14.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -5
+		}
+
+		
+		}
+
+		##Southern Support
+	option = {
+	name = virta.14.b		
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 5
+		}
+		
+		}
+		
+	}	
+	
+	####Court chaos
+country_event = {
+	id = virta.15
+	title = virta.14.t
+	desc = virta.14.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 75
+	}
+		has_reform = two_courts
+	}
+
+	immediate = {
+	add_corruption = 2
+	}
+
+		##Northern Support
+	option = {
+	name = virta.14.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -5
+		}
+
+		
+		}
+
+		##Southern Support
+	option = {
+	name = virta.14.b		
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 5
+		}
+		
+		}
+		
+	}	
+	
+	####Court chaos
+country_event = {
+	id = virta.16
+	title = virta.14.t
+	desc = virta.14.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 75
+	}
+		has_reform = two_courts
+	}
+
+	immediate = {
+	 	add_mil_power = -50
+	}
+
+		##Northern Support
+	option = {
+	name = virta.14.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -5
+		}
+
+		
+		}
+
+		##Southern Support
+	option = {
+	name = virta.14.b		
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 5
+		}
+		
+		}
+		
+	}	
+
+	####Court chaos
+country_event = {
+	id = virta.17
+	title = virta.14.t
+	desc = virta.14.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 75
+	}
+		has_reform = two_courts
+	}
+
+	immediate = {
+	 	add_adm_power = -50
+	}
+
+		##Northern Support
+	option = {
+	name = virta.14.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -5
+		}
+
+		
+		}
+
+		##Southern Support
+	option = {
+	name = virta.14.b		
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 5
+		}
+		
+		}
+		
+	}	
+
+	####Court chaos
+country_event = {
+	id = virta.18
+	title = virta.14.t
+	desc = virta.14.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 75
+	}
+		has_reform = two_courts
+	}
+
+	immediate = {
+	 	add_dip_power = -50
+	}
+
+		##Northern Support
+	option = {
+	name = virta.14.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -5
+		}
+
+		
+		}
+
+		##Southern Support
+	option = {
+	name = virta.14.b		
+
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = 5
+		}
+		
+		}
+		
+	}		
+	
+
+	####Southern Revol
+country_event = {
+	id = virta.19
+	title = virta.19.t
+	desc = virta.19.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 75
+	}
+	
+	NOT = {
+has_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 33
+}
+}
+
+		has_reform = two_courts
+		
+		any_owned_province = {
+		is_core = NC7
+		}
+	}
+
+	immediate = {
+	 	random_owned_province = {
+			limit = {
+			is_core = NC7
+			}
+						spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+		##Northern Support
+	option = {
+	name = virta.19.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -5
+		}
+
+		
+		}
+
+		
+	}	
+
+	####Southern Revolt
+country_event = {
+	id = virta.20
+	title = virta.19.t
+	desc = virta.19.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 75
+	}
+	
+	NOT = {
+has_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 33
+}
+}
+
+		has_reform = two_courts
+		
+		any_owned_province = {
+		is_core = NC7
+		}
+	}
+
+	immediate = {
+	 	random_owned_province = {
+			limit = {
+			is_core = NC7
+			}
+						spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	 	random_owned_province = {
+			limit = {
+			is_core = NC7
+			}
+						spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}		
+	}
+
+		##Northern Support
+	option = {
+	name = virta.19.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -10
+		}
+
+		
+		}
+
+		
+	}		
+	
+	####Northern Revol
+country_event = {
+	id = virta.21
+	title = virta.21.t
+	desc = virta.21.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 75
+	}
+	
+has_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 66
+}
+
+		has_reform = two_courts
+		
+		any_owned_province = {
+		is_core = NC8
+		}
+	}
+
+	immediate = {
+	 	random_owned_province = {
+			limit = {
+			is_core = NC8
+			}
+						spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+		##
+	option = {
+	name = virta.19.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -5
+		}
+
+		
+		}
+
+		
+	}	
+
+
+	####Southern Revolt
+country_event = {
+	id = virta.22
+	title = virta.21.t
+	desc = virta.21.desc
+
+	picture = RELIGION_eventPicture
+	
+		is_triggered_only = yes
+
+	trigger = {
+	NOT = {
+	legitimacy = 75
+	}
+	
+has_government_power = {
+	mechanic_type = two_courts_mech
+	power_type = balance_of_power
+	value = 66
+}
+
+		has_reform = two_courts
+		
+		any_owned_province = {
+		is_core = NC8
+		}
+	}
+
+	immediate = {
+	 	random_owned_province = {
+			limit = {
+			is_core = NC8
+			}
+						spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	 	random_owned_province = {
+			limit = {
+			is_core = NC8
+			}
+						spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}		
+	}
+
+		##
+	option = {
+	name = virta.21.a		
+		
+		add_government_power = {
+			mechanic_type = two_courts_mech
+			power_type = balance_of_power
+			value = -10
+		}
+
+		
+		}
+
+		
+	}		
+		

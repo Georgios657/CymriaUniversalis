@@ -1,0 +1,13 @@
+add_core = HY2
+owner = HY2
+controller = HY2
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 4
+capital = "Havaberc"
+is_city = yes
+culture = yama_harpia
+religion = winged_one
+

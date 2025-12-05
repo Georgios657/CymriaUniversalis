@@ -1,0 +1,34 @@
+	########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = zombie
+country_event = {
+	id = zombie.1
+	title = varjorjen.1.t
+	desc = {
+		desc = varjorjen.1.desc
+
+	}
+
+	hidden = yes
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	
+	immediate = {
+
+	}
+		
+	option = {
+		name = varjorjen.1.a	
+		ai_chance = { factor = 75 }
+	zombie_awakening = yes	
+		}
+		
+	}		

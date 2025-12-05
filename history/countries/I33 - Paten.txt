@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = ostlander
+religion = old_imperial_faith
+capital = 100	# Bayreuth
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1420.1.1 = {
+	monarch = {
+		name = "Wilhelm II"
+		dynasty = "zu Paten und Kirchen"
+		birth_date = 1400.9.21
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}
+

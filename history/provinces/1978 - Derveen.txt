@@ -1,0 +1,12 @@
+add_core = AR0
+owner = AR0
+controller = AR0
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = spices
+base_manpower = 3
+capital = "Derveen"
+is_city = yes
+culture = arakeenian
+religion = tanatism

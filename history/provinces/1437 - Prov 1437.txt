@@ -1,0 +1,15 @@
+# Anything typed here will be added to all selected province history files
+culture = baltara
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = iron
+base_manpower = 1
+capital = "Neringa"
+is_city = yes
+discovered_by = north_american
+# Anything typed here will be added to all selected province history files
+add_core = VL3
+owner = VL3
+controller = VL3

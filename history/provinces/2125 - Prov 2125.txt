@@ -1,0 +1,19 @@
+add_core = QA6
+owner = QA6
+controller = QA6
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = copper
+base_manpower = 3
+capital = "Wast"
+is_city = yes
+culture = abyssian
+religion = asae_ya
+
+
+
+add_permanent_province_modifier = {
+	name = fire_born_plague
+	duration = -1
+}

@@ -1,0 +1,21 @@
+government = magocracy
+add_government_reform = witchking
+government_rank = 2
+technology_group = azur_tech
+primary_culture = lemukan
+religion = mrogi_wa_damu
+capital = 2223	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Sataai"
+		name = "Satara"
+		birth_date = 1395.9.21
+		dip = 6
+		adm = 5
+		mil = 0
+		female = yes
+	}
+	add_ruler_personality = wizard
+}

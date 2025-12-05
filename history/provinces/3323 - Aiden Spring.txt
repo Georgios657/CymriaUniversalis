@@ -1,0 +1,11 @@
+culture = shansharian
+religion = the_silvern_guide
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+capital = "Aiden"
+is_city = no
+native_size = 80
+native_ferocity = 15
+native_hostileness = 15

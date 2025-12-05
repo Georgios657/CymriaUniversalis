@@ -1,0 +1,15 @@
+add_core = I20
+owner = I20
+controller = I20
+culture = capitilian
+religion = old_imperial_faith
+hre = no
+base_tax = 7
+base_production = 6
+trade_goods = paper
+base_manpower = 4
+capital = "Corvinus"
+is_city = yes
+discovered_by = western
+center_of_trade = 2
+fort_15th = yes

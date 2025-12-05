@@ -1,0 +1,14 @@
+culture = lian_nomad
+religion = amatism_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Yanee"
+discovered_by = indian
+
+
+native_size = 60
+native_ferocity = 0
+native_hostileness = 0

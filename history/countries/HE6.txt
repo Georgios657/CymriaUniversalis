@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = feudal_tribe
+government_rank = 1
+technology_group = chinese
+primary_culture = yuhai
+religion = phoenix_faith
+capital = 1217	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Yuhai"
+		name = "Li"
+		birth_date = 1395.9.21
+		dip = 5
+		adm = 3
+		mil = 2
+
+	}
+
+}

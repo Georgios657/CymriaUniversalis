@@ -1,0 +1,12 @@
+add_core = WI5
+owner = WI5
+controller = WI5
+culture = jinai
+religion = mrogi_wa_damu
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = sugar
+base_manpower = 2
+capital = "Kiborundu"
+is_city = yes

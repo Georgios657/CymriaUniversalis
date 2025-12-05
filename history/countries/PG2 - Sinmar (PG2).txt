@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = elective_monarchy_reform
+government_rank = 1
+technology_group = pegmr_tech
+primary_culture = sin_peregmar
+religion = pygmer_ancestors
+capital = 3983# Bayreuth
+# Made junior partner of Ansbach 
+1430.1.1 = {
+	monarch = {
+		name = "Irk"
+		dynasty = "Lan"
+		birth_date = 1399.9.21
+		dip = 2
+		adm = 1
+		mil = 0
+	}
+}
+

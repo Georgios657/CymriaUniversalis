@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = pirate_republic_reform
+government_rank = 1
+technology_group = selen_tech
+primary_culture = gemerian
+religion = nyamism
+capital = 1958	# Bayreuth
+
+
+
+1430.1.1 = {
+	monarch = {
+		name = "Mazim"
+		dynasty = "Dior"
+		birth_date = 1351.9.21
+		dip = 3
+		adm = 3
+		mil = 5
+	}
+}

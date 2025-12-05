@@ -1,0 +1,13 @@
+add_core = CY7
+owner = CY7
+controller = CY7
+culture = cymriam
+religion = dagdism
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Atha"
+is_city = yes
+discovered_by = eastern

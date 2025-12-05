@@ -1,0 +1,14 @@
+add_core = LA2
+owner = LA2
+controller = LA2
+culture = riven
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 2
+trade_goods = naval_supplies
+base_manpower = 2
+capital = "Vergen"
+is_city = yes
+discovered_by = ottoman
+fort_15th = yes

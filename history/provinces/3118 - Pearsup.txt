@@ -1,0 +1,12 @@
+add_core = GW5
+owner = GW5
+controller = GW5
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Pearsup"
+is_city = yes
+culture = aylor_frontier
+religion = rozalia

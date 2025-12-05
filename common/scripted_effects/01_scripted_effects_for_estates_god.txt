@@ -1,0 +1,107 @@
+estate_action_HUMAN_SAC = {
+	 	random_owned_province = { 
+		add_devastation = 25
+		add_unrest = 10
+		}
+		
+	add_estate_loyalty = {
+		estate = estate_god
+		loyalty = 20
+	}
+	 	add_stability = 1
+}
+
+save_name_immortal = {
+	hidden_effect = {
+	export_to_variable = {
+    variable_name = ruler_religion_immortal
+    value = ruler_religion
+}
+
+	export_to_variable = {
+    variable_name = ruler_culture_immortal
+    value = ruler_culture
+}
+	}
+}
+
+save_ruler_stats = {
+	hidden_effect = {
+		export_to_variable = {
+			variable_name = ruler_adm
+			value = ADM
+		}
+		export_to_variable = {
+			variable_name = ruler_dip
+			value = DIP
+		}
+		export_to_variable = {
+			variable_name = ruler_mil
+			value = MIL
+		}
+	}	
+}
+
+restore_ruler_stats = {
+	custom_tooltip = restore_reviver_stats
+	
+	hidden_effect = {
+		set_variable = {
+			which = ruler_adm_temp 
+			which = ruler_adm 
+		}
+		set_variable = {
+			which = ruler_dip_temp 
+			which = ruler_dip
+		}
+		set_variable = {
+			which = ruler_mil_temp 
+			which = ruler_mil 
+		}
+		change_adm = -6
+		change_dip = -6
+		change_mil = -6
+	}
+	
+	while = {
+		limit = {
+			check_variable = {
+				which = ruler_adm_temp
+				value = 1
+			}
+		}
+		change_adm = 1
+		subtract_variable = {
+			which = ruler_adm_temp
+			value = 1
+		}
+	}
+
+	while = {
+		limit = {
+			check_variable = {
+				which = ruler_dip_temp
+				value = 1
+			}
+		}
+		change_dip = 1
+		subtract_variable = {
+			which = ruler_dip_temp
+			value = 1
+		}
+	}
+	
+	while = {
+		limit = {
+			check_variable = {
+				which = ruler_mil_temp
+				value = 1
+			}
+		}
+		change_mil = 1
+		subtract_variable = {
+			which = ruler_mil_temp
+			value = 1
+		}
+	}
+}

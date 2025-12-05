@@ -1,0 +1,13 @@
+add_core = FCA
+owner = FCA
+controller = FCA
+culture = yangaran
+religion = amatism_faith
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = grain
+base_manpower = 2
+capital = "Oneega"
+is_city = yes
+discovered_by = indian

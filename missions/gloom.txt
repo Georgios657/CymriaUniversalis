@@ -1,0 +1,877 @@
+##BranchStart 0
+gl1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = GW8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	twin_council_discuss = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			splendor = 800
+			 has_institution = feudalism
+		}
+		effect = {
+				 	add_splendor = -800
+			change_adm = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	another_discussion = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			twin_council_discuss
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			splendor = 1000
+			 has_institution = renaissance
+		}
+		effect = {
+				 	add_splendor = -1000
+			change_dip = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	more_to_talk = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			another_discussion
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			splendor = 1200
+			 has_institution = astrology_i
+		}
+		effect = {
+				 	add_splendor = -1200
+			change_mil = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	one_last_discussion = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			more_to_talk
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			splendor = 1400
+			 has_institution = printing_press
+		}
+		effect = {    
+		 	add_splendor = -1400
+		 	change_adm = 1
+			change_dip = 1		
+			change_mil = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_final_word = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			one_last_discussion
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			splendor = 1600
+			 has_institution = new_world_i
+		}
+		effect = {
+				 	add_splendor = -1600
+		 	change_adm = 1
+			change_dip = 1		
+			change_mil = 1
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+gl2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = GW8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_need_for_soul = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			gather_strength_gloom
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	
+
+has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_adm_power
+	value = 100
+}
+		}
+		effect = {
+		
+		 	change_government_reform_progress = 200
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = -100
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	lure_more = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			the_need_for_soul
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	total_development = 250
+		}
+		effect = {
+		 	change_adm = 1
+			change_dip = 1		
+			change_mil = 1			
+		}
+	}
+	##Mission End
+	##Mission Start
+	dream_seduction = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			lure_more
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_dip_power
+	value = 100
+}
+
+		}
+		effect = {
+
+		 	change_government_reform_progress = 300			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = -100
+			}
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	proactive_aquisition = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			dream_seduction
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	grown_by_states = 15
+		}
+		effect = {
+			add_country_modifier = { 
+				name = souls
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	soul_furnace = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			proactive_aquisition
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_cities = 150
+		}
+		effect = {
+			add_country_modifier = { 
+				name = soul_furnace
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+gl3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = GW8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gloom_rises = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 2
+		}
+		effect = {
+			 	add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	gather_strength_gloom = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			gloom_rises
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+				army_size = 25
+			 	power_projection = 90
+			}
+		}
+		effect = {
+			death_wood_area = {
+			add_core = ROOT
+			}
+			gretel_wood_area = {
+			add_core = ROOT
+			}
+			cross_wood_area = {
+			add_core = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	central_gloom = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			gather_strength_gloom
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			death_wood_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+			gretel_wood_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+			cross_wood_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		effect = {
+						highwood_valley_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+									tannhauser_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+									highwood_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	solve_the_elves = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			central_gloom
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			highwood_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+			tannhauser_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+			highwood_valley_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+			NOT = {
+			exists = GW7
+			}
+		}
+		effect = {
+									western_entry_wood_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+												wood_of_songs_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+												red_forrest_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_southern_gloom = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			solve_the_elves
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			western_entry_wood_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+				wood_of_songs_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+				red_forrest_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+	
+		}
+		effect = {
+												gloomwood_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	rest_of_gloom = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			the_southern_gloom
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			gloomwood_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }	
+	
+		}
+		effect = {
+												aylor_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	haunted_forrest = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			rest_of_gloom
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+	value = 500
+	region = gloomwood_region
+}
+		}
+		
+		
+
+		effect = {
+			custom_tooltip = haunted_forrest_tp
+					hidden_effect = {
+		every_owned_province = {
+			limit = {
+			region = gloomwood_region
+			}
+			add_province_modifier = { 
+				name = haunt_for
+				duration = -1  
+			}
+		}
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_dead_forrest = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			haunted_forrest
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_owned_states_with  = {
+				value = 13
+				is_prosperous = yes
+				region = gloomwood_region
+				}			
+		}
+
+		effect = {
+			custom_tooltip = dead_for_tp
+					hidden_effect = {
+		every_owned_province = {
+			limit = {
+			region = gloomwood_region
+			}
+			add_province_modifier = { 
+				name = dead_for
+				duration = -1  
+			}
+		}
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	spread_the_horror = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			the_dead_forrest
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 1250
+		}
+		effect = {
+			add_country_modifier = { 
+				name = horror_beyond
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	expanding_woods = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			spread_the_horror
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_owned_states_with  = {
+				value = 25
+				is_prosperous = yes
+				}				
+		}
+
+		effect = {
+			custom_tooltip = expand_wood_tp
+					hidden_effect = {
+		every_owned_province = {
+			limit = {
+			NOT = {
+			region = gloomwood_region
+
+			}
+			}
+			add_province_modifier = { 
+				name = expand_wood
+				duration = -1  
+			}
+		}
+		}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+gl4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = GW8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	awaken_more_trees = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			gloom_rises
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_mil_power
+	value = 100
+}				
+		}
+		effect = {
+		
+		add_yearly_manpower = 1
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -100
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_animal_carcasses = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			awaken_more_trees
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_tradition = 50
+		}
+		effect = {
+			add_country_modifier = { 
+				name = animal_car
+				duration = 7500 
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	humanoid_zombiobs = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			the_animal_carcasses
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_professionalism = 0.75 
+		}
+		effect = {
+			add_country_modifier = { 
+				name = plant_zomb
+				duration = -1 
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	infuse_them_more_magic = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			humanoid_zombiobs
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	power_projection = 100
+		}
+		effect = {
+			add_mil_power = 900
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_borderlands = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			rest_of_gloom
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		aylor_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+		
+	
+		}
+		effect = {
+						arno_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	into_the_empire = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			the_borderlands
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		arno_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }				
+
+		}
+		effect = {
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	unstoppable_horror = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			into_the_empire
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 3000
+		}
+		effect = {
+			add_country_modifier = { 
+    name = unstopp
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+gl5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = GW8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	exploit_the_woods = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	
+
+				trade_goods_produced_amount = {
+					trade_goods = naval_supplies
+					amount = 10
+				}
+		}
+		effect = {
+			 	add_years_of_income =  1
+		}
+	}
+	##Mission End
+	##Mission Start
+	restless_infracstructure = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			exploit_the_woods
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			capital_scope = {
+			development = 45
+			}
+		}
+		effect = {
+			capital_scope = {
+			add_province_modifier = {
+				name = gloom_home
+				duration = -1  			
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	magical_economy = {
+			icon = mission_build_up_to_force_limit
+		required_missions {
+			restless_infracstructure
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+		adm_tech = 15
+		splendor = 1200
+		}
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_adm_power
+	value = 50
+}		
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_dip_power
+	value = 50
+}
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_mil_power
+	value = 50
+}			
+		}
+		effect = {
+		 	add_splendor = -1200
+			add_country_modifier = { 
+				name = magic_economy
+				duration = -1  
+			}
+		
+		
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = -50
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = -50
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -50
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

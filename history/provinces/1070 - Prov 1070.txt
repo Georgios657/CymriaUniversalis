@@ -1,0 +1,19 @@
+add_core = ND1
+owner = ND1
+controller = ND1
+culture = woodlander
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Qeqqata"
+is_city = yes
+discovered_by = north_american
+
+
+
+native_size = 4
+native_ferocity = 5
+native_hostileness = 5

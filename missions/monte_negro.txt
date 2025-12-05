@@ -1,0 +1,959 @@
+##BranchStart 0
+neg1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+	NOT = {
+	has_country_flag = nefara
+	}
+		tag = U07
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	heavens_protection = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				is_year = 1575
+			estate_loyalty = {
+				estate = estate_god
+				loyalty = 65
+			}
+		}
+		effect = {
+			add_estate_influence_modifier = {
+    estate = estate_god
+    desc = PRAISE_BE_GOD
+    influence = 15
+    duration = 7300
+}
+
+add_estate_loyalty_modifier = {
+    estate = estate_god
+    desc = PRAISE_BE_GOD
+    loyalty = 10
+    duration = 7300
+}
+
+						lovia_region = {
+			discover_country = FROM
+		}
+		
+		
+		every_country = {
+		limit = {
+		religion = telcontarian
+		}
+		reverse_add_casus_belli = {
+    target = U07
+    type = cb_vassalize_mission
+}		
+		}
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_scions_of_telcontar = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			heavens_protection
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_year = 1600
+			NOT = {
+			 	any_country = { 
+				religion = telcontarian
+				total_development = 200
+				}
+			}
+		}
+		effect = {
+
+		
+			change_adm = 1
+			
+			731 = {
+			add_permanent_claim = ROOT
+			}
+			
+			729 = {
+			add_permanent_claim = ROOT
+			}
+
+			739 = {
+			add_permanent_claim = ROOT
+			}
+
+			745 = {
+			add_permanent_claim = ROOT
+			}
+
+			750 = {
+			add_permanent_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	kill_telcontar = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			the_scions_of_telcontar
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			731 = {
+			NOT = {
+				religion = telcontarian			
+			}
+			}
+			
+			729 = {
+			NOT = {
+				religion = telcontarian			
+			}
+			}
+
+			739 = {
+			NOT = {
+				religion = telcontarian			
+			}
+			}
+
+			745 = {
+			NOT = {
+				religion = telcontarian			
+			}
+			}
+
+			750 = {
+			NOT = {
+				religion = telcontarian			
+			}
+			}			
+		}
+		effect = {
+			 	change_dip = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	purge_his_faith = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			kill_telcontar
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			 	any_country = { 
+				religion = telcontarian
+				}
+			}			
+		}
+		effect = {
+			change_mil = 1
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+neg2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = {
+	has_country_flag = nefara
+	}
+		tag = U07 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_unrly_death = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			our_duty
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size = 15
+		}
+		effect = {
+			the_dead_land_region  = {					
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	take_the_wates = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			the_unrly_death
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					development_in_provinces = {
+			value = 150
+			region = the_dead_land_region
+		}
+		}
+		effect = {
+						add_ruler_modifier = { 
+							name = reclaiming_the_wastes
+							duration = -1  
+						}
+		}
+	}
+	##Mission End
+	##Mission Start
+	subjugate_the_remaining_ghots = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			take_the_wates
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			 	any_country = { 
+				OR = {
+				culture_group = undead_imperial
+				tag = U07
+				}
+
+				}
+			}
+		}
+		effect = {
+			 	add_prestige = 15
+				
+							blessed_isles_area  = {					
+				add_permanent_claim = ROOT
+			}
+			
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	take_ys = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			subjugate_the_remaining_ghots
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		blessed_isles_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+
+		}
+		effect = {
+		add_navy_tradition = 25
+								green_valley_region = {
+			discover_country = FROM
+		}
+		
+							western_valley_area  = {					
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_northern_elfs = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			take_ys
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		western_valley_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+
+		}
+		effect = {
+			 	add_treasury = 1500
+		}
+	}
+	##Mission End
+	##Mission Start
+	our_realm_of_undead = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			the_northern_elfs
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		old_empire_superregion = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+
+		}
+		effect = {
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	rebuilt_the_land = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			riches_of_old
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				num_of_times_improved_by_owner = 5
+			}
+
+		}
+		effect = {
+			 	add_years_of_income = 0.5
+		}
+	}
+	##Mission End
+	##Mission Start
+	infrastrcutre_of_death = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			rebuilt_the_land
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	temple = 30
+				workshop = 30
+				barracks = 30
+		}
+		effect = {
+		change_government_reform_progress = 250
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+neg3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = {
+	has_country_flag = nefara
+	}
+		tag = U07 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	our_duty = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			136 = {
+			 	development = 25
+			}
+		}
+		effect = {
+			136 = {
+			 	add_prosperity = 100
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_our_grip = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			our_duty
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	stability = 3			
+		}
+		effect = {
+			change_adm = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	dig_deeper = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			secure_our_grip
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			136 = {
+			has_great_project = {
+				type = any
+				tier = 3
+			}
+			}
+		}
+		effect = {
+			change_dip = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	break_spirits = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			dig_deeper
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_country_flag = cato_victorious
+		NOT = {
+		num_of_revolts = 1
+		}	
+		}
+		effect = {
+			change_mil = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	unlimited_knowledge = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			break_spirits
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			innovativeness = 50
+			has_idea = expanded_policies			
+		}
+
+		}
+		effect = {
+										osterland_region = {
+			discover_country = FROM
+		}
+
+										western_steppe_region = {
+			discover_country = FROM
+		}
+
+
+										great_steppe_region = {
+			discover_country = FROM
+		}
+
+
+										lascaria_region = {
+			discover_country = FROM
+		}		
+			add_ruler_modifier = { 
+    name = unlimited_knowledge_id
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	unlimited_power = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			unlimited_knowledge
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			monthly_adm = 11
+			monthly_dip = 11
+			monthly_mil = 11
+		}
+		effect = {
+			add_ruler_modifier = { 
+    name = mater_of_all
+    duration = -1
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	riches_of_old = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_in_states = 10
+		}
+		effect = {
+			add_ruler_modifier = { 
+    name = use_riches
+    duration = 7650
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	plunder_graves = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			riches_of_old
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 145
+			owns = 178
+			owns = 131
+			owns = 177
+		}
+		effect = {
+			add_inflation = 10
+			add_treasury = 2500
+		}
+	}
+	##Mission End
+	##Mission Start
+	scelteon_workforce = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			plunder_graves
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	total_development = 500
+		}
+		effect = {
+			add_ruler_modifier = { 
+    name = scele_work
+    duration = -1
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+neg4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = {
+	has_country_flag = nefara
+	}
+		tag = U07 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	border_of_imperial = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			our_duty
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 136
+			
+			136 = {
+			 	fort_level = 2
+			}
+			owns = 153
+			
+			153 = {
+			 	fort_level = 2
+			}
+			
+			
+		}
+		effect = {
+			add_army_tradition = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	raise_legions = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			border_of_imperial
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			land_forcelimit = 75
+		}
+		effect = {
+							schworingen_area  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	incurse_into_schwo = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			raise_legions
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		schworingen_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+	
+		}
+		effect = {
+							osterland_region  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	go_farther = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			incurse_into_schwo
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 100
+				region = osterland_region
+			}
+		}
+		effect = {
+			add_splendor = 500
+			add_prestige = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_new_ud_emperor = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			go_farther
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 250
+				superregion = new_empire_superregion
+			}
+		}
+		effect = {
+							new_empire_superregion  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	demand_alliagenace = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			the_new_ud_emperor
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		new_empire_superregion = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+				
+		}
+		effect = {
+			 	change_innovativeness = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	raise_sailors = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			riches_of_old
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		num_of_ports = 10
+		}
+		effect = {
+												imperial_sea_region = {
+			discover_country = FROM
+		}
+		
+												almodo_sea_region = {
+			discover_country = FROM
+		}
+		
+			remove_country_modifier  = no_navy
+		}
+	}
+	##Mission End
+	##Mission Start
+	undead_marines = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			raise_sailors
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			navy_size = 55
+		}
+		effect = {
+			add_ruler_modifier = { 
+    name = undead_navy
+    duration = -1
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+neg5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = {
+	has_country_flag = nefara
+	}
+		tag = U07 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_ghostly_host = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	army_tradition = 50
+		}
+		effect = {
+			add_ruler_modifier = { 
+			name = ghost_soldiers
+			duration = -1
+		}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	expand_our_capability = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			the_ghostly_host
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_professionalism = 0.60
+		}
+		effect = {
+			add_ruler_modifier = { 
+			name = master_necromancer
+			duration = -1
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	and_another_one = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			expand_our_capability
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			manpower = 100
+		}
+		effect = {
+			create_general = { tradition = 100 }
+			create_general = { tradition = 100 }
+			create_general = { tradition = 100 }
+		}
+	}
+	##Mission End
+	##Mission Start
+	more_not_stronger = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			and_another_one
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_rajput = 20
+		}
+		effect = {
+			add_ruler_modifier = { 
+			name = hordes_of_banes
+			duration = -1
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	unending_legion = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			more_not_stronger
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	land_forcelimit = 500
+		}
+		effect = {
+			add_ruler_modifier = { 
+			name = never_ending_tide
+			duration = -1
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_sceleton_force = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			unending_legion
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_professionalism = 1
+			has_commanding_three_star = yes
+		}
+		effect = {
+			add_ruler_modifier = { 
+			name = march_of_undeath
+			duration = -1
+		}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

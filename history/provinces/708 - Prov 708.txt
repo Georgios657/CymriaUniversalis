@@ -1,0 +1,13 @@
+add_core = LD9
+owner = LD9
+controller = LD9
+culture = putran
+religion = amatism_faith
+hre = yes
+base_tax = 5
+base_production = 6
+trade_goods = spices
+base_manpower = 5
+capital = "Mahdev"
+is_city = yes
+discovered_by = ottoman

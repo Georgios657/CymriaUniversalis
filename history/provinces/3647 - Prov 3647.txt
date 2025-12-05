@@ -1,0 +1,11 @@
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wool
+base_manpower = 3
+capital = "Osthafen"
+is_city = no
+
+native_size = 90
+native_ferocity = 20
+native_hostileness = 20

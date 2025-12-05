@@ -1,0 +1,12 @@
+add_core = TR5
+owner = TR5
+controller = TR5
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = slaves
+base_manpower = 1
+capital = "Vaylon"
+is_city = yes
+culture = stirian
+religion = ishtara

@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 2
+technology_group = selen_tech
+primary_culture = getrudian
+religion = ishtara
+capital = 1739
+religious_school = neshar_the_four_armed

@@ -1,0 +1,108 @@
+imperial_civil_war = {
+	potential = {
+		tag = EM1
+		NOT = {
+		has_country_flag = imp_civil_war
+		}
+	}
+
+	
+	
+	can_start = {
+		has_any_disaster = no
+		tag = EM1
+		NOT = {
+		has_ruler = "Arno"
+		}
+		NOT = {
+		stability = 3
+		}
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+		stability = 3
+		}
+	}
+		
+	
+	
+	progress = {	
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 2 }
+		}		
+		
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 90 }
+		}		
+
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 70 }
+		}			
+
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 50 }
+		}			
+
+		modifier = {
+			factor = 2
+			NOT = { legitimacy = 20 }
+		}					
+	}
+	
+	
+	
+	can_end = {
+		OR = {
+		AND = {
+		stability = 3
+		legitimacy = 100
+				
+		}
+					had_country_flag = {
+				flag = imp_civil_war
+				days = 7300
+			}
+		}
+
+	}
+	
+
+	modifier = {
+		global_manpower_modifier = -0.5
+		land_forcelimit_modifier = -0.25
+		 	global_unrest = 5
+	}	
+	
+	
+	on_start = imperial_civil_war.1
+	on_end = imperial_civil_war.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			50 = imperial_civil_war.3
+			50 = imperial_civil_war.4
+			50 = imperial_civil_war.5
+			50 = imperial_civil_war.6
+			50 = imperial_civil_war.7
+			50 = imperial_civil_war.8
+			50 = imperial_civil_war.9
+			50 = civil_war.2
+			50 = civil_war.3
+			50 = civil_war.5
+			50 = civil_war.6
+
+		
+		}
+	}
+}
+

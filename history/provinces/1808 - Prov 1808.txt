@@ -1,0 +1,12 @@
+add_core = TR8
+owner = TR8
+controller = TR8
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = copper
+base_manpower = 3
+capital = "Zaipa"
+is_city = yes
+culture = postalan
+religion = ishtara

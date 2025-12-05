@@ -1,0 +1,23 @@
+bookmark =
+{
+	name = "CYMRIA_AND_NORTH"
+	desc = "CYMRIA_AND_NORTH_DESC"
+	date = 1444.1.1
+	
+	country = CY0
+	country = CY2
+
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

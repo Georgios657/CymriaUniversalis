@@ -1,0 +1,13 @@
+add_core = EP0
+owner = EP0
+controller = EP0
+culture = ephretera
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Dharan"
+is_city = yes
+discovered_by = chinese

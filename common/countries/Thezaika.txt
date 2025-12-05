@@ -1,0 +1,101 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = {224 64 192}
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+	
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+    "Eitan" = 60
+    "Mordechai" = 60
+    "Abishai" = 60
+    "Aryeh" = 60
+    "Amos" = 60
+    "Gadi" = 60
+    "Elijahu" = 60
+    "Amit" = 60
+    "Amichai" = 60
+    "Nadav" = 60
+    "Ephraim" = 60
+    "Shirmon" = 60
+    "Eilan" = 60
+    "Chaim" = 60
+    "Adir" = 60
+    "Itamar" = 60
+    "Avner" = 60
+    "Meir" = 60
+    "Zev" = 60
+    "Jesophat" = 60
+    "Nir" = 60
+
+	
+    "Marta" = -60
+    "Leah" = -60
+    "Miriam" = -60
+    "Michal" = -60
+    "Shosanna" = -60
+    "Tzippora" = -60
+    "Naama" = -60
+    "Tamar" = -60
+    "Dana" = -60
+    "Orti" = -60
+    "Neta" = -60
+    "Ariela" = -60
+    "Ella" = -60
+    "Naomi" = -60
+    "Tamara" = -60
+    "Ravina" = -60
+    "Dina" = -60
+    "Liora" = -60
+    "Maia" = -60
+    "Chava" = -60
+    "Sarit" = -60
+
+}
+
+leader_names = {
+	Amichai Eilan Itamar Zev Amos Aryeh Eitan Jesophat Avner
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+
+}
+
+fleet_names = {
+}

@@ -1,0 +1,14 @@
+add_core = ZB1
+owner = ZB1
+controller = ZB1
+culture = vahulu
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 1
+capital = "Luykhawa"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

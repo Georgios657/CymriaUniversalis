@@ -1,0 +1,12 @@
+add_core = MO1
+owner = MO1
+controller = MO1
+culture = genharia
+religion = tilidian_little_gods
+hre = no
+base_tax = 4
+base_production= 5
+trade_goods = spices
+base_manpower = 4
+capital = "Port Yolan"
+is_city = yes

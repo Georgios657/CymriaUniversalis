@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = badenian
+religion = old_imperial_faith
+capital = 34	# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1444.1.1 = {
+	monarch = {
+		name = "Magnus"
+		dynasty = "von Luren-Tamen-Hecken"
+		birth_date = 1430.9.21
+		dip = 1
+		adm = 3
+		mil = 2
+	}
+}
+

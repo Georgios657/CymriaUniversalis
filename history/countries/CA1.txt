@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = azur_tech
+primary_culture = rheenian
+religion = asae_ya
+capital = 1993	# Bayreuth
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Cassia"
+		name = "Blerim"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+}

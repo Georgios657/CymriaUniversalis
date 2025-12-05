@@ -1,0 +1,16 @@
+add_core = ZD2
+owner = ZD2
+controller = ZD2
+culture = hymmnia
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Aerisha"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+
+fort_15th = yes

@@ -1,0 +1,15 @@
+add_core = CY2
+owner = CY2
+controller = CY2
+culture = cymriam
+religion = dagdism
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Cymria"
+is_city = yes
+discovered_by = eastern
+center_of_trade = 1
+fort_15th = yes

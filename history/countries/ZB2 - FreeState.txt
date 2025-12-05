@@ -1,0 +1,21 @@
+government = republic
+add_government_reform = freed_slaves_reform
+government_rank = 3
+technology_group = high_american
+primary_culture = zephrian
+religion = phoenix_faith
+capital = 868	# Bayreuth
+
+
+1444.1.1 = {
+	monarch = {
+		dynasty = "Asekin"
+		name = "Klios"
+		birth_date = 1411.9.21
+		dip = 2
+		adm = 3
+		mil = 6
+
+	}
+
+}

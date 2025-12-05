@@ -1,0 +1,13 @@
+add_core = I29
+owner = I29
+controller = I29
+culture = deutscherlander
+religion = old_imperial_faith
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = wool
+base_manpower = 1
+capital = "Herne"
+is_city = yes
+discovered_by = western

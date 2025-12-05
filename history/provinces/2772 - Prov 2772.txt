@@ -1,0 +1,12 @@
+add_core = BR8
+owner = BR8
+controller = BR8
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Oakridge"
+is_city = yes
+culture = hegytori
+religion = rozalia

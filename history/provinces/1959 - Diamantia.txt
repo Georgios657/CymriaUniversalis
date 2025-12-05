@@ -1,0 +1,17 @@
+add_core = PI6
+owner = PI6
+controller = PI6
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = gems
+base_manpower = 3
+capital = "Diamantia"
+is_city = yes
+culture = gemerian
+religion = nyamism
+
+add_permanent_province_modifier = {
+	name = gem_mines
+	duration = 12000
+}

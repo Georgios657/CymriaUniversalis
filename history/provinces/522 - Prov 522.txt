@@ -1,0 +1,15 @@
+add_core = FCA
+owner = FCA
+controller = FCA
+culture = zhuvilian
+religion = amatism_faith
+hre = no
+base_tax = 7
+base_production = 6
+trade_goods = silk
+base_manpower = 7
+capital = "Zhinyin"
+is_city = yes
+discovered_by = indian
+center_of_trade = 2
+fort_15th = yes

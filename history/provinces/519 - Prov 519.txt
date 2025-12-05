@@ -1,0 +1,14 @@
+add_core = FCC
+owner = FCC
+controller = FCC
+culture = yangaran
+religion = amatism_faith
+hre = no
+base_tax = 3
+base_production = 5
+trade_goods = grain
+base_manpower = 3
+capital = "Wessey"
+is_city = yes
+discovered_by = indian
+fort_15th = yes

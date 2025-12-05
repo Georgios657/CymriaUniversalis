@@ -1,0 +1,20 @@
+name = "Imperial-Vijrtanian War"
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 3001 # Kutch
+}
+
+1436.1.1 = {
+	add_attacker = AY4
+	add_attacker = EM1
+	add_defender = NC9
+}
+
+
+1444.11.10 = {
+	rem_attacker = AY4
+	rem_attacker = EM1
+
+	rem_defender = NC9
+}

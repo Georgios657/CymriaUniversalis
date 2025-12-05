@@ -1,0 +1,16 @@
+add_core = TI8
+owner = TI8
+controller = TI8
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = spices
+base_manpower = 3
+capital = "Doreta"
+is_city = yes
+culture = metona
+religion = tilidian_little_gods
+owner = TI3
+controller = TI3
+add_core_of = TI3
+add_core = TI3

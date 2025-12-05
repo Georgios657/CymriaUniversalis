@@ -1,0 +1,14 @@
+add_core = ZD9
+owner = ZD9
+controller = ZD9
+culture = ivano
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = cloth
+base_manpower = 1
+capital = "Kravata"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

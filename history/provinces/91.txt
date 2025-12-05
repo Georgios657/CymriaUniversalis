@@ -1,0 +1,13 @@
+add_core = I10
+owner = I10
+controller = I10
+culture = bakavian
+religion = old_imperial_faith
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 2
+capital = "Landle"
+is_city = yes
+discovered_by = western

@@ -1,0 +1,12 @@
+add_core = MO4
+owner = MO4
+controller = MO4
+culture = chaararian
+religion = tilidian_little_gods
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = cotton
+base_manpower = 1
+capital = "Crovi-Yal"
+is_city = yes

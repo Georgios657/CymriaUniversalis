@@ -1,0 +1,13 @@
+add_core = HB0
+owner = HB0
+controller = HB0
+culture = zhenyi
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Fenlong"
+is_city = yes
+discovered_by = chinese

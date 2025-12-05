@@ -1,0 +1,14 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Lendwyr"
+is_city = yes
+culture = fayrin
+religion = grand_mother
+fort_15th = yes
+add_core = AV2

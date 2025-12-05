@@ -1,0 +1,103 @@
+country_decisions = {
+	vajoristan = {
+		major = yes
+		potential = {
+		
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			
+		culture_group  = varjoren
+		NOT = { exists = VB0 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1158
+				province_id = 1128
+				province_id = 1133
+				province_id = 1147
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = VB0 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 1158	# Mukha
+			owns_core_province = 1128	# Zabid
+			owns_core_province = 1133	# Mukha
+			owns_core_province = 1147	# Zabid
+		}
+		effect = {
+			change_tag = VB0
+			on_change_tag_effect = yes
+			add_government_reform = united_varjorjen_tribe
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			if = {
+				limit = { ai = yes}
+				add_country_modifier = { 
+					name = the_end_times
+					duration = -1  
+				}
+			}
+			
+			great_north_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= VB0
+			}			
+
+			add_prestige = 25	
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+		revive_karla= {
+		major = yes
+		potential = {
+		 	mission_completed = like_a_daughter
+	NOT = {
+	has_country_modifier = my_daughter_in_law
+	}
+		NOT = {
+	has_country_modifier = my_daughter_in_law_blood
+	}
+		}
+		allow = {
+					has_government_power = {
+				mechanic_type = varjorjen_hunger_mechanic
+				power_type = varjorjen_hunger
+				value = 50
+			}	
+		}
+		effect = {
+				
+
+		add_country_modifier = { 
+			name = my_daughter_in_law_blood
+			duration = -1  
+		}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+}

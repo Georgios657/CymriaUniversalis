@@ -1,0 +1,176 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = undead_provinces
+
+province_event  = {
+	id = undead_provinces.1
+	title = undead_provinces.1.t
+	desc = {
+		desc = undead_provinces.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+
+	mean_time_to_happen = {
+	months = 50
+
+	modifier = {
+		factor = 2
+		development = 9
+	}
+
+	modifier = {
+		factor = 3
+		development = 15
+	}
+	
+}
+
+	trigger = {
+			has_global_flag = ended_the_curse
+		 	has_province_modifier = land_of_the_dead
+
+	}
+
+	immediate = {
+
+			
+			remove_province_modifier = land_of_the_dead
+	}
+
+	option = {
+		name = undead_provinces.1.a					
+		}
+	}
+
+country_event = {
+	id = undead_provinces.2
+	title = undead_provinces.2.t
+	desc = undead_provinces.2.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+	major_trigger = { has_discovered = 131 }
+
+	trigger = {
+	 	
+	
+		current_age = age_of_reformation
+		NOT = {
+		exists = U08
+		}
+		131 = {
+		is_empty = yes
+		}
+		 	has_discovered = 131
+	}
+
+	immediate = {
+			
+			old_empire_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core= U08
+			}			
+
+
+
+			
+					U08 = {
+					change_religion = undead_imperial_faith
+					change_technology_group = muslim
+					change_government = undead_government
+					add_government_reform = old_empire_full
+					change_primary_culture = politi
+								set_capital = 131		
+								
+				
+					}
+
+
+						131 = {
+			cede_province = U08				
+			change_trade_goods = glass
+			}
+			
+								135 = {
+			cede_province = U08				
+			}
+
+			133 = {
+			cede_province = U08				
+			}
+
+			132 = {
+			cede_province = U08				
+			}	
+			
+			complete_mission = the_empire_rises
+}
+	option = {
+	name = undead_provinces.2.a		
+		U08 = {
+		add_manpower = 100
+		add_treasury = 5000
+					define_ruler = {
+				name = "Jolien II."
+				dynasty = "Politivia"
+				adm = 4
+				dip = 4
+				mil = 4
+				age = 20
+				claim = 100			
+
+			}
+			
+						set_ruler_flag = immortal
+		
+		}
+
+	
+		every_country = {
+    limit = {
+        has_reform = old_empire_hecontarchia
+		ai = yes
+    }
+	
+	U08 = {
+	 	inherit = PREV
+	}
+}
+		}
+		
+
+	}
+	
+	
+country_event = {
+	id = undead_provinces.3
+	title = undead_provinces.3.t
+	desc = undead_provinces.3.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	immediate = {
+			
+}
+	option = {
+	name = undead_provinces.3.a		
+		add_prestige = 10
+					set_global_flag = ended_the_curse
+		}
+		
+
+	}

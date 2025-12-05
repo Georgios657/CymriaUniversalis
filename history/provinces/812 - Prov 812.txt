@@ -1,0 +1,16 @@
+add_core = ZE8
+owner = ZE8
+controller = ZE8
+culture = caian
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Caffphai"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+
+center_of_trade = 1

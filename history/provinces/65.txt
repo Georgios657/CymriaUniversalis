@@ -1,0 +1,13 @@
+add_core = I13
+owner = I13
+controller = I13
+culture = deutscherlander
+religion = old_imperial_faith
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = wool
+base_manpower = 3
+capital = "Idelberg"
+is_city = yes
+discovered_by = western

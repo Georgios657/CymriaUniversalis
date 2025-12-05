@@ -1,0 +1,23 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 2
+technology_group = nomad_group
+primary_culture = samara
+religion = tengri
+secondary_religion = phoenix_faith
+capital = 312
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1440.1.1 = {
+	monarch = {
+		name = "Madyes"
+		dynasty = "Saura"
+		birth_date = 1420.9.21
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+
+}
+

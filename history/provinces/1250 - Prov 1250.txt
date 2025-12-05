@@ -1,0 +1,13 @@
+add_core = HB2
+owner = HB2
+controller = HB2
+culture = baio
+religion = phoenix_faith
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = tea
+base_manpower = 4
+capital = "Zusha"
+is_city = yes
+discovered_by = chinese

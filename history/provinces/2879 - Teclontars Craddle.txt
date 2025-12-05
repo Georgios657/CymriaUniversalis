@@ -1,0 +1,10 @@
+culture = pullanian
+religion = telcontarian
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = wool
+base_manpower = 2
+capital = "Craddle"
+is_city = no
+center_of_trade = 1

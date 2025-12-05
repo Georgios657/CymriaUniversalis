@@ -1,0 +1,11 @@
+# Austrian Hussar
+
+type = cavalry
+ unit_type = imperial_tech
+maneuver = 2
+offensive_fire = 4
+defensive_fire = 4
+offensive_shock = 5
+defensive_shock = 3
+offensive_morale = 4	
+defensive_morale = 3

@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = aiyea
+religion = phoenix_faith
+capital = 929	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Shaar"
+		name = "Darvio"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 2
+		mil = 3
+
+	}
+
+}

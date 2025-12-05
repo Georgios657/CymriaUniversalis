@@ -1,0 +1,12 @@
+add_core = ES3
+owner = ES3
+controller = ES3
+religion = the_silvern_guide
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = slaves
+base_manpower = 1
+capital = "Bamireh"
+is_city = yes
+culture = par_harian

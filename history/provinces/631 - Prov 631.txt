@@ -1,0 +1,13 @@
+add_core = LB1
+owner = LB1
+controller = LB1
+culture = kalinian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 5
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Rountara"
+is_city = yes
+discovered_by = ottoman

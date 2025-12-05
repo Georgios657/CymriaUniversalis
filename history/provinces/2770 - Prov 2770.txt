@@ -1,0 +1,16 @@
+add_core = HA4
+owner = HA4
+controller = HA4
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Swanson"
+is_city = yes
+culture = nago_harpia
+religion = winged_one
+
+native_size = 90
+native_ferocity = 20
+native_hostileness = 20

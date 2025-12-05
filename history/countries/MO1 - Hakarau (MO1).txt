@@ -1,0 +1,19 @@
+government = native
+add_government_reform = native_hereditary_reform
+government_rank = 1
+technology_group = mesoamerican
+primary_culture = genharia
+religion = tilidian_little_gods
+capital = 3901
+
+1424.1.1 = {
+	monarch = {
+		name = "Koratare"
+		dynasty = "Harautiki"
+		birth_date = 1400.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+}

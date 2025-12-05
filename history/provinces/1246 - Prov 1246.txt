@@ -1,0 +1,13 @@
+add_core = HB8
+owner = HB8
+controller = HB8
+culture = cangai
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Hunago"
+is_city = yes
+discovered_by = chinese

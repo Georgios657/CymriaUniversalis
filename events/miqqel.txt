@@ -1,0 +1,64 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = miqqel
+
+####Miqql League
+country_event = {
+	id = miqqel.1
+	title = miqqel.1.t
+	desc = miqqel.1.desc
+
+	picture = RELIGION_eventPicture
+	
+		mean_time_to_happen = {
+	months = 120	
+	}
+
+	trigger = {
+	has_global_flag = ascaria_burger
+	owns = 617
+	owns = 618
+	owns = 616
+	
+	num_of_cities = 6
+	}
+
+	immediate = {
+	617 = {
+		 remove_core = ROOT
+	add_core  = LE2
+
+	}
+	616 = {
+			 remove_core = ROOT
+	add_core  = LE2
+
+	}	
+	618 = {
+	add_core  = LE2
+		 remove_core = ROOT
+	}	
+		 	create_vassal = LE2
+			
+			LE2 = {
+			add_government_reform = merchants_reform
+			}
+}
+	option = {
+	name = miqqel.1.a		
+		ai_chance = { factor = 20 }
+		 	add_treasury = 500
+			switch_tag = LE2
+		}
+
+	option = {
+	name = miqqel.1.b
+		ai_chance = { factor = 20 }
+		 	add_treasury = 500	
+		}
+				
+	}

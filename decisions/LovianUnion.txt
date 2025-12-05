@@ -1,0 +1,126 @@
+country_decisions = {
+	found_the_great_lodge = {
+		major = yes
+		potential = {
+		culture_group  = lovian
+		has_reform = warlock_circle
+		NOT = { exists = LV2 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 730
+				province_id = 725
+				province_id = 733
+				province_id = 735
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = LV2 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 730	# Mukha
+			owns_core_province = 725	# Zabid
+			owns_core_province = 733	# Mukha
+			owns_core_province = 735	# Zabid
+		}
+		effect = {
+			change_tag = LV2
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			lovia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= LV2
+			}			
+
+			add_prestige = 50
+			set_capital = 725		
+						if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+
+	found_the_free_state = {
+		major = yes
+		potential = {
+		culture_group  = lovian
+		NOT = {
+		has_reform = warlock_circle		
+		}
+
+		NOT = { exists = LV1 }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 730
+				province_id = 725
+				province_id = 733
+				province_id = 735
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = LV1 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 730	# Mukha
+			owns_core_province = 725	# Zabid
+			owns_core_province = 733	# Mukha
+			owns_core_province = 735	# Zabid
+		}
+		effect = {
+			change_tag = LV1
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+
+			lovia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= LV1
+			}			
+
+			add_prestige = 50
+			set_capital = 725
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}			
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}	
+}

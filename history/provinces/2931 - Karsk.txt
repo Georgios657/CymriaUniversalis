@@ -1,0 +1,13 @@
+add_core = AI7
+owner = AI7
+controller = AI7
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fur
+base_manpower = 2
+capital = "Karsk"
+is_city = yes
+culture = asyloria
+religion = icearia
+add_core = NC8

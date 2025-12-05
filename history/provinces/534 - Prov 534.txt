@@ -1,0 +1,13 @@
+add_core = FCA
+owner = FCA
+controller = FCA
+culture = yangaran
+religion = amatism_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Auras"
+is_city = yes
+discovered_by = indian

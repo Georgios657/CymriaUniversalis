@@ -1,0 +1,13 @@
+add_core = LO5
+owner = LO5
+controller = LO5
+culture = golorian
+religion = telcontarian
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 1
+capital = "Haro"
+is_city = yes
+discovered_by = ottoman

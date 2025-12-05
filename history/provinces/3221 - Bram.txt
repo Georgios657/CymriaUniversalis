@@ -1,0 +1,12 @@
+add_core = GE5
+owner = GE5
+controller = GE5
+hre = no
+base_tax = 4
+base_production =5
+trade_goods = chinaware
+base_manpower = 4
+capital = "Bram"
+is_city = yes
+culture = ithilan
+religion = velora

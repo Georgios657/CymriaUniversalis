@@ -1,0 +1,13 @@
+add_core = TW0
+add_core = TR1
+owner = TW0
+controller = TW0
+hre = no
+base_tax = 6
+base_production = 5
+trade_goods = grain
+base_manpower = 5
+capital = "Ojatak"
+is_city = yes
+culture = northern_baylonian
+religion = ishtara

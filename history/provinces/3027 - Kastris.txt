@@ -1,0 +1,13 @@
+add_core = AY5
+owner = AY5
+controller = AY5
+hre = no
+base_tax = 8
+base_production = 8
+trade_goods = chinaware
+base_manpower = 3
+capital = "Kastris"
+is_city = yes
+culture = tomyrian
+religion = rozalia
+center_of_trade = 1

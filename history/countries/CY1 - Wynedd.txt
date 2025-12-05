@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = eastern
+primary_culture = wyneddian
+religion = dagdism
+capital = 293	# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1430.1.1 = {
+	monarch = {
+		name = "Oisin III"
+		dynasty = "An Wyndedd"
+		birth_date = 1421.9.21
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+
+
+	heir = {
+		name = "Oisin IV"
+		dynasty = "An Wynedd"
+		birth_date = 1430.1.1
+		death_date = 1480.1.1
+		claim = 100
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+

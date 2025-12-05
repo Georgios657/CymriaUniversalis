@@ -1,0 +1,19 @@
+add_core = TI3
+owner = TI3
+controller = TI3
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = cotton
+base_manpower = 2
+capital = "Ace"
+is_city = yes
+culture = tilak
+religion = tilidian_little_gods
+
+add_permanent_province_modifier = { name = major_estuary_modifier duration = -1 } 
+center_of_trade = 1
+add_permanent_province_modifier = {
+	name = strait_modifier
+	duration = -1
+}

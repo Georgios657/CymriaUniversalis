@@ -1,0 +1,8 @@
+objectTypes = {
+  	pdxmesh = {
+		name = "dam_mesh"
+		file = "gfx/models/dam.mesh"
+		scale = 1
+	}
+
+}

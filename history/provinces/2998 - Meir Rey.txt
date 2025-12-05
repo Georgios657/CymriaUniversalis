@@ -1,0 +1,16 @@
+add_core = NC2
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Meir Rey"
+is_city = yes
+culture = yupera
+religion = icearia
+add_core = NC8
+add_core = NC9
+
+fort_15th = yes

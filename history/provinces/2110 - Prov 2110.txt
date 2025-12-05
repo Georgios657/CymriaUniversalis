@@ -1,0 +1,12 @@
+add_core = QQ1
+owner = QQ1
+controller = QQ1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Misson"
+is_city = yes
+culture = girai
+religion = asae_ya

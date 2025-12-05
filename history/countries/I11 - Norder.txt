@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = nordlander
+religion = old_imperial_faith
+capital = 97	# Bayreuth
+elector = yes
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1440.1.1 = {
+	monarch = {
+		name = "Gerhard X"
+		dynasty = "aus dem Norden"
+		birth_date = 1418.9.21
+		dip = 5
+		adm = 4
+		mil = 4
+	}
+}
+

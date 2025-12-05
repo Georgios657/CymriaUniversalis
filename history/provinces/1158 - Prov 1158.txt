@@ -1,0 +1,16 @@
+add_core = VA8
+owner = VA8
+controller = VA8
+# Anything typed here will be added to all selected province history files
+culture = sikkonen
+religion = thorrinian
+hre = no
+base_tax = 3
+base_production = 3
+# Anything typed here will be added to all selected province history files
+trade_goods = gems
+base_manpower = 6
+capital = "Thorrin Linna"
+is_city = yes
+discovered_by = north_american
+center_of_trade = 1

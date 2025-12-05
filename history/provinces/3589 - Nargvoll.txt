@@ -1,0 +1,12 @@
+add_core = TO6
+owner = TO6
+controller = TO6
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fur
+base_manpower = 2
+capital = "Nargvoll"
+is_city = yes
+culture = snow_trolls
+religion = fore_bearers

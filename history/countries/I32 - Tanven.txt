@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = jadisch
+religion = old_imperial_faith
+capital = 114# Bayreuth
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1440.1.1 = {
+	monarch = {
+		name = "Augustus III"
+		dynasty = "von Jade"
+		birth_date = 1429.9.21
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+

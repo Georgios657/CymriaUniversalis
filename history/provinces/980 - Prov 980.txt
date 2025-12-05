@@ -1,0 +1,14 @@
+add_core = ZB2
+owner = ZB2
+controller = ZB2
+culture = asari
+religion = phoenix_faith
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = cloth
+base_manpower = 4
+capital = "Caibe"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

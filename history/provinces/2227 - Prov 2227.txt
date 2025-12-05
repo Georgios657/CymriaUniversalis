@@ -1,0 +1,12 @@
+add_core = WI9
+owner = WI9
+controller = WI9
+culture = darian
+religion = mrogi_wa_damu
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = spices
+base_manpower = 2
+capital = "Ruwandari"
+is_city = yes

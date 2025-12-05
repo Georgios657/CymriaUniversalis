@@ -1,0 +1,22 @@
+government = republic
+add_government_reform = great_city
+government_rank = 1
+technology_group = indian
+primary_culture = nopolian
+religion = amatism_faith
+capital = 453
+historical_friend = FC1
+historical_friend = FC6
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1440.1.1 = {
+	monarch = {
+		name = "Leesa"
+		dynasty = "Zess"
+		birth_date = 1400.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}

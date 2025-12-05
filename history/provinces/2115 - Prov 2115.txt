@@ -1,0 +1,13 @@
+add_core = QA7
+owner = QA7
+controller = QA7
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = spices
+base_manpower = 4
+capital = "Gira"
+is_city = yes
+culture = girai
+religion = asae_ya
+center_of_trade = 1

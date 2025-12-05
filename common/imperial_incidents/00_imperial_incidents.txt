@@ -1,0 +1,110 @@
+incident_embargo_viscari = {
+    event = embargo_viscari.2
+	default_option = 0
+	
+	can_stop = {
+			NOT = {
+			exists = FC0
+		}	
+	}
+
+	0 = { ###Rearm the Order
+		factor = 1
+	}
+	
+	1 = { ##I dont care
+		factor = 1
+	}
+	
+}
+
+incident_comet_children = {
+    event = comet_children.2
+	default_option = 0
+	
+	can_stop = {
+			NOT = {
+			exists = LA9
+		}	
+	}
+
+	0 = { ###Rearm the Order
+		factor = 1
+		modifier = {
+			factor = 100
+			has_country_flag = for_crown
+		}		
+	}
+	
+	1 = { ##I dont care
+		factor = 1
+				modifier = {
+			factor = 100
+			has_country_flag = against_crown
+		}
+	}
+	
+}
+
+incident_rearm_order = {
+    event = rearm_order.2
+	default_option = 0
+	
+	can_stop = {
+			NOT = {
+			exists = LA4
+		}	
+	}
+
+	0 = { ###Rearm the Order
+		factor = 1
+	}
+	
+	1 = { ##I dont care
+		factor = 1
+	}
+	
+}
+
+incident_colonia_succ = {
+    event = colonia_in.2
+	default_option = 0
+	
+	can_stop = {
+		NOT = {
+		LA5 = {
+				 	is_subject_of_type_with_overlord = { who = LA0 type = personal_union }	
+		}
+
+		}
+	}
+
+	0 = { ###Indepentend Colonia with LEtnev
+		factor = 1
+	}
+	
+	1 = { ## Nothing shall change
+		factor = 1
+	}
+	
+}
+
+incident_ascaria_burgers = {
+    event = ascaria_in.2
+	default_option = 0
+	
+	can_stop = {
+			NOT = {
+			exists = LA7
+		}	
+	}
+
+	0 = { ###Support Burgers
+		factor = 1
+	}
+	
+	1 = { ## Nothing shall change
+		factor = 1
+	}
+	
+}

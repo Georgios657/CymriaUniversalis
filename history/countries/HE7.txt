@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = chinese
+primary_culture = malindi
+religion = phoenix_faith
+capital = 1207	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Masa"
+		name = "Xiun"
+		birth_date = 1395.9.21
+		dip = 3
+		adm = 2
+		mil = 3
+
+	}
+
+}

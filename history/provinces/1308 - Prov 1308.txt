@@ -1,0 +1,16 @@
+add_core = NA4
+owner = NA4
+controller = NA4
+culture = mountain_naga
+religion = naga_faith
+hre = no
+base_tax = 6
+base_production = 5
+trade_goods = spices
+base_manpower = 9
+capital = "Patrola"
+is_city = yes
+center_of_trade = 1
+# Anything typed here will be added to all selected province history files
+discovered_by = naga_tech
+fort_15th = yes

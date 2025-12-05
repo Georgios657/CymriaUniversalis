@@ -1,0 +1,42 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = imperial_tech
+primary_culture = trystane
+religion = velora
+capital = 3225	# Bayreuth
+
+1441.1.1 = {
+	monarch = {
+		dynasty = "Lorian"
+		name = "Cedrik XV."
+		birth_date = 1400.9.21
+		dip = 4
+		adm = 4
+		mil = 5
+	}
+
+	
+		heir = {
+		name = "Cedrik XVI"
+		dynasty = "Lorian"
+		birth_date = 1441.1.1
+				death_date = 1480.1.1
+		claim = 100
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+
+	queen = {
+        country_of_origin = EM1
+        name = "Arvia"
+        dynasty = "Lichian"
+        birth_date = 1424.10.14
+				death_date = 1492.6.8
+        female = yes
+        adm = 4
+        dip = 6
+        mil = 2
+    }
+}

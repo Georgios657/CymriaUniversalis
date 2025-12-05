@@ -1,0 +1,12 @@
+add_core = TO8
+owner = TO8
+controller = TO8
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Urthlind"
+is_city = yes
+culture = snow_trolls
+religion = the_great_catfish

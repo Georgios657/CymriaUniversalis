@@ -1,0 +1,12 @@
+add_core = AS5
+owner = AS5
+controller = AS5
+culture = yellow_harpia
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Avinton"
+is_city = yes

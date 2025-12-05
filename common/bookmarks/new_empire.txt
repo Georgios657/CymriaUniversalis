@@ -1,0 +1,24 @@
+bookmark =
+{
+	name = "THE_NEW_EMPIRE"
+	desc = "THE_NEW_EMPIRE_DESC"
+	date = 1444.1.1
+	
+	country = I10
+	country = I00
+	country = I17
+	country = I11
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

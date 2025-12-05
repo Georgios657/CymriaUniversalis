@@ -1,0 +1,12 @@
+add_core = TH1
+owner = TH1
+controller = TH1
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Polei"
+is_city = yes
+culture = jovian
+religion = the_silvern_guide

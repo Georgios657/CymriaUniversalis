@@ -1,0 +1,12 @@
+add_core = GE2
+owner = GE2
+controller = GE2
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Far Elwind"
+is_city = yes
+culture = trystane
+religion = velora

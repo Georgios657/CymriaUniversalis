@@ -1,0 +1,221 @@
+﻿l_english:  
+  
+  prices_cym.1.t:0 "Lack of Slaves"
+  prices_cym.1.d:0 "The golden age of slave hunting seems to be coming to an end, as more and more traditional hunting grounds are being exhausted. Soon, a severe shortage of labor will plague many countries."
+  prices_cym.1.a:0 "We need to work what we have"
+  LESS_SLAVES:0 "Lack of Slaves"
+  
+  prices_cym.2.t:0 "Salted fish"
+  prices_cym.2.d:0 "With the harsh winter approaching, it is all the more important to secure a steady supply of food. Fish, properly salted, can be harvested from the ice-free sea and transported far inland."
+  prices_cym.2.a:0 "Tasty!" 
+  SALT_AND_FISH:0 "Salted fish"
+  
+ 
+  prices_cym.3.t:0 "New Imperial seek sugar"
+  prices_cym.3.d:0 "Sugar is a rare commodity in the new empire... but the most sought-after good of the moment. And the Imperials are willing to pay almost any price for it."
+  prices_cym.3.a:0 "Sweet!" 
+  SWEET_SUGAR:0 "Imperial sugar crave"
+  
+  prices_cym.4.t:0 "Bronze Cannons"
+  prices_cym.4.d:0 "Cannons and other siege weapons can only be made from high-quality bronze, driving up the price of copper."
+  prices_cym.4.a:0 "Ka-Boom"
+  BRONZE__CANNON:0 "Bronze Cannons"
+
+  prices_cym.5.t:0 "Iron Cannons"
+  prices_cym.5.d:0 "Advancements in metalworking have made it possible to produce high-quality cannons from iron as well. Cheaper and quicker to manufacture than bronze, they have caused the market for these cannons to collapse."
+  prices_cym.5.a:0 "Better watch your fortress" 
+  IRON_CANNON:0 "Iron Cannons"
+  
+  prices_cym.6.t:0 "Grand fleets"
+  prices_cym.6.d:0 "Fleets were previously assembled only briefly during times of war, but now the first large permanent fleets are emerging, drastically increasing the demand for sails and ropes."
+  prices_cym.6.a:0 "Sing a sailor song!" 
+  SAILING_NAVY:0 "Sailing Booms"
+
+  prices_cym.7.t:0 "The rise of Armadas"
+  prices_cym.7.d:0 "Large war fleets, permanently ready for action, consume vast amounts of naval equipment and signify the growing importance of naval power in all matters."
+  prices_cym.7.a:0 "A wooden wall!"   
+  HIGH_FLEET:0 "Armadas"
+  
+  prices_cym.8.t:0 "Tropical wood for ship building"
+  prices_cym.8.d:0 "For a long time, tropical woods were considered mostly useless, but with new techniques, they can now serve as cheap—and durable—alternatives to traditional timbers. This has caused demand for old sources to plummet while demand for tropical woods surges"
+  prices_cym.8.a:0 "New forrests to fall"   
+  NEW_WOOD:0 "New Papers"
+  NEW_WOOD_MAK:0 "Tropical wood in shipbuilding"
+ 
+ 
+
+  prices_cym.10.t:0 ""
+  prices_cym.10.d:0 ""
+  prices_cym.10.a:0 ""     
+  
+  prices_cym.11.t:0 "New grapes"
+  prices_cym.11.d:0 "New grape cultivars have caused our wine production to skyrocket! Unfortunately, the market has become oversaturated as a result."
+  prices_cym.11.a:0 "Wine!" 
+  NEW_GRAPES:0 "New grapes"  
+
+  prices_cym.12.t:0 "Sweet wine"
+  prices_cym.12.d:0 "Sweeter wine has a long tradition, but it has come back into fashion in a big way, and hardly any wine is now consumed unsweetened."
+  prices_cym.12.a:0 "That tastes good!"  
+  SWEET_WINE:0 "Sweet wine"
+
+  prices_cym.13.t:0 "New draperies"
+  prices_cym.13.d:0 "Developments in textile production have increased the demand for lighter fabrics, while traditional woolen garments are being pushed further into the background."
+  prices_cym.13.a:0 "I never liked wool anyway"  
+  NEW_DRAPERIES:0 "New draperies"
+ 
+  prices_cym.14.t:0 "Growth of cities"
+  prices_cym.14.d:0 "With the growth of cities, there is less and less space for untouched wilderness where fur hunters can make their catch. Many forests are being felled to make way for farms."
+  prices_cym.14.a:0 "The land will be tamed"  
+  URBANISATION:0 "Urbanisation"
+
+  prices_cym.15.t:0 "New wool cloths"
+  prices_cym.15.d:0 "For a long time, furs were the preferred material for winter clothing, but new techniques have made fabric and wool garments cheaper to produce, reducing the reliance on furs."
+  prices_cym.15.a:0 "Stay warm!"  
+  THICK_WOOL:0 "Thick wool and cloth"
+ 
+  prices_cym.16.t:0 "Canned food"
+  prices_cym.16.d:0 "Canning has largely made the salting of food unnecessary, but it has increased the demand for meat, which can now be cheaply preserved for long periods."
+  prices_cym.16.a:0 "Food!"  
+  CANNED_FOOD:0 "Canned food"
+
+  prices_cym.17.t:0 "Plantation economy"
+  prices_cym.17.d:0 "The expansion of cotton plantations has drastically increased the demand for slaves, and they are more expensive than ever before."
+  prices_cym.17.a:0 "We need more workers!"  
+  INCRESEAD_SLAVERY:0 "Increased demand for slaves"
+
+  prices_cym.18.t:0 "Ivory art"
+  prices_cym.18.d:0 "Carvings made from ivory are common in many cultures, but with the new empire, a large new market is now opening. The demand is growing rapidly!"
+  prices_cym.18.a:0 "Quite classy"  
+  IVORY_ART:0 "Ivory art"
+
+  prices_cym.19.t:0 "Zephyrian tea culture"
+  prices_cym.19.d:0 "In Zephyria, the demand for tea is growing steadily and is even replacing wine as the drink of the moment."
+  prices_cym.19.a:0 "Cheers!"  
+  TEA_CULTURE:0 "Tea culture"
+
+  prices_cym.20.t:0 "Sumerian glaze"
+  prices_cym.20.d:0 "In Sumar, new methods for working with stoneware have been developed, known as Sumerian glaze, which has sparked a massive boom in porcelain production for the time being, as the technique quickly became widespread"
+  prices_cym.20.a:0 "Beatiful!"    
+  SUMERIAN_GLASSUR:0 "Sumerian glaze"
+ 
+  prices_cym.21.t:0 "New trade routes"
+  prices_cym.21.d:0 "With the first circumnavigation of the globe, the world enters an era of globalization. Soon, there will be no unknown lands, and everything will seem small"
+  prices_cym.21.a:0 "The world is mapped"    
+  NEW_TRADE_ROUTES:0 "New trade routes"
+
+  prices_cym.22.t:0 "Late night shifts"
+  prices_cym.22.d:0 "More and more, night shifts in the factories of the new Empire are becoming common. Coffee and tobacco help workers stay awake and calm their nerves amidst the roaring machines."
+  prices_cym.22.a:0 "Stay awake!"    
+  LATE_NIGHT_SHIFT:0 "Late night shifts"
+  
+  prices_cym.23.t:0 "Cotton cloth"
+  prices_cym.23.d:0 "Cotton is increasingly becoming the standard in textile production, causing the demand for traditional fabrics to collapse."
+  prices_cym.23.a:0 "A new mode"    
+  COTTON_CLOTH:0 "Cotton cloth"
+
+  prices_cym.24.t:0 "Bee plagues"
+  prices_cym.24.d:0 "A terrible plague has struck the honeybees, causing honey production to nearly collapse. Until they recover, only plant-based sugar remains as a substitute"
+  prices_cym.24.a:0 "At least there is a replacement"    
+  HONEY_PLAGUE:0 "Bee plague"
+
+  prices_cym.25.t:0 "Witch-Sweets"
+  prices_cym.25.d:0 "Chocolate and cocoa are new commodities, but already, with the skill of witches, they are being used to lure children. Few can resist these delights!"
+  prices_cym.25.a:0 "No, Hans, dont go!"    
+  WITCH_COCOA:0 "Witch-Sweets"
+ 
+  prices_cym.26.t:0 "Zephyrian court dresses"
+  prices_cym.26.d:0 "With the end of the revolution, the magnificent court dresses of Zephyria are once again in vogue, just like before. Once more, all the nobles strive to have the most beautiful, colorful, and elaborate garments."
+  prices_cym.26.a:0 "Nothing ever really changes"    
+  NEW_EMPIRE_ZEPHY:0 "Zephyrian court dresses"
+
+  prices_cym.27.t:0 ""
+  prices_cym.27.d:0 ""
+  prices_cym.27.a:0 ""    
+
+  prices_cym.28.t:0 "New silk moths!"
+  prices_cym.28.d:0 "A newly bred form of silkworm allows us to increase production and the amount of silk we can produce"
+  prices_cym.28.a:0 "Dress me up"    
+  NEW_SILK_MOTHS:0 "New silk moths"
+
+  prices_cym.29.t:0 "Uniforms"
+  prices_cym.29.d:0 "An organized army requires insignia, and soldiers should be easily identifiable in uniforms of the same color. These colors require an increased amount of dyeing materials, and they must consistently provide the same hue."
+  prices_cym.29.a:0 "They look daring"    
+  UNIFORM:0 "Uniforms"
+
+  prices_cym.30.t:0 "Slaughterhouses"
+  prices_cym.30.d:0 "A combination of all possible advancements now makes it possible to slaughter, butcher, and turn large quantities of livestock into consumable products in a short amount of time. However, this boom will be short-lived, as the herds will soon be depleted."
+  prices_cym.30.a:0 "Time to feast!"   
+  GRAND_STAMPEDE:0 "Slaughterhouses"  
+  
+  prices_cym.31.t:0 "Holy burning"
+  prices_cym.31.d:0 "The new fire cults that are spreading increase the demand for incense, which is increasingly burned during sacred ceremonies to call upon the countless gods."
+  prices_cym.31.a:0 "Light of god!"      
+  HOLY_BURNING:0 "Holy burning"
+
+  prices_cym.32.t:0 "Perfumes"
+  prices_cym.32.d:0 "The development of perfumes is increasing the demand for both fragrances and oils. Soon, everyone will smell good!"
+  prices_cym.32.a:0 "Perfumes!"     
+  PARFUMES:0 "Perfumes"  
+
+  prices_cym.33.t:0 "Astronomical lenses"
+  prices_cym.33.d:0 "Powerful telescopes can be built from glass, making it easy to observe the stars and their movements. Many astronomers and astrologers require these devices, and only a few are capable of delivering high-quality products"
+  prices_cym.33.a:0 "To watch heaven in is glory!"   
+  LENCESES:0 "Star gazers"  
+
+  prices_cym.34.t:0 "Palaces of light"
+  prices_cym.34.d:0 "The wealthy merchants and citizens have discovered a new architecture for themselves: large palaces with massive window fronts, replacing old building methods."
+  prices_cym.34.a:0 "How quaint!"      
+  GLASSES_FOR_EVERYONE:0 "Glass palaces"
+
+  prices_cym.35.t:0 "Lead crystal"
+  prices_cym.35.d:0 "New methods of glass production using lead allow us to produce glass in unprecedented quantities."
+  prices_cym.35.a:0 "I hope it is not toxic"      
+
+  prices_cym.36.t:0 "Imperal bureaucracy"
+  prices_cym.36.d:0 "Large empires can only be managed on the patient paper, and a bureaucracy is only as good as its scribes. The great empires of the past may have been ruled by people, but the future belongs to paper!"
+  prices_cym.36.a:0 "Passierschein A-38!"      
+  GRAND_ADMIN:0 "Bureaucracy"
+ 
+  prices_cym.37.t:0 "Printing pressing books"
+  prices_cym.37.d:0 "With the invention of the printing press, the demand for paper has skyrocketed. There are now hardly any households without books, and the growth shows no signs of slowing down."
+  prices_cym.37.a:0 "Time to read!"   
+  PRINTING_PRESS:0 "Printing press"
+
+  prices_cym.38.t:0 "New paperworking"
+  prices_cym.38.d:0 "Paper can now be produced from tropical wood using new methods, significantly reducing the cost of production. Now, everyone will truly be able to afford a book."
+  prices_cym.38.a:0 "More paper!" 
+  NEW_WOOD:0 "New paperworking"
+  
+  prices_cym.39.t:0 "Faceting"
+  prices_cym.39.d:0 "New methods of glass production allow diamonds to be cut better than ever before. The jewels now being created surpass anything seen before, and there is no noble lady or wealthy gentleman who doesn’t wish to adorn themselves with a gemstone."
+  prices_cym.39.a:0 "Fascinating"      
+
+  prices_cym.40.t:0 "Magical lenses"
+  prices_cym.40.d:0 "Diamonds, sapphires, and other gemstones can now channel and focus magical powers. With new techniques, they can be crafted better than ever before, and every wizard of note now possesses these magical lenses."
+  prices_cym.40.a:0 "Ultimate power!"        
+  MAGICAL_LENSE:0 "Magical lenses"
+  
+  
+  prices_cym.41.t:0 "To many diamonds"
+  prices_cym.41.d:0 "A gemstone is only as valuable as its rarity. The market for precious stones has now become completely flooded, and an industry that once sustained entire regions is slowly dwindling, employing only a few lucky adventurers."
+  prices_cym.41.a:0 "Demand and supply"      
+  TO_MANY_STONES:0 "To many diamonds"
+
+  prices_cym.42.t:0 "Demand for coal"
+  prices_cym.42.d:0 "New methods of iron processing require large amounts of coal, leading to the opening of mines everywhere."
+  prices_cym.42.a:0 "To set the world ablaze"      
+  MORE_COAL:0 "More coal"
+
+  prices_cym.43.t:0 "A common good"
+  prices_cym.43.d:0 "Coal mining is now a common sight, and the commodity has lost much of its former importance. Even though it is in higher demand than ever, it is so abundantly available that even the poor use it to heat their homes."
+  prices_cym.43.a:0 "Heating for everybody!"    
+  TO_MUCH_COAL:0 "A common good"
+
+  prices_cym.44.t:0 "Red Land Salt Monopoly Destroyed"
+  prices_cym.44.d:0 ""
+  prices_cym.44.a:0 ""  
+  LESS_SALT:0 "New Salts Deposits"  
+
+  prices_cym.45.t:0 ""
+  prices_cym.45.d:0 ""
+  prices_cym.45.a:0 ""        

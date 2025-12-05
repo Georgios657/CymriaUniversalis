@@ -1,0 +1,15 @@
+add_core = EP2
+add_core = EP0
+owner = EP2
+controller = EP2
+culture = ephretera
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Zirath"
+is_city = yes
+center_of_trade = 1
+discovered_by = chinese

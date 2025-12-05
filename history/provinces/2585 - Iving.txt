@@ -1,0 +1,12 @@
+add_core = VE1
+owner = VE1
+controller = VE1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Iving"
+is_city = yes
+culture = verdano
+religion = imperial_cult

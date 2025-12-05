@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = selen_tech
+primary_culture = xantian
+religion = gayism
+capital = 1734	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Cheimonoklimaka"
+		name = "Iouliana"
+		birth_date = 1395.9.21
+		female = yes
+		dip = 4
+		adm = 4
+		mil = 3
+	}
+
+}

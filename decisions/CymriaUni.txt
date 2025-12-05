@@ -1,0 +1,56 @@
+country_decisions = {
+	unite_the_valleys = {
+		major = yes
+		potential = {
+		culture_group  = cymrian
+		NOT = { exists = CYM }		
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 277
+				province_id = 285
+				province_id = 293
+				province_id = 300
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = CYM }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 277	# Mukha
+			owns_core_province = 285	# Zabid
+			owns_core_province = 293	# Mukha
+			owns_core_province = 300	# Zabid
+		}
+		effect = {
+			change_tag = CYM
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			green_valley_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= CYM
+			}			
+
+			add_prestige = 25
+			set_capital = 277		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+}

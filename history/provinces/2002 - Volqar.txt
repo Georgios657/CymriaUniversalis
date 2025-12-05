@@ -1,0 +1,12 @@
+add_core = CA8
+owner = CA8
+controller = CA8
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Volqar"
+is_city = yes
+culture = reelambian
+religion = ishtara

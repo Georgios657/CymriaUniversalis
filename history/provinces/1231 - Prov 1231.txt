@@ -1,0 +1,16 @@
+add_core = HB0
+owner = HB0
+controller = HB0
+culture = zhenyi
+religion = phoenix_faith
+hre = no
+base_tax = 7
+base_production = 5
+trade_goods = cloth
+base_manpower = 5
+capital = "Zhenyin"
+is_city = yes
+discovered_by = chinese
+
+
+center_of_trade = 1

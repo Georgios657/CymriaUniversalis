@@ -1,0 +1,13 @@
+add_core = LD4
+owner = LD4
+controller = LD4
+culture = gassalian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Bezirte"
+is_city = yes
+discovered_by = ottoman

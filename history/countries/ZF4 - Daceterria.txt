@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = dacer
+religion = phoenix_faith
+capital = 945	# Bayreuth
+
+
+1420.1.1 = {
+	monarch = {
+		dynasty = "Akadeva"
+		name = "Nario"
+		birth_date = 1415.9.21
+		dip = 3
+		adm = 2
+		mil = 3
+
+	}
+
+}

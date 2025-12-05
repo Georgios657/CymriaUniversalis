@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_despotism
+government_rank = 1
+technology_group = chinese
+primary_culture = huan
+religion = phoenix_faith
+capital = 1260	# Bayreuth
+
+
+1400.1.1 = {
+	monarch = {
+		dynasty = "Qi"
+		name = "Li"
+		birth_date = 1395.9.21
+		dip = 2
+		adm = 3
+		mil = 2
+
+	}
+
+}

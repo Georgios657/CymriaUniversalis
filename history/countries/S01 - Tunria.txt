@@ -1,0 +1,23 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = nomad_group
+primary_culture = vsacanian
+religion = tengri
+secondary_religion = dagdism
+capital = 309
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1420.1.1 = {
+	monarch = {
+		name = "Octamasades"
+		dynasty = "Turri"
+		birth_date = 1400.9.21
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+
+}
+

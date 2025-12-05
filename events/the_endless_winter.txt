@@ -1,0 +1,260 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = the_endless_winter
+
+country_event = {
+	id = the_endless_winter.1
+	title = the_endless_winter.1.t
+	desc = the_endless_winter.1.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+	OR = {
+		current_age = age_of_reformation
+		is_year = 1510
+	}
+		NOT = {
+		has_global_flag = new_sun
+		}
+	}
+
+	immediate = {
+	hidden_effect = {
+			 	every_province = { 
+				limit = {
+				OR = {
+				region = gyntenland_region
+				region = jotunheim_region
+				region = sveri_region
+				region = qareli_region
+				superregion = high_up_north
+				superregion = the_near_north
+				region = white_land_region
+				}
+			NOT = {
+			province_id = 1079
+			}
+				}
+				add_permanent_province_modifier = { 
+					name = harsh_winter
+					duration = -1  
+				}
+				
+				}
+}
+}
+	option = {
+	name = the_endless_winter.1.a		
+		change_price = {
+    trade_goods = grain
+    key = colder_climate
+    value = 0.1
+    duration = -1
+}
+
+change_price = {
+    trade_goods = fur
+    key = colder_climate
+    value = 0.25
+    duration = -1
+}
+
+		}
+		
+
+	}
+	
+country_event = {
+	id = the_endless_winter.2
+	title = the_endless_winter.2.t
+	desc = the_endless_winter.2.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+	OR = {
+		current_age = age_of_absolutism
+		is_year = 1630
+	}
+			NOT = {
+		has_global_flag = new_sun
+		}
+	}
+
+	immediate = {
+	hidden_effect = {
+			 	every_province = { 
+				limit = {
+				has_province_modifier = harsh_winter
+
+				}
+				remove_province_modifier = harsh_winter
+				add_permanent_province_modifier = { 
+					name = harsher_winter
+					duration = -1  
+				}
+				
+				}		
+	
+			 	every_province = { 
+				limit = {
+				OR = {
+				region = dharim_region
+				region = ayasan_region
+				region = aylorian_region
+				region = meiren_march_region
+				region = viria_region
+				region = asyloria_region
+				
+				
+						region = hue_region
+				superregion = the_phoenix_empire
+				superregion = the_great_steppe
+				superregion = old_empire_superregion
+				superregion = new_empire_superregion
+				region = zevo_mountains_region
+				region = seeren_region
+				region = minoria_region
+				region = ephrete_region
+				region = green_valley_region
+				}
+				NOT = {
+				OR = {
+				area = Varunapuri_area
+				area = Agniyana_area
+				area = Shaktivan_area
+				region = zephyria_region
+				region = great_flevia_region	
+				province_id = 273				
+				}
+
+				}
+				}
+				add_permanent_province_modifier = { 
+					name = harsh_winter
+					duration = -1  
+				}
+				
+				}
+				
+			
+}
+}
+	option = {
+	name = the_endless_winter.2.a		
+
+		}
+	}	
+	
+country_event = {
+	id = the_endless_winter.3
+	title = the_endless_winter.3.t
+	desc = the_endless_winter.3.desc
+
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		current_age = age_of_revolutions
+		NOT = {
+		has_global_flag = new_sun
+		}
+	}
+
+	immediate = {
+	hidden_effect = {
+				 	every_province = { 
+				limit = {
+				has_province_modifier = harsher_winter
+
+				}
+								remove_province_modifier = harsher_winter
+				add_permanent_province_modifier = { 
+					name = harshest_winter
+					duration = -1  
+				}
+				
+				}
+				
+			 	every_province = { 
+				limit = {
+				has_province_modifier = harsh_winter
+
+				}
+						remove_province_modifier = harsh_winter
+				add_permanent_province_modifier = { 
+					name = harsher_winter
+					duration = -1  
+				}
+				
+				}		
+	
+			 	every_province = { 
+				limit = {
+				OR = {
+				region = arno_region	
+				region = aylor_region	
+				region = northern_broden_region	
+				region = eastern_broden_region	
+				region = harpy_mountains_region	
+				region = mareland_region	
+				region = broden_region	
+				region = great_flevia_region	
+				region = zephyria_region
+				
+				region = assay_region
+				region = haria_region
+				
+				superregion = almodoszra
+				superregion = poorv
+				
+				area = heat_land_area
+				area = lek_area
+				area = koko_area
+				area = lefall_area
+				area = western_lefall_area
+				area = qaram_area
+				area = musero_area
+				area = eastern_musero_area
+				area = red_border_area
+				}
+				NOT = {
+				OR = {
+				area = letor_area
+				area = minar_area
+				area = blessed_isles_area
+				has_climate = tropical
+				region = yangara_region
+				region = lovia_region
+				region = numaria_region
+				region = talaria_region
+				}
+				}
+				}
+				add_permanent_province_modifier = { 
+					name = harsh_winter
+					duration = -1  
+				}
+				
+				}
+				
+	}		
+}
+	option = {
+	name = the_endless_winter.3.a		
+
+		}
+	}	

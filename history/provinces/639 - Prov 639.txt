@@ -1,0 +1,14 @@
+add_core = LB3
+owner = LB3
+controller = LB3
+culture = outer_kalinian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+capital = "Anto Gasas"
+is_city = yes
+discovered_by = ottoman
+fort_15th = yes

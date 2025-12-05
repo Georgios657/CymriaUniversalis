@@ -1,0 +1,12 @@
+add_core = TO1
+owner = TO1
+controller = TO1
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = salt
+base_manpower = 3
+capital = "Skafnvik"
+is_city = yes
+culture = hill_trolls
+religion = fore_bearers

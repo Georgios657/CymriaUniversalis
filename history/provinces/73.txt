@@ -1,0 +1,16 @@
+add_core = I17
+owner = I17
+controller = I17
+culture = capitilian
+religion = old_imperial_faith
+hre = no
+base_tax = 5 
+base_production = 4
+trade_goods = glass
+base_manpower = 3
+capital = "Willingendorf"
+is_city = yes
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

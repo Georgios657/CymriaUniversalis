@@ -1,0 +1,13 @@
+add_core = S19
+owner = S19
+controller = S19
+culture = kravolian
+religion = katrova_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Taschaba"
+is_city = yes
+discovered_by = indian

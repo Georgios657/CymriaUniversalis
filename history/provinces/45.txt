@@ -1,0 +1,13 @@
+add_core = I26
+owner = I26
+controller = I26
+culture = badenian
+religion = old_imperial_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 3
+capital = "Possen"
+is_city = yes
+discovered_by = western

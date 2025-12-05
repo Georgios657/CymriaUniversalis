@@ -1,0 +1,13 @@
+add_core = FCF
+owner = FCF
+controller = FCF
+culture = xomxian
+religion = amatism_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+capital = "Covto"
+is_city = yes
+discovered_by = indian

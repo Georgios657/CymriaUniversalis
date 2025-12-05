@@ -1,0 +1,12 @@
+add_core = ZR8
+owner = ZR8
+controller = ZR8
+culture = karavanarian
+religion = yazida
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Azhuaran"
+is_city = yes

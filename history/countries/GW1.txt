@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = imperial_tech
+primary_culture = far_aylor
+religion = imperial_cult
+capital = 3128
+
+1444.1.1 = {
+	monarch = {
+		name = "Jerve"
+		dynasty = "Lichian"
+		birth_date = 1410.9.21
+		dip = 4
+		adm = 2
+		mil = 4
+female = yes
+	}
+
+}

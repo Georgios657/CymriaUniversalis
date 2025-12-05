@@ -1,0 +1,1275 @@
+##BranchStart 0
+scourge1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = GE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_dark_arts = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 2
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	perfect_the_awakeing = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_dark_arts
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_adm_power
+	value = 50
+}	
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_dip_power
+	value = 50
+}
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_mil_power
+	value = 50
+}	
+				
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = -50
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = -50
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -50
+			}		
+		
+			add_mil_power = 200
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_library_of_yalthan = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			perfect_the_awakeing
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 3229
+		}
+		effect = {
+			set_ruler_flag = immortal
+			custom_tooltip = immortality
+		}
+	}
+	##Mission End
+	##Mission Start
+	death_incarnate = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_library_of_yalthan
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_adm_power
+	value = 100
+}		
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_dip_power
+	value = 100
+}
+
+			has_government_power = {
+	mechanic_type = magic_spell_mechanic
+	power_type = magic_mil_power
+	value = 100
+}	
+	
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = -100
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = -100
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -100
+			}		
+		
+			add_country_modifier = { 
+				name = death_incarnate
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	call_dark_elves = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			death_incarnate
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						has_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = 150
+			}		
+
+						has_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = 150
+			}
+
+						has_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = 150
+			}	
+							
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_adm_power
+				value = -150
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_dip_power
+				value = -150
+			}
+			
+						add_government_power = {
+				mechanic_type = magic_spell_mechanic
+				power_type = magic_mil_power
+				value = -150
+			}			
+		
+			custom_tooltip = dark_els_mercs
+		}
+	}
+	##Mission End
+	##Mission Start
+	challenge_morrigan = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			call_dark_elves
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			power_projection = 90
+			total_development = 5000
+		}
+		effect = {
+			remove_country = yes
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_city_of_dammed = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 3225
+			3225 = {
+			 	development = 20
+			}
+		}
+		effect = {
+			add_years_of_income = 0.5
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_gates_of_unlife = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_city_of_dammed
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 3225
+			3225 = {
+			 	development = 25
+			}			
+			
+			monthly_adm = 14
+		}
+		effect = {
+				3225 = {
+			add_province_modifier = { 
+				name = gate_of_unlife
+				duration = -1  
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_palace_of_death = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_gates_of_unlife
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 3225
+			3225 = {
+			 	development = 40
+			}			
+			
+		}
+		effect = {
+		3225 = {
+					add_province_modifier = { 
+				name = palace_of_death
+				duration = -1  
+			}		
+		}
+	
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_tower_of_power = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_palace_of_death
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 3225
+			3225 = {
+			 	development = 75
+			}	
+		}
+		effect = {
+		
+			add_country_modifier = { 
+				name = tower_of_power
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+scourge2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = GE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	hunt_and_awaken_calmor = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_revenge
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 3215
+			NOT = {
+			exists = GE2
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = treasurer
+				name = "Calmor Lorian"
+				skill = 5
+				cost_multiplier = 0
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_lands_of_death = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			punish_serantia
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 250
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			region = gelros_region
+			}
+				add_province_modifier = { 
+				name = land_of_death
+				duration = -1  
+			}				
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	ship_plague_and_death = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			hunt_the_last_humans
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+						custom_trigger_tooltip = {
+			tooltip = has_ally_wizard_witch
+			ROOT = {
+			any_ally = {
+				ruler_has_personality = wizard
+				culture_group = wissian
+				}			
+			}			
+			}		
+			
+			innovativeness = 15
+		}
+
+		}
+		effect = {
+			 	add_yearly_manpower = 2
+				
+							custom_tooltip = ship_plague
+							
+				hidden_effect = {
+   every_owned_province = {
+   every_neighbor_province  = { 
+   limit = {
+   NOT = {
+   tag = GE2
+   }
+   }
+      destroy_province_effect = yes
+	  add_devastation = 20
+   }
+
+   }
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	expand_the_death = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_gelros
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 750
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			NOT = {
+			region = gelros_region			
+			}
+			
+			}
+				add_province_modifier = { 
+				name = land_of_death
+				duration = -1  
+			}				
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	awaken_old_brodian_kings = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			into_broden
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2679
+			2679 = {
+			 	development = 12
+			}
+		}
+		effect = {
+			define_general = {
+			name = "Farkas the Great"
+			shock = 5
+			fire = 5
+			manuever = 5
+			siege = 3
+			}
+			
+			define_general = {
+			name = "Boros the Founder"
+			shock = 6
+			fire = 6
+			manuever = 5
+			siege = 3
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	imperial_battlesites = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			lich_vs_me
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2616
+			owns = 3013
+		}
+		effect = {
+			add_manpower = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	marian_hill_graves = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			into_maria
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2633
+			2633 = {
+			 	development = 8
+			}
+		}
+		effect = {
+			add_manpower = 5
+			add_treasury = 1000
+		}
+	}
+	##Mission End
+	##Mission Start
+	unite_all_under_sceleton = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_corpse_empire
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		NOT = {
+		 	average_home_autonomy = 10
+		}
+	
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	no_more_resistance = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			unite_all_under_sceleton
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		NOT = {
+			any_owned_province  = {
+					unrest = 0				
+
+			}		
+		}
+
+
+		}
+		effect = {
+			add_devotion = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	unity_in_rulership = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			no_more_resistance
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 3
+		}
+		effect = {
+			change_government_reform_progress = 200
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+scourge3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = GE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_revenge = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_at_war = no
+			owns = 3225
+			owns = 3217
+			owns = 3223
+		}
+		effect = {
+			add_devotion = 10
+			add_prestige = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	punish_serantia = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_revenge
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			exists = GE2
+			}
+			
+			num_of_provinces_in_states = 12
+		}
+		effect = {
+			3225 = {
+			 	add_base_tax = 3
+			 	add_base_production = 3
+			 	add_base_manpower  = 3
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	hunt_the_last_humans = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			punish_serantia
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			num_of_revolts = 1
+			}
+			
+			stability = 1
+			
+			NOT = {
+			 	average_autonomy = 15
+			}
+			NOT = {			
+			any_owned_province  = {
+
+			unrest = 0
+			}
+			}
+		}
+		effect = {
+		gelros_region  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_gelros = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			hunt_the_last_humans
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					gelros_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }					
+		}
+		effect = {
+			reverse_add_opinion = {
+				who = GE8
+				modifier = aggressive_expansion
+				multiplier = 50
+			}
+		broden_region  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	into_broden = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_gelros
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						broden_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }					
+		
+		}
+		effect = {
+		verdant_region  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	lich_vs_me = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			into_broden
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						verdant_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }					
+	
+		}
+		effect = {
+		mareland_region  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	into_maria = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			lich_vs_me
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						mareland_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }					
+	
+		}
+		effect = {
+		empire_of_humanity  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_corpse_empire = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			into_maria
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 50
+	superregion = empire_of_humanity
+	is_city = yes
+}
+		}
+		effect = {
+			3225 = {
+			add_base_tax = 10
+			add_base_production = 10
+			add_base_manpower = 10
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	scourge_of_eryndor = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_corpse_empire
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	value = 200
+	continent = eryndor
+	is_city = yes
+}
+		}
+		effect = {
+		gloomwood_region  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	kill_gloomwood = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			scourge_of_eryndor
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			gloomwood_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }						
+		}
+		effect = {
+		eryndor  = {					
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	scourge_of_humanity = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			kill_gloomwood
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	num_of_provinces_in_states = 500
+		}
+		effect = {
+			3225 = {
+			add_base_tax = 30
+			add_base_production = 30
+			add_base_manpower = 30
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+scourge4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = GE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	loyal_minions = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_revenge
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			devotion = 100
+		}
+		effect = {
+			add_devotion = -50
+			add_army_tradition = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	kill_and_raise = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			loyal_minions
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			devotion = 100
+			manpower = 250
+		}
+		effect = {
+			add_devotion = -50
+			
+					add_country_modifier = { 
+				name = never_ending_army
+				duration = -1  
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	more_power_for_minions = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			kill_and_raise
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					devotion = 100
+			army_tradition = 75
+		}
+		effect = {
+			add_devotion = -50
+					add_country_modifier = { 
+				name = powersurge
+				duration = 7500 
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	bane_generals = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			more_power_for_minions
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					devotion = 100
+			 	has_commanding_three_star = yes
+		}
+		effect = {
+			add_devotion = -50
+					add_country_modifier = { 
+				name = bane_general
+				duration = 36500 
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	train_troops_in_new_skil = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			bane_generals
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					devotion = 100
+			army_professionalism = 0.5 			
+		}
+		effect = {
+			add_devotion = -50
+			 	add_mil_power = 250
+		}
+	}
+	##Mission End
+	##Mission Start
+	fill_the_ranks = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			train_troops_in_new_skil
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					devotion = 100
+			has_global_modifier_value = {
+				which = global_manpower_modifier
+				value = 0.5
+			}
+		}
+		effect = {
+			add_devotion = -50
+					add_country_modifier = { 
+				name = the_grand_army
+				duration = 36500 
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_neverending_army = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			fill_the_ranks
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			land_forcelimit = 1000
+		}
+		effect = {
+			add_army_professionalism = 0.15
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+scourge5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = GE8
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_taste_of_power = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_institution = renaissance
+		}
+		effect = {
+			change_adm = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_souldrink = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_taste_of_power
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	crown_land_share = 80
+
+		}
+		effect = {
+			change_dip = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	drink_mages_souls = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_souldrink
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_times_used_pillage_capital = 5
+		}
+		effect = {
+			change_mil = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	suck_the_life_of_the_land = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			drink_mages_souls
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				is_prosperous = yes
+				is_city = yes
+			}
+		}
+		effect = {
+			change_adm = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_thousand_tears = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			suck_the_life_of_the_land
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			monthly_income = 50
+		}
+		effect = {
+			 	change_dip = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_feathers_of_harpians = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_thousand_tears
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			owns = 3386		
+			owns = 2835		
+		}
+
+		}
+		effect = {
+			change_adm = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_heart_of_elfs = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_feathers_of_harpians
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 3070
+		}
+		effect = {
+			change_dip = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_blood_of_scorpions = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_heart_of_elfs
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			any_owned_province = {
+			region = red_region
+			}
+		}
+		effect = {
+			 	change_adm = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_soul_of_gods = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_blood_of_scorpions
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 2512
+		}
+		effect = {
+			change_dip = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	endbringer = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_soul_of_gods
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	great_power_rank = 1
+				NOT = {
+				 	great_power_rank = 2
+				}
+		}
+		effect = {
+			 	change_adm = 1
+				change_dip = 1
+				change_mil = 1
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

@@ -1,0 +1,13 @@
+add_core = LD5
+owner = LD5
+controller = LD5
+culture = gassalian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = copper
+base_manpower = 3
+capital = "Forza"
+is_city = yes
+discovered_by = ottoman

@@ -1,0 +1,12 @@
+add_core = TW4
+owner = TW4
+controller = TW4
+hre = no
+base_tax = 8
+base_production = 8
+trade_goods = grain
+base_manpower = 5
+capital = "Arapilla"
+is_city = yes
+culture = central_baylonian
+religion = ishtara

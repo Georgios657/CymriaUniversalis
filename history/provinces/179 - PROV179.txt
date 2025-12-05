@@ -1,0 +1,13 @@
+add_core = U00
+owner = U00
+controller = U00
+culture = tritoni
+religion = undead_imperial_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = copper
+base_manpower = 2
+capital = "Datus"
+is_city = yes
+discovered_by = muslim

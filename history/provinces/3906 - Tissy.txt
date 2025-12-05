@@ -1,0 +1,17 @@
+add_core = MO2
+owner = MO2
+controller = MO2
+culture = genharia
+religion = tilidian_little_gods
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = cotton
+base_manpower = 2
+capital = "Tissy"
+is_city = yes
+
+add_permanent_province_modifier = {
+	name = strait_modifier
+	duration = -1
+}

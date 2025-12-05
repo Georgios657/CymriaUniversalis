@@ -1,0 +1,12 @@
+add_core = GW4
+owner = GW4
+controller = GW4
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 2
+capital = "Agror"
+is_city = yes
+culture = aylor_frontier
+religion = rozalia

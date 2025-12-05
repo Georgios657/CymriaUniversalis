@@ -1,0 +1,12 @@
+add_core = TI3
+owner = TI3
+controller = TI3
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = cotton
+base_manpower = 3
+capital = "Nabulfin"
+is_city = yes
+culture = tilak
+religion = tilidian_little_gods

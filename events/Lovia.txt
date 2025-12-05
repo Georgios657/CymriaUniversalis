@@ -1,0 +1,402 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = lovia
+
+country_event = {
+	id = lovia.1
+	title = lovia.1.t
+	desc = {
+		desc = lovia.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+		has_reform  = warlock_circle
+	}
+	
+	immediate = {
+		add_ruler_personality = wizard
+		set_ruler_flag = blood
+		
+		add_ruler_modifier = { 
+				name = blood_mage
+				duration = -1  
+			}	 	
+		
+		}
+
+		
+	option = { ##Ignore them
+		name = lovia.1.a	
+		add_devotion =-25
+		ai_chance = { factor = 75 }
+		}
+		
+			option = {
+		name = lovia.1.b		##'Subjugate them and work with them
+		ai_chance = { factor = 20 }
+			add_stability = -1
+			capital_scope = {
+				add_scaled_local_adm_power = 2
+				add_scaled_local_dip_power = 2
+				add_scaled_local_mil_power = 2
+			}
+
+		}
+		
+					option = {
+		name = lovia.1.c		##Kill em all
+		ai_chance = { factor = 10 }
+				add_devotion = 10
+				 	random_owned_province = { 
+			spawn_rebels = {
+			type = noble_rebels
+			size = 3
+			}				
+					}
+					
+			random_owned_province = {
+			spawn_rebels = {
+			type = noble_rebels
+			size = 2
+			}
+				}
+
+			
+
+		}
+	}
+
+country_event = {
+	id = lovia.2
+	title = lovia.2.t
+	desc = {
+		desc = lovia.2.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+
+
+		
+	option = { ##Only peasants girls
+		name = lovia.2.a	
+		ai_chance = { factor = 75 }
+		 add_years_of_income = 0.5
+		}
+		
+			option = {
+		name = lovia.2.b		##Only our most loyal will be spared
+		ai_chance = { factor = 50 }
+				add_government_power = {
+						mechanic_type = magic_spell_mechanic
+						power_type = magic_mil_power
+						value = 10
+					}
+
+		}
+		
+					option = {
+		name = lovia.2.c		##Every virgin is mine
+		ai_chance = { factor = 1 }
+				add_government_power = {
+						mechanic_type = magic_spell_mechanic
+						power_type = magic_mil_power
+						value = 20
+					}
+		  	add_stability = -1
+
+			
+
+		}
+	}
+	
+country_event = {
+	id = lovia.3
+	title = lovia.3.t
+	desc = {
+		desc = lovia.3.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	 	mission_completed = the_seekers
+		has_advisor = yes
+	}
+	
+
+
+		
+	option = { ##Upsi - seeker kill people
+		name = lovia.3.a	
+		ai_chance = { factor = 75 }
+		  	kill_advisor = random
+			change_innovativeness = 1
+		}	
+
+	}	
+	
+country_event = {
+	id = lovia.4
+	title = lovia.4.t
+	desc = {
+		desc = lovia.4.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	 	mission_completed = the_szegeni_traders
+	}
+	
+
+
+		
+	option = { ## szegeni thanks
+		name = lovia.4.a	
+		ai_chance = { factor = 75 }
+		  	add_mercantilism = 2
+			
+			add_estate_influence_modifier = {
+    estate = estate_burghers
+    desc = EST_VAL_SZEGENI_SUPPORT
+    influence = 10
+    duration = 7300
+}
+
+		}
+	}	
+	
+country_event = {
+	id = lovia.5
+	title = lovia.4.t
+	desc = {
+		desc = lovia.4.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	 	mission_completed = promote_szegenis
+	}
+	
+
+
+		
+	option = { ## szegeni thanks
+		name = lovia.4.a	
+		ai_chance = { factor = 75 }
+		  	add_mercantilism = 4
+						add_estate_influence_modifier = {
+				estate = estate_burghers
+				desc = EST_VAL_SZEGENI_SUPPORT
+				influence = 10
+				duration = 7300
+			}
+		}
+	}
+
+country_event = {
+	id = lovia.6
+	title = lovia.6.t
+	desc = {
+		desc = lovia.6.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	 	mission_completed = promote_szegenis
+	}
+	
+
+
+		
+	option = { ## hate against szegni
+		name = lovia.6.a	
+		ai_chance = { factor = 75 }
+		  	every_owned_province = {
+			limit = {
+				OR = {
+	 has_province_modifier = szegeni_major_port
+	 has_province_modifier = szegeni_trading_port
+	}
+			}
+			
+			 	add_devastation = 10
+			}
+		}
+	}	
+
+country_event = {
+	id = lovia.7
+	title = lovia.6.t
+	desc = {
+		desc = lovia.6.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	 	mission_completed = promote_szegenis
+	}
+	
+
+
+		
+	option = { ## hate against szegni
+		name = lovia.6.a	
+		ai_chance = { factor = 75 }
+		  	random_owned_province = {
+			limit = {
+				OR = {
+	 has_province_modifier = szegeni_major_port
+	 has_province_modifier = szegeni_trading_port
+	}
+			}
+			
+			 	spawn_rebels = {
+			type = noble_rebels
+			size = 2
+		}
+			}
+		}
+	}		
+	
+country_event = {
+	id = lovia.8
+	title = lovia.8.t
+	desc = {
+		desc = lovia.8.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+	major = yes
+	
+		mean_time_to_happen = {
+	months = 1
+	}
+	
+	trigger = {
+		current_age = age_of_reformation
+		religion = amatism_faith
+		capital_scope = {
+		OR = {
+		region = yangara_region
+		region = krania_region
+		}
+		}
+	 	OR = {
+		AND = {
+			exists = LV1
+			LV1 = {
+			 	total_development = 200
+			}
+		}
+	 	OR = {
+		AND = {
+			exists = LV2
+			LV2 = {
+			 	total_development = 200
+			}
+		}
+		}
+	}
+	}
+	
+
+
+		
+	option = { 
+		name = lovia.8.a	
+		ai_chance = { factor = 75 }
+		set_global_flag = suns_eastern_faith
+		
+					add_country_modifier = { 
+    name = the_uplifting_sun
+    duration = 3650  
+}
+
+			capital_scope = {
+			add_reform_center = amatism_faith
+			}
+		}
+	}		
+
+country_event = {
+	id = lovia.9
+	title = lovia.9.t
+	desc = {
+		desc = lovia.9.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+	
+		mean_time_to_happen = {
+	months = 120
+	}
+	
+	trigger = {
+		has_global_flag  = suns_eastern_faith
+			religion = amatism_faith
+		capital_scope = {
+		NOT = {
+		is_reformation_center = yes
+		}
+		OR = {
+		region = yangara_region
+		region = krania_region
+		}
+		}
+		
+	}
+	
+
+
+		
+	option = { 
+		name = lovia.9.a	
+		ai_chance = { factor = 75 }
+		
+			capital_scope = {
+			add_reform_center = amatism_faith
+			}
+			
+			add_country_modifier = { 
+    name = the_uplifting_sun
+    duration = 3650  
+}
+		}
+	}		

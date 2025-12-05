@@ -1,0 +1,71 @@
+country_decisions = {
+	robin_unified = {
+		major = yes
+		potential = {
+		culture_group = robinian
+		NOT = { exists = RB4 }	
+
+		OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2014
+				province_id = 2015
+				province_id = 2017
+				province_id = 2043
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = RB4 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 2014	# Mukha
+			owns_core_province = 2015	# Zabid
+			owns_core_province = 2017	# Mukha
+			owns_core_province = 2043 # Zabid
+		}
+		effect = {
+			change_tag = RB4
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			
+						if = {
+				limit = { has_reform = stateless_society }
+				add_government_reform = tribal_despotism
+			}
+			
+		change_government_reform_progress = 250
+			robin_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim= RB4
+			}			
+
+			add_prestige = 25
+			set_capital = 2015		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		ai_importance = 400 #
+	}
+	
+}

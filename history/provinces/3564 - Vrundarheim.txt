@@ -1,0 +1,12 @@
+add_core = TN5
+owner = TN5
+controller = TN5
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Vrundarheim"
+is_city = yes
+culture = river_trolls
+religion = the_great_catfish

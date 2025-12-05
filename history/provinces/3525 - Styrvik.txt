@@ -1,0 +1,11 @@
+culture = forrest_trolls
+religion = fore_bearers
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+capital = "Styrvik"
+is_city = no
+native_size = 90
+native_ferocity = 10
+native_hostileness = 10

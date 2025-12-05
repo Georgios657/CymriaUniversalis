@@ -1,0 +1,13 @@
+add_core = LA0
+owner = LA0
+controller = LA0
+culture = rosen
+religion = amatism_faith
+hre = yes
+base_tax = 5
+base_production = 4
+trade_goods = fish
+base_manpower = 4
+capital = "Au"
+is_city = yes
+discovered_by = ottoman

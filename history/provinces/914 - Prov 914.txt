@@ -1,0 +1,14 @@
+add_core = ZB7
+owner = ZB7
+controller = ZB7
+culture = neenen
+religion = phoenix_faith
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Aerneis"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

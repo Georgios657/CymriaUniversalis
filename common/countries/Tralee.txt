@@ -1,0 +1,96 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 108 133 72 }
+
+revolutionary_colors = { 2  4  11  }
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+monarch_names = {
+    "Gael" = 60
+    "Lugh" = 60
+    "Mairtin" = 60
+    "Daithi" = 60
+    "Tadhg" = 60
+    "Conchur" = 60
+    "Eoin" = 60
+    "Padraig" = 60
+    "Cathal" = 60
+    "Fionn" = 60
+    "Cian" = 60
+    "Tadhg" = 60
+    "Eoin" = 60
+    "Fionn" = 60
+    "Aisling" = -30
+    "Caoimhe" = -30
+    "Sile" = -30
+    "Maeve" = -30
+    "Niamh" = -30
+    "Fionnuala" = -30
+    "Siobhan" = -30
+    "Eibhlin" = -30
+    "Orlaith" = -30
+    "Grainne" = -30
+    "Aoibhinn" = -30
+    "Saoirse" = -30
+    "Roisin" = -30
+    "Aine" = -30
+    "Caitriona" = -30
+}
+
+leader_names = {
+    "Aisling O'Connell"
+    "Cian O'Riain"
+    "Niamh Ni Bhraonain"
+    "Eoin MacLiam"
+    "Saoirse O'Murchu"
+    "Caoimhe Ni Chonaill"
+    "Fionn O'Flannagain"
+    "Sile Ni Mhurchu"
+    "Conor O'Gallachoir"
+    "Maeve Ni Cheallaigh"
+    "Tadhg O Domhnaill"
+    "Roisin Ni Chathail"
+    "Oisin MacDiarmada"
+    "Aoife Ni Dhuibhir"
+    "Ciaran O Donnell"
+}
+ship_names = {
+	
+}
+
+army_names = {
+	"Arm $PROVINCE$" "Cúige $PROVINCE$" "Kernea $PROVINCE$"
+}
+
+fleet_names = {
+}

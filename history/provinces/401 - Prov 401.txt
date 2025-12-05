@@ -1,0 +1,13 @@
+add_core = S12
+owner = S12
+controller = S12
+culture = sessea
+religion = tengri
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 1
+capital = "Onmogo"
+is_city = yes
+discovered_by = nomad_group

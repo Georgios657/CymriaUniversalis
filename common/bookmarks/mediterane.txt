@@ -1,0 +1,29 @@
+bookmark =
+{
+	name = "MEDITERANE"
+	desc = "MEDITERANE_DESC"
+	date = 1444.1.1
+	
+	country = AR1
+	country = PI6
+	country = PI4
+	country = PI4
+	country = PI5
+	country = PI3
+	country = PI2
+	country = PI1
+
+	
+#	effect = {
+#		#Country 1
+#		SWE = {
+#			add_stability = 4
+#		}
+#		
+#		#Province 1
+#		1 = {
+#			add_base_tax = 5
+#		}
+#	}
+}
+

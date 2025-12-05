@@ -1,0 +1,1665 @@
+####################################################
+# Price Change Events
+#
+# written by Johan Andersson & Henrik Lohmander
+####################################################
+
+namespace = prices_cym
+
+# less slaves
+country_event = {
+	id = prices_cym.1
+	title = prices_cym.1.t
+	desc = prices_cym.1.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	slaves = 1
+				check_variable = {
+			which = less_slaves_province
+			value = 10
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.1.a
+		change_price = {
+			trade_goods = slaves
+			key = LESS_SLAVES
+			value = 0.5
+			duration = -1
+		}
+
+	}
+}
+
+# fish and salt
+country_event = {
+	id = prices_cym.2
+	title = prices_cym.2.t
+	desc = prices_cym.2.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		 	any_owned_province = {
+				has_province_modifier = harsh_winter
+			}	
+			trade_goods_produced_amount = {
+			trade_goods = fish
+			amount = 2
+		}
+
+		trade_goods_produced_amount = {
+			trade_goods = salt
+			amount = 2
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.2.a
+		change_price = {
+			trade_goods = fish
+			key = SALT_AND_FISH
+			value = 0.2
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = salt
+			key = SALT_AND_FISH
+			value = 0.25
+			duration = -1
+		}
+		
+	}
+}
+
+# imperals seek sugar
+country_event = {
+	id = prices_cym.3
+	title = prices_cym.3.t
+	desc = prices_cym.3.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		 culture_group = new_imperial
+		 dip_tech = 12
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.3.a
+		change_price = {
+			trade_goods = sugar
+			key = SWEET_SUGAR
+			value = 0.2
+			duration = -1
+		}	
+	}
+}
+
+# bronze cannons
+country_event = {
+	id = prices_cym.4
+	title = prices_cym.4.t
+	desc = prices_cym.4.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+				NOT = {
+					 culture_group = new_imperial
+				}
+				num_of_artillery = 30
+				mil_tech = 12
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.4.a
+		add_army_professionalism = 0.15
+		change_price = {
+			trade_goods = copper
+			key = BRONZE__CANNON
+			value = 0.3
+			duration = -1
+		}	
+	}
+}
+
+# iron cannons
+country_event = {
+	id = prices_cym.5
+	title = prices_cym.5.t
+	desc = prices_cym.5.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+				NOT = {
+					 culture_group = new_imperial
+				}
+	
+				num_of_artillery = 30
+				mil_tech = 20
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.5.a
+		add_army_professionalism = 0.1
+		change_price = {
+			trade_goods = copper
+			key = IRON_CANNON
+			value = -0.5
+			duration = -1
+		}	
+		
+		change_price = {
+			trade_goods = iron
+			key = IRON_CANNON
+			value = 0.25
+			duration = -1
+		}		
+	}
+}
+
+# grand fleets
+country_event = {
+	id = prices_cym.6
+	title = prices_cym.6.t
+	desc = prices_cym.6.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		 	navy_size = 75
+			dip_tech = 10
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+	add_dip_power = 100
+		name = prices_cym.6.a
+		change_price = {
+			trade_goods = wool
+			key = SAILING_NAVY
+			value = 0.15
+			duration = -1
+		}	
+		
+		change_price = {
+			trade_goods = naval_supplies
+			key = SAILING_NAVY
+			value = 0.15
+			duration = -1
+		}		
+	}
+}
+
+# permanent high fleets 
+country_event = {
+	id = prices_cym.7
+	title = prices_cym.7.t
+	desc = prices_cym.7.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		 	num_of_heavy_ship = 40
+			dip_tech = 15
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+	
+		name = prices_cym.7.a
+		add_navy_tradition = 10
+		change_price = {
+			trade_goods = naval_supplies
+			key = HIGH_FLEET
+			value = 0.15
+			duration = -1
+		}		
+	}
+}
+
+# new woodmaking
+country_event = {
+	id = prices_cym.8
+	title = prices_cym.8.t
+	desc = prices_cym.8.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		tropical_wood = 5		 	
+		dip_tech = 20		
+		naval_forcelimit = 35	
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.8.a
+		add_navy_tradition = 10
+		change_price = {
+			trade_goods = naval_supplies
+			key = NEW_WOOD_MAK
+			value = -0.25
+			duration = -1
+		}		
+		
+				change_price = {
+			trade_goods = tropical_wood
+			key = NEW_WOOD_MAK
+			value = 0.25
+			duration = -1
+		}	
+	}
+}
+
+# Abolitionism
+country_event = {
+	id = prices_cym.9
+	title = prices.9.t
+	desc = prices.9.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		has_country_modifier = the_abolish_slavery_act
+		NOT = { has_global_flag = abolitionism_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.9.a
+		change_price = {
+			trade_goods = slaves
+			key = ABOLITIONISM
+			value = -0.8
+			duration = -1
+		}
+		add_prestige = 10
+	}
+}
+
+# new grapes
+country_event = {
+	id = prices_cym.11
+	title = prices_cym.11.t
+	desc = prices_cym.11.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		wine = 5		 	
+		adm_tech = 12	
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.11.a
+		add_years_of_owned_provinces_production_income = {
+    years = 8
+    trigger = {
+            trade_goods = wine
+    }
+}
+
+		change_price = {
+			trade_goods = wine
+			key = NEW_GRAPES
+			value = -0.1
+			duration = -1
+		}		
+		
+
+	}
+}
+
+# sweet wine
+country_event = {
+	id = prices_cym.12
+	title = prices_cym.12.t
+	desc = prices_cym.12.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		wine = 5	
+		sugar = 5
+		adm_tech = 12	
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.12.a
+
+
+		change_price = {
+			trade_goods = wine
+			key = SWEET_WINE
+			value = 0.15
+			duration = -1
+		}		
+		
+		change_price = {
+			trade_goods = sugar
+			key = SWEET_WINE
+			value = 0.1
+			duration = -1
+		}
+	}
+}
+
+# advanced draperies
+country_event = {
+	id = prices_cym.13
+	title = prices_cym.13.t
+	desc = prices_cym.13.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	dip_tech = 9
+		trade_goods_produced_amount = {
+			trade_goods = cloth
+			amount = 10
+		} 	
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.13.a
+
+
+		change_price = {
+			trade_goods = wool
+			key = NEW_DRAPERIES
+			value = -0.1
+			duration = -1
+		}		
+		
+		change_price = {
+			trade_goods = cloth
+			key = NEW_DRAPERIES
+			value = 0.2
+			duration = -1
+		}
+	}
+}
+
+# urbanisation
+country_event = {
+	id = prices_cym.14
+	title = prices_cym.14.t
+	desc = prices_cym.14.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		adm_tech = 10
+		num_of_owned_provinces_with = {
+			value = 15
+			development = 20
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.14.a
+	
+		
+		change_price = {
+			trade_goods = fur
+			key = URBANISATION
+			value = 0.3
+			duration = 25000
+		}
+		
+		change_price = {
+			trade_goods = grain
+			key = URBANISATION
+			value = -0.1
+			duration = -1
+		}		
+	}
+}
+
+# thicker wool and cloth
+country_event = {
+	id = prices_cym.15
+	title = prices_cym.15.t
+	desc = prices_cym.15.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		adm_tech = 21
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.15.a
+	
+		
+		change_price = {
+			trade_goods = fur
+			key = THICK_WOOL
+			value = -0.3
+			duration = -1
+		}
+		
+		change_price = {
+			trade_goods = wool
+			key = THICK_WOOL
+			value = 0.1
+			duration = -1
+		}	
+
+		change_price = {
+			trade_goods = cloth
+			key = THICK_WOOL
+			value = 0.1
+			duration = -1
+		}		
+	}
+}
+
+
+# canned food
+country_event = {
+	id = prices_cym.16
+	title = prices_cym.16.t
+	desc = prices_cym.16.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		mil_tech = 25
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.16.a
+	
+		
+		change_price = {
+			trade_goods = salt
+			key = CANNED_FOOD
+			value = -0.5
+			duration = -1
+		}
+		
+		change_price = {
+			trade_goods = livestock
+			key = CANNED_FOOD
+			value = 0.25
+			duration = -1
+		}		
+	}
+}
+
+# adavandced plantation slavery
+country_event = {
+	id = prices_cym.17
+	title = prices_cym.17.t
+	desc = prices_cym.17.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		cotton = 15	
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.17.a
+	add_years_of_income = 0.5
+		change_price = {
+			trade_goods = slaves
+			key = INCRESEAD_SLAVERY
+			value = 0.3
+			duration = 36500
+		}		
+	}
+}
+
+# ivyory art in the empire
+country_event = {
+	id = prices_cym.18
+	title = prices_cym.18.t
+	desc = prices_cym.18.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		culture_group = new_imperial
+		adm_tech = 15
+		OR = {
+		ivory = 1
+		trading_part = {
+	trade_goods = ivory
+	value = 0.1
+}
+		}
+
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = price.18.a
+	add_prestige = 15
+		change_price = {
+			trade_goods = ivory
+			key = IVORY_ART
+			value = 0.25
+			duration = 36500
+		}		
+	}
+}
+
+# zephyrian tea culture
+country_event = {
+	id = prices_cym.19
+	title = prices_cym.19.t
+	desc = prices_cym.19.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		dip_tech = 9
+	capital_scope = {
+    superregion = the_phoenix_empire
+}
+
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.19.a
+	add_prestige = 10
+		change_price = {
+			trade_goods = tea
+			key = TEA_CULTURE
+			value = 0.25
+			duration = -1
+		}		
+		change_price = {
+			trade_goods = wine
+			key = TEA_CULTURE
+			value = -0.1
+			duration = -1
+		}			
+	}
+}
+
+# sumerian glassur
+country_event = {
+	id = prices_cym.20
+	title = prices_cym.20.t
+	desc = prices_cym.20.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		dip_tech = 14
+	capital_scope = {
+    superregion = twin_river
+}
+
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.20.a
+		
+			capital_scope = {
+    change_trade_goods = chinaware
+}
+
+ 	random_owned_province = { 
+	limit = {
+	NOT = {
+	 	trade_goods = chinaware
+	}
+	}
+	change_trade_goods = chinaware
+	}
+
+		change_price = {
+			trade_goods = chinaware
+			key = SUMERIAN_GLASSUR
+			value = 0.5
+			duration = 12000
+		}	
+
+		change_price = {
+			trade_goods = glass
+			key = SUMERIAN_GLASSUR
+			value = -0.25
+			duration = 12000
+		}		
+	}
+}
+
+# world_wide_trade
+country_event = {
+	id = prices_cym.21
+	title = prices_cym.21.t
+	desc = prices_cym.21.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	has_country_flag = circumnavigation_first
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.21.a
+	add_years_of_income = 1
+
+		change_price = {
+			trade_goods = spices
+			key = NEW_TRADE_ROUTES
+			value = 0.25
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = coffee
+			key = NEW_TRADE_ROUTES
+			value = 0.25
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = tobacco
+			key = NEW_TRADE_ROUTES
+			value = 0.25
+			duration = -1
+		}		
+	}
+}
+
+# late night shifts
+country_event = {
+	id = prices_cym.22
+	title = prices_cym.22.t
+	desc = prices_cym.22.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	culture_group = new_imperial
+	adm = 25
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.22.a
+		
+		change_price = {
+			trade_goods = coffee
+			key = LATE_NIGHT_SHIFT
+			value = 0.25
+			duration = -1
+		}	
+
+		change_price = {
+			trade_goods = tobacco
+			key = LATE_NIGHT_SHIFT
+			value = 0.25
+			duration = -1
+		}		
+	}
+}
+
+# cotton cloths
+country_event = {
+	id = prices_cym.23
+	title = prices_cym.23.t
+	desc = prices_cym.23.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	dip = 13
+	trading_bonus = {
+	trade_goods = cotton
+	value = yes
+}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.23.a
+		
+		change_price = {
+			trade_goods = cotton
+			key = COTTON_CLOTH
+			value = 0.25
+			duration = -1
+		}	
+
+		change_price = {
+			trade_goods = cloth
+			key = COTTON_CLOTH
+			value = -0.1
+			duration = -1
+		}		
+	}
+}
+
+# honey_plague
+country_event = {
+	id = prices_cym.24
+	title = prices_cym.24.t
+	desc = prices_cym.24.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	OR = {
+	technology_group = eastern
+	technology_group = skoger
+	}
+	adm_tech = 13
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.24.a
+		
+		change_price = {
+			trade_goods = sugar
+			key = HONEY_PLAGUE
+			value = 0.5
+			duration = 7500
+		}	
+
+	
+	}
+}
+
+# wont you come for schocolade?
+country_event = {
+	id = prices_cym.25
+	title = prices_cym.25.t
+	desc = prices_cym.25.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	 	government = magocracy
+		adm = 16
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.25.a
+		
+		change_price = {
+			trade_goods = cocoa
+			key = WITCH_COCOA
+			value = 0.2
+			duration = -1
+		}	
+	}
+}
+
+# new zephyrian empire
+country_event = {
+	id = prices_cym.26
+	title = prices_cym.26.t
+	desc = prices_cym.26.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	 	government = monarchy
+		capital  = 868
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.26.a
+		
+		change_price = {
+			trade_goods = silk
+			key = NEW_EMPIRE_ZEPHY
+			value = 0.25
+			duration = -1
+		}	
+		
+				change_price = {
+			trade_goods = dyes
+			key = NEW_EMPIRE_ZEPHY
+			value = 0.25
+			duration = -1
+		}
+	}
+}
+
+
+
+# new moths
+country_event = {
+	id = prices_cym.28
+	title = prices_cym.28.t
+	desc = prices_cym.28.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	 	silk = 2
+		adm_tech = 12
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.28.a
+		change_innovativeness = 10
+		change_price = {
+			trade_goods = silk
+			key = NEW_SILK_MOTHS
+			value = -0.33
+			duration = 3650
+		}	
+		
+
+	}
+}
+
+# uniforms
+country_event = {
+	id = prices_cym.29
+	title = prices_cym.29.t
+	desc = prices_cym.29.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	 	mil_tech = 12
+		army_professionalism = 0.8 
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.29.a
+		add_army_professionalism = 0.05
+		change_price = {
+			trade_goods = dyes
+			key = UNIFORM
+			value = 0.25
+			duration = -1
+		}	
+		
+
+	}
+}
+
+# feeding_complex
+country_event = {
+	id = prices_cym.30
+	title = prices_cym.30.t
+	desc = prices_cym.30.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	 	livestock = 14
+		dip_tech = 15
+		mil_tech = 15
+		adm_tech = 15
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.30.a
+		
+		change_price = {
+			trade_goods = livestock
+			key = GRAND_STAMPEDE
+			value = 0.25
+			duration = 7500
+		}			
+	}
+}
+
+# burn for god
+country_event = {
+	id = prices_cym.31
+	title = prices_cym.31.t
+	desc = prices_cym.31.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	 	religion = twin_faith
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.31.a
+		
+		change_price = {
+			trade_goods = incense
+			key = HOLY_BURNING
+			value = 0.25
+			duration = -1
+		}			
+	}
+}
+
+# parfumes
+country_event = {
+	id = prices_cym.32
+	title = prices_cym.32.t
+	desc = prices_cym.32.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	OR = {
+	 	culture_group = visacarian_bestonian
+	 	culture_group = lovian
+	}
+	dip = 18
+	incense = 2
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.32.a
+		
+		change_price = {
+			trade_goods = incense
+			key = PARFUMES
+			value = 0.25
+			duration = -1
+		}		
+
+		change_price = {
+			trade_goods = livestock
+			key = PARFUMES
+			value = 0.1
+			duration = -1
+		}			
+	}
+}
+
+# atrology is rad
+country_event = {
+	id = prices_cym.33
+	title = prices_cym.33.t
+	desc = prices_cym.33.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+	glass = 1
+	has_institution = astrology_i
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.33.a
+		change_innovativeness = 15
+		change_price = {
+			trade_goods = glass
+			key = LENCESES
+			value = 0.4
+			duration = -1
+		}		
+		
+	}
+}
+
+# windows for burgers
+country_event = {
+	id = prices_cym.34
+	title = prices_cym.34.t
+	desc = prices_cym.34.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+			trading_part = {
+			trade_goods = glass
+			value = 0.2
+		}
+		
+		estate_influence = {
+			estate = estate_burghers
+			influence = 70
+		}
+		
+		 	trade_income_percentage = 0.4
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.34.a
+		change_innovativeness = 10
+		change_price = {
+			trade_goods = glass
+			key = GLASSES_FOR_EVERYONE
+			value = 0.33
+			duration = -1
+		}		
+		
+	}
+}
+
+# LEad Crystal
+country_event = {
+	id = prices_cym.35
+	title = prices_cym.35.t
+	desc = prices_cym.35.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		dip_tech = 18
+		has_institution = manufactories
+		any_owned_province = {
+			manufactories = 100
+			is_state = yes
+			is_capital = no
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+			province_without_special_goods_produced_trigger = yes
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.35.a
+		change_innovativeness = 10
+		change_price = {
+			trade_goods = glass
+			key = LEAD_CRYSTAL
+			value = -0.65
+			duration = -1
+		}	
+		
+	}
+}
+
+# grand administration
+country_event = {
+	id = prices_cym.36
+	title = prices_cym.36.t
+	desc = prices_cym.36.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		has_institution = feudalism
+		total_development = 500
+		adm_tech = 6
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.36.a
+		change_government_reform_progress = 50
+		change_price = {
+			trade_goods = paper
+			key = GRAND_ADMIN
+			value = 0.25
+			duration = -1
+		}	
+		
+	}
+}
+
+# print books
+country_event = {
+	id = prices_cym.37
+	title = prices_cym.37.t
+	desc = prices_cym.37.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		has_institution = printing_press
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.37.a
+		change_price = {
+			trade_goods = paper
+			key = PRINTING_PRESS
+			value = 0.5
+			duration = -1
+		}	
+		
+	}
+}
+
+# tropical papers
+country_event = {
+	id = prices_cym.38
+	title = prices_cym.38.t
+	desc = prices_cym.38.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		has_institution = new_world_i
+		paper = 1
+		tropical_wood = 1
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.38.a
+		change_price = {
+			trade_goods = paper
+			key = NEW_WOOD
+			value = -0.4
+			duration = -1
+		}	
+		change_price = {
+			trade_goods = tropical_wood
+			key = NEW_WOOD
+			value = 0.15
+			duration = -1
+		}		
+	}
+}
+
+# Faceting
+country_event = {
+	id = prices_cym.39
+	title = prices_cym.39.t
+	desc = prices_cym.39.d
+	picture = TRADEGOODS_eventPicture
+	goto = diamond_city
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		has_institution = renaissance
+		prestige = 50
+		any_owned_province = {
+			renaissance = 100
+			OR = {
+				trade_goods = glass
+				trade_goods = gems
+			}
+			development = 15
+			is_state = yes
+			is_city = yes
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					renaissance = 100
+					OR = {
+						trade_goods = glass
+						trade_goods = gems
+					}
+					development = 15
+					is_state = yes
+					is_city = yes
+					province_without_special_goods_produced_trigger = yes
+					NOT = { province_id = 112 }
+				}
+				save_event_target_as = diamond_city
+				save_global_event_target_as = diamond_city_global
+			}
+		}
+	}
+	
+	option = {
+		name = prices_cym.39.a
+		event_target:diamond_city = {
+			if = {
+				limit = {
+					NOT = { trade_goods = gems }
+				}
+				change_trade_goods = gems
+			}
+			add_permanent_province_modifier = {
+				name = diamond_district
+				duration = -1
+			}
+		}
+		change_price = {
+			trade_goods = gems
+			key = FACETING
+			value = 0.25
+			duration = -1
+		}		
+	}
+}
+
+
+# magical lenses
+country_event = {
+	id = prices_cym.40
+	title = prices_cym.40.t
+	desc = prices_cym.40.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		government = magocracy
+		adm_tech = 17
+		gems = 1
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.40.a
+		add_devotion = 10
+		change_adm = 1
+		change_price = {
+			trade_goods = gems
+			key = MAGICAL_LENSE
+			value = 0.25
+			duration = -1
+		}	
+	
+	}
+}
+
+# to many diamonds
+country_event = {
+	id = prices_cym.41
+	title = prices_cym.41.t
+	desc = prices_cym.41.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {	
+		trade_goods_produced_amount = {
+	trade_goods = gems
+	amount = 15
+}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.41.a
+		add_prestige = 30
+		change_price = {
+			trade_goods = gems
+			key = TO_MANY_STONES
+			value = -0.6
+			duration = -1
+		}	
+	
+	}
+}
+
+# coal and iron
+country_event = {
+	id = prices_cym.42
+	title = prices_cym.42.t
+	desc = prices_cym.42.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {	
+		coal = 3
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.42.a
+
+		change_price = {
+			trade_goods = coal
+			key = MORE_COAL
+			value = 0.5
+			duration = -1
+		}	
+
+		 	every_owned_province = { 
+			limit = {
+			trade_goods = iron
+			}
+			 	add_base_production = 2
+			}	
+	}
+}
+
+# coal to much
+country_event = {
+	id = prices_cym.43
+	title = prices_cym.43.t
+	desc = prices_cym.43.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {	
+		has_institution = enlightenment
+		any_owned_province = {
+			trade_goods = coal
+			has_building = furnace
+		}
+		coal = 5
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.43.a
+
+		change_price = {
+			trade_goods = coal
+			key = TO_MUCH_COAL
+			value = -0.8
+			duration = -1
+		}	
+
+		 	every_owned_province = { 
+			limit = {
+			trade_goods = coal
+			}
+			 	add_base_production = 1
+			}
+	}
+}
+
+# to much salt
+country_event = {
+	id = prices_cym.44
+	title = prices_cym.44.t
+	desc = prices_cym.44.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {	
+		NOT = {
+		capital_scope = {
+		region = red_region
+		}
+		}
+		
+		trade_goods_produced_amount = {
+					trade_goods = salt
+			amount = 8
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices_cym.44.a
+
+		change_price = {
+			trade_goods = salt
+			key = LESS_SALT
+			value = -0.25
+			duration = -1
+		}	
+
+	}
+}

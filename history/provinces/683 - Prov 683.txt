@@ -1,0 +1,13 @@
+add_core = LC3
+owner = LC3
+controller = LC3
+culture = farer
+religion = amatism_faith
+hre = yes
+base_tax = 4
+base_production = 4
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Kragen-Far"
+is_city = yes
+discovered_by = ottoman

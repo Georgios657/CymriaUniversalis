@@ -1,0 +1,13 @@
+add_core = FC1
+owner = FC1
+controller = FC1
+culture = bestonian
+religion = amatism_faith
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = iron
+base_manpower = 3
+capital = "Sebat"
+is_city = yes
+discovered_by = indian

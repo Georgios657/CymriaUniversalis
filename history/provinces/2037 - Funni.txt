@@ -1,0 +1,12 @@
+add_core = CA7
+owner = CA7
+controller = CA7
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = wool
+base_manpower = 3
+capital = "Funnio"
+is_city = yes
+culture = kussai
+religion = the_silvern_guide

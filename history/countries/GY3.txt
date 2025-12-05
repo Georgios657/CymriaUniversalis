@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = siberian_tribe
+government_rank = 1
+technology_group = imperial_tech
+primary_culture = north_gynter
+religion = icearia
+capital = 3631	# Bayreuth
+
+1444.11.11 = {
+	monarch = {
+		name = "Tribe Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

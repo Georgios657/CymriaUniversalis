@@ -1,0 +1,13 @@
+add_core = HE2
+owner = HE2
+controller = HE2
+culture = mountain_dragon
+religion = dragon_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Fire Throne"
+is_city = yes
+discovered_by = chinese

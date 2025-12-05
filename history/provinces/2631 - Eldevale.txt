@@ -1,0 +1,12 @@
+add_core = MV1
+owner = MV1
+controller = MV1
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 3
+capital = "Eldevale"
+is_city = yes
+culture = marier
+religion = imperial_cult

@@ -1,0 +1,13 @@
+add_core = LD8
+owner = LD8
+controller = LD8
+culture = gassalian
+religion = amatism_faith
+hre = yes
+base_tax = 3
+base_production = 4
+trade_goods = grain
+base_manpower = 3
+capital = "Andormeia"
+is_city = yes
+discovered_by = ottoman

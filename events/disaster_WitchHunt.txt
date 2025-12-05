@@ -1,0 +1,458 @@
+namespace = great_witch_hunt
+
+# Witch Hunt Starts
+country_event = {
+	id = great_witch_hunt.1
+	title = great_witch_hunt.1.t
+	desc = great_witch_hunt.1.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	random_owned_province = {
+	add_unrest = 15
+	}
+		random_owned_province = {
+	add_unrest = 15
+	}
+		random_owned_province = {
+	add_unrest = 15
+	}
+		random_owned_province = {
+	add_unrest = 15
+	}
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.1.a
+		add_prestige = -15
+		set_country_flag = hunt_starts
+	}
+
+}
+
+# Witch Hunt Ends
+country_event = {
+	id = great_witch_hunt.2
+	title = great_witch_hunt.2.t
+	desc = great_witch_hunt.2.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.2.a
+		add_stability = 1
+		add_legitimacy = 20
+		add_splendor = 400
+	}
+
+}
+
+# Witch Advisor
+country_event = {
+	id = great_witch_hunt.3
+	title = great_witch_hunt.3.t
+	desc = great_witch_hunt.3.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+		trigger = {
+		has_advisor = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.3.a
+		kill_advisor = random
+	}
+
+}
+
+# Witch MAgistrates
+country_event = {
+	id = great_witch_hunt.4
+	title = great_witch_hunt.4.t
+	desc = great_witch_hunt.4.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.4.a
+		add_corruption = 2
+	}
+
+}
+
+# Witch Noble
+country_event = {
+	id = great_witch_hunt.5
+	title = great_witch_hunt.5.t
+	desc = great_witch_hunt.5.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.5.a
+		add_stability = -1
+	}
+
+}
+
+# Witches iun Procince X
+country_event = {
+	id = great_witch_hunt.6
+	title = great_witch_hunt.6.t
+	desc = great_witch_hunt.6.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	random_owned_province = {
+	add_devastation = 30
+	add_local_autonomy = 25
+	add_unrest = 10
+	}
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.6.a
+		add_legitimacy = 2
+	}
+
+}
+
+# Grand Fires in X
+country_event = {
+	id = great_witch_hunt.7
+	title = great_witch_hunt.7.t
+	desc = great_witch_hunt.7.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	 	random_owned_area = { 
+			 	add_devastation = 25
+				 add_local_autonomy = 10
+				 add_unrest = 10
+		}
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.7.a
+		add_legitimacy = 5
+	}
+
+}
+
+# Trading Witches
+country_event = {
+	id = great_witch_hunt.8
+	title = great_witch_hunt.8.t
+	desc = great_witch_hunt.8.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.8.a
+		add_inflation = 2
+		add_mercantilism = 1
+	}
+
+}
+
+# Witch Plot
+country_event = {
+	id = great_witch_hunt.9
+	title = great_witch_hunt.9.t
+	desc = great_witch_hunt.9.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.9.a
+		add_stability = -1
+	}
+
+}
+
+# Stricter Laws!
+country_event = {
+	id = great_witch_hunt.10
+	title = great_witch_hunt.10.t
+	desc = great_witch_hunt.10.d
+	picture = CIVIL_WAR_eventPicture
+	
+	trigger = {
+			NOT = { has_country_modifier = strict_laws }
+		NOT = { has_country_modifier = lax_laws }
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.10.a
+		add_country_modifier = {
+			name = "strict_laws"
+			duration = 1825
+		}
+	}
+
+		option = {
+		name = great_witch_hunt.10.b
+		add_country_modifier = {
+			name = "lax_laws"
+			duration = 1825
+		}
+	}
+}
+
+# Standarize Witch Tests
+country_event = {
+	id = great_witch_hunt.11
+	title = great_witch_hunt.11.t
+	desc = great_witch_hunt.11.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.11.a
+		change_innovativeness = 1
+	}
+
+}
+
+# A safer country
+country_event = {
+	id = great_witch_hunt.12
+	title = great_witch_hunt.12.t
+	desc = great_witch_hunt.12.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	random_owned_province = {
+	remove_random_development = yes
+	}
+	
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.12.a
+		add_legitimacy = 5
+	}
+
+}
+
+
+# Take charge
+country_event = {
+	id = great_witch_hunt.13
+	title = great_witch_hunt.13.t
+	desc = great_witch_hunt.13.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.13.a
+		add_stability = 1
+		add_legitimacy = 10
+		
+	}
+
+}
+
+
+# wild hunts
+country_event = {
+	id = great_witch_hunt.14
+	title = great_witch_hunt.14.t
+	desc = great_witch_hunt.14.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		random_owned_province = {
+	remove_random_development = yes
+	}
+		random_owned_province = {
+	remove_random_development = yes
+	}
+		random_owned_province = {
+	remove_random_development = yes
+	}
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.14.a
+		add_stability = -1
+	}
+
+}
+
+# The great conclave
+country_event = {
+	id = great_witch_hunt.15
+	title = great_witch_hunt.15.t
+	desc = great_witch_hunt.15.d
+	picture = CIVIL_WAR_eventPicture
+	
+	trigger = {
+	had_country_flag = {
+	flag = hunt_starts
+	days = 7500
+}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	 	add_adm_power = -100
+	 	add_dip_power = -100
+	 	add_mil_power = -100
+	}
+	
+	
+	option = {
+		name = great_witch_hunt.15.a
+		end_disaster = grand_witch_hunt
+		
+	}
+
+}

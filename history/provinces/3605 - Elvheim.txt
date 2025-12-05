@@ -1,0 +1,12 @@
+add_core = GI2
+owner = GI2
+controller = GI2
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+capital = "Elvheim"
+is_city = yes
+culture = hill_trolls
+religion = fore_bearers

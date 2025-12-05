@@ -1,0 +1,13 @@
+add_core = I30
+owner = I30
+controller = I30
+culture = capitilian
+religion = old_imperial_faith
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = grain
+base_manpower = 3
+capital = "Rabenstadt"
+is_city = yes
+discovered_by = western

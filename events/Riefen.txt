@@ -1,0 +1,98 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = riefen
+
+
+
+country_event = {
+	id = riefen.1
+	title = riefen.1.t
+	desc = {
+		desc = riefen.1.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+
+
+		mean_time_to_happen = {
+		months = 12
+		}
+	immediate = {
+
+		
+		}
+	option = {
+		name = riefen.1.a
+			add_manpower = -10
+			add_truce_with = S12
+
+			
+		}
+	}
+	
+
+country_event = {
+	id = riefen.2
+	title = riefen.2.t
+	desc = {
+		desc = riefen.2.desc
+
+	}
+
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		
+		}
+	option = {
+		name = riefen.2.a
+	override_country_name = RIEFEN_ZEPHYRIA
+	
+		 	set_capital = 868
+			868 = {
+    add_core = ROOT
+}
+	
+	 	change_government = monarchy
+		add_government_reform = autocracy_reform
+		 	set_government_rank = 3
+
+					the_phoenix_empire = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+
+			add_prestige = 100			
+			
+		}
+		
+	option = {
+		name = riefen.2.b
+			868 = {
+			 	set_base_tax = 1
+				set_base_production = 1
+				set_base_manpower = 1
+				
+				 	add_devastation = 100
+			}
+			 	add_treasury = 500
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+
+			
+		}		
+	}	

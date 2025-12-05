@@ -1,0 +1,12 @@
+add_core = MO6
+owner = MO6
+controller = MO6
+culture = gemarian
+religion = tilidian_little_gods
+hre = no
+base_tax = 2
+base_production =2
+trade_goods = fish
+base_manpower = 2
+capital = "Gemar"
+is_city = yes

@@ -1,0 +1,89 @@
+march = {
+    first = AS1
+    second = AS2
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+march = {
+    first = AS1
+    second = AS3
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = AS1
+    second = AS7
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = AS1
+    second = AS4
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = AS1
+    second = AS5
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+vassal = {
+    first = AS1
+    second = AS6
+    start_date = 1444.1.1
+    end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = AS1
+	second = VP3
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = AS1
+	second = VP4
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = AS1
+	second = VP8
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = AS1
+	second = VP6
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = AS1
+	second = VP7
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = AS1
+	second = VP2
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}

@@ -1,0 +1,12 @@
+add_core = WI2
+owner = WI2
+controller = WI2
+culture = jirai
+religion = mrogi_wa_damu
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = tropical_wood
+base_manpower = 3
+capital = "Gorambara"
+is_city = yes

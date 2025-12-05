@@ -1,0 +1,12 @@
+add_core = GE2
+owner = GE2
+controller = GE2
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = sugar
+base_manpower = 3
+capital = "Veyra"
+is_city = yes
+culture = myuiran
+religion = velora

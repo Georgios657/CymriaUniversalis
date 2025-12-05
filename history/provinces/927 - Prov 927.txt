@@ -1,0 +1,15 @@
+add_core = ZC2
+add_core = ZB2
+owner = ZB2
+controller = ZB2
+culture = lativa
+religion = phoenix_faith
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = paper
+base_manpower = 3
+capital = "Feenia"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

@@ -1,0 +1,12 @@
+add_core = GW3
+owner = GW3
+controller = GW3
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Elmsdown"
+is_city = yes
+culture = arnorian_forster
+religion = imperial_cult

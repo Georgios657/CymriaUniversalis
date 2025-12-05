@@ -1,0 +1,12 @@
+add_core = CA6
+owner = CA6
+controller = CA6
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Brishte"
+is_city = yes
+culture = malian
+religion = asae_ya

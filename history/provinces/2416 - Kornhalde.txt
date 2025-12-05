@@ -1,0 +1,14 @@
+add_core = EM1
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Kornhalde"
+is_city = yes
+culture = low_culturian
+religion = imperial_cult
+center_of_trade = 1
+add_core = AX1

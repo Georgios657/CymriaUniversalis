@@ -1,0 +1,9 @@
+culture = politi
+religion = undead_imperial_faith
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = gems
+base_manpower = 4
+capital = "Rimedia"
+discovered_by = muslim

@@ -1,0 +1,12 @@
+add_core = YA2
+owner = YA2
+controller = YA2
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Guyya"
+is_city = yes
+culture = yaan
+religion = ishtara

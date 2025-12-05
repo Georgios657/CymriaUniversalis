@@ -1,0 +1,12 @@
+add_core = ZR3
+owner = ZR3
+controller = ZR3
+religion = yazida
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Horos"
+is_city = yes
+culture = tarsuvanian

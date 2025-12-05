@@ -1,0 +1,13 @@
+add_core = SH1
+owner = SH1
+controller = SH1
+culture = shegen_desertfolk
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+capital = "Yathar"
+is_city = yes
+religion = moon_and_sun
+discovered_by = chinese

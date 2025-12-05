@@ -1,0 +1,14 @@
+add_core = ZC6
+owner = ZC6
+controller = ZC6
+culture = agene
+religion = phoenix_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Daeria"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

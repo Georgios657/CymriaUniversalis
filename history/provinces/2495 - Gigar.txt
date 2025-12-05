@@ -1,0 +1,12 @@
+add_core = ES4
+owner = ES4
+controller = ES4
+religion = the_silvern_guide
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = slaves
+base_manpower = 1
+capital = "Gigar"
+is_city = yes
+culture = red_harian

@@ -1,0 +1,2 @@
+# Anything typed here will be added to all selected province history files
+discovered_by = naga_tech

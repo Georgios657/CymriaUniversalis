@@ -1,0 +1,14 @@
+add_core = NC1
+owner = NC9
+controller = NC9
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Raylen"
+is_city = yes
+culture = tegos
+religion = icearia
+add_core = NC8
+add_core = NC9

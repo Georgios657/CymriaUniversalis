@@ -1,0 +1,13 @@
+add_core = CYD
+owner = CYD
+controller = CYD
+culture = birrian
+religion = dagdism
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Athlone"
+is_city = yes
+discovered_by = eastern

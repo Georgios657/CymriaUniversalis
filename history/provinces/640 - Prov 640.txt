@@ -1,0 +1,13 @@
+add_core = LB3
+owner = LB3
+controller = LB3
+culture = outer_kalinian
+religion = amatism_faith
+hre = yes
+base_tax = 4
+base_production = 5
+trade_goods = cloth
+base_manpower = 3
+capital = "Veinar"
+is_city = yes
+discovered_by = ottoman

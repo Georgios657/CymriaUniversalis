@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = selen_tech
+primary_culture = high_shansharian
+religion = the_silvern_guide
+capital = 3338	# Bayreuth
+religious_school = oyor_the_eternal_betrayer
+
+1432.1.1 = {
+	monarch = {
+		dynasty = "Yel Daran"
+		name = "Ashirta"
+		birth_date = 1415.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+}

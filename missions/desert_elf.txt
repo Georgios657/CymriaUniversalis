@@ -1,0 +1,1255 @@
+##BranchStart 0
+elf1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		culture = desert_elv	
+		culture = sun_elf	
+	}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	clove_trade = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trading_part = {
+				trade_goods = cloves
+				value = 0.6
+				
+			}
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			 	trade_goods = cloves
+			}
+			add_base_production = 1
+			add_base_tax = 1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	expand_glove_production = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			clove_trade
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+			trade_goods = cloves
+			amount = 6
+		}
+		}
+		effect = {
+			add_mercantilism = 20
+		}
+	}
+	##Mission End
+	##Mission Start
+	grand_glove_production = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			expand_glove_production
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+			trade_goods = cloves
+			amount = 12
+		}
+		}
+		effect = {
+		add_mercantilism = 10
+		
+		add_country_modifier = { 
+		name = grand_desert_traders
+		duration = 7500
+	}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_stones_row = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			religion = elven_ancestors
+			owns = 1557
+			owns = 1561
+			owns = 1562
+				
+			government_reform_progress = 35
+			
+			1557 = {
+			NOT = {
+			devastation = 1			
+			}
+			
+			}
+			
+			1561 = {
+			NOT = {
+			devastation = 1			
+			}
+			}
+			
+			1562 = {
+			NOT = {
+			devastation = 1			
+			}
+
+			}
+		}
+		effect = {
+		change_government_reform_progress = -35
+			1557 = {
+			add_province_modifier = { 
+			name = holy_stones
+			duration = -1  
+		}
+			}
+			
+			1561 = {
+			add_province_modifier = { 
+			name = holy_stones
+			duration = -1  
+		}
+			}
+
+			1562 = {
+			add_province_modifier = { 
+			name = holy_stones
+			duration = -1  
+		}
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_streets_of_stones = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_stones_row
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+					religion = elven_ancestors
+			owns = 1557
+			owns = 1561
+			owns = 1562
+			
+			years_of_income = 1.0
+			
+						1557 = {
+			NOT = {
+			devastation = 1			
+			}
+			num_of_times_improved = 5
+			}
+			
+			1561 = {
+			NOT = {
+			devastation = 1			
+			}
+			num_of_times_improved = 5
+			}
+			
+			1562 = {
+			NOT = {
+			devastation = 1			
+			}
+			num_of_times_improved = 5
+			}
+		}
+		effect = {
+		 	add_years_of_income = -1
+			1557 = {
+			 	remove_province_modifier = holy_stones
+			
+			add_province_modifier = { 
+			name = advanced_holy_stones
+			duration = -1  
+		}
+			}
+			
+			1561 = {
+			remove_province_modifier = holy_stones
+			add_province_modifier = { 
+			name = advanced_holy_stones
+			duration = -1  
+		}
+			}
+
+			1562 = {
+			remove_province_modifier = holy_stones
+			add_province_modifier = { 
+			name = advanced_holy_stones
+			duration = -1  
+		}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	honor_the_three_fields = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_streets_of_stones
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns = 1557
+			owns = 1561
+			owns = 1562
+			
+			years_of_income = 2
+			government_reform_progress = 70			
+						1557 = {
+			NOT = {
+			devastation = 1			
+			}
+			num_of_times_improved = 8
+			}
+			
+			1561 = {
+			NOT = {
+			devastation = 1			
+			}
+			num_of_times_improved = 8
+			}
+			
+			1562 = {
+			NOT = {
+			devastation = 1			
+			}
+			num_of_times_improved = 8
+			}
+		}
+		effect = {
+		add_country_modifier = { 
+    name = guardian_of_the_holy_places
+    duration = -1  
+}
+
+
+				change_government_reform_progress = -70
+		 	add_years_of_income = -2
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+elf2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		culture = desert_elv	
+		culture = sun_elf	
+	}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	secure_the_centre = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_desert_kingdom
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	
+
+		num_of_owned_provinces_with = {
+			value = 3
+					fort_level = 2
+					
+					OR = {
+					area = elfen_desert_area
+					area = desert_of_jinns_area					
+					}
+
+		}
+
+			AND = {
+		elfen_desert_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		desert_of_jinns_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
+			}			
+		}
+		effect = {
+			add_splendor = 300
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_hidden_kingdom = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_the_centre
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	splendor = 800
+			AND = {
+		elfen_desert_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		desert_of_jinns_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
+			}				
+		}
+		effect = {
+		 	add_splendor = -800
+			every_owned_province = {
+			limit = {
+			OR = {
+			area = elfen_desert_area
+			area = desert_of_jinns_area
+			}
+			}
+			add_province_modifier = { 
+			name = the_hidden_kingdom
+			duration = -1  
+		}			
+			}
+			}
+		}
+	##Mission End
+	##Mission Start
+	the_grand_mirage = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_hidden_kingdom
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				 	splendor = 1200
+		great_desert_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+		
+				 	add_splendor = -1200
+			every_owned_province = {
+			limit = {
+			region = great_desert_region
+			}
+			add_province_modifier = { 
+			name = the_mirrage_lands
+			duration = -1  
+		}			
+			}
+			}
+		}
+	
+	##Mission End
+	##Mission Start
+	the_kingdom_of_legends = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_grand_mirage
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	splendor = 2000
+			prestige = 85
+		}
+		effect = {
+			 	add_splendor = -2000
+		add_country_modifier = { 
+    name = legend_kingdom
+    duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	stand_by_our_fathers = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			invite_human_priests
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion = elven_ancestors
+			temple = 30
+		}
+		effect = {
+			add_legitimacy = 10
+			
+				add_country_modifier = { 
+			name = stand_by_our_father
+			duration = 7500
+		}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	exalted_rulers_of_old = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			stand_by_our_fathers
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion = elven_ancestors
+		religious_unity = 0.75
+		
+		1557 = {
+				has_great_project = {
+			type = any
+			tier = 3
+		}
+		}
+		}
+		effect = {
+				add_country_modifier = { 
+			name = elven_made_god
+			duration = -1
+		
+		}
+	}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+elf3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		culture = desert_elv	
+		culture = sun_elf	
+	}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	the_desert_kingdom = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size_percentage = 1
+			 	total_development = 20
+		}
+		effect = {
+							great_desert_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_high_desert_crown = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_desert_kingdom
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			tag = EL9
+			legitimacy = 95
+		}
+		effect = {
+		add_prestige = 25
+
+			great_desert_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	unite_all_desert_elfs = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_high_desert_crown
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		total_development = 250
+			 NOT = {
+			  	any_country = {
+				NOT = {
+				tag = ROOT
+				}
+				culture = desert_elv
+				}
+			 }
+		}
+		effect = {
+		add_legitimacy = 25
+			seeren_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}		
+			lower_nagava_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}	
+
+			Agniyana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	from_river_to_river = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			unite_all_desert_elfs
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+	value = 10
+	region = seeren_region
+}
+
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+	value = 10
+	region = lower_nagava_region
+}			
+		}
+		effect = {
+			lower_nagava_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			piraten_coast_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	reach_the_desert_sea = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			from_river_to_river
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+	value = 15
+	has_port = yes
+}
+		}
+		effect = {
+			add_navy_tradition = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	an_empire_to_endure = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			reach_the_desert_sea
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 1500
+		}
+		effect = {
+			add_country_modifier = { 
+			name = elfen_empire
+			duration = -1  
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	knowledge_from_east_and_west = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			current_age = age_of_reformation
+			innovativeness = 40
+		}
+
+			total_development = 750
+		}
+		effect = {
+			 	change_innovativeness = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	invite_human_priests = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			knowledge_from_east_and_west
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	any_owned_province = { 
+				religion_group = sun_faith
+				}
+				
+				 	any_owned_province = { 
+					religion_group = moon_faith
+					}
+					
+					stability = 2
+		}
+		effect = {
+			country_event = { 
+    id = desert_elf.1
+    days =1
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_moon_shines = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			invite_human_priests
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion_group = moon_faith
+			religious_unity = 0.5
+			stability = 3
+		}
+		effect = {
+				add_adm_power = 100
+				define_advisor = {
+				type = inquisitor
+				name = "Abukir Akrra"
+				skill = 5
+				culture = central_baylonian
+				discount = yes
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	priase_the_moon = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_moon_shines
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				religion_group = moon_faith
+			religious_unity = 1
+			total_development = 1000
+		}
+		effect = {
+			add_country_modifier = { 
+					name = praise_moon
+					duration = -1
+				}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+elf5 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		culture = desert_elv	
+		culture = sun_elf	
+	}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	our_new_home = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_desert_kingdom
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				is_prosperous = yes
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_desert_way = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			our_new_home
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_tradition = 50
+		}
+		effect = {
+			add_country_modifier = { 
+					name = desert_way
+					duration = 7500
+				}
+		}
+	}
+	##Mission End
+	##Mission Start
+	desert_power = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_desert_way
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size = 85
+			regimental_camp = 25
+			barracks = 25
+		}
+		effect = {
+			add_country_modifier = { 
+					name = desert_power
+					duration = -1
+				}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	move_like_the_sand = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			desert_power
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+		has_global_modifier_value = {
+	which = movement_speed
+	value = 0.25
+}
+		has_global_modifier_value = {
+	which = cavalry_power 
+	value = 0.4
+}		
+		}
+
+		}
+		effect = {
+			add_country_modifier = { 
+					name = the_sand_striders
+					duration = 9000
+				}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_sun_elf = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			invite_human_priests
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion_group = sun_faith
+			has_global_modifier_value = {
+			which = tolerance_own
+			value = 6
+		}
+		}
+		effect = {
+		
+		change_primary_culture = sun_elf
+						add_estate_loyalty = {
+			estate = estate_god_sun
+			loyalty = 50
+		}
+					every_owned_province = {
+		limit = {
+		culture = desert_elv
+		NOT = {
+		 	local_autonomy = 10
+		}
+		}
+		
+			change_culture = sun_elf	
+		}
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	praise_the_sun_elf = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_sun_elf
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		religion_group = sun_faith
+			religious_unity = 1
+			stability = 3
+		}
+		effect = {
+			add_country_modifier = { 
+					name = praise_sun
+					duration = -1
+				}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+elf6 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		culture = desert_elv	
+		culture = sun_elf	
+	}
+
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	expand_living_space = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				natural_scientist = 2
+			num_of_owned_provinces_with = {
+			value = 5
+				num_of_times_improved = 8
+				culture = desert_elv
+			}
+		}
+		effect = {
+			add_years_of_income = 0.5
+		}
+	}
+	##Mission End
+	##Mission Start
+	enchant_mines = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			expand_living_space
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				natural_scientist = 4
+			num_of_owned_provinces_with = {
+			value = 4
+				num_of_times_improved = 5
+				OR = {
+				trade_goods = copper				
+				trade_goods = gold				
+				}
+
+			}			
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			OR = {
+					trade_goods = copper				
+				trade_goods = gold				
+			}
+			}
+			add_province_modifier = { 
+    name = enchanted_mine
+    duration = -1  
+}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	sing_to_the_plants = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			enchant_mines
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		natural_scientist = 5
+			num_of_owned_provinces_with = {
+			value = 10
+				development = 10
+				OR = {
+				trade_goods = cotton				
+				trade_goods = wine				
+				trade_goods = grain				
+				trade_goods = livestock				
+				}
+
+			}				
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+				development = 10
+				OR = {
+				trade_goods = cotton				
+				trade_goods = wine				
+				trade_goods = grain				
+				trade_goods = livestock				
+				}
+			}
+			add_province_modifier = { 
+    name = entchaned_plants
+    duration = -1  
+}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	land_of_magic_and_honey = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			sing_to_the_plants
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			monthly_income = 150
+		}
+		effect = {
+							add_country_modifier = { 
+    name = land_of_riches
+    duration = 3650  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	extend_our_influence_east = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+	custom_trigger_tooltip = {
+				tooltip = two_human_vassal.tooltip
+				num_of_non_tributary_subjects = 2
+				calc_true_if = {
+					all_subject_country  = { 
+					OR = {
+					culture_group = shegean
+					culture_group = assay
+					culture_group = baltarian
+					culture_group = sumar
+					culture_group = baylonian
+					culture_group = grand_zervo
+					}
+					}
+					amount = 2
+				}
+			}
+		}
+		effect = {
+			 	add_splendor = 50
+				
+				define_advisor = {
+    type = diplomat
+    skill = 3
+    culture = desert_elv
+	cost_multiplier = -0.25
+}
+
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	loyal_human_vassal = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			extend_our_influence_east
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+	custom_trigger_tooltip = {
+				tooltip = three_loyal_human_vassal.tooltip
+				num_of_non_tributary_subjects = 3
+				calc_true_if = {
+					all_subject_country  = { 
+					OR = {
+					culture_group = shegean
+					culture_group = assay
+					culture_group = baltarian
+					culture_group = sumar
+					culture_group = baylonian
+					culture_group = grand_zervo
+					}
+					NOT = {
+					liberty_desire = 25
+					}
+					}
+					amount = 3
+				}
+			}
+		}
+		effect = {
+			every_subject_country = { 
+			add_trust = {
+			who = ROOT
+			value = 25
+			mutual = yes
+		}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	raise_taxes_vassal = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			loyal_human_vassal
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	diplomatic_reputation = 6
+				custom_trigger_tooltip = {
+				tooltip = two_human_vassal_big.tooltip
+				num_of_non_tributary_subjects = 2
+				calc_true_if = {
+					all_subject_country  = { 
+					total_development = 100
+					OR = {
+					culture_group = shegean
+					culture_group = assay
+					culture_group = baltarian
+					culture_group = sumar
+					culture_group = grand_zervo
+					culture_group = baylonian
+					}
+					}
+					amount = 2
+				}
+			}
+		}
+		effect = {
+		add_country_modifier = { 
+    name = raised_taxes_vassal
+    duration = -1  
+}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	auxilary_vassal_troops = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			raise_taxes_vassal
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_professionalism = 0.5 
+				custom_trigger_tooltip = {
+				tooltip = two_human_vassal_army.tooltip
+				num_of_non_tributary_subjects = 2
+				calc_true_if = {
+				
+					all_subject_country  = { 
+					 	land_forcelimit = 40
+					OR = {
+					culture_group = shegean
+					culture_group = assay
+					culture_group = baltarian
+					culture_group = sumar
+					culture_group = baylonian
+					culture_group = grand_zervo
+					}
+					}
+					amount = 2
+				}
+			}
+		}
+		effect = {
+		add_country_modifier = { 
+    name = axuillary_troops
+    duration = -1  
+}			
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

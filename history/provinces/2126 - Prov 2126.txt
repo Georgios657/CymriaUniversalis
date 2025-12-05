@@ -1,0 +1,20 @@
+add_core = QA6
+owner = QA6
+controller = QA6
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = copper
+base_manpower = 2
+capital = "Spido"
+is_city = yes
+culture = abyssian
+religion = asae_ya
+add_permanent_province_modifier = { name = mountain_pass_modifier duration = -1 } 
+
+
+
+add_permanent_province_modifier = {
+	name = fire_born_plague
+	duration = -1
+}

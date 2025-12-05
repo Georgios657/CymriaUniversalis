@@ -1,0 +1,12 @@
+add_core = TR8
+owner = TR8
+controller = TR8
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = incense
+base_manpower = 2
+capital = "Zepak"
+is_city = yes
+culture = postalan
+religion = ishtara

@@ -1,0 +1,512 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_jarldom"
+		texturefile = "gfx//interface//government_reform_icons//jarldom.dds"
+	}
+
+	
+	spriteType = {
+		name = "government_reform_the_lingering_wood"
+		texturefile = "gfx//interface//government_reform_icons//the_lingering_wood.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_the_expanding_wood"
+		texturefile = "gfx//interface//government_reform_icons//the_expanding_wood.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_call_scholars"
+		texturefile = "gfx//interface//government_reform_icons//call_scholars.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_focus_on_gloom"
+		texturefile = "gfx//interface//government_reform_icons//focus_on_gloom.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_tap_the_underworld"
+		texturefile = "gfx//interface//government_reform_icons//tap_the_underworld.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_summon_smallers_ghosts"
+		texturefile = "gfx//interface//government_reform_icons//summon_smallers_ghosts.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_to_ensure_survival"
+		texturefile = "gfx//interface//government_reform_icons//to_ensure_survival.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_let_some_survive"
+		texturefile = "gfx//interface//government_reform_icons//let_some_survive.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_all_is_gloom"
+		texturefile = "gfx//interface//government_reform_icons//all_is_gloom.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_the_last_spell"
+		texturefile = "gfx//interface//government_reform_icons//the_last_spell.dds"
+	}
+		
+	spriteType = {
+		name = "government_reform_troll_tribes"
+		texturefile = "gfx//interface//government_reform_icons//troll_tribes.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_twin_council"
+		texturefile = "gfx//interface//government_reform_icons//twin_council.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_sacred_harpy_host"
+		texturefile = "gfx//interface//government_reform_icons//sacred_harpy_host.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_harpy_host_reform"
+		texturefile = "gfx//interface//government_reform_icons//harpy_host_reform.dds"
+	}
+	
+		spriteType = {
+		name = "government_reform_settled_harpy_host_reform"
+		texturefile = "gfx//interface//government_reform_icons//settled_harpy_host_reform.dds"
+	}
+	
+		spriteType = {
+		name = "government_reform_harpian_unification_reform"
+		texturefile = "gfx//interface//government_reform_icons//harpian_unification_reform.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_empire_of_man_reform"
+		texturefile = "gfx//interface//government_reform_icons//empire_of_man_reform.dds"
+	}
+
+		spriteType = {
+		name = "government_reform_scorpion_kingdom_reform"
+		texturefile = "gfx//interface//government_reform_icons//scorpion_kingdom_reform.dds"
+	}
+
+	
+	spriteType = {
+		name = "government_reform_slaver_kingdom_reform"
+		texturefile = "gfx//interface//government_reform_icons//slaver_kingdom_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_rogue_trader_reform"
+		texturefile = "gfx//interface//government_reform_icons//rogue_trader_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_promote_enforcers"
+		texturefile = "gfx//interface//government_reform_icons//promote_enforcers.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_promote_navigators"
+		texturefile = "gfx//interface//government_reform_icons//promote_navigators.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_promote_rogue_nobles"
+		texturefile = "gfx//interface//government_reform_icons//promote_rogue_nobles.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_the_supremacy_of_enforcers"
+		texturefile = "gfx//interface//government_reform_icons//the_supremacy_of_enforcers.dds"
+	}
+
+	
+	spriteType = {
+		name = "government_reform_the_supremacy_of_navigators"
+		texturefile = "gfx//interface//government_reform_icons//the_supremacy_of_navigators.dds"
+	}
+
+
+	spriteType = {
+		name = "government_reform_the_supremacy_of_rogue_nobles"
+		texturefile = "gfx//interface//government_reform_icons//the_supremacy_of_rogue_nobles.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "government_reform_tweenty_year_rule"
+		texturefile = "gfx//interface//government_reform_icons//tweenty_year_rule.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_sixty_year_rule"
+		texturefile = "gfx//interface//government_reform_icons//sixty_year_rule.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_beast_tribe"
+		texturefile = "gfx//interface//government_reform_icons//beat_tribe.dds"
+	}
+	
+	
+	spriteType = {
+		name = "government_reform_god_on_earth"
+		texturefile = "gfx//interface//government_reform_icons//god_on_earth.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_varjorjen"
+		texturefile = "gfx//interface//government_reform_icons//varjorjen.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_city_of_ogebin_reform"
+		texturefile = "gfx//interface//government_reform_icons//celestial_justice_reform.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_celestial_justice_reform"
+		texturefile = "gfx//interface//government_reform_icons//celestial_justice_reform.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_blood_vortex"
+		texturefile = "gfx//interface//government_reform_icons//magic//blood_vortex.dds"
+	}
+		spriteType = {
+		name = "government_reform_the_demon_host"
+		texturefile = "gfx//interface//government_reform_icons//magic//the_demon_host.dds"
+	}
+		spriteType = {
+		name = "government_reform_great_blood_rituals"
+		texturefile = "gfx//interface//government_reform_icons//magic//great_blood_rituals.dds"
+	}
+	spriteType = {
+		name = "government_reform_warlock_circle"
+		texturefile = "gfx//interface//government_reform_icons//magic//warlock_circle.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_elevate_white_hair_reform"
+		texturefile = "gfx//interface//government_reform_icons//elevate_white_hair_reform.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_freed_slaves_reform"
+		texturefile = "gfx//interface//government_reform_icons//freed_slaves_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_right_of_might_reform"
+		texturefile = "gfx//interface//government_reform_icons//right_of_might_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_sacred_union_reform"
+		texturefile = "gfx//interface//government_reform_icons//sacred_union_reform.dds"
+	}
+
+		spriteType = {
+		name = "government_reform_sands_of_the_arena_reform"
+		texturefile = "gfx//interface//government_reform_icons//sands_of_the_arena_reform.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_great_city"
+		texturefile = "gfx//interface//government_reform_icons//great_city.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_imperial_wizardy"
+		texturefile = "gfx//interface//government_reform_icons//magic//imperial_wizardy.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_necromancy_tower"
+		texturefile = "gfx//interface//government_reform_icons//magic//necormancy_tower.dds"
+	}	
+
+	spriteType = {
+		name = "government_reform_inward_perfection"
+		texturefile = "gfx//interface//government_reform_icons//magic//inward_perfection.dds"
+	}		
+	
+	spriteType = {
+		name = "government_reform_outward_expansion"
+		texturefile = "gfx//interface//government_reform_icons//magic//outward_expansion.dds"
+	}	
+
+	spriteType = {
+		name = "government_reform_diplomatic_approach"
+		texturefile = "gfx//interface//government_reform_icons//magic//diplomatic_approach.dds"
+	}	
+
+	spriteType = {
+		name = "government_reform_educate_the_peasants"
+		texturefile = "gfx//interface//government_reform_icons//magic//educate_peasant.dds"
+	}	
+
+	spriteType = {
+		name = "government_reform_educate_the_nobles"
+		texturefile = "gfx//interface//government_reform_icons//magic//educate_the_nobles.dds"
+	}	
+	
+		spriteType = {
+		name = "government_reform_educate_the_mages"
+		texturefile = "gfx//interface//government_reform_icons//magic//educate_the_mages.dds"
+	}
+	
+		spriteType = {
+		name = "government_reform_map_the_stars"
+		texturefile = "gfx//interface//government_reform_icons//magic//map_the_stars.dds"
+	}
+
+		spriteType = {
+		name = "government_reform_the_elements"
+		texturefile = "gfx//interface//government_reform_icons//magic//elemental_magic.dds"
+	}
+
+		spriteType = {
+		name = "government_reform_the_souls"
+		texturefile = "gfx//interface//government_reform_icons//magic//the_souls.dds"
+	}
+
+		spriteType = {
+		name = "government_reform_pure_magic"
+		texturefile = "gfx//interface//government_reform_icons//magic//pure_magic.dds"
+	}
+
+		spriteType = {
+		name = "government_reform_involve_commoner"
+		texturefile = "gfx//interface//government_reform_icons//magic//involve_commoners.dds"
+	}
+
+		spriteType = {
+		name = "government_reform_join_all_estates"
+		texturefile = "gfx//interface//government_reform_icons//magic//join_all_estates.dds"
+	}	
+	
+			spriteType = {
+		name = "government_reform_heal_the_world"
+		texturefile = "gfx//interface//government_reform_icons//magic//heal_the_world.dds"
+	}	
+	
+			spriteType = {
+		name = "government_reform_rule_the_world"
+		texturefile = "gfx//interface//government_reform_icons//magic//rule_the_world.dds"
+	}	
+	
+			spriteType = {
+		name = "government_reform_save_the_world"
+		texturefile = "gfx//interface//government_reform_icons//magic//save_the_world.dds"
+	}	
+	
+			spriteType = {
+		name = "government_reform_absolute_magical_reform"
+		texturefile = "gfx//interface//government_reform_icons//magic//absolute_magical_autority.dds"
+	}	
+	
+			spriteType = {
+		name = "government_reform_seperation_of_classes"
+		texturefile = "gfx//interface//government_reform_icons//magic//seperation_of_classes.dds"
+	}	
+	
+			spriteType = {
+		name = "government_reform_inclusion_of_non_magic"
+		texturefile = "gfx//interface//government_reform_icons//magic//inclusion_of_non_magic.dds"
+	}	
+	
+			spriteType = {
+		name = "government_reform_benevolent_leadership"
+		texturefile = "gfx//interface//government_reform_icons//magic//benevolent_leadership.dds"
+	}	
+	
+			spriteType = {
+		name = "government_reform_no_limits_at_all"
+		texturefile = "gfx//interface//government_reform_icons//magic//no_limits_at_all.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_blood_magic_is_forbidden"
+		texturefile = "gfx//interface//government_reform_icons//magic//blood_magic_is_forbidden.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_elemental_magic_only"
+		texturefile = "gfx//interface//government_reform_icons//magic//elemental_magic_only.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_old_empire_hecontarchia"
+		texturefile = "gfx//interface//government_reform_icons//undead//old_empire_hecontarchia.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_old_empire_full"
+		texturefile = "gfx//interface//government_reform_icons//undead//old_empire_full.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_abbandon_the_gods"
+		texturefile = "gfx//interface//government_reform_icons//undead//abbandon_the_gods.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_embrace_the_death"
+		texturefile = "gfx//interface//government_reform_icons//undead//embrace_the_death.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_stand_fast_on_your_belief"
+		texturefile = "gfx//interface//government_reform_icons//undead//stand_fast_on_your_belief.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_old_blood"
+		texturefile = "gfx//interface//government_reform_icons//undead//old_blood.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_new_mages"
+		texturefile = "gfx//interface//government_reform_icons//undead//new_mages.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_religious_figures"
+		texturefile = "gfx//interface//government_reform_icons//undead//religious_figures.dds"
+	}	
+
+			spriteType = {
+		name = "government_reform_leave_all_behind"
+		texturefile = "gfx//interface//government_reform_icons//undead//leave_all_behind.dds"
+	}		
+	
+			spriteType = {
+		name = "government_reform_continue_old_life"
+		texturefile = "gfx//interface//government_reform_icons//undead//continue_old_life.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_a_golden_death"
+		texturefile = "gfx//interface//government_reform_icons//undead//a_golden_death.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_imperial_legion_of_old"
+		texturefile = "gfx//interface//government_reform_icons//undead//imperial_legion_of_old.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_adapt_new_ways"
+		texturefile = "gfx//interface//government_reform_icons//undead//adapt_new_ways.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_seek_death"
+		texturefile = "gfx//interface//government_reform_icons//undead//seek_death.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_integrate_them"
+		texturefile = "gfx//interface//government_reform_icons//undead//integrate_them.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_enslave_them"
+		texturefile = "gfx//interface//government_reform_icons//undead//enslave_them.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_old_provinces"
+		texturefile = "gfx//interface//government_reform_icons//undead//old_provinces.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_local_autonomy"
+		texturefile = "gfx//interface//government_reform_icons//undead//local_autonomy.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_direct_rule"
+		texturefile = "gfx//interface//government_reform_icons//undead//direct_rule.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_deathless_system"
+		texturefile = "gfx//interface//government_reform_icons//undead//deathless_system.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_lottery_system"
+		texturefile = "gfx//interface//government_reform_icons//undead//lottery_system.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_living_advisors"
+		texturefile = "gfx//interface//government_reform_icons//undead//living_advisors.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_continue_the_old_council"
+		texturefile = "gfx//interface//government_reform_icons//undead//continue_the_old_council.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_new_undead_council"
+		texturefile = "gfx//interface//government_reform_icons//undead//new_undead_council.dds"
+	}		
+
+			spriteType = {
+		name = "government_reform_shade_spy"
+		texturefile = "gfx//interface//government_reform_icons//undead//shade_spy.dds"
+	}			
+	
+			spriteType = {
+		name = "government_reform_stygian_paths"
+		texturefile = "gfx//interface//government_reform_icons//undead//stygian_paths.dds"
+	}			
+
+			spriteType = {
+		name = "government_reform_reforming_flesh"
+		texturefile = "gfx//interface//government_reform_icons//undead//reforming_flesh.dds"
+	}			
+
+			spriteType = {
+		name = "government_reform_expand_into_the_unkown"
+		texturefile = "gfx//interface//government_reform_icons//undead//expand_into_the_unkown.dds"
+	}			
+
+			spriteType = {
+		name = "government_reform_inner_peace"
+		texturefile = "gfx//interface//government_reform_icons//undead//inner_peace.dds"
+	}			
+
+			spriteType = {
+		name = "government_reform_ignore_the_uncivilzed"
+		texturefile = "gfx//interface//government_reform_icons//undead//ignore_the_uncivilzed.dds"
+	}			
+
+			spriteType = {
+		name = "government_reform_open_soul_gates"
+		texturefile = "gfx//interface//government_reform_icons//undead//open_soul_gates.dds"
+	}	
+
+
+			spriteType = {
+		name = "government_reform_alliance_with_living"
+		texturefile = "gfx//interface//government_reform_icons//undead//alliance_with_living.dds"
+	}
+
+
+			spriteType = {
+		name = "government_reform_eternal_empire"
+		texturefile = "gfx//interface//government_reform_icons//undead//eternal_empire.dds"
+	}	
+}

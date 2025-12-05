@@ -1,0 +1,45 @@
+#Province Scope unless otherwise specified
+
+#Province has one of our many river estuary modifiers:
+has_river_estuary_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = has_river_estuary_tooltip
+		OR = {
+
+		}
+	}
+}
+
+#Province has no river estuary:
+has_no_river_estuary_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = has_no_river_estuary_tooltip
+		NOT = {
+
+		}
+	}
+}
+
+#Has special Trade modifier
+has_special_trade_modifier = {
+	OR = {
+	}
+}
+
+#Province with special production modifier:
+province_with_special_goods_produced_trigger = {
+	OR = {
+	}
+}
+
+#Province without special production modifier:
+province_without_special_goods_produced_trigger = {
+	NOT = {
+		has_latent_trade_goods = coal
+	}
+}
+
+is_religious_center_province = {
+always = no
+
+}

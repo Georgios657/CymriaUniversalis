@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = stateless_society
+government_rank = 1
+technology_group = naga_tech
+primary_culture = mountain_naga
+religion = naga_faith
+capital = 1359	# Bayreuth
+
+
+
+1424.1.1 = {
+	monarch = {
+		dynasty = "Naga"
+		name = "Bhujanga"
+		birth_date = 1415.9.21
+		dip = 3
+		adm = 2
+		mil = 2
+
+	}
+
+}

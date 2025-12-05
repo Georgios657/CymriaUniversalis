@@ -1,0 +1,12 @@
+add_core = VP1
+owner = VP1
+controller = VP1
+religion = the_silvern_guide
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Riftside"
+is_city = yes
+culture = shansharian

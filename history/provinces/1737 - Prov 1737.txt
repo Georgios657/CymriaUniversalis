@@ -1,0 +1,14 @@
+add_core = TH7
+owner = TH7
+controller = TH7
+hre = no
+base_tax = 3
+base_production = 5
+trade_goods = salt
+base_manpower = 3
+capital = "Xanthe"
+is_city = yes
+culture = xantian
+religion = gayism
+
+center_of_trade = 1

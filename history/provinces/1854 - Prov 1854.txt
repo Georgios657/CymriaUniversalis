@@ -1,0 +1,13 @@
+add_core = TW0
+add_core = ES2
+owner = TW0
+controller = TW0
+religion = the_silvern_guide
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Nashar"
+is_city = yes
+culture = northern_baylonian

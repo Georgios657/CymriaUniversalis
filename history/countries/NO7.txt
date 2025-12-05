@@ -1,0 +1,19 @@
+government = native
+add_government_reform = siberian_tribe
+government_rank = 1
+technology_group = skoger
+primary_culture = marshlander
+religion = skogian_religion
+capital = 1030# Bayreuth
+# Made junior partner of Ansbach 
+1430.1.1 = {
+	monarch = {
+		name = "Pekka"
+		dynasty = "Chud-As-Star"
+		birth_date = 1391.9.21
+		dip = 5
+		adm = 4
+		mil = 4
+	}
+}
+

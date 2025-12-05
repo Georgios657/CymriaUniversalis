@@ -1,0 +1,12 @@
+add_core = PG4
+owner = PG4
+controller = PG4
+culture = ret_peregmar
+religion = pygmer_ancestors
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = copper
+base_manpower = 2
+capital = "Lan-At-Gate"
+is_city = yes

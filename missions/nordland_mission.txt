@@ -1,0 +1,975 @@
+##BranchStart 0
+nord = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = I11
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	fish_fish_fish = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+	trade_goods = fish
+	amount = 25
+}
+		}
+		effect = {
+			every_owned_province = { 
+			limit = {
+			trade_goods = fish
+			}
+			add_scaled_local_dip_power = 30
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	handers_anderson = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			adm_tech = 15
+			has_institution = printing_press
+		}
+		effect = {
+			change_innovativeness = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	systematic_wood_woring = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			handers_anderson
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+	trade_goods = naval_supplies
+	amount = 15
+}
+		}
+		effect = {
+			every_owned_province = { 
+			limit = {
+			trade_goods = naval_supplies
+			}
+			add_province_modifier = { 
+				name = extended_wood
+				duration = 3650 
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_best_ships = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			systematic_wood_woring
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		 	innovativeness = 75
+			trading_bonus = {
+				trade_goods = naval_supplies
+				value = yes
+			}
+		}
+		effect = {
+		add_country_modifier = { 
+			name = nordland_ships
+			duration = -1  
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+nord2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = I11
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	reclaim_cold_coast = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			upon_a_cold_wintersnight
+		}
+		position = 2
+		provinces_to_highlight = {
+		OR = {
+			province_id = 112
+			province_id = 108
+			province_id = 69
+			province_id = 67			
+		}
+
+		}
+		trigger = {
+			owns = 112
+			owns = 108
+			owns = 69
+			owns = 67
+		}
+		effect = {
+							kaltener_land_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	to_the_mountains = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			reclaim_cold_coast
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+				NOT = {
+			kaltener_land_area = {
+					NOT = {
+					 	owned_by = I17
+					 	owned_by = I08
+						
+					}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core =  ROOT }
+    }
+}
+		}
+		effect = {
+									jade_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+							zossen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_hinterland = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			to_the_mountains
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = jade_area
+				area = zossen_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			NOT = {
+			jade_area = {
+					NOT = {
+					 	owned_by = I17
+					}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core =  ROOT }
+    }
+}
+			NOT = {
+			zossen_area = {
+					NOT = {
+					 	owned_by = I17
+					}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core =  ROOT }
+    }
+}
+		}
+		effect = {
+			add_army_tradition = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	vineland = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			seek_the_missing_land
+		}
+		position = 7
+		provinces_to_highlight = {
+			province_id = 225
+		}
+		trigger = {
+			owns = 225
+		}
+		effect = {
+		225 = {
+		add_center_of_trade_level = 1
+		}
+							vhineland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+
+							vhine_mountain_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	develop_vhineland = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			vineland
+		}
+		position = 8
+		provinces_to_highlight = {
+			region = vhineland_region
+		}
+		trigger = {
+		development_in_provinces = {
+			value = 150
+			region = vhineland_region
+		}
+		vhineland_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			225 = {
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 2
+			}
+			
+			250 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 1			
+			}
+			
+			227 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1					
+			}
+			
+			226 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1					
+			}
+			
+			228 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1					
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	second_capital = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			develop_vhineland
+		}
+		position = 9
+		provinces_to_highlight = {
+			province_id = 225
+		}
+		trigger = {
+		owns = 225
+			225 = {
+			 	num_of_times_improved_by_owner = 15
+				NOT = {
+				 	num_free_building_slots = 1
+				}
+				fort_level = 2
+			}
+		}
+		effect = {
+		set_government_rank = 2
+			set_capital = 225
+			add_prestige = 50
+			add_stability = 1
+			add_splendor = 100
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+nord3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = I11
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	upon_a_cold_wintersnight = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_year = 1450
+		}
+		effect = {
+		add_ruler_modifier = { 
+			name = unruly_imp_prince
+			duration = -1  
+			hidden = yes
+		}
+		112 = {
+		add_permanent_claim = ROOT
+		}
+				108 = {
+		add_permanent_claim = ROOT
+		}
+		
+				69 = {
+		add_permanent_claim = ROOT
+		}
+		
+				67 = {
+		add_permanent_claim = ROOT
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	cold_army = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			upon_a_cold_wintersnight
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_tradition = 30
+		}
+		effect = {
+		add_country_modifier = { 
+			name = cold_steel_nord
+			duration = 18250 
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_ready_fleet = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			cold_army
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			navy_size = 30
+		}
+		effect = {
+			create_admiral = { tradition = 100 }
+			create_general = { tradition = 100 }
+		}
+	}
+	##Mission End
+	##Mission Start
+	unite_nobles = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			a_ready_fleet
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			estate_loyalty = {
+    estate = estate_nobles
+    loyalty = 55
+}
+		}
+		effect = {
+		add_country_modifier = { 
+			name = unified_nobility
+			duration = 18250 
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	free_nordland = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			the_hinterland
+			unite_nobles
+			iron_for_weapon
+			
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 140
+		}
+		effect = {
+		
+				 	overlord = { 
+			country_event = { 
+			id = new_empire.9
+			days = 1
+			}				
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	seek_the_missing_land = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			free_nordland
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 2
+			NOT = {
+			 	is_subject = yes
+			}
+		}
+		effect = {
+		custom_tooltip = can_use_exploration
+		set_country_flag = allow_expansion
+		}
+	}
+	##Mission End
+	##Mission Start
+	berryland = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			seek_the_missing_land
+		}
+		position = 7
+		provinces_to_highlight = {
+			region = berryland_region
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4
+				region = berryland_region
+				is_city = yes
+			}
+		}
+		effect = {
+								berryland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_new_home_nord = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			berryland
+		}
+		position = 8
+		provinces_to_highlight = {
+			province_id = 233
+			province_id = 234
+			
+		}
+		trigger = {
+		owns = 233
+		owns = 234
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = berryland_region
+				is_city = yes
+			}
+		}
+		effect = {
+			every_owned_province = {
+			limit = {
+			region = berryland_region
+			}
+			
+			add_province_modifier = { 
+				name = a_new_home
+				duration = 3650
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	berrer_glass = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			a_new_home_nord
+		}
+		position = 9
+		provinces_to_highlight = {
+			province_id = 234
+		}
+		trigger = {
+			owns = 234
+			234 = {
+			 	development = 20
+			NOT = {
+			num_free_building_slots = 1
+			}
+			}
+		}
+		effect = {
+			change_trade_goods = glass
+			add_province_modifier = { 
+				name = fortuna_glass
+				duration = -1
+				}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	great_nordland = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			second_capital
+			berrer_glass
+			also_wood_why
+		}
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+			region = berryland_region
+			region = vhineland_region
+			region = skogen_region
+			}
+		}
+		trigger = {
+			owns_all_provinces = {
+			OR = {
+			region = berryland_region
+			region = vhineland_region
+			region = skogen_region
+			}					
+			}
+		}
+		effect = {
+			set_government_rank = 3
+			add_absolutism = 25
+			add_prestige = 100
+			 	add_splendor = 1500
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+nord4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = I11
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	raise_taxes = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			upon_a_cold_wintersnight
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			temple = 4
+		}
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	dominante_nord_trade = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			raise_taxes
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		effect = {
+			add_treasury = 500
+		}
+	}
+	##Mission End
+	##Mission Start
+	iron_for_weapon = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			dominante_nord_trade
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			trade_goods_produced_amount = {
+				trade_goods = iron
+				amount = 2
+			}
+			trade_goods_produced_amount = {
+				trade_goods = copper
+				amount = 2
+			}
+			
+		}
+
+		}
+		effect = {
+				add_mil_power = 200
+		}
+	}
+	##Mission End
+	##Mission Start
+	skogen_land = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			seek_the_missing_land
+		}
+		position = 7
+		provinces_to_highlight = {
+			region = skogen_region
+		}
+		trigger = {
+			owns = 258
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 2
+				region = skogen_region
+				is_city = yes
+			}
+		}
+		effect = {
+			skogen_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}		
+		}
+	}
+	##Mission End
+	##Mission Start
+	get_all_pelts = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			skogen_land
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+				trade_goods = fur
+				amount = 10
+			}
+		}
+		effect = {
+			add_mercantilism = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	also_wood_why = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			get_all_pelts
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			trade_goods_produced_amount = {
+				trade_goods = naval_supplies
+				amount = 10
+			}
+		}
+		effect = {
+			add_years_of_income = 1	
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+nord5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = I11
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gather_the_estates = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_nobles		
+				loyalty = 60
+			}
+			
+		}
+		effect = {
+			add_yearly_manpower = 1
+			add_years_of_income = 1
+			
+		}
+	}
+	##Mission End
+	##Mission Start
+	oath_on_nordland = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			gather_the_estates
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			legitimacy = 100
+			stability = 3
+		}
+		effect = {
+			add_country_modifier = { 
+				name = loyalty_to_nord
+				duration = -1  
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	permanent_parliament = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			oath_on_nordland
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			adm_tech = 15
+		}
+		effect = {
+			add_government_reform = parliamentary_reform
+			 	change_government_reform_progress = 300
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_varjojen_danger = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	any_neighbor_country = { 
+				culture_group = varjoren
+				}
+				treasury = 500
+		}
+		effect = {
+			add_treasury = -500
+			the_near_north = {
+    discover_country = ROOT
+}
+
+great_north_region = {
+    discover_country = ROOT
+}
+
+add_army_tradition = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	no_varjojen_in_northalnde = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			the_varjojen_danger
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			any_province = {
+			region = the_near_north
+			culture_group = varjoren
+			}
+			}
+		}
+		effect = {
+			great_north_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}				
+		}
+	}
+	##Mission End
+	##Mission Start
+	cleanse_the_border = {
+		icon = mission_unite_home_region
+		required_missions =  {
+			no_varjojen_in_northalnde
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			any_province = {
+			region = great_north_region
+			culture_group = varjoren
+			}
+			}			
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

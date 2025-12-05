@@ -1,0 +1,234 @@
+
+##BranchEnd 1
+##BranchStart 2
+bb1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		has_reform = great_city
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	defend_each_other = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			unite_the_seven_cities
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_country_flag = helped_seven
+		}
+		effect = {
+			add_army_professionalism = 0.1
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+bb2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+	has_reform = great_city
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	unite_the_seven_cities = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						custom_trigger_tooltip = {
+				tooltip = building_alliances_seven_citie.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+					has_reform = great_city
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 4
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	armata_blessing = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			unite_the_seven_cities
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			capital_scope = {
+			num_of_times_improved = 5
+			}
+		}
+		effect = {
+			add_republican_tradition = 15
+		}
+	}
+	##Mission End
+	##Mission Start
+	incoperate_the_nomads = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			armata_blessing
+			defend_each_other
+			economic_profits
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			stability = 3
+		}
+		effect = {
+			add_country_modifier = { 
+			name = incooperate_nomads
+			duration = 3650
+		}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_greatest_of_the_seven = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			incoperate_the_nomads
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		        capital_scope = {
+            NOT = {
+                the_seven_city_region = {
+                    is_capital = yes
+                    higher_development_than = PREV
+                }
+            }
+
+
+		}
+		}
+		effect = {
+			add_splendor = 200
+		}
+	}
+	##Mission End
+	##Mission Start
+	found_the_league = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_greatest_of_the_seven
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 50
+			NOT = { exists = FCS }
+		}
+		effect = {
+		change_tag = FCS
+		add_government_reform = multiple_city_council
+		
+		add_accepted_culture = liefnian
+		add_accepted_culture = bestonian
+		add_accepted_culture = viscarian
+		add_accepted_culture = trasilian
+		add_accepted_culture = nopolian
+		add_accepted_culture = qabinian
+		
+		on_change_tag_effect = yes
+		swap_non_generic_missions = yes
+		every_country = { 
+    limit = {
+        has_reform = great_city
+    }
+    country_event = { 
+    id = fc.6
+    days = 1
+}
+}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+bb3 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+	has_reform = great_city
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	economic_profits = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			unite_the_seven_cities
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		OR = {
+			monthly_income = 10
+			AND = {
+			temple = 2
+			workshop = 2
+			}
+			trade_income_percentage = 0.50
+		}
+
+		}
+		effect = {
+			add_mercantilism = 10
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

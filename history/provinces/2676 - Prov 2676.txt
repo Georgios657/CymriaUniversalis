@@ -1,0 +1,12 @@
+add_core = BR3
+owner = BR3
+controller = BR3
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 1
+capital = "Rosebush"
+is_city = yes
+culture = parazsti
+religion = rozalia

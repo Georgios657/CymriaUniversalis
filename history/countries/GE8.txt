@@ -1,0 +1,11 @@
+government = magocracy
+add_government_reform = necromancy_tower
+government_rank = 2
+technology_group = imperial_tech
+primary_culture = trystane
+religion = velora
+capital = 3225	# Bayreuth
+
+1441.1.1 = {
+
+}

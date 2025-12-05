@@ -1,0 +1,115 @@
+bear_cult = {
+ 	shock_damage = 0.10
+
+	allow = {
+		OR = {
+			has_unlocked_cult = bear_cult
+			culture_group  = skogia
+		}
+		religion = skogian_religion
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+		modifier = {
+			NOT = { num_of_ports = 1 }
+			factor = 0
+		}
+	}
+
+	#effect = {} # When a country picks the cult
+	#removed_effect = {} # When a country loses the cult
+	
+}
+
+deer_cult = {
+	production_efficiency = 0.15
+
+	allow = {
+		OR = {
+			has_unlocked_cult = deer_cult
+						culture_group  = skogia
+		}
+		religion = skogian_religion
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+		modifier = {
+			NOT = { num_of_ports = 1 }
+			factor = 0
+		}
+	}
+
+	#effect = {} # When a country picks the cult
+	#removed_effect = {} # When a country loses the cult
+	
+}
+
+wolf_cult = {
+ 	reinforce_cost_modifier = -0.4
+
+	allow = {
+		OR = {
+			has_unlocked_cult = wolf_cult
+			culture_group  = skogia
+		}
+		religion = skogian_religion
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+		modifier = {
+			NOT = { num_of_ports = 1 }
+			factor = 0
+		}
+	}
+
+	#effect = {} # When a country picks the cult
+	#removed_effect = {} # When a country loses the cult
+	
+}
+
+hare_cult = {
+ 	diplomatic_reputation = 1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = hare_cult
+						culture_group  = skogia
+		}
+		religion = skogian_religion
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+		modifier = {
+			NOT = { num_of_ports = 1 }
+			factor = 0
+		}
+	}
+
+	#effect = {} # When a country picks the cult
+	#removed_effect = {} # When a country loses the cult
+	
+}

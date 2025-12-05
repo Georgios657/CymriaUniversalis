@@ -1,0 +1,15 @@
+add_core = FCG
+owner = FCG
+controller = FCG
+culture = bescilian
+religion = amatism_faith
+hre = no
+base_tax = 10
+base_production = 8
+trade_goods = silk
+base_manpower = 6
+capital = "Bescil"
+is_city = yes
+discovered_by = indian
+center_of_trade = 3
+fort_15th = yes

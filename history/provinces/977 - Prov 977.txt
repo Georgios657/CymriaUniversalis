@@ -1,0 +1,17 @@
+add_core = ZC9
+owner = ZC9
+controller = ZC9
+culture = kidonia
+religion = phoenix_faith
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = dyes
+base_manpower = 4
+capital = "Talus"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+
+center_of_trade = 1
+fort_15th = yes

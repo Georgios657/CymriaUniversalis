@@ -1,0 +1,13 @@
+add_core = HY4
+owner = HY4
+controller = HY4
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = wool
+base_manpower = 5
+capital = "Szudovkar"
+is_city = yes
+culture = san_harpia
+religion = winged_one
+

@@ -1,0 +1,14 @@
+add_core = NA2
+owner = NA2
+controller = NA2
+culture = gandara_naga
+religion = naga_faith
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = spices
+base_manpower = 4
+capital = "Chitrakoot"
+is_city = yes
+# Anything typed here will be added to all selected province history files
+discovered_by = naga_tech

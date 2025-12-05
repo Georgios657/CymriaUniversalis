@@ -1,0 +1,13 @@
+add_core = AY4
+owner = AY4
+controller = AY4
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = wine
+base_manpower = 5
+capital = "Eimen"
+is_city = yes
+culture = lorer
+religion = rozalia
+add_core = NC9

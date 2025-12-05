@@ -1,0 +1,13 @@
+add_core = CYB
+owner = CYB
+controller = CYB
+culture = weden
+religion = dagdism
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 2
+capital = "Tonn"
+is_city = yes
+discovered_by = eastern

@@ -1,0 +1,21 @@
+add_core = LO4
+owner = LO4
+controller = LO4
+culture = bozmosian
+religion = telcontarian
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = cotton
+base_manpower = 4
+capital = "Bozmos"
+is_city = yes
+discovered_by = ottoman
+center_of_trade = 1
+
+fort_15th = yes
+
+add_permanent_province_modifier = {
+	name = minor_estuary_modifier
+	duration = -1
+}

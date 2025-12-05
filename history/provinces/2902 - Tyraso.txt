@@ -1,0 +1,16 @@
+add_core = AI4
+owner = AI4
+controller = AI4
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = fish
+base_manpower = 4
+capital = "Tyraso"
+is_city = yes
+culture = tyraso
+religion = rozalia
+add_core = NC7
+center_of_trade = 1
+add_permanent_province_modifier = { name = major_estuary_modifier duration = -1 } 
+fort_15th = yes

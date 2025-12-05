@@ -1,0 +1,15 @@
+add_core = SH2
+owner = SH2
+controller = SH2
+culture = shegen_highlanders
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = gold
+base_manpower = 4
+capital = "Abaz"
+is_city = yes
+religion = moon_and_sun
+
+center_of_trade = 1
+fort_15th = yes

@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = capitilian
+religion = old_imperial_faith
+elector = yes
+capital = 85	# Bayreuth
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1444.1.1 = {
+	monarch = {
+		name = "Rudolf-August"
+		dynasty = "Corvinus"
+		birth_date = 1411.9.21
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+

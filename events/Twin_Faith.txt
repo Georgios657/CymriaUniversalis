@@ -1,0 +1,172 @@
+########################################
+# Events for Theocracy
+#
+# written by Johan Andersson
+########################################
+
+namespace = twin
+
+country_event = {
+	id = twin.1
+	title = "twin.1.t"
+	desc = "twin.1.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = twin_faith
+		is_year = 1550
+		is_month = 9
+		NOT = { is_year = 1552 }
+		current_guru_is = the_exalted_one
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "twin.1.a"
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = twin.2
+	title = "twin.2.t"
+	desc = "twin.2.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = twin_faith
+		is_year = 1610
+		is_month = 9
+		NOT = { is_year = 1552 }
+		current_guru_is = the_lightbringer
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "twin.2.a"
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = twin.3
+	title = "twin.3.t"
+	desc = "twin.3.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = twin_faith
+		is_year = 1660
+		is_month = 9
+		NOT = { is_year = 1552 }
+		current_guru_is = the_moonseeker
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "twin.3.a"
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = twin.4
+	title = "twin.4.t"
+	desc = "twin.4.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = twin_faith
+		is_year = 1710
+		is_month = 9
+		NOT = { is_year = 1552 }
+		current_guru_is = the_silver_patron
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "twin.4.a"
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = twin.5
+	title = "twin.5.t"
+	desc = "twin.5.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = twin_faith
+		is_year = 1740
+		is_month = 9
+		NOT = { is_year = 1552 }
+		current_guru_is = the_radiant_glow
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "twin.5.a"
+		appoint_next_guru = yes
+	}
+}

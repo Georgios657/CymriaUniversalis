@@ -1,0 +1,71 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_dragon = {
+	icon = 20
+
+	# If true, country will get estate
+	trigger = {
+		tag = HE2
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+	 	discipline = 0.05
+		republican_tradition = 0.5
+		
+	}
+	country_modifier_neutral = {	
+		republican_tradition = 0.25
+	}	
+	country_modifier_angry = {
+	 	global_autonomy = 0.05
+		republican_tradition = -1
+		
+	}
+	land_ownership_modifier = {
+			estate_dragon_loyalty_modifier = 0.2
+	}
+	
+
+
+	# Influence modifiers
+	base_influence = 25
+	influence_modifier = {
+		desc = EST_VAL_HUMAN_NOBLES
+		trigger = {
+			 	faction_in_power = human_nobles
+		}	
+		influence = -10
+	}
+	
+
+	loyalty_modifier = {
+		desc = HAS_MONEY
+		trigger = {
+		years_of_income = 2
+		}
+		loyalty = 5
+	}
+
+
+	privileges = {
+	take_and_right
+	promote_dragonborn
+	enlist_more_dragonsborns
+	dragonborn_farming
+	dragonborn_teaching
+	pay_dragonborns_more
+	magical_equipment_for_dragon
+	finance_dragon_hoards
+	}
+
+	agendas = {
+	estate_dragon_get_hoard
+	estate_dragon_get_huge_hoard
+	estate_dragon_get_giant_hoard
+	}
+
+	color = { 122 20 20 }
+	
+	influence_from_dev_modifier = 2
+}

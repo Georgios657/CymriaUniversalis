@@ -1,0 +1,12 @@
+add_core = QA5
+owner = QA5
+controller = QA5
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = tropical_wood
+base_manpower = 1
+capital = "Rest"
+is_city = yes
+culture = botosi
+religion = azarian_folk_tales

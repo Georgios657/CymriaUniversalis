@@ -1,0 +1,15 @@
+add_core = NB6
+owner = NB6
+controller = NB6
+culture = gondawi_naga
+religion = naga_rule_of_law
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = incense
+base_manpower = 2
+capital = "Gondwana"
+is_city = yes
+# Anything typed here will be added to all selected province history files
+discovered_by = naga_tech
+discovered_by = chinese

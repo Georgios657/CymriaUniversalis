@@ -1,0 +1,12 @@
+add_core = MO5
+owner = MO5
+controller = MO5
+culture = gemarian
+religion = tilidian_little_gods
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = cotton
+base_manpower = 2
+capital = "Mal-Yessor"
+is_city = yes

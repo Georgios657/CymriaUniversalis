@@ -1,0 +1,12 @@
+add_core = TW1
+owner = TW1
+controller = TW1
+religion = yazida
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = slaves
+base_manpower = 1
+capital = "Bakata"
+is_city = yes
+culture = nian

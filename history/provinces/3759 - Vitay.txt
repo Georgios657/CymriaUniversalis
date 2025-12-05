@@ -1,0 +1,12 @@
+add_core = TI3
+owner = TI3
+controller = TI3
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = spices
+base_manpower = 5
+capital = "Vitay"
+is_city = yes
+culture = grand_leyak
+religion = tilidian_little_gods

@@ -1,0 +1,340 @@
+rose_fields = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -25
+			
+		land_share = 5
+		influence = 0.05
+		loyalty = 0.05
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+		 	governing_capacity = 75
+	}
+	
+	
+	penalties = {
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_love
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+
+rose_knights = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -10
+			
+		land_share = 5
+		influence = 0.1
+		loyalty = 0.05
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+		 	cavalry_power = 0.2
+	}
+	
+	
+	penalties = {
+			cavalry_cost = 0.20
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_love
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+sacred_matrinomy = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -5
+			
+		land_share = 0
+		influence = 0.05
+		loyalty = 0.00
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+	 	heir_chance = 1
+	}
+	
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_love
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+nuns_and_monks = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		
+	}
+			max_absolutism = -5
+			
+		land_share = 0
+		influence = 0.1
+		loyalty = 0.1
+			on_granted = {
+			
+	}
+	
+	benefits = { 
+	}
+	
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+	add_estate_loyalty = {
+    estate = estate_god_love
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+better_fertility = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		any_owned_province = {
+		OR = {
+			trade_goods = wool
+			trade_goods = fish
+			trade_goods = fur
+			trade_goods = silk
+			trade_goods = livestock
+		}
+
+		}		
+	}
+			max_absolutism = -5
+			
+		land_share = 0
+		influence = 0.05
+		loyalty = 0.0
+		
+			on_granted = {
+		custom_tooltip = fertility_edict
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+		OR = {
+			trade_goods = wool
+			trade_goods = fish
+			trade_goods = fur
+			trade_goods = silk
+			trade_goods = livestock
+		}
+				}
+				add_province_modifier = {
+					name = fertility_love
+					duration = -1
+				}
+			}
+		}			
+	}
+
+		on_granted_province = {
+			if = {
+				limit = {
+		OR = {
+			trade_goods = wool
+			trade_goods = fish
+			trade_goods = fur
+			trade_goods = silk
+			trade_goods = livestock
+		}
+				}
+				add_province_modifier = {
+					name = fertility_love
+					duration = -1
+				}
+			}
+		}	
+		
+	benefits = { 
+	}
+	
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+			custom_tooltip = fertility_edict_rev
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = fertility_love
+		
+					}
+				}
+				remove_province_modifier = fertility_love
+			}
+		}	
+	
+	add_estate_loyalty = {
+    estate = estate_god_love
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}
+
+holy_wine = {
+	icon = estate_god_privilege_giant_temples
+	is_valid = {
+		any_owned_province = {
+		OR = {
+			trade_goods = wine
+		}
+
+		}		
+	}
+			max_absolutism = -5
+			
+		land_share = 0
+		influence = 0.1
+		loyalty = 0.05
+		
+			on_granted = {
+		custom_tooltip = wine_edict
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+		OR = {
+			trade_goods = wine
+		}
+				}
+				add_province_modifier = {
+					name = love_wine
+					duration = -1
+				}
+			}
+		}			
+	}
+
+		on_granted_province = {
+			if = {
+				limit = {
+		OR = {
+				trade_goods = wine
+		}
+				}
+				add_province_modifier = {
+					name = love_wine
+					duration = -1
+				}
+			}
+		}	
+		
+	benefits = { 
+	}
+	
+	
+	penalties = {
+		
+	}
+	
+	on_revoked = { 
+			custom_tooltip = wine_edict_rev
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = love_wine
+		
+					}
+				}
+				remove_province_modifier = love_wine
+			}
+		}	
+	
+	add_estate_loyalty = {
+    estate = estate_god_love
+    loyalty = -20
+	}
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}	
+}

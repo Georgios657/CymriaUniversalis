@@ -1,0 +1,41 @@
+government = magocracy
+add_government_reform = imperial_wizardy
+government_rank = 1
+technology_group = western
+primary_culture = sollingian
+religion = old_imperial_faith
+capital = 23	# Bayreuth
+fixed_capital = 23 # Cannot move capital away from this province & no power cost to move to it
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1420.1.1 = {
+	monarch = {
+		female = yes
+		name = "Veronika"
+		dynasty = "Rabensnacht"
+		birth_date = 1391.9.21
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+	
+		add_ruler_personality = wizard	
+}
+
+1423.2.22 = {
+	heir = {
+		female = yes
+		name = "Helmina"
+		monarch_name = "Helmina III"
+		dynasty = "Wasserstill"
+		birth_date = 1423.2.22
+		death_date = 1461.7.22
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+
+	}
+	add_heir_personality = wizard
+}

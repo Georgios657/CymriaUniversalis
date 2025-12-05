@@ -1,0 +1,24 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = nomad_group
+primary_culture = tainai
+religion = tengri
+secondary_religion = phoenix_faith
+capital = 324
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1430.1.1 = {
+	monarch = {
+		name = "Palas"
+		dynasty = "Koi"
+		birth_date = 1390.9.21
+		dip = 6
+		adm = 3
+		mil = 2
+
+	}
+
+}
+

@@ -1,0 +1,13 @@
+add_core = FC2
+owner = FC2
+controller = FC2
+culture = trasilian
+religion = amatism_faith
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Inno"
+is_city = yes
+discovered_by = indian

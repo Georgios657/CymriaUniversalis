@@ -1,0 +1,18 @@
+government = theocracy
+add_government_reform = slaver_theocracy
+government_rank = 2
+technology_group = selen_tech
+primary_culture = shegen_soutfolk
+religion = ishtara
+capital = 1789	# Bayreuth
+religious_school = the_grey_wanderer
+
+1444.11.11 = {
+	monarch = {
+		name = "Priest Conclave"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

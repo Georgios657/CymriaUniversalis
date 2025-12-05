@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = slaver_kingdom_reform
+government_rank = 2
+technology_group = selen_tech
+primary_culture = paitoan
+religion = ishtara
+capital = 1822	# Bayreuth
+religious_school = circe_the_loyal
+
+1401.1.1 = {
+	monarch = {
+		dynasty = "Kish-Kutallu"
+		name = "Shulgi-Assar"
+		birth_date = 1380.9.21
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+
+}

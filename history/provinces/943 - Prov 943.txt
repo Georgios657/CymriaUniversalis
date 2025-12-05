@@ -1,0 +1,15 @@
+add_core = ZD6
+owner = ZD6
+controller = ZD6
+culture = zephrian
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 2
+capital = "Isakaria"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+fort_15th = yes

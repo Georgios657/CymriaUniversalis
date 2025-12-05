@@ -1,0 +1,13 @@
+add_core = I03
+owner = I03
+controller = I03
+culture = deutscherlander
+religion = old_imperial_faith
+hre = no
+base_tax = 2 
+base_production = 2
+trade_goods = wool
+base_manpower = 3
+capital = "Elfheim"
+is_city = yes
+discovered_by = western

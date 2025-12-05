@@ -1,0 +1,15 @@
+add_core = GW2
+owner = GW2
+controller = GW2
+hre = no
+base_tax = 4
+base_production = 6
+trade_goods = copper
+base_manpower = 6
+capital = "Yoren"
+is_city = yes
+culture = far_aylor
+religion = rozalia
+center_of_trade = 1
+
+fort_15th = yes

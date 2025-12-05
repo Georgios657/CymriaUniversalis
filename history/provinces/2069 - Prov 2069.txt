@@ -1,0 +1,12 @@
+add_core = QA1
+owner = QA1
+controller = QA1
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = gems
+base_manpower = 2
+capital = "Black Rock"
+is_city = yes
+culture = commorian
+religion = azarian_folk_tales

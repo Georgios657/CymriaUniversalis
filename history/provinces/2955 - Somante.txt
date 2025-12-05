@@ -1,0 +1,13 @@
+add_core = AI7
+owner = AI7
+controller = AI7
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Somante"
+is_city = yes
+culture = asyloria
+religion = icearia
+add_core = NC8

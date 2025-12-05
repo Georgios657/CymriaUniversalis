@@ -1,0 +1,16 @@
+# No previous file for Ulthwyk
+add_core = AN5
+owner = EM1
+# Anything typed here will be added to all selected province history files
+controller = EM1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = glass
+base_manpower = 4
+capital = "Rynvarn"
+is_city = yes
+culture = arthian
+religion = imperial_cult
+center_of_trade = 1
+add_core = EM1

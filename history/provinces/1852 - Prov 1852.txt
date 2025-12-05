@@ -1,0 +1,12 @@
+add_core = TW0
+owner = TW0
+controller = TW0
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = wool
+base_manpower = 2
+capital = "Husara"
+is_city = yes
+culture = paitoan
+religion = ishtara

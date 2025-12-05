@@ -1,0 +1,11 @@
+
+culture = woodlander
+religion = skogian_religion
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Maniitsog"
+is_city = yes
+discovered_by = north_american

@@ -1,0 +1,16 @@
+add_core = ZB5
+owner = ZB5
+controller = ZB5
+culture = red_phonixian
+religion = phoenix_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 4
+capital = "Thell-Dorei"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman
+
+fort_15th = yes

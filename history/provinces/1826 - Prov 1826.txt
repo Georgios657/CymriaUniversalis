@@ -1,0 +1,12 @@
+add_core = TW0
+owner = TW0
+controller = TW0
+religion = yazida
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = copper
+base_manpower = 7
+capital = "Marso"
+is_city = yes
+culture = assayia

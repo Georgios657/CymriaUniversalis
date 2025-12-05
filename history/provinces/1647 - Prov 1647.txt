@@ -1,0 +1,13 @@
+add_core = MI1
+owner = MI1
+controller = MI1
+culture = perunian
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Sheeren"
+is_city = yes
+religion = moon_and_sun
+discovered_by = chinese

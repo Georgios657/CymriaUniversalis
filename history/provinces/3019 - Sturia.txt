@@ -1,0 +1,15 @@
+add_core = AY3
+owner = EM1
+controller = EM1
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Sturia"
+is_city = yes
+culture = dayrer
+religion = rozalia
+add_core = EM1
+add_core = NC9
+fort_15th = yes

@@ -1,0 +1,914 @@
+##BranchStart 0
+brachn_cmy1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		culture_group = cymrian
+		NOT = { map_setup = map_setup_random }
+		NOT = {
+		tag = CY2
+		}
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	colone_valley = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			raise_tribals
+		}
+		position = 2
+		provinces_to_highlight = {
+						OR = {
+				area = colone_valley_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+						colone_valley_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			 	add_yearly_manpower = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	great_colone = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			colone_valley
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_id = 277
+		}
+		trigger = {
+			277 = {
+				owned_by = ROOT
+				has_building = temple
+				has_building = workshop
+				development = 20
+			}
+		}
+		effect = {
+			add_province_modifier = { 
+				name = great_colone
+				duration = -1  
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	fertile_valley_colone = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			great_colone
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						development_in_provinces = {
+				value = 50
+				area = colone_valley_area
+			}	
+									development_in_provinces = {
+				value = 20
+				area = caobdh_area
+			}	
+		}
+		effect = {
+			281 = {
+			add_province_modifier = { 
+				name = valley_of_colone
+				duration = -1  
+			}			
+			}
+			
+			278 = {
+			add_province_modifier = { 
+				name = valley_of_colone
+				duration = -1  
+			}				
+			}
+			
+			283 = {
+			add_province_modifier = { 
+				name = valley_of_colone
+				duration = -1  
+			}				
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+brachn_cmy2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		culture_group = cymrian
+		NOT = { map_setup = map_setup_random }
+				NOT = {
+		tag = CY2
+		}
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	valley_of_sloab = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			raise_tribals
+		}
+		position = 2
+		provinces_to_highlight = {
+						OR = {
+				area = sliab_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+						sliab_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+						add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	sloab_city = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			valley_of_sloab
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_id = 300
+		}
+		trigger = {
+			300 = {
+			has_building  = barracks
+			}
+		}
+		effect = {
+			 	add_army_tradition = 10
+		}
+	}
+	##Mission End
+	##Mission Start
+	wild_hill_tribes = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			sloab_city
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_id = 297
+			province_id = 299
+			province_id = 298
+		}
+		trigger = {
+		297 = {
+		NOT = {
+		 	local_autonomy = 20
+		}
+		}
+		
+				299 = {
+		NOT = {
+		 	local_autonomy = 20
+		}
+		}
+		
+				298 = {
+		NOT = {
+		 	local_autonomy = 20
+		}
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	pacifiy_clans = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			highking_valley
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+			 	average_home_autonomy = 5
+			}
+		}
+		effect = {
+			remove_country_modifier = clans_of_the_highlands
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_golden_day = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			pacifiy_clans
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 300
+				region = green_valley_region
+			}			
+		}
+		effect = {
+			add_splendor = 200
+		}
+	}
+	##Mission End
+	##Mission Start
+	no_longer_backwater = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_golden_day
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		
+		trigger = {
+		is_lacking_institutions = no
+			all_neighbor_country = {
+			NOT = {
+				tech_difference = 1			
+			}
+	
+			} 
+		}
+		effect = {
+			change_innovativeness = 20
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+brachn_cmy3 = {
+	slot = 3
+	generic = yes
+	ai = yes
+	potential = {
+		culture_group = cymrian
+		NOT = { map_setup = map_setup_random }
+				NOT = {
+		tag = CY2
+		}
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	raise_tribals = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+		
+		capital_scope = {
+			area = {
+				limit = {
+					NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+						add_permanent_claim = ROOT
+			}
+		}
+				}
+	}
+	##Mission End
+	##Mission Start
+	highking_valley = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			fertile_valley_colone
+			wild_hill_tribes
+			iron_mines_valley
+			great_wynedd
+		}
+		position = 5
+		provinces_to_highlight = {
+						OR = {
+				area = colone_valley_area
+				area = cymria_area
+				area = wynedd_area
+				area = caobdh_area
+				area = sliab_area
+				area = morvach_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+						colone_valley_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+
+						cymria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+						wynedd_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+						caobdh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+									sliab_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+						morvach_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}			
+		}
+		effect = {
+			add_prestige = 50
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_gallows = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			highking_valley
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	army_tradition = 50
+		}
+		effect = {
+			create_general = { tradition = 100 }
+		}
+	}
+	##Mission End
+	##Mission Start
+	a_central_army = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_gallows
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		army_professionalism = 0.5 
+		}
+		effect = {
+						add_country_modifier = {
+				name = "army_drill"
+				duration = 9125 #25 years
+			}			
+		}
+	}
+	##Mission End
+	##Mission Start
+	highland_charge = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			a_central_army
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {	
+			has_leader_with = {
+				shock = 5
+			}
+		}
+		effect = {
+						add_country_modifier = {
+				name = "highland_charge"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+brachn_cmy4 = {
+	slot = 4
+	generic = yes
+	ai = yes
+	potential = {
+		culture_group = cymrian
+		NOT = { map_setup = map_setup_random }
+				NOT = {
+		tag = CY2
+		}
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	cymria_valley = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			raise_tribals
+		}
+		position = 2
+		provinces_to_highlight = {
+						OR = {
+				area = cymria_area
+				area = morvach_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			cymria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			morvach_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	city_cymria_morvach = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			cymria_valley
+		}
+		position = 3
+		provinces_to_highlight = {
+						OR = {
+				area = cymria_area
+				area = morvach_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 30
+				area = morvach_area
+			}
+			development_in_provinces = {
+				value = 30
+				area = cymria_area
+			}
+
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	##Mission End
+	##Mission Start
+	iron_mines_valley = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			city_cymria_morvach
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_id = 287
+			province_id = 285
+		}
+		trigger = {
+			287 = {
+			base_production = 4
+			OR = {
+			has_building = workshop
+			has_building = weapons
+			}
+			}
+			285 = {
+			base_production = 6
+			OR = {
+			has_building = workshop
+			has_building = weapons
+			}
+			}
+		}
+		effect = {
+			287 = {
+			add_province_modifier = { 
+				name = valley_iron
+				duration =  3650
+			}			
+			}
+			
+			285 = {
+			add_province_modifier = { 
+				name = valley_iron
+				duration = 3650 
+			}			
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_the_passes = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			highking_valley
+		}
+		position = 6
+		provinces_to_highlight = {
+			province_id = 286
+			province_id = 302
+			province_id = 279
+			province_id = 278
+		}
+		trigger = {
+			286 = {
+			fort_level = 2
+			}
+						302 = {
+			fort_level = 2
+			}
+						279 = {
+			fort_level = 2
+			}
+						278 = {
+			fort_level = 2
+			}
+		}
+		effect = {
+			286 = {
+			add_province_modifier = {
+				name = passes_to_the_valley
+				duration = -1			
+			}
+			}
+			
+						302 = {
+			add_province_modifier = {
+				name = passes_to_the_valley
+				duration = -1			
+			}
+			}
+			
+						279 = {
+			add_province_modifier = {
+				name = passes_to_the_valley
+				duration = -1			
+			}
+			}
+			
+						278 = {
+			add_province_modifier = {
+				name = passes_to_the_valley
+				duration = -1			
+			}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	secure_the_steppe_near = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_the_passes
+		}
+		position = 7
+		provinces_to_highlight = {
+						OR = {
+				area = western_steppe_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+						western_steppe_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}			
+		}
+		effect = {
+						add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	cultivate_the_steppe_cym = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_the_steppe_near
+		}
+		position = 8
+		provinces_to_highlight = {
+		area = western_steppe_area
+		}
+		trigger = {
+						western_steppe_area = {
+				type = all
+				culture_group  = cymrian
+				num_of_times_improved = 3
+				
+			}				
+		}
+		effect = {
+						western_steppe_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	##Mission End
+	##Mission Start
+	follow_the_river = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			cultivate_the_steppe_cym
+		}
+		position = 9
+		provinces_to_highlight = {
+			region = western_steppe_region
+		}
+		trigger = {
+						western_steppe_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+						punaica_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+									hilitana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			344 = {
+				add_permanent_claim = ROOT			
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_estuary_cymria = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			follow_the_river
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			 	has_port = yes
+		}
+		effect = {
+			 	reset_golden_age = yes
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+brachn_cmy5 = {
+	slot = 5
+	generic = yes
+	ai = yes
+	potential = {
+		culture_group = cymrian
+		NOT = { map_setup = map_setup_random }
+				NOT = {
+		tag = CY2
+		}
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	valley_of_wyneed = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			raise_tribals
+		}
+		position = 2
+		provinces_to_highlight = {
+						OR = {
+				area = wynedd_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+						wynedd_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		add_prestige = 25
+		}
+	}
+	##Mission End
+	##Mission Start
+	cloth_from_wynedd = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			valley_of_wyneed
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_id = 293
+		}
+		trigger = {
+			293 = {
+			has_building = workshop
+			base_production = 7
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+	##Mission End
+	##Mission Start
+	great_wynedd = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			cloth_from_wynedd
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_id = 293
+		}
+		trigger = {
+			293 = {
+			development = 25
+			NOT = {
+			num_free_building_slots = 1
+			}
+			}
+		}
+		effect = {
+			add_mercantilism = 6
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_zephryian_border = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			secure_the_passes
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size = 80
+		}
+		effect = {
+			finnen_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT			
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_flatlands = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_zephryian_border
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						finnen_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			zephyria_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT			
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	zepyhria_cap_cym = {
+		icon = mission_build_up_to_force_limit
+		required_missions =  {
+			the_flatlands
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+						zephyria_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			the_phoenix_empire = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT			
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

@@ -1,0 +1,15 @@
+add_core = EM1
+owner = EM1
+# Anything typed here will be added to all selected province history files
+controller = EM1
+hre = no
+base_tax = 5
+base_production = 6
+trade_goods = cotton
+base_manpower = 5
+capital = "Seilis"
+is_city = yes
+culture = seili
+religion = imperial_cult
+center_of_trade = 1
+add_core = AN2

@@ -1,0 +1,13 @@
+add_core = AI2
+owner = AI2
+controller = AI2
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wool
+base_manpower = 2
+capital = "Tosanko"
+is_city = yes
+culture = meyor
+religion = icearia
+add_core = NC7

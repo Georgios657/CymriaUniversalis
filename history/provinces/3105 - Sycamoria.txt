@@ -1,0 +1,12 @@
+add_core = GW4
+owner = GW4
+controller = GW4
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = livestock
+base_manpower = 1
+capital = "Sycamoria"
+is_city = yes
+culture = aylor_frontier
+religion = rozalia

@@ -1,0 +1,10 @@
+culture = southern_ephereta
+religion = naga_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = wool
+base_manpower = 1
+capital = "Shikativa"
+is_city = yes
+discovered_by = chinese

@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = high_american
+primary_culture = neenen
+religion = phoenix_faith
+capital = 896	# Bayreuth
+
+
+1420.1.1 = {
+	monarch = {
+		dynasty = "Ayaloi"
+		name = "Redio"
+		birth_date = 1415.9.21
+		dip = 4
+		adm = 2
+		mil = 2
+
+	}
+
+}

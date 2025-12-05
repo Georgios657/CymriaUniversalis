@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = sollingian
+religion = old_imperial_faith
+capital = 26	# Bayreuth
+fixed_capital = 26 # Cannot move capital away from this province & no power cost to move to it
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+1416.1.1 = {
+	monarch = {
+		name = "August"
+		dynasty = "Monte"
+		birth_date = 1361.9.21
+		dip = 3
+		adm = 2
+		mil = 4
+	}
+}
+

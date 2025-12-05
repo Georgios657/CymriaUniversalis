@@ -1,0 +1,13 @@
+add_core = LD9
+owner = LD9
+controller = LD9
+culture = mounta_talar
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 3
+trade_goods = copper
+base_manpower = 4
+capital = "Ramanagar"
+is_city = yes
+discovered_by = ottoman

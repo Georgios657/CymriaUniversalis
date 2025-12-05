@@ -1,0 +1,76 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 196 180 43 }
+
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	steppe_riders
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_cavalry
+	steppe_uhlans
+	steppe_raiders
+	steppe_footmen
+	steppe_musketeers
+	steppe_infantry
+	steppe_rifles
+	reformed_steppe_rifles
+}
+
+monarch_names = {
+	"Attila #0" = 20
+	"Bleda #0" = 20
+	"Ruga #0" = 20
+	"Mundzuk #0" = 20
+	"Ellac #0" = 20
+	"Dengizich #0" = 20
+	"Octar #0" = 20
+	"Ernak #0" = 20
+	"Uldin #0" = 20
+	"Rua #0" = 20
+	
+	"Amalric #0" = 20
+	"Ermanaric #0" = 20
+	"Valamir #0" = 20
+	"Totila #0" = 20
+	"Walia #0" = 20
+	"Athanaric #0" = 20
+	
+	"Kreka #0" = -20
+	"Ildico #0" = -20
+	"Gudrun #0" = -20
+	"Hildr #0" = -20
+	"Ulduz #0" = -20
+	"Zebba #0" = -20
+	"Rodhene #0" = -20
+	"Amage #0" = -20
+	"Oeana #0" = -20
+	"Esen #0" = -20
+	
+	"Athalind #0" = -20
+	"Alarice #0" = -20
+	"Fridugern #0" = -20
+
+
+}
+
+leader_names = {
+		Amalic Ermanaric Emalic Walia Totalic
+
+}
+
+ship_names = {
+
+}

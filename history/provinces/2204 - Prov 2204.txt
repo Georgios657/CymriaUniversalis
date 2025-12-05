@@ -1,0 +1,12 @@
+add_core = WI2
+owner = WI2
+controller = WI2
+culture = jirai
+religion = mrogi_wa_damu
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 2
+capital = "Uru"
+is_city = yes

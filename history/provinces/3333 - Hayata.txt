@@ -1,0 +1,12 @@
+add_core = VP2
+owner = VP2
+controller = VP2
+religion = the_silvern_guide
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+capital = "Hayata"
+is_city = yes
+culture = high_shansharian

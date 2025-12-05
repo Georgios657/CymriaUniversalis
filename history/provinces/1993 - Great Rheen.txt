@@ -1,0 +1,13 @@
+add_core = CA1
+owner = CA1
+controller = CA1
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = wool
+base_manpower = 4
+capital = "Great Rheen"
+is_city = yes
+culture = rheenian
+religion = asae_ya
+fort_15th = yes

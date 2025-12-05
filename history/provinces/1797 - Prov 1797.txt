@@ -1,0 +1,13 @@
+add_core = TW4
+owner = TW4
+controller = TW4
+hre = no
+base_tax = 7
+base_production = 5
+trade_goods = silk
+base_manpower = 4
+capital = "Malgak"
+is_city = yes
+culture = lower_sumar
+religion = ishtara
+fort_15th = yes

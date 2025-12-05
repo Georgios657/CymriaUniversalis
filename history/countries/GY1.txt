@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = imperial_tech
+primary_culture = gynter
+religion = icearia
+capital = 3530
+
+1434.1.1 = {
+	monarch = {
+		name = "Per"
+		dynasty = "Gynt"
+		birth_date = 1415.9.21
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+
+}

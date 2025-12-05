@@ -1,0 +1,13 @@
+add_core = LA0
+owner = LA0
+controller = LA0
+culture = lascarian
+religion = amatism_faith
+hre = yes
+base_tax = 2
+base_production = 3
+trade_goods = iron
+base_manpower = 4
+capital = "Arhon"
+is_city = yes
+discovered_by = ottoman

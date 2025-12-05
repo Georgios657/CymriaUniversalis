@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = imperial_tech
+primary_culture = far_aylor
+religion = imperial_cult
+capital = 3130
+
+1444.1.1 = {
+	monarch = {
+		name = "Karol"
+		dynasty = "Lichian"
+		birth_date = 1390.9.21
+		dip = 1
+		adm = 2
+		mil = 1
+	}
+
+}

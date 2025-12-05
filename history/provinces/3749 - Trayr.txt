@@ -1,0 +1,12 @@
+add_core = TI3
+owner = TI3
+controller = TI3
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = sugar
+base_manpower = 2
+capital = "Trayr"
+is_city = yes
+culture = grand_leyak
+religion = tilidian_little_gods

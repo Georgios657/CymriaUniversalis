@@ -1,0 +1,14 @@
+add_core = ZD1
+owner = ZD1
+controller = ZD1
+culture = garian
+religion = phoenix_faith
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Aibrenad"
+is_city = yes
+discovered_by = high_american
+discovered_by = ottoman

@@ -1,0 +1,992 @@
+monarch_power = MIL
+
+# applied when a country is ahead of time in this technology
+# no bonus for MIL currently
+ahead_of_time = {
+	monthly_russian_modernization = 0.05
+}
+
+# Pre-era techs
+technology = {
+	# Tech 0
+	year = 1350
+	
+	sprite_level = 1
+
+	infantry_fire		= 	0.25
+	infantry_shock 		= 	0.20	
+	cavalry_shock  		= 	0.8	
+	land_morale 		= 	2.0
+
+	enable = tiridian_tribal
+	
+	enable = giant_warrior
+	
+	enable = mountain_warrior
+	
+	enable = wingless
+	enable = harpy_bowman
+
+	enable = imperial_knights
+	enable = imperial_knights2
+	enable = imperial_soldiers
+	
+	enable = azur_warrior
+	
+	enable = eastern_militia
+	enable = chariot_archers
+	
+	enable = Naga_Warrior
+	enable = ancient_snake
+	
+	enable = varjorjen_warrior
+	
+	enable = Crossbow
+	enable = Highlandpatrol
+	
+	enable = cannon_imperial
+	enable = imperial_pikes		
+	enable = imperial_reiter	
+	
+	enable = ghosts			
+	
+	enable = aosi
+	enable = tuanachta
+	
+	enable = tribal_warrior
+	
+	enable = kerns
+	enable = light_cav
+	
+	enable = steppe_warrior
+	enable = steppe_raider
+	
+	enable = city_company
+	enable = betosian_lancer
+	
+	enable = Lance
+	enable = RealmKnight	
+	
+	enable = Arbalester
+	enable = WhiteRider		
+}
+
+technology = {
+	# Tech 1
+	year = 1390
+	expects_institution = {
+		feudalism = 0.25
+	}
+	
+	infantry_shock		= 	0.1
+	infantry_fire 		= 	0.1
+	
+	fort_15th = yes
+}
+
+technology = {
+	# Tech 2
+	year = 1420
+	expects_institution = {
+		feudalism = 0.5
+	}
+	
+	infantry_shock		= 	0.2
+	cavalry_shock		= 	0.2
+	
+	combat_width = 5
+}
+
+# The 30 big techs from here on
+
+technology = {
+	# Tech 3
+	year = 1440
+	expects_institution = {
+		feudalism = 0.5
+	}
+	enable = helepolis
+	
+	enable = ballista_carrier	
+	
+	enable = swordman	
+	land_morale = 	0.5
+	may_drill = yes
+}
+
+technology = {
+	# Tech 4
+	year = 1453
+	expects_institution = {
+		feudalism = 0.5
+	}
+
+	#Pike Square
+	
+
+	land_morale = 	0.5
+	military_tactics 	= 	0.25
+}
+
+technology = {
+	# Tech 5
+	year = 1466
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.15
+	}
+	
+	#Standardised Pikes
+	supply_limit 		= 	0.5
+	infantry_shock		= 	0.15
+	cavalry_shock		= 	0.2
+	enable = eastern_trebuchet	
+	enable = eastern_trebuchet1	
+	enable = eastern_trebuchet2
+	enable = eastern_trebuchet3
+	enable = eastern_trebuchet4
+	enable = ballista		
+
+
+
+	
+	combat_width = 2
+}
+
+technology = {
+	# Tech 6
+	year = 1479
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.3
+	}
+	
+	#Arquebus
+	military_tactics 	= 	0.25
+	infantry_shock		= 	0.30
+	infantry_fire 		= 	0.20
+	
+	
+	barracks = yes
+
+	enable = cymrian_catapult
+	enable = cymrian_catapult1
+	enable = cymrian_catapult2
+
+	combat_width = 2
+}
+
+technology = {
+	# Tech 7
+	year = 1492
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		astrology_i = 0.15
+	}
+
+
+	enable = hall_guardian	
+	
+	enable = alived_mammoth	
+	#The limber
+	artillery_fire 		= 	1
+	artillery_shock 	=	0.05
+	military_tactics 	= 	0.25
+
+}
+
+technology = {
+	# Tech 8
+	year = 1505
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+			astrology_i = 0.3
+	}
+	
+	enable = tilidian_shooter_desc
+	
+	enable = giant_archers
+	
+	enable = harpy_soldier
+	enable = manhunter
+	
+	enable = imperial_horses
+	enable = imperial_horses2
+	enable = imperial_borderguard		
+	
+	enable = sycteht_chariots
+	enable = longsword	
+	
+		enable = Grenadiers		
+		
+		enable = azur_champion		
+		enable = azur_rider		
+		
+	enable = Naga_Guard	
+	
+	enable = Merchant_Cavalry	
+	
+	enable = night_hunter	
+	
+	enable = black_rider	
+	
+	enable = agama		
+	enable = reformed_legionaries		
+	
+	enable = imperial_freeshooter		
+	enable = imperial_curassier		
+	
+	enable = gallowglass	
+	enable = scouters
+	
+	enable = swordmaster
+	enable = sidhes
+	
+	
+	enable = campguard
+	enable = steppe_lancer
+	
+	enable = free_company
+	enable = kranian_rider
+	
+	enable = ArmouredKnight
+	enable = ManAtArms
+
+	enable = RainbowRider
+	enable = Pavese
+
+	enable = black_plate	
+	#Pike and Shot
+	infantry_fire		= 	0.25
+	cavalry_shock		=	0.8
+
+	
+	regimental_camp = yes
+}
+
+technology = {
+	# Tech 9
+	year = 1518
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		astrology_i = 0.5
+	}
+	
+	#Ditch
+	enable = advanced_cannon_imperial
+		enable = advanced_ballista_carrier	
+		
+		enable = wood_cannon	
+	military_tactics 	= 	0.25
+	combat_width = 1	
+}
+
+technology = {
+	# Tech 10
+	year = 1531
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+			astrology_i = 0.5
+	printing_press = 0.15
+	}
+			
+	#Reiter
+	cavalry_fire		= 	0.5
+	maneuver_value 		= 	0.25
+
+}
+
+technology = {
+	# Tech 11
+	year = 1544
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+				astrology_i = 0.5
+	printing_press = 0.3
+	}
+	
+	#Matchlock Musket
+	infantry_shock		= 	0.20
+
+
+	
+	weapons = yes
+	
+	combat_width = 2
+}
+	
+technology = {
+	# Tech 12
+	year = 1557
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+				astrology_i = 0.5
+	printing_press = 0.5
+	}
+	
+	#Spanish Square
+	sprite_level = 2
+	enable = mountain_ranger	
+	enable = tilidan_ambush_cav	
+	
+	enable = copper_cannon	
+		
+	
+	supply_limit 		= 	0.5
+	military_tactics	=	0.25
+
+}
+
+technology = {
+	# Tech 13
+	year = 1570
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		printing_press = 0.5
+		new_world_i = 0.15
+				astrology_i = 0.5
+	}
+	enable = tilidian_shooter	
+	
+	enable = frostborne	
+	
+	enable = harpy_stricking	
+	
+	enable = imperial_formation	
+	
+	enable = azur_soldier	
+	
+	enable = composite_bowman	
+	
+	enable = Naga_Champion		
+	
+	enable = Mountain_Fighter		
+	
+	enable = imperial_line		
+	
+	enable = scorpio	
+	enable = corpa_sarmata	
+	
+	enable = ghost_raider
+	
+	enable = cym_skirmischer
+	
+	enable = city_defender
+	
+	enable = ReformedLance
+	
+	enable = Zeph_Shooter
+	
+	enable = night_stalker
+	
+	enable = banshee
+	#Trunnions
+	artillery_shock 	= 	0.1
+	artillery_fire 		= 	0.4
+	
+}
+
+technology = {
+	# Tech 14
+	year = 1583
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		printing_press = 0.5
+		new_world_i = 0.3
+			astrology_i = 0.5
+	}
+	
+	#Star Bastions
+	fort_16th = yes
+	infantry_fire		=	0.3
+
+	enable = shipcannon
+	
+	enable = scorpion
+	
+	enable = thunder_snake
+	
+	enable = Longsword_Cavalry
+	
+	enable = black_coat
+
+	enable = cymrian_cannon
+	
+	enable = eastern_cannon
+	combat_width = 2
+}
+
+technology = {
+	# Tech 15
+	year = 1596
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+			astrology_i = 0.5
+	}
+	enable = tilidan_siege_mortar	
+	
+	enable = basilisk	
+	enable = imperial_dual	
+	enable = imperial_dual2
+	
+	enable = azur_skirmischer	
+	
+	enable = seelenian_ha	
+	
+	enable = nightmares	
+	
+	enable = border_lance	
+	
+	enable = imperial_ulan		
+
+    enable = lancers
+	
+    enable = mori_blessed
+	
+    enable = BlackKnight
+	
+    enable = kranian_lancer
+	
+    enable = ReformedRainbow
+	
+    enable = blood_rain_mages
+
+	
+	#Maurician Infantry
+	land_morale 		=	1.0
+	military_tactics	=	0.25
+	
+
+	
+}
+
+technology = {
+	# Tech 16
+	year = 1609
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+			astrology_i = 0.5
+	}
+	
+	#Standardisation of Calibre
+	artillery_shock 	= 	0.1
+	artillery_fire 		= 	1.0	
+
+	enable = iron_cannon
+
+
+	enable = tilidan_dragoons
+	enable = long_shot_cannon_imperial
+	training_fields = yes
+	
+	combat_width = 1
+	
+}
+
+technology = {
+	# Tech 17
+	year = 1622
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.15
+			astrology_i = 0.5
+	}
+	
+	cavalry_shock		=	1.0
+	supply_limit		= 	0.5	
+	
+}
+
+technology = {
+	# Tech 18
+	year = 1635
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.3
+			astrology_i = 0.5
+	}
+	
+	#Carbine
+	maneuver_value 		= 	0.25
+
+	enable = tilidan_line		
+	enable = mountain_company
+	
+	enable = jarl
+	enable = torsion_carrier
+	
+	enable = advanced_formation
+	
+	enable = ironborn
+	enable = harpy_sniper
+	
+	enable = azur_landstrider
+	
+	enable = reformed_militia
+	
+	enable = Naga_Hunter
+	
+	enable = Advanced_Grenadiers		
+	
+	enable = skulltaker		
+	
+	enable = reformed_tetrachs			
+	enable = onager			
+	
+	enable = imperial_stormtroopers			
+	
+	enable = cymrian_line			
+	
+	enable = LineInfantry		
+	
+	enable = mistwalker		
+	
+	enable = river_raider			
+	enable = ghost_lancer	
+	
+	enable = Zeph_Line	
+	
+	enable = sevener			
+	combat_width = 2
+}
+
+technology = {
+	# Tech 19
+	year = 1648
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+				astrology_i = 0.5
+	}
+	
+	#Gustavian Infantry
+	military_tactics 	= 	0.25
+	supply_limit		=	0.5
+	enable = charge_infantry
+	fort_17th = yes
+
+}
+
+technology = {
+	# Tech 20
+	year = 1661
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+				astrology_i = 0.5
+	}
+	
+	#Killing Grounds
+	
+	enable = tilidan_mobile
+	
+	enable = steel_cannon
+	
+	enable = manticore
+	
+	enable = azur_landcannon
+	
+	enable = snake
+	
+	enable = earth_snake
+	
+	enable = cymrian_adv_cannon
+	
+	enable = eastern_heavy_cannon
+	
+	enable = wailing_mages
+
+	infantry_fire		= 	0.5
+		
+
+	combat_width = 2
+}
+
+technology = {
+	# Tech 21
+	year = 1674
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.15
+				astrology_i = 0.5
+	}
+	
+	#Line Infantry
+	sprite_level = 3
+		enable = polita_palatina	
+	military_tactics 	= 	0.25
+	
+	infantry_shock 		=	0.5
+}
+
+technology = {
+	# Tech 22
+	year = 1687
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.3
+				astrology_i = 0.5
+	}
+		enable = azuar_mandaka	
+		
+		enable = scouts	
+
+		
+	enable = tilidan_continental_cav	
+	enable = tilidan_continental	
+	
+	enable = hailstorm	
+	
+	enable = imperial_lancers	
+	enable = imperial_lancers2	
+	
+	enable = seelenian_storm	
+	
+	enable = Sabre_Cavalry	
+	
+	enable = bloodriders	
+	
+	enable = imperial_stormcav			
+	
+	enable = raiders
+	
+	enable = mistrider
+	
+	enable = khan_guard
+	
+	enable = krainian_ulan
+	
+	enable = WingedKnight
+	
+	enable = AuxHussar
+	
+	#Cartridge	(1620)?)
+	cavalry_fire		=	0.5
+	artillery_shock 	=	0.1
+	artillery_fire		=	2.0
+	
+	combat_width = 2
+	
+	conscription_center = yes
+
+	
+}
+
+technology = {
+	# Tech 23
+	year = 1700
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+				astrology_i = 0.5
+	}
+	
+	#Light Cavalry
+	enable = mountaneer
+	
+	cavalry_shock		=	1.0
+	military_tactics 	= 	0.25
+	maneuver_value 		= 	0.5
+
+}
+
+technology = {
+	# Tech 24
+	year = 1715
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.15
+				astrology_i = 0.5
+	}
+	
+	#Covered Way
+		enable = frostjarl
+		enable = cannon_carrier
+		
+		enable = peacebringer
+		
+		
+		enable = harpy_feather
+		
+		enable = imperial_division
+		
+		enable = azur_conscript
+		
+		enable = defender
+		
+		enable = Naga_Zealot
+		
+		enable = mass_infantry
+		
+		enable = Rockettrooper	
+		
+		enable = polita_palatina_defensores	
+		
+		enable = cymrian_shooter
+		
+		enable = sharpshooter
+		
+		enable = steppe_line
+		
+		enable = light_urban_company
+		
+		enable = thorsten_choosen
+		
+		enable = Zeph_Gren
+	fort_18th	= yes	
+	military_tactics 	= 	0.25
+	enable = imperial_grenadiers		
+	
+	enable = AlmodoGoldCoat		
+	combat_width = 2
+}
+
+technology = {
+	# Tech 25
+	year = 1730
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.3
+				astrology_i = 0.5
+	}
+	enable = tilidan_flying	
+	
+	enable = whirlwind	
+	
+	enable = azur_longcannon	
+	
+	enable = rocket_thrower	
+	
+	enable = siege_cannon_imperial	
+	
+	enable = eastern_siege_cannon
+	
+	enable = wind_of_death_mages
+	
+	
+	enable = cym_mortar	
+	#Metallurgy
+	artillery_shock 	=	0.1
+	artillery_fire		=	2.0
+	
+
+}
+
+technology = {
+	# Tech 26
+	year = 1745
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+				astrology_i = 0.5
+	}
+	
+	#Light Infantry Companies
+	sprite_level = 4
+			enable = azur_riflerider	
+			
+			enable = seelenian_dragoner	
+			
+			enable = Shock_Cavarly	
+			
+			enable = doom_riders	
+			
+			enable = scout_guard	
+			
+	enable = imperial_heavy_curassier	
+	
+	enable = dragoons
+	
+	enable = unicorn_cav	
+	
+	enable = ulaan		
+	
+	enable = kranian_curassier		
+	
+	enable = AlmodsarianCurassier		
+	
+	enable = AuxDragoon		
+	
+	land_morale			=	1.0
+
+	
+	combat_width = 2
+}
+
+technology = {
+	# Tech 27
+	year = 1760
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+				astrology_i = 0.5
+	}
+	
+	#Bayonet
+	supply_limit		=	0.5
+	infantry_fire		= 	0.5	
+}
+
+technology = {
+	# Tech 28
+	year = 1775
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+		industrialization = 0.25
+				astrology_i = 0.5
+	}
+	
+	#Cuirassier
+	maneuver_value 		= 	0.25
+	infantry_shock		=	0.5	
+	
+}
+
+technology = {
+	# Tech 29
+	year = 1790
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+		industrialization = 0.5
+				astrology_i = 0.5
+	}
+	
+	#Defense in Depth
+	military_tactics 	= 	0.25		
+}
+
+technology = {
+	# Tech 30
+	year = 1805
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 1
+		industrialization = 0.5
+				astrology_i = 0.5
+	}
+	
+	#Impulse Warfare
+	#sprite_level = 5	
+	
+	military_tactics	=	0.25
+	land_morale			=	1.0
+	maneuver_value = 0.25
+	
+}
+
+technology = {
+	# Tech 31
+	year = 1820
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+		industrialization = 1
+				astrology_i = 0.5
+	}
+	
+	#Rifle
+	cavalry_shock		=	1.0
+	infantry_fire		=	1.0
+	supply_limit		=	0.5
+}
+
+technology = {
+	# Tech 32
+	year = 1835
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 1
+		enlightenment = 1
+		industrialization = 1
+				astrology_i = 0.5
+	}
+	
+	#Field Howitzer
+	military_tactics	=	0.25
+	artillery_shock		=	0.1
+	artillery_fire		=	2.0	
+}

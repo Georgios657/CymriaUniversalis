@@ -1,0 +1,12 @@
+add_core = WI4
+owner = WI4
+controller = WI4
+culture = high_jinai
+religion = mrogi_wa_damu
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = tea
+base_manpower = 2
+capital = "Mkbokumo"
+is_city = yes

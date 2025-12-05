@@ -1,0 +1,29 @@
+government = tribal
+add_government_reform = troll_tribes
+government_rank = 1
+technology_group = giant
+primary_culture = hill_trolls
+religion = fore_bearers
+capital = 3507
+
+1424.1.1 = {
+	monarch = {
+		name = "Rungnir"
+		dynasty = "Skarnfjell"
+		birth_date = 1400.9.21
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+}
+
+1366.10.1 = {
+	set_estate_privilege = estate_church_hideous_trolls
+	set_estate_privilege = estate_nobles_free_clans
+}
+
+change_estate_land_share = {
+	estate = estate_church
+	share = 10
+}

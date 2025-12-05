@@ -1,0 +1,16 @@
+add_core = LO3
+owner = LO3
+controller = LO3
+culture = cotralian
+religion = amatism_faith
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = tropical_wood
+base_manpower = 1
+capital = "Court"
+is_city = yes
+discovered_by = ottoman
+
+
+fort_15th = yes

@@ -1,0 +1,12 @@
+add_core = EL3
+owner = EL3
+controller = EL3
+religion = elven_ancestors
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = incense
+base_manpower = 2
+capital = "Slia Gaothach"
+is_city = yes
+culture = desert_elv
