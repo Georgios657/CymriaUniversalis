@@ -16,6 +16,7 @@
  great_ship_pul:0 "Great Fleet"
  pulana_acadermy:0 "Academy of Pullana"
  dams:0 "Dams"
+ num_of_souls:0 "Number Of Souls"
  
  allow_explo:0 "Allows the Exploration Idea Group"
  soultrap:0 "Every pillaged capital adds 1 to the soul trap, 100.000 dead enemies in a single battle also add 1"
