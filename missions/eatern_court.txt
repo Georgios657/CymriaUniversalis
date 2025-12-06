@@ -1,4 +1,3 @@
-##BranchStart 0
 ea0 = {
 	slot = 1
 	generic = no
@@ -9,31 +8,26 @@ ea0 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	emerald_green = {
-			icon = mission_build_up_to_force_limit
+		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			more_slaves
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1958
 		}
 		trigger = {
 			1958 = {
-			num_of_times_improved_by_owner = 5
+				num_of_times_improved_by_owner = 5
 			}
 		}
 		effect = {
 			add_treasury = 500
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 0
-##BranchStart 1
+
 ea1 = {
 	slot = 2
 	generic = no
@@ -44,97 +38,62 @@ ea1 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	the_mines_gems = {
-			icon = mission_build_up_to_force_limit 
-		required_missions =  {
-			
-		}
+		icon = mission_build_up_to_force_limit 
+		required_missions =  { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-				sparkling_islea_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-				
-			1958 = {
-			 	is_prosperous = yes
-			}
-			
-			1959 = {
-			 	is_prosperous = yes
-			}
-			
-			1960 = {
-			 	is_prosperous = yes
+			capital_scope = {
+				is_prosperous = yes
 			}
 		}
 		effect = {
 			add_mercantilism = 5
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	more_slaves = {
-			icon = mission_build_up_to_force_limit
+		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			the_mines_gems
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			trade_goods = slaves
 		}
 		trigger = {
-				sparkling_islea_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-			
-		
-			OR = {
 			slaves = 2
-			
-			trading_bonus = {
-				trade_goods = slaves
-				value = yes
-			}
-			}
 		}
 		effect = {
-			1958 = {
-			add_base_production = 2
-			}
+			1958 = { add_base_production = 2 }
 			
-			1960 = {
-			add_base_production = 2
-			}
+			1959 = { add_base_production = 2 }
 			
-			1960 = {
-			add_base_production = 2
-			}
+			1960 = { add_base_production = 2 }
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	saphire_blue = {
-			icon = mission_build_up_to_force_limit
+		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			more_slaves
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1960
 		}
 		trigger = {
 			1960 = {
-			num_of_times_improved_by_owner = 5
+				num_of_times_improved_by_owner = 5
 			}
 		}
 		effect = {
 			add_prestige = 15
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	master_of_gems = {
-			icon = mission_build_up_to_force_limit
+		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			red_rubin
 			saphire_blue
@@ -142,48 +101,41 @@ ea1 = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			trade_goods = gems
 		}
 		trigger = {
 			trading_bonus = {
-	trade_goods = gems
-	value = yes
-}
-
-trade_goods_produced_amount = {
-	trade_goods = gems
-	amount = 5
-}
+				trade_goods = gems
+				value = yes
+			}
+			trade_goods_produced_amount = {
+				trade_goods = gems
+				amount = 5
+			}
 		}
 		effect = {
 			1958 = {
-			add_province_modifier = { 
-    name = gem_mines
-    duration = -1  
-}
+				add_province_modifier = {
+					name = gem_mines
+					duration = -1
+				}
 			}
-			
 			1959 = {
-			add_province_modifier = { 
-		name = gem_mines
-		duration = -1  
-	}
+				add_province_modifier = {
+					name = gem_mines
+					duration = -1
+				}
 			}
-
-					1960 = {
-					add_province_modifier = { 
-			name = gem_mines
-			duration = -1  
-		}
+			1960 = {
+				add_province_modifier = {
+					name = gem_mines
+					duration = -1
+				}
 			}			
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 1
-##BranchStart 2
+
 ea2 = {
 	slot = 3
 	generic = no
@@ -194,31 +146,26 @@ ea2 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	red_rubin = {
-			icon = mission_build_up_to_force_limit
+		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			more_slaves
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1959
 		}
 		trigger = {
 			1959 = {
-			num_of_times_improved_by_owner = 5
+				num_of_times_improved_by_owner = 5
 			}
 		}
 		effect = {
 			add_splendor = 200
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 2
-##BranchStart 3
+
 ea3 = {
 	slot = 4
 	generic = no
@@ -229,69 +176,58 @@ ea3 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	master_of_fleet = {
-			icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		icon = mission_build_up_to_force_limit
+		required_missions =  { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			navy_size_percentage = 1
 		}
 		effect = {
-										southern_pirate_bay_area  = {					
-			add_permanent_claim = ROOT
-		}
+			southern_pirate_bay_area  = {					
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	set_sail_toward_pirate_bay = {
-			icon = mission_build_up_to_force_limit
+		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			master_of_fleet
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1531
 		}
 		trigger = {
 			owns = 1531
 		}
 		effect = {
-										pirate_bay_area  = {					
-			add_permanent_claim = ROOT
-		}
+			pirate_bay_area  = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	only_one_court = {
-			icon = mission_build_up_to_force_limit
+		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			set_sail_toward_pirate_bay
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = pirate_bay_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-		pirate_bay_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			pirate_bay_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_prestige = 25
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 3
-##BranchStart 4
+
 ea4 = {
 	slot = 5
 	generic = no
@@ -302,16 +238,10 @@ ea4 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	the_grand_captain_council = {
-			icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		icon = mission_build_up_to_force_limit
+		required_missions =  { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			stability = 1
 		}
@@ -322,25 +252,19 @@ ea4 = {
 				manuever = 3
 				siege = 3
 			}
-
 			add_faction_influence = {
 				faction = pr_captains
 				influence = 25
 			}
-			
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	strict_leadership = {
-			icon = mission_build_up_to_force_limit
+		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			the_grand_captain_council
 		}
 		position = 2
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			navy_tradition = 50
 		}
@@ -353,28 +277,18 @@ ea4 = {
 			}			
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_first_pirate_kings = {
-			icon = mission_build_up_to_force_limit
+		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			strict_leadership
 		}
 		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			NOT = {
-				republican_tradition = 50
-			}
+			NOT = { republican_tradition = 50 }
 		}
 		effect = {
-			 	add_stability = 2
+			add_stability = 2
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 4
