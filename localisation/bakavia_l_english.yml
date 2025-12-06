@@ -1,4 +1,13 @@
 ﻿l_english:
+ code_of_honor_mod:0 "Code of Honor"
+ great_temple_of_west:0 "Great Western Temple"
+ fleet_tax:0 "Fleet Tax"
+ colden_country:0 "Golden Country"
+ the_fair_lords:0 "Fair Lords"
+ cake:0 "Cake!"
+ the_crown_bakava:0 "Bakavian Crown"
+ new_house_wisdom:0 "House of Wisdom"
+
  PEACE_po_claim_empire:0 "Claim the imperial crown!"
  bakavian_art_title:0 "Employ Artists"
  bakavian_art_desc:0 "Artists, especially painters, must be promoted as they enhance the glory of our dynasty and that of Bakavia. After all, what is the purpose of human life if not to create art?"

@@ -1,4 +1,3 @@
-##BranchStart 0
 bakavia_1 = {
 	slot = 1
 	generic = no
@@ -9,25 +8,18 @@ bakavia_1 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	bakavian_art = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	artist = 2
+			artist = 2
 		}
 		effect = {
-			 add_prestige = 50
+			add_prestige = 50
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_painting_gallery = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -38,8 +30,8 @@ bakavia_1 = {
 			province_id = 88
 		}
 		trigger = {
-					 	artist = 3
-						prestige = 95
+			artist = 3
+			prestige = 95
 			88 = {
 			 	development = 25
 			}
@@ -48,8 +40,7 @@ bakavia_1 = {
 			add_splendor = 1200
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	a_temple = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -57,110 +48,97 @@ bakavia_1 = {
 		}
 		position = 3
 		provinces_to_highlight = {
-		province_id = 88
+			province_id = 88
 		}
 		trigger = {
 			treasury = 1000
 			88 = {
 			 	development = 25
-				has_building = cathedral		
+				has_building = cathedral
 			}
 	
 		}
 		effect = {
 			add_treasury = -1000
 			88 = {
-			add_province_modifier = { 
+				add_province_modifier = { 
 					name = great_temple_of_west
-					duration = -1  
-			}
+					duration = -1
+				}
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bakavian_fleet = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 5
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-		navy_size_percentage = 1
-		num_of_heavy_ship = 5
+			navy_size_percentage = 1
+			num_of_heavy_ship = 5
 		}
 		effect = {
 			add_navy_tradition = 25
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	a_fleet_toll = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			bakavian_fleet
 		}
 		position = 6
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			dock = 5
 			shipyard = 5
 		}
 		effect = {
 			add_country_modifier = { 
-    name = fleet_tax
-    duration = 36500
-}
+				name = fleet_tax
+				duration = 36500 #100 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_armada_of_west = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			a_fleet_toll
 		}
 		position = 7
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	naval_forcelimit = 100
+			naval_forcelimit = 100
 		}
 		effect = {
 			custom_tooltip = can_use_exploration
 			set_country_flag = allow_expansion
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_unkown_sea = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			the_armada_of_west
 		}
 		position = 8
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			##MISSIONTRIGGER
+			OR = {
+				venera_region = { has_discovered = ROOT }
+				ateara_archipelago_area = {
+					has_discovered = ROOT
+					NOT = { province_id = 1465 }
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = colonial_enthusiasm
+				duration = 36500 #100 years
+			}
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 0
-##BranchStart 1
+
 bakavia_2 = {
 	slot = 2
 	generic = no
@@ -171,27 +149,20 @@ bakavia_2 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	dance_waltzer = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-		dip_tech = 15
+			dip_tech = 15
 		}
 		effect = {
-		add_prestige = 30
-		add_splendor = 100
-		add_legitimacy = 25
+			add_prestige = 30
+			add_splendor = 100
+			add_legitimacy = 25
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	build_jungfrauen = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -199,59 +170,48 @@ bakavia_2 = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 87
 		}
 		trigger = {
-		87 = {
+			87 = {
 				has_great_project = {
 				type = palace_of_jungfrauen
 				tier = 1
-			}	
-		}
-
+				}
+			}
 		}
 		effect = {
-		add_prestige = 25
-		87 = {
-			add_great_project_tier = {
-				type = palace_of_jungfrauen
-				tier = 1
-		}		
-		}
-		
+			add_prestige = 25
+			87 = {
+				add_great_project_tier = {
+					type = palace_of_jungfrauen
+					tier = 1
+				}
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	palaces_everywhere = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			build_jungfrauen
 		}
 		position = 4
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			prestige = 99
 			stability = 2
-
 		}
 		effect = {
-		add_legitimacy = 100
+			add_legitimacy = 100
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bakavian_army = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			bakavian_fleet
 		}
 		position = 6
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			army_size = 20
 		}	
@@ -259,20 +219,14 @@ bakavia_2 = {
 			add_army_tradition = 20
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	nobles_lead = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			bakavian_army
 		}
 		position = 7
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-		 	
-
 			estate_loyalty = {
 				estate = estate_nobles
 				loyalty = 65
@@ -282,51 +236,39 @@ bakavia_2 = {
 			add_army_tradition = 20
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	code_of_honor = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			nobles_lead
 		}
 		position = 8
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			army_professionalism = 0.65 
+			army_professionalism = 0.65
 		}
 		effect = {
-			add_country_modifier = { 
-    name = code_of_honor_mod
-    duration = -1  
-}
+			add_country_modifier = {
+				name = code_of_honor_mod
+				duration = -1
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	civilian_protects = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			code_of_honor
 		}
 		position = 9
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	has_institution = enlightenment
+			has_institution = enlightenment
 		}
 		effect = {
 			add_army_professionalism = 0.2
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 1
-##BranchStart 2
+
 bakavia_3 = {
 	slot = 3
 	generic = no
@@ -337,19 +279,16 @@ bakavia_3 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	the_golden_city = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
 		provinces_to_highlight = {
 			province_id = 88
 		}
 		trigger = {
 			88 = {
-			grown_by_development = 6
+				num_of_times_improved = 6
 			}
 		}
 		effect = {
@@ -357,8 +296,7 @@ bakavia_3 = {
 			add_prestige = 25
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_golden_country = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -366,7 +304,10 @@ bakavia_3 = {
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				area = ober_bakava_area
+				area = bakavia_area
+			}
 		}
 		trigger = {
 			development_in_provinces = {
@@ -380,13 +321,12 @@ bakavia_3 = {
 		}
 		effect = {
 			add_country_modifier = { 
-    name = colden_country
-    duration = 15000 
-}			
+				name = colden_country
+				duration = 14600 #40 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	vine_from_bakavia = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -394,45 +334,40 @@ bakavia_3 = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			trade_goods = wine
 		}
 		trigger = {
 			trade_goods_produced_amount = {
-	trade_goods = wine
-	amount = 6
-}
+				trade_goods = wine
+				amount = 6
+			}
 		}
 		effect = {
-		add_mercantilism = 5
+			add_mercantilism = 5
 			change_price = {
-			trade_goods = wine
-			key = bakavian_wine
-			value = 0.25
-			duration = 3650
+				trade_goods = wine
+				key = bakavian_wine
+				value = 0.25
+				duration = 3650 #10 years
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	lords_of_wine_and_fruit = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			vine_from_bakavia
 		}
 		position = 4
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	farm_estate = 10
+			farm_estate = 10
 		}
 		effect = {
-			add_mercantilism = 1
+			add_mercantilism = 10
 			add_years_of_income = 1
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_finest_country = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -441,22 +376,18 @@ bakavia_3 = {
 			palaces_everywhere
 		}
 		position = 5
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			prestige = 90
 			grown_by_development = 200
 		}
 		effect = {
 			add_country_modifier = { 
-    name = the_fair_lords
-    duration = 36500 
-}
+				name = the_fair_lords
+				duration = 36500 #100 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	cake_for_everyone = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -464,27 +395,24 @@ bakavia_3 = {
 		}
 		position = 6
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			owned_by = ROOT
+			is_prosperous = no
 		}
 		trigger = {
-			 	num_of_owned_states_with  = {
+			num_of_owned_states_with  = {
 				value = 10
 				is_prosperous = yes
-				}			
+			}
 		}
 		effect = {
-					add_country_modifier = { 
-    name = cake
-    duration = 36500 
-}
+			add_country_modifier = { 
+				name = cake
+				duration = 36500 #100 years
+			}
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 2
-##BranchStart 3
+
 bakavia_4 = {
 	slot = 4
 	generic = no
@@ -495,16 +423,10 @@ bakavia_4 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	the_crown_of_bakavia = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			trade_goods_produced_amount = {
 				trade_goods = gems
@@ -513,21 +435,20 @@ bakavia_4 = {
 			trade_goods_produced_amount = {
 				trade_goods = gold
 				amount = 2
-			}			
+			}
 			trade_goods_produced_amount = {
 				trade_goods = ivory
 				amount = 2
-			}				
+			}
 		}
 		effect = {
-						add_country_modifier = { 
-    name = the_crown_bakava
-    duration = -1 
-}
+			add_country_modifier = { 
+				name = the_crown_bakava
+				duration = -1 
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	winds_of_trade = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -535,22 +456,19 @@ bakavia_4 = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 82
 		}
 		trigger = {
-		82 = {
-			is_strongest_trade_power = ROOT
+			82 = {
+				is_strongest_trade_power = ROOT
+				trade_node_value = 15
 			}
-		82 = { #Antwerpen
-			trade_node_value = 15
-			}	
 		}
 		effect = {
 			add_mercantilism = 5
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	lords_of_trade = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -558,53 +476,48 @@ bakavia_4 = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				trade_goods = wine
+				trade_goods = glass
+			}
 		}
 		trigger = {
 			trading_bonus = {
-	trade_goods = wine
-	value = yes
-}
-
-trading_bonus = {
-	trade_goods = glass
-	value = yes
-}
+				trade_goods = wine
+				value = yes
+			}
+			trading_bonus = {
+				trade_goods = glass
+				value = yes
+			}
 		}
 		effect = {
-		add_inflation = -10
-				add_mercantilism = 3	
+			add_inflation = -10
+			add_mercantilism = 3
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	for_the_imperial_people = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			culture_group = ROOT
 		}
 		trigger = {
-			 	has_unified_culture_group = yes
+			has_unified_culture_group = yes
 		}
 		effect = {
 			add_stability = 1
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_great_literature = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			for_the_imperial_people
 		}
 		position = 6
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			prestige = 60
 			adm_tech = 15
@@ -613,52 +526,40 @@ trading_bonus = {
 			add_splendor = 400
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	school_duty = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			the_great_literature
 		}
 		position = 7
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			innovativeness = 75
 		}
 		effect = {
 			add_adm_power = 100
-			
 			add_dip_power = 100
-			
 			add_mil_power = 100
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	uni_edu = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			school_duty
 		}
 		position = 8
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			university = 50
 		}
 		effect = {
-					add_country_modifier = { 
-    name = innovation_wave
-    duration = 36500
-}
-			 
+			add_country_modifier = {
+				name = innovation_wave
+				duration = 36500 #100 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	center_of_learning = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -669,26 +570,22 @@ trading_bonus = {
 			province_id = 88
 		}
 		trigger = {
-		88 = {
-		has_building = university
-		development = 45
-		}
+			88 = {
+				has_building = university
+				development = 45
+			}
 		}
 		effect = {
-		88 = {
-			add_province_modifier = { 
-    name = new_house_wisdom
-    duration = -1  
-}
-}
+			88 = {
+				add_province_modifier = { 
+					name = new_house_wisdom
+					duration = -1  
+				}
+			}
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 3
-##BranchStart 4
+
 bakavia_5S = {
 	slot = 5
 	generic = no
@@ -699,36 +596,29 @@ bakavia_5S = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	fall_of_yach = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	is_year = 1450
+			is_year = 1450
 		}
 		effect = {
-				add_ruler_modifier = { 
-			name = unruly_imp_prince
-			duration = -1  
-			hidden = yes
-		}
-						corvinia_area = {
+			add_ruler_modifier = { 
+				name = unruly_imp_prince
+				duration = -1
+				hidden = yes
+			}
+			corvinia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}		
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	expand_our_power = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -736,25 +626,20 @@ bakavia_5S = {
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = corvinia_area
 		}
 		trigger = {
-			NOT = {
 			corvinia_area = {
-					NOT = {
-					OR = {
-						owned_by = I07
-					 	owned_by = I17					
-					}
-
-					}
-				NOT = { owned_by = ROOT }
-				NOT = { is_core =  ROOT }
-    }
-}
+				type = all
+				OR = {
+					owned_by = I07
+					owned_by = I17
+					owned_by = ROOT
+				}
+			}
 		}
 		effect = {
-						ostland_area = {
+			ostland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -763,8 +648,7 @@ bakavia_5S = {
 			}			
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_witch_question = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -772,58 +656,49 @@ bakavia_5S = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = ostland_area
 		}
 		trigger = {
-			NOT = {
 			ostland_area = {
-					NOT = {
-					 	owned_by = I17					
-
-					}
-				NOT = { owned_by = ROOT }
-				NOT = { is_core =  ROOT }
-    }
-}
+				type = all
+				OR = {
+					owned_by = I17
+					owned_by = ROOT
+				}
+			}
 		}
 		effect = {
 			declare_war_with_cb = {
-    who = I07
-    casus_belli = cb_annex
-}
+				who = I07
+				casus_belli = cb_annex
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	claim_the_crown = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			the_witch_question
 		}
 		position = 4
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			total_development = 250
 		}
 		effect = {
-		I17 = {
-		every_owned_province = {
-					add_permanent_claim = ROOT	
-		}
-		}
-		
-		 	overlord = { 
-			country_event = { 
-			id = new_empire.8
-			days = 1
-			}				
+			I17 = {
+				every_owned_province = {
+					add_permanent_claim = ROOT
+				}
+			}
+			overlord = {
+				country_event = {
+					id = new_empire.8
+					days = 1
+				}
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	all_princes_musst_bow = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -831,51 +706,49 @@ bakavia_5S = {
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				province_id = 70
+				owned_by = I17
+			}
 		}
 		trigger = {
-					NOT = {
-			exists = I17
-			}
+			NOT = { exists = I17 }
 			owns = 70
-			
 		}
 		effect = {
-				custom_tooltip = aub_proc
-						new_empire_superregion = {
+			custom_tooltip = aub_proc
+			new_empire_superregion = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}	
-
-				hidden_effect = {
-		 	every_subject_country = { 
-			limit = {
-				NOT = { liberty_desire = 50 }
-			 	 NOT = {	has_reform = imperial_wizardy }
-			}
-					country_event = { 
-    id = new_empire.13
-    days = 1
-}
-}			
-		 	every_subject_country = { 
-			limit = {
-				 liberty_desire = 50
-			 	 NOT = {	has_reform = imperial_wizardy }
-			}
-			every_owned_province = {
-			add_permanent_claim = I10
-			}
-			 I10 = { free_vassal = PREV }	
-}	
-		}			
+			hidden_effect = {
+				every_subject_country = { 
+					limit = {
+						NOT = { liberty_desire = 50 }
+						NOT = {	has_reform = imperial_wizardy }
+					}
+					country_event = {
+						id = new_empire.13
+						days = 1
+					}
+				}
+				every_subject_country = {
+					limit = {
+						liberty_desire = 50
+						NOT = {	has_reform = imperial_wizardy }
+					}
+					every_owned_province = {
+						add_permanent_claim = I10
+					}
+					I10 = { free_vassal = PREV }
+				}
+			}			
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	unite_the_empire_baa = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -883,41 +756,33 @@ bakavia_5S = {
 		}
 		position = 6
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			all_subject_country = {
+				liberty_desire = 50
+			}
 		}
 		trigger = {
 			total_development = 600
 		 	all_subject_country  = {
-			NOT = {
-			liberty_desire = 50
-			}
+				NOT = { liberty_desire = 50 }
 			}
 		}
 		effect = {
-			 	reset_golden_age = yes
+			reset_golden_age = yes
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	a_golden_age = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			unite_the_empire_baa
 		}
 		position = 7
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			in_golden_age = yes
-				total_development = 1000		
+			total_development = 1000
 		}
 		effect = {
-			 	extend_golden_age = 360
+			extend_golden_age = 360
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 4
