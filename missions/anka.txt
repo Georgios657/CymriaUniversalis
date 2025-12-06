@@ -1,4 +1,3 @@
-##BranchStart 0
 anka1 = {
 	slot = 1
 	generic = no
@@ -9,12 +8,9 @@ anka1 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	island_of_beauty = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
 		provinces_to_highlight = {
 			province_id = 1128
@@ -30,17 +26,13 @@ anka1 = {
 			add_stability = 1
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	a_court_of_love = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			island_of_beauty
 		}
 		position = 2
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			prestige = 50
 		}
@@ -51,8 +43,7 @@ anka1 = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	expand_the_court = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -60,55 +51,50 @@ anka1 = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1128
 		}
 		trigger = {
-		1128 = {
-		has_great_project = {
-			type = ellemerea
-			tier = 2
-		}		
-		}
+			1128 = {
+				has_great_project = {
+					type = ellemerea
+					tier = 2
+				}
+			}
 		}
 		effect = {
 			define_advisor = {
-			type = philosopher
-			skill = 3
-			discount = yes
-			culture = variable:new_ruler_culture
-		}
-		
+				type = philosopher
+				skill = 3
+				discount = yes
+				culture = variable:new_ruler_culture
+			}
 			define_advisor = {
-			type = artist
-			skill = 3
-			discount = yes
-			culture = variable:new_ruler_culture
-		}
-
+				type = artist
+				skill = 3
+				discount = yes
+				culture = variable:new_ruler_culture
+			}
 			define_advisor = {
-			type = recruitmaster
-			skill = 3
-			discount = yes
-			culture = variable:new_ruler_culture
-		}
-
+				type = recruitmaster
+				skill = 3
+				discount = yes
+				culture = variable:new_ruler_culture
+			}
 			define_advisor = {
-			type = statesman
-			skill = 3
-			discount = yes
-			culture = variable:new_ruler_culture
-		}
-
+				type = statesman
+				skill = 3
+				discount = yes
+				culture = variable:new_ruler_culture
+			}
 			define_advisor = {
-			type = recruitmaster
-			skill = 3
-			discount = yes
-			culture = variable:new_ruler_culture
-		}		
+				type = recruitmaster
+				skill = 3
+				discount = yes
+				culture = variable:new_ruler_culture
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	girl_of_your_dreams = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -116,16 +102,15 @@ anka1 = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1128
 		}
 		trigger = {
-		1128 = {
-	has_great_project = {
-			type = ellemerea
-			tier = 3
-		}		
-		}
-
+			1128 = {
+				has_great_project = {
+					type = ellemerea
+					tier = 3
+				}
+			}
 		}
 		effect = {
 			add_country_modifier = { 
@@ -134,70 +119,56 @@ anka1 = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	blood_of_kings = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			girl_of_your_dreams
 		}
 		position = 5
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			
 			government_rank = 2
-				
 		}
 		effect = {
 			add_country_modifier = { 
-			name = blood_of_kings
-			duration = 7500  
-		}
+				name = blood_of_kings
+				duration = 7300 #20 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	ever_beaty = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			blood_of_kings
 		}
 		position = 6
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-					has_government_power = {
+			has_government_power = {
 				mechanic_type = varjorjen_hunger_mechanic
 				power_type = varjorjen_hunger
 				value = 90
 			}
-			 	natural_scientist = 3
-				statesman = 3
-				recruitmaster = 3
+			natural_scientist = 3
+			statesman = 3
+			recruitmaster = 3
 		}
 		effect = {
-				add_government_power = {
+			add_government_power = {
 				mechanic_type = varjorjen_hunger_mechanic
 				power_type = varjorjen_hunger
 				value = -80
-}
+			}
 			add_splendor = 1000
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	like_a_daughter = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			ever_beaty
 		}
 		position = 7
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			has_government_power = {
 				mechanic_type = varjorjen_hunger_mechanic
@@ -206,119 +177,94 @@ anka1 = {
 			}
 		}
 		effect = {
-		
-		add_government_power = {
+			add_government_power = {
 				mechanic_type = varjorjen_hunger_mechanic
 				power_type = varjorjen_hunger
 				value = -50
-}
-
+			}
 			add_country_modifier = { 
-			name = my_daughter_in_law
-			duration = -1  
-		}			
+				name = my_daughter_in_law
+				duration = -1
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	sorrow_of_the_heart = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			like_a_daughter
 		}
 		position = 8
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 		 	has_institution = astrology_i
-			NOT = {
-			has_country_modifier = my_daughter_in_law
-			}
+			NOT = { has_country_modifier = my_daughter_in_law }
 		}
 		effect = {
 			add_stability = 1
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	search_of_a_soul = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			sorrow_of_the_heart
 		}
 		position = 9
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-		 OR = {
-			innovativeness = 40	
-			has_institution = printing_press			
-		 }
-
+			OR = {
+				innovativeness = 40	
+				has_institution = printing_press			
+			}
 		}
 		effect = {
-			 	add_adm_power = 100
-				add_dip_power = 100
-				add_mil_power = 100		
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100	
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	to_gain_a_soul = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			search_of_a_soul
 		}
 		position = 10
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	any_known_country = {
+			any_known_country = {
 				alliance_with = ROOT
 				religion_group = sun_faith
 				trust = { who = ROOT value = 50 }
-				}
+			}
 		}
 		effect = {
 			change_innovativeness = 10
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	blessed_akna = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			to_gain_a_soul
 		}
 		position = 11
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			OR = {
-			AND = {
-			stability = 3		
-			unrest = -5			
-			}
-			government_rank = 3
+				AND = {
+					stability = 3
+					unrest = -5
+				}
+				government_rank = 3
 			}
 		}
 		effect = {
 			add_ruler_modifier = { 
 				name = ankas_soul
-				duration = -1  
+				duration = -1
 			}
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 0
-##BranchStart 1
+
 anka2 = {
 	slot = 2
 	generic = no
@@ -329,29 +275,21 @@ anka2 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	hunting_for_blood = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-				check_variable = {
-			which = total_land_units_killed
-			value = 20
-		}
-			 
+			check_variable = {
+				which = total_land_units_killed
+				value = 20
+			}
 		}
 		effect = {
 			add_mil_power = 50
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	plague_the_southern_coast = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -359,25 +297,23 @@ anka2 = {
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = skogen_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 2 # how many provinces should be owned in the areas below
-				OR = {
-					region = skogen_region
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 2
+				region = skogen_region
 			}
 		}
 		effect = {
-			 	every_province = {
+			every_province = {
 				limit = {
-				region = skogen
-				native_size = 1
+					region = skogen
+					native_size = 1
 				}
 				change_native_size = -500
-				}
-		
+			}
 			add_government_power = {
 				mechanic_type = varjorjen_hunger_mechanic
 				power_type = varjorjen_hunger
@@ -385,23 +321,17 @@ anka2 = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	hunt_the_tribes = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			plague_the_southern_coast
 		}
 		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 15 # how many provinces should be owned in the areas below
-				OR = {
-					culture_group = skogia
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				culture_group = skogia
 			}
 		}
 		effect = {
@@ -412,59 +342,47 @@ anka2 = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	blood_ttribute = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			hunt_the_tribes
 		}
 		position = 4
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			num_of_subjects = 2
-			 	any_subject_country = { 
+			any_subject_country = { 
 				culture_group = skogia
-				}
+			}
 		}
 		effect = {
-						add_country_modifier = { 
-			name = blood_tribute
-			duration = 7500  
-		}
+			add_country_modifier = { 
+				name = blood_tribute
+				duration = 7300 #20 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	varjore_noble = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			blood_ttribute
 		}
 		position = 5
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-		num_of_owned_provinces_with = {
-	value = 15
-	has_owner_accepted_culture = yes
-	culture_group = skogia
-	is_overseas = no
-}
+			num_of_owned_provinces_with = {
+				value = 15
+				has_owner_accepted_culture = yes
+				culture_group = skogia
+				is_overseas = no
+			}
 		}
 		effect = {
 			change_government_reform_progress = 150
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 1
-##BranchStart 2
+
 anka3 = {
 	slot = 3
 	generic = no
@@ -475,43 +393,29 @@ anka3 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	bone_coast = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				province_id = 1129
+				province_id = 1130
+			}
 		}
 		trigger = {
 			OR = {
-			1129 = {
-			fort_level = 1
-			}
-			
-			1130 = {
-			fort_level = 1
-			}
+				1129 = { fort_level = 1 }
+				1130 = { fort_level = 1 }
 			}
 		}
 		effect = {
-			1131 = {
-			add_core  = ROOT
-			}
-			
-			1138 = {
-			add_permanent_claim = ROOT
-			}
-			1137 = {
-			add_permanent_claim = ROOT
-			}
-
-			}
+			1131 = { add_core = ROOT }
+			1138 = { add_permanent_claim = ROOT }
+			1137 = { add_permanent_claim = ROOT }
+		}
 	}
-	##Mission End
-	##Mission Start
+	
 	kajos_bay = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -519,7 +423,10 @@ anka3 = {
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				province_id = 1138
+				province_id = 1137
+			}
 		}
 		trigger = {
 			owns = 1138
@@ -535,8 +442,7 @@ anka3 = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_fall_of_yutuu = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -544,7 +450,8 @@ anka3 = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = skull_cape_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			skull_cape_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
@@ -553,25 +460,22 @@ anka3 = {
 			add_army_tradition = 25
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	subjugate_the_varjorjen = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
-		aknas_new_cloith
-		the_fall_of_yutuu
-			
+			aknas_new_cloith
+			the_fall_of_yutuu
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = great_north_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 30 # how many provinces should be owned in the areas below
-				OR = {
-					region = great_north_region
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 30
+				region = great_north_region
 			}
 		}
 		effect = {
@@ -584,8 +488,7 @@ anka3 = {
 			}			
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	the_varjojen_realm = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -593,22 +496,18 @@ anka3 = {
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = great_north_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-					great_north_region = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-		
+			great_north_region = { type = all country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_stability = 2
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 2
-##BranchStart 3
+
 anka4 = {
 	slot = 4
 	generic = no
@@ -619,34 +518,24 @@ anka4 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	the_suitors = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			prestige = 50
 		}
 		effect = {
-			 	add_splendor = 150
+			add_splendor = 150
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bring_me_riches = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			the_suitors
 		}
 		position = 2
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			power_projection = 50
 		}
@@ -655,8 +544,7 @@ anka4 = {
 			add_inflation = 5
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	aknas_new_cloith = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
@@ -664,47 +552,39 @@ anka4 = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			trade_goods = cloth
 		}
 		trigger = {
-		OR = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-	value = 1
-	trade_goods = cloth
-	is_city = yes
-}
- 	
-
-trading_part = {
-	trade_goods = cloth
-	value = 0.05
-}		
-		}
-
+			OR = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					trade_goods = cloth
+					is_city = yes
+				}
+				trading_part = {
+					trade_goods = cloth
+					value = 0.05
+				}
+			}
 		}
 		effect = {
 			add_prestige = 25
 			add_years_of_income = 0.5
 			change_price = {
-			trade_goods = cloth
-			key = new_modes
-			value = 0.1
-			duration = 3650
-		}
+				trade_goods = cloth
+				key = new_modes
+				value = 0.1
+				duration = 3650 #10 years
+			}
 		}
 	}
-	##Mission End
 	
-	##Mission Start
 	arrange_dates = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			aknas_new_cloith
 		}
 		position = 4
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			num_of_royal_marriages = 4
 		}
@@ -712,36 +592,25 @@ trading_part = {
 			add_horde_unity = 10
 		}
 	}	
-	##
-	##Mission Start
+	
 	second_choices = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			arrange_dates
 		}
 		position = 5
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			num_of_royal_marriages = 6
 		}
 		effect = {
 			add_country_modifier = { 
-			name = marriage_market
-			duration = -1  
+				name = marriage_market
+				duration = -1
+			}
 		}
-		}
-	}	
-
-
-
-
+	}
 }
 
-		
-##BranchEnd 3
-##BranchStart 4
 anka5 = {
 	slot = 5
 	generic = no
@@ -752,21 +621,16 @@ anka5 = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	the_conclave = {
 		icon = mission_build_up_to_force_limit
-		required_missions =  {
-			
-		}
+		required_missions =  { }
 		position = 1
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1146
 		}
 		trigger = {
-		1146 = {
-	units_in_province = ROOT	
-		}
-		is_at_war = no
+			1146 = { units_in_province = ROOT }
+			is_at_war = no
 		}
 		effect = {
 			add_adm_power = 25
@@ -775,122 +639,109 @@ anka5 = {
 		}
 	}
 	
-		fulfill_prophecies = {
+	fulfill_prophecies = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			the_conclave
 		}
 		position = 2
 		provinces_to_highlight = {
-			province_id = 1148
-			province_id = 1138
-			province_id = 1164
-
+			OR = {
+				province_id = 1148
+				province_id = 1138
+				province_id = 1164
+			}
 		}
 		trigger = {
- 	stability = 2
-1138 = {
-num_of_units_in_province = {
-    who = ROOT
-
-    amount = 2
-}
-}
-
-1148 = {
-num_of_units_in_province = {
-    who = ROOT
-    amount = 3
-}
-}
-
-1164 = {
-num_of_units_in_province = {
-    who = ROOT
-    amount = 4
-}
-}
+ 			stability = 2
+			1138 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 2
+				}
+			}
+			1148 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 3
+				}
+			}
+			1164 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 4
+				}
+			}
 		}
 		effect = {
-		add_country_modifier = { 
-			name = guided_by_prophecy
-			duration = 7250
-		}			
+			add_country_modifier = { 
+				name = guided_by_prophecy
+				duration = 7300 #20 years
+			}			
 		}
 	}
 	
-		gain_a_rank = {
+	gain_a_rank = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			fulfill_prophecies
 		}
 		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			stability = 3
-			 	current_income_balance = 10
+			current_income_balance = 10
 		}
 		effect = {
 			add_prestige = 10
 			change_government_reform_progress = 100
-			
 		}
 	}
 
-		recloate_to_ellemera = {
+	recloate_to_ellemera = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
-		aknas_new_cloith
-		gain_a_rank
-			
+			aknas_new_cloith
+			gain_a_rank
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 1128
 		}
 		trigger = {
-		1128 = {
-			has_great_project = {
-			type = ellemerea
-			tier = 2
-		}	
-		}
-
-		1128 = {
-		NOT = {
-		 	unrest = -5
-		}
-		}
+			1128 = {
+				has_great_project = {
+					type = ellemerea
+					tier = 2
+				}
+			}
+			1128 = {
+				NOT = { unrest = -5 }
+			}
 		}
 		effect = {
 			1128 = {
-			add_province_modifier = { 
-    name = the_seer_council
-    duration = -1  
-}
+				add_province_modifier = { 
+					name = the_seer_council
+					duration = -1
+				}
 			}
 		}
 	}	
 	
-			grand_sisterhood_of_faith = {
+	grand_sisterhood_of_faith = {
 		icon = mission_build_up_to_force_limit
 		required_missions =  {
 			recloate_to_ellemera
 		}
 		position = 5
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			diplomatic_reputation = 10
 		}
 		effect = {
-		add_country_modifier = { 
-			name = servants_of_fate
-			duration = -1
-		}				
+			add_country_modifier = { 
+				name = servants_of_fate
+				duration = -1
+			}
 		}
 	}
 }

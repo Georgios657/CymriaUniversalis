@@ -1,283 +1,198 @@
-	########################################
-# Events for Theocracy
-#
-# written by Johan Andersson
-########################################
-
 namespace = varjorjen
+
 country_event = {
 	id = varjorjen.1
 	title = varjorjen.1.t
-	desc = {
-		desc = varjorjen.1.desc
-
-	}
-
+	desc = varjorjen.1.desc
 	hidden = yes
 	picture = RELIGION_eventPicture
 	is_triggered_only = yes
-	trigger = {
-		
-	}
 
-	
-	immediate = {
-
-	}
+	trigger = { }
+	immediate = { }
 		
 	option = {
-		name = varjorjen.1.a	
+		name = varjorjen.1.a
 		ai_chance = { factor = 75 }
-	varjorjen_hunger_bodies = yes	
-		}
-		
-	}		
+		varjorjen_hunger_bodies = yes
+	}
+}
 
-	country_event = {
+country_event = {
 	id = varjorjen.2
 	title = varjorjen.2.t
-	desc = {
-		desc = varjorjen.2.desc
-
-	}
-
+	desc = varjorjen.2.desc
 	picture = RELIGION_eventPicture
 	is_triggered_only = yes
-	trigger = {
-		
-	}
 
-	
-	immediate = {
-
-	}
+	trigger = { }
+	immediate = { }
 		
 	option = {
-		name = varjorjen.2.a	
-		
-			if = {
-		limit = {
-			tag = VA0
-
-		}
-		exile_ruler_as = { name = yutu }
-		          country_event = { 
-				   days = 3000
-				   random = 1500
-					id = varjorjen.3
-					}
+		name = varjorjen.2.a
+		if = {
+			limit = { tag = VA0 }
+			exile_ruler_as = { name = yutu }
+		    country_event = { 
+				days = 3000
+				random = 1500
+				id = varjorjen.3
+			}
         }
-		
-			if = {
-		limit = {
-			tag = VA2
-
-		}
-		exile_ruler_as = { name = akna }
-		          country_event = { 
-				   days = 1500
-				   random = 750
-					id = varjorjen.4
-					}
+		if = {
+			limit = { tag = VA2 }
+			exile_ruler_as = { name = akna }
+			country_event = { 
+				days = 1500
+				random = 750
+				id = varjorjen.4
+			}
         }		
-			if = {
-		limit = {
-		NOT = {
-			OR = {
-			tag = VA0
-			tag = VA2			
-			}		
-		}
-
-
-		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						tag = VA0
+						tag = VA2
+					}
+				}
+			}
 			kill_ruler = yes
         }		
 
-			add_government_power = {
+		add_government_power = {
 			mechanic_type = varjorjen_hunger_mechanic
 			power_type = varjorjen_hunger
 			value = 40
-			}
-			
-			define_ruler = {
-				dynasty = ROOT
-				culture = ROOT
-				religion = ROOT
-				max_random_adm = 5
-				max_random_dip = 5
-				max_random_mil = 5
-			}
-			add_stability = -6
-			
-
 		}
-		
-	}		
+			
+		define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			max_random_adm = 5
+			max_random_dip = 5
+			max_random_mil = 5
+		}
+		add_stability = -6
+	}
+}		
 
 country_event = {
 	id = varjorjen.3
 	title = varjorjen.3.t
-	desc = {
-		desc = varjorjen.3.desc
-
-	}
-
+	desc = varjorjen.3.desc
 	picture = RELIGION_eventPicture
 	is_triggered_only = yes
-	trigger = {
-		
-	}
 
-	
-	immediate = {
-
-	}
+	trigger = { }
+	immediate = { }
 		
 	option = {
 		name = varjorjen.3.a	
-	set_ruler = yutu
-		}
-		
-	}	
-	
+		set_ruler = yutu
+	}
+}	
+
 country_event = {
 	id = varjorjen.4
 	title = varjorjen.4.t
-	desc = {
-		desc = varjorjen.4.desc
-
-	}
-
+	desc = varjorjen.4.desc
 	picture = RELIGION_eventPicture
 	is_triggered_only = yes
-	trigger = {
-		
-	}
 
-	
-	immediate = {
-
-	}
+	trigger = { }
+	immediate = { }
 		
 	option = {
 		name = varjorjen.4.a	
-	set_ruler = akna
-		}
-		
-	}	
-	
+		set_ruler = akna
+	}
+}
+
 country_event = {
 	id = varjorjen.5
 	title = varjorjen.5.t
-	desc = {
-		desc = varjorjen.5.desc
+	desc = varjorjen.5.desc
 
-	}
-	
 	mean_time_to_happen = {
-	months = 120
-	
-}
+		months = 120
+	}
 	picture = RELIGION_eventPicture
 	
 	trigger = {
-	has_country_flag = akna
-	NOT = {
-	has_ruler = "Akna the Ever-Beautiful"
-	}
+		has_country_flag = akna
+		NOT = { has_ruler = "Akna the Ever-Beautiful" }
 	}
 
-	
-	immediate = {
+	immediate = { }
 
-	}
-		
 	option = {
-		name = varjorjen.5.a	
+		name = varjorjen.5.a
 		define_ruler = {
-		female = yes
-    name = "Akna the Ever-Beautiful"
-    dynasty = "Firstborn"
-    adm = 2
-    dip = 5
-    mil = 0
-    age = 1500
-    claim = 100
-}
-
-		set_ruler_flag = immortal
-	add_ruler_personality = wizard
-	add_ruler_personality = charismatic_negotiator_personality
+			female = yes
+			name = "Akna the Ever-Beautiful"
+			dynasty = "Firstborn"
+			adm = 2
+			dip = 5
+			mil = 0
+			age = 1500
+			claim = 100
 		}
-		
-	}		
-	
+		set_ruler_flag = immortal
+		add_ruler_personality = wizard
+		add_ruler_personality = charismatic_negotiator_personality
+	}
+}		
+
 country_event = {
 	id = varjorjen.6
 	title = varjorjen.5.t
-	desc = {
-		desc = varjorjen.5.desc
+	desc = varjorjen.5.desc
 
-	}
-	
 	mean_time_to_happen = {
-	months = 120
-	
-}
+		months = 120
+	}
 	picture = RELIGION_eventPicture
 	
 	trigger = {
-	has_country_flag = yutu
-	NOT = {
-	has_ruler = "Yutu the High General"
+		has_country_flag = yutu
+		NOT = { has_ruler = "Yutu the High General" }
 	}
-	}
-
 	
-	immediate = {
-
-	}
-		
+	immediate = { }
+	
 	option = {
 		name = varjorjen.5.a	
 		define_ruler = {
-    name = "Yutu the High General"
-    dynasty = "Firstborn"
-    adm = 2
-    dip = 2
-    mil = 6
-    age = 1500
-    claim = 100
-}
-
-		set_ruler_flag = immortal
-	add_ruler_personality = wizard
-	add_ruler_personality = cruel_personality
+			name = "Yutu the High General"
+			dynasty = "Firstborn"
+			adm = 2
+			dip = 2
+			mil = 6
+			age = 1500
+			claim = 100
 		}
-		
-	}		
-	
+		set_ruler_flag = immortal
+		add_ruler_personality = wizard
+		add_ruler_personality = cruel_personality
+	}
+}		
+
 country_event = {
 	id = varjorjen.7
 	title = varjorjen.7.t
-	desc = {
-		desc = varjorjen.7.desc
-
-	}
+	desc = varjorjen.7.desc
 	
 	mean_time_to_happen = {
-	months = 240
-	
-}
+		months = 240
+	}
 	picture = RELIGION_eventPicture
 	fire_only_once = yes
 	trigger = {
-	mission_completed = like_a_daughter
-	has_country_modifier = my_daughter_in_law
+		mission_completed = like_a_daughter
+		has_country_modifier = my_daughter_in_law
 	}
-
-	
 	immediate = {
 		remove_country_modifier = my_daughter_in_law
 	}
@@ -285,172 +200,137 @@ country_event = {
 	option = {
 		name = varjorjen.7.a	
 		add_stability = -2
-		}
-		
-	}		
-	
+	}
+}		
+
 country_event = {
 	id = varjorjen.8
 	title = varjorjen.8.t
-	desc = {
-		desc = varjorjen.8.desc
-
-	}
-	
-		is_triggered_only = yes
+	desc = varjorjen.8.desc
+	is_triggered_only = yes
 	picture = RELIGION_eventPicture
 	
-	trigger = {
-	
-	}
+	trigger = { }
 
-	
 	immediate = {
 		if = {
-		limit = {
-		NOT = {
-		exists  = VB0
-		}
-		}
-		
-					great_north_region = {
+			limit = {
+				NOT = { exists  = VB0 }
+			}
+			great_north_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_core= VB0
 			}	
-			
-			 	random_province = { 
+			random_province = { 
 				limit = {
 				 	is_core = VB0
 					owner = {
-					AND = {
-					ai = yes
-					has_reform = varjorjen_tribe
+						AND = {
+							ai = yes
+							has_reform = varjorjen_tribe
+						}
 					}
-
-					}
 				}
-				 cede_province = VB0
-				}
-				
-				VB0 = {
-						add_country_modifier = { 
-				name = varjoren_age
-				duration = -1  
-			}	
-				}
-		
-				every_country = {
-		limit = {
-		has_reform = varjorjen_tribe
-				ai = yes
-		}
+				cede_province = VB0
+			}
 			VB0 = {
-	 	inherit = PREV
-		
-	}
-		}
-		
-		}
-		
-							marschland_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
+				add_country_modifier = { 
+					name = varjoren_age
+					duration = -1
 				}
-				add_permanent_claim = VB0
-			}	
-
-							skogen_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = VB0
 			}
-			
-			berryland_region = {
+			every_country = {
 				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
+					has_reform = varjorjen_tribe
+					ai = yes
 				}
-				add_permanent_claim = VB0
+				VB0 = {
+					inherit = PREV
+				}
 			}
+		}
+		marschland_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = VB0
+		}	
+		skogen_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = VB0
+		}
+		berryland_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = VB0
+		}
 	}
 		
 	option = {
-		name = varjorjen.8.a	
+		name = varjorjen.8.a
 		add_stability = 1
+	}
+}
 
-		}
-		
-	}	
-	
 province_event = {
 	id = varjorjen.9
 	title = varjorjen.9.t
-	desc = {
-		desc = varjorjen.9.desc
+	desc = varjorjen.9.desc
 
-	}
-	
 	mean_time_to_happen = {
-	months = 12
-	
-}
+		months = 12
+	}
 
 	fire_only_once = yes
 	picture = RELIGION_eventPicture
 	
 	trigger = {
-	province_id = 136
-	136 = {
-	OR = {
-	owner = {
-	AND = {
-		NOT = {
-	ruler_has_personality = wizard
-	}
-		NOT = {
-	culture_group  = undead_imperial
-	}
-	}
-
-	}	
-	owner = {
-	culture_group  = varjoren
-	}
-	is_year = 1575
-	
-	owner = {
-	has_ruler = "Nefara"
-	}
-	}
-
-	}
+		136 = {
+			OR = {
+				owner = {
+					AND = {
+						NOT = { ruler_has_personality = wizard }
+						NOT = { culture_group  = undead_imperial }
+					}
+				}
+				owner = {
+					culture_group  = varjoren
+				}
+				is_year = 1575
+				owner = {
+					has_ruler = "Nefara"
+				}
+			}
+		}
 	}
 
 	
 	immediate = {
 		set_global_flag = thorren_free
 		every_country = {
-    limit = {
-        culture_group  = varjoren
-    }
-	country_event = { 
-    id = varjorjen.8
-    days = 30
-}
-}
+			limit = {
+				culture_group  = varjoren
+			}
+			country_event = { 
+				id = varjorjen.8
+				days = 30
+			}
+		}
 	}
 		
 	option = {
 		name = varjorjen.9.a	
 		136 = {
-		add_devastation = 100	
+			add_devastation = 100
 		}
-		}
-		
-	}		
+	}
+}

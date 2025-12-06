@@ -1,6 +1,7 @@
 ﻿l_english:
  akna_advisors:0 "Advisor of Akna"
  necromancy:0 "Necromancy"
+ ruler_is_vampire:0 "Ruler is a Vampire"
 
  revive_karla_title:0 "Revive Karla"
  revive_karla_desc:0 "All things can be brought back from the back for a little...price. Karla will be trapped in a place between live and death but she will be among us."
@@ -39,6 +40,7 @@
  reclaim_thorrens_fullpower_desc:0 "Still, some of Thorren's power remains in Monte Negro. We must take the city and free him completely so that he can reclaim his true divine strength."
  
  war_for_the_world_title:0 "Bring Darkness"
+ war_for_the_world.tooltip:0 "Lay Claim to the Entire World!"
  war_for_the_world_desc:0 "There will not be another dawn for human, elf or any other creature, not following Thorren."
  
  ancient_tombs_title:0 "Plunder Ancient Tombs"
