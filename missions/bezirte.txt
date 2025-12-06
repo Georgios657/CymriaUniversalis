@@ -1,4 +1,3 @@
-##BranchStart 0
 bezi_first = {
 	slot = 1
 	generic = no
@@ -9,16 +8,10 @@ bezi_first = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	bezirte_way_of_blade = {
-			icon = mission_unite_home_region
-		required_missions {
-			
-		}
+		icon = mission_unite_home_region
+		required_missions { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			army_tradition = 50
 		}
@@ -29,28 +22,24 @@ bezi_first = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_swordmaster = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_way_of_blade
 		}
 		position = 2
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			OR = {
-			army_tradition = 75
-					has_global_modifier_value = {
-			which = shock_damage 
-			value = 0.1
-		}
-		has_global_modifier_value = {
-	which = infantry_power 
-	value = 0.2
-}
+				army_tradition = 75
+				has_global_modifier_value = {
+					which = shock_damage 
+					value = 0.1
+				}
+				has_global_modifier_value = {
+					which = infantry_power 
+					value = 0.2
+				}
 			}
 		}
 		effect = {
@@ -60,48 +49,36 @@ bezi_first = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_fencing = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_swordmaster
 		}
 		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
- 	power_projection = 75
+ 			power_projection = 75
 		}
 		effect = {
 			add_mil_power = 200
 		}
 	}
-	##Mission End
-	##Mission Start
+
 	a_lenient_government = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_rightfull_governance
 		}
 		position = 4
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	stability = 3
+			stability = 3
 		}
 		effect = {
 			add_adm_power = 100
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 0
-##BranchStart 1
+
 bezi_second = {
 	slot = 2
 	generic = no
@@ -112,38 +89,23 @@ bezi_second = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	bezirte_theologican_debatte = {
-			icon = mission_unite_home_region
-		required_missions {
-			
-		}
+		icon = mission_unite_home_region
+		required_missions { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			NOT = {
-			current_age = age_of_discovery
-			}
-			
-			 	religious_unity = 0.99
+			NOT = { current_age = age_of_discovery }
+			religious_unity = 0.99
 		}
 		effect = {
 			add_stability = 1
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_rightfull_governance = {
-			icon = mission_unite_home_region
-		required_missions {
-			
-		}
+		icon = mission_unite_home_region
+		required_missions { }
 		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			reform_level = 5
 		}
@@ -151,32 +113,22 @@ bezi_second = {
 			remove_country_modifier = gassalan_government
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	a_scrit_government = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_rightfull_governance
 		}
 		position = 4
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			NOT = {
-			average_home_autonomy = 10
-			}
+			NOT = { average_home_autonomy = 10 }
 		}
 		effect = {
 			change_government_reform_progress = 100
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 1
-##BranchStart 2
+
 bezi_third = {
 	slot = 3
 	generic = no
@@ -187,43 +139,34 @@ bezi_third = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	bezirte_prep = {
-			icon = mission_unite_home_region
-		required_missions {
-			
-		}
+		icon = mission_unite_home_region
+		required_missions { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			army_size_percentage = 1				
+			army_size_percentage = 1
 			employed_advisor = {
-					category = MIL
-				}
+				category = MIL
+			}
 		}
 		effect = {
 			add_army_professionalism = 0.05
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_war = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_prep
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 688
 		}
 		trigger = {
 			OR = {
-			owns = 688
-			LD2 = {
-				humiliated_by = LD4
-			}
+				owns = 688
+				LD2 = { humiliated_by = LD4 }
 			}
 		}
 		effect = {
@@ -243,24 +186,26 @@ bezi_third = {
 			}			
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_claim = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_war
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				area = eastern_gasalla_area
+				area = gassala_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-	eastern_gasalla_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-	gassala_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-	
+			eastern_gasalla_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			gassala_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-				great_swamp_gassala_aresa = {
+			great_swamp_gassala_aresa = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -269,57 +214,51 @@ bezi_third = {
 			}		
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_unity = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_claim
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = great_swamp_gassala_aresa
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-	great_swamp_gassala_aresa = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			great_swamp_gassala_aresa = { type = all country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			 	add_army_tradition = 15
+			add_army_tradition = 15
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	gassala_free_and_one = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_unity
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			culture_group = ROOT
 		}
 		trigger = {
 		 	has_unified_culture_group = yes
 			power_projection = 50
-			
 		}
 		effect = {
 		 	set_government_rank = 2
-		override_country_name = GASSALA
+			override_country_name = GASSALA
 			add_yearly_manpower = 2
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	gassalas_rightfull_place = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			gassala_free_and_one
 		}
 		position = 6
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			OR = {
 			 	is_emperor = yes
@@ -328,15 +267,11 @@ bezi_third = {
 			}
 		}
 		effect = {
-			 	add_splendor = 1000
+			add_splendor = 1000
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 2
-##BranchStart 3
+
 bezi_four = {
 	slot = 4
 	generic = no
@@ -347,57 +282,47 @@ bezi_four = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	bezirte_end_land_taxes = {
-			icon = mission_unite_home_region
-		required_missions {
-			
-		}
+		icon = mission_unite_home_region
+		required_missions { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
 			stability = 2
 			treasury = 500
 		}
 		effect = {
-		add_treasury = -500
+			add_treasury = -500
 			add_country_modifier = { 
 				name = gassalan_tax_reform
-				duration = 36500 
+				duration = 36500 #100 years
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	reform_intheritance_laws = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_end_land_taxes
 		}
 		position = 2
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	government_reform_progress = 150
+			government_reform_progress = 150
 		}
 		effect = {
 			remove_country_modifier = gassalan_inheritance
-			 	change_government_reform_progress = -150
+			change_government_reform_progress = -150
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_ivory_art = {
-			icon = mission_unite_home_region
-		required_missions {
-			
-		}
+		icon = mission_unite_home_region
+		required_missions { }
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				province_id = 688
+				province_id = 689
+			}
 		}
 		trigger = {
 			dip_tech  = 12
@@ -408,44 +333,39 @@ bezi_four = {
 			add_years_of_income = 1
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_ivory_trade = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_ivory_art
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			trade_goods = ivory
 		}
 		trigger = {
 			OR = {
-			trade_goods_produced_amount = {
-	trade_goods = ivory
-	amount = 10
-}
-
-trading_bonus = {
-	trade_goods = ivory
-	value = yes
-}
+				trade_goods_produced_amount = {
+					trade_goods = ivory
+					amount = 10
+				}
+				trading_bonus = {
+					trade_goods = ivory
+					value = yes
+				}
 			}
 		}
 		effect = {
 			add_prestige = 50
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_capital = {
-			icon = mission_unite_home_region
-		required_missions {
-			
-		}
+		icon = mission_unite_home_region
+		required_missions { }
 		position = 7
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			is_capital_of = ROOT
 		}
 		trigger = {
 			capital_scope = {
@@ -457,41 +377,34 @@ trading_bonus = {
 			add_splendor = 200
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	golden_city_of_gassala = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_capital
 		}
 		position = 8
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			is_capital_of = ROOT
 		}
 		trigger = {
-				prestige = 25
-				
-		
-				capital_scope = {
+			prestige = 25
+			capital_scope = {
 				development = 40
 				is_prosperous = yes
 			}		
 		}
 		effect = {
 			capital_scope = {
-			add_permanent_province_modifier = { 
-				name = center_of_gassala
-				duration = -1  
-			}
+				add_permanent_province_modifier = {
+					name = center_of_gassala
+					duration = -1
+				}
 			}
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 3
-##BranchStart 4
+
 bezi_five = {
 	slot = 5
 	generic = no
@@ -502,129 +415,104 @@ bezi_five = {
 	}
 	has_country_shield = yes
 	
-	##Mission Start
 	bezirte_way_of_pen = {
-			icon = mission_unite_home_region
-		required_missions {
-			
-		}
+		icon = mission_unite_home_region
+		required_missions { }
 		position = 1
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-		OR = {
-			artist = 2
-			prestige = 33
-			innovativeness = 20
-		}
-
+			OR = {
+				artist = 2
+				prestige = 33
+				innovativeness = 20
+			}
 		}
 		effect = {
-			add_country_modifier = { 
+			add_country_modifier = {
 				name = pen_way
-				duration = 3650 
-			}			
+				duration = 3650 #10 years
+			}
 		}
 	}
-	##Mission End
-	##Mission Start
+
 	bezirte_poetry = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_way_of_pen
 		}
 		position = 2
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	diplomatic_reputation = 5	
+			diplomatic_reputation = 5	
 		}
 		effect = {
 			add_prestige = 50
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_printing = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_poetry
 		}
 		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			 	has_institution = printing_press
-				innovativeness = 15
+			has_institution = printing_press
+			innovativeness = 15
 		}
 		effect = {
 			every_owned_province = {
-			limit = {
-			culture_group = gassala
-			}
+				limit = {
+				culture_group = gassala
+				}
 			 	add_base_tax = 1
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_paper_production = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_printing
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				province_id = 693
+				province_id = 692
+			}
 		}
 		trigger = {
-			owns = 693
 			693 = {
-			development = 20
+				owned_by = ROOT
+				development = 20
 			}
-			owns = 692
 			692 = {
-			development = 20			
+				owned_by = ROOT
+				development = 20			
 			}
 		}
 		effect = {
-			693 = {
-			change_trade_goods = paper
-			}
-			692 = {
-			change_trade_goods = paper			
-			}
+			693 = { change_trade_goods = paper }
+			692 = { change_trade_goods = paper }
 		}
 	}
-	##Mission End
-	##Mission Start
+	
 	bezirte_literary_agenda = {
-			icon = mission_unite_home_region
+		icon = mission_unite_home_region
 		required_missions {
 			bezirte_paper_production
 		}
 		position = 5
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-		OR = {
-			innovativeness = 50
-			prestige = 75				
-		}
+			OR = {
+				innovativeness = 50
+				prestige = 75
+			}
 		}
 		effect = {
-			add_country_modifier = { 
+			add_country_modifier = {
 				name = gassala_literature
-				duration = -1 
-			}				
+				duration = -1
+			}
 		}
 	}
-	##Mission End
-	##
-	
 }
-##BranchEnd 4
