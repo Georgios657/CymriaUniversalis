@@ -408,6 +408,8 @@ technology = {
 	fort_16th = yes
 	infantry_fire		=	0.3
 
+	enable = harpy_cannon
+	
 	enable = shipcannon
 	
 	enable = scorpion
@@ -603,6 +605,8 @@ technology = {
 	}
 	
 	#Killing Grounds
+	
+	enable = harpy_long_cannon
 	
 	enable = tilidan_mobile
 	
@@ -836,6 +840,8 @@ technology = {
 	
 	#Light Infantry Companies
 	sprite_level = 4
+			enable = harpy_shredder_cannon	
+			
 			enable = azur_riflerider	
 			
 			enable = seelenian_dragoner	

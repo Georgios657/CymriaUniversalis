@@ -3,11 +3,49 @@
 # random_new_world_region is used for RNW. Must be first in this list.
 random_new_world_region = {
 }
+
+miryangdo_region = {
+areas = {
+gyoseom_isle_area
+eumwa_isle_area
+southern_barrier_island_area
+wohla_area
+shadowlands_area
+sujeong_area
+southern_myrandar_coast
+northern_barrier_island_arae
+midlands_area
+}
+}
+
 gemar_sea_region = {
 areas = {
 gemar_area
 }
 
+}
+
+biblilario_region_sea = {
+areas = {
+biblilario_sea_area
+long_horinzontal_sea_area
+}
+}
+
+
+biblilario_region = {
+areas = {
+fan_coast_area
+central_biblilario_area
+northern_biblilario_area
+western_biblilario_area
+riverside_island_area
+bankarian_plateau_area
+callos_area
+southern_isles_area
+bar_area
+southern_biblilario_area
+}
 }
 
 low_misty_region = {

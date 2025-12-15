@@ -1,5 +1,89 @@
 # A province can only belong to one area!
 
+biblilario_sea_area = {
+4056 4057 4058 4059 4060 4061 4062 4063 4064 4065 4066 4067 4068 4069 4070
+}
+gyoseom_isle_area = {
+4073 4074 4075
+}
+
+eumwa_isle_area = {
+4076 4077 4078 4079 4080
+}
+
+southern_barrier_island_area = {
+4103 4104 4105 4106 4107
+}
+
+northern_barrier_island_arae = {
+4099 4100 4101 4102
+}
+
+
+midlands_area = {
+4084 4085 4088 4089
+}
+
+southern_myrandar_coast = {
+4086 4087 4090 4094
+}
+
+shadowlands_area = {
+4095 4096 4097 4098
+}
+
+wohla_area = {
+4091 4092 4093
+}
+
+sujeong_area = {
+4081 4082 4083
+}
+
+long_horinzontal_sea_area = {
+4071 4073
+}
+
+bankarian_plateau_area = {
+4030 4032 4051
+}
+
+callos_area = {
+4015 4020 4036 4037
+}
+
+northern_biblilario_area = {
+4038 4039 4040 4041 4042
+}
+
+fan_coast_area = {
+4043 4044 4045 4046 4047
+}
+
+southern_isles_area = {
+4014 4053 4054 4055
+}
+
+riverside_island_area = {
+4022 4023 4024 4025
+}
+
+bar_area = {
+4026 4027 4028 4029
+}
+
+southern_biblilario_area = {
+4031 4033 4034 4035 4049
+}
+
+western_biblilario_area = {
+4016 4017 4018 4019 4021
+}
+
+central_biblilario_area = {
+4048 4050 4052
+}
+
 gemar_area = {
 4002 4003 4004 4005 4006 4007 4008 4009 4010 4011 4012 4013
 }

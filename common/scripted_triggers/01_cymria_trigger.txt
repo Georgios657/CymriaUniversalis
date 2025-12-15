@@ -684,6 +684,7 @@ can_not_have_blood = {
 
 can_have_astral = {
 	OR = {
+		culture_group  = west_harpy
 		culture_group  = northern_giants
 		culture_group  = broden
 		culture_group  = gelorian

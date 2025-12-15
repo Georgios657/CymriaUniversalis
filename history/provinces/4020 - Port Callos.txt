@@ -1,0 +1,13 @@
+culture = chaararian
+religion = asae_ya
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = wool
+base_manpower = 2
+capital = "Port Callos"
+is_city = no
+native_size = 60
+native_ferocity = 8
+native_hostileness = 8
+center_of_trade = 1

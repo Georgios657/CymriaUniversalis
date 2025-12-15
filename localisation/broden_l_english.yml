@@ -300,6 +300,13 @@
   three_peak_area:0 "Three Peak"
   harpica_island_area:0 "Harpy-Island"
   
+  harpy_cannon:0 "Harpian Cannon"
+  harpy_cannonDESCR:0 "Some fortresses are even for the winged harpies hard to siege. For these occasions they will use cannons, even thou these are mostly used against softer targets.."
+  harpy_long_cannon:0 "Harpian Light Cannon"
+  harpy_long_cannonDESCR:0 "These Cannons are so light-weight that a squad of harpies can move them with their wings. Not made for siege but open field battles they struggle to defeat fortfications."
+  harpy_shredder_cannon:0 "Harpian Shredder Cannon"
+  harpy_shredder_cannonDESCR:0 "The newest addition to the harpian arsenal the Shredder Cannons shots cannonballs who fragment upon impacted, killing plenty."
+  
   harpy_feather:0 "Red Feather Harpy"
   harpy_featherDESCR:0 "Harpies have feathers of all colors, but none of them are red. Experienced veterans who have slain at least one opponent in single combat are allowed to dye their feathers red, making them easily recognizable as veterans to any general."
   harpy_sniper:0 "Harpy Sniper"

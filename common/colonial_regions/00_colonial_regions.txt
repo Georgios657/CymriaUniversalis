@@ -193,3 +193,42 @@ colonial_new_bakavia = {
 		name = "COLONIAL_NEW_BAKAVIA_DIF"
 	}
 }
+
+colonial_bibliolario = {
+	color = { 7 125 225 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 8
+	native_ferocity = 1
+	native_hostileness = 4
+
+	trade_goods = {
+		fur = 10
+		fish = 3
+		naval_supplies = 2
+		gold = 2
+	}
+
+	culture = {
+		inuit = 10
+		aleutian = 8
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+			 4020 4014 4015 4016 4017 4018 4019 4021 4022 4023 4024 4025 4026 4027 4028 4029 4030 4031 4032 4033 4034 4035 4036 4037 4038 4039 4040 4041 4042 4043 4044 4045 4046 4047 4048 4049 4050 4051 4052 4053 4054 4055 4020 
+	}
+
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_BIBLIOLARIO"
+	}
+	names = {
+		name = "COLONIAL_BIBLIOLARIO_DIF"
+	}
+}
