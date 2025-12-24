@@ -62,6 +62,25 @@ country_event = {
 			}	
 	
 		}
+
+		if = {
+				limit = {
+		technology_group = merman
+		}
+			add_country_modifier = { 
+				name = merman_marines
+				duration = -1  
+			}	
+			add_country_modifier = { 
+				name = merman_navy
+				duration = -1  
+			}	
+			add_country_modifier = { 
+				name = merman_military
+				duration = -1  
+			}				
+		}
+
 		
 		if = {
 				limit = {

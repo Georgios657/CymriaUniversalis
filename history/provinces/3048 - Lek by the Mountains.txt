@@ -11,3 +11,4 @@ capital = "Lek"
 is_city = yes
 culture = lek
 center_of_trade = 1
+fort_15th = yes

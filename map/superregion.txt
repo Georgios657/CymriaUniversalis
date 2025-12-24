@@ -1,5 +1,15 @@
 # A region can only belong to one super region.
 
+western_lantar = {
+low_misty_region
+grand_misty_land_region
+biblilario_region
+}
+
+mererealm = {
+	miryangdo_region
+}
+
 giants_north = {
 	aylorian_region
 	sveri_region

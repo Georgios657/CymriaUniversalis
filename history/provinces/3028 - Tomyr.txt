@@ -10,3 +10,4 @@ capital = "Tomyr"
 is_city = yes
 culture = tomyrian
 religion = rozalia
+fort_15th = yes

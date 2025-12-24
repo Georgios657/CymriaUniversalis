@@ -1,0 +1,13 @@
+add_core = SE1
+owner = SE1
+controller = SE1
+hre = no
+base_tax = 2
+base_production = 4
+trade_goods = fish
+base_manpower = 2
+capital = "Namhyeon"
+is_city = yes
+culture = east_sujeonian
+religion = heukdalma
+add_core = SE4

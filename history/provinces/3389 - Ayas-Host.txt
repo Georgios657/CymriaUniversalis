@@ -10,3 +10,4 @@ trade_goods = salt
 base_manpower = 4
 capital = "Ayas-Host"
 is_city = yes
+fort_15th = yes

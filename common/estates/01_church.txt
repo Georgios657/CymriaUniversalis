@@ -297,6 +297,8 @@ estate_church = {
 		estate_church_institutionalized_clergy
 		estate_church_donation_right
 		
+		estate_church_merman_pacifism
+		
 		#1.36
 	
 	}

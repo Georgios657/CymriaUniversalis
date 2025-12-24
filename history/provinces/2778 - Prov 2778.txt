@@ -12,3 +12,4 @@ culture = hegytori
 religion = rozalia
 
 center_of_trade = 2
+fort_15th = yes

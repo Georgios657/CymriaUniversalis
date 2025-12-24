@@ -16,3 +16,4 @@ add_core = NC9
 center_of_trade = 2
 
 fort_15th = yes
+discovered_by = SE1

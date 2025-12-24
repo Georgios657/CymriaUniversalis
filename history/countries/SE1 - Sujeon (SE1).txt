@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = grand_duchy_reform
+government_rank = 1
+technology_group = merman
+primary_culture = sujeonian
+religion = heukdalma
+capital = 4081
+
+1444.1.1 = {
+	monarch = {
+		name = "Kang"
+		dynasty = "Song"
+		birth_date = 1434.9.21
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+
+set_estate_privilege = estate_church_merman_pacifism
+set_estate_privilege = estate_nobles_pacifist_nobility
+set_estate_privilege = estate_burghers_pacifist_traders
+}

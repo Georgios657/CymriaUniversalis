@@ -770,6 +770,27 @@ holy_founder = {
 	 	reduced_liberty_desire = 50
 }
 
+merman_military = {
+		global_manpower_modifier = -0.33
+		mercenary_manpower = -0.5
+		landing_penalty = -2
+		regiment_disembark_speed = 0.5
+		transport_attrition = -1
+		allowed_marine_fraction = 0.1
+}
+
+merman_navy = {
+	 	global_sailors_modifier = 0.33
+		sailor_maintenance_modifer = -0.25
+		naval_morale = 0.1
+}
+
+merman_marines = {
+	land_morale  = 0.2
+	land_attrition = -0.25
+	is_marine_modifier = yes
+}
+
 troll_military = {
 		 	shock_damage_received = -0.3
 			land_attrition = -0.2

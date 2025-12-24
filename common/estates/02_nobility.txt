@@ -260,6 +260,8 @@ estate_nobles = {
 		estate_nobles_tupchi_artillery_corps
 		estate_nobles_qurchi_service
 		estate_nobles_mamlukian_administration
+		
+		estate_nobles_pacifist_nobility
 	
 	}
 

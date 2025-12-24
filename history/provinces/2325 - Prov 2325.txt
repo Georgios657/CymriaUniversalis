@@ -11,3 +11,4 @@ is_city = yes
 culture = sylvanian
 religion = grand_mother
 add_core = AV4
+fort_15th = yes

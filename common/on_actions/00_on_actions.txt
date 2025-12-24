@@ -148,6 +148,48 @@ on_startup = {
 		}	
 		
 		}
+		
+		if = {
+		limit = {
+		OR = {
+		 	 	technology_group = merman
+		}
+
+		}		
+		
+		yvirian_sea_region = {
+		discover_country = FROM	
+		}
+
+		dremar_sea_region = {
+		discover_country = FROM	
+		}		
+		
+				gynt_sea_region = {
+		discover_country = FROM	
+		}
+		
+				harpian_sea_region = {
+		discover_country = FROM	
+		}
+		
+				miryangdo_region = {
+		discover_country = FROM	
+		}
+		
+				virilor = {
+		discover_country = FROM	
+		}
+		
+				grand_brodia = {
+		discover_country = FROM	
+		}
+		
+				gyntenland_region = {
+		discover_country = FROM	
+		}
+		
+		}
 
 			if = {
 		limit = {

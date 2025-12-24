@@ -11,3 +11,4 @@ is_city = yes
 culture = bellis
 religion = grand_mother
 add_core = AW5
+fort_15th = yes

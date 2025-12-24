@@ -1,0 +1,12 @@
+add_core = SE1
+owner = SE1
+controller = SE1
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Byeol"
+is_city = yes
+culture = sujeonian
+religion = heukdalma

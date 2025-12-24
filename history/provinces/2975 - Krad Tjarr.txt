@@ -12,3 +12,4 @@ culture = yupera
 religion = icearia
 add_core = NC8
 add_core = NC9
+fort_15th = yes

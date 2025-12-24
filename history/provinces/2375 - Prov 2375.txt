@@ -13,3 +13,4 @@ culture = morash
 religion = grand_mother
 center_of_trade = 1
 add_core = EM1
+fort_15th = yes

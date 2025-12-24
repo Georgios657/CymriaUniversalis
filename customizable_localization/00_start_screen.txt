@@ -336,10 +336,18 @@ defined_text = {
 	}
 	#Country Specific:
 	#Africa
-  	text = { #Cymria
+	
+	  	text = { #Cymria
         localisation_key = string_start_gloomwood
         trigger = {
 			tag = GW8
+        }
+    }
+	
+  	text = { #Cymria
+        localisation_key = string_start_garia_its
+        trigger = {
+			tag = GIS
         }
     }
 		
@@ -464,6 +472,15 @@ defined_text = {
 			tag = BR3
         }
     }
+
+
+	text = { #Yach
+        localisation_key = string_start_empire_of_man
+        trigger = {
+			tag = EM1
+        }
+    }
+
 	
 	text = {
         localisation_key = string_start_new_empire
@@ -618,6 +635,29 @@ defined_text = {
 defined_text = {
     name = StartScreenUpRightDesc
 	random = no
+
+	text = {
+        localisation_key = string_start_religion_the_lord_of_demons
+        trigger = {
+			religion = the_lord_of_demons
+        }
+    }
+
+
+	text = {
+        localisation_key = string_start_religion_tilidian_little_gods
+        trigger = {
+			religion = tilidian_little_gods
+        }
+    }
+	
+	text = {
+        localisation_key = string_start_religion_heukdalma
+        trigger = {
+			religion = heukdalma
+        }
+    }
+
 
 	text = {
         localisation_key = string_start_religion_rozalia
@@ -1492,7 +1532,14 @@ defined_text = {
 defined_text = {
     name = startup_culture_explanation
 	random = no
-
+	
+    text = {
+        localisation_key = string_empire_of_man_special
+        trigger = {
+			tag = EM1
+        }
+    }
+	
     text = {
         localisation_key = string_gloom_special
         trigger = {

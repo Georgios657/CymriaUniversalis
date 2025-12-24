@@ -1,0 +1,2 @@
+# No previous file for Bay of Orjev
+discovered_by = SE1

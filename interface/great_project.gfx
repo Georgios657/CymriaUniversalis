@@ -1,5 +1,21 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_great_project_gytenport"	
+		texturefile = "gfx//interface//great_projects//gytenport.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_palace_of_the_western_merman"	
+		texturefile = "gfx//interface//great_projects//palace_of_the_western_merman.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_the_great_demon_gate"	
+		texturefile = "gfx//interface//great_projects//the_great_demon_gate.dds"
+	}
+	
+	
+	spriteType = {
 		name = "GFX_great_project_fort_arylor"	
 		texturefile = "gfx//interface//great_projects//fort_arylor.dds"
 	}

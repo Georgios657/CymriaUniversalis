@@ -1,0 +1,13 @@
+add_core = SE1
+owner = SE1
+controller = SE1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = chinaware
+base_manpower = 2
+capital = "Badaheart"
+is_city = yes
+culture = outer_islander
+religion = heukdalma
+add_core = SE3

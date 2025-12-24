@@ -16,6 +16,7 @@ monarchy_mechanic = {
 
 }
 
+
 jarldom = {
 	icon = "jarldom"
 	allow_normal_conversion = no

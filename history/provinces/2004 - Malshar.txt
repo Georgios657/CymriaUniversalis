@@ -10,3 +10,4 @@ capital = "Malshar"
 is_city = yes
 culture = cassalan
 religion = ishtara
+fort_15th = yes

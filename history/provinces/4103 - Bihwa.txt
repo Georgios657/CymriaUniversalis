@@ -1,0 +1,13 @@
+add_core = SE1
+owner = SE1
+controller = SE1
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 3
+capital = "Bihwa"
+is_city = yes
+culture = east_sujeonian
+religion = heukdalma
+add_core = SE4

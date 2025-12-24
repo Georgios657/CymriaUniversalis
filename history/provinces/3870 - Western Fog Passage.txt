@@ -1,0 +1,2 @@
+# No previous file for Western Fog Passage
+discovered_by = SE1

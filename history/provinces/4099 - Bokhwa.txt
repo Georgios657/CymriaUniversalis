@@ -1,0 +1,13 @@
+add_core = SE1
+owner = SE1
+controller = SE1
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = copper
+base_manpower = 2
+capital = "Bokhwa"
+is_city = yes
+culture = east_sujeonian
+religion = heukdalma
+add_core = SE5

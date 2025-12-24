@@ -12,3 +12,4 @@ is_city = yes
 culture = dytasiia
 religion = imperial_cult
 add_core = EM1
+fort_15th = yes

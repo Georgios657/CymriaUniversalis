@@ -10,3 +10,4 @@ capital = "Traiton"
 is_city = yes
 culture = far_aylor
 religion = rozalia
+fort_15th = yes

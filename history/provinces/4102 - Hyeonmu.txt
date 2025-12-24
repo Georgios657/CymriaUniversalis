@@ -1,0 +1,13 @@
+add_core = SE1
+owner = SE1
+controller = SE1
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = ivory
+base_manpower = 1
+capital = "Hyeonmu"
+is_city = yes
+culture = outer_islander
+religion = heukdalma
+add_core = SE5

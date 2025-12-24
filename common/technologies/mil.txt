@@ -18,6 +18,9 @@ technology = {
 	cavalry_shock  		= 	0.8	
 	land_morale 		= 	2.0
 
+	enable = mer_soldier
+	enable = kelpie_knight
+	
 	enable = tiridian_tribal
 	
 	enable = giant_warrior
@@ -205,9 +208,12 @@ technology = {
 			astrology_i = 0.3
 	}
 	
-	enable = tilidian_shooter_desc
+	enable = mer_meridon
+	
 	
 	enable = giant_archers
+	
+	enable = tiridian_ambusher
 	
 	enable = harpy_soldier
 	enable = manhunter
@@ -280,6 +286,8 @@ technology = {
 		enable = advanced_ballista_carrier	
 		
 		enable = wood_cannon	
+		enable = kelpie_riders	
+		enable = wood_cannon2	
 	military_tactics 	= 	0.25
 	combat_width = 1	
 }
@@ -353,6 +361,8 @@ technology = {
 		new_world_i = 0.15
 				astrology_i = 0.5
 	}
+	enable = mer_infantry	
+	
 	enable = tilidian_shooter	
 	
 	enable = frostborne	
@@ -439,6 +449,7 @@ technology = {
 	enable = tilidan_siege_mortar	
 	
 	enable = basilisk	
+	enable = basilisk2	
 	enable = imperial_dual	
 	enable = imperial_dual2
 	
@@ -531,6 +542,9 @@ technology = {
 	#Carbine
 	maneuver_value 		= 	0.25
 
+	enable = kelpie_hussar		
+	enable = mer_drill_infantry	
+	
 	enable = tilidan_line		
 	enable = mountain_company
 	
@@ -606,6 +620,8 @@ technology = {
 	
 	#Killing Grounds
 	
+	enable = manticore2
+	
 	enable = harpy_long_cannon
 	
 	enable = tilidan_mobile
@@ -670,6 +686,8 @@ technology = {
 		enable = scouts	
 
 		
+	enable = mer_navy_seals	
+	
 	enable = tilidan_continental_cav	
 	enable = tilidan_continental	
 	
@@ -747,6 +765,8 @@ technology = {
 	}
 	
 	#Covered Way
+		enable = helpie_bronce_curssaier
+		
 		enable = frostjarl
 		enable = cannon_carrier
 		
@@ -804,6 +824,7 @@ technology = {
 	enable = tilidan_flying	
 	
 	enable = whirlwind	
+	enable = whirlwind2	
 	
 	enable = azur_longcannon	
 	

@@ -10,3 +10,4 @@ capital = "Svartgrod"
 is_city = yes
 culture = snow_trolls
 religion = the_great_catfish
+add_permanent_province_modifier = { name = very_arctic duration = -1 }

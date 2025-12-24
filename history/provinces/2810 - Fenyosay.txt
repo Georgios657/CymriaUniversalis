@@ -11,3 +11,4 @@ is_city = yes
 culture = kaigain_harpia
 religion = winged_one
 
+discovered_by = SE1

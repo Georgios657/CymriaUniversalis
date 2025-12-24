@@ -1,0 +1,235 @@
+namespace = demon_invasion
+
+#  demon_invasion Starts
+country_event = {
+	id = demon_invasion.1
+	title = demon_invasion.1.t
+	desc = demon_invasion.1.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_stability = -6
+	
+	}
+	
+	
+	option = {
+		name = demon_invasion.1.a
+		random_owned_province = {
+		limit = {
+		religion = the_lord_of_demons
+		}
+		
+						spawn_rebels = {
+				type = the_lord_of_demons_rebels
+				size = 6
+			}
+		}
+		set_country_flag = demon_invasion
+
+		
+	}
+
+}
+
+# demon_invasion Ends
+country_event = {
+	id = demon_invasion.2
+	title = demon_invasion.2.t
+	desc = demon_invasion.2.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = demon_invasion.2.a
+		add_stability = 2
+	}
+}
+
+
+# demons!
+country_event = {
+	id = demon_invasion.3
+	title = demon_invasion.3.t
+	desc = demon_invasion.3.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = demon_invasion.3.a
+		random_owned_province = {
+		limit = {
+		religion = the_lord_of_demons
+		}
+			spawn_rebels = {
+				type = the_lord_of_demons_rebels
+				size = 3
+			}
+		}
+	}
+
+}
+
+# seperatists
+country_event = {
+	id = demon_invasion.4
+	title = demon_invasion.4.t
+	desc = demon_invasion.4.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = demon_invasion.4.a
+		random_owned_province = {
+		limit = {
+		 	can_spawn_rebels = nationalist_rebels
+		}
+		 	nationalist_rebels = 3
+		}
+	}
+
+}
+
+
+# pretender!
+country_event = {
+	id = demon_invasion.5
+	title = demon_invasion.5.t
+	desc = demon_invasion.5.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = demon_invasion.5.a
+		capital_scope = {
+		 	pretender_rebels = 3
+		}
+	}
+
+}
+
+# accept the demons!
+country_event = {
+	id = demon_invasion.6
+	title = demon_invasion.6.t
+	desc = demon_invasion.6.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	set_country_flag = demons_offer
+	}
+
+	trigger = {
+	NOT = {
+	has_country_flag = demons_offer
+	}
+			num_of_religion = {
+				religion = the_lord_of_demons
+				value = 0.5
+			}
+	}
+	
+	
+	option = {
+		name = demon_invasion.6.a
+		add_stability = -1
+		change_religion = the_lord_of_demons
+		
+		change_adm = 1
+		change_dip = 1
+		 	change_mil = 1
+	}
+	
+	option = {
+		name = demon_invasion.6.b
+		add_stability = 1	
+	}
+}
+
+
+# faith guides us
+country_event = {
+	id = demon_invasion.7
+	title = demon_invasion.7.t
+	desc = demon_invasion.7.d
+	picture = CIVIL_WAR_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	
+	option = {
+		name = demon_invasion.7.a
+		add_manpower = 3
+		
+	}
+	
+}

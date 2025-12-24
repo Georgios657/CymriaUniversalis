@@ -11,3 +11,4 @@ is_city = yes
 culture = kaelwyn
 religion = grand_mother
 add_core = AW2
+fort_15th = yes

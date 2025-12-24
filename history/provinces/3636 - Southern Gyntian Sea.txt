@@ -1,0 +1,2 @@
+# No previous file for Southern Gyntian Sea
+discovered_by = SE1

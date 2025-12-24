@@ -1,3 +1,10 @@
+SE1 = "countries/Sujeong.txt"
+SE2 = "countries/Gyuseom.txt"
+SE3 = "countries/Eumwa.txt"
+SE4 = "countries/Mirjang.txt"
+SE5 = "countries/Chongsa.txt"
+SE6 = "countries/BaronsLeague.txt"
+
 MO1 = "countries/Hakarau.txt"
 MO2 = "countries/Marukata.txt"
 MO3 = "countries/TeRanui.txt"

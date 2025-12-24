@@ -10,3 +10,4 @@ capital = "Lamos"
 is_city = yes
 culture = gerodian
 religion = ishtara
+fort_15th = yes

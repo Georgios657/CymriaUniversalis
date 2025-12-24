@@ -1,0 +1,2 @@
+# No previous file for Brullets Sea
+discovered_by = SE1

@@ -10,3 +10,4 @@ capital = "Thuldnask"
 is_city = yes
 culture = muspel
 religion = fore_bearers
+add_permanent_province_modifier = { name = very_arctic duration = -1 }

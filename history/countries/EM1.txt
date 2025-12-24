@@ -19,4 +19,8 @@ capital = 2396
 		
 	add_ruler_personality = wizard
 add_ruler_personality = cruel_personality
+
+set_estate_privilege = estate_burghers_control_over_monetary_policy
+set_estate_privilege = estate_church_clerical_oversight
+set_estate_privilege = estate_nobles_right_of_counsel
 }

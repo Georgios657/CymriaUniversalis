@@ -10,3 +10,4 @@ capital = "Commora"
 is_city = yes
 culture = commorian
 religion = azarian_folk_tales
+fort_15th = yes

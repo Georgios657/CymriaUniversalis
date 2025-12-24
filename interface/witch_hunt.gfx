@@ -20,4 +20,11 @@ spriteTypes = {
   noOfFrames = 3
   loadType = "INGAME"
  } 
+ 
+  spriteType = {
+  name = "GFX_disaster_demon_invasion"
+  texturefile = "gfx//interface//disasters//demon_invasion.dds"
+  noOfFrames = 3
+  loadType = "INGAME"
+ } 
 }

@@ -1,3 +1,5 @@
+
+
 love_faith = {
 
 	can_form_personal_unions = yes
@@ -66,6 +68,37 @@ dark_faith = {
 		 	morale_damage = 0.2
 		}
 		declare_war_in_regency = yes
+	}
+
+	the_lord_of_demons = {
+			allowed_center_conversion = {
+			heukdalma
+		}
+		
+		icon = 42
+		color = { 27 58 39 }
+		
+		province = {
+		  	 	local_missionary_strength = -0.01
+				local_unrest = 5
+		}	
+		
+		country = {
+			years_of_nationalism = -5
+			infantry_power = 0.2
+		}
+		country_as_secondary = {
+		 	 	reinforce_speed = 0.33
+		}
+		
+	will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = the_lord_of_demons
+				}
+			}
+		}
+		
 	}
 	
 	crusade_name = HOLY_WAR
@@ -320,7 +353,7 @@ northern_faith = {
 		
 		province = {
 		  	 	local_missionary_strength = -0.01
-				 	local_unrest = 3
+				local_unrest = 3
 		}		
 		country_as_secondary = {
 			 	shock_damage = 0.15
@@ -519,7 +552,7 @@ death_faith = {
 		reform_tooltip = MESOAMERICAN_REFORM_TOOLTIP
 		
 	}
-	
+
 	morriganism = {
 		color = { 200 100 140 }
 		icon = 4
@@ -531,6 +564,21 @@ death_faith = {
 		country_as_secondary = {
 			global_unrest = -1
 			global_tax_modifier = 0.1
+		}
+	}
+	
+	heukdalma = {
+		color = { 25 133 155 }
+		icon = 43
+		allowed_conversion = {
+		}
+		country = {
+			leader_naval_manuever = 1
+			naval_attrition = -0.25
+		}
+		country_as_secondary = {
+			naval_morale = 0.1
+			sailor_maintenance_modifer = -0.1
 		}
 	}
 	

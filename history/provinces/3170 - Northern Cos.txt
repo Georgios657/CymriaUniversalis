@@ -1,0 +1,2 @@
+# No previous file for Northern Cos
+discovered_by = SE1

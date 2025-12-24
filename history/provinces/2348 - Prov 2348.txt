@@ -12,3 +12,4 @@ culture = verdanian
 religion = grand_mother
 center_of_trade = 1
 add_core = AW1
+fort_15th = yes

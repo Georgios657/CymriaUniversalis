@@ -11,3 +11,4 @@ is_city = yes
 culture = boroner
 religion = imperial_cult
 add_core = AN6
+fort_15th = yes

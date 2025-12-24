@@ -1,0 +1,2 @@
+# No previous file for Northern Barsyon Sea
+discovered_by = SE1

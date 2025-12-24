@@ -1,0 +1,97 @@
+demon_invasion = {
+	potential = {
+		culture_group = merman_g
+		any_owned_province = {
+		religion = the_lord_of_demons
+		}
+		NOT = {
+		religion = the_lord_of_demons
+		}
+		NOT = {
+		has_country_flag = demon_invasion
+		}
+	}
+
+	
+	
+	can_start = {
+		culture_group = merman_g		
+		NOT = {
+		religious_unity = 0.8
+		}
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+		NOT = {
+				any_owned_province = {
+		religion = the_lord_of_demons
+		}
+		}
+		}
+	}
+		
+	
+	
+	progress = {	
+		modifier = {
+			factor = 1
+			NOT = { religious_unity = 0.8 }
+		}		
+
+		modifier = {
+			factor = 1
+			NOT = { religious_unity = 0.7 }
+		}	
+
+		modifier = {
+			factor = 1
+			NOT = { religious_unity = 0.6 }
+		}	
+
+		modifier = {
+			factor = 1
+			NOT = { religious_unity = 0.5 }
+		}		
+	}
+	
+	
+	
+	can_end = {
+	OR = {
+		NOT = {
+				any_owned_province = {
+		religion = the_lord_of_demons
+		}
+		}	
+		religion = the_lord_of_demons
+	}
+
+	}
+	
+
+	modifier = {
+			global_unrest = 10
+			stability_cost_modifier = 1
+	}	
+	
+	
+	on_start = demon_invasion.1
+	on_end = demon_invasion.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			50 = demon_invasion.3
+			100 = demon_invasion.4	
+			25 = demon_invasion.5
+			25 = demon_invasion.6
+			25 = demon_invasion.7
+		}
+	}
+}
+

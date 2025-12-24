@@ -10,3 +10,4 @@ capital = "Frostkneset"
 is_city = yes
 culture = snow_trolls
 religion = fore_bearers
+add_permanent_province_modifier = { name = very_arctic duration = -1 }

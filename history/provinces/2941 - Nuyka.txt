@@ -11,3 +11,4 @@ is_city = yes
 culture = shiror
 religion = icearia
 add_core = NC7
+fort_15th = yes

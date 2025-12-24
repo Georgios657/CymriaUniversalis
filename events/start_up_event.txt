@@ -292,6 +292,31 @@ country_event = {
 	every_country = {
 
 		limit = {
+		technology_group = merman
+		}
+			add_country_modifier = { 
+				name = merman_military
+				duration = -1  
+			}	
+			
+						add_country_modifier = { 
+				name = merman_navy
+				duration = -1  
+			}	
+			
+						add_country_modifier = { 
+				name = merman_marines
+				duration = -1  
+			}	
+	
+	
+	
+	}
+
+	
+	every_country = {
+
+		limit = {
 		technology_group = giant
 		culture_group = north_trolls
 		}

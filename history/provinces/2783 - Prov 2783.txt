@@ -10,3 +10,4 @@ capital = "Ezustvar"
 is_city = yes
 culture = fenyodi
 religion = rozalia
+discovered_by = SE1

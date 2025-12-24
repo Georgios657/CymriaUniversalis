@@ -288,7 +288,7 @@ estate_burghers = {
 		estate_burghers_nile_goods_transport
 		estate_burghers_monopoly_of_coffee
 	
-	
+		estate_burghers_pacifist_traders
 
 		estate_burghers_ARB_oasis_development
 		estate_burghers_YEM_coffee_monopoly
